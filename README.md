@@ -5,7 +5,7 @@ This repository is for online MatePad APK updates.
 GitHub Pages URL pattern:
 
 ```text
-https://YOUR_GITHUB_USERNAME.github.io/hp-sofa-updates/update.json
+https://teopoh71.github.io/hp-sofa-updates/update.json
 ```
 
 Use this repo for:
@@ -15,7 +15,7 @@ Use this repo for:
 
 ## First setup
 
-1. Create a public GitHub repository named `hp-sofa-updates`.
+1. Create a public GitHub repository named `hp-sofa-updates` under `teopoh71`.
 2. Upload these files to the repo root:
    - `README.md`
    - `update.json`
