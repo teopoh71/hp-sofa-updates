@@ -2,16 +2,17 @@
 
 This repository is for online MatePad APK updates.
 
-GitHub Pages URL pattern:
+Live update manifest URL:
 
 ```text
-https://teopoh71.github.io/hp-sofa-updates/update.json
+https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/update.json
 ```
 
 Use this repo for:
 
 - `update.json`: the small version file the installed app checks.
 - APK release links: upload APKs to GitHub Releases, then paste the APK download URL into `update.json`.
+- Optional GitHub Pages site: `https://teopoh71.github.io/hp-sofa-updates/`
 
 ## First setup
 
@@ -20,7 +21,7 @@ Use this repo for:
    - `README.md`
    - `update.json`
    - `.nojekyll`
-3. In GitHub, open **Settings -> Pages**.
+3. Optional: In GitHub, open **Settings -> Pages**.
 4. Set **Source** to `Deploy from a branch`.
 5. Set branch to `main` and folder to `/root`.
 6. Save.
