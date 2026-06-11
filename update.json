@@ -1,0 +1,11 @@
+{
+  "versionCode": 83,
+  "versionName": "v83-matepad-ready",
+  "apkUrl": "",
+  "webUrl": "",
+  "mandatory": false,
+  "notes": [
+    "MatePad online update channel is ready.",
+    "Upload a newer APK to GitHub Releases, then paste the direct APK URL into apkUrl and increase versionCode."
+  ]
+}
