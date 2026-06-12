@@ -1,11 +1,11 @@
 {
-  "versionCode": 83,
-  "versionName": "v83-matepad-ready",
-  "apkUrl": "",
+  "versionCode": 87,
+  "versionName": "v87-dining-split",
+  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v87.apk",
   "webUrl": "",
   "mandatory": false,
   "notes": [
-    "MatePad online update channel is ready.",
-    "Upload a newer APK to GitHub Releases, then paste the direct APK URL into apkUrl and increase versionCode."
+    "MatePad APK v87 separates dining tables and dining chairs from Matching.",
+    "Future updates should use the same package name and signing key, then increase versionCode."
   ]
 }
