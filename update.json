@@ -1,11 +1,12 @@
 {
-  "versionCode": 87,
-  "versionName": "v87-dining-split",
-  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v87.apk",
-  "webUrl": "",
+  "versionCode": 112,
+  "versionName": "v112-le8807-price-source",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v112/hp-sofa-v112.apk",
+  "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "MatePad APK v87 separates dining tables and dining chairs from Matching.",
+    "MatePad APK v112 fixes LE8807 LS/OS full leather pricing from the source workbook.",
+    "NK0024, LE8811, and LE8815 use real product galleries.",
     "Future updates should use the same package name and signing key, then increase versionCode."
   ]
 }
