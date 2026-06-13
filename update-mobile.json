@@ -1,11 +1,11 @@
 ﻿{
-  "versionCode": 137,
-  "versionName": "v137-combo-depth-width-fix",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v137-combo-depth-width-fix/hp-sofa-v137-mobile.apk",
-  "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
-  "mandatory": false,
-  "notes": [
-    "Mobile APK v137 fixes sofa combination button depth display",
-    "Future mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
-  ]
+    "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
+    "notes":  [
+                  "Mobile APK v147 adds bed size selection, grid-only Bed/Dining Chair controls, and money app icon.",
+                  "Future mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
+              ],
+    "versionName":  "v147-bed-size-options",
+    "versionCode":  147,
+    "mandatory":  false,
+    "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v147-mobile.apk"
 }
