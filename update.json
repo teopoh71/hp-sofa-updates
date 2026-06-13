@@ -1,11 +1,11 @@
 ﻿{
-  "versionCode": 136,
-  "versionName": "v136-small-photos",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v136-small-photos/hp-sofa-v136-mobile.apk",
+  "versionCode": 137,
+  "versionName": "v137-combo-depth-width-fix",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v137-combo-depth-width-fix/hp-sofa-v137-mobile.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Mobile APK v136 keeps the photo catalog but reduces image sizes for easier install and update",
+    "Mobile APK v137 fixes sofa combination button depth display",
     "Future mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
   ]
 }
