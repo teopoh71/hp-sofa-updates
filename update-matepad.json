@@ -1,0 +1,11 @@
+{
+  "versionCode": 120,
+  "versionName": "v120-lshape-footprint",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v120-matepad/hp-sofa-v120-matepad.apk",
+  "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
+  "mandatory": false,
+  "notes": [
+    "MatePad APK v120 aligns dining combo footprint + data fixes",
+    "Future MatePad updates should keep package com.nickator.sofabuilder.matepad and increase versionCode."
+  ]
+}
