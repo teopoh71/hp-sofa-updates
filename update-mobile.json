@@ -1,11 +1,11 @@
 ﻿{
-  "versionCode": 135,
-  "versionName": "v135-bed-effect-photos",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v135-mobile/hp-sofa-v135-mobile.apk",
+  "versionCode": 136,
+  "versionName": "v136-small-photos",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v136-small-photos/hp-sofa-v136-mobile.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Mobile APK v135 adds full bed effect-photo grid and latest catalog fixes",
+    "Mobile APK v136 keeps the photo catalog but reduces image sizes for easier install and update",
     "Future mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
   ]
 }
