@@ -1,11 +1,11 @@
-{
-  "versionCode": 120,
-  "versionName": "v120-lshape-footprint",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v120-mobile/hp-sofa-v120-mobile.apk",
+﻿{
+  "versionCode": 135,
+  "versionName": "v135-bed-effect-photos",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v135-mobile/hp-sofa-v135-mobile.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Mobile APK v120 aligns dining combo footprint + data fixes",
+    "Mobile APK v135 adds full bed effect-photo grid and latest catalog fixes",
     "Future mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
   ]
 }

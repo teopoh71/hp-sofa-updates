@@ -1,11 +1,11 @@
-{
-  "versionCode": 120,
-  "versionName": "v120-lshape-footprint",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v120-matepad/hp-sofa-v120-matepad.apk",
+﻿{
+  "versionCode": 135,
+  "versionName": "v135-bed-effect-photos",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v135-matepad/hp-sofa-v135-matepad.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "MatePad APK v120 aligns dining combo footprint + data fixes",
+    "MatePad APK v135 adds full bed effect-photo grid and latest catalog fixes",
     "Future MatePad updates should keep package com.nickator.sofabuilder.matepad and increase versionCode."
   ]
 }
