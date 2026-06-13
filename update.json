@@ -1,11 +1,10 @@
-﻿{
-  "versionCode": 137,
-  "versionName": "v137-combo-depth-width-fix",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/hp-sofa-v137-combo-depth-width-fix/hp-sofa-v137-mobile.apk",
+{
+  "versionCode": 150,
+  "versionName": "v150-8808-small-photo-set",
+  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v150-mobile.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Mobile APK v137 fixes sofa combination button depth display",
-    "Future mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
+    "Default manifest points to mobile v150. Use update-matepad.json for MatePad."
   ]
 }

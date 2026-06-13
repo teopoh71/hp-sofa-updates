@@ -1,11 +1,11 @@
-﻿{
-    "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
-    "notes":  [
-                  "MatePad APK v147 adds bed size selection, grid-only Bed/Dining Chair controls, and money app icon.",
-                  "Future MatePad updates should keep package com.nickator.sofabuilder.matepad and increase versionCode."
-              ],
-    "versionName":  "v147-bed-size-options",
-    "versionCode":  147,
-    "mandatory":  false,
-    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v147-matepad.apk"
+{
+  "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
+  "notes": [
+    "MatePad APK v150 fixes 8808/NK0003 effect photos back to the correct 12-photo set and keeps latest catalog fixes.",
+    "Future MatePad updates should keep package com.nickator.sofabuilder.matepad and increase versionCode."
+  ],
+  "versionName": "v150-8808-small-photo-set",
+  "versionCode": 150,
+  "mandatory": false,
+  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v150-matepad.apk"
 }
