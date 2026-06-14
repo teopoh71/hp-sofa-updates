@@ -1,25 +1,26 @@
 {
-    "patchVersionCode":  13,
-    "patchVersionName":  "v165-photo-longpress",
+    "patchVersionCode":  14,
+    "patchVersionName":  "v166-photo-viewer",
     "notes":  [
-                  "Fullscreen photo now has an Open Image button for phone long-press save/send.",
-                  "Tapping the fullscreen image also opens the raw image page.",
-                  "Keeps v164 width buckets, cache-clean fix, and displayed-image copy/share behavior."
+                  "Photo opens in an app viewer instead of a bare JPG.",
+                  "Viewer has Back, Copy Image, and Send Image buttons.",
+                  "Viewer allows phone pinch zoom and long-press on the image.",
+                  "Keeps v165/v164 behavior."
               ],
     "files":  [
                   {
                       "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v165-photo-longpress/app.js",
+                      "url":  "patches/v166-photo-viewer/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "path":  "styles.css?v=156-patch-engine",
-                      "url":  "patches/v165-photo-longpress/styles.css",
-                      "contentType":  "text/css; charset=utf-8"
+                      "path":  "photo-viewer.html",
+                      "url":  "patches/v166-photo-viewer/photo-viewer.html",
+                      "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v165-photo-longpress/sw.js",
+                      "url":  "patches/v166-photo-viewer/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   }
               ]
