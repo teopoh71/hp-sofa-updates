@@ -1,16 +1,16 @@
-{
-    "patchVersionCode":  16,
-    "patchVersionName":  "v168-remove-photo-buttons",
-    "notes":  [
-                  "Removes Copy Current Photo and Send Current Photo buttons from the main app photo card.",
-                  "Photo viewer remains simple with Back and long-press image behavior.",
-                  "Copy/send workflow will be redone later."
-              ],
-    "files":  [
-                  {
-                      "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v168-remove-photo-buttons/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
-                  }
-              ]
+﻿{
+  "patchVersionCode": 17,
+  "patchVersionName": "v169-zolano-combo-rules",
+  "notes": [
+    "Zolano recommendations now prefer original price-list sale rows like 1S, 2S, 3S, FULL SET, and plus-set rows.",
+    "Stops unsafe auto-generated Zolano left/right/center cross-combinations when original sale rows already exist.",
+    "Keeps the special ZL3776 picture-set layout recommendations."
+  ],
+  "files": [
+    {
+      "path": "app.js?v=156-patch-engine",
+      "url": "patches/v169-zolano-combo-rules/app.js",
+      "contentType": "text/javascript; charset=utf-8"
+    }
+  ]
 }
