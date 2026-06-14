@@ -473,10 +473,6 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
 };
 
 (() => {
-  function toAbsoluteUrl(src) {
-    try { return new URL(src, window.location.href).href; } catch { return src; }
-  }
-
   function getCurrentPhotoUrl(container) {
     const openButton = container.querySelector(".photo-open-button");
     const mainPhoto = container.querySelector(".set-main-photo");
@@ -489,41 +485,30 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
     window.setTimeout(() => { button.textContent = original; }, 1400);
   }
 
-  async function convertImageBlobToPng(blob) {
-    if (typeof createImageBitmap !== "function") throw new Error("Image conversion is not supported");
-    const bitmap = await createImageBitmap(blob);
+  async function getClipboardImageBlobFromElement(imageElement) {
+    if (!imageElement?.complete || !imageElement.naturalWidth || !imageElement.naturalHeight) {
+      throw new Error("Photo is not ready");
+    }
     const canvas = document.createElement("canvas");
-    canvas.width = bitmap.width;
-    canvas.height = bitmap.height;
+    canvas.width = imageElement.naturalWidth;
+    canvas.height = imageElement.naturalHeight;
     const context = canvas.getContext("2d");
-    context.drawImage(bitmap, 0, 0);
-    bitmap.close?.();
+    context.drawImage(imageElement, 0, 0, canvas.width, canvas.height);
     return new Promise((resolve, reject) => {
-      canvas.toBlob((pngBlob) => pngBlob ? resolve(pngBlob) : reject(new Error("Image conversion failed")), "image/png");
+      canvas.toBlob((pngBlob) => pngBlob ? resolve(pngBlob) : reject(new Error("Image copy failed")), "image/png");
     });
   }
 
-  async function getClipboardImageBlob(src) {
-    const response = await fetch(toAbsoluteUrl(src), { cache: "no-store" });
-    if (!response.ok) throw new Error("Photo download failed");
-    const sourceBlob = await response.blob();
-    const sourceType = sourceBlob.type || "image/jpeg";
-    if (sourceType === "image/png" || ClipboardItem.supports?.(sourceType)) {
-      return new Blob([sourceBlob], { type: sourceType });
-    }
-    return convertImageBlobToPng(sourceBlob);
-  }
-
-  async function copyPhotoToClipboard(src) {
+  async function copyDisplayedPhotoToClipboard(imageElement) {
     if (!navigator.clipboard?.write || typeof ClipboardItem === "undefined" || !window.isSecureContext) return false;
-    const imageBlob = await getClipboardImageBlob(src);
+    const imageBlob = await getClipboardImageBlobFromElement(imageElement);
     await navigator.clipboard.write([new ClipboardItem({ [imageBlob.type || "image/png"]: imageBlob })]);
     return true;
   }
 
   function relabelButtons(root = document) {
     root.querySelectorAll("[data-copy-model-photos]").forEach((button) => {
-      button.textContent = "复制当前图片";
+      button.textContent = "??????";
     });
   }
 
@@ -534,14 +519,15 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
     event.stopPropagation();
     event.stopImmediatePropagation();
     const container = button.closest(".set-photo-card") || document;
+    const imageElement = container.querySelector(".set-main-photo");
     const currentPhoto = getCurrentPhotoUrl(container);
-    if (!currentPhoto) return;
+    if (!currentPhoto || !imageElement) return;
     button.disabled = true;
     try {
-      await copyPhotoToClipboard(currentPhoto);
-      flashButtonText(button, "已复制图片");
+      await copyDisplayedPhotoToClipboard(imageElement);
+      flashButtonText(button, "?????");
     } catch {
-      flashButtonText(button, "请长按图片");
+      flashButtonText(button, "?????");
     } finally {
       button.disabled = false;
     }
@@ -550,4 +536,3 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
   relabelButtons();
   new MutationObserver(() => relabelButtons()).observe(document.body, { childList: true, subtree: true });
 })();
-
