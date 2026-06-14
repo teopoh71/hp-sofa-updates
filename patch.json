@@ -3,14 +3,14 @@
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v170-zolano-recommendation-price-filter/app.js"
+                      "url":  "patches/v171-zolano-more-recommendations/app.js"
                   }
               ],
-    "patchVersionName":  "v170-zolano-recommendation-price-filter",
-    "patchVersionCode":  18,
+    "patchVersionName":  "v171-zolano-more-recommendations",
+    "patchVersionCode":  19,
     "notes":  [
-                  "Zolano original sale recommendations with unknown width remain visible under size filters.",
-                  "Zolano recommendation rows without price now resolve to the matching catalog row for correct material prices.",
-                  "Fixes ZL 3817 FULL SET showing no recommendation/zero price when a width filter is selected."
+                  "Zolano decimal whole-seat rows like 1.0, 2.0, 3.0, and 2.5 are now recommendations.",
+                  "Zolano modular-only series now show real module rows instead of empty recommendations.",
+                  "Keeps original sale rows first and still avoids unsafe fake cross-combinations."
               ]
 }
