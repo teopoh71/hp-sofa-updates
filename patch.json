@@ -1,15 +1,16 @@
 {
-    "patchVersionCode":  9,
-    "patchVersionName":  "v161-copy-share-width",
+    "patchVersionCode":  10,
+    "patchVersionName":  "v162-depth-width-clean",
     "notes":  [
-                  "Copy button now shares displayed image pixels if Android blocks clipboard image copy.",
-                  "Removes old entry-gallery copy override by patching app.js directly.",
-                  "2.3m filter no longer includes the 2.0m LE8807 item."
+                  "LE8807 no longer uses the wrong 0.69m hardcoded depth.",
+                  "LE8807 uses real 1000mm depth from source data for recommendation labels.",
+                  "Width filter remains strict so nearby sizes do not show in the wrong button.",
+                  "Keeps v161 displayed-image copy/share behavior."
               ],
     "files":  [
                   {
                       "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v161-copy-share-width/app.js",
+                      "url":  "patches/v162-depth-width-clean/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   }
               ]
