@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>图片</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0b0b0b;
+        color: #fff;
+      }
+
+      .viewer-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 10px max(10px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(10px, env(safe-area-inset-left));
+        background: rgba(0, 0, 0, 0.78);
+      }
+
+      button {
+        min-height: 46px;
+        min-width: 120px;
+        border: 0;
+        border-radius: 8px;
+        background: #2563eb;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 800;
+      }
+
+      button.secondary {
+        background: #27272a;
+      }
+
+      .viewer-stage {
+        min-height: 100vh;
+        padding-bottom: 76px;
+        overflow: auto;
+        touch-action: pinch-zoom;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 40vh;
+        object-fit: contain;
+        background: #111;
+        -webkit-touch-callout: default;
+        user-select: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="viewer-stage">
+      <img id="photo" alt="图片">
+    </main>
+    <nav class="viewer-bar" aria-label="图片操作">
+      <button class="secondary" type="button" id="backButton">返回</button>
+    </nav>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const src = params.get("src") || "";
+      const photo = document.querySelector("#photo");
+      photo.src = src;
+
+      document.querySelector("#backButton").addEventListener("click", () => {
+        if (history.length > 1) history.back();
+        else location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
