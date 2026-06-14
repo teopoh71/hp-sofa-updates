@@ -1,27 +1,16 @@
 {
-    "patchVersionCode":  14,
-    "patchVersionName":  "v166-photo-viewer",
+    "patchVersionCode":  15,
+    "patchVersionName":  "v167-simple-photo-viewer",
     "notes":  [
-                  "Photo opens in an app viewer instead of a bare JPG.",
-                  "Viewer has Back, Copy Image, and Send Image buttons.",
-                  "Viewer allows phone pinch zoom and long-press on the image.",
-                  "Keeps v165/v164 behavior."
+                  "Temporarily removes broken Copy Image and Send Image controls from HP photo viewer.",
+                  "Viewer keeps Back button, pinch zoom, and long-press image behavior.",
+                  "Copy/send photo workflow will be rebuilt later."
               ],
     "files":  [
                   {
-                      "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v166-photo-viewer/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
-                  },
-                  {
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v166-photo-viewer/photo-viewer.html",
+                      "url":  "patches/v167-simple-photo-viewer/photo-viewer.html",
                       "contentType":  "text/html; charset=utf-8"
-                  },
-                  {
-                      "path":  "sw.js",
-                      "url":  "patches/v166-photo-viewer/sw.js",
-                      "contentType":  "text/javascript; charset=utf-8"
                   }
               ]
 }
