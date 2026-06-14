@@ -473,6 +473,15 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
 };
 
 (() => {
+  const TEXT_COPY = "\u590d\u5236\u5f53\u524d\u56fe\u7247";
+  const TEXT_COPIED = "\u5df2\u590d\u5236\u56fe\u7247";
+  const TEXT_SHARE = "\u6539\u7528\u53d1\u9001";
+  const TEXT_HOLD = "\u8bf7\u957f\u6309\u56fe\u7247";
+
+  function toAbsoluteUrl(src) {
+    try { return new URL(src, window.location.href).href; } catch { return src; }
+  }
+
   function getCurrentPhotoUrl(container) {
     const openButton = container.querySelector(".photo-open-button");
     const mainPhoto = container.querySelector(".set-main-photo");
@@ -482,7 +491,7 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
   function flashButtonText(button, text) {
     const original = button.textContent;
     button.textContent = text;
-    window.setTimeout(() => { button.textContent = original; }, 1400);
+    window.setTimeout(() => { button.textContent = original; }, 1600);
   }
 
   async function getClipboardImageBlobFromElement(imageElement) {
@@ -502,13 +511,31 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
   async function copyDisplayedPhotoToClipboard(imageElement) {
     if (!navigator.clipboard?.write || typeof ClipboardItem === "undefined" || !window.isSecureContext) return false;
     const imageBlob = await getClipboardImageBlobFromElement(imageElement);
-    await navigator.clipboard.write([new ClipboardItem({ [imageBlob.type || "image/png"]: imageBlob })]);
+    await navigator.clipboard.write([new ClipboardItem({ "image/png": imageBlob })]);
     return true;
+  }
+
+  async function shareDisplayedPhoto(imageElement, src) {
+    if (!navigator.share || typeof File === "undefined") return false;
+    const imageBlob = await getClipboardImageBlobFromElement(imageElement);
+    const file = new File([imageBlob], "sofa-photo.png", { type: "image/png" });
+    if (navigator.canShare?.({ files: [file] })) {
+      await navigator.share({ files: [file], title: "sofa-photo" });
+      return true;
+    }
+    await navigator.share({ title: "sofa-photo", url: toAbsoluteUrl(src) });
+    return true;
+  }
+
+  function openImageForLongPress(src) {
+    const url = toAbsoluteUrl(src);
+    const opened = window.open(url, "_blank");
+    if (!opened) window.location.href = url;
   }
 
   function relabelButtons(root = document) {
     root.querySelectorAll("[data-copy-model-photos]").forEach((button) => {
-      button.textContent = "??????";
+      button.textContent = TEXT_COPY;
     });
   }
 
@@ -524,10 +551,30 @@ window.BAIDU_ENTRY_PHOTO_GALLERY = {
     if (!currentPhoto || !imageElement) return;
     button.disabled = true;
     try {
-      await copyDisplayedPhotoToClipboard(imageElement);
-      flashButtonText(button, "?????");
+      const copied = await copyDisplayedPhotoToClipboard(imageElement);
+      if (copied) {
+        flashButtonText(button, TEXT_COPIED);
+        return;
+      }
+      const shared = await shareDisplayedPhoto(imageElement, currentPhoto);
+      if (shared) {
+        flashButtonText(button, TEXT_SHARE);
+        return;
+      }
+      openImageForLongPress(currentPhoto);
+      flashButtonText(button, TEXT_HOLD);
     } catch {
-      flashButtonText(button, "?????");
+      try {
+        const shared = await shareDisplayedPhoto(imageElement, currentPhoto);
+        if (shared) flashButtonText(button, TEXT_SHARE);
+        else {
+          openImageForLongPress(currentPhoto);
+          flashButtonText(button, TEXT_HOLD);
+        }
+      } catch {
+        openImageForLongPress(currentPhoto);
+        flashButtonText(button, TEXT_HOLD);
+      }
     } finally {
       button.disabled = false;
     }
