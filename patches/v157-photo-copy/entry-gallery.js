@@ -1,4 +1,4 @@
-﻿window.BAIDU_ENTRY_PHOTO_GALLERY = {
+window.BAIDU_ENTRY_PHOTO_GALLERY = {
   "LE8801SF": [
     "assets/entry-gallery/LE8801SF/entry-001.jpg",
     "assets/entry-gallery/LE8801SF/entry-002.jpg",
