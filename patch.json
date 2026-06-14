@@ -3,14 +3,14 @@
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v171-zolano-more-recommendations/app.js"
+                      "url":  "patches/v172-zolano-piece-price-labels/app.js"
                   }
               ],
-    "patchVersionName":  "v171-zolano-more-recommendations",
-    "patchVersionCode":  19,
+    "patchVersionName":  "v172-zolano-piece-price-labels",
+    "patchVersionCode":  20,
     "notes":  [
-                  "Zolano decimal whole-seat rows like 1.0, 2.0, 3.0, and 2.5 are now recommendations.",
-                  "Zolano modular-only series now show real module rows instead of empty recommendations.",
-                  "Keeps original sale rows first and still avoids unsafe fake cross-combinations."
+                  "Zolano duplicate recommendation rows now stay separate by source row id so different prices are not hidden.",
+                  "Zolano original recommendation rows display correct piece count instead of using imported partCodes.",
+                  "Zolano recommendation labels and buttons show the selected-material price when available."
               ]
 }
