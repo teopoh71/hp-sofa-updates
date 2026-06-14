@@ -1,15 +1,21 @@
 {
-  "patchVersionCode": 7,
-  "patchVersionName": "v159-copy-photo-no-link",
-  "notes": [
-    "Copy button uses the displayed image pixels instead of copying the https://localhost image link.",
-    "If Android WebView blocks image clipboard, it falls back to sending/opening the actual image."
-  ],
-  "files": [
-    {
-      "path": "assets/entry-gallery.js?v=156-patch-engine",
-      "url": "patches/v157-photo-copy/entry-gallery.js",
-      "contentType": "text/javascript; charset=utf-8"
-    }
-  ]
+    "patchVersionCode":  8,
+    "patchVersionName":  "v160-le8807-single-items",
+    "notes":  [
+                  "LE8807 whole P items are shown as one-piece recommendation choices.",
+                  "LE8807 3.5P 304 appears as the 2.3m single whole sofa recommendation.",
+                  "Keeps v159 copy-current-photo image clipboard patch."
+              ],
+    "files":  [
+                  {
+                      "path":  "assets/entry-gallery.js?v=156-patch-engine",
+                      "url":  "patches/v157-photo-copy/entry-gallery.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=156-patch-engine",
+                      "url":  "patches/v160-le8807-single-items/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  }
+              ]
 }
