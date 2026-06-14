@@ -1,15 +1,15 @@
 {
-    "patchVersionCode":  5,
-    "patchVersionName":  "v157-photo-copy-image",
-    "notes":  [
-                  "Copy photo now copies the actual current image instead of copying a photo link.",
-                  "Patch updates the already-loaded entry-gallery script, so no full APK reinstall is needed."
-              ],
-    "files":  [
-                  {
-                      "path":  "assets/entry-gallery.js?v=156-patch-engine",
-                      "url":  "patches/v157-photo-copy/entry-gallery.js",
-                      "contentType":  "text/javascript; charset=utf-8"
-                  }
-              ]
+  "patchVersionCode": 6,
+  "patchVersionName": "v158-copy-displayed-photo",
+  "notes": [
+    "Copy photo now copies the displayed image pixels, not the https://localhost photo link.",
+    "Patch updates the already-loaded entry-gallery script, so no full APK reinstall is needed."
+  ],
+  "files": [
+    {
+      "path": "assets/entry-gallery.js?v=156-patch-engine",
+      "url": "patches/v157-photo-copy/entry-gallery.js",
+      "contentType": "text/javascript; charset=utf-8"
+    }
+  ]
 }
