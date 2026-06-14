@@ -1,22 +1,25 @@
 {
-    "patchVersionCode":  12,
-    "patchVersionName":  "v164-width-buckets",
+    "patchVersionCode":  13,
+    "patchVersionName":  "v165-photo-longpress",
     "notes":  [
-                  "Size filters now use verified nominal buckets from source data.",
-                  "LE8807 1m shows 1P 100.",
-                  "LE8807 2.3m shows 3P 300, 3.5P 304, and the 1.5PL+1.5PR 2m combination.",
-                  "All LE8807 button labels use 1m depth instead of 0.69m.",
-                  "Keeps service-worker cache-clean fix and displayed-image copy/share behavior."
+                  "Fullscreen photo now has an Open Image button for phone long-press save/send.",
+                  "Tapping the fullscreen image also opens the raw image page.",
+                  "Keeps v164 width buckets, cache-clean fix, and displayed-image copy/share behavior."
               ],
     "files":  [
                   {
                       "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v164-width-buckets/app.js",
+                      "url":  "patches/v165-photo-longpress/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
+                      "path":  "styles.css?v=156-patch-engine",
+                      "url":  "patches/v165-photo-longpress/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
                       "path":  "sw.js",
-                      "url":  "patches/v164-width-buckets/sw.js",
+                      "url":  "patches/v165-photo-longpress/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   }
               ]
