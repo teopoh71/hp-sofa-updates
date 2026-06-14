@@ -1,9 +1,9 @@
 {
-  "patchVersionCode": 6,
-  "patchVersionName": "v158-copy-displayed-photo",
+  "patchVersionCode": 7,
+  "patchVersionName": "v159-copy-photo-no-link",
   "notes": [
-    "Copy photo now copies the displayed image pixels, not the https://localhost photo link.",
-    "Patch updates the already-loaded entry-gallery script, so no full APK reinstall is needed."
+    "Copy button uses the displayed image pixels instead of copying the https://localhost image link.",
+    "If Android WebView blocks image clipboard, it falls back to sending/opening the actual image."
   ],
   "files": [
     {
