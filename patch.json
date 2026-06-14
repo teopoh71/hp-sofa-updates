@@ -1,16 +1,16 @@
 {
-    "patchVersionCode":  15,
-    "patchVersionName":  "v167-simple-photo-viewer",
+    "patchVersionCode":  16,
+    "patchVersionName":  "v168-remove-photo-buttons",
     "notes":  [
-                  "Temporarily removes broken Copy Image and Send Image controls from HP photo viewer.",
-                  "Viewer keeps Back button, pinch zoom, and long-press image behavior.",
-                  "Copy/send photo workflow will be rebuilt later."
+                  "Removes Copy Current Photo and Send Current Photo buttons from the main app photo card.",
+                  "Photo viewer remains simple with Back and long-press image behavior.",
+                  "Copy/send workflow will be redone later."
               ],
     "files":  [
                   {
-                      "path":  "photo-viewer.html",
-                      "url":  "patches/v167-simple-photo-viewer/photo-viewer.html",
-                      "contentType":  "text/html; charset=utf-8"
+                      "path":  "app.js?v=156-patch-engine",
+                      "url":  "patches/v168-remove-photo-buttons/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   }
               ]
 }
