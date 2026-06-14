@@ -1,16 +1,16 @@
-﻿{
-  "patchVersionCode": 17,
-  "patchVersionName": "v169-zolano-combo-rules",
-  "notes": [
-    "Zolano recommendations now prefer original price-list sale rows like 1S, 2S, 3S, FULL SET, and plus-set rows.",
-    "Stops unsafe auto-generated Zolano left/right/center cross-combinations when original sale rows already exist.",
-    "Keeps the special ZL3776 picture-set layout recommendations."
-  ],
-  "files": [
-    {
-      "path": "app.js?v=156-patch-engine",
-      "url": "patches/v169-zolano-combo-rules/app.js",
-      "contentType": "text/javascript; charset=utf-8"
-    }
-  ]
+{
+    "files":  [
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app.js?v=156-patch-engine",
+                      "url":  "patches/v170-zolano-recommendation-price-filter/app.js"
+                  }
+              ],
+    "patchVersionName":  "v170-zolano-recommendation-price-filter",
+    "patchVersionCode":  18,
+    "notes":  [
+                  "Zolano original sale recommendations with unknown width remain visible under size filters.",
+                  "Zolano recommendation rows without price now resolve to the matching catalog row for correct material prices.",
+                  "Fixes ZL 3817 FULL SET showing no recommendation/zero price when a width filter is selected."
+              ]
 }
