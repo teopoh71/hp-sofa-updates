@@ -3,14 +3,14 @@
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v172-zolano-piece-price-labels/app.js"
+                      "url":  "patches/v173-zolano-label-width/app.js"
                   }
               ],
-    "patchVersionName":  "v172-zolano-piece-price-labels",
-    "patchVersionCode":  20,
+    "patchVersionName":  "v173-zolano-label-width",
+    "patchVersionCode":  21,
     "notes":  [
-                  "Zolano duplicate recommendation rows now stay separate by source row id so different prices are not hidden.",
-                  "Zolano original recommendation rows display correct piece count instead of using imported partCodes.",
-                  "Zolano recommendation labels and buttons show the selected-material price when available."
+                  "Zolano recommendation buttons now show the option name such as 1S, 2S, 3S, or FULL SET.",
+                  "Zolano recommendation buttons now display parsed width sizes together with prices.",
+                  "Zolano size filters now match all L width candidates in rows such as L1650mm and L: 1250 / 1820 / 2320mm."
               ]
 }
