@@ -1,16 +1,61 @@
 {
-    "files":  [
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=156-patch-engine",
-                      "url":  "patches/v173-zolano-label-width/app.js"
-                  }
-              ],
-    "patchVersionName":  "v173-zolano-label-width",
-    "patchVersionCode":  21,
-    "notes":  [
-                  "Zolano recommendation buttons now show the option name such as 1S, 2S, 3S, or FULL SET.",
-                  "Zolano recommendation buttons now display parsed width sizes together with prices.",
-                  "Zolano size filters now match all L width candidates in rows such as L1650mm and L: 1250 / 1820 / 2320mm."
-              ]
+  "patchVersionCode": 22,
+  "patchVersionName": "v174-zolano-piece-split-online",
+  "notes": [
+    "Zolano 2628 now splits the full set into separate pieces and uses the top-view cut drawings for each piece.",
+    "Zolano 3817 now splits into 1EL/T and 2ER with the corrected cut drawings and verified price.",
+    "The individual item photo map now merges correctly so the piece drawings are not overwritten by older data."
+  ],
+  "files": [
+    {
+      "path": "app.js?v=3817-split-fullset",
+      "url": "patches/v174-zolano-piece-split-online/app.js",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "zolano-visual-overrides.js?v=2897-fullset-visual",
+      "url": "patches/v174-zolano-piece-split-online/zolano-visual-overrides.js",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/individual-item-photos.js?v=2628-3817-merge",
+      "url": "patches/v174-zolano-piece-split-online/assets/individual-item-photos.js",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/generated/zolano/parts/MONTIERIZL2628-1ELT-top.png",
+      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-1ELT-top.png",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
+      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
+      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
+      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/zolano/parts/MONTIERIZL2628-2ER-top.png",
+      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-2ER-top.png",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png",
+      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png",
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png",
+      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png",
+      "contentType": "image/png"
+    }
+  ]
 }
