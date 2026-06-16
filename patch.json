@@ -1,62 +1,111 @@
-{
-    "patchVersionCode":  31,
-    "patchVersionName":  "v183-force-nikator-front-thumbs",
+﻿{
+    "patchVersionCode":  32,
+    "patchVersionName":  "v186-share-select-direct",
     "notes":  [
-                  "Force reapply of the v182 Nikator front thumbnail patch on phones that cached the old grid.",
-                  "Uses Nikator model-folder product photos for quick buttons instead of effect-gallery photos.",
-                  "Keeps corrected front-facing button photos for NK0042, NK0024, LE8802, NK0050, and NK0035.",
-                  "Keeps tighter cropped thumbnails and visible version text."
+                  "Adds photo multi-select marks in the gallery.",
+                  "Share button now opens selected photos directly in the photo viewer for long-press sharing.",
+                  "Removes the broken native share/copy flow from the button path while keeping previous Nikator/Zolano assets."
               ],
     "files":  [
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=165-photo-longpress",
-                      "url":  "patches/v182-nikator-front-thumbs/app-version.js"
+                      "url":  "patches/v186-share-select-direct/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=nikator-front-thumbs",
-                      "url":  "patches/v182-nikator-front-thumbs/app-version.js"
+                      "url":  "patches/v186-share-select-direct/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/html; charset=utf-8",
+                      "path":  "app-version.js?v=mobile-fixed-v184-nopopup",
+                      "url":  "patches/v186-share-select-direct/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v185-share-select",
+                      "url":  "patches/v186-share-select-direct/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v186-share-select-direct",
+                      "url":  "patches/v186-share-select-direct/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
                       "path":  "index.html",
-                      "url":  "patches/v182-nikator-front-thumbs/index.html"
+                      "url":  "patches/v186-share-select-direct/index.html",
+                      "contentType":  "text/html; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=3817-split-fullset",
-                      "url":  "patches/v182-nikator-front-thumbs/app.js"
+                      "url":  "patches/v186-share-select-direct/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=nikator-model-thumbs",
-                      "url":  "patches/v182-nikator-front-thumbs/app.js"
+                      "url":  "patches/v186-share-select-direct/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=nikator-front-thumbs",
-                      "url":  "patches/v182-nikator-front-thumbs/app.js"
+                      "url":  "patches/v186-share-select-direct/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/css; charset=utf-8",
+                      "path":  "app.js?v=mobile-fixed-v184-nopopup",
+                      "url":  "patches/v186-share-select-direct/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v185-share-select",
+                      "url":  "patches/v186-share-select-direct/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v186-share-select-direct",
+                      "url":  "patches/v186-share-select-direct/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
                       "path":  "styles.css?v=165-photo-longpress",
-                      "url":  "patches/v182-nikator-front-thumbs/styles.css"
+                      "url":  "patches/v186-share-select-direct/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=nikator-model-thumbs",
-                      "url":  "patches/v182-nikator-front-thumbs/styles.css"
+                      "url":  "patches/v186-share-select-direct/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=nikator-front-thumbs",
-                      "url":  "patches/v182-nikator-front-thumbs/styles.css"
+                      "url":  "patches/v186-share-select-direct/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "styles.css?v=mobile-fixed-v184-nopopup",
+                      "url":  "patches/v186-share-select-direct/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v185-share-select",
+                      "url":  "patches/v186-share-select-direct/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v186-share-select-direct",
+                      "url":  "patches/v186-share-select-direct/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
                       "path":  "sw.js",
-                      "url":  "patches/v182-nikator-front-thumbs/sw.js"
+                      "url":  "patches/v186-share-select-direct/sw.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "photo-viewer.html",
+                      "url":  "patches/v186-share-select-direct/photo-viewer.html",
+                      "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
