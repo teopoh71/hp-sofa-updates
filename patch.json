@@ -1,12 +1,11 @@
 {
-    "patchVersionCode":  30,
-    "patchVersionName":  "v182-nikator-front-thumbs",
+    "patchVersionCode":  31,
+    "patchVersionName":  "v183-force-nikator-front-thumbs",
     "notes":  [
+                  "Force reapply of the v182 Nikator front thumbnail patch on phones that cached the old grid.",
                   "Uses Nikator model-folder product photos for quick buttons instead of effect-gallery photos.",
-                  "Fixes front-facing button photos for NK0042, NK0024, LE8802, NK0050, and NK0035.",
-                  "Crops Nikator quick thumbnails tighter so the sofa is larger and clearer on phone.",
-                  "Adds clearer visible version text so HP/MatePad can confirm installed local/patch version.",
-                  "Keeps previous Zolano 2628, 2911, 3817, Pages manifest, and split-piece patch fixes."
+                  "Keeps corrected front-facing button photos for NK0042, NK0024, LE8802, NK0050, and NK0035.",
+                  "Keeps tighter cropped thumbnails and visible version text."
               ],
     "files":  [
                   {
