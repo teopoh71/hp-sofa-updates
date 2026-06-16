@@ -1,61 +1,16 @@
 {
-  "patchVersionCode": 22,
-  "patchVersionName": "v174-zolano-piece-split-online",
+  "patchVersionCode": 23,
+  "patchVersionName": "v175-pages-manifest-switch",
   "notes": [
-    "Zolano 2628 now splits the full set into separate pieces and uses the top-view cut drawings for each piece.",
-    "Zolano 3817 now splits into 1EL/T and 2ER with the corrected cut drawings and verified price.",
-    "The individual item photo map now merges correctly so the piece drawings are not overwritten by older data."
+    "Switches mobile update checks from raw.githubusercontent.com to GitHub Pages.",
+    "Switches mobile patch checks from raw.githubusercontent.com to GitHub Pages.",
+    "Helps devices in China use the more reachable teopoh71.github.io manifest URLs."
   ],
   "files": [
     {
-      "path": "app.js?v=3817-split-fullset",
-      "url": "patches/v174-zolano-piece-split-online/app.js",
+      "path": "app-version.js?v=165-photo-longpress",
+      "url": "patches/v175-pages-manifest-switch/app-version.js",
       "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "path": "zolano-visual-overrides.js?v=2897-fullset-visual",
-      "url": "patches/v174-zolano-piece-split-online/zolano-visual-overrides.js",
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "path": "assets/individual-item-photos.js?v=2628-3817-merge",
-      "url": "patches/v174-zolano-piece-split-online/assets/individual-item-photos.js",
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "path": "assets/generated/zolano/parts/MONTIERIZL2628-1ELT-top.png",
-      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-1ELT-top.png",
-      "contentType": "image/png"
-    },
-    {
-      "path": "assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
-      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
-      "contentType": "image/png"
-    },
-    {
-      "path": "assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
-      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
-      "contentType": "image/png"
-    },
-    {
-      "path": "assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
-      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
-      "contentType": "image/png"
-    },
-    {
-      "path": "assets/generated/zolano/parts/MONTIERIZL2628-2ER-top.png",
-      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-2ER-top.png",
-      "contentType": "image/png"
-    },
-    {
-      "path": "assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png",
-      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png",
-      "contentType": "image/png"
-    },
-    {
-      "path": "assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png",
-      "url": "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png",
-      "contentType": "image/png"
     }
   ]
 }
