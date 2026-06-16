@@ -1,25 +1,25 @@
 {
-  "patchVersionCode": 25,
-  "patchVersionName": "v177-zolano-2628-quick-button",
+  "patchVersionCode": 26,
+  "patchVersionName": "v178-zolano-2911-dedupe",
   "notes": [
-    "Updates the Zolano quick-button grid in index.html so the phone sees the same 2628 entry as local.",
-    "Keeps the GitHub Pages manifest route from the earlier bridge patch.",
-    "Leaves the existing Zolano split-piece patch files in place."
+    "Removes the older duplicate ZL 2911 1.0 / 2.0 / 3.0 sale-row family so the same item no longer shows two prices.",
+    "Keeps the Zolano quick-button and Pages manifest bridge patches in place.",
+    "Leaves the existing 2628 and 3817 split-piece patch files in place."
   ],
   "files": [
-    {
-      "path": "index.html",
-      "url": "patches/v177-zolano-26282-label/index.html",
-      "contentType": "text/html; charset=utf-8"
-    },
     {
       "path": "app-version.js?v=165-photo-longpress",
       "url": "patches/v176-pages-plus-zolano/app-version.js",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
+      "path": "index.html",
+      "url": "patches/v177-zolano-26282-label/index.html",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
       "path": "app.js?v=3817-split-fullset",
-      "url": "patches/v174-zolano-piece-split-online/app.js",
+      "url": "patches/v178-zolano-2911-dedupe/app.js",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
