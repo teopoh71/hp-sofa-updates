@@ -1,10 +1,11 @@
 {
-  "versionCode": 150,
-  "versionName": "v150-8808-small-photo-set",
-  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v150-mobile.apk",
+  "versionCode": 183,
+  "versionName": "v183-force-nikator-front-thumbs",
+  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v183-mobile.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Default manifest points to mobile v150. Use update-matepad.json for MatePad."
+    "Default manifest points to mobile v183. Use update-matepad.json for MatePad.",
+    "Full reinstall package includes Nikator front thumbnail files for HP/mobile when patch cache does not apply."
   ]
 }

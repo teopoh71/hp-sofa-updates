@@ -1,11 +1,11 @@
 {
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "notes": [
-    "Mobile APK v150 fixes 8808/NK0003 effect photos back to the correct 12-photo set and keeps latest catalog fixes.",
+    "Mobile APK v183 includes the latest Nikator front thumbnail files and current catalog patch contents.",
     "Future Mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
   ],
-  "versionName": "v150-8808-small-photo-set",
-  "versionCode": 150,
+  "versionName": "v183-force-nikator-front-thumbs",
+  "versionCode": 183,
   "mandatory": false,
-  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v150-mobile.apk"
+  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v183-mobile.apk"
 }
