@@ -1,8 +1,10 @@
 {
-  "patchVersionCode": 27,
-  "patchVersionName": "v179-update-path-refresh",
+  "patchVersionCode": 28,
+  "patchVersionName": "v180-version-26282-dimension",
   "notes": [
-    "Refreshes the online patch number so phones that missed the previous patch can detect and apply the latest Zolano files without reinstalling.",
+    "Adds a visible version line so the phone can show the installed APK and patch version.",
+    "Repairs the Zolano 2628 quick button label to show 26282 even when index.html is cached.",
+    "Corrects MONTIERI ZL 2628 full-set measurement to show the L-shape footprint instead of one straight width.",
     "Removes the older duplicate ZL 2911 1.0 / 2.0 / 3.0 sale-row family so the same item no longer shows two prices.",
     "Keeps the Zolano quick-button and Pages manifest bridge patches in place.",
     "Leaves the existing 2628 and 3817 split-piece patch files in place."
@@ -20,12 +22,17 @@
     },
     {
       "path": "app.js?v=3817-split-fullset",
-      "url": "patches/v178-zolano-2911-dedupe/app.js",
+      "url": "patches/v180-version-26282-dimension/app.js",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
+      "path": "styles.css?v=165-photo-longpress",
+      "url": "patches/v180-version-26282-dimension/styles.css",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
       "path": "zolano-visual-overrides.js?v=2897-fullset-visual",
-      "url": "patches/v174-zolano-piece-split-online/zolano-visual-overrides.js",
+      "url": "patches/v180-version-26282-dimension/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
