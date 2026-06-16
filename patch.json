@@ -1,7 +1,11 @@
 {
-  "patchVersionCode": 28,
-  "patchVersionName": "v180-version-26282-dimension",
+  "patchVersionCode": 29,
+  "patchVersionName": "v181-nikator-grid-share-cache",
   "notes": [
+    "Adds a Nikator paged model grid with 9 buttons per page and horizontal swipe.",
+    "Uses whole-sofa Nikator button photos when available and shows a neutral placeholder instead of wrong detail or line photos.",
+    "Adds a main-photo share button with phone share-sheet fallback.",
+    "Adds a clearAppCache path and refreshed service worker cache name so devices can load fresh patched files.",
     "Adds a visible version line so the phone can show the installed APK and patch version.",
     "Repairs the Zolano 2628 quick button label to show 26282 even when index.html is cached.",
     "Corrects MONTIERI ZL 2628 full-set measurement to show the L-shape footprint instead of one straight width.",
@@ -17,22 +21,27 @@
     },
     {
       "path": "index.html",
-      "url": "patches/v177-zolano-26282-label/index.html",
+      "url": "patches/v181-nikator-grid-share-cache/index.html",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "path": "app.js?v=3817-split-fullset",
-      "url": "patches/v180-version-26282-dimension/app.js",
+      "url": "patches/v181-nikator-grid-share-cache/app.js",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "path": "styles.css?v=165-photo-longpress",
-      "url": "patches/v180-version-26282-dimension/styles.css",
+      "url": "patches/v181-nikator-grid-share-cache/styles.css",
       "contentType": "text/css; charset=utf-8"
     },
     {
+      "path": "sw.js",
+      "url": "patches/v181-nikator-grid-share-cache/sw.js",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
       "path": "zolano-visual-overrides.js?v=2897-fullset-visual",
-      "url": "patches/v180-version-26282-dimension/zolano-visual-overrides.js",
+      "url": "patches/v181-nikator-grid-share-cache/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
