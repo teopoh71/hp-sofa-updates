@@ -1,421 +1,126 @@
 ﻿{
-    "patchVersionCode":  32,
-    "patchVersionName":  "v186-share-select-direct",
+    "patchVersionCode":  33,
+    "patchVersionName":  "v187-patch-progress-bed-buttons",
     "notes":  [
-                  "Adds photo multi-select marks in the gallery.",
-                  "Share button now opens selected photos directly in the photo viewer for long-press sharing.",
-                  "Removes the broken native share/copy flow from the button path while keeping previous Nikator/Zolano assets."
+                  "Small update now shows download/install progress and times out instead of staying stuck.",
+                  "Patch is text-only so phones do not redownload all product photos for this fix.",
+                  "Bed model photo buttons crop the existing bed images in-browser like sofa buttons."
               ],
     "files":  [
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=165-photo-longpress",
-                      "url":  "patches/v186-share-select-direct/app-version.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app-version.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=nikator-front-thumbs",
-                      "url":  "patches/v186-share-select-direct/app-version.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app-version.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v186-share-select-direct/app-version.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app-version.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v185-share-select",
-                      "url":  "patches/v186-share-select-direct/app-version.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app-version.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v186-share-select-direct",
-                      "url":  "patches/v186-share-select-direct/app-version.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app-version.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app-version.js?v=v187-patch-progress",
+                      "url":  "patches/v187-patch-progress-bed-buttons/app-version.js"
+                  },
+                  {
+                      "contentType":  "text/html; charset=utf-8",
                       "path":  "index.html",
-                      "url":  "patches/v186-share-select-direct/index.html",
-                      "contentType":  "text/html; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/index.html"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=3817-split-fullset",
-                      "url":  "patches/v186-share-select-direct/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=nikator-model-thumbs",
-                      "url":  "patches/v186-share-select-direct/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=nikator-front-thumbs",
-                      "url":  "patches/v186-share-select-direct/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v186-share-select-direct/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v185-share-select",
-                      "url":  "patches/v186-share-select-direct/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v186-share-select-direct",
-                      "url":  "patches/v186-share-select-direct/app.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/app.js"
                   },
                   {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app.js?v=v187-patch-progress",
+                      "url":  "patches/v187-patch-progress-bed-buttons/app.js"
+                  },
+                  {
+                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=165-photo-longpress",
-                      "url":  "patches/v186-share-select-direct/styles.css",
-                      "contentType":  "text/css; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/styles.css"
                   },
                   {
+                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=nikator-model-thumbs",
-                      "url":  "patches/v186-share-select-direct/styles.css",
-                      "contentType":  "text/css; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/styles.css"
                   },
                   {
+                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=nikator-front-thumbs",
-                      "url":  "patches/v186-share-select-direct/styles.css",
-                      "contentType":  "text/css; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/styles.css"
                   },
                   {
+                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v186-share-select-direct/styles.css",
-                      "contentType":  "text/css; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/styles.css"
                   },
                   {
+                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v185-share-select",
-                      "url":  "patches/v186-share-select-direct/styles.css",
-                      "contentType":  "text/css; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/styles.css"
                   },
                   {
+                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v186-share-select-direct",
-                      "url":  "patches/v186-share-select-direct/styles.css",
-                      "contentType":  "text/css; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/styles.css"
                   },
                   {
+                      "contentType":  "text/css; charset=utf-8",
+                      "path":  "styles.css?v=v187-patch-progress",
+                      "url":  "patches/v187-patch-progress-bed-buttons/styles.css"
+                  },
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "sw.js",
-                      "url":  "patches/v186-share-select-direct/sw.js",
-                      "contentType":  "text/javascript; charset=utf-8"
+                      "url":  "patches/v187-patch-progress-bed-buttons/sw.js"
                   },
                   {
+                      "contentType":  "text/html; charset=utf-8",
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v186-share-select-direct/photo-viewer.html",
-                      "contentType":  "text/html; charset=utf-8"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "zolano-visual-overrides.js?v=2897-fullset-visual",
-                      "url":  "patches/v182-nikator-front-thumbs/zolano-visual-overrides.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "zolano-visual-overrides.js?v=nikator-front-thumbs",
-                      "url":  "patches/v182-nikator-front-thumbs/zolano-visual-overrides.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "assets/individual-item-photos.js?v=2628-3817-merge",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/individual-item-photos.js"
-                  },
-                  {
-                      "contentType":  "image/png",
-                      "path":  "assets/generated/zolano/parts/MONTIERIZL2628-1ELT-top.png",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-1ELT-top.png"
-                  },
-                  {
-                      "contentType":  "image/png",
-                      "path":  "assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png"
-                  },
-                  {
-                      "contentType":  "image/png",
-                      "path":  "assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png"
-                  },
-                  {
-                      "contentType":  "image/png",
-                      "path":  "assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png"
-                  },
-                  {
-                      "contentType":  "image/png",
-                      "path":  "assets/generated/zolano/parts/MONTIERIZL2628-2ER-top.png",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/MONTIERIZL2628-2ER-top.png"
-                  },
-                  {
-                      "contentType":  "image/png",
-                      "path":  "assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png"
-                  },
-                  {
-                      "contentType":  "image/png",
-                      "path":  "assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png",
-                      "url":  "patches/v174-zolano-piece-split-online/assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8801SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8801SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8802SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8802SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8803SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8803SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8806SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8806SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8807SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8807SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8808SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8808SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8810SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8810SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8811SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8811SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8812SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8812SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8813SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8813SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8815SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8815SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8816SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8816SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8817SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8817SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8818SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8818SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/LE8819SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/LE8819SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0001SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0001SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0002SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0002SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0003SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0003SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0004SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0004SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0005SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0005SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0008SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0008SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0010SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0010SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0011SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0011SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0013SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0013SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0014SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0014SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0015SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0015SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0016SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0016SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0017SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0017SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0019SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0019SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0020SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0020SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0021SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0021SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0022SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0022SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0023SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0023SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0024SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0024SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0028SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0028SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0029SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0029SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0032SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0032SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0033SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0033SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0034SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0034SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0035SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0035SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0037SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0037SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0038SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0038SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0039SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0039SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0040SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0040SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0042SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0042SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0045SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0045SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0047SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0047SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0049SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0049SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0050SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0050SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0051SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0051SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0053SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0053SF.jpg"
-                  },
-                  {
-                      "contentType":  "image/jpeg",
-                      "path":  "assets/quick-thumbs/nikator/NK0054SF.jpg",
-                      "url":  "patches/v182-nikator-front-thumbs/assets/quick-thumbs/nikator/NK0054SF.jpg"
+                      "url":  "patches/v187-patch-progress-bed-buttons/photo-viewer.html"
                   }
               ]
 }
