@@ -1,127 +1,125 @@
 {
-  "patchVersionCode": 41,
-  "patchVersionName": "v208-zl3776-showroom-mixed-price",
+  "patchVersionCode": 42,
+  "patchVersionName": "v209-zl3776-hide-preview-note",
   "notes": [
-    "Adds corrected ZL3776 showroom set with Chinese showroom label and shortage remark.",
-    "Sets showroom dimensions from actual sides: ARM + 1NA/LONG + 1NA + 1NA + CORNER = 4300mm, return side = 3970mm.",
-    "Adds per-position material selectors on mobile and defaults showroom mix to F/SA x3 + M/F x5.",
-    "Uses clean line drawings for ZL3776 part thumbnails and removes repeated AURONZO text from slot options."
+    "Hides the ZL3776 showroom remark from the selected-set preview card.",
+    "Keeps corrected showroom set, 4300mm / 3970mm sizing, mixed material defaults, and line drawings."
   ],
   "files": [
     {
       "contentType": "text/html; charset=utf-8",
       "path": "index.html",
-      "url": "patches/v208-zl3776-showroom-mixed-price/index.html"
+      "url": "patches/v209-zl3776-hide-preview-note/index.html"
     },
     {
       "contentType": "text/html; charset=utf-8",
       "path": "photo-viewer.html",
-      "url": "patches/v208-zl3776-showroom-mixed-price/photo-viewer.html"
+      "url": "patches/v209-zl3776-hide-preview-note/photo-viewer.html"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "sw.js",
-      "url": "patches/v208-zl3776-showroom-mixed-price/sw.js"
+      "url": "patches/v209-zl3776-hide-preview-note/sw.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js",
-      "url": "patches/v208-zl3776-showroom-mixed-price/app-version.js"
-    },
-    {
-      "contentType": "text/javascript; charset=utf-8",
-      "path": "app-version.js?v=v197-photo-viewer-share",
-      "url": "patches/v208-zl3776-showroom-mixed-price/app-version.js"
+      "url": "patches/v209-zl3776-hide-preview-note/app-version.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v208-zl3776-showroom-mixed-price/app-version.js"
+      "url": "patches/v209-zl3776-hide-preview-note/app-version.js"
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "app-version.js?v=v209-zl3776-hide-preview-note",
+      "url": "patches/v209-zl3776-hide-preview-note/app-version.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js",
-      "url": "patches/v208-zl3776-showroom-mixed-price/app.js"
-    },
-    {
-      "contentType": "text/javascript; charset=utf-8",
-      "path": "app.js?v=v197-photo-viewer-share",
-      "url": "patches/v208-zl3776-showroom-mixed-price/app.js"
+      "url": "patches/v209-zl3776-hide-preview-note/app.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v208-zl3776-showroom-mixed-price/app.js"
+      "url": "patches/v209-zl3776-hide-preview-note/app.js"
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "app.js?v=v209-zl3776-hide-preview-note",
+      "url": "patches/v209-zl3776-hide-preview-note/app.js"
     },
     {
       "contentType": "text/css; charset=utf-8",
       "path": "styles.css",
-      "url": "patches/v208-zl3776-showroom-mixed-price/styles.css"
-    },
-    {
-      "contentType": "text/css; charset=utf-8",
-      "path": "styles.css?v=v197-photo-viewer-share",
-      "url": "patches/v208-zl3776-showroom-mixed-price/styles.css"
+      "url": "patches/v209-zl3776-hide-preview-note/styles.css"
     },
     {
       "contentType": "text/css; charset=utf-8",
       "path": "styles.css?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v208-zl3776-showroom-mixed-price/styles.css"
+      "url": "patches/v209-zl3776-hide-preview-note/styles.css"
+    },
+    {
+      "contentType": "text/css; charset=utf-8",
+      "path": "styles.css?v=v209-zl3776-hide-preview-note",
+      "url": "patches/v209-zl3776-hide-preview-note/styles.css"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "zolano-visual-overrides.js",
-      "url": "patches/v208-zl3776-showroom-mixed-price/zolano-visual-overrides.js"
-    },
-    {
-      "contentType": "text/javascript; charset=utf-8",
-      "path": "zolano-visual-overrides.js?v=v197-photo-viewer-share",
-      "url": "patches/v208-zl3776-showroom-mixed-price/zolano-visual-overrides.js"
+      "url": "patches/v209-zl3776-hide-preview-note/zolano-visual-overrides.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "zolano-visual-overrides.js?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v208-zl3776-showroom-mixed-price/zolano-visual-overrides.js"
+      "url": "patches/v209-zl3776-hide-preview-note/zolano-visual-overrides.js"
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "zolano-visual-overrides.js?v=v209-zl3776-hide-preview-note",
+      "url": "patches/v209-zl3776-hide-preview-note/zolano-visual-overrides.js"
     },
     {
       "contentType": "image/jpeg",
       "path": "assets/generated/zolano/ZL3776-showroom-set.jpg",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/ZL3776-showroom-set.jpg"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/ZL3776-showroom-set.jpg"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-1NA.png",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/parts/ZL3776-line-1NA.png"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-1NA.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-1NAT.png",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/parts/ZL3776-line-1NAT.png"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-1NAT.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-ARM.png",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/parts/ZL3776-line-ARM.png"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-ARM.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-CORNER.png",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/parts/ZL3776-line-CORNER.png"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-CORNER.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-STOOL.png",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/parts/ZL3776-line-STOOL.png"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-STOOL.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-TABLE.png",
-      "url": "patches/v208-zl3776-showroom-mixed-price/assets/generated/zolano/parts/ZL3776-line-TABLE.png"
+      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-TABLE.png"
     }
   ]
 }
