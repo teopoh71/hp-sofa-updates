@@ -1,125 +1,145 @@
 {
-  "patchVersionCode": 42,
-  "patchVersionName": "v209-zl3776-hide-preview-note",
+  "patchVersionCode": 43,
+  "patchVersionName": "v210-photo-viewer-share-fallback",
   "notes": [
-    "Hides the ZL3776 showroom remark from the selected-set preview card.",
-    "Keeps corrected showroom set, 4300mm / 3970mm sizing, mixed material defaults, and line drawings."
+    "Adds a stronger phone photo sharing flow: system share, copy link, download, open original, and manual fallback.",
+    "Keeps corrected ZL3776 showroom set, mixed material defaults, hidden preview remark, and line drawings."
   ],
   "files": [
     {
       "contentType": "text/html; charset=utf-8",
       "path": "index.html",
-      "url": "patches/v209-zl3776-hide-preview-note/index.html"
+      "url": "patches/v210-photo-viewer-share-fallback/index.html"
     },
     {
       "contentType": "text/html; charset=utf-8",
       "path": "photo-viewer.html",
-      "url": "patches/v209-zl3776-hide-preview-note/photo-viewer.html"
+      "url": "patches/v210-photo-viewer-share-fallback/photo-viewer.html"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "sw.js",
-      "url": "patches/v209-zl3776-hide-preview-note/sw.js"
+      "url": "patches/v210-photo-viewer-share-fallback/sw.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js",
-      "url": "patches/v209-zl3776-hide-preview-note/app-version.js"
+      "url": "patches/v210-photo-viewer-share-fallback/app-version.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v209-zl3776-hide-preview-note/app-version.js"
+      "url": "patches/v210-photo-viewer-share-fallback/app-version.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js?v=v209-zl3776-hide-preview-note",
-      "url": "patches/v209-zl3776-hide-preview-note/app-version.js"
+      "url": "patches/v210-photo-viewer-share-fallback/app-version.js"
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "app-version.js?v=v210-photo-viewer-share-fallback",
+      "url": "patches/v210-photo-viewer-share-fallback/app-version.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js",
-      "url": "patches/v209-zl3776-hide-preview-note/app.js"
+      "url": "patches/v210-photo-viewer-share-fallback/app.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v209-zl3776-hide-preview-note/app.js"
+      "url": "patches/v210-photo-viewer-share-fallback/app.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js?v=v209-zl3776-hide-preview-note",
-      "url": "patches/v209-zl3776-hide-preview-note/app.js"
+      "url": "patches/v210-photo-viewer-share-fallback/app.js"
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "app.js?v=v210-photo-viewer-share-fallback",
+      "url": "patches/v210-photo-viewer-share-fallback/app.js"
     },
     {
       "contentType": "text/css; charset=utf-8",
       "path": "styles.css",
-      "url": "patches/v209-zl3776-hide-preview-note/styles.css"
+      "url": "patches/v210-photo-viewer-share-fallback/styles.css"
     },
     {
       "contentType": "text/css; charset=utf-8",
       "path": "styles.css?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v209-zl3776-hide-preview-note/styles.css"
+      "url": "patches/v210-photo-viewer-share-fallback/styles.css"
     },
     {
       "contentType": "text/css; charset=utf-8",
       "path": "styles.css?v=v209-zl3776-hide-preview-note",
-      "url": "patches/v209-zl3776-hide-preview-note/styles.css"
+      "url": "patches/v210-photo-viewer-share-fallback/styles.css"
+    },
+    {
+      "contentType": "text/css; charset=utf-8",
+      "path": "styles.css?v=v210-photo-viewer-share-fallback",
+      "url": "patches/v210-photo-viewer-share-fallback/styles.css"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "zolano-visual-overrides.js",
-      "url": "patches/v209-zl3776-hide-preview-note/zolano-visual-overrides.js"
+      "url": "patches/v210-photo-viewer-share-fallback/zolano-visual-overrides.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "zolano-visual-overrides.js?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v209-zl3776-hide-preview-note/zolano-visual-overrides.js"
+      "url": "patches/v210-photo-viewer-share-fallback/zolano-visual-overrides.js"
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "zolano-visual-overrides.js?v=v209-zl3776-hide-preview-note",
-      "url": "patches/v209-zl3776-hide-preview-note/zolano-visual-overrides.js"
+      "url": "patches/v210-photo-viewer-share-fallback/zolano-visual-overrides.js"
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "zolano-visual-overrides.js?v=v210-photo-viewer-share-fallback",
+      "url": "patches/v210-photo-viewer-share-fallback/zolano-visual-overrides.js"
     },
     {
       "contentType": "image/jpeg",
       "path": "assets/generated/zolano/ZL3776-showroom-set.jpg",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/ZL3776-showroom-set.jpg"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/ZL3776-showroom-set.jpg"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-1NA.png",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-1NA.png"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/parts/ZL3776-line-1NA.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-1NAT.png",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-1NAT.png"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/parts/ZL3776-line-1NAT.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-ARM.png",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-ARM.png"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/parts/ZL3776-line-ARM.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-CORNER.png",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-CORNER.png"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/parts/ZL3776-line-CORNER.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-STOOL.png",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-STOOL.png"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/parts/ZL3776-line-STOOL.png"
     },
     {
       "contentType": "image/png",
       "path": "assets/generated/zolano/parts/ZL3776-line-TABLE.png",
-      "url": "patches/v209-zl3776-hide-preview-note/assets/generated/zolano/parts/ZL3776-line-TABLE.png"
+      "url": "patches/v210-photo-viewer-share-fallback/assets/generated/zolano/parts/ZL3776-line-TABLE.png"
     }
   ]
 }
