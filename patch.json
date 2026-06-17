@@ -1,186 +1,226 @@
 ﻿{
-    "patchVersionCode":  36,
-    "patchVersionName":  "v190-zolano-extra-buttons",
+    "patchVersionCode":  37,
+    "patchVersionName":  "v191-zolano-chair-buttons",
     "notes":  [
-                  "Zolano front grid adds extra available arm chair/dining chair model buttons: 803, 751, 737, 719, 693, 639.",
-                  "Missing requested buttons 632, 571, 573, 523, 609, 679 are not in the current local data/photos yet.",
-                  "Bed thumbnail and electric-seat fixes remain included."
+                  "Zolano grid now uses 3x3 sliding pages like Nikator and Bed.",
+                  "Adds verified 3-digit Zolano chair/dining chair buttons: 719, 632, 571, 609, 639.",
+                  "Removes the wrong sofa mapping for 803, 751, 737, and 693."
               ],
     "files":  [
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=165-photo-longpress",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=nikator-front-thumbs",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v185-share-select",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v186-share-select-direct",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v187-patch-progress",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v188-bed-slider-electric",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v189-bed-thumb-icons",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v190-zolano-extra-buttons",
-                      "url":  "patches/v190-zolano-extra-buttons/app-version.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v191-zolano-chair-buttons",
+                      "url":  "patches/v191-zolano-chair-buttons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "patches/v190-zolano-extra-buttons/index.html",
+                      "url":  "patches/v191-zolano-chair-buttons/index.html",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=3817-split-fullset",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=nikator-model-thumbs",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=nikator-front-thumbs",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v185-share-select",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v186-share-select-direct",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v187-patch-progress",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v188-bed-slider-electric",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v189-bed-thumb-icons",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v190-zolano-extra-buttons",
-                      "url":  "patches/v190-zolano-extra-buttons/app.js",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v191-zolano-chair-buttons",
+                      "url":  "patches/v191-zolano-chair-buttons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=165-photo-longpress",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=nikator-model-thumbs",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=nikator-front-thumbs",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v185-share-select",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v186-share-select-direct",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v187-patch-progress",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v188-bed-slider-electric",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v189-bed-thumb-icons",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v190-zolano-extra-buttons",
-                      "url":  "patches/v190-zolano-extra-buttons/styles.css",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v191-zolano-chair-buttons",
+                      "url":  "patches/v191-zolano-chair-buttons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v190-zolano-extra-buttons/sw.js",
+                      "url":  "patches/v191-zolano-chair-buttons/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v190-zolano-extra-buttons/photo-viewer.html",
+                      "url":  "patches/v191-zolano-chair-buttons/photo-viewer.html",
                       "contentType":  "text/html; charset=utf-8"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL571.jpg",
+                      "url":  "patches/v191-zolano-chair-buttons/assets/generated/zolano-3digit/ZL571.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL609.jpg",
+                      "url":  "patches/v191-zolano-chair-buttons/assets/generated/zolano-3digit/ZL609.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL632.jpg",
+                      "url":  "patches/v191-zolano-chair-buttons/assets/generated/zolano-3digit/ZL632.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL639.jpg",
+                      "url":  "patches/v191-zolano-chair-buttons/assets/generated/zolano-3digit/ZL639.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL719.jpg",
+                      "url":  "patches/v191-zolano-chair-buttons/assets/generated/zolano-3digit/ZL719.jpg",
+                      "contentType":  "image/jpeg"
                   }
               ]
 }
