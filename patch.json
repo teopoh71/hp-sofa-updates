@@ -1,156 +1,246 @@
 ﻿{
-    "patchVersionCode":  34,
-    "patchVersionName":  "v188-bed-slider-electric",
+    "patchVersionCode":  35,
+    "patchVersionName":  "v189-bed-thumb-icons",
     "notes":  [
-                  "Bed model buttons now display as 3x3 sliding pages like sofa.",
-                  "Bed button photos are cropped in-browser for clearer thumbnails.",
-                  "Nikator sofa recommendation buttons show electric-seat count such as 1电动位."
+                  "Bed model buttons now use proper cropped thumbnail photos so the bed design is visible.",
+                  "Bed model buttons stay 3x3 sliding pages like sofa.",
+                  "Nikator sofa recommendation buttons keep electric-seat count such as 1电动位."
               ],
     "files":  [
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=165-photo-longpress",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=nikator-front-thumbs",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v185-share-select",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v186-share-select-direct",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v187-patch-progress",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v188-bed-slider-electric",
-                      "url":  "patches/v188-bed-slider-electric/app-version.js",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v189-bed-thumb-icons",
+                      "url":  "patches/v189-bed-thumb-icons/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "patches/v188-bed-slider-electric/index.html",
+                      "url":  "patches/v189-bed-thumb-icons/index.html",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=3817-split-fullset",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=nikator-model-thumbs",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=nikator-front-thumbs",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v185-share-select",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v186-share-select-direct",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v187-patch-progress",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v188-bed-slider-electric",
-                      "url":  "patches/v188-bed-slider-electric/app.js",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v189-bed-thumb-icons",
+                      "url":  "patches/v189-bed-thumb-icons/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=165-photo-longpress",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=nikator-model-thumbs",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=nikator-front-thumbs",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=mobile-fixed-v184-nopopup",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v185-share-select",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v186-share-select-direct",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v187-patch-progress",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v188-bed-slider-electric",
-                      "url":  "patches/v188-bed-slider-electric/styles.css",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v189-bed-thumb-icons",
+                      "url":  "patches/v189-bed-thumb-icons/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v188-bed-slider-electric/sw.js",
+                      "url":  "patches/v189-bed-thumb-icons/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v188-bed-slider-electric/photo-viewer.html",
+                      "url":  "patches/v189-bed-thumb-icons/photo-viewer.html",
                       "contentType":  "text/html; charset=utf-8"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4401BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4401BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4402BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4402BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4403BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4403BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4403BE-A.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4403BE-A.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4404BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4404BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4405BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4405BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4406BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4406BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/LE4407BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/LE4407BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/NK4000BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/NK4000BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/NK4001BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/NK4001BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/NK4002BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/NK4002BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/NK4003BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/NK4003BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/NK4005BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/NK4005BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/NK4006BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/NK4006BE.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/bed/NK4007BE.jpg",
+                      "url":  "patches/v189-bed-thumb-icons/assets/quick-thumbs/bed/NK4007BE.jpg",
+                      "contentType":  "image/jpeg"
                   }
               ]
 }
