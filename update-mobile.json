@@ -1,11 +1,11 @@
 {
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "notes": [
-    "Mobile APK v183 includes the latest Nikator front thumbnail files and current catalog patch contents.",
-    "Future Mobile updates should keep package com.nickator.sofabuilder.mobile and increase versionCode."
+    "Mobile APK v252 includes ZL3776 showroom button/module UI in the bundled app shell.",
+    "Includes ZL2628 module click builder and cache refresh fixes."
   ],
-  "versionName": "v183-force-nikator-front-thumbs",
-  "versionCode": 183,
+  "versionName": "v252-apk-refresh",
+  "versionCode": 252,
   "mandatory": false,
-  "apkUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v183-mobile.apk"
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v252-mobile.apk"
 }
