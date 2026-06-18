@@ -1,11 +1,11 @@
 {
-  "versionCode": 252,
-  "versionName": "v252-apk-refresh",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v252-mobile.apk",
+  "versionCode": 253,
+  "versionName": "v253-nikator-8821",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v253-mobile.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Mobile APK v252 includes ZL3776 showroom button/module UI in the bundled app shell.",
-    "Includes ZL2628 module click builder and cache refresh fixes."
+    "Mobile APK v253 adds Nikator LE8821SF with quick button, preview photo, and gallery photos.",
+    "Keeps the bundled app shell refresh from v252 for phones that do not pick up patch UI changes."
   ]
 }
