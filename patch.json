@@ -1,905 +1,930 @@
 ﻿{
-    "patchVersionCode":  81,
-    "patchVersionName":  "v248-showroom-click-select",
+    "patchVersionCode":  82,
+    "patchVersionName":  "v249-force-showroom-ui",
     "notes":  [
-                  "Makes the showroom combination filter actively select and apply the first showroom full set.",
-                  "Keeps ZL2897 and ZL3776 click-to-build module buttons, cancel compression, and L-shape sizing.",
-                  "Includes line drawing thumbnails and sharing fallback from earlier patches."
+                  "Forces a fresh mobile UI refresh for the showroom combination click behavior.",
+                  "Bumps app asset versions and cache clear key so HP phones do not reuse old v248 UI files.",
+                  "Keeps showroom button auto-select, ZL2897/ZL3776 module builder, cancel compression, and L-shape sizing."
               ],
     "files":  [
                   {
                       "path":  "index.html",
-                      "url":  "patches/v248-showroom-click-select/index.html",
+                      "url":  "patches/v249-force-showroom-ui/index.html",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v248-showroom-click-select/photo-viewer.html",
+                      "url":  "patches/v249-force-showroom-ui/photo-viewer.html",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v217-photo-copy-share",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v218-zolano-hard-clean",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v225-show-armchair-models",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v226-zolano-armchair-photos-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v227-zolano-line-cutout-sample-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v228-restore-zolano-preview-line-sample-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v229-zolano-quick-visible-only-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v230-zl2897-fleur-line-pieces-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v231-zl2897-clean-line-extract-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v232-zl2897-correct-line-preview-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v233-zl2897-line-share-fallback-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v217-photo-copy-share",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v218-zolano-hard-clean",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v225-show-armchair-models",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v226-zolano-armchair-photos-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v227-zolano-line-cutout-sample-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v228-restore-zolano-preview-line-sample-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v229-zolano-quick-visible-only-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v230-zl2897-fleur-line-pieces-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v231-zl2897-clean-line-extract-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v232-zl2897-correct-line-preview-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v233-zl2897-line-share-fallback-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v214-zolano-cache-clear",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v215-zolano-armchairs",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v216-zolano-extra-items",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v217-photo-copy-share",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v218-zolano-hard-clean",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v225-show-armchair-models",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v226-zolano-armchair-photos-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v227-zolano-line-cutout-sample-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v228-restore-zolano-preview-line-sample-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v229-zolano-quick-visible-only-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v230-zl2897-fleur-line-pieces-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v231-zl2897-clean-line-extract-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v232-zl2897-correct-line-preview-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v233-zl2897-line-share-fallback-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v217-photo-copy-share",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v218-zolano-hard-clean",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v225-show-armchair-models",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v226-zolano-armchair-photos-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v227-zolano-line-cutout-sample-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v228-restore-zolano-preview-line-sample-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v229-zolano-quick-visible-only-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v230-zl2897-fleur-line-pieces-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v231-zl2897-clean-line-extract-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v232-zl2897-correct-line-preview-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v233-zl2897-line-share-fallback-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "assets/generated/zolano/ZL3776-showroom-set.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/ZL3776-showroom-set.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/ZL3776-showroom-set.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NA.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL3776-line-1NA.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL3776-line-1NA.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NAT.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL3776-line-1NAT.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL3776-line-1NAT.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3776-line-ARM.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL3776-line-ARM.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL3776-line-ARM.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3776-line-CORNER.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL3776-line-CORNER.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL3776-line-CORNER.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3776-line-STOOL.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL3776-line-STOOL.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL3776-line-STOOL.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3776-line-TABLE.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL3776-line-TABLE.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL3776-line-TABLE.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL2897-1EL-top.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL2897-1EL-top.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL2897-1EL-top.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL2897-1NA-top.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL2897-1NA-top.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL2897-1NA-top.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL2897-CNR-top.png",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano/parts/ZL2897-CNR-top.png",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano/parts/ZL2897-CNR-top.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL523.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL523.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL523.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL556.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL556.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL556.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL571.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL571.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL571.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL583.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL583.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL583.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL606.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL606.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL606.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL609.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL609.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL609.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL632.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL632.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL632.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL639.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL639.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL639.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL719.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL719.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL719.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL725.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL725.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL725.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL751.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL751.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL751.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL771.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL771.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL771.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL781.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL781.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL781.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL798.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL798.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL798.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit/ZL803.jpg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit/ZL803.jpg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit/ZL803.jpg",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit-line/ZL523.svg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit-line/ZL523.svg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit-line/ZL523.svg",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit-line/ZL556.svg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit-line/ZL556.svg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit-line/ZL556.svg",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets/generated/zolano-3digit-line/ZL571.svg",
-                      "url":  "patches/v248-showroom-click-select/assets/generated/zolano-3digit-line/ZL571.svg",
+                      "url":  "patches/v249-force-showroom-ui/assets/generated/zolano-3digit-line/ZL571.svg",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "app-version.js?v=v234-zl2897-module-click-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v234-zl2897-module-click-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v234-zl2897-module-click-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v234-zl2897-module-click-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v234-zl2897-module-click-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v235-zl2897-module-visible-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v235-zl2897-module-visible-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v235-zl2897-module-visible-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v235-zl2897-module-visible-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v235-zl2897-module-visible-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v236-zl2897-module-style-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v236-zl2897-module-style-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v236-zl2897-module-style-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v236-zl2897-module-style-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v236-zl2897-module-style-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v237-zl2897-compact-module-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v237-zl2897-compact-module-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v237-zl2897-compact-module-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v237-zl2897-compact-module-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v237-zl2897-compact-module-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v238-zl2897-cancel-correct-piece-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v238-zl2897-cancel-correct-piece-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v238-zl2897-cancel-correct-piece-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v238-zl2897-cancel-correct-piece-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v238-zl2897-cancel-correct-piece-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v239-zl2897-showroom-filter-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v239-zl2897-showroom-filter-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v239-zl2897-showroom-filter-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v239-zl2897-showroom-filter-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v239-zl2897-showroom-filter-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v240-zl2897-cancel-visible-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v240-zl2897-cancel-visible-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v240-zl2897-cancel-visible-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v240-zl2897-cancel-visible-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v240-zl2897-cancel-visible-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v241-zl2897-pillow-lshape-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v241-zl2897-pillow-lshape-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v241-zl2897-pillow-lshape-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v241-zl2897-pillow-lshape-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v241-zl2897-pillow-lshape-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v242-zl2897-piececount-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v242-zl2897-piececount-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v242-zl2897-piececount-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v242-zl2897-piececount-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v242-zl2897-piececount-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v243-zl2897-count-fix-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v243-zl2897-count-fix-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v243-zl2897-count-fix-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v243-zl2897-count-fix-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v243-zl2897-count-fix-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v244-zl2897-cancel-compress-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v244-zl2897-cancel-compress-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v244-zl2897-cancel-compress-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v244-zl2897-cancel-compress-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v244-zl2897-cancel-compress-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v245-zl2897-cancel-clean-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v245-zl2897-cancel-clean-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v245-zl2897-cancel-clean-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v245-zl2897-cancel-clean-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v245-zl2897-cancel-clean-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v246-zl3776-module-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v246-zl3776-module-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v246-zl3776-module-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v246-zl3776-module-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v246-zl3776-module-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v247-zl3776-compact-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v247-zl3776-compact-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v247-zl3776-compact-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v247-zl3776-compact-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v247-zl3776-compact-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v248-showroom-click-select-local",
-                      "url":  "patches/v248-showroom-click-select/app-version.js",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js?v=v248-showroom-click-select-local",
-                      "url":  "patches/v248-showroom-click-select/app.js",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css?v=v248-showroom-click-select-local",
-                      "url":  "patches/v248-showroom-click-select/styles.css",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js?v=v248-showroom-click-select-local",
-                      "url":  "patches/v248-showroom-click-select/zolano-visual-overrides.js",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js?v=v248-showroom-click-select-local",
-                      "url":  "patches/v248-showroom-click-select/sw.js",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v249-force-showroom-ui-local",
+                      "url":  "patches/v249-force-showroom-ui/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v249-force-showroom-ui-local",
+                      "url":  "patches/v249-force-showroom-ui/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v249-force-showroom-ui-local",
+                      "url":  "patches/v249-force-showroom-ui/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "zolano-visual-overrides.js?v=v249-force-showroom-ui-local",
+                      "url":  "patches/v249-force-showroom-ui/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "sw.js?v=v249-force-showroom-ui-local",
+                      "url":  "patches/v249-force-showroom-ui/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   }
               ]
