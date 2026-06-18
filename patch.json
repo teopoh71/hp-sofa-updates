@@ -1,271 +1,416 @@
 ﻿{
-    "patchVersionCode":  58,
-    "patchVersionName":  "v225-show-armchair-models",
+    "patchVersionCode":  61,
+    "patchVersionName":  "v228-restore-zolano-preview-line-sample",
     "notes":  [
-                  "Shows requested Zolano armchair model buttons while keeping unrelated no-photo collage models hidden.",
-                  "Keeps 4.6m filter and corrected ZL3776 showroom full set button.",
-                  "Only ZL-571 currently has a real armchair photo; the rest remain placeholder until photos are added."
+                  "Restores normal Zolano preview photos after the 3-item sample filter issue.",
+                  "Adds armchair photo assets found from Baidu Netdisk for ZL523, ZL556, ZL571, ZL583, ZL606, ZL725, ZL751, ZL771, ZL781, ZL803, and ZL798.",
+                  "Adds 3 line-cutout sample thumbnails for ZL523, ZL556, and ZL571."
               ],
     "files":  [
                   {
-                      "contentType":  "text/html; charset=utf-8",
                       "path":  "index.html",
-                      "url":  "patches/v225-show-armchair-models/index.html"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/index.html",
+                      "contentType":  "text/html; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/html; charset=utf-8",
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v225-show-armchair-models/photo-viewer.html"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/photo-viewer.html",
+                      "contentType":  "text/html; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "sw.js",
-                      "url":  "patches/v225-show-armchair-models/sw.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/sw.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v217-photo-copy-share",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js?v=v218-zolano-hard-clean",
-                      "url":  "patches/v225-show-armchair-models/app-version.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v225-show-armchair-models/app.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v217-photo-copy-share",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js?v=v218-zolano-hard-clean",
-                      "url":  "patches/v225-show-armchair-models/app.js"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v214-zolano-cache-clear",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v215-zolano-armchairs",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v216-zolano-extra-items",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v217-photo-copy-share",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css?v=v218-zolano-hard-clean",
-                      "url":  "patches/v225-show-armchair-models/styles.css"
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app-version.js?v=v208-zl3776-showroom-mixed-price",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v209-zl3776-hide-preview-note",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v210-photo-viewer-share-fallback",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v214-zolano-cache-clear",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v215-zolano-armchairs",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v216-zolano-extra-items",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v217-photo-copy-share",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v218-zolano-hard-clean",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v225-show-armchair-models",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v226-zolano-armchair-photos-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v227-zolano-line-cutout-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js?v=v228-restore-zolano-preview-line-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app-version.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v208-zl3776-showroom-mixed-price",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v209-zl3776-hide-preview-note",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v210-photo-viewer-share-fallback",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v214-zolano-cache-clear",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v215-zolano-armchairs",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v216-zolano-extra-items",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v217-photo-copy-share",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v218-zolano-hard-clean",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v225-show-armchair-models",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v226-zolano-armchair-photos-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v227-zolano-line-cutout-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app.js?v=v228-restore-zolano-preview-line-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/app.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v208-zl3776-showroom-mixed-price",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v209-zl3776-hide-preview-note",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v210-photo-viewer-share-fallback",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v214-zolano-cache-clear",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v215-zolano-armchairs",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v216-zolano-extra-items",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v217-photo-copy-share",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v218-zolano-hard-clean",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v225-show-armchair-models",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v226-zolano-armchair-photos-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v227-zolano-line-cutout-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css?v=v228-restore-zolano-preview-line-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/styles.css",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
                       "path":  "zolano-visual-overrides.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v217-photo-copy-share",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v218-zolano-hard-clean",
-                      "url":  "patches/v225-show-armchair-models/zolano-visual-overrides.js"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
-                      "contentType":  "image/jpeg",
+                      "path":  "zolano-visual-overrides.js?v=v225-show-armchair-models",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "zolano-visual-overrides.js?v=v226-zolano-armchair-photos-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "zolano-visual-overrides.js?v=v227-zolano-line-cutout-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "zolano-visual-overrides.js?v=v228-restore-zolano-preview-line-sample-local",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/zolano-visual-overrides.js",
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
                       "path":  "assets/generated/zolano/ZL3776-showroom-set.jpg",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/ZL3776-showroom-set.jpg"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/ZL3776-showroom-set.jpg",
+                      "contentType":  "image/jpeg"
                   },
                   {
-                      "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NA.png",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/parts/ZL3776-line-1NA.png"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/parts/ZL3776-line-1NA.png",
+                      "contentType":  "image/png"
                   },
                   {
-                      "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
+                      "contentType":  "image/png"
                   },
                   {
-                      "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NAT.png",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/parts/ZL3776-line-1NAT.png"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/parts/ZL3776-line-1NAT.png",
+                      "contentType":  "image/png"
                   },
                   {
-                      "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-ARM.png",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/parts/ZL3776-line-ARM.png"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/parts/ZL3776-line-ARM.png",
+                      "contentType":  "image/png"
                   },
                   {
-                      "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-CORNER.png",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/parts/ZL3776-line-CORNER.png"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/parts/ZL3776-line-CORNER.png",
+                      "contentType":  "image/png"
                   },
                   {
-                      "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-STOOL.png",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/parts/ZL3776-line-STOOL.png"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/parts/ZL3776-line-STOOL.png",
+                      "contentType":  "image/png"
                   },
                   {
-                      "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-TABLE.png",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano/parts/ZL3776-line-TABLE.png"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano/parts/ZL3776-line-TABLE.png",
+                      "contentType":  "image/png"
                   },
                   {
-                      "contentType":  "image/jpeg",
+                      "path":  "assets/generated/zolano-3digit/ZL523.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL523.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL556.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL556.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
                       "path":  "assets/generated/zolano-3digit/ZL571.jpg",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano-3digit/ZL571.jpg"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL571.jpg",
+                      "contentType":  "image/jpeg"
                   },
                   {
-                      "contentType":  "image/jpeg",
+                      "path":  "assets/generated/zolano-3digit/ZL583.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL583.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL606.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL606.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
                       "path":  "assets/generated/zolano-3digit/ZL609.jpg",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano-3digit/ZL609.jpg"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL609.jpg",
+                      "contentType":  "image/jpeg"
                   },
                   {
-                      "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL632.jpg",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano-3digit/ZL632.jpg"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL632.jpg",
+                      "contentType":  "image/jpeg"
                   },
                   {
-                      "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL639.jpg",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano-3digit/ZL639.jpg"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL639.jpg",
+                      "contentType":  "image/jpeg"
                   },
                   {
-                      "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL719.jpg",
-                      "url":  "patches/v225-show-armchair-models/assets/generated/zolano-3digit/ZL719.jpg"
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL719.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL725.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL725.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL751.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL751.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL771.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL771.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL781.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL781.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL798.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL798.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit/ZL803.jpg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit/ZL803.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit-line/ZL523.svg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit-line/ZL523.svg",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit-line/ZL556.svg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit-line/ZL556.svg",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano-3digit-line/ZL571.svg",
+                      "url":  "patches/v228-restore-zolano-preview-line-sample/assets/generated/zolano-3digit-line/ZL571.svg",
+                      "contentType":  "image/svg+xml"
                   }
               ]
 }
