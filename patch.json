@@ -1,305 +1,315 @@
 {
-    "patchVersionCode":  265,
-    "patchVersionName":  "v265-nk0001-le8803-click-modules",
+    "patchVersionCode":  266,
+    "patchVersionName":  "v266-upload-le8817-photo",
     "notes":  [
-                  "Adds click-to-add module format for NK0001SF and LE8803SF.",
-                  "NK0001 shows 7 module buttons and LE8803 shows 16 module buttons.",
-                  "Each module button fills the next empty position or adds a new position."
+                  "Uploads LE8817SF generated photo to the online patch feed.",
+                  "Adds both the base image path and the photo-viewer ?v=2 alias for reliable phone access.",
+                  "Keeps the v265 NK0001 and LE8803 click module behavior."
               ],
     "files":  [
                   {
                       "path":  "index.html",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/index.html",
+                      "url":  "patches/v266-upload-le8817-photo/index.html",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/photo-viewer.html",
+                      "url":  "patches/v266-upload-le8817-photo/photo-viewer.html",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/sw.js",
+                      "url":  "patches/v266-upload-le8817-photo/sw.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app.js",
+                      "url":  "patches/v266-upload-le8817-photo/app.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/styles.css",
+                      "url":  "patches/v266-upload-le8817-photo/styles.css",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "zolano-visual-overrides.js",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/zolano-visual-overrides.js",
+                      "url":  "patches/v266-upload-le8817-photo/zolano-visual-overrides.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v217-photo-copy-share",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v218-zolano-hard-clean",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v225-show-armchair-models",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v226-zolano-armchair-photos-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v227-zolano-line-cutout-sample-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v228-restore-zolano-preview-line-sample-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v229-zolano-quick-visible-only-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v230-zl2897-fleur-line-pieces-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v231-zl2897-clean-line-extract-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v232-zl2897-correct-line-preview-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v233-zl2897-line-share-fallback-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v234-zl2897-module-click-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v235-zl2897-module-visible-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v236-zl2897-module-style-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v237-zl2897-compact-module-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v238-zl2897-cancel-correct-piece-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v239-zl2897-showroom-filter-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v240-zl2897-cancel-visible-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v241-zl2897-pillow-lshape-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v242-zl2897-piececount-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v243-zl2897-count-fix-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v244-zl2897-cancel-compress-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v245-zl2897-cancel-clean-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v246-zl3776-module-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v247-zl3776-compact-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v248-showroom-click-select-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v249-force-showroom-ui-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v184",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v196-search-share-fix-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v197-photo-viewer-share",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v198-zl3776-showroom-set-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v199-zl3776-showroom-note-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v200-zl3776-showroom-table-note-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v201-zl3776-showroom-button-remark-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v202-zl3776-piece-crops-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v205-zl3776-mobile-materials-price-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v221-width-46-filter-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v224-hide-pending-photo-models-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v225-show-armchair-models-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v228-restore-zolano-preview-line-sample",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v250-2628-modules-cache-alias-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v247-zl3776-module-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v251-old-shell-inject-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js?v=v261-preview-text-fix-local",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/app-version.js",
+                      "url":  "patches/v266-upload-le8817-photo/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
+                      "path":  "assets/generated/nikator/LE8817SF.jpg",
+                      "url":  "patches/v266-upload-le8817-photo/assets/generated/nikator/LE8817SF.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/nikator/LE8817SF.jpg?v=2",
+                      "url":  "patches/v266-upload-le8817-photo/assets/generated/nikator/LE8817SF.jpg",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
                       "path":  "assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
+                      "url":  "patches/v266-upload-le8817-photo/assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
                       "contentType":  "image/png"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
-                      "url":  "patches/v265-nk0001-le8803-click-modules/assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
+                      "url":  "patches/v266-upload-le8817-photo/assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
                       "contentType":  "image/png"
                   },
                   {
