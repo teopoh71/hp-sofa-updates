@@ -1,251 +1,271 @@
 {
-    "patchVersionCode":  50,
-    "patchVersionName":  "v217-photo-copy-share",
+    "patchVersionCode":  51,
+    "patchVersionName":  "v218-zolano-hard-clean",
     "notes":  [
-                  "Adds copy-image sharing fallback and blob download in the photo viewer.",
+                  "Hard-cleans old saved Zolano local rows so deleted models disappear on HP/mobile.",
                   "Keeps Zolano first 18 sofa models plus the restored five extra Zolano items.",
-                  "Keeps ZL3776 showroom set, mixed material defaults, hidden preview remark, and line drawings."
+                  "Keeps v217 photo copy sharing fallback."
               ],
     "files":  [
                   {
                       "contentType":  "text/html; charset=utf-8",
                       "path":  "index.html",
-                      "url":  "patches/v217-photo-copy-share/index.html"
+                      "url":  "patches/v218-zolano-hard-clean/index.html"
                   },
                   {
                       "contentType":  "text/html; charset=utf-8",
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v217-photo-copy-share/photo-viewer.html"
+                      "url":  "patches/v218-zolano-hard-clean/photo-viewer.html"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "sw.js",
-                      "url":  "patches/v217-photo-copy-share/sw.js"
+                      "url":  "patches/v218-zolano-hard-clean/sw.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js?v=v217-photo-copy-share",
-                      "url":  "patches/v217-photo-copy-share/app-version.js"
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
+                  },
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app-version.js?v=v218-zolano-hard-clean",
+                      "url":  "patches/v218-zolano-hard-clean/app-version.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js?v=v217-photo-copy-share",
-                      "url":  "patches/v217-photo-copy-share/app.js"
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
+                  },
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app.js?v=v218-zolano-hard-clean",
+                      "url":  "patches/v218-zolano-hard-clean/app.js"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v214-zolano-cache-clear",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v215-zolano-armchairs",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v216-zolano-extra-items",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css?v=v217-photo-copy-share",
-                      "url":  "patches/v217-photo-copy-share/styles.css"
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
+                  },
+                  {
+                      "contentType":  "text/css; charset=utf-8",
+                      "path":  "styles.css?v=v218-zolano-hard-clean",
+                      "url":  "patches/v218-zolano-hard-clean/styles.css"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v208-zl3776-showroom-mixed-price",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v209-zl3776-hide-preview-note",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v210-photo-viewer-share-fallback",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v214-zolano-cache-clear",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v215-zolano-armchairs",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v216-zolano-extra-items",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "zolano-visual-overrides.js?v=v217-photo-copy-share",
-                      "url":  "patches/v217-photo-copy-share/zolano-visual-overrides.js"
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
+                  },
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "zolano-visual-overrides.js?v=v218-zolano-hard-clean",
+                      "url":  "patches/v218-zolano-hard-clean/zolano-visual-overrides.js"
                   },
                   {
                       "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano/ZL3776-showroom-set.jpg",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/ZL3776-showroom-set.jpg"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/ZL3776-showroom-set.jpg"
                   },
                   {
                       "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NA.png",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/parts/ZL3776-line-1NA.png"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/parts/ZL3776-line-1NA.png"
                   },
                   {
                       "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png"
                   },
                   {
                       "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-1NAT.png",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/parts/ZL3776-line-1NAT.png"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/parts/ZL3776-line-1NAT.png"
                   },
                   {
                       "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-ARM.png",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/parts/ZL3776-line-ARM.png"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/parts/ZL3776-line-ARM.png"
                   },
                   {
                       "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-CORNER.png",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/parts/ZL3776-line-CORNER.png"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/parts/ZL3776-line-CORNER.png"
                   },
                   {
                       "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-STOOL.png",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/parts/ZL3776-line-STOOL.png"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/parts/ZL3776-line-STOOL.png"
                   },
                   {
                       "contentType":  "image/png",
                       "path":  "assets/generated/zolano/parts/ZL3776-line-TABLE.png",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano/parts/ZL3776-line-TABLE.png"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano/parts/ZL3776-line-TABLE.png"
                   },
                   {
                       "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL571.jpg",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano-3digit/ZL571.jpg"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano-3digit/ZL571.jpg"
                   },
                   {
                       "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL609.jpg",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano-3digit/ZL609.jpg"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano-3digit/ZL609.jpg"
                   },
                   {
                       "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL632.jpg",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano-3digit/ZL632.jpg"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano-3digit/ZL632.jpg"
                   },
                   {
                       "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL639.jpg",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano-3digit/ZL639.jpg"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano-3digit/ZL639.jpg"
                   },
                   {
                       "contentType":  "image/jpeg",
                       "path":  "assets/generated/zolano-3digit/ZL719.jpg",
-                      "url":  "patches/v217-photo-copy-share/assets/generated/zolano-3digit/ZL719.jpg"
+                      "url":  "patches/v218-zolano-hard-clean/assets/generated/zolano-3digit/ZL719.jpg"
                   }
               ]
 }
