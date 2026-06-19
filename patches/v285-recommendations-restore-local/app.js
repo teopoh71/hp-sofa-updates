@@ -1232,7 +1232,10 @@ function renderVersionBadge() {
     link.href = downloadUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    link.textContent = "\u4e0b\u8f7d\u5b89\u88c5\u5305";
+    const downloadVersionLabel = versionCode ? ` v${versionCode}` : "";
+    link.textContent = `\u4e0b\u8f7d\u5b89\u88c5\u5305${downloadVersionLabel}`;
+    link.title = `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`;
+    link.setAttribute("aria-label", `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`);
     badge.append(link);
   }
 

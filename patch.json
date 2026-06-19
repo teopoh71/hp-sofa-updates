@@ -1,18 +1,18 @@
 {
-    "patchVersionCode":  286,
-    "patchVersionName":  "v286-chinese-combo-label-clean-local",
+    "patchVersionCode":  287,
+    "patchVersionName":  "v287-download-version-label-local",
     "notes":  [
-                  "Fixes mojibake Chinese text in generated recommendation buttons.",
-                  "Adds display-time guard so corrupted combo labels fall back instead of showing mojibake characters.",
-                  "Reuses the existing mobile asset package so reinstall/update downloads stay small and reliable."
+                  "Shows the exact download/install package version on the blue download button.",
+                  "Bumps the patch to v287 so phones can refresh the changed label.",
+                  "Keeps the existing asset package and only updates the lightweight app shell files."
               ],
     "files":  [
                   {
                       "path":  "index.html",
                       "url":  "patches/v285-recommendations-restore-local/index.html",
                       "contentType":  "text/html; charset=utf-8",
-                      "sha256":  "ed2c17add273aeabb33b9dd6bbf1464db09fd73dc797d6a5628d045070a78003",
-                      "size":  26345
+                      "sha256":  "d8ae40bb5009e2cb1a25f11ac639a95a87c47fd2e9c36bc8aaf9a4662940fa2b",
+                      "size":  26330
                   },
                   {
                       "path":  "photo-viewer.html",
@@ -25,22 +25,22 @@
                       "path":  "sw.js",
                       "url":  "patches/v285-recommendations-restore-local/sw.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "cc0fc223298decabfbea867f6a0dbed3fb5d4489a0c0d896a80b6d2d76352379",
-                      "size":  5931
+                      "sha256":  "740522ac2ab5b85cab973bc36520a0289fa98cfdcacd65bed56f234a297b20b2",
+                      "size":  5913
                   },
                   {
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "96fce1033ca9c795f737412d8ecce7364a45ef305817159a6e042da30166ee56",
-                      "size":  505
+                      "sha256":  "1125bc9e13f7fd0c90cb4d93af2ab0e7c8a5925275b69a3d6db67182be432709",
+                      "size":  499
                   },
                   {
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "86cb78a0be61545ec50e5be790766f07ce8b7b8f469dbb0a1acac5d4be9ad3fd",
-                      "size":  195338
+                      "sha256":  "68c031c1472e2c5e1851c84ed07d04083fa3a294f213cffb5c43f67929d092cf",
+                      "size":  195579
                   },
                   {
                       "path":  "styles.css",
