@@ -1919,7 +1919,6 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
   const cache = await caches.open(patchCacheName);
   const manifestBaseUrl = new URL(manifestUrl, window.location.href);
   const files = Array.isArray(patch.files) ? patch.files : [];
-  const fetchedFiles = [];
 
   for (let index = 0; index < files.length; index += 1) {
     const file = files[index];
@@ -1929,25 +1928,24 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
 
     const remoteUrl = new URL(remotePath, manifestBaseUrl).href;
     onProgress?.({ phase: "下载", done: index + 1, total: files.length });
-    const response = await fetchWithTimeout(`${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" }, 12000);
+    const response = await fetchWithTimeout(`${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" }, 30000);
     if (!response.ok) throw new Error(`下载失败 ${localPath}`);
 
     const body = await response.blob();
     const contentType = file.contentType || response.headers.get("content-type") || guessPatchContentType(localPath);
-    fetchedFiles.push({ localPath, body, contentType });
-  }
-
-  for (let index = 0; index < fetchedFiles.length; index += 1) {
-    const file = fetchedFiles[index];
-    onProgress?.({ phase: "安装", done: index + 1, total: fetchedFiles.length });
-    const headers = new Headers({ "content-type": file.contentType || "application/octet-stream" });
-    for (const cacheUrl of getPatchCacheUrls(file.localPath)) {
-      await cache.put(cacheUrl, new Response(file.body, { headers }));
-    }
+    const headers = new Headers({ "content-type": contentType || "application/octet-stream" });
+    onProgress?.({ phase: "安装", done: index + 1, total: files.length });
+    await cacheOnePatchFile(cache, localPath, body, headers);
   }
 
   localStorage.setItem(patchVersionStorageKey, String(patch.patchVersionCode || 0));
   localStorage.setItem(patchNameStorageKey, patch.patchVersionName || "");
+}
+
+async function cacheOnePatchFile(cache, localPath, body, headers) {
+  for (const cacheUrl of getPatchCacheUrls(localPath)) {
+    await cache.put(cacheUrl, new Response(body, { headers }));
+  }
 }
 
 async function fetchWithTimeout(url, options = {}, timeoutMs = 20000) {

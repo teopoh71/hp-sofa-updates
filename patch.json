@@ -1,18 +1,18 @@
 {
-    "patchVersionCode":  289,
-    "patchVersionName":  "v289-patch-update-no-hang",
+    "patchVersionCode":  290,
+    "patchVersionName":  "v290-big-patch-installer-ready",
     "notes":  [
-                  "Small patch only: app.js.",
-                  "Fixes the small-update install flow so it shows clear progress and does not appear stuck.",
-                  "Download button now shows the installed patch version, for example v289."
+                  "Installer prep patch only: app.js.",
+                  "Big patches now install one file at a time instead of loading everything into memory first.",
+                  "After this is installed, large asset patches can be sent more safely."
               ],
     "files":  [
                   {
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "1f729f59c71d977cf5144f0087852819a28162ede984998758dae9dd7ff1bb5c",
-                      "size":  193938
+                      "sha256":  "0294e93de7399e5dc838e7fb565ca5b8b16262fb6aebcc80c7c69cdcf906d3b4",
+                      "size":  193825
                   }
               ]
 }
