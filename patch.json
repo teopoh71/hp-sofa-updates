@@ -1,18 +1,18 @@
 {
-    "patchVersionCode":  288,
-    "patchVersionName":  "v288-download-button-label-only",
+    "patchVersionCode":  289,
+    "patchVersionName":  "v289-patch-update-no-hang",
     "notes":  [
-                  "Small patch only: downloads app.js instead of the whole app file list.",
-                  "Shows the install package version on the blue download button.",
-                  "Use this when the phone did not receive the previous large patch."
+                  "Small patch only: app.js.",
+                  "Fixes the small-update install flow so it shows clear progress and does not appear stuck.",
+                  "Download button now shows the installed patch version, for example v289."
               ],
     "files":  [
                   {
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "68c031c1472e2c5e1851c84ed07d04083fa3a294f213cffb5c43f67929d092cf",
-                      "size":  195579
+                      "sha256":  "1f729f59c71d977cf5144f0087852819a28162ede984998758dae9dd7ff1bb5c",
+                      "size":  193938
                   }
               ]
 }

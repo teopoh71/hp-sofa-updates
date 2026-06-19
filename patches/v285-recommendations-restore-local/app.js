@@ -1232,7 +1232,8 @@ function renderVersionBadge() {
     link.href = downloadUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    const downloadVersionLabel = versionCode ? ` v${versionCode}` : "";
+    const downloadVersionNumber = installedPatchCode || versionCode;
+    const downloadVersionLabel = downloadVersionNumber ? ` v${downloadVersionNumber}` : "";
     link.textContent = `\u4e0b\u8f7d\u5b89\u88c5\u5305${downloadVersionLabel}`;
     link.title = `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`;
     link.setAttribute("aria-label", `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`);
@@ -1871,36 +1872,40 @@ function showPatchBanner(patch, manifestUrl) {
   banner.className = "update-banner patch-banner";
 
   const title = document.createElement("strong");
-  title.textContent = "ÃƒÂ¦Ã…â€œÃ¢â‚¬Â°ÃƒÂ¥Ã‚Â°Ã‚ÂÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°";
+  title.textContent = "有小更新";
 
   const message = document.createElement("span");
-  message.textContent = `${patch.patchVersionName || "ÃƒÂ¨Ã‚Â¡Ã‚Â¥ÃƒÂ¤Ã‚Â¸Ã‚Â"} ÃƒÂ¥Ã‚ÂÃ‚Â¯ÃƒÂ¤Ã‚Â»Ã‚Â¥ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¹ÃƒÂ¨Ã‚Â½Ã‚Â½`;
+  message.textContent = `${patch.patchVersionName || "补丁"} 可以下载`;
 
   const actions = document.createElement("div");
   actions.className = "update-banner-actions";
 
   const laterButton = document.createElement("button");
   laterButton.type = "button";
-  laterButton.textContent = "ÃƒÂ§Ã‚Â¨Ã‚ÂÃƒÂ¥Ã‚ÂÃ…Â½";
+  laterButton.textContent = "稍后";
   laterButton.addEventListener("click", () => banner.remove());
 
   const updateButton = document.createElement("button");
   updateButton.type = "button";
   updateButton.className = "primary-button";
-  updateButton.textContent = "ÃƒÂ¥Ã‚Â°Ã‚ÂÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°";
+  updateButton.textContent = "小更新";
   updateButton.addEventListener("click", async () => {
     updateButton.disabled = true;
-    updateButton.textContent = "ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¹ÃƒÂ¨Ã‚Â½Ã‚Â½ 0/0";
+    updateButton.textContent = "下载 0/0";
     try {
       await applyOnlinePatch(patch, manifestUrl, ({ done, total, phase }) => {
         updateButton.textContent = `${phase} ${done}/${total}`;
       });
-      updateButton.textContent = "ÃƒÂ¥Ã‚Â®Ã…â€™ÃƒÂ¦Ã‹â€ Ã‚Â";
-      window.location.reload();
+      updateButton.textContent = "完成，刷新中";
+      window.setTimeout(() => {
+        const reloadUrl = new URL(window.location.href);
+        reloadUrl.searchParams.set("fresh", String(Date.now()));
+        window.location.replace(reloadUrl.href);
+      }, 250);
     } catch (error) {
       updateButton.disabled = false;
-      updateButton.textContent = "ÃƒÂ©Ã¢â‚¬Â¡Ã‚ÂÃƒÂ¨Ã‚Â¯Ã¢â‚¬Â¢";
-      alert(`ÃƒÂ¥Ã‚Â°Ã‚ÂÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ¥Ã‚Â¤Ã‚Â±ÃƒÂ¨Ã‚Â´Ã‚Â¥ÃƒÂ¯Ã‚Â¼Ã…Â¡${error.message || "ÃƒÂ¨Ã‚Â¯Ã‚Â·ÃƒÂ¦Ã‚Â£Ã¢â€šÂ¬ÃƒÂ¦Ã…Â¸Ã‚Â¥ÃƒÂ§Ã‚Â½Ã¢â‚¬ËœÃƒÂ§Ã‚Â»Ã…â€œ"}`);
+      updateButton.textContent = "重试";
+      alert(`小更新失败：${error.message || "请检查网络"}`);
     }
   });
 
@@ -1910,7 +1915,7 @@ function showPatchBanner(patch, manifestUrl) {
 }
 
 async function applyOnlinePatch(patch, manifestUrl, onProgress) {
-  if (!("caches" in window)) throw new Error("ÃƒÂ¨Ã‚Â¿Ã¢â€žÂ¢ÃƒÂ¤Ã‚Â¸Ã‚ÂªÃƒÂ¨Ã‚Â®Ã‚Â¾ÃƒÂ¥Ã‚Â¤Ã¢â‚¬Â¡ÃƒÂ¤Ã‚Â¸Ã‚ÂÃƒÂ¦Ã¢â‚¬ÂÃ‚Â¯ÃƒÂ¦Ã…â€™Ã‚ÂÃƒÂ¥Ã‚Â°Ã‚ÂÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã‚Â¼Ã¢â‚¬Å“ÃƒÂ¥Ã‚Â­Ã‹Å“");
+  if (!("caches" in window)) throw new Error("这个设备不支持小更新缓存");
   const cache = await caches.open(patchCacheName);
   const manifestBaseUrl = new URL(manifestUrl, window.location.href);
   const files = Array.isArray(patch.files) ? patch.files : [];
@@ -1920,12 +1925,12 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
     const file = files[index];
     const localPath = String(file.path || file.target || "").trim();
     const remotePath = String(file.url || file.source || file.path || "").trim();
-    if (!localPath || !remotePath) throw new Error("ÃƒÂ¨Ã‚Â¡Ã‚Â¥ÃƒÂ¤Ã‚Â¸Ã‚ÂÃƒÂ¦Ã¢â‚¬â€œÃ¢â‚¬Â¡ÃƒÂ¤Ã‚Â»Ã‚Â¶ÃƒÂ¨Ã‚ÂµÃ¢â‚¬Å¾ÃƒÂ¦Ã¢â‚¬â€œÃ¢â€žÂ¢ÃƒÂ¤Ã‚Â¸Ã‚ÂÃƒÂ¥Ã‚Â®Ã…â€™ÃƒÂ¦Ã¢â‚¬Â¢Ã‚Â´");
+    if (!localPath || !remotePath) throw new Error("补丁文件资料不完整");
 
     const remoteUrl = new URL(remotePath, manifestBaseUrl).href;
-    onProgress?.({ phase: "ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¹ÃƒÂ¨Ã‚Â½Ã‚Â½", done: index + 1, total: files.length });
-    const response = await fetchWithTimeout(`${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" }, 20000);
-    if (!response.ok) throw new Error(`ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¹ÃƒÂ¨Ã‚Â½Ã‚Â½ÃƒÂ¥Ã‚Â¤Ã‚Â±ÃƒÂ¨Ã‚Â´Ã‚Â¥ ${localPath}`);
+    onProgress?.({ phase: "下载", done: index + 1, total: files.length });
+    const response = await fetchWithTimeout(`${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" }, 12000);
+    if (!response.ok) throw new Error(`下载失败 ${localPath}`);
 
     const body = await response.blob();
     const contentType = file.contentType || response.headers.get("content-type") || guessPatchContentType(localPath);
@@ -1934,7 +1939,7 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
 
   for (let index = 0; index < fetchedFiles.length; index += 1) {
     const file = fetchedFiles[index];
-    onProgress?.({ phase: "ÃƒÂ¥Ã‚Â®Ã¢â‚¬Â°ÃƒÂ¨Ã‚Â£Ã¢â‚¬Â¦", done: index + 1, total: fetchedFiles.length });
+    onProgress?.({ phase: "安装", done: index + 1, total: fetchedFiles.length });
     const headers = new Headers({ "content-type": file.contentType || "application/octet-stream" });
     for (const cacheUrl of getPatchCacheUrls(file.localPath)) {
       await cache.put(cacheUrl, new Response(file.body, { headers }));
@@ -1951,7 +1956,7 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 20000) {
   try {
     return await fetch(url, { ...options, signal: controller.signal });
   } catch (error) {
-    if (error.name === "AbortError") throw new Error("ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â¹ÃƒÂ¨Ã‚Â½Ã‚Â½ÃƒÂ¨Ã‚Â¶Ã¢â‚¬Â¦ÃƒÂ¦Ã¢â‚¬â€Ã‚Â¶ÃƒÂ¯Ã‚Â¼Ã…â€™ÃƒÂ¨Ã‚Â¯Ã‚Â·ÃƒÂ¦Ã‚Â£Ã¢â€šÂ¬ÃƒÂ¦Ã…Â¸Ã‚Â¥ÃƒÂ§Ã‚Â½Ã¢â‚¬ËœÃƒÂ§Ã‚Â»Ã…â€œ");
+    if (error.name === "AbortError") throw new Error("下载超时，请检查网络");
     throw error;
   } finally {
     window.clearTimeout(timer);
