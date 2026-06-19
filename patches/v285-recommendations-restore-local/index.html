@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HP ????</title>
+    <title>HP 沙发组合</title>
     <meta name="theme-color" content="#146c68">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="assets/app-icon.svg" type="image/svg+xml">
@@ -13,17 +13,17 @@
     <main class="app-shell">
       <section class="top-panel">
         <div>
-          <p class="eyebrow">HP ????</p>
-          <h1>??????</h1>
-          <p class="top-copy">??????????,??????</p>
+          <p class="eyebrow">HP 沙发系统</p>
+          <h1>沙发组合报价</h1>
+          <p class="top-copy">选择型号、材质和组合，显示销售价。</p>
         </div>
-        <button class="icon-button" id="themeToggle" type="button" aria-label="??????" title="??????">
-          <span aria-hidden="true">?</span>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="切换颜色模式" title="切换颜色模式">
+          <span aria-hidden="true">◐</span>
         </button>
       </section>
 
-      <section class="entry-panel is-collapsed" id="entryPanel" aria-label="????">
-        <button class="panel-toggle" id="panelToggle" type="button">??????</button>
+      <section class="entry-panel is-collapsed" id="entryPanel" aria-label="新增沙发">
+        <button class="panel-toggle" id="panelToggle" type="button">手动新增沙发</button>
         <form id="sofaForm" class="sofa-form">
           <label class="photo-picker">
             <input id="photoInput" type="file" accept="image/*">
@@ -34,42 +34,42 @@
 
           <div class="field-stack">
             <label>
-              ????
-              <input id="nameInput" type="text" placeholder="??:L?????" required>
+              沙发名称
+              <input id="nameInput" type="text" placeholder="例如:L形灰色沙发" required>
             </label>
             <label>
-              ??
-              <input id="priceInput" type="number" min="0" step="0.01" placeholder="??:1250" required>
+              价格
+              <input id="priceInput" type="number" min="0" step="0.01" placeholder="例如:1250" required>
             </label>
             <label>
-              ??
-              <textarea id="detailsInput" rows="3" placeholder="???????????"></textarea>
+              资料
+              <textarea id="detailsInput" rows="3" placeholder="尺寸、颜色、材质、备注"></textarea>
             </label>
-            <button class="primary-button" type="submit">????</button>
+            <button class="primary-button" type="submit">保存沙发</button>
           </div>
         </form>
       </section>
 
       <section class="tools-panel">
         <label class="search-box">
-          <span>??</span>
-          <input id="searchInput" type="search" placeholder="???????">
+          <span>搜索</span>
+          <input id="searchInput" type="search" placeholder="搜索型号或备注">
         </label>
         <label>
-          ??
+          品牌
           <select id="brandFilter">
-            <option value="all">??</option>
+            <option value="all">全部</option>
             <option value="LE">LE</option>
             <option value="NK">NK</option>
             <option value="Zolano">Zolano</option>
             <option value="Matching">Matching</option>
-            <option value="Manual">??</option>
+            <option value="Manual">手动</option>
           </select>
         </label>
         <div class="tool-actions">
-          <button id="exportButton" type="button">??</button>
+          <button id="exportButton" type="button">导出</button>
           <label class="import-button">
-            ??
+            导入
             <input id="importInput" type="file" accept="application/json">
           </label>
         </div>
@@ -78,24 +78,24 @@
       <section class="summary-strip" aria-live="polite">
         <div>
           <span id="itemCount">0</span>
-          <small>??</small>
+          <small>项目</small>
         </div>
         <div>
           <span id="totalValue">$0</span>
-          <small>??</small>
+          <small>总值</small>
         </div>
       </section>
 
-      <section class="builder-panel" aria-label="??????">
+      <section class="builder-panel" aria-label="沙发组合报价">
         <div class="section-title">
           <div>
-            <p class="eyebrow">????</p>
-            <h2>10???</h2>
+            <p class="eyebrow">组合报价</p>
+            <h2>10件组合</h2>
           </div>
-          <strong id="setTotal">CN?0</strong>
+          <strong id="setTotal">CN¥0</strong>
         </div>
 
-        <div class="catalog-switch" role="tablist" aria-label="????">
+        <div class="catalog-switch" role="tablist" aria-label="切换目录">
           <button type="button" class="catalog-switch-button" data-brand-switch="nikator">Nikator</button>
           <button type="button" class="catalog-switch-button" data-brand-switch="zolano">Zolano</button>
           <button type="button" class="catalog-switch-button" data-brand-switch="chair">&#20241;&#38386;&#26885; Chair</button>
@@ -105,7 +105,7 @@
           <button type="button" class="catalog-switch-button" data-brand-switch="matching">&#37197;&#22871; Matching</button>
         </div>
 
-        <div class="quick-jump" data-quick-jump-group="nikator" aria-label="Nikator ????" hidden>
+        <div class="quick-jump" data-quick-jump-group="nikator" aria-label="Nikator 常用系列" hidden>
           <span class="quick-jump-label">Nikator</span>
           <button type="button" class="quick-jump-button" data-quick-jump="nikator|NK0003SF">
             <img src="assets/generated/nikator/NK0003SF.jpg" alt="" loading="lazy">
@@ -157,7 +157,7 @@
           </button>
         </div>
 
-        <div class="quick-jump" data-quick-jump-group="zolano" aria-label="Zolano ????" hidden>
+        <div class="quick-jump" data-quick-jump-group="zolano" aria-label="Zolano 常用系列" hidden>
           <span class="quick-jump-label">Zolano</span>
           <button type="button" class="quick-jump-button" data-quick-jump="zolano|ZL 2868 LAOREST">
             <img src="assets/generated/zolano/ZL2868.jpg" alt="" loading="lazy">
@@ -232,8 +232,8 @@
           </button>
         </div>
 
-        <div class="quick-jump" data-quick-jump-group="chair" aria-label="??? Chair ????" hidden>
-          <span class="quick-jump-label">???</span>
+        <div class="quick-jump" data-quick-jump-group="chair" aria-label="休闲椅 Chair 型号图片" hidden>
+          <span class="quick-jump-label">休闲椅</span>
           <button type="button" class="quick-jump-button" data-quick-jump="chair|NK3000LH">
             <img src="assets/generated/chair/NK3000LH.png" alt="" loading="lazy">
             <span>3000</span>
@@ -344,8 +344,8 @@
           </button>
         </div>
 
-        <div class="quick-jump" data-quick-jump-group="bed" aria-label="? Bed ????" hidden>
-          <span class="quick-jump-label">?</span>
+        <div class="quick-jump" data-quick-jump-group="bed" aria-label="床 Bed 型号图片" hidden>
+          <span class="quick-jump-label">床</span>
           <button type="button" class="quick-jump-button" data-quick-jump="bed|NK4000BE">
             <img src="assets/generated/bed/NK4000BE.png" alt="" loading="lazy">
             <span>4000</span>
@@ -460,7 +460,7 @@
         <div id="setPreview" class="set-preview"></div>
       </section>
 
-      <section id="sofaList" class="sofa-list" aria-label="?????"></section>
+      <section id="sofaList" class="sofa-list" aria-label="已保存沙发"></section>
     </main>
 
     <template id="sofaCardTemplate">
@@ -473,8 +473,8 @@
           </div>
           <p></p>
           <div class="card-actions">
-            <button class="edit-button" type="button">??</button>
-            <button class="delete-button" type="button">??</button>
+            <button class="edit-button" type="button">编辑</button>
+            <button class="delete-button" type="button">删除</button>
           </div>
         </div>
       </article>
@@ -494,10 +494,10 @@
     <script src="assets/entry-gallery.js?v=156-patch-engine"></script>
     <script src="assets/sofa-asset-gallery.js?v=2"></script>
     <script src="assets/individual-item-photos.js?v=2628-3817-merge"></script>
-  <script src="app-version.js?v=v287-download-version-label-local"></script>
+  <script src="app-version.js?v=v292-chinese-photo-fix"></script>
     <script src="mixed-material-pricing.js?v=1"></script>
     <script src="zolano-3776-layout.js?v=1"></script>
-  <script src="app.js?v=v287-download-version-label-local"></script>
+  <script src="app.js?v=v292-nikator-photos"></script>
   </body>
 </html>
 
