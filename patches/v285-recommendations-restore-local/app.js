@@ -1961,8 +1961,7 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
 
     const remoteUrl = new URL(remotePath, manifestBaseUrl).href;
     onProgress?.({ phase: "下载", done: index + 1, total: files.length });
-    const response = await fetchWithTimeout(`${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" }, 30000);
-    if (!response.ok) throw new Error(`下载失败 ${localPath}`);
+    const response = await fetchPatchFile(remoteUrl, localPath);
 
     const body = await response.blob();
     const contentType = file.contentType || response.headers.get("content-type") || guessPatchContentType(localPath);
@@ -1973,6 +1972,33 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
 
   localStorage.setItem(patchVersionStorageKey, String(patch.patchVersionCode || 0));
   localStorage.setItem(patchNameStorageKey, patch.patchVersionName || "");
+}
+
+async function fetchPatchFile(remoteUrl, localPath, attempts = 3) {
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const cacheBreaker = `t=${Date.now()}-${attempt}`;
+      const response = await fetchWithTimeout(
+        `${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}${cacheBreaker}`,
+        { cache: "no-store" },
+        30000
+      );
+      if (response.ok) return response;
+      lastError = new Error(`下载失败 ${localPath} (${response.status})`);
+    } catch (error) {
+      lastError = error;
+    }
+
+    if (attempt < attempts) await wait(700 * attempt);
+  }
+
+  throw lastError || new Error(`下载失败 ${localPath}`);
+}
+
+function wait(ms) {
+  return new Promise((resolve) => window.setTimeout(resolve, ms));
 }
 
 async function cacheOnePatchFile(cache, localPath, body, headers) {
