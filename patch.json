@@ -1,1201 +1,1523 @@
 {
-  "patchVersionCode": 277,
-  "patchVersionName": "v277-quick-grid-layout-fix",
+  "patchVersionCode": 278,
+  "patchVersionName": "v278-complete-data-grid-fix",
   "notes": [
-    "Restores the Nikator/Zolano/Bed quick model list to a paged 3x3 grid on mobile and desktop.",
-    "Adds a JavaScript repair path for old direct quick buttons and a CSS fallback before app rebuild.",
-    "Keeps v276 Nikator showroom photo assets and prior Zolano fixes."
+    "Fixes hidden quick groups showing under the active brand by preserving hidden display:none.",
+    "Includes base catalog data scripts in the direct patch page so Nikator/Zolano do not mix or lose models.",
+    "Restores ZL 2911 runtime data with its photo and line-strip assets."
   ],
   "files": [
     {
       "path": "index.html",
-      "url": "patches/v277-quick-grid-layout-fix/index.html",
+      "url": "patches/v278-complete-data-grid-fix/index.html",
       "contentType": "text/html; charset=utf-8",
-      "sha256": "b7cfd508cce5030c268b812f854d5a4ccb47285cbd44a8b1df2c2d1e5661fe9d",
-      "size": 26325
+      "sha256": "107a98417dbde7124528c588182eb2664f9dc9645e1b196ffc663ee75ac6a32d",
+      "size": 26330
     },
     {
       "path": "photo-viewer.html",
-      "url": "patches/v277-quick-grid-layout-fix/photo-viewer.html",
+      "url": "patches/v278-complete-data-grid-fix/photo-viewer.html",
       "contentType": "text/html; charset=utf-8",
       "sha256": "281d09ea122483c994eb2b5b8f140a8294a91c51678aded1c122f607d9c24426",
       "size": 15063
     },
     {
       "path": "sw.js",
-      "url": "patches/v277-quick-grid-layout-fix/sw.js",
+      "url": "patches/v278-complete-data-grid-fix/sw.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "bbc1a40d3305b024084ca314be59e4de5563a29e0fad38113e55fc22c0137144",
-      "size": 5907
+      "sha256": "17e3f68159fb458e906bcd74d53a902d53989070eaa3d1fc55ace9fe302bbefb",
+      "size": 5913
     },
     {
       "path": "app-version.js",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app.js",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "styles.css",
-      "url": "patches/v277-quick-grid-layout-fix/styles.css",
+      "url": "patches/v278-complete-data-grid-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
-      "sha256": "c1972b6021ad2dadcd88cac60f10d8298f9a3b641af35a87e485a5da1e4183f5",
-      "size": 33364
+      "sha256": "0fc036ed018438fefc2dbdcf56a9997b61bef346fff7df735b3f6840e03e4a85",
+      "size": 33560
     },
     {
       "path": "zolano-visual-overrides.js",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-visual-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "051425678d229b29da3e69f47dcb0fa75edaaf14c4990c36a71935e66855f0e5",
       "size": 20656
     },
     {
       "path": "app-version.js?v=v208-zl3776-showroom-mixed-price",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v209-zl3776-hide-preview-note",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v210-photo-viewer-share-fallback",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v214-zolano-cache-clear",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v215-zolano-armchairs",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v216-zolano-extra-items",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v217-photo-copy-share",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v218-zolano-hard-clean",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v225-show-armchair-models",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v226-zolano-armchair-photos-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v227-zolano-line-cutout-sample-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v228-restore-zolano-preview-line-sample-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v229-zolano-quick-visible-only-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v230-zl2897-fleur-line-pieces-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v231-zl2897-clean-line-extract-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v232-zl2897-correct-line-preview-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v233-zl2897-line-share-fallback-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v234-zl2897-module-click-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v235-zl2897-module-visible-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v236-zl2897-module-style-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v237-zl2897-compact-module-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v238-zl2897-cancel-correct-piece-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v239-zl2897-showroom-filter-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v240-zl2897-cancel-visible-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v241-zl2897-pillow-lshape-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v242-zl2897-piececount-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v243-zl2897-count-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v244-zl2897-cancel-compress-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v245-zl2897-cancel-clean-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v246-zl3776-module-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v247-zl3776-compact-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v248-showroom-click-select-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v249-force-showroom-ui-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v184",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v196-search-share-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v197-photo-viewer-share",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v198-zl3776-showroom-set-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v199-zl3776-showroom-note-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v200-zl3776-showroom-table-note-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v201-zl3776-showroom-button-remark-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v202-zl3776-piece-crops-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v205-zl3776-mobile-materials-price-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v221-width-46-filter-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v224-hide-pending-photo-models-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v225-show-armchair-models-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v228-restore-zolano-preview-line-sample",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v250-2628-modules-cache-alias-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v247-zl3776-module-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v251-old-shell-inject-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app-version.js?v=v261-preview-text-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "app.js?v=156-patch-engine",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=82-nk3-c",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v269-appjs-all-cache-alias-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v268-appjs-cache-alias-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v267-chinese-display-repair-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v266-upload-le8817-photo-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v265-nk0001-le8803-click-modules-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v264-generated-combo-title-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v263-dimension-text-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v262-zl2628-line-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v261-preview-text-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v258-no-old-patch-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v257-click-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v248-showroom-click-select-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v229-zolano-quick-visible-only-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v218-zolano-hard-clean-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v205-zl3776-mobile-materials-price-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app.js?v=v197-photo-viewer-share",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "assets/generated/nikator/LE8817SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/LE8817SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/LE8817SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "1372785f10fd0ad9236641153907ab58879bbb7a7ebd1b2978c6dc8d86f08bb8",
       "size": 2823720
     },
     {
       "path": "assets/generated/nikator/LE8817SF.jpg?v=2",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/LE8817SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/LE8817SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "1372785f10fd0ad9236641153907ab58879bbb7a7ebd1b2978c6dc8d86f08bb8",
       "size": 2823720
     },
     {
       "path": "assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
       "contentType": "image/png",
       "sha256": "ae4609588922a458d9cd463c3bb6406d733ad7f1316aefd28c8c66e2368f56e7",
       "size": 4034
     },
     {
       "path": "assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
       "contentType": "image/png",
       "sha256": "bdbd4b6dbf84d8aa509306044917a1ca3ec0fdd3186a405c2930479da15a267b",
       "size": 4188
     },
     {
       "path": "assets/generated/zolano/ZL3776-showroom-set.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3776-showroom-set.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3776-showroom-set.jpg",
       "contentType": "image/jpeg",
       "sha256": "a4a359fce8e26becd763017962f4c1b1a9ebf61b5d765f63746adc08153fefdc",
       "size": 697845
     },
     {
       "path": "assets/generated/zolano/parts/ZL3776-line-1NA.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL3776-line-1NA.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL3776-line-1NA.png",
       "contentType": "image/png",
       "sha256": "e0f21cc0fb6e74671e03c4d98cc6b0d709d3c9fc3ca9ea830f4cbc7c13121dae",
       "size": 4834
     },
     {
       "path": "assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
       "contentType": "image/png",
       "sha256": "931c025f5e98465a74fc87c0653755e6bec1ec110b6b8d72178ac2143e8dfab4",
       "size": 5875
     },
     {
       "path": "assets/generated/zolano/parts/ZL3776-line-1NAT.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL3776-line-1NAT.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL3776-line-1NAT.png",
       "contentType": "image/png",
       "sha256": "0680f4b95d0c316e76a4463dd9cc1371bd0a4c919ce86fea65ddd40615e26ba2",
       "size": 5386
     },
     {
       "path": "assets/generated/zolano/parts/ZL3776-line-ARM.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL3776-line-ARM.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL3776-line-ARM.png",
       "contentType": "image/png",
       "sha256": "23d9e9a6ae3f69985ca60fdf600f82f09364dab019f5958d284e5c391e978d87",
       "size": 5193
     },
     {
       "path": "assets/generated/zolano/parts/ZL3776-line-CORNER.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL3776-line-CORNER.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL3776-line-CORNER.png",
       "contentType": "image/png",
       "sha256": "eb5b2e86818f80a69534a07bd1b706f003b4d1b2dd57fc6efceecb0a38cd4120",
       "size": 5179
     },
     {
       "path": "assets/generated/zolano/parts/ZL3776-line-STOOL.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL3776-line-STOOL.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL3776-line-STOOL.png",
       "contentType": "image/png",
       "sha256": "d2b0a6b280d19916d8be079c3be7b6d63be78771d72815bd10725cf5117741dd",
       "size": 4963
     },
     {
       "path": "assets/generated/zolano/parts/ZL3776-line-TABLE.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL3776-line-TABLE.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL3776-line-TABLE.png",
       "contentType": "image/png",
       "sha256": "40ede9cf17fc0496e76c42708e94910b043047972e36b45383719436b222866e",
       "size": 4827
     },
     {
       "path": "assets/generated/zolano/parts/ZL2897-1EL-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL2897-1EL-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL2897-1EL-top.png",
       "contentType": "image/png",
       "sha256": "f9e95893deb2640bd2d3addac9a3a2b6779d923458c5e8a1302ff8090966c1a7",
       "size": 12117
     },
     {
       "path": "assets/generated/zolano/parts/ZL2897-1NA-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL2897-1NA-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL2897-1NA-top.png",
       "contentType": "image/png",
       "sha256": "cda59f04d71f9ac81b3516a20381f7ca3262bc1a55c5a8b55106d258a118f6c4",
       "size": 10708
     },
     {
       "path": "assets/generated/zolano/parts/ZL2897-CNR-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/ZL2897-CNR-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/ZL2897-CNR-top.png",
       "contentType": "image/png",
       "sha256": "86ba1a3744538dba0ba42b64920759c879f55caf0e50138e8c16dfa4b82fcedb",
       "size": 13191
     },
     {
       "path": "assets/generated/zolano-3digit/ZL523.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL523.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL523.jpg",
       "contentType": "image/jpeg",
       "sha256": "4519eee5b2c5a2ab56803dcf8c0ec2febfa8566ce06ea0bffaabb37c9729c64f",
       "size": 214435
     },
     {
       "path": "assets/generated/zolano-3digit/ZL556.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL556.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL556.jpg",
       "contentType": "image/jpeg",
       "sha256": "9a2c0959676d361508f40e7248117353b33c12cec42f17de932219e8b6838ba5",
       "size": 247160
     },
     {
       "path": "assets/generated/zolano-3digit/ZL571.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL571.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL571.jpg",
       "contentType": "image/jpeg",
       "sha256": "0bca6b5e6ae85aa56c44a1b6d76a29877d4732e8a4c4d9e4c117a11c04f238b1",
       "size": 271740
     },
     {
       "path": "assets/generated/zolano-3digit/ZL583.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL583.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL583.jpg",
       "contentType": "image/jpeg",
       "sha256": "b8bbe8f6bab5d8719e2e9e57047b15430cae39312a8c7a5efb4466291659ac35",
       "size": 235759
     },
     {
       "path": "assets/generated/zolano-3digit/ZL606.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL606.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL606.jpg",
       "contentType": "image/jpeg",
       "sha256": "23fcff51ad297f84029c7a32262bc4bda0b934721f1f195263cb051d37edd9bf",
       "size": 268181
     },
     {
       "path": "assets/generated/zolano-3digit/ZL609.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL609.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL609.jpg",
       "contentType": "image/jpeg",
       "sha256": "cd0c7b0e83738220ef304a5d244444ab0e8516d0758980474d0dbf4f0f2503d3",
       "size": 17781
     },
     {
       "path": "assets/generated/zolano-3digit/ZL632.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL632.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL632.jpg",
       "contentType": "image/jpeg",
       "sha256": "61a409c87b2edd09ba7ce2db99230e6bd906d1ae306b2a7e360d38084f5f0e88",
       "size": 36028
     },
     {
       "path": "assets/generated/zolano-3digit/ZL639.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL639.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL639.jpg",
       "contentType": "image/jpeg",
       "sha256": "2127aeb78087477399d25c58095f0a4381b62878959a7b5b29990dd406821bba",
       "size": 24184
     },
     {
       "path": "assets/generated/zolano-3digit/ZL719.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL719.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL719.jpg",
       "contentType": "image/jpeg",
       "sha256": "6d98ebd9f455a4d091a504796515c1b1d6313136b71942859de4a908b2c161c6",
       "size": 23690
     },
     {
       "path": "assets/generated/zolano-3digit/ZL725.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL725.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL725.jpg",
       "contentType": "image/jpeg",
       "sha256": "7b233fe6d035909e69125d58951ac27a33ae891412e72f1dfc9274034f0310fe",
       "size": 205565
     },
     {
       "path": "assets/generated/zolano-3digit/ZL751.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL751.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL751.jpg",
       "contentType": "image/jpeg",
       "sha256": "6868017e6c3a8a5094b5435bf0ac7228fbeb7eb22f0c8770fc9555993ad61ce1",
       "size": 246016
     },
     {
       "path": "assets/generated/zolano-3digit/ZL771.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL771.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL771.jpg",
       "contentType": "image/jpeg",
       "sha256": "45515413bdaed14b3e7d33adfdb0c7fb15263666b80db1ffaf9a4501b3b570aa",
       "size": 79882
     },
     {
       "path": "assets/generated/zolano-3digit/ZL781.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL781.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL781.jpg",
       "contentType": "image/jpeg",
       "sha256": "c1b16c14fa1552b14fbc06c80a8508bd1e1e6ccc19feb617afdf3477361de93b",
       "size": 95836
     },
     {
       "path": "assets/generated/zolano-3digit/ZL798.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL798.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL798.jpg",
       "contentType": "image/jpeg",
       "sha256": "17969cc9fc7cb3585e50bbfdcd0b945d060fba1a5632ccbb6cf4b5cb58cb2224",
       "size": 138017
     },
     {
       "path": "assets/generated/zolano-3digit/ZL803.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit/ZL803.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit/ZL803.jpg",
       "contentType": "image/jpeg",
       "sha256": "f7f9404740e0bb203d3f5471a7f0a9239186f1338c8fb3f091c65c6c67afbc6b",
       "size": 83641
     },
     {
       "path": "assets/generated/zolano-3digit-line/ZL523.svg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit-line/ZL523.svg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit-line/ZL523.svg",
       "contentType": "image/svg+xml",
       "sha256": "26a91ed9834600f907280eac9f2a4c5b981064a8e17542cd113ae82405f1c846",
       "size": 611
     },
     {
       "path": "assets/generated/zolano-3digit-line/ZL556.svg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit-line/ZL556.svg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit-line/ZL556.svg",
       "contentType": "image/svg+xml",
       "sha256": "38e808e6a1e2ff8d98a7f64668e7ed17dda7e6c88fec8c9e59e9a9fe7292096d",
       "size": 646
     },
     {
       "path": "assets/generated/zolano-3digit-line/ZL571.svg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano-3digit-line/ZL571.svg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano-3digit-line/ZL571.svg",
       "contentType": "image/svg+xml",
       "sha256": "282aa3bdcf92192169eee7086e793c4af7e43c20af5e2cfb473907abf295699b",
       "size": 702
     },
     {
       "path": "app.js?v=v271-zl2628-module-line-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app-version.js?v=v271-zl2628-module-line-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "styles.css?v=v271-zl2628-module-line-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/styles.css",
+      "url": "patches/v278-complete-data-grid-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
-      "sha256": "c1972b6021ad2dadcd88cac60f10d8298f9a3b641af35a87e485a5da1e4183f5",
-      "size": 33364
+      "sha256": "0fc036ed018438fefc2dbdcf56a9997b61bef346fff7df735b3f6840e03e4a85",
+      "size": 33560
     },
     {
       "path": "zolano-visual-overrides.js?v=v271-zl2628-module-line-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-visual-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "051425678d229b29da3e69f47dcb0fa75edaaf14c4990c36a71935e66855f0e5",
       "size": 20656
     },
     {
       "path": "assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
       "contentType": "image/png",
       "sha256": "8b473a63d42fa2ae69111c87c7d2132fc1e6268929eb3d62a8fa29628bb055e9",
       "size": 27943
     },
     {
       "path": "assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
       "contentType": "image/png",
       "sha256": "7e515fee579071937abef79d4d7ee592ccdb2af3ff6096e1de5fdbdd621cfefa",
       "size": 8438
     },
     {
       "path": "assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
       "contentType": "image/png",
       "sha256": "795b6433e5fb0da650de1b12dc872715100e67f630c048a4c8af2199bba9f6eb",
       "size": 5966
     },
     {
       "path": "assets/generated/zolano/ZL3818BURANO.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3818BURANO.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3818BURANO.jpg",
       "contentType": "image/jpeg",
       "sha256": "4699b85d2812d52a24beaa10c0d03cb864beb5be6a2312244d8f69517210b9bc",
       "size": 95715
     },
     {
       "path": "assets/generated/zolano/ZL3819ANCONA.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3819ANCONA.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3819ANCONA.jpg",
       "contentType": "image/jpeg",
       "sha256": "ac0b607499c2b2893e497410e32c49420ccf569f5f565e722f0609acbc39572b",
       "size": 84200
     },
     {
       "path": "zolano-excel-price-overrides.js",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-excel-price-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-excel-price-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "bc48a3406387458a4cecbb35cd7ab7c77c12fac551fedd331f55a9772ba2be1d",
       "size": 26755
     },
     {
       "path": "zolano-excel-price-overrides.js?v=v272-zolano-excel-showroom-price-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-excel-price-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-excel-price-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "bc48a3406387458a4cecbb35cd7ab7c77c12fac551fedd331f55a9772ba2be1d",
       "size": 26755
     },
     {
       "path": "app.js?v=v272-zolano-excel-showroom-price-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app-version.js?v=v272-zolano-excel-showroom-price-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "styles.css?v=v272-zolano-excel-showroom-price-local",
-      "url": "patches/v277-quick-grid-layout-fix/styles.css",
+      "url": "patches/v278-complete-data-grid-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
-      "sha256": "c1972b6021ad2dadcd88cac60f10d8298f9a3b641af35a87e485a5da1e4183f5",
-      "size": 33364
+      "sha256": "0fc036ed018438fefc2dbdcf56a9997b61bef346fff7df735b3f6840e03e4a85",
+      "size": 33560
     },
     {
       "path": "zolano-visual-overrides.js?v=v272-zolano-excel-showroom-price-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-visual-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "051425678d229b29da3e69f47dcb0fa75edaaf14c4990c36a71935e66855f0e5",
       "size": 20656
     },
     {
       "path": "assets/generated/zolano/ZL2897-showroom-set.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL2897-showroom-set.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2897-showroom-set.jpg",
       "contentType": "image/jpeg",
       "sha256": "b6d7743d3854dd1bec94b388712854c016b8e78dabe1e1a1fff2bd299a591b8e",
       "size": 401851
     },
     {
       "path": "app.js?v=v273-patch-asset-complete-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app-version.js?v=v273-patch-asset-complete-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "styles.css?v=v273-patch-asset-complete-local",
-      "url": "patches/v277-quick-grid-layout-fix/styles.css",
+      "url": "patches/v278-complete-data-grid-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
-      "sha256": "c1972b6021ad2dadcd88cac60f10d8298f9a3b641af35a87e485a5da1e4183f5",
-      "size": 33364
+      "sha256": "0fc036ed018438fefc2dbdcf56a9997b61bef346fff7df735b3f6840e03e4a85",
+      "size": 33560
     },
     {
       "path": "zolano-visual-overrides.js?v=v273-patch-asset-complete-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-visual-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "051425678d229b29da3e69f47dcb0fa75edaaf14c4990c36a71935e66855f0e5",
       "size": 20656
     },
     {
       "path": "zolano-excel-price-overrides.js?v=v273-patch-asset-complete-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-excel-price-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-excel-price-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "bc48a3406387458a4cecbb35cd7ab7c77c12fac551fedd331f55a9772ba2be1d",
       "size": 26755
     },
     {
       "path": "assets/photo-overrides.js",
-      "url": "patches/v277-quick-grid-layout-fix/assets/photo-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/assets/photo-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "0c21b59cabc4f60c2670fc392b56fae0bc3d5903c618483ad0c7967b29da6547",
       "size": 18684
     },
     {
       "path": "assets/generated/zolano/ZL3821ROVIGO.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3821ROVIGO.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3821ROVIGO.jpg",
       "contentType": "image/jpeg",
       "sha256": "94646de880fb9801314a6d792f11235f392b43c5505923928811e9eeb3b78333",
       "size": 35997
     },
     {
       "path": "assets/generated/zolano/FG3129BISENZIO.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/FG3129BISENZIO.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/FG3129BISENZIO.jpg",
       "contentType": "image/jpeg",
       "sha256": "4ec527fe150d1b427020b2a3a1ef395250ab862b69b1cfda5a16e10144c6c3f6",
       "size": 32890
     },
     {
       "path": "assets/generated/zolano/ZL3805POTENZA.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3805POTENZA.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3805POTENZA.jpg",
       "contentType": "image/jpeg",
       "sha256": "695e61c83aee7023f37183f63cbd4b6b7b4804fba2817b5b05d28a125d3308d6",
       "size": 33481
     },
     {
       "path": "assets/generated/zolano/ZL3838DURAZZI.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3838DURAZZI.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3838DURAZZI.jpg",
       "contentType": "image/jpeg",
       "sha256": "38c74988a66933c7794e4d23b35d212b3f9baeb8be17d5b78986588c3a6cdc3a",
       "size": 34143
     },
     {
       "path": "assets/generated/zolano/ZL3856MALKAM.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3856MALKAM.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3856MALKAM.jpg",
       "contentType": "image/jpeg",
       "sha256": "6a59fdd58b81394e411132b147b84ecd53ca929f44b0cadbf38bd694d53163fa",
       "size": 33316
     },
     {
       "path": "assets/generated/zolano/ZL3863MARVELLO.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/zolano/ZL3863MARVELLO.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3863MARVELLO.jpg",
       "contentType": "image/jpeg",
       "sha256": "c32683bfb72e50ae1187e67cbf4abb17e1bfd3bf4454ad66a022e9e973af3536",
       "size": 34930
     },
     {
       "path": "app.js?v=v274-zolano-missing-photo-cards-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app-version.js?v=v274-zolano-missing-photo-cards-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "styles.css?v=v274-zolano-missing-photo-cards-local",
-      "url": "patches/v277-quick-grid-layout-fix/styles.css",
+      "url": "patches/v278-complete-data-grid-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
-      "sha256": "c1972b6021ad2dadcd88cac60f10d8298f9a3b641af35a87e485a5da1e4183f5",
-      "size": 33364
+      "sha256": "0fc036ed018438fefc2dbdcf56a9997b61bef346fff7df735b3f6840e03e4a85",
+      "size": 33560
     },
     {
       "path": "zolano-excel-price-overrides.js?v=v274-zolano-missing-photo-cards-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-excel-price-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-excel-price-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "bc48a3406387458a4cecbb35cd7ab7c77c12fac551fedd331f55a9772ba2be1d",
       "size": 26755
     },
     {
       "path": "zolano-visual-overrides.js?v=v274-zolano-missing-photo-cards-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-visual-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "051425678d229b29da3e69f47dcb0fa75edaaf14c4990c36a71935e66855f0e5",
       "size": 20656
     },
     {
       "path": "app.js?v=v275-zolano-price-dedupe-photo-hide-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
       "path": "app-version.js?v=v275-zolano-price-dedupe-photo-hide-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
       "path": "styles.css?v=v275-zolano-price-dedupe-photo-hide-local",
-      "url": "patches/v277-quick-grid-layout-fix/styles.css",
+      "url": "patches/v278-complete-data-grid-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
-      "sha256": "c1972b6021ad2dadcd88cac60f10d8298f9a3b641af35a87e485a5da1e4183f5",
-      "size": 33364
+      "sha256": "0fc036ed018438fefc2dbdcf56a9997b61bef346fff7df735b3f6840e03e4a85",
+      "size": 33560
     },
     {
       "path": "zolano-excel-price-overrides.js?v=v275-zolano-price-dedupe-photo-hide-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-excel-price-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-excel-price-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "bc48a3406387458a4cecbb35cd7ab7c77c12fac551fedd331f55a9772ba2be1d",
       "size": 26755
     },
     {
       "path": "zolano-visual-overrides.js?v=v275-zolano-price-dedupe-photo-hide-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-visual-overrides.js",
+      "url": "patches/v278-complete-data-grid-fix/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "051425678d229b29da3e69f47dcb0fa75edaaf14c4990c36a71935e66855f0e5",
       "size": 20656
     },
     {
       "path": "assets/quick-thumbs/nikator/NK0003SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/NK0003SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/NK0003SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "b60ed308b8db6248b6684bca8a93f1614865ceb5710bd10be4d2a53cfe320b1d",
       "size": 12491
     },
     {
       "path": "assets/generated/nikator/NK0003SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/NK0003SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/NK0003SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "08e1fabd1b8a0ba3f1f96fc99fb2301508b8f56c8a236fbc50bbe6f4cfa46308",
       "size": 1519519
     },
     {
       "path": "assets/quick-thumbs/nikator/NK0042SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/NK0042SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/NK0042SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "78fdd6fa91eb4008521a0048a96cd069541c98a26a74ce15f0785a950d624c32",
       "size": 14029
     },
     {
       "path": "assets/generated/nikator/NK0042SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/NK0042SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/NK0042SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "60769e677ce17fea9bb7287fa663393d3008ff836ef771506593558a553f540b",
       "size": 4780112
     },
     {
       "path": "assets/quick-thumbs/nikator/NK0024SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/NK0024SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/NK0024SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "224ff744d8d168ab7a7d2d0f151b9fec20911d6acfb3e2c52418935039d88a51",
       "size": 13336
     },
     {
       "path": "assets/generated/nikator/NK0024SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/NK0024SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/NK0024SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "a3da686a1b618c03fa91bf155ca15e09407eef2d25bded68fbf0d0a22c784a14",
       "size": 1047228
     },
     {
       "path": "assets/quick-thumbs/nikator/NK0001SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/NK0001SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/NK0001SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "776f1da89641bc6aa1e7e51127f387ce81890002be0a10a0398cc6088d408fb7",
       "size": 12376
     },
     {
       "path": "assets/generated/nikator/NK0001SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/NK0001SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/NK0001SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "f625e8be072e7483867f5c1ec7a59a0baf96c1ad6e038d6be0dccb10d5b2dfe5",
       "size": 1682720
     },
     {
       "path": "assets/quick-thumbs/nikator/NK0011SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/NK0011SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/NK0011SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "0ec3bf1055413604b3dacf64a03dfd21c4dd6eef1501fbc29df0e0a62ab8969b",
       "size": 9830
     },
     {
       "path": "assets/generated/nikator/NK0011SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/NK0011SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/NK0011SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "8a1d7b9d41429050a5b26db2e41ee06508481d80de7733add28c443ce9ba941f",
       "size": 1574862
     },
     {
       "path": "assets/quick-thumbs/nikator/LE8817SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/LE8817SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/LE8817SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "0e115b716fd57601be7919c13e9258851ca9ad3b7fe0696c2b70fa2653511d72",
       "size": 11597
     },
     {
       "path": "assets/quick-thumbs/nikator/LE8803SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/LE8803SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/LE8803SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "2d9827b16561eb26bd8dec493c4b3ee2d5cbde7ec94a6c1a71724ed46bdec299",
       "size": 12705
     },
     {
       "path": "assets/generated/nikator/LE8803SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/LE8803SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/LE8803SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "e2f6fa0b6e72fe962575d0acf9ac01577133d0b4e9fb2ba0243f26d1c83d26ad",
       "size": 3233122
     },
     {
       "path": "assets/quick-thumbs/nikator/LE8807SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/LE8807SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/LE8807SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "947d8cee01f416f2172fa8428e86d139ac178c2f753ec2379546a2fa9cd22d40",
       "size": 79857
     },
     {
       "path": "assets/generated/nikator/LE8807SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/LE8807SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/LE8807SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "a65550e73d34279da056ffbf0bc480a01458553da228e96625a2ba412c6b25ce",
       "size": 5643814
     },
     {
       "path": "assets/quick-thumbs/nikator/LE8815SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/LE8815SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/LE8815SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "2f12f05b986604c33abe8329418bfdc99fd3d0cfd1a4a889f5f28d6a7f860513",
       "size": 10234
     },
     {
       "path": "assets/generated/nikator/LE8815SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/LE8815SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/LE8815SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "ae927c8a3ce3e36adbe4abe7e18601403608ed9c5eff858f6d6c9a9f62ea1aab",
       "size": 2294488
     },
     {
       "path": "assets/quick-thumbs/nikator/LE8821SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/quick-thumbs/nikator/LE8821SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/quick-thumbs/nikator/LE8821SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "5268c7eea084f1227c918ac8e2637623fc338c13b38b84a1469e6aaa4e25212a",
       "size": 20187
     },
     {
       "path": "assets/generated/nikator/LE8821SF.jpg",
-      "url": "patches/v277-quick-grid-layout-fix/assets/generated/nikator/LE8821SF.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/nikator/LE8821SF.jpg",
       "contentType": "image/jpeg",
       "sha256": "63314e0ab00415f93a07ce5b5530b6ee83a47d89a5436832222b4399c86410d6",
       "size": 99568
     },
     {
-      "path": "app.js?v=v277-quick-grid-layout-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app.js",
+      "path": "app.js?v=v278-complete-data-grid-fix-local",
+      "url": "patches/v278-complete-data-grid-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "b7c9e343e76e8dedadc0d85c8bdf08a8c7bdab52a59e236b287ecbf337699210",
       "size": 196956
     },
     {
-      "path": "app-version.js?v=v277-quick-grid-layout-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/app-version.js",
+      "path": "app-version.js?v=v278-complete-data-grid-fix-local",
+      "url": "patches/v278-complete-data-grid-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2c25d5845d59c7c867b17883934ebd239023f0d39e9f29efcb32fee7a1f05f7f",
-      "size": 497
+      "sha256": "e80dbf1a0279ba2f661fdea7ef07d65cd5bb49daf6d51d230dcb0440a8aa3242",
+      "size": 499
     },
     {
-      "path": "styles.css?v=v277-quick-grid-layout-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/styles.css",
+      "path": "styles.css?v=v278-complete-data-grid-fix-local",
+      "url": "patches/v278-complete-data-grid-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
-      "sha256": "c1972b6021ad2dadcd88cac60f10d8298f9a3b641af35a87e485a5da1e4183f5",
-      "size": 33364
+      "sha256": "0fc036ed018438fefc2dbdcf56a9997b61bef346fff7df735b3f6840e03e4a85",
+      "size": 33560
     },
     {
-      "path": "zolano-excel-price-overrides.js?v=v277-quick-grid-layout-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-excel-price-overrides.js",
+      "path": "zolano-excel-price-overrides.js?v=v278-complete-data-grid-fix-local",
+      "url": "patches/v278-complete-data-grid-fix/zolano-excel-price-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "bc48a3406387458a4cecbb35cd7ab7c77c12fac551fedd331f55a9772ba2be1d",
       "size": 26755
     },
     {
-      "path": "zolano-visual-overrides.js?v=v277-quick-grid-layout-fix-local",
-      "url": "patches/v277-quick-grid-layout-fix/zolano-visual-overrides.js",
+      "path": "zolano-visual-overrides.js?v=v278-complete-data-grid-fix-local",
+      "url": "patches/v278-complete-data-grid-fix/zolano-visual-overrides.js",
       "contentType": "text/javascript; charset=utf-8",
       "sha256": "051425678d229b29da3e69f47dcb0fa75edaaf14c4990c36a71935e66855f0e5",
       "size": 20656
+    },
+    {
+      "path": "sofa-data.js?v=125-chinese-materials",
+      "url": "patches/v278-complete-data-grid-fix/sofa-data.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "92a19bc7f488b5c10ea71b2c8c45539616dc1abe27606b36a0228409dae897d5",
+      "size": 442810
+    },
+    {
+      "path": "sofa-recommendations.js?v=125-chinese-materials",
+      "url": "patches/v278-complete-data-grid-fix/sofa-recommendations.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "6083e98f2ae2376fcd323ad367ea0b0c8473c5f46bae51272f1f776e52f34866",
+      "size": 93376
+    },
+    {
+      "path": "zolano-data.js?v=2868-close-arm-fix",
+      "url": "patches/v278-complete-data-grid-fix/zolano-data.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "6ca725d51569c63e60cdd40fddc37a8b044d8a8f1857a78c11e07e32ef36aab2",
+      "size": 1364223
+    },
+    {
+      "path": "zolano-selling-overrides.js?v=2868-selling-price",
+      "url": "patches/v278-complete-data-grid-fix/zolano-selling-overrides.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "104fd0b45b689f8e03f68adc48ac1fb4c24492cb1278df7e65fb568c881df578",
+      "size": 2949
+    },
+    {
+      "path": "chair-data.js?v=2",
+      "url": "patches/v278-complete-data-grid-fix/chair-data.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "34ca476ca1fbaf1da133fb93531068dfe7aba7881e2e55da20a1e6729a7f0670",
+      "size": 19090
+    },
+    {
+      "path": "bed-data.js?v=125-chinese-materials",
+      "url": "patches/v278-complete-data-grid-fix/bed-data.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "3b813c998a1d0e437c276568a465ecd33935885be4ca7ee634c4e41bc08edb2a",
+      "size": 46029
+    },
+    {
+      "path": "matching-data.js?v=147-bed-size-options",
+      "url": "patches/v278-complete-data-grid-fix/matching-data.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "71e797451c75a14e457da8f9595f8331efcd74408e11ca45feb1cb9ee3cab558",
+      "size": 122802
+    },
+    {
+      "path": "assets/photo-overrides.js?v=130-button-photo-swap",
+      "url": "patches/v278-complete-data-grid-fix/assets/photo-overrides.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "0c21b59cabc4f60c2670fc392b56fae0bc3d5903c618483ad0c7967b29da6547",
+      "size": 18684
+    },
+    {
+      "path": "assets/photo-gallery.js?v=135-bed-effect-photos",
+      "url": "patches/v278-complete-data-grid-fix/assets/photo-gallery.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "094b70d14ce3f0b547842b91e04bb1558141d3dddf8d5ea30dc8c54c9dfb1662",
+      "size": 7060
+    },
+    {
+      "path": "assets/entry-gallery.js?v=156-patch-engine",
+      "url": "patches/v278-complete-data-grid-fix/assets/entry-gallery.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "6f3743aae05186c7b6fac9c983efd178514b03dbded4b2ea4c5ab93fdf221d9f",
+      "size": 21721
+    },
+    {
+      "path": "assets/sofa-asset-gallery.js?v=2",
+      "url": "patches/v278-complete-data-grid-fix/assets/sofa-asset-gallery.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "6e64837f40e118ce9d287ba9c4d775fe1438ec7dd82b8e6734817db19193afa6",
+      "size": 47220
+    },
+    {
+      "path": "assets/individual-item-photos.js?v=2628-3817-merge",
+      "url": "patches/v278-complete-data-grid-fix/assets/individual-item-photos.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "e0679bf73fb7ee157390d5bf14b124af49b4ea854fcf5708b739c40395abfe61",
+      "size": 46532
+    },
+    {
+      "path": "mixed-material-pricing.js?v=1",
+      "url": "patches/v278-complete-data-grid-fix/mixed-material-pricing.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "67df1b7fdca2c64bd61d41eb73de0bfdf3f00b78a297dcd5fe3bf570a67da9c1",
+      "size": 1145
+    },
+    {
+      "path": "zolano-3776-layout.js?v=1",
+      "url": "patches/v278-complete-data-grid-fix/zolano-3776-layout.js",
+      "contentType": "text/javascript; charset=utf-8",
+      "sha256": "3ce2a331a7d1deed2c635e9778a8279a48154f0edcbaf304570ea0ef0a20e090",
+      "size": 795
+    },
+    {
+      "path": "manifest.json",
+      "url": "patches/v278-complete-data-grid-fix/manifest.json",
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "0bb3201c03bb6095e21db4fb3b5f746fe987d4e25cdba864ffaab3212c5bea96",
+      "size": 447
+    },
+    {
+      "path": "update.json",
+      "url": "patches/v278-complete-data-grid-fix/update.json",
+      "contentType": "application/json; charset=utf-8",
+      "sha256": "cd286e38e185503ac5d38faf5d1ba472af27ec25b7d98c6a9902455ecf2eca2a",
+      "size": 488
+    },
+    {
+      "path": "assets/app-icon.svg",
+      "url": "patches/v278-complete-data-grid-fix/assets/app-icon.svg",
+      "contentType": "image/svg+xml",
+      "sha256": "a3e667e6e3d443691a9b94ccb37b6adb36df90e24666a9152c6def590d2100fc",
+      "size": 649
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/MONTIERIZL2628-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/MONTIERIZL2628-strip.png",
+      "contentType": "image/png",
+      "sha256": "b5136fdc7457cba86b1fac7cc34e985a3280e06451db83ab15fedbc0632257c2",
+      "size": 475498
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2672VICE-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2672VICE-strip.png",
+      "contentType": "image/png",
+      "sha256": "1efb179dc6bc876f2f04e312cbbfe290455c00909c3e86c9c0e830e069df2e37",
+      "size": 80749
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2707KANDER-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2707KANDER-strip.png",
+      "contentType": "image/png",
+      "sha256": "625f9d3f292051fd7b65a9426b29d56b383dcda5c916cf34958670d44e049cbb",
+      "size": 106559
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2802TARZ-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2802TARZ-strip.png",
+      "contentType": "image/png",
+      "sha256": "0682d1530415ae8850d184f958d735d893fad138931ec71f201cf4463a398646",
+      "size": 117841
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2807-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2807-strip.png",
+      "contentType": "image/png",
+      "sha256": "7c0118cdfe3d5b216adb92ec77ba78296bd378e8275dd7f806852b84d38171c1",
+      "size": 74645
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2831-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2831-strip.png",
+      "contentType": "image/png",
+      "sha256": "8f4b14d8e6c0e0d2e61be1389161ab7d81cb52c3eb92c9a48d21af40fc9dedbd",
+      "size": 81868
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2868LAOREST-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2868LAOREST-strip.png",
+      "contentType": "image/png",
+      "sha256": "ffec51e214e5cda988f7fa6e99bb690f2d7dff88dcca0d8e147efcb89a277a80",
+      "size": 60603
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2897-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2897-strip.png",
+      "contentType": "image/png",
+      "sha256": "3b8f82fd45b98469c7360d1a62bcf910b83fa2eb2f6a52a50ce37b5ab957bd6d",
+      "size": 64347
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL2911-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL2911-strip.png",
+      "contentType": "image/png",
+      "sha256": "45bac377810974fa4e5a6160e38a93165b7f6ca1c34139b2d00db974b1217abb",
+      "size": 175259
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL375342-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL375342-strip.png",
+      "contentType": "image/png",
+      "sha256": "e19aa6105c01e7c47f744485c223808762541dc8784a3bf7da0c4f1a528b7bd6",
+      "size": 84599
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL3776-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL3776-strip.png",
+      "contentType": "image/png",
+      "sha256": "2a2a4d9d06ac908c2e3fc63ebbad4181be034e9c83db54cb4db6a04cc036c20c",
+      "size": 103722
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL3778-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL3778-strip.png",
+      "contentType": "image/png",
+      "sha256": "d94d9d282e1f4a04b8591df9cfa4a0d694ef649e5ad867d687c6a48eb9094d15",
+      "size": 11913
+    },
+    {
+      "path": "assets/generated/zolano/line-strips/ZL3817MELFE-strip.png",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/line-strips/ZL3817MELFE-strip.png",
+      "contentType": "image/png",
+      "sha256": "18cba5eb8ba9ccabd5aba226d905358272d70c270f79ab291e1330cb092b879d",
+      "size": 290200
+    },
+    {
+      "path": "assets/generated/zolano/ZL2911.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2911.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "b1326109664ff0110bd0f068001b566be1fd492ad3d3e15db2d7c57624684168",
+      "size": 271641
+    },
+    {
+      "path": "assets/generated/zolano/ZL2868LAOREST.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2868LAOREST.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "c5289a33f22ea44e1ff4a38b771055f7ee3686a51f501d010ffe39cfa2b36144",
+      "size": 92021
+    },
+    {
+      "path": "assets/generated/zolano/ZL2707KANDER.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2707KANDER.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "bf22bf1adeb49b82bf243bc52a6fa59ddcfe36e6cef946ce038bbe588ac772a5",
+      "size": 110279
+    },
+    {
+      "path": "assets/generated/zolano/ZL2807.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2807.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "79fa51239bfb12d52cc0294c3755d3827599399eb92f0b95a4df66640de71356",
+      "size": 81229
+    },
+    {
+      "path": "assets/generated/zolano/ZL2802TARZ.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2802TARZ.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "f102ef3e756f37d7cc672fed797ab3c9736171ef37ba397ad4bf279801c3ae2f",
+      "size": 101768
+    },
+    {
+      "path": "assets/generated/zolano/ZL3753-4-2.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3753-4-2.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "3d3728e0050a91adb3a7404a18efb35cf5f41a934845852e4b882a5c2b2a63ba",
+      "size": 71313
+    },
+    {
+      "path": "assets/generated/zolano/ZL2672VICE.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2672VICE.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "8bc5405871e1de8bae5b5c9aa2e91b87853145e74527c6a08217d3ebd63f17e7",
+      "size": 109395
+    },
+    {
+      "path": "assets/generated/zolano/ZL2897.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2897.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "e751912daccf8e207bd13265a66a096c6c1745c6c2e1e877d046b135ab5a9290",
+      "size": 85582
+    },
+    {
+      "path": "assets/generated/zolano/ZL2831.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL2831.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "a8cae4bf87371e2ecf17226a82d9c0d1cde8c84d06cd9135c3786cfd09e82202",
+      "size": 88253
+    },
+    {
+      "path": "assets/generated/zolano/ZL3817MELFE.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3817MELFE.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "1398969c6ede7d5f6286f6a07cc8657999431db50437232ba2a01082e7d23af3",
+      "size": 202461
+    },
+    {
+      "path": "assets/generated/zolano/ZL3776.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3776.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "0c1143e96055e4f3c21f6f427e45870ea41e094fccf0b9c3662dc88dbd6a3861",
+      "size": 103366
+    },
+    {
+      "path": "assets/generated/zolano/ZL3803SASSA.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3803SASSA.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "a749224432ec136a59d0127cfa046855c9fc80f16bec129a7b3defc035a3cb91",
+      "size": 79850
+    },
+    {
+      "path": "assets/generated/zolano/ZL3751.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3751.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "809b15454e89067e024757e8480d89271e1cb2cdd3ec61f0d96dc69684053419",
+      "size": 83057
+    },
+    {
+      "path": "assets/generated/zolano/ZL3737.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3737.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "3203812b3875c1f61eda70073864060e2d51f82cb7d268969c3ae1191de7d3e0",
+      "size": 80995
+    },
+    {
+      "path": "assets/generated/zolano/ZL3719.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/generated/zolano/ZL3719.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "16a2df1a957dc0b8fd452c074f50776ab4a601883b75df895e8b85138303d170",
+      "size": 61690
+    },
+    {
+      "path": "assets/zolano/zl-3778.jpg",
+      "url": "patches/v278-complete-data-grid-fix/assets/zolano/zl-3778.jpg",
+      "contentType": "image/jpeg",
+      "sha256": "a26b434baf785a19162245d6fe18e9a78023cecd4903356852a013e2d67d5f2d",
+      "size": 16637
     }
   ]
 }
