@@ -1,715 +1,740 @@
 {
-    "patchVersionCode": 274,
-    "patchVersionName": "v274-zolano-missing-photo-cards",
+    "patchVersionCode": 275,
+    "patchVersionName": "v275-zolano-price-dedupe-photo-hide",
     "notes": [
-        "Adds missing Zolano quick-card image assets for 3821, 3129, 3805, 3838, 3856, and 3863.",
-        "Uses the official Zolano ROVIGO image for ZL 3821 and explicit pending-photo cards for models not yet available in the Zolano media library.",
-        "Updates quick grid and fallback image mapping so phone UI no longer shows blank cards or old sofa placeholders."
+        "Removes duplicate Zolano price rows by keeping only the new Excel showroom selling prices for Excel-managed series.",
+        "Removes old recommended combos for those same Excel-managed series so old calculated prices do not mix with showroom prices.",
+        "Hides Zolano models that still do not have real product photos or confirmed prices: ZL 3792, ZL 3727 FERRANTI, FG 3129, ZL 3805, ZL 3838, ZL 3856, and ZL 3863."
     ],
     "files": [
         {
             "path": "index.html",
-            "url": "patches/v274-zolano-missing-photo-cards/index.html",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/index.html",
             "contentType": "text/html; charset=utf-8"
         },
         {
             "path": "photo-viewer.html",
-            "url": "patches/v274-zolano-missing-photo-cards/photo-viewer.html",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/photo-viewer.html",
             "contentType": "text/html; charset=utf-8"
         },
         {
             "path": "sw.js",
-            "url": "patches/v274-zolano-missing-photo-cards/sw.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/sw.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "styles.css",
-            "url": "patches/v274-zolano-missing-photo-cards/styles.css",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/styles.css",
             "contentType": "text/css; charset=utf-8"
         },
         {
             "path": "zolano-visual-overrides.js",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-visual-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-visual-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v208-zl3776-showroom-mixed-price",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v209-zl3776-hide-preview-note",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v210-photo-viewer-share-fallback",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v214-zolano-cache-clear",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v215-zolano-armchairs",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v216-zolano-extra-items",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v217-photo-copy-share",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v218-zolano-hard-clean",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v225-show-armchair-models",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v226-zolano-armchair-photos-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v227-zolano-line-cutout-sample-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v228-restore-zolano-preview-line-sample-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v229-zolano-quick-visible-only-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v230-zl2897-fleur-line-pieces-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v231-zl2897-clean-line-extract-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v232-zl2897-correct-line-preview-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v233-zl2897-line-share-fallback-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v234-zl2897-module-click-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v235-zl2897-module-visible-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v236-zl2897-module-style-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v237-zl2897-compact-module-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v238-zl2897-cancel-correct-piece-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v239-zl2897-showroom-filter-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v240-zl2897-cancel-visible-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v241-zl2897-pillow-lshape-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v242-zl2897-piececount-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v243-zl2897-count-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v244-zl2897-cancel-compress-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v245-zl2897-cancel-clean-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v246-zl3776-module-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v247-zl3776-compact-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v248-showroom-click-select-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v249-force-showroom-ui-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v184",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v196-search-share-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v197-photo-viewer-share",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v198-zl3776-showroom-set-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v199-zl3776-showroom-note-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v200-zl3776-showroom-table-note-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v201-zl3776-showroom-button-remark-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v202-zl3776-piece-crops-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v205-zl3776-mobile-materials-price-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v221-width-46-filter-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v224-hide-pending-photo-models-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v225-show-armchair-models-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v228-restore-zolano-preview-line-sample",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v250-2628-modules-cache-alias-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v247-zl3776-module-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v251-old-shell-inject-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v261-preview-text-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=156-patch-engine",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=82-nk3-c",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v269-appjs-all-cache-alias-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v268-appjs-cache-alias-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v267-chinese-display-repair-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v266-upload-le8817-photo-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v265-nk0001-le8803-click-modules-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v264-generated-combo-title-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v263-dimension-text-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v262-zl2628-line-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v261-preview-text-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v258-no-old-patch-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v257-click-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v248-showroom-click-select-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v229-zolano-quick-visible-only-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v218-zolano-hard-clean-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v205-zl3776-mobile-materials-price-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v197-photo-viewer-share",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "assets/generated/nikator/LE8817SF.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/nikator/LE8817SF.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/nikator/LE8817SF.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/nikator/LE8817SF.jpg?v=2",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/nikator/LE8817SF.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/nikator/LE8817SF.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/MONTIERIZL2628-2EL-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/ZL3776-showroom-set.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3776-showroom-set.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3776-showroom-set.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/parts/ZL3776-line-1NA.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL3776-line-1NA.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL3776-line-1NA.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL3776-line-1NA-LONG.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL3776-line-1NAT.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL3776-line-1NAT.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL3776-line-1NAT.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL3776-line-ARM.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL3776-line-ARM.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL3776-line-ARM.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL3776-line-CORNER.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL3776-line-CORNER.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL3776-line-CORNER.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL3776-line-STOOL.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL3776-line-STOOL.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL3776-line-STOOL.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL3776-line-TABLE.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL3776-line-TABLE.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL3776-line-TABLE.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL2897-1EL-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL2897-1EL-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL2897-1EL-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL2897-1NA-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL2897-1NA-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL2897-1NA-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/ZL2897-CNR-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/ZL2897-CNR-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/ZL2897-CNR-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL523.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL523.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL523.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL556.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL556.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL556.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL571.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL571.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL571.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL583.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL583.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL583.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL606.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL606.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL606.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL609.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL609.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL609.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL632.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL632.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL632.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL639.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL639.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL639.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL719.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL719.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL719.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL725.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL725.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL725.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL751.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL751.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL751.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL771.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL771.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL771.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL781.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL781.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL781.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL798.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL798.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL798.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit/ZL803.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit/ZL803.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit/ZL803.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano-3digit-line/ZL523.svg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit-line/ZL523.svg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit-line/ZL523.svg",
             "contentType": "image/svg+xml"
         },
         {
             "path": "assets/generated/zolano-3digit-line/ZL556.svg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit-line/ZL556.svg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit-line/ZL556.svg",
             "contentType": "image/svg+xml"
         },
         {
             "path": "assets/generated/zolano-3digit-line/ZL571.svg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano-3digit-line/ZL571.svg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano-3digit-line/ZL571.svg",
             "contentType": "image/svg+xml"
         },
         {
             "path": "app.js?v=v271-zl2628-module-line-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v271-zl2628-module-line-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "styles.css?v=v271-zl2628-module-line-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/styles.css",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/styles.css",
             "contentType": "text/css; charset=utf-8"
         },
         {
             "path": "zolano-visual-overrides.js?v=v271-zl2628-module-line-fix-local",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-visual-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-visual-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png",
             "contentType": "image/png"
         },
         {
             "path": "assets/generated/zolano/ZL3818BURANO.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3818BURANO.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3818BURANO.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/ZL3819ANCONA.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3819ANCONA.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3819ANCONA.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "zolano-excel-price-overrides.js",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-excel-price-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-excel-price-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "zolano-excel-price-overrides.js?v=v272-zolano-excel-showroom-price-local",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-excel-price-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-excel-price-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app.js?v=v272-zolano-excel-showroom-price-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v272-zolano-excel-showroom-price-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "styles.css?v=v272-zolano-excel-showroom-price-local",
-            "url": "patches/v274-zolano-missing-photo-cards/styles.css",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/styles.css",
             "contentType": "text/css; charset=utf-8"
         },
         {
             "path": "zolano-visual-overrides.js?v=v272-zolano-excel-showroom-price-local",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-visual-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-visual-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "assets/generated/zolano/ZL2897-showroom-set.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL2897-showroom-set.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL2897-showroom-set.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "app.js?v=v273-patch-asset-complete-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v273-patch-asset-complete-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "styles.css?v=v273-patch-asset-complete-local",
-            "url": "patches/v274-zolano-missing-photo-cards/styles.css",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/styles.css",
             "contentType": "text/css; charset=utf-8"
         },
         {
             "path": "zolano-visual-overrides.js?v=v273-patch-asset-complete-local",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-visual-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-visual-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "zolano-excel-price-overrides.js?v=v273-patch-asset-complete-local",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-excel-price-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-excel-price-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "assets/photo-overrides.js",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/photo-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/photo-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "assets/generated/zolano/ZL3821ROVIGO.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3821ROVIGO.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3821ROVIGO.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/FG3129BISENZIO.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/FG3129BISENZIO.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/FG3129BISENZIO.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/ZL3805POTENZA.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3805POTENZA.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3805POTENZA.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/ZL3838DURAZZI.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3838DURAZZI.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3838DURAZZI.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/ZL3856MALKAM.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3856MALKAM.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3856MALKAM.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "assets/generated/zolano/ZL3863MARVELLO.jpg",
-            "url": "patches/v274-zolano-missing-photo-cards/assets/generated/zolano/ZL3863MARVELLO.jpg",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/assets/generated/zolano/ZL3863MARVELLO.jpg",
             "contentType": "image/jpeg"
         },
         {
             "path": "app.js?v=v274-zolano-missing-photo-cards-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "app-version.js?v=v274-zolano-missing-photo-cards-local",
-            "url": "patches/v274-zolano-missing-photo-cards/app-version.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "styles.css?v=v274-zolano-missing-photo-cards-local",
-            "url": "patches/v274-zolano-missing-photo-cards/styles.css",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/styles.css",
             "contentType": "text/css; charset=utf-8"
         },
         {
             "path": "zolano-excel-price-overrides.js?v=v274-zolano-missing-photo-cards-local",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-excel-price-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-excel-price-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         },
         {
             "path": "zolano-visual-overrides.js?v=v274-zolano-missing-photo-cards-local",
-            "url": "patches/v274-zolano-missing-photo-cards/zolano-visual-overrides.js",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-visual-overrides.js",
+            "contentType": "text/javascript; charset=utf-8"
+        },
+        {
+            "path": "app.js?v=v275-zolano-price-dedupe-photo-hide-local",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app.js",
+            "contentType": "text/javascript; charset=utf-8"
+        },
+        {
+            "path": "app-version.js?v=v275-zolano-price-dedupe-photo-hide-local",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/app-version.js",
+            "contentType": "text/javascript; charset=utf-8"
+        },
+        {
+            "path": "styles.css?v=v275-zolano-price-dedupe-photo-hide-local",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/styles.css",
+            "contentType": "text/css; charset=utf-8"
+        },
+        {
+            "path": "zolano-excel-price-overrides.js?v=v275-zolano-price-dedupe-photo-hide-local",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-excel-price-overrides.js",
+            "contentType": "text/javascript; charset=utf-8"
+        },
+        {
+            "path": "zolano-visual-overrides.js?v=v275-zolano-price-dedupe-photo-hide-local",
+            "url": "patches/v275-zolano-price-dedupe-photo-hide/zolano-visual-overrides.js",
             "contentType": "text/javascript; charset=utf-8"
         }
     ],
