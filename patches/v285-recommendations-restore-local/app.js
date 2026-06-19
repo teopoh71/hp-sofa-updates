@@ -1,4 +1,4 @@
-const storageKey = "hp-sofa-price-list";
+﻿const storageKey = "hp-sofa-price-list";
 const currentAppVersion = window.HP_SOFA_APP_VERSION || {
   versionCode: 0,
   versionName: "local",
@@ -2465,7 +2465,10 @@ function formatComboButtonLabel(combo) {
   const optionText = getZolanoComboOptionText(combo);
   const priceText = getZolanoRecommendationPriceText(combo);
   const electricText = getComboElectricSeatText(combo);
-  return [name, optionText, pieces ? `${pieces}\u4ef6` : "", electricText, sizeText, priceText].filter(Boolean).join(" ");
+  return cleanComboDisplayText(
+    [name, optionText, pieces ? `${pieces}\u4ef6` : "", electricText, sizeText, priceText].filter(Boolean).join(" "),
+    pieces ? `组合 ${pieces}\u4ef6 ${sizeText}`.trim() : "\u7ec4\u5408"
+  );
 }
 
 function formatComboButtonContent(combo) {
@@ -2493,6 +2496,11 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+function cleanComboDisplayText(value, fallback = "") {
+  const repaired = repairMojibakeText(String(value || "").trim());
+  return sanitizeGeneratedComboText(repaired, fallback);
+}
+
 function getComboElectricSeatText(combo) {
   if (activeCatalogKey !== "nikator" || !combo) return "";
   const count = getComboElectricSeatCount(combo);
@@ -2515,12 +2523,12 @@ function isElectricSeatItem(item) {
 
 function getComboDisplayName(combo) {
   if (activeCatalogKey === "zolano") {
-    const name = String(combo?.name || "").trim();
+    const name = cleanComboDisplayText(combo?.name, "");
     const series = String(combo?.series || seriesSelect?.value || "").trim();
     if (/\u5c55\u5385\u6574\u5957|SHOWROOM\s+FULL\s+SET/i.test(name)) return name;
     if (!name || name === series || /^ZL\s*\d+/i.test(name)) return "";
   }
-  return String(combo?.name || "\u7ec4\u5408").replace(/^\u5e38\u7528/, "");
+  return cleanComboDisplayText(combo?.name, "\u7ec4\u5408").replace(/^\u5e38\u7528/, "");
 }
 
 function getZolanoComboOptionText(combo) {
@@ -3277,12 +3285,12 @@ function getGeneratedSeriesRecommendations() {
   Object.entries(bySeat).forEach(([seat, group]) => {
     if (!group.left || !group.right) return;
     const baseCombos = [
-      [`ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨${seat}ÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚Â`, [group.left, group.right]]
+      [`常用${seat}两人位`, [group.left, group.right]]
     ];
     if (group.center) {
       baseCombos.push(
-        [`ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨${seat}ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â°ÃƒÂ¤Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚Â`, [group.left, group.center, group.right]],
-        [`ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨${seat}ÃƒÂ¥Ã¢â‚¬ÂºÃ¢â‚¬ÂºÃƒÂ¤Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚Â`, [group.left, group.center, group.center, group.right]]
+        [`常用${seat}三人位`, [group.left, group.center, group.right]],
+        [`常用${seat}四人位`, [group.left, group.center, group.center, group.right]]
       );
     }
 
@@ -3295,7 +3303,6 @@ function getGeneratedSeriesRecommendations() {
 
   return generated.filter(Boolean);
 }
-
 function getSingleWholeItemRecommendations(items) {
   return items
     .filter(isSingleWholeSofaItem)
@@ -3311,7 +3318,7 @@ function isSingleWholeSofaItem(item) {
 
 function getSingleWholeItemLabel(item) {
   const seat = String(item?.configuration || "").match(/\d+(?:\.\d+)?P\b/i)?.[0] || "";
-  return `ÃƒÂ¥Ã‚ÂÃ¢â‚¬Â¢ÃƒÂ¤Ã‚Â»Ã‚Â¶${seat}`;
+  return `单件${seat}`;
 }
 
 function isGeneratedZolanoCombo(combo) {
@@ -3545,16 +3552,16 @@ function getLoungeGeneratedRecommendations(items) {
   const centerCode = ["502", "501", "506", "507"].find((code) => byCode.has(code));
 
   const comboSpecs = [
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¨Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚ÂÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["401", "122"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¨Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚ÂÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["121", "402"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¨Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚ÂÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â°ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["401", "502", "122"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¨Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚ÂÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â°ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["121", "502", "402"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¨Ã‚Â´Ã‚ÂµÃƒÂ¥Ã‚Â¦Ã†â€™ÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["405", "122"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¨Ã‚Â´Ã‚ÂµÃƒÂ¥Ã‚Â¦Ã†â€™ÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["121", "406"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¨Ã‚Â´Ã‚ÂµÃƒÂ¥Ã‚Â¦Ã†â€™ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â°ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["405", "502", "122"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¨Ã‚Â´Ã‚ÂµÃƒÂ¥Ã‚Â¦Ã†â€™ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â°ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["121", "502", "406"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚ÂÃ…â€™ÃƒÂ¨Ã‚Â´Ã‚ÂµÃƒÂ¥Ã‚Â¦Ã†â€™ÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â°ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["405", centerCode, "406"] },
-    { label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚ÂÃ…â€™ÃƒÂ¨Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚ÂÃƒÂ¤Ã‚Â¸Ã¢â‚¬Â°ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["401", centerCode, "402"] }
+    { label: "常用左躺位两件", codes: ["401", "122"] },
+    { label: "常用右躺位两件", codes: ["121", "402"] },
+    { label: "常用左躺位三件", codes: ["401", "502", "122"] },
+    { label: "常用右躺位三件", codes: ["121", "502", "402"] },
+    { label: "常用左贵妃两件", codes: ["405", "122"] },
+    { label: "常用右贵妃两件", codes: ["121", "406"] },
+    { label: "常用左贵妃三件", codes: ["405", "502", "122"] },
+    { label: "常用右贵妃三件", codes: ["121", "502", "406"] },
+    { label: "常用双贵妃三件", codes: ["405", centerCode, "406"] },
+    { label: "常用双躺位三件", codes: ["401", centerCode, "402"] }
   ];
 
   if (byCode.has("311") && byCode.has("312")) {
@@ -3573,12 +3580,12 @@ function getLoungeGeneratedRecommendations(items) {
     const config = String(item.configuration || "").toUpperCase();
     if (!code) return;
     if (config.includes("PL")) {
-      comboSpecs.push({ label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¦Ã¢â‚¬Â°Ã‚Â¶ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹ÃƒÂ©Ã¢â‚¬Â¦Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¨Ã‚Â´Ã‚ÂµÃƒÂ¥Ã‚Â¦Ã†â€™ÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: [code, "406"] });
-      comboSpecs.push({ label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¦Ã¢â‚¬Â°Ã‚Â¶ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹ÃƒÂ©Ã¢â‚¬Â¦Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¨Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚ÂÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: [code, "402"] });
+      comboSpecs.push({ label: "常用左扶手配右贵妃两件", codes: [code, "406"] });
+      comboSpecs.push({ label: "常用左扶手配右躺位两件", codes: [code, "402"] });
     }
     if (config.includes("PR")) {
-      comboSpecs.push({ label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¨Ã‚Â´Ã‚ÂµÃƒÂ¥Ã‚Â¦Ã†â€™ÃƒÂ©Ã¢â‚¬Â¦Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¦Ã¢â‚¬Â°Ã‚Â¶ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹ÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["405", code] });
-      comboSpecs.push({ label: "ÃƒÂ¥Ã‚Â¸Ã‚Â¸ÃƒÂ§Ã¢â‚¬ÂÃ‚Â¨ÃƒÂ¥Ã‚Â·Ã‚Â¦ÃƒÂ¨Ã‚ÂºÃ‚ÂºÃƒÂ¤Ã‚Â½Ã‚ÂÃƒÂ©Ã¢â‚¬Â¦Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â³ÃƒÂ¦Ã¢â‚¬Â°Ã‚Â¶ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹ÃƒÂ¤Ã‚Â¸Ã‚Â¤ÃƒÂ¤Ã‚Â»Ã‚Â¶", codes: ["401", code] });
+      comboSpecs.push({ label: "常用左贵妃配右扶手两件", codes: ["405", code] });
+      comboSpecs.push({ label: "常用左躺位配右扶手两件", codes: ["401", code] });
     }
   });
 
@@ -3592,7 +3599,6 @@ function getLoungeGeneratedRecommendations(items) {
     })
     .filter(Boolean);
 }
-
 function getLeAddOnSets(items) {
   const byCode = new Map();
   items.forEach((item) => {
@@ -4835,6 +4841,7 @@ function getRetailPrice(basePrice, materialFactor = 1, priceFactor = 1) {
   const retailPrice = Number(basePrice || 0) * materialFactor * priceFactor * sellingPriceMultiplier;
   return Math.round(retailPrice / 100) * 100;
 }
+
 
 
 
