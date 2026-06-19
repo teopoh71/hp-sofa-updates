@@ -1,11 +1,11 @@
 {
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "notes": [
-    "Mobile APK v253 adds Nikator LE8821SF with quick button, preview photo, and gallery photos.",
-    "Keeps the bundled app shell refresh from v252 for phones that do not pick up patch UI changes."
+    "Public download link for phones that cannot reach the local 10.x installer address.",
+    "Use the small patch first when available; this APK link is the fallback install package."
   ],
-  "versionName": "v253-nikator-8821",
-  "versionCode": 253,
+  "versionName": "v295-public-download-link",
+  "versionCode": 295,
   "mandatory": false,
   "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v253-mobile.apk"
 }

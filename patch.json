@@ -1,8 +1,8 @@
 {
-  "patchVersionCode": 294,
-  "patchVersionName": "v294-full-photos-retry",
+  "patchVersionCode": 295,
+  "patchVersionName": "v295-public-download-link",
   "minVersionCode": 0,
-  "createdAt": "2026-06-19T12:23:24.374Z",
+  "createdAt": "2026-06-19T12:27:43.239Z",
   "files": [
     {
       "path": "app.js",
@@ -15,8 +15,8 @@
       "path": "app-version.js",
       "url": "patches/v285-recommendations-restore-local/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "sha256": "2b21e17390622f75b8ce3d8b510eac91e2db5894fde370a78dd5f79f9328a481",
-      "size": 450
+      "sha256": "d618f851788d135003ea162af793fb9f4e7908c113bdc4b0feda17968737ed01",
+      "size": 469
     },
     {
       "path": "assets/gallery/NK0053SF/01.jpg",
@@ -6070,8 +6070,8 @@
       "path": "index.html",
       "url": "patches/v285-recommendations-restore-local/index.html",
       "contentType": "text/html; charset=utf-8",
-      "sha256": "ba3b9f7b82691d4d8cd4286bfd3775359804d7cf5dc8939932608beee88506fe",
-      "size": 26100
+      "sha256": "51c19275af8be441ca236632001dfcaa7ec2c543802dab06afa36f28987ad3bc",
+      "size": 26106
     }
   ]
 }
