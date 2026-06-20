@@ -1,13 +1,15 @@
 {
-    "patchVersionCode":  304,
-    "patchVersionName":  "v304-public-viewer-share-link",
+    "patchVersionCode":  901,
+    "patchVersionName":  "v901-armchair-price-and-patch-recovery",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T02:54:11.0385654Z",
-    "files":  {
-                  "path":  "photo-viewer.html",
-                  "url":  "patches/v304-public-viewer-share-link/photo-viewer.html",
-                  "contentType":  "text/html; charset=utf-8",
-                  "sha256":  "e4f6a9389d350d20832361d15afa4c2aa3840a3fbfb496dc01748b72fae0c9d9",
-                  "size":  21589
-              }
+    "createdAt":  "2026-06-20T03:41:19.9402166Z",
+    "files":  [
+                  {
+                      "path":  "app.js",
+                      "url":  "patches/v901-armchair-price-and-patch-recovery/app.js",
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "sha256":  "e283f58999ccbb86d8e7bf74efabe68522e65782818618d14eeddfbd09fea232",
+                      "size":  196190
+                  }
+              ]
 }
