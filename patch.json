@@ -1,13 +1,13 @@
 {
-    "patchVersionCode":  299,
-    "patchVersionName":  "v299-huawei-download-first",
+    "patchVersionCode":  300,
+    "patchVersionName":  "v300-patch-recovery-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T02:16:30.4386023Z",
+    "createdAt":  "2026-06-20T02:24:42.0569392Z",
     "files":  {
-                  "path":  "photo-viewer.html",
-                  "url":  "patches/v299-huawei-download-first/photo-viewer.html",
-                  "contentType":  "text/html; charset=utf-8",
-                  "sha256":  "772a83477da4905f65dd9cb8cfc71ed4523c07bdf89956eab9f1d370ad4585ea",
-                  "size":  18803
+                  "path":  "app.js",
+                  "url":  "patches/v300-patch-recovery-fix/app.js",
+                  "contentType":  "text/javascript; charset=utf-8",
+                  "sha256":  "3c956574612763e8254fdf1aa1418d4923668e17d6609ff30840b85259ab3997",
+                  "size":  193465
               }
 }
