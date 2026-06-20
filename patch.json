@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  911,
-    "patchVersionName":  "v911-default-priced-series-fallback",
+    "patchVersionCode":  912,
+    "patchVersionName":  "v912-default-priced-selection",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T07:49:17.1751600Z",
+    "createdAt":  "2026-06-20T08:00:00.0000000Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v911-default-priced-series-fallback/app.js",
-                      "sha256":  "165dd30703f0b6e21f7dd40c1c420e25c98e2fa420fc55de08e944af2dcfe48b",
-                      "size":  198826
+                      "url":  "patches/v912-default-priced-selection/app.js",
+                      "sha256":  "E7DD11F7813F041B8541700DCA94CA1CA9CAA12C42835A016C95DDEB9730ECF7",
+                      "size":  194889
                   }
               ]
 }
