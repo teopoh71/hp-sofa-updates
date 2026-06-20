@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  905,
-    "patchVersionName":  "v905-zl787-armchair-price",
+    "patchVersionCode":  906,
+    "patchVersionName":  "v906-armchair-material-trim",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T05:41:33.6495579Z",
+    "createdAt":  "2026-06-20T06:19:17.8622154Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v905-zl787-armchair-price/app.js",
+                      "url":  "patches/v906-armchair-material-trim/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "c58a0fd337ae88f6447e1198755ab80fe26c404bc198c1a91ad50143c48ee4cf",
-                      "size":  197540
+                      "sha256":  "0c65cc4ccf839eb4fb618949fa5701cdefbd4c809dd81c7ac6e7785406b60d22",
+                      "size":  197529
                   }
               ]
 }
