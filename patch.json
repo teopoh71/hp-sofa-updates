@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  912,
-    "patchVersionName":  "v912-default-priced-selection",
+    "patchVersionCode":  913,
+    "patchVersionName":  "v913-zl556-arc2-price-fix",
     "minVersionCode":  0,
     "createdAt":  "2026-06-20T08:00:00.0000000Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v912-default-priced-selection/app.js",
-                      "sha256":  "E7DD11F7813F041B8541700DCA94CA1CA9CAA12C42835A016C95DDEB9730ECF7",
-                      "size":  194889
+                      "url":  "patches/v913-zl556-arc2-price-fix/app.js",
+                      "sha256":  "55EAA67A4762D69CC9A776076E83C376485FBBDC3BCC4D91A4289BA23285E23F",
+                      "size":  194919
                   }
               ]
 }
