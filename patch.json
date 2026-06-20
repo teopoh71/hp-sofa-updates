@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  914,
-    "patchVersionName":  "v914-zl556-arc2-selling-price-fix",
+    "patchVersionCode":  915,
+    "patchVersionName":  "v915-update-check-button-armchair-price",
     "minVersionCode":  0,
     "createdAt":  "2026-06-20T08:00:00.0000000Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v914-zl556-arc2-selling-price-fix/app.js",
-                      "sha256":  "8E849D8D3C7742037FD6F57F65E6407BE5E68D28B37606D4E800C0E1F353C6DA",
-                      "size":  195049
+                      "url":  "patches/v915-update-check-button-armchair-price/app.js",
+                      "sha256":  "7EA1206B10AF61ED5EFB3B03EF9B0D6DD6B5C92A924909D4A6A047B2D1F4EE2E",
+                      "size":  199673
                   }
               ]
 }
