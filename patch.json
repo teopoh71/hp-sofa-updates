@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  910,
-    "patchVersionName":  "v910-zolano-auto-select-first-slot",
+    "patchVersionCode":  911,
+    "patchVersionName":  "v911-default-priced-series-fallback",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T07:30:08.7712109Z",
+    "createdAt":  "2026-06-20T07:49:17.1751600Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v910-zolano-auto-select-first-slot/app.js",
-                      "sha256":  "ed028209b838034808025f4413948e39aa61a16269fc80730e36f723ca95bde2",
-                      "size":  198321
+                      "url":  "patches/v911-default-priced-series-fallback/app.js",
+                      "sha256":  "165dd30703f0b6e21f7dd40c1c420e25c98e2fa420fc55de08e944af2dcfe48b",
+                      "size":  198826
                   }
               ]
 }
