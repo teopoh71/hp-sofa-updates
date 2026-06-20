@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  915,
-    "patchVersionName":  "v915-update-check-button-armchair-price",
+    "patchVersionCode":  916,
+    "patchVersionName":  "v916-missing-price-label-fix",
     "minVersionCode":  0,
     "createdAt":  "2026-06-20T08:00:00.0000000Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v915-update-check-button-armchair-price/app.js",
-                      "sha256":  "7EA1206B10AF61ED5EFB3B03EF9B0D6DD6B5C92A924909D4A6A047B2D1F4EE2E",
-                      "size":  199673
+                      "url":  "patches/v916-missing-price-label-fix/app.js",
+                      "sha256":  "EE23B61E7248BFFBA0340F4680F484E91B2858855DECEC446D59059BA7E6117F",
+                      "size":  199912
                   }
               ]
 }
