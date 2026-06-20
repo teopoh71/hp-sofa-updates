@@ -1,19 +1,26 @@
 {
-    "patchVersionCode":  301,
-    "patchVersionName":  "v301-check-update-button",
+    "patchVersionCode":  900,
+    "patchVersionName":  "v900-force-patch-recovery",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T02:28:10.1129258Z",
+    "createdAt":  "2026-06-20T02:35:30.0883420Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v301-check-update-button/app.js",
+                      "url":  "patches/v900-force-patch-recovery/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
                       "sha256":  "d9d6fb7a4f38aaad2abd251420a141911c604371ff97debf67f5c6069f489261",
                       "size":  194440
                   },
                   {
+                      "path":  "photo-viewer.html",
+                      "url":  "patches/v900-force-patch-recovery/photo-viewer.html",
+                      "contentType":  "text/html; charset=utf-8",
+                      "sha256":  "772a83477da4905f65dd9cb8cfc71ed4523c07bdf89956eab9f1d370ad4585ea",
+                      "size":  18803
+                  },
+                  {
                       "path":  "styles.css",
-                      "url":  "patches/v301-check-update-button/styles.css",
+                      "url":  "patches/v900-force-patch-recovery/styles.css",
                       "contentType":  "text/css; charset=utf-8",
                       "sha256":  "1506d41d62cdc31e7f20871a30c5d79db6bb447a92ddc49df0f8cc5868aea9f3",
                       "size":  33874
