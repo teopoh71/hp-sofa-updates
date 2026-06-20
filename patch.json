@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  903,
-    "patchVersionName":  "v903-default-single-chair-prefill",
+    "patchVersionCode":  904,
+    "patchVersionName":  "v904-zl3818-click-and-default-prefill",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T05:01:39.0421643Z",
+    "createdAt":  "2026-06-20T05:04:34.3326254Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v903-default-single-chair-prefill/app.js",
+                      "url":  "patches/v904-zl3818-click-and-default-prefill/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "468000e155c7e3d28a5b822a67de6dbede5fb34b06b812e8a39809cf4c156e04",
-                      "size":  196479
+                      "sha256":  "65f281a4def0f7f7ba800831491cc4297426d1d91f6b9fda97d26996cbef977f",
+                      "size":  197086
                   }
               ]
 }
