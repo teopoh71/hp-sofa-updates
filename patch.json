@@ -1,13 +1,13 @@
 {
-    "patchVersionCode":  302,
-    "patchVersionName":  "v302-stop-repeat-patch-popup",
+    "patchVersionCode":  303,
+    "patchVersionName":  "v303-share-workaround-system-open",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T02:40:13.6127816Z",
+    "createdAt":  "2026-06-20T02:42:35.8487616Z",
     "files":  {
-                  "path":  "app.js",
-                  "url":  "patches/v302-stop-repeat-patch-popup/app.js",
-                  "contentType":  "text/javascript; charset=utf-8",
-                  "sha256":  "487060b6e32b39c11ca5fd84dc7484d9a2a8d95667449228009ac9b52a9de3b6",
-                  "size":  195264
+                  "path":  "photo-viewer.html",
+                  "url":  "patches/v303-share-workaround-system-open/photo-viewer.html",
+                  "contentType":  "text/html; charset=utf-8",
+                  "sha256":  "95d2923df06c8d6b46df94d66ff57b3b3ce4ef03599481a05fcaec0a7f13debf",
+                  "size":  19727
               }
 }
