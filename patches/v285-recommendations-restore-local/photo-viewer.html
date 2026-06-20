@@ -194,7 +194,10 @@
         preparedItems = await Promise.all(targets.map((target, index) => prepareImageItem(target, index)));
         const images = getImageElements();
         preparedItems.forEach((item, index) => {
-          if (item.displayUrl && images[index]) images[index].src = item.displayUrl;
+          if (images[index]) {
+            item.imageElement = images[index];
+            if (item.displayUrl) images[index].src = item.displayUrl;
+          }
         });
         if (preparedItems.some((item) => item.blob)) {
           showStatus("图片已准备好，可长按保存或发送/分享");
@@ -327,6 +330,10 @@
 
       async function fetchShareFile(item) {
         if (item?.blob) return new File([item.blob], item.filename || "photo.jpg", { type: item.type || item.blob.type || "image/jpeg" });
+        if (item?.imageElement) {
+          const blob = await imageElementToPngBlob(item.imageElement);
+          if (blob) return new File([blob], item.filename || "photo.png", { type: blob.type || "image/png" });
+        }
         if (!item?.originalUrl) return null;
         const response = await fetch(item.originalUrl, { cache: "no-store" });
         if (!response.ok) return null;
@@ -338,7 +345,7 @@
       async function copyImageToClipboard(item) {
         try {
           if (!navigator.clipboard || typeof ClipboardItem === "undefined") return false;
-          const blob = await imageToPngBlob(item?.displayUrl || item?.originalUrl || "");
+          const blob = await imageToPngBlob(item?.imageElement || item?.displayUrl || item?.originalUrl || "");
           if (!blob) return false;
           await navigator.clipboard.write([
             new ClipboardItem({ [blob.type || "image/png"]: blob })
@@ -351,6 +358,9 @@
 
       async function imageToPngBlob(target) {
         try {
+          if (target instanceof HTMLImageElement) {
+            return await imageElementToPngBlob(target);
+          }
           const image = await loadImage(target);
           const canvas = document.createElement("canvas");
           canvas.width = image.naturalWidth || image.width;
@@ -366,6 +376,18 @@
         }
       }
 
+      async function imageElementToPngBlob(imageElement) {
+        if (!imageElement?.complete || !imageElement.naturalWidth || !imageElement.naturalHeight) {
+          throw new Error("Image is not ready");
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = imageElement.naturalWidth;
+        canvas.height = imageElement.naturalHeight;
+        const context = canvas.getContext("2d");
+        context.drawImage(imageElement, 0, 0);
+        return await new Promise((resolve) => canvas.toBlob(resolve, "image/png", 0.92));
+      }
+
       function loadImage(target) {
         return new Promise((resolve, reject) => {
           const image = new Image();
@@ -378,7 +400,9 @@
 
       async function downloadImage(item, index) {
         try {
-          const blob = item.blob || await (await fetch(item.originalUrl, { cache: "no-store" })).blob();
+          const blob = item.blob
+            || (item.imageElement ? await imageElementToPngBlob(item.imageElement) : null)
+            || await (await fetch(item.originalUrl, { cache: "no-store" })).blob();
           const url = URL.createObjectURL(blob);
           triggerDownload(url, item.filename || filenameFromUrl(item.originalUrl, index));
           window.setTimeout(() => URL.revokeObjectURL(url), 3000);

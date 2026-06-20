@@ -24,13 +24,6 @@ const showroomNikatorQuickOrder = [
 const missingNikatorQuickPhotoSeries = new Set([
   "LE8820SF"
 ]);
-const missingNikatorGeneratedPhotoSeries = new Set([
-  "NK0025SF",
-  "NK0035SF"
-]);
-const nikatorQuickPhotoOverrides = new Map([
-  ["NK0053SF", "assets/gallery/NK0053SF/01.jpg?v=v292-nikator-correct-photo"]
-]);
 const showroomZolanoQuickOrder = [
   "ZL 2868 LAOREST",
   "ZL 2707 KANDER",
@@ -579,7 +572,7 @@ const zolano2897Modules = [
   {
     id: "ZL2897PILLOWEXPORT2020ZL28002700502",
     label: "PILLOW",
-    meta: "抱枕",
+    meta: "ÃƒÂ¦Ã…Â Ã‚Â±ÃƒÂ¦Ã…Â¾Ã¢â‚¬Â¢",
     photo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 64'%3E%3Crect x='18' y='14' width='60' height='36' rx='10' fill='%23fff' stroke='%23111' stroke-width='4'/%3E%3Cpath d='M24 22c8 6 8 20 0 24M72 22c-8 6-8 20 0 24' fill='none' stroke='%23111' stroke-width='3'/%3E%3C/svg%3E"
   }
 ];
@@ -587,7 +580,7 @@ const zolano3776Modules = [
   {
     id: "ZL3776-ARM",
     label: "ARM",
-    meta: "扶手",
+    meta: "ÃƒÂ¦Ã¢â‚¬Â°Ã‚Â¶ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Â¹",
     photo: "assets/generated/zolano/parts/ZL3776-line-ARM.png"
   },
   {
@@ -617,7 +610,7 @@ const zolano3776Modules = [
   {
     id: "ZL3776-TABLE",
     label: "TABLE",
-    meta: "茶几",
+    meta: "ÃƒÂ¨Ã…â€™Ã‚Â¶ÃƒÂ¥Ã¢â‚¬Â¡Ã‚Â ",
     photo: "assets/generated/zolano/parts/ZL3776-line-TABLE.png"
   }
 ];
@@ -673,12 +666,12 @@ function getCatalogText(item) {
 
 function isDiningTableItem(item) {
   const text = getCatalogText(item);
-  return /餐桌|餐台/.test(text) || /\bDT\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
+  return /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¡Ã…â€™|ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â°/.test(text) || /\bDT\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
 }
 
 function isDiningChairItem(item) {
   const text = getCatalogText(item);
-  return /餐椅/.test(text) || /\bCH\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
+  return /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¤Ã¢â‚¬Â¦/.test(text) || /\bCH\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
 }
 
 function isDiningItem(item) {
@@ -692,12 +685,12 @@ function getDiningDisplayKey(item) {
 function isDiningTurntableItem(item) {
   const text = getCatalogText(item);
   const dimensions = String(item?.dimensions || "");
-  return /转盘/.test(text) || /^[ΦφØ]\d{3,4}$/i.test(dimensions.trim());
+  return /ÃƒÂ¨Ã‚Â½Ã‚Â¬ÃƒÂ§Ã¢â‚¬ÂºÃ‹Å“/.test(text) || /^[ÃƒÂÃ¢â‚¬Â ÃƒÅ½Ã‚Â¦ÃƒÂÃ¢â‚¬Â¢ÃƒÂÃ‚Â¤]\d{3,4}$/i.test(dimensions.trim());
 }
 
 function isBuyableDiningTableItem(item) {
   const text = getCatalogText(item);
-  return /餐桌|餐台/.test(text) && !isDiningTurntableItem(item);
+  return /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¡Ã…â€™|ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â°/.test(text) && !isDiningTurntableItem(item);
 }
 
 function getBuyableDiningTableKey(item) {
@@ -730,7 +723,7 @@ function getDiningFamilyRoot(item) {
 
 function getDiningSizeValue(item) {
   const text = getCatalogText(item);
-  const diameter = text.match(/[ΦφØ](\d{3,5})/);
+  const diameter = text.match(/[ÃƒÂÃ¢â‚¬Â ÃƒÅ½Ã‚Â¦ÃƒÂÃ¢â‚¬Â¢ÃƒÂÃ‚Â¤](\d{3,5})/);
   if (diameter) return Number(diameter[1]);
   const meter = text.match(/(\d+(?:\.\d+)?)\s*(?:\u7c73|M\b)/i);
   if (meter) return Number(meter[1]) * 1000;
@@ -749,8 +742,8 @@ function getRelatedDiningTurntables(item) {
   });
   if (sameSize.length) return sameSize;
 
-  const small = turntables.filter((candidate) => /小转盘/.test(getCatalogText(candidate)));
-  const large = turntables.filter((candidate) => /大转盘/.test(getCatalogText(candidate)));
+  const small = turntables.filter((candidate) => /ÃƒÂ¥Ã‚Â°Ã‚ÂÃƒÂ¨Ã‚Â½Ã‚Â¬ÃƒÂ§Ã¢â‚¬ÂºÃ‹Å“/.test(getCatalogText(candidate)));
+  const large = turntables.filter((candidate) => /ÃƒÂ¥Ã‚Â¤Ã‚Â§ÃƒÂ¨Ã‚Â½Ã‚Â¬ÃƒÂ§Ã¢â‚¬ÂºÃ‹Å“/.test(getCatalogText(candidate)));
   if (itemSize && itemSize <= 1400 && small.length) return small;
   if (itemSize && itemSize >= 1450 && large.length) return large;
   const smallDiameter = turntables.filter((candidate) => getDiningSizeValue(candidate) <= 850);
@@ -776,7 +769,7 @@ function formatDiningTurntableNote(item) {
   if (getDiningFamilyTurntables(item).length) return "";
   const turntables = getRelatedDiningTurntables(item);
   if (!turntables.length) return "";
-  return `配套转盘:${turntables.map((turntable) => {
+  return `ÃƒÂ©Ã¢â‚¬Â¦Ã‚ÂÃƒÂ¥Ã‚Â¥Ã¢â‚¬â€ÃƒÂ¨Ã‚Â½Ã‚Â¬ÃƒÂ§Ã¢â‚¬ÂºÃ‹Å“:${turntables.map((turntable) => {
     const name = turntable.configuration || turntable.model || turntable.name;
     const size = turntable.dimensions ? ` ${turntable.dimensions}` : "";
     return `${name}${size}`;
@@ -806,7 +799,7 @@ function getDiningModelFamilyKey(item) {
   return String(item?.series || item?.model || "")
     .replace(/-\d{3,4}x\d{3,4}x\d{3,4}mm$/i, "")
     .replace(/-\d+(?:\.\d+)??(?:-\d{3,4}x\d{3,4}mm)?$/i, "")
-    .replace(/-[ΦφØ]\d+$/i, "");
+    .replace(/-[ÃƒÂÃ¢â‚¬Â ÃƒÅ½Ã‚Â¦]\d+$/i, "");
 }
 
 function hasCatalogPhoto(item) {
@@ -843,7 +836,7 @@ const catalogDefinitions = {
       : []
   },
   chair: {
-    label: "休闲椅 Chair",
+    label: "ÃƒÂ¤Ã‚Â¼Ã¢â‚¬ËœÃƒÂ©Ã¢â‚¬â€Ã‚Â²ÃƒÂ¦Ã‚Â¤Ã¢â‚¬Â¦ Chair",
     catalog: [
       ...(Array.isArray(window.BAIDU_CHAIR_DATA) ? window.BAIDU_CHAIR_DATA : []),
       ...zolanoThreeDigitCatalog.filter((item) =>
@@ -854,22 +847,22 @@ const catalogDefinitions = {
     recommendations: []
   },
   bed: {
-    label: "床 Bed",
+    label: "ÃƒÂ¥Ã‚ÂºÃ…Â  Bed",
     catalog: Array.isArray(window.BAIDU_BED_DATA) ? window.BAIDU_BED_DATA : [],
     recommendations: []
   },
   diningTable: {
-    label: "餐桌 Dining Table",
+    label: "ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¡Ã…â€™ Dining Table",
     catalog: uniqueDiningTables(matchingCatalogData.filter(isDiningTableItem)),
     recommendations: []
   },
   diningChair: {
-    label: "餐椅 Dining Chair",
+    label: "ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¤Ã¢â‚¬Â¦ Dining Chair",
     catalog: matchingCatalogData.filter(isDiningChairItem),
     recommendations: []
   },
   matching: {
-    label: "配套 Matching",
+    label: "ÃƒÂ©Ã¢â‚¬Â¦Ã‚ÂÃƒÂ¥Ã‚Â¥Ã¢â‚¬â€ Matching",
     catalog: matchingCatalogData.filter((item) => !isDiningItem(item)),
     recommendations: []
   }
@@ -1348,7 +1341,7 @@ function ensureDynamicQuickJumpGroup(catalogKey) {
   const group = document.createElement("div");
   group.className = "quick-jump";
   group.dataset.quickJumpGroup = catalogKey;
-  group.setAttribute("aria-label", `${definition.label} 型号图片`);
+  group.setAttribute("aria-label", `${definition.label} ÃƒÂ¥Ã…Â¾Ã¢â‚¬Â¹ÃƒÂ¥Ã‚ÂÃ‚Â·ÃƒÂ¥Ã¢â‚¬ÂºÃ‚Â¾ÃƒÂ§Ã¢â‚¬Â°Ã¢â‚¬Â¡`);
   group.hidden = true;
 
   const label = document.createElement("span");
@@ -1541,33 +1534,8 @@ function syncQuickJumpImages(root) {
       button.classList.remove("quick-jump-button-text");
     }
     image.src = photo;
-    if (catalogKey === "nikator") {
-      image.loading = "eager";
-      ensureNikatorQuickImageFallback(image);
-    }
     if (catalogKey === "bed") cropBedQuickJumpImage(image, photo);
   });
-}
-
-function ensureNikatorQuickImageFallback(image) {
-  const series = inferSeriesFromImage(image);
-  window.setTimeout(() => {
-    if (!image.isConnected || image.naturalWidth > 0) return;
-    const fallback = getNikatorQuickFallbackPhoto(series);
-    if (fallback && fallback !== image.getAttribute("src")) image.src = fallback;
-    if (!fallback) image.closest("[data-quick-jump]")?.remove();
-  }, 250);
-}
-
-function getNikatorQuickFallbackPhoto(series) {
-  if (!series) return placeholderImage();
-  const key = String(series || "").replace(/[^A-Za-z0-9-]/g, "");
-  if (nikatorQuickPhotoOverrides.has(key)) return nikatorQuickPhotoOverrides.get(key);
-  const gallery = getSeriesGalleryPhotos(series);
-  const catalogItem = catalogDefinitions.nikator?.catalog.find((item) =>
-    String(item?.series || "").toUpperCase() === String(series || "").toUpperCase()
-  );
-  return catalogItem?.originalPhoto || gallery.find(isWholeProductPhoto) || gallery[0] || getNikatorGeneratedPhoto(series) || "";
 }
 
 function getQuickJumpPhoto(catalogKey, series, item) {
@@ -1662,8 +1630,7 @@ function cropBedQuickJumpImage(image, originalSrc) {
 
 function getNikatorGeneratedPhoto(series) {
   const key = String(series || "").replace(/[^A-Za-z0-9-]/g, "");
-  if (missingNikatorGeneratedPhotoSeries.has(key)) return "";
-  return key ? `assets/generated/nikator/${key}.jpg?v=v292-nikator-photos` : "";
+  return key ? `assets/generated/nikator/${key}.jpg` : "";
 }
 
 function isWholeProductPhoto(src) {
@@ -1844,17 +1811,17 @@ function showUpdateBanner(update) {
   banner.className = "update-banner";
 
   const title = document.createElement("strong");
-  title.textContent = update.mandatory ? "必须更新" : "有新版本";
+  title.textContent = update.mandatory ? "ÃƒÂ¥Ã‚Â¿Ã¢â‚¬Â¦ÃƒÂ©Ã‚Â¡Ã‚Â»ÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°" : "ÃƒÂ¦Ã…â€œÃ¢â‚¬Â°ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã¢â‚¬Â°Ã‹â€ ÃƒÂ¦Ã…â€œÃ‚Â¬";
 
   const message = document.createElement("span");
-  message.textContent = `${update.versionName || "新版本"} 可以安装`;
+  message.textContent = `${update.versionName || "ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã¢â‚¬Â°Ã‹â€ ÃƒÂ¦Ã…â€œÃ‚Â¬"} ÃƒÂ¥Ã‚ÂÃ‚Â¯ÃƒÂ¤Ã‚Â»Ã‚Â¥ÃƒÂ¥Ã‚Â®Ã¢â‚¬Â°ÃƒÂ¨Ã‚Â£Ã¢â‚¬Â¦`;
 
   const actions = document.createElement("div");
   actions.className = "update-banner-actions";
 
   const laterButton = document.createElement("button");
   laterButton.type = "button";
-  laterButton.textContent = "稍后";
+  laterButton.textContent = "ÃƒÂ§Ã‚Â¨Ã‚ÂÃƒÂ¥Ã‚ÂÃ…Â½";
   laterButton.addEventListener("click", () => banner.remove());
 
   const updateButton = document.createElement("button");
@@ -1867,7 +1834,7 @@ function showUpdateBanner(update) {
       window.location.href = targetUrl;
       return;
     }
-    alert("更新链接还没设置。请先在 update.json 填入 apkUrl。");
+    alert("ÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ©Ã¢â‚¬Å“Ã‚Â¾ÃƒÂ¦Ã…Â½Ã‚Â¥ÃƒÂ¨Ã‚Â¿Ã‹Å“ÃƒÂ¦Ã‚Â²Ã‚Â¡ÃƒÂ¨Ã‚Â®Ã‚Â¾ÃƒÂ§Ã‚Â½Ã‚Â®ÃƒÂ£Ã¢â€šÂ¬Ã¢â‚¬Å¡ÃƒÂ¨Ã‚Â¯Ã‚Â·ÃƒÂ¥Ã¢â‚¬Â¦Ã‹â€ ÃƒÂ¥Ã…â€œÃ‚Â¨ update.json ÃƒÂ¥Ã‚Â¡Ã‚Â«ÃƒÂ¥Ã¢â‚¬Â¦Ã‚Â¥ apkUrlÃƒÂ£Ã¢â€šÂ¬Ã¢â‚¬Å¡");
   });
 
   actions.append(laterButton, updateButton);
@@ -1961,7 +1928,8 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
 
     const remoteUrl = new URL(remotePath, manifestBaseUrl).href;
     onProgress?.({ phase: "下载", done: index + 1, total: files.length });
-    const response = await fetchPatchFile(remoteUrl, localPath);
+    const response = await fetchWithTimeout(`${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" }, 30000);
+    if (!response.ok) throw new Error(`下载失败 ${localPath}`);
 
     const body = await response.blob();
     const contentType = file.contentType || response.headers.get("content-type") || guessPatchContentType(localPath);
@@ -1972,33 +1940,6 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
 
   localStorage.setItem(patchVersionStorageKey, String(patch.patchVersionCode || 0));
   localStorage.setItem(patchNameStorageKey, patch.patchVersionName || "");
-}
-
-async function fetchPatchFile(remoteUrl, localPath, attempts = 3) {
-  let lastError = null;
-
-  for (let attempt = 1; attempt <= attempts; attempt += 1) {
-    try {
-      const cacheBreaker = `t=${Date.now()}-${attempt}`;
-      const response = await fetchWithTimeout(
-        `${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}${cacheBreaker}`,
-        { cache: "no-store" },
-        30000
-      );
-      if (response.ok) return response;
-      lastError = new Error(`下载失败 ${localPath} (${response.status})`);
-    } catch (error) {
-      lastError = error;
-    }
-
-    if (attempt < attempts) await wait(700 * attempt);
-  }
-
-  throw lastError || new Error(`下载失败 ${localPath}`);
-}
-
-function wait(ms) {
-  return new Promise((resolve) => window.setTimeout(resolve, ms));
 }
 
 async function cacheOnePatchFile(cache, localPath, body, headers) {
@@ -4066,6 +4007,9 @@ function bindPhotoGallery(container) {
       button.classList.toggle("is-selected");
     });
     button.addEventListener("contextmenu", (event) => {
+      if (window.matchMedia && window.matchMedia("(pointer: coarse)").matches) {
+        return;
+      }
       event.preventDefault();
       button.classList.toggle("is-selected");
     });
@@ -4282,9 +4226,9 @@ function openFullscreenPhoto(src) {
   const overlay = document.createElement("div");
   overlay.className = "photo-fullscreen";
   overlay.innerHTML = `
-    <button class="photo-fullscreen-close" type="button" aria-label="关闭图片">×</button>
-    <button class="photo-fullscreen-raw" type="button" data-open-raw-photo>打开图片</button>
-    <img src="${src}" alt="沙发图片" data-open-raw-photo>
+    <button class="photo-fullscreen-close" type="button" aria-label="\u653e\u5927\u56fe\u7247">ÃƒÆ’Ã¢â‚¬â€</button>
+    <button class="photo-fullscreen-raw" type="button" data-open-raw-photo>ÃƒÂ¦Ã¢â‚¬Â°Ã¢â‚¬Å“ÃƒÂ¥Ã‚Â¼Ã¢â€šÂ¬ÃƒÂ¥Ã¢â‚¬ÂºÃ‚Â¾ÃƒÂ§Ã¢â‚¬Â°Ã¢â‚¬Â¡</button>
+    <img src="${src}" alt="ÃƒÂ¦Ã‚Â²Ã¢â€žÂ¢ÃƒÂ¥Ã‚ÂÃ¢â‚¬ËœÃƒÂ¥Ã¢â‚¬ÂºÃ‚Â¾ÃƒÂ§Ã¢â‚¬Â°Ã¢â‚¬Â¡" data-open-raw-photo>
   `;
   overlay.addEventListener("click", (event) => {
     if (event.target.closest("[data-open-raw-photo]")) {
@@ -4802,10 +4746,6 @@ function placeholderImage() {
 function applyImageFallback(image) {
   const fallback = getImageFallback(image);
   const current = image.getAttribute("src") || "";
-  if (!fallback && image.closest("[data-quick-jump]")?.dataset.quickJump?.startsWith("nikator|")) {
-    image.closest("[data-quick-jump]")?.remove();
-    return;
-  }
   if (fallback && fallback !== current && image.dataset.fallbackSrc !== fallback) {
     image.dataset.fallbackSrc = fallback;
     image.src = fallback;
@@ -4828,7 +4768,6 @@ function getImageFallback(image) {
   const series = inferSeriesFromImage(image);
   if (!series) return placeholderImage();
   const overrides = window.BAIDU_PHOTO_OVERRIDES || {};
-  const quickJump = image.closest("[data-quick-jump]")?.dataset.quickJump || "";
   const candidates = [
     series,
     series.replace(/^ZL(\d+)/, "ZL $1"),
@@ -4840,16 +4779,6 @@ function getImageFallback(image) {
     if (zolanoQuickPhotoOverrides.has(candidate)) return zolanoQuickPhotoOverrides.get(candidate);
     if (overrides[candidate]) return overrides[candidate];
   }
-  if (quickJump.startsWith("nikator|")) {
-    return getNikatorQuickFallbackPhoto(series);
-  }
-  const catalogItem = Object.values(catalogDefinitions)
-    .flatMap((definition) => definition?.catalog || [])
-    .find((item) => String(item?.series || "").toUpperCase() === String(series || "").toUpperCase());
-  if (catalogItem?.originalPhoto) return catalogItem.originalPhoto;
-  if (catalogItem?.photo) return catalogItem.photo;
-  const galleryPhoto = getSeriesGalleryPhotos(series).find(isWholeProductPhoto) || getSeriesGalleryPhotos(series)[0] || "";
-  if (galleryPhoto) return galleryPhoto;
   return placeholderImage();
 }
 
@@ -4873,22 +4802,10 @@ function resolveItemPhoto(item) {
   if (isPhotoBlockedSeries(item.series)) return placeholderImage();
   const lockedPhoto = getLockedSeriesPhoto(item.series, "");
   if (lockedPhoto) return lockedPhoto;
-  const itemPhoto = String(item.photo || "");
-  const usableItemPhoto = itemPhoto.startsWith("data:image/svg+xml") ? "" : itemPhoto;
-  const catalogPhoto = getCatalogFallbackPhoto(item.series);
   if (isCombinationItem(item)) {
-    return overrides[item.series] || usableItemPhoto || item.originalPhoto || catalogPhoto || getDiningFamilyPhoto(item) || getCombinationPhoto(item) || placeholderImage();
+    return overrides[item.series] || item.photo || item.originalPhoto || getDiningFamilyPhoto(item) || getCombinationPhoto(item) || placeholderImage();
   }
-  return overrides[item.series] || item.originalPhoto || usableItemPhoto || catalogPhoto || getDiningFamilyPhoto(item) || placeholderImage();
-}
-
-function getCatalogFallbackPhoto(series) {
-  if (!series) return "";
-  const catalogItem = Object.values(catalogDefinitions)
-    .flatMap((definition) => definition?.catalog || [])
-    .find((item) => String(item?.series || "").toUpperCase() === String(series || "").toUpperCase());
-  const gallery = getSeriesGalleryPhotos(series);
-  return catalogItem?.originalPhoto || catalogItem?.photo || gallery.find(isWholeProductPhoto) || gallery[0] || "";
+  return overrides[item.series] || item.originalPhoto || item.photo || getDiningFamilyPhoto(item) || placeholderImage();
 }
 
 function getDiningFamilyPhoto(item) {
