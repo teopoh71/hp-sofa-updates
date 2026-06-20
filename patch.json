@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  906,
-    "patchVersionName":  "v906-armchair-material-trim",
+    "patchVersionCode":  907,
+    "patchVersionName":  "v907-final-armchair-prices",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T06:19:17.8622154Z",
+    "createdAt":  "2026-06-20T06:53:50.6530186Z",
     "files":  [
                   {
-                      "path":  "app.js",
-                      "url":  "patches/v906-armchair-material-trim/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "0c65cc4ccf839eb4fb618949fa5701cdefbd4c809dd81c7ac6e7785406b60d22",
-                      "size":  197529
+                      "path":  "app.js",
+                      "url":  "patches/v907-final-armchair-prices/app.js",
+                      "sha256":  "6357ef6515930ea8bec88374e9ba10de8b33c8c79969f8f0cd2e76864a357a49",
+                      "size":  197710
                   }
               ]
 }
