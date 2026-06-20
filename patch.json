@@ -1,22 +1,22 @@
 {
-    "patchVersionCode":  297,
-    "patchVersionName":  "v297-small-share-copy-fix",
+    "patchVersionCode":  298,
+    "patchVersionName":  "v298-viewer-close-zoom-share-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T02:04:25.4458780Z",
+    "createdAt":  "2026-06-20T02:10:58.8148950Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v297-small-share-copy-fix/app.js",
+                      "url":  "patches/v298-viewer-close-zoom-share-fix/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "49b29a000660979ff09f9c3a53628379d530fd673c17b9530d8bc241ea92b145",
-                      "size":  193926
+                      "sha256":  "84533203aacd042056dafaa14d8d5b71741dc24d11e8cdda02bd5f516d3260e9",
+                      "size":  192958
                   },
                   {
                       "path":  "photo-viewer.html",
-                      "url":  "patches/v297-small-share-copy-fix/photo-viewer.html",
+                      "url":  "patches/v298-viewer-close-zoom-share-fix/photo-viewer.html",
                       "contentType":  "text/html; charset=utf-8",
-                      "sha256":  "eaefc1e3c84d2428233943f6dc7562c5f8379fef62e53848150def0ce45f1552",
-                      "size":  16181
+                      "sha256":  "bec071c532071158c330a8a88a3ddd0f336e3c6d1d3a4d9c6f703b760ae438af",
+                      "size":  18828
                   }
               ]
 }

@@ -1,0 +1,547 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>图片</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0b0b0b;
+        color: #fff;
+      }
+
+      .viewer-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px max(10px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(10px, env(safe-area-inset-left));
+        background: rgba(0, 0, 0, 0.78);
+      }
+
+      button {
+        min-height: 46px;
+        min-width: 92px;
+        border: 0;
+        border-radius: 8px;
+        background: #2563eb;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 800;
+      }
+
+      button.secondary {
+        background: #27272a;
+      }
+
+      .viewer-status {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        top: max(12px, env(safe-area-inset-top));
+        z-index: 3;
+        display: none;
+        padding: 10px 12px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.78);
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .viewer-status.is-visible {
+        display: block;
+      }
+
+      .viewer-topbar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: max(10px, env(safe-area-inset-top)) max(10px, env(safe-area-inset-right)) 10px max(10px, env(safe-area-inset-left));
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0));
+      }
+
+      .viewer-topbar button {
+        min-width: 64px;
+      }
+
+      .viewer-stage {
+        min-height: 100vh;
+        padding-top: 68px;
+        padding-bottom: 126px;
+        overflow: auto;
+        touch-action: pinch-zoom;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-height: 40vh;
+        object-fit: contain;
+        background: #111;
+        -webkit-touch-callout: default;
+        user-select: auto;
+        transform-origin: center center;
+        transition: transform 0.18s ease;
+      }
+
+      img + img {
+        margin-top: 12px;
+      }
+
+      .copy-panel {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 128px;
+        z-index: 4;
+        display: none;
+        padding: 12px;
+        border-radius: 8px;
+        background: rgba(24, 24, 27, 0.96);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38);
+      }
+
+      .copy-panel.is-visible {
+        display: block;
+      }
+
+      .copy-panel strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+      }
+
+      .copy-panel textarea {
+        width: 100%;
+        min-height: 86px;
+        border: 1px solid #52525b;
+        border-radius: 8px;
+        padding: 10px;
+        background: #09090b;
+        color: #fff;
+        font: 0.9rem Arial, "Microsoft YaHei", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="viewer-status" id="status"></div>
+    <nav class="viewer-topbar" aria-label="图片查看">
+      <button class="secondary" type="button" id="closeButton">关闭</button>
+      <div>
+        <button class="secondary" type="button" id="zoomOutButton">-</button>
+        <button class="secondary" type="button" id="zoomResetButton">1x</button>
+        <button class="secondary" type="button" id="zoomInButton">+</button>
+      </div>
+    </nav>
+    <section class="copy-panel" id="copyPanel" aria-live="polite">
+      <strong id="copyTitle">手动复制</strong>
+      <textarea id="copyText" readonly></textarea>
+    </section>
+    <main class="viewer-stage">
+      <img id="photo" alt="图片">
+    </main>
+    <nav class="viewer-bar" aria-label="图片操作">
+      <button class="secondary" type="button" id="backButton">返回</button>
+      <button type="button" id="shareButton">发送/分享</button>
+      <button type="button" id="copyImageButton">复制图片</button>
+      <button class="secondary" type="button" id="copyButton">复制链接</button>
+      <button class="secondary" type="button" id="downloadButton">下载</button>
+      <button type="button" id="rawButton">打开原图</button>
+    </nav>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const src = params.get("src") || "";
+      const stage = document.querySelector(".viewer-stage");
+      const photo = document.querySelector("#photo");
+      const status = document.querySelector("#status");
+      const copyPanel = document.querySelector("#copyPanel");
+      const copyTitle = document.querySelector("#copyTitle");
+      const copyText = document.querySelector("#copyText");
+      const closeButton = document.querySelector("#closeButton");
+      const zoomOutButton = document.querySelector("#zoomOutButton");
+      const zoomResetButton = document.querySelector("#zoomResetButton");
+      const zoomInButton = document.querySelector("#zoomInButton");
+      let photos = [];
+      let preparedItems = [];
+      let zoomScale = 1;
+      const objectUrls = [];
+      try {
+        photos = JSON.parse(params.get("srcs") || "[]");
+      } catch {
+        photos = [];
+      }
+      photos = Array.isArray(photos) ? photos.filter(Boolean) : [];
+      renderImages(getOriginalTargets());
+      prepareImagesForSharing();
+
+      function renderImages(targets) {
+        stage.innerHTML = "";
+        if (targets.length > 1) {
+          targets.forEach((photoSrc) => {
+            const image = document.createElement("img");
+            image.src = photoSrc;
+            image.alt = "图片";
+            stage.append(image);
+          });
+          return;
+        }
+        stage.append(photo);
+        photo.src = targets[0] || src;
+      }
+
+      function getOriginalTargets() {
+        return photos.length ? photos : [src].filter(Boolean);
+      }
+
+      function getImageElements() {
+        return [...stage.querySelectorAll("img")];
+      }
+
+      async function prepareImagesForSharing() {
+        const targets = getOriginalTargets();
+        preparedItems = await Promise.all(targets.map((target, index) => prepareImageItem(target, index)));
+        const images = getImageElements();
+        preparedItems.forEach((item, index) => {
+          if (images[index]) {
+            item.imageElement = images[index];
+            if (item.displayUrl) images[index].src = item.displayUrl;
+          }
+        });
+        if (preparedItems.some((item) => item.blob)) {
+          showStatus("图片已准备好，可长按保存或发送/分享");
+        }
+      }
+
+      async function ensurePreparedItems() {
+        if (preparedItems.length) return preparedItems;
+        await prepareImagesForSharing();
+        return preparedItems;
+      }
+
+      async function prepareImageItem(target, index) {
+        const originalUrl = target;
+        try {
+          const response = await fetch(target, { cache: "no-store" });
+          if (!response.ok) throw new Error("fetch failed");
+          const sourceBlob = await response.blob();
+          const type = sourceBlob.type || guessContentType(target);
+          const blob = new Blob([sourceBlob], { type });
+          const objectUrl = URL.createObjectURL(blob);
+          objectUrls.push(objectUrl);
+          return {
+            originalUrl,
+            displayUrl: objectUrl,
+            blob,
+            filename: filenameFromUrl(target, index),
+            type
+          };
+        } catch {
+          return {
+            originalUrl,
+            displayUrl: target,
+            blob: null,
+            filename: filenameFromUrl(target, index),
+            type: guessContentType(target)
+          };
+        }
+      }
+
+      window.addEventListener("pagehide", () => {
+        objectUrls.forEach((url) => URL.revokeObjectURL(url));
+      });
+
+      document.querySelector("#backButton").addEventListener("click", () => {
+        if (history.length > 1) history.back();
+        else location.href = "index.html";
+      });
+      closeButton.addEventListener("click", () => {
+        if (history.length > 1) history.back();
+        else location.href = "index.html";
+      });
+      zoomOutButton.addEventListener("click", () => setZoom(zoomScale - 0.25));
+      zoomResetButton.addEventListener("click", () => setZoom(1));
+      zoomInButton.addEventListener("click", () => setZoom(zoomScale + 0.25));
+
+      document.querySelector("#rawButton").addEventListener("click", () => {
+        const targets = getOriginalTargets();
+        if (targets[0]) location.href = targets[0];
+      });
+
+      document.querySelector("#copyButton").addEventListener("click", async () => {
+        const text = getOriginalTargets().join("\n");
+        if (!text) return showStatus("没有图片链接");
+        if (await copyToClipboard(text)) {
+          showStatus("已复制图片链接");
+        } else {
+          showCopyFallback("复制失败，请手动复制", text);
+        }
+      });
+
+      document.querySelector("#copyImageButton").addEventListener("click", async () => {
+        const item = (await ensurePreparedItems())[0];
+        if (!item) return showStatus("没有图片可以复制");
+        if (await copyImageToClipboard(item)) {
+          showStatus("已复制图片，可以到微信粘贴发送");
+        } else {
+          showStatus("此浏览器不能复制图片；请长按图片保存发送");
+          showCopyFallback("复制图片不可用，请长按图片保存", item.originalUrl);
+        }
+      });
+
+      document.querySelector("#downloadButton").addEventListener("click", async () => {
+        const items = await ensurePreparedItems();
+        if (!items.length) return showStatus("没有图片可以下载");
+        for (let index = 0; index < items.length; index += 1) {
+          await downloadImage(items[index], index);
+        }
+        showStatus("已触发下载；如被拦截，请长按当前图片保存");
+      });
+
+      document.querySelector("#shareButton").addEventListener("click", async () => {
+        const items = await ensurePreparedItems();
+        const item = items[0];
+        if (!item) return showStatus("没有图片可以分享");
+        if (await shareWithSystem(item)) return;
+        try {
+          await downloadImage(item, 0);
+          showStatus("系统分享不可用，已下载图片，可到相册或下载里发送");
+          return;
+        } catch {
+        }
+        if (await copyImageToClipboard(item)) {
+          showStatus("系统分享不可用，已复制图片；请到微信粘贴发送");
+          return;
+        }
+        if (await copyToClipboard(item.originalUrl)) {
+          showStatus("系统分享不可用，已复制链接；也可长按图片保存发送");
+          return;
+        }
+        showCopyFallback("分享不可用，请长按图片保存或手动复制", item.originalUrl);
+      });
+
+      window.addEventListener("load", () => {
+        if (getOriginalTargets().length) showStatus("可点发送/分享，失败时长按图片保存发送");
+        applyZoom();
+        attachImageInteractions();
+      });
+
+      function getTargets() {
+        return preparedItems.length
+          ? preparedItems.map((item) => item.displayUrl || item.originalUrl).filter(Boolean)
+          : getOriginalTargets();
+      }
+
+      async function shareWithSystem(item) {
+        if (!navigator.share) return false;
+        try {
+          const file = await fetchShareFile(item);
+          if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+            await navigator.share({ files: [file], title: "图片" });
+            showStatus("系统分享已打开");
+            return true;
+          }
+        } catch {
+        }
+        try {
+          await navigator.share({ title: "图片", url: item.originalUrl });
+          showStatus("系统分享已打开");
+          return true;
+        } catch {
+          return false;
+        }
+      }
+
+      async function fetchShareFile(item) {
+        if (item?.blob) return new File([item.blob], item.filename || "photo.jpg", { type: item.type || item.blob.type || "image/jpeg" });
+        if (item?.imageElement) {
+          const blob = await imageElementToPngBlob(item.imageElement);
+          if (blob) return new File([blob], item.filename || "photo.png", { type: blob.type || "image/png" });
+        }
+        if (!item?.originalUrl) return null;
+        const response = await fetch(item.originalUrl, { cache: "no-store" });
+        if (!response.ok) return null;
+        const blob = await response.blob();
+        const type = blob.type || guessContentType(item.originalUrl);
+        return new File([blob], filenameFromUrl(item.originalUrl, 0), { type });
+      }
+
+      async function copyImageToClipboard(item) {
+        try {
+          if (!navigator.clipboard || typeof ClipboardItem === "undefined") return false;
+          const blob = await imageToPngBlob(item?.imageElement || item?.displayUrl || item?.originalUrl || "");
+          if (!blob) return false;
+          await navigator.clipboard.write([
+            new ClipboardItem({ [blob.type || "image/png"]: blob })
+          ]);
+          return true;
+        } catch {
+          return false;
+        }
+      }
+
+      async function imageToPngBlob(target) {
+        try {
+          if (target instanceof HTMLImageElement) {
+            return await imageElementToPngBlob(target);
+          }
+          const image = await loadImage(target);
+          const canvas = document.createElement("canvas");
+          canvas.width = image.naturalWidth || image.width;
+          canvas.height = image.naturalHeight || image.height;
+          const context = canvas.getContext("2d");
+          context.drawImage(image, 0, 0);
+          return await new Promise((resolve) => canvas.toBlob(resolve, "image/png", 0.92));
+        } catch {
+          const response = await fetch(target, { cache: "no-store" });
+          if (!response.ok) return null;
+          const blob = await response.blob();
+          return blob.type ? blob : new Blob([blob], { type: guessContentType(target) });
+        }
+      }
+
+      async function imageElementToPngBlob(imageElement) {
+        if (!imageElement?.complete || !imageElement.naturalWidth || !imageElement.naturalHeight) {
+          throw new Error("Image is not ready");
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = imageElement.naturalWidth;
+        canvas.height = imageElement.naturalHeight;
+        const context = canvas.getContext("2d");
+        context.drawImage(imageElement, 0, 0);
+        return await new Promise((resolve) => canvas.toBlob(resolve, "image/png", 0.92));
+      }
+
+      function loadImage(target) {
+        return new Promise((resolve, reject) => {
+          const image = new Image();
+          image.crossOrigin = "anonymous";
+          image.onload = () => resolve(image);
+          image.onerror = reject;
+          image.src = target;
+        });
+      }
+
+      async function downloadImage(item, index) {
+        try {
+          const blob = item.blob
+            || (item.imageElement ? await imageElementToPngBlob(item.imageElement) : null)
+            || await (await fetch(item.originalUrl, { cache: "no-store" })).blob();
+          const url = URL.createObjectURL(blob);
+          triggerDownload(url, item.filename || filenameFromUrl(item.originalUrl, index));
+          window.setTimeout(() => URL.revokeObjectURL(url), 3000);
+        } catch {
+          triggerDownload(item.originalUrl, filenameFromUrl(item.originalUrl, index));
+        }
+      }
+
+      function triggerDownload(url, filename) {
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = filename;
+        link.rel = "noopener";
+        document.body.append(link);
+        link.click();
+        link.remove();
+      }
+
+      async function copyToClipboard(text) {
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+            return true;
+          }
+        } catch {
+        }
+        try {
+          copyText.value = text;
+          copyText.removeAttribute("readonly");
+          copyText.select();
+          copyText.setSelectionRange(0, text.length);
+          const ok = document.execCommand("copy");
+          copyText.setAttribute("readonly", "readonly");
+          return ok;
+        } catch {
+          copyText.setAttribute("readonly", "readonly");
+          return false;
+        }
+      }
+
+      function showCopyFallback(title, text) {
+        copyTitle.textContent = title;
+        copyText.value = text;
+        copyPanel.classList.add("is-visible");
+        copyText.focus();
+        copyText.select();
+        showStatus("请长按图片保存，或复制下面链接");
+      }
+
+      function filenameFromUrl(path, index) {
+        const clean = String(path || "").split("?")[0].split("#")[0];
+        const name = clean.split("/").pop() || `photo-${index + 1}.jpg`;
+        return name.includes(".") ? name : `${name}.jpg`;
+      }
+
+      function guessContentType(path) {
+        const clean = String(path || "").split("?")[0].toLowerCase();
+        if (clean.endsWith(".png")) return "image/png";
+        if (clean.endsWith(".webp")) return "image/webp";
+        return "image/jpeg";
+      }
+
+      function showStatus(message) {
+        status.textContent = message;
+        status.classList.add("is-visible");
+        window.setTimeout(() => status.classList.remove("is-visible"), 2400);
+      }
+
+      function setZoom(nextScale) {
+        zoomScale = Math.max(1, Math.min(4, Number(nextScale) || 1));
+        applyZoom();
+      }
+
+      function applyZoom() {
+        getImageElements().forEach((image) => {
+          image.style.transform = `scale(${zoomScale})`;
+        });
+        zoomResetButton.textContent = `${zoomScale.toFixed(2).replace(/\.00$/, "")}x`;
+      }
+
+      function attachImageInteractions() {
+        getImageElements().forEach((image) => {
+          if (image.dataset.zoomBound === "1") return;
+          image.dataset.zoomBound = "1";
+          image.addEventListener("dblclick", () => {
+            setZoom(zoomScale > 1 ? 1 : 2);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+
+
