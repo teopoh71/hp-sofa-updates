@@ -1,11 +1,11 @@
 {
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "notes": [
-    "Public download link for phones that cannot reach the local 10.x installer address.",
-    "Use the small patch first when available; this APK link is the fallback install package."
+    "Mobile APK v292 ships the refreshed full APK package with the latest Zolano and Nikator data.",
+    "Use this package when the phone does not pick up smaller patch updates reliably."
   ],
-  "versionName": "v295-public-download-link",
-  "versionCode": 295,
+  "versionName": "v292-full-apk-cache",
+  "versionCode": 292,
   "mandatory": false,
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v253-mobile.apk"
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v292-mobile.apk"
 }
