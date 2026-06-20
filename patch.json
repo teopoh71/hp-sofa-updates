@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  908,
-    "patchVersionName":  "v908-chair-dining-default-price",
+    "patchVersionCode":  909,
+    "patchVersionName":  "v909-default-selection-render-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T07:05:38.8882755Z",
+    "createdAt":  "2026-06-20T07:17:23.1195846Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v908-chair-dining-default-price/app.js",
-                      "sha256":  "384fbe7e9b1815a16d334527cb11083836e8bdab5ac99891b6b0359d476cda5a",
-                      "size":  198271
+                      "url":  "patches/v909-default-selection-render-fix/app.js",
+                      "sha256":  "e86259db20e9da034cf0f521872ded611da07ebf42a78bc78426d9136e4fc876",
+                      "size":  198317
                   }
               ]
 }
