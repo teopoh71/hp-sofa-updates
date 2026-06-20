@@ -1,15 +1,15 @@
-﻿{
-    "patchVersionCode":  916,
-    "patchVersionName":  "v916-missing-price-label-fix",
+{
+    "patchVersionCode":  927,
+    "patchVersionName":  "v927-le8808-31m-restore",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T08:00:00.0000000Z",
+    "createdAt":  "2026-06-20T16:52:34.8248579Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
-                      "url":  "patches/v916-missing-price-label-fix/app.js",
-                      "sha256":  "EE23B61E7248BFFBA0340F4680F484E91B2858855DECEC446D59059BA7E6117F",
-                      "size":  199912
+                      "url":  "patches/v285-recommendations-restore-local/app.js",
+                      "sha256":  "AE9CF56A9573CAC737DE45943A2CC4B6FE3861E2B4B525E9C039D80C06A5D980",
+                      "size":  204193
                   }
               ]
 }

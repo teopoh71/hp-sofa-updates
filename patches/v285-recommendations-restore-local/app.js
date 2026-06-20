@@ -514,19 +514,6 @@ maybeClearAppCache();
 ensureLegacyShellControls();
 
 function ensureLegacyShellControls() {
-  if (!document.querySelector('[data-type-filter="showroom"]')) {
-    const firstTypeButton = document.querySelector("[data-type-filter]");
-    const typePanel = firstTypeButton?.parentElement;
-    if (typePanel) {
-      const showroomButton = document.createElement("button");
-      showroomButton.type = "button";
-      showroomButton.className = firstTypeButton.className || "filter-button";
-      showroomButton.dataset.typeFilter = "showroom";
-      showroomButton.textContent = "\u5c55\u5385\u7ec4\u5408";
-      typePanel.insertBefore(showroomButton, firstTypeButton);
-    }
-  }
-
   if (!document.querySelector("#zolanoModulePicker")) {
     const slotGridElement = document.querySelector("#slotGrid");
     if (slotGridElement?.parentElement) {
@@ -689,7 +676,7 @@ const zolano3818Modules = [
   }
 ];
 const zolanoModulePhotoMap = Object.fromEntries([...zolano2897Modules, ...zolano3776Modules, ...zolano2628Modules, ...zolano3818Modules].map((module) => [module.id, module.photo]));
-const nikatorModuleSeriesSet = new Set(["LE8801SF", "LE8810SF", "LE8806SF", "NK0051SF", "NK0054SF", "NK0001SF", "LE8803SF"]);
+const nikatorModuleSeriesSeedSet = new Set(["LE8801SF", "LE8810SF", "LE8806SF", "NK0051SF", "NK0054SF", "NK0001SF", "NK0003SF", "LE8803SF"]);
 
 const excludedCatalogIds = new Set([
 ]);
@@ -1108,8 +1095,6 @@ function setupMojibakeTextRepair() {
 
 syncQuickJumpLabels(document);
 renderVersionBadge();
-window.addEventListener("load", () => renderVersionBadge(), { once: true });
-setTimeout(() => renderVersionBadge(), 250);
 syncActiveCatalog();
 render();
 initBuilder();
@@ -1178,6 +1163,7 @@ panelToggle.addEventListener("click", () => {
       pieceMaterialSelections = {};
       selectedDiningTurntableId = "";
       populateBuilderPieces();
+      syncBuilderControlsVisibility();
       if (!fillDefaultSingleCatalogSlot()) {
         renderSetPreview();
       }
@@ -1252,9 +1238,7 @@ function syncQuickJumpLabels(root) {
 }
 
 function renderVersionBadge() {
-  const existingBadge = document.querySelector(".app-version-badge");
-  if (existingBadge?.querySelector(".app-check-update-button")) return;
-  existingBadge?.remove();
+  if (document.querySelector(".app-version-badge")) return;
   const anchor = document.querySelector(".catalog-switch") || document.querySelector(".builder-panel");
   if (!anchor) return;
 
@@ -1352,6 +1336,8 @@ function jumpToSeries(brandKey, seriesValue) {
   if (isManualModuleSeriesName(seriesValue)) {
     recommendSelect.value = "";
     populateBuilderPieces(1);
+    syncBuilderControlsVisibility();
+    syncZolanoModulePicker();
     renderSetPreview();
     return;
   }
@@ -1382,7 +1368,7 @@ function syncBuilderFilterVisibility() {
   const filterPanel = document.querySelector(".builder-filter-buttons");
   const isSofaCatalog = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
   if (filterPanel) filterPanel.hidden = !isSofaCatalog;
-  if (comboButtonPanel) comboButtonPanel.hidden = !isSofaCatalog || !selectedWidthFilter;
+  if (comboButtonPanel) comboButtonPanel.hidden = !isSofaCatalog;
 }
 
 function syncBuilderControlsVisibility() {
@@ -2248,11 +2234,6 @@ function getDisplayRetailPrice(item, priceIndex = 0) {
   return getRetailPrice(price, 1, item?.priceFactor || 1);
 }
 
-function formatMoneyOrMissing(value, options = {}) {
-  const prefix = options.prefix || "";
-  return Number(value || 0) > 0 ? `${prefix}${money.format(value)}` : `${prefix}待补价格`;
-}
-
 function initBuilder() {
   syncActiveCatalog();
   const series = [...new Set(catalogSofas.map((sofa) => sofa.series))]
@@ -2573,7 +2554,7 @@ function populateRecommendationSelect() {
 
 function renderComboButtons(combos = getSeriesRecommendations()) {
   if (!comboButtonPanel) return;
-  const shouldShow = (activeCatalogKey === "nikator" || activeCatalogKey === "zolano") && Boolean(selectedWidthFilter);
+  const shouldShow = (activeCatalogKey === "nikator" || activeCatalogKey === "zolano") && combos.length > 0;
   comboButtonPanel.hidden = !shouldShow;
   comboButtonPanel.innerHTML = "";
   if (!shouldShow) return;
@@ -2591,6 +2572,10 @@ function renderComboButtons(combos = getSeriesRecommendations()) {
     return;
   }
 
+  const list = document.createElement("div");
+  list.className = "combo-choice-list";
+  comboButtonPanel.append(list);
+
   combos.forEach((combo) => {
     const button = document.createElement("button");
     button.type = "button";
@@ -2601,7 +2586,7 @@ function renderComboButtons(combos = getSeriesRecommendations()) {
       recommendSelect.value = combo.id;
       recommendSelect.dispatchEvent(new Event("change", { bubbles: true }));
     });
-    comboButtonPanel.append(button);
+    list.append(button);
   });
 }
 
@@ -2619,7 +2604,8 @@ function formatComboButtonLabel(combo) {
 }
 
 function formatComboButtonContent(combo) {
-  const label = formatComboButtonLabel(combo);
+  const label = formatCompactComboButtonLabel(combo);
+  const sizeText = getCompactComboSizeText(combo);
   if (combo?.showroomFullSet) {
     return escapeHtml(label).replace(
       "SHOWROOM FULL SET",
@@ -2627,11 +2613,64 @@ function formatComboButtonContent(combo) {
     );
   }
   const note = combo?.showroomDisplayNote || "";
-  if (!note) return escapeHtml(label);
+  if (!note && !sizeText) return escapeHtml(label);
   return `
     <span class="combo-choice-main">${escapeHtml(label)}</span>
-    <span class="combo-choice-note">${escapeHtml(note)}</span>
+    ${sizeText ? `<span class="combo-choice-size">${escapeHtml(sizeText)}</span>` : ""}
+    ${note ? `<span class="combo-choice-note">${escapeHtml(note)}</span>` : ""}
   `;
+}
+
+function formatCompactComboButtonLabel(combo) {
+  const pieces = getComboPieceCount(combo);
+  const uShapePrefix = getNikatorUShapeComboPrefix(combo);
+  const name = getComboDisplayName(combo)
+    .replace(/^推荐组合\s*/i, "组合")
+    .replace(/^常用/, "")
+    .replace(/^单件/, "单")
+    .replace(/两人位/g, "2人")
+    .replace(/一人位/g, "1人")
+    .replace(/三人位/g, "3人")
+    .replace(/四人位/g, "4人")
+    .replace(/组合/g, "组")
+    .trim();
+  const optionText = getZolanoComboOptionText(combo)
+    .replace(/^推荐组合\s*/i, "组")
+    .replace(/组合/g, "组")
+    .trim();
+  return cleanComboDisplayText(
+    [uShapePrefix || name || optionText || "组", pieces ? `${pieces}件` : ""].filter(Boolean).join(" "),
+    pieces ? `组 ${pieces}件` : "组"
+  );
+}
+
+function getNikatorUShapeComboPrefix(combo) {
+  if (activeCatalogKey !== "nikator" || !combo) return "";
+  const slantCount = getNikatorSlantPartCount(combo);
+  if (!slantCount) return "";
+  return slantCount > 1 ? `U型${slantCount}斜` : "U型";
+}
+
+function getNikatorSlantPartCount(combo) {
+  const partItems = getComboPartItems(combo);
+  if (partItems.length) {
+    return partItems.filter(isNikatorSlantPartItem).length;
+  }
+  const text = `${combo?.configuration || ""} ${combo?.description || ""} ${combo?.name || ""}`.toUpperCase();
+  return (text.match(/\b\d{3}-B\b/g) || []).length;
+}
+
+function isNikatorSlantPartItem(item) {
+  const text = `${item?.model || ""} ${item?.configuration || ""} ${item?.description || ""}`.toUpperCase();
+  return /\b\d{3}-B\b|斜位/.test(text);
+}
+
+function getCompactComboSizeText(combo) {
+  const sizeText = getComboButtonSizeText(combo);
+  return sizeText
+    .replace(/\s*x\s*/gi, "x")
+    .replace(/\.0(?=\D|$)/g, "")
+    .replace(/\b0\.5m\b/g, ".5m");
 }
 
 function escapeHtml(value) {
@@ -2849,7 +2888,7 @@ function getActiveManualModuleSeries() {
   if (activeCatalogKey === "zolano") return getActiveZolanoModuleSeries();
   if (activeCatalogKey === "nikator") {
     const currentSeries = String(seriesSelect?.value || "").toUpperCase();
-    return nikatorModuleSeriesSet.has(currentSeries) ? currentSeries : "";
+    return isNikatorModuleSeries(currentSeries) ? currentSeries : "";
   }
   return "";
 }
@@ -2873,7 +2912,7 @@ function isZolanoModuleSeriesName(seriesValue) {
 
 function isManualModuleSeriesName(seriesValue) {
   if (activeCatalogKey === "zolano") return isZolanoModuleSeriesName(seriesValue);
-  if (activeCatalogKey === "nikator") return nikatorModuleSeriesSet.has(String(seriesValue || "").toUpperCase());
+  if (activeCatalogKey === "nikator") return isNikatorModuleSeries(seriesValue);
   return false;
 }
 
@@ -2889,13 +2928,78 @@ function getActiveManualModules() {
 
 function getNikatorModuleItems() {
   const series = getActiveManualModuleSeries();
-  if (!nikatorModuleSeriesSet.has(series)) return [];
-  return getSeriesItems().map((item) => ({
+  if (!isNikatorModuleSeries(series)) return [];
+  return getDedupedNikatorModuleItems(getSeriesItems().filter((item) => hasNikatorActualModulePhoto(item)))
+    .map((item) => ({
     id: item.id,
     label: getNikatorModuleLabel(item),
     meta: getModuleMetaText(item),
     photo: getNikatorModulePhoto(item)
   }));
+}
+
+function getDedupedNikatorModuleItems(items) {
+  const seen = new Set();
+  return items.filter((item) => {
+    const key = getNikatorMirrorPairKey(item);
+    if (!key) return true;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function getNikatorMirrorPairKey(item) {
+  const config = String(item?.configuration || "").toUpperCase();
+  const model = String(item?.model || "");
+  const code = getNikatorModuleCode(item);
+  const sameSizePairCode = getNikatorSameSizePairCode(code);
+  if (sameSizePairCode) {
+    return [
+      item?.series || "",
+      sameSizePairCode,
+      Number(item?.width || 0),
+      Number(item?.depth || 0),
+      Number(item?.height || 0)
+    ].join("|");
+  }
+  const sideMatch = config.match(/\b(\d+(?:\.\d+)?)(?:P)?(L|R)\b/) || config.match(/\b(\d+(?:\.\d+)?)P(L|R)\b/);
+  if (!sideMatch) return "";
+  if (!/\bP?[LR]\b|PL|PR/.test(config)) return "";
+  const family = model.replace(/-(?:\d+(?:\.\d+)?P?[LR]|[0-9A-Z-]+)$/i, "");
+  const seat = sideMatch[1];
+  return [
+    family || item?.series || "",
+    seat,
+    Number(item?.width || 0),
+    Number(item?.depth || 0),
+    Number(item?.height || 0)
+  ].join("|");
+}
+
+function getNikatorModuleCode(item) {
+  const model = String(item?.model || item?.id || "");
+  return model.replace(String(item?.series || ""), "").replace(/^-/, "").trim().toUpperCase();
+}
+
+function getNikatorSameSizePairCode(code) {
+  const cleanCode = String(code || "").replace(/\s+/g, "");
+  if (cleanCode === "405" || cleanCode === "406") return "405/406";
+  if (cleanCode === "401" || cleanCode === "402") return "401/402";
+  return "";
+}
+
+function hasNikatorActualModulePhoto(item) {
+  if (!item) return false;
+  const directPhoto = individualItemPhotos[item.id] || individualItemPhotos[item.model];
+  return Boolean(directPhoto);
+}
+
+function isNikatorModuleSeries(seriesValue) {
+  const series = String(seriesValue || "").toUpperCase();
+  if (!/^(?:NK|LE)\d+SF$/.test(series)) return false;
+  if (nikatorModuleSeriesSeedSet.has(series)) return true;
+  return Object.keys(individualItemPhotos || {}).some((key) => String(key).toUpperCase().startsWith(`${series}-`));
 }
 
 function getNikatorModulePhoto(item) {
@@ -2909,7 +3013,12 @@ function getNikatorModulePhoto(item) {
 }
 
 function getNikatorModuleLabel(item) {
-  const model = String(item?.model || "").replace(String(item?.series || ""), "").replace(/^-/, "").trim();
+  const model = getNikatorModuleCode(item);
+  const config = String(item?.configuration || "").toUpperCase();
+  const sameSizePairCode = getNikatorSameSizePairCode(model);
+  if (sameSizePairCode) return sameSizePairCode;
+  const pair = config.match(/\b(\d+(?:\.\d+)?)P[LR]\b/);
+  if (pair) return `${pair[1]}P L/R`;
   return model || item?.configuration || item?.series || "ITEM";
 }
 
@@ -3448,13 +3557,17 @@ function getGeneratedSeriesRecommendations() {
 
   const bySeat = {};
   items.forEach((item) => {
-    const config = String(item.configuration || "");
+    const config = String(item.configuration || "").toUpperCase();
     const seat = config.match(/\b\d+(?:\.\d+)?/)?.[0] || "";
     if (!seat) return;
     bySeat[seat] ||= {};
     if (config.includes("PL")) bySeat[seat].left = item;
     if (config.includes("PR")) bySeat[seat].right = item;
-    if (config.includes("CB")) bySeat[seat].center = item;
+    if (config.includes("CB-B")) {
+      bySeat[seat].slantCenter = item;
+    } else if (config.includes("CB")) {
+      bySeat[seat].center = item;
+    }
   });
 
   const generated = [];
@@ -3469,6 +3582,12 @@ function getGeneratedSeriesRecommendations() {
       baseCombos.push(
         [`常用${seat}三人位`, [group.left, group.center, group.right]],
         [`常用${seat}四人位`, [group.left, group.center, group.center, group.right]]
+      );
+    }
+    if (group.slantCenter) {
+      baseCombos.push(
+        [`常用${seat}三人位`, [group.left, group.slantCenter, group.right]],
+        [`常用${seat}四人位`, [group.left, group.slantCenter, group.slantCenter, group.right]]
       );
     }
 
@@ -3979,12 +4098,12 @@ function renderSetPreview() {
   const hasCombination = Boolean(effectiveRecommendation) || selected.length > 0;
   const displayedPieceCount = getDisplayedPieceCount(effectiveRecommendation, selected);
 
-  if (setTotal) setTotal.textContent = formatMoneyOrMissing(total);
+  if (setTotal) setTotal.textContent = money.format(total);
   setPreview.innerHTML = "";
 
   const materialList = document.createElement("div");
   materialList.className = "material-list material-list-after-photo";
-  materialList.innerHTML = `<h3>\u6574\u5957\u552e\u4ef7</h3>${mixedMaterialSummary ? `<p>\u5df2\u9009:${mixedMaterialSummary} \u00b7 ${formatMoneyOrMissing(total)}</p>` : ""}`;
+  materialList.innerHTML = `<h3>\u6574\u5957\u552e\u4ef7</h3>${mixedMaterialSummary ? `<p>\u5df2\u9009:${mixedMaterialSummary} \u00b7 ${money.format(total)}</p>` : ""}`;
   const labels = getMaterialLabels(effectiveRecommendation || selected[0]);
   if (!usesSinglePriceMaterial) {
     labels.forEach((label, index) => {
@@ -3993,7 +4112,7 @@ function renderSetPreview() {
       const displayLabel = formatMaterialDisplayLabel(label);
       row.className = `material-row${isSelectedMaterial ? " is-selected" : ""}`;
       const value = getSetMaterialRowPrice(selected, effectiveRecommendation, index);
-      row.innerHTML = `<span>${displayLabel}${isSelectedMaterial ? "(\u5df2\u9009)" : ""}</span><strong>${formatMoneyOrMissing(value, { prefix: "\u6574\u5957 " })}</strong>`;
+      row.innerHTML = `<span>${displayLabel}${isSelectedMaterial ? "(\u5df2\u9009)" : ""}</span><strong>\u6574\u5957 ${money.format(value)}</strong>`;
       materialList.append(row);
     });
   }
@@ -4028,7 +4147,7 @@ function renderSetPreview() {
       ${bedSizeOptions}
       ${dimensionText ? `<p class="combo-dimension"><span>\u6574\u5957\u5c3a\u5bf8</span><strong>${dimensionText}</strong></p>` : ""}
       ${hasCombination ? `<p class="combo-pieces"><span>\u7ec4\u5408\u4ef6\u6570</span><strong>${displayedPieceCount} \u4ef6</strong></p>` : ""}
-      ${hasCombination ? `<p class="combo-total"><span>\u6574\u5957\u552e\u4ef7</span><strong>${formatMoneyOrMissing(total)}</strong></p>` : ""}
+      ${hasCombination ? `<p class="combo-total"><span>\u6574\u5957\u552e\u4ef7</span><strong>${money.format(total)}</strong></p>` : ""}
     </div>
   `;
   if (!usesSinglePriceMaterial) setPhoto.append(materialList);
@@ -4064,7 +4183,7 @@ function renderSetPreview() {
         ${diningTurntableNote ? `<p class="included-accessory-note">${diningTurntableNote}</p>` : ""}
         ${pieceMaterialControl}
       </div>
-      <strong>${[pieceMaterialName, formatMoneyOrMissing(piecePrice)].filter(Boolean).join(" ")}</strong>
+      <strong>${[pieceMaterialName, money.format(piecePrice)].filter(Boolean).join(" ")}</strong>
     `;
     pieceList.append(row);
   });
@@ -4962,10 +5081,21 @@ function resolveItemPhoto(item) {
   if (isPhotoBlockedSeries(item.series)) return placeholderImage();
   const lockedPhoto = getLockedSeriesPhoto(item.series, "");
   if (lockedPhoto) return lockedPhoto;
+  const nikatorSeriesPhoto = getNikatorSeriesPrimaryPhoto(item);
   if (isCombinationItem(item)) {
-    return overrides[item.series] || item.photo || item.originalPhoto || getDiningFamilyPhoto(item) || getCombinationPhoto(item) || placeholderImage();
+    return overrides[item.series] || getCombinationPhoto(item) || item.originalPhoto || item.photo || getDiningFamilyPhoto(item) || placeholderImage();
   }
-  return overrides[item.series] || item.originalPhoto || item.photo || getDiningFamilyPhoto(item) || placeholderImage();
+  return overrides[item.series] || nikatorSeriesPhoto || item.originalPhoto || item.photo || getDiningFamilyPhoto(item) || placeholderImage();
+}
+
+function getNikatorSeriesPrimaryPhoto(item) {
+  if (activeCatalogKey !== "nikator" || !item?.series) return "";
+  if (!isNikatorModuleSeries(item.series)) return "";
+  const id = String(item.id || "");
+  const model = String(item.model || "");
+  const isSeriesCard = !id.includes("-") || id === item.series || model === item.series;
+  if (!isSeriesCard) return "";
+  return getSeriesGalleryPhotos(item.series)[0] || "";
 }
 
 function getDiningFamilyPhoto(item) {
@@ -4987,10 +5117,9 @@ function getCombinationPhoto(combo) {
   if (isPhotoBlockedSeries(combo.series)) return placeholderImage();
   const lockedPhoto = getLockedSeriesPhoto(combo.series, "");
   if (lockedPhoto) return lockedPhoto;
-  if (combo.photo) return combo.photo;
   const gallery = window.BAIDU_PHOTO_GALLERY || {};
   const photos = gallery[combo.series] || [];
-  if (!photos.length) return "";
+  if (!photos.length) return combo.photo || "";
   const key = getComboPartCodes(combo).join("+") || combo.configuration || combo.name || combo.id || "";
   const hash = [...String(key)].reduce((sum, char) => sum + char.charCodeAt(0), 0);
   return photos[hash % photos.length];
