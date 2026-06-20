@@ -1,13 +1,13 @@
 {
-    "patchVersionCode":  303,
-    "patchVersionName":  "v303-share-workaround-system-open",
+    "patchVersionCode":  304,
+    "patchVersionName":  "v304-public-viewer-share-link",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T02:42:35.8487616Z",
+    "createdAt":  "2026-06-20T02:54:11.0385654Z",
     "files":  {
                   "path":  "photo-viewer.html",
-                  "url":  "patches/v303-share-workaround-system-open/photo-viewer.html",
+                  "url":  "patches/v304-public-viewer-share-link/photo-viewer.html",
                   "contentType":  "text/html; charset=utf-8",
-                  "sha256":  "95d2923df06c8d6b46df94d66ff57b3b3ce4ef03599481a05fcaec0a7f13debf",
-                  "size":  19727
+                  "sha256":  "e4f6a9389d350d20832361d15afa4c2aa3840a3fbfb496dc01748b72fae0c9d9",
+                  "size":  21589
               }
 }
