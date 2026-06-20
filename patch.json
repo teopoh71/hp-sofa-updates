@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  904,
-    "patchVersionName":  "v904-zl3818-click-and-default-prefill",
+    "patchVersionCode":  905,
+    "patchVersionName":  "v905-zl787-armchair-price",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T05:04:34.3326254Z",
+    "createdAt":  "2026-06-20T05:41:33.6495579Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v904-zl3818-click-and-default-prefill/app.js",
+                      "url":  "patches/v905-zl787-armchair-price/app.js",
                       "contentType":  "text/javascript; charset=utf-8",
-                      "sha256":  "65f281a4def0f7f7ba800831491cc4297426d1d91f6b9fda97d26996cbef977f",
-                      "size":  197086
+                      "sha256":  "c58a0fd337ae88f6447e1198755ab80fe26c404bc198c1a91ad50143c48ee4cf",
+                      "size":  197540
                   }
               ]
 }
