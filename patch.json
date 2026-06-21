@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  943,
-    "patchVersionName":  "v943-hide-full-download-button",
+    "patchVersionCode":  944,
+    "patchVersionName":  "v944-stop-auto-apk-popup",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T09:56:01.4533927Z",
+    "createdAt":  "2026-06-21T10:02:40.9182097Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "5E6D79019DCD3ABC1DD8A603646269CDA3DFBE4D58CAABC6160C2F50B66B00A9",
-                      "size":  216853
+                      "sha256":  "3DCE8FCFF264D57A7B135AEB3EF21A63D28908DCEA3D39B0D48C4D4C1AF7594A",
+                      "size":  216823
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "A8314C49FAC0735F313B4E77CE99F8BC43825B4EA74113FE626AF04EE540E33D",
-                      "size":  416
+                      "sha256":  "BB435F3E9B2BE5C5097926BA97D87B43CE0720281D7CDB277AFF703422827201",
+                      "size":  410
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",

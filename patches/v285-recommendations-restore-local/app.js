@@ -1930,7 +1930,6 @@ if ("serviceWorker" in navigator) {
 }
 
 window.addEventListener("load", () => {
-  checkForOnlineUpdate();
   checkForOnlinePatch();
 });
 
