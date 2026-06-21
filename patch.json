@@ -1,15 +1,15 @@
 {
-    "patchVersionCode":  931,
-    "patchVersionName":  "v931-compact-filter-runtime",
+    "patchVersionCode":  932,
+    "patchVersionName":  "v932-catalog-3col-clear-after-combo",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T01:27:40.4170609Z",
+    "createdAt":  "2026-06-21T01:33:08.9622415Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "CAD6AAA4F8A07139A3756194DD0808AB6FC65A20037CF27DE9C0027426E120D1",
-                      "size":  207355
+                      "sha256":  "BB0B9FCAD6F6115D95FA12A36122C4ACAC648B34E0DE4DD40211493B7B997EA8",
+                      "size":  208483
                   }
               ]
 }

@@ -1353,6 +1353,7 @@ function jumpToSeries(brandKey, seriesValue) {
 }
 
 function syncQuickJumpVisibility() {
+  syncCatalogSwitchLayout();
   syncBuilderFilterVisibility();
   ensureDynamicQuickJumpGroup(activeCatalogKey);
   ensurePagedQuickJumpLayout(activeCatalogKey);
@@ -1361,6 +1362,24 @@ function syncQuickJumpVisibility() {
   groups.forEach((group) => {
     const key = group.dataset.quickJumpGroup;
     group.hidden = key !== activeCatalogKey;
+  });
+}
+
+function syncCatalogSwitchLayout() {
+  const switchPanel = document.querySelector(".catalog-switch");
+  if (!switchPanel) return;
+  switchPanel.style.setProperty("display", "grid", "important");
+  switchPanel.style.setProperty("grid-template-columns", "repeat(3, minmax(0, 1fr))", "important");
+  switchPanel.style.setProperty("gap", "5px", "important");
+  switchPanel.style.setProperty("margin-bottom", "6px", "important");
+  switchPanel.querySelectorAll(".catalog-switch-button").forEach((button) => {
+    button.style.setProperty("min-width", "0", "important");
+    button.style.setProperty("width", "100%", "important");
+    button.style.setProperty("min-height", "31px", "important");
+    button.style.setProperty("padding", "0 6px", "important");
+    button.style.setProperty("font-size", "0.82rem", "important");
+    button.style.setProperty("line-height", "1.05", "important");
+    button.style.setProperty("white-space", "normal", "important");
   });
 }
 
@@ -1402,9 +1421,12 @@ function syncLegacyBuilderFilterOverrides() {
 
   const filterPanel = document.querySelector(".builder-filter-buttons");
   if (filterPanel) {
+    if (comboButtonPanel && filterPanel.previousElementSibling !== comboButtonPanel) {
+      comboButtonPanel.after(filterPanel);
+    }
     filterPanel.style.setProperty("display", "flex", "important");
     filterPanel.style.setProperty("padding", "0", "important");
-    filterPanel.style.setProperty("margin", "4px 0 6px", "important");
+    filterPanel.style.setProperty("margin", "6px 0 8px", "important");
     filterPanel.style.setProperty("border", "0", "important");
     filterPanel.style.setProperty("background", "transparent", "important");
     filterPanel.style.setProperty("min-height", "0", "important");
