@@ -1,21 +1,21 @@
 ﻿{
-    "patchVersionCode":  942,
-    "patchVersionName":  "v942-combo-model-highlight-fix",
+    "patchVersionCode":  943,
+    "patchVersionName":  "v943-hide-full-download-button",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T09:52:33.4476808Z",
+    "createdAt":  "2026-06-21T09:56:01.4533927Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "4D24FABB00F8A86C7DBC129C1F038508BB8D21FAC026FC6D72BF3E8D213AF57A",
-                      "size":  217366
+                      "sha256":  "5E6D79019DCD3ABC1DD8A603646269CDA3DFBE4D58CAABC6160C2F50B66B00A9",
+                      "size":  216853
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "395B6D53004442705BB75479ABB1A67765A982A259A438DAAB8849E0E48FDC03",
+                      "sha256":  "A8314C49FAC0735F313B4E77CE99F8BC43825B4EA74113FE626AF04EE540E33D",
                       "size":  416
                   },
                   {

@@ -1307,19 +1307,6 @@ function renderVersionBadge() {
   text.textContent = `HP\u7248\u672c ${displayPatchCode || versionCode}`;
   badge.append(text);
 
-  const downloadUrl = currentAppVersion.fullDownloadUrl || "";
-  if (downloadUrl) {
-    const link = document.createElement("a");
-    link.className = "app-download-button";
-    link.href = downloadUrl;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    link.textContent = "\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305";
-    link.title = "\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305";
-    link.setAttribute("aria-label", "\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305");
-    badge.append(link);
-  }
-
   const checkButton = document.createElement("button");
   checkButton.type = "button";
   checkButton.className = "app-check-update-button";
