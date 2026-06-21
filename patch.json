@@ -1,15 +1,22 @@
 ﻿{
-    "patchVersionCode":  936,
-    "patchVersionName":  "v936-lan-apk-download",
+    "patchVersionCode":  937,
+    "patchVersionName":  "v937-clear-all-true-clear",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T05:54:25.9464883Z",
+    "createdAt":  "2026-06-21T06:44:32.4646180Z",
     "files":  [
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app.js",
+                      "url":  "patches/v285-recommendations-restore-local/app.js",
+                      "sha256":  "3D8A6C428B4589C5A3F503CE1A80FDD1B114E972BC0688BB4E0F15EEA96FA0BA",
+                      "size":  210186
+                  },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "FEF82D8B5A2E20060AA3FCE148A1868F2F70BAD54B6C9F7C3D947B52DAC96247",
-                      "size":  407
+                      "sha256":  "8D1EA643865B7918DFA5AEDAEDFEED4498F1633CA2BD40D68F810914AA7225B6",
+                      "size":  411
                   }
               ]
 }

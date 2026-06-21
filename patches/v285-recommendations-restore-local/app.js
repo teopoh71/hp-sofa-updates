@@ -997,6 +997,8 @@ const selectedTypeFilters = new Set();
 let pieceMaterialSelections = {};
 let selectedDiningTurntableId = "";
 let quickJumpSearchQuery = "";
+let suppressAutoSelectOnNextPopulate = false;
+let suppressRetainedSelectionsOnNextPopulate = false;
 
 const money = new Intl.NumberFormat(undefined, {
   style: "currency",
@@ -2187,12 +2189,11 @@ function clearBuilderSelections() {
   selectedDiningTurntableId = "";
   selectedTypeFilters.clear();
   pieceMaterialSelections = {};
+  suppressAutoSelectOnNextPopulate = true;
+  suppressRetainedSelectionsOnNextPopulate = true;
   setQuickJumpSearch("");
   syncFilterButtons();
   populateBuilderPieces(1);
-  if (!fillDefaultSingleCatalogSlot()) {
-    renderSetPreview();
-  }
 }
 
 function render() {
@@ -2391,7 +2392,9 @@ function syncModelJumpSelect() {
 }
 
 function populateBuilderPieces(forceSlotCount) {
-  const currentSelections = [...slotGrid.querySelectorAll(".slot-select")].map((select) => select.value);
+  const currentSelections = suppressRetainedSelectionsOnNextPopulate
+    ? []
+    : [...slotGrid.querySelectorAll(".slot-select")].map((select) => select.value);
   const allSeriesItems = getSeriesItems();
   const materialLabels = getMaterialLabels(allSeriesItems[0]);
   const previousMaterialLabel = materialSelect.options[materialSelect.selectedIndex]?.textContent || "";
@@ -2466,6 +2469,7 @@ function populateBuilderPieces(forceSlotCount) {
     const allowedItems = getAllowedSlotItems(seriesItems, retainedSelections, index);
     const shouldSelectFirst = index === 0
       && !retainedSelections[index]
+      && !suppressAutoSelectOnNextPopulate
       && allowedItems.length > 0
       && (activeCatalogKey === "zolano" || !recommendedCombos.length);
     populatePieceSelect(select, allowedItems, shouldSelectFirst);
@@ -2504,6 +2508,8 @@ function populateBuilderPieces(forceSlotCount) {
     slotGrid.append(label);
   }
 
+  suppressAutoSelectOnNextPopulate = false;
+  suppressRetainedSelectionsOnNextPopulate = false;
   syncZolanoModulePicker();
   renderSetPreview();
 }
