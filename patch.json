@@ -1,15 +1,15 @@
 {
-    "patchVersionCode":  930,
-    "patchVersionName":  "v930-hide-width-by-buttons",
+    "patchVersionCode":  931,
+    "patchVersionName":  "v931-compact-filter-runtime",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T00:52:29.8376612Z",
+    "createdAt":  "2026-06-21T01:27:40.4170609Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "45E6D5A6625A75C057510878C6E28B39B49426D798A3FED85A3CC467A49DEA05",
-                      "size":  204955
+                      "sha256":  "CAD6AAA4F8A07139A3756194DD0808AB6FC65A20037CF27DE9C0027426E120D1",
+                      "size":  207355
                   }
               ]
 }

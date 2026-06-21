@@ -1376,10 +1376,39 @@ function syncLegacyBuilderFilterOverrides() {
   });
 
   typeFilterButtons.forEach((button) => {
-    if ((button.dataset.typeFilter || "").toLowerCase() === "showroom") {
+    const type = (button.dataset.typeFilter || "").toLowerCase();
+    if (type === "showroom" || type === "chaise" || type === "recliner") {
       forceHideElement(button);
     }
   });
+
+  const clearButton = document.querySelector("#builderClearAllButton");
+  document.querySelectorAll(".filter-group span").forEach(forceHideElement);
+  if (clearButton) {
+    clearButton.hidden = false;
+    clearButton.removeAttribute("aria-hidden");
+    clearButton.style.setProperty("display", "inline-flex", "important");
+    clearButton.style.setProperty("min-height", "30px", "important");
+    clearButton.style.setProperty("padding", "0 10px", "important");
+    clearButton.style.setProperty("font-size", "0.82rem", "important");
+  }
+
+  const typeGroup = clearButton?.closest(".filter-group");
+  if (typeGroup) {
+    typeGroup.style.setProperty("display", "flex", "important");
+    typeGroup.style.setProperty("gap", "4px", "important");
+    typeGroup.style.setProperty("align-items", "center", "important");
+  }
+
+  const filterPanel = document.querySelector(".builder-filter-buttons");
+  if (filterPanel) {
+    filterPanel.style.setProperty("display", "flex", "important");
+    filterPanel.style.setProperty("padding", "0", "important");
+    filterPanel.style.setProperty("margin", "4px 0 6px", "important");
+    filterPanel.style.setProperty("border", "0", "important");
+    filterPanel.style.setProperty("background", "transparent", "important");
+    filterPanel.style.setProperty("min-height", "0", "important");
+  }
 }
 
 function forceHideElement(element) {
@@ -2613,6 +2642,26 @@ function renderComboButtons(combos = getSeriesRecommendations()) {
       recommendSelect.dispatchEvent(new Event("change", { bubbles: true }));
     });
     list.append(button);
+  });
+  applyCompactComboButtonLayout();
+}
+
+function applyCompactComboButtonLayout() {
+  const list = comboButtonPanel?.querySelector(".combo-choice-list");
+  if (list) {
+    list.style.setProperty("display", "grid", "important");
+    list.style.setProperty("grid-template-columns", "repeat(2, minmax(0, 1fr))", "important");
+    list.style.setProperty("gap", "5px", "important");
+  }
+  comboButtonPanel?.style.setProperty("padding", "5px", "important");
+  comboButtonPanel?.querySelectorAll(".combo-choice-button").forEach((button) => {
+    button.style.setProperty("min-height", "34px", "important");
+    button.style.setProperty("padding", "5px 6px", "important");
+    button.style.setProperty("font-size", "0.78rem", "important");
+    button.style.setProperty("line-height", "1.08", "important");
+    button.style.setProperty("text-align", "left", "important");
+    button.style.setProperty("white-space", "normal", "important");
+    button.style.setProperty("overflow-wrap", "anywhere", "important");
   });
 }
 
