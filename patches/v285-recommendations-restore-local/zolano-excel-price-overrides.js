@@ -1172,6 +1172,14 @@
       .replace(/MM|M$/g, "");
   }
 
+  function buildEntryKey(entry) {
+    return [
+      String(entry?.series || "").trim().toUpperCase(),
+      normalizeConfig(entry?.configuration),
+      normalizeConfig(entry?.dimensions || entry?.label || "")
+    ].join("|");
+  }
+
   function makeId(series, config, row) {
     return `ZOLANOEXCEL-${series}-${config}-${row}`.replace(/[^A-Z0-9]+/gi, "").toUpperCase();
   }
@@ -1204,8 +1212,8 @@
   }
 
   function upsertCatalogRow(entry) {
-    const key = normalizeConfig(entry.configuration);
-    let target = catalog.find((item) => item.series === entry.series && normalizeConfig(item.configuration) === key);
+    const key = buildEntryKey(entry);
+    let target = catalog.find((item) => buildEntryKey(item) === key);
     if (!target) {
       target = {
         id: makeId(entry.series, entry.configuration, entry.row),

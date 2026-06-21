@@ -3543,7 +3543,10 @@ function getSeriesRecommendations() {
     if (combo.series !== seriesSelect.value) return false;
     if (activeCatalogKey === "zolano" && !isZolanoRecommendedCombo(combo, hasZolanoOriginalSaleRows)) return false;
     const key = activeCatalogKey === "zolano"
-      ? combo.id
+      ? [
+          normalizeComboText(combo.configuration),
+          normalizeComboText(combo.dimensions || combo.description || "")
+        ].join("|")
       : getComboPartCodes(combo).join("+") || combo.id;
     if (seen.has(key)) return false;
     seen.add(key);
@@ -4514,14 +4517,17 @@ function findMatchingZolanoFinalPriceCombo(combo) {
   const comboCodeKey = getComboPartCodes(combo).map((part) => normalizeComboText(part)).filter(Boolean).join("+");
   const comboConfigKey = normalizeComboText(combo.configuration);
   const comboNameKey = normalizeComboText(combo.name);
+  const comboDimensionKey = normalizeComboText(combo.dimensions || combo.description || "");
   return recommendedCombos.find((candidate) => {
     if (candidate?.series !== combo.series) return false;
     if (!candidate?.priceIsFinal) return false;
     if (candidate?.showroomFullSet) return false;
     const candidateCodeKey = getComboPartCodes(candidate).map((part) => normalizeComboText(part)).filter(Boolean).join("+");
-    if (comboCodeKey && candidateCodeKey && candidateCodeKey === comboCodeKey) return true;
-    if (comboConfigKey && normalizeComboText(candidate.configuration) === comboConfigKey) return true;
-    if (comboNameKey && normalizeComboText(candidate.name) === comboNameKey) return true;
+    const candidateDimensionKey = normalizeComboText(candidate.dimensions || candidate.description || "");
+    if (comboDimensionKey && candidateDimensionKey && candidateDimensionKey === comboDimensionKey) return true;
+    if (!comboDimensionKey && comboCodeKey && candidateCodeKey && candidateCodeKey === comboCodeKey) return true;
+    if (!comboDimensionKey && comboConfigKey && normalizeComboText(candidate.configuration) === comboConfigKey) return true;
+    if (!comboDimensionKey && comboNameKey && comboNameKey !== normalizeComboText("Excel combo") && normalizeComboText(candidate.name) === comboNameKey) return true;
     return false;
   }) || null;
 }
