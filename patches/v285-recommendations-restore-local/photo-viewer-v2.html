@@ -189,12 +189,19 @@
 
       document.querySelector("#backButton").addEventListener("click", () => {
         if (returnUrl) {
-          location.replace(returnUrl);
+          location.replace(buildFreshReturnUrl(returnUrl));
           return;
         }
-        if (history.length > 1) history.back();
-        else location.href = "index.html";
+        location.replace(buildFreshReturnUrl("index.html"));
       });
+
+      function buildFreshReturnUrl(target) {
+        const url = new URL(target, location.href);
+        url.searchParams.delete("clearAppCache");
+        url.searchParams.set("test", "v956-photo-return-cache-fix");
+        url.searchParams.set("fresh", String(Date.now()));
+        return url.href;
+      }
 
       function guessContentType(path) {
         const clean = String(path || "").split("?")[0].toLowerCase();

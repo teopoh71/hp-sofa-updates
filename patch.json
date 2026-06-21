@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  955,
-    "patchVersionName":  "v955-zolano-combo-armchair-price",
+    "patchVersionCode":  956,
+    "patchVersionName":  "v956-photo-return-cache-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T14:42:57.6010191Z",
+    "createdAt":  "2026-06-21T15:18:03.5292709Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "7FFB406BEE665ED48072DF9865AED4F296EBC3BAECAD9BA7E745FA837ECE304C",
-                      "size":  219011
+                      "sha256":  "E4364DB77D6D64A8DE6CE176BF57CDC1D1B2C6DEDCD2032F6BB44CC248262545",
+                      "size":  219691
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "62B97C7FF618EBEA5F8D0DA19F6B54D19677107B108465E99FAD0F738F71ABE9",
-                      "size":  418
+                      "sha256":  "7B312583D61E916312949867224D9833AF421743FF2DC198BCFAD48A64C65B44",
+                      "size":  413
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -50,8 +50,22 @@
                       "contentType":  "text/html; charset=utf-8",
                       "path":  "photo-viewer-v2.html",
                       "url":  "patches/v285-recommendations-restore-local/photo-viewer-v2.html",
-                      "sha256":  "9AC2811027DDD7BBEA233C31997067143D8B476625BD10374398AD07CA9EDFA1",
-                      "size":  8290
+                      "sha256":  "F5F0241EFB8AC52A0A05A4BD6B82E681EFB5F3B151513F49AD0C61E2C1336CAE",
+                      "size":  8590
+                  },
+                  {
+                      "path":  "index.html",
+                      "url":  "patches/v285-recommendations-restore-local/index.html",
+                      "sha256":  "BBB9E574BF5B3EBB439F04D3E4FB4C4601A819800DAAE7BDB8CE1B47DC0E14A3",
+                      "size":  26624,
+                      "contentType":  "text/html; charset=utf-8"
+                  },
+                  {
+                      "path":  "sw.js",
+                      "url":  "patches/v285-recommendations-restore-local/sw.js",
+                      "sha256":  "0A0A173056D2A0AB78E3546662B0AAFBB329832708AC5DDFA0ADABD246B86BBC",
+                      "size":  5848,
+                      "contentType":  "text/javascript; charset=utf-8"
                   }
               ]
 }

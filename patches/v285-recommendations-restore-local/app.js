@@ -2102,6 +2102,15 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
   sessionStorage.setItem(patchSeenVersionStorageKey, String(patch.patchVersionCode || 0));
   currentAppVersion.patchVersionCode = Number(patch.patchVersionCode || 0);
   currentAppVersion.patchVersionName = patch.patchVersionName || currentAppVersion.patchVersionName || "";
+  await refreshServiceWorkerAfterPatch();
+}
+
+async function refreshServiceWorkerAfterPatch() {
+  if (!("serviceWorker" in navigator)) return;
+  try {
+    const registrations = await navigator.serviceWorker.getRegistrations();
+    await Promise.all(registrations.map((registration) => registration.update()));
+  } catch {}
 }
 
 async function cacheOnePatchFile(cache, localPath, body, headers) {
@@ -4793,19 +4802,27 @@ function openFullscreenPhoto(src) {
 function openRawPhotoForLongPress(src) {
   if (!src) return;
   savePhotoViewerReturnState();
-  const returnUrl = encodeURIComponent(window.location.href);
-  window.location.href = `${photoViewerPath}?src=${encodeURIComponent(toAbsoluteUrl(src))}&return=${returnUrl}`;
+  const returnUrl = encodeURIComponent(buildPhotoViewerReturnUrl());
+  window.location.href = `${photoViewerPath}?src=${encodeURIComponent(toAbsoluteUrl(src))}&return=${returnUrl}&fresh=${Date.now()}`;
 }
 
 function openPhotoSelectionForLongPress(urls) {
   const absoluteUrls = urls.map(toAbsoluteUrl).filter(Boolean);
   if (!absoluteUrls.length) return;
   savePhotoViewerReturnState();
-  const returnUrl = encodeURIComponent(window.location.href);
+  const returnUrl = encodeURIComponent(buildPhotoViewerReturnUrl());
   const url = absoluteUrls.length === 1
-    ? `${photoViewerPath}?src=${encodeURIComponent(absoluteUrls[0])}&return=${returnUrl}`
-    : `${photoViewerPath}?srcs=${encodeURIComponent(JSON.stringify(absoluteUrls))}&return=${returnUrl}`;
+    ? `${photoViewerPath}?src=${encodeURIComponent(absoluteUrls[0])}&return=${returnUrl}&fresh=${Date.now()}`
+    : `${photoViewerPath}?srcs=${encodeURIComponent(JSON.stringify(absoluteUrls))}&return=${returnUrl}&fresh=${Date.now()}`;
   window.location.href = url;
+}
+
+function buildPhotoViewerReturnUrl() {
+  const url = new URL(window.location.href);
+  url.searchParams.delete("clearAppCache");
+  url.searchParams.set("test", currentAppVersion.patchVersionName || "current");
+  url.searchParams.set("fresh", String(Date.now()));
+  return url.href;
 }
 
 function savePhotoViewerReturnState() {
