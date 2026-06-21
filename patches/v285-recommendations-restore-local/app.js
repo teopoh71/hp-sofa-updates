@@ -10,6 +10,7 @@ const patchCacheName = "hp-sofa-patch-cache";
 const patchVersionStorageKey = "hp-sofa-patch-version-code";
 const patchNameStorageKey = "hp-sofa-patch-version-name";
 const patchSeenVersionStorageKey = "hp-sofa-patch-seen-version-code";
+const viewerReturnStateStorageKey = "hp-sofa-viewer-return-state";
 const showroomNikatorQuickOrder = [
   "NK0003SF",
   "NK0042SF",
@@ -1124,6 +1125,7 @@ renderVersionBadge();
 syncActiveCatalog();
 render();
 initBuilder();
+restorePhotoViewerReturnState();
 if (typeof syncQuickJumpVisibility === "function") syncQuickJumpVisibility();
 rebuildQuickJumpGroup("nikator");
 syncQuickJumpImages(document);
@@ -2509,6 +2511,7 @@ function populateBuilderPieces(forceSlotCount) {
       && !retainedSelections[index]
       && !suppressAutoSelectOnNextPopulate
       && allowedItems.length > 0
+      && !isManualModuleSeriesName(seriesSelect?.value || "")
       && (activeCatalogKey === "zolano" || !recommendedCombos.length);
     populatePieceSelect(select, allowedItems, shouldSelectFirst);
     const currentItem = catalogSofas.find((item) => item.id === retainedSelections[index]);
@@ -4822,16 +4825,107 @@ function openFullscreenPhoto(src) {
 
 function openRawPhotoForLongPress(src) {
   if (!src) return;
-  window.location.href = `photo-viewer.html?src=${encodeURIComponent(toAbsoluteUrl(src))}`;
+  savePhotoViewerReturnState();
+  const returnUrl = encodeURIComponent(window.location.href);
+  window.location.href = `photo-viewer.html?src=${encodeURIComponent(toAbsoluteUrl(src))}&return=${returnUrl}`;
 }
 
 function openPhotoSelectionForLongPress(urls) {
   const absoluteUrls = urls.map(toAbsoluteUrl).filter(Boolean);
   if (!absoluteUrls.length) return;
+  savePhotoViewerReturnState();
+  const returnUrl = encodeURIComponent(window.location.href);
   const url = absoluteUrls.length === 1
-    ? `photo-viewer.html?src=${encodeURIComponent(absoluteUrls[0])}`
-    : `photo-viewer.html?srcs=${encodeURIComponent(JSON.stringify(absoluteUrls))}`;
+    ? `photo-viewer.html?src=${encodeURIComponent(absoluteUrls[0])}&return=${returnUrl}`
+    : `photo-viewer.html?srcs=${encodeURIComponent(JSON.stringify(absoluteUrls))}&return=${returnUrl}`;
   window.location.href = url;
+}
+
+function savePhotoViewerReturnState() {
+  try {
+    const state = {
+      activeCatalogKey,
+      searchQuery: searchInput?.value || "",
+      builderSearch: builderSearchInput?.value || "",
+      seriesValue: seriesSelect?.value || "",
+      recommendationValue: recommendSelect?.value || "",
+      selectedRecommendationCounts,
+      selectedWidthFilter,
+      selectedTypeFilters: [...selectedTypeFilters],
+      selectedDiningTurntableId,
+      pieceMaterialSelections,
+      materialValue: materialSelect?.value || "",
+      slotSelections: [...document.querySelectorAll(".slot-select")].map((select) => select.value || "")
+    };
+    sessionStorage.setItem(viewerReturnStateStorageKey, JSON.stringify(state));
+  } catch {}
+}
+
+function restorePhotoViewerReturnState() {
+  let state = null;
+  try {
+    state = JSON.parse(sessionStorage.getItem(viewerReturnStateStorageKey) || "null");
+    sessionStorage.removeItem(viewerReturnStateStorageKey);
+  } catch {
+    sessionStorage.removeItem(viewerReturnStateStorageKey);
+    return;
+  }
+  if (!state || typeof state !== "object") return;
+
+  const catalogChanged = state.activeCatalogKey && catalogDefinitions[state.activeCatalogKey] && state.activeCatalogKey !== activeCatalogKey;
+  if (catalogChanged) {
+    activeCatalogKey = state.activeCatalogKey;
+  }
+  syncActiveCatalog();
+  if (catalogChanged) {
+    render();
+    initBuilder();
+  }
+
+  if (searchInput) searchInput.value = state.searchQuery || "";
+  if (builderSearchInput) builderSearchInput.value = state.builderSearch || "";
+  selectedWidthFilter = Number(state.selectedWidthFilter || 0);
+  selectedTypeFilters.clear();
+  (Array.isArray(state.selectedTypeFilters) ? state.selectedTypeFilters : []).forEach((value) => {
+    if (value) selectedTypeFilters.add(value);
+  });
+  selectedDiningTurntableId = state.selectedDiningTurntableId || "";
+  pieceMaterialSelections = state.pieceMaterialSelections && typeof state.pieceMaterialSelections === "object"
+    ? state.pieceMaterialSelections
+    : {};
+  syncFilterButtons();
+
+  const seriesValue = String(state.seriesValue || "");
+  const hasSeriesOption = seriesValue && Array.from(seriesSelect?.options || []).some((option) => option.value === seriesValue);
+  if (hasSeriesOption) {
+    seriesSelect.value = seriesValue;
+    seriesSelect.dispatchEvent(new Event("change", { bubbles: true }));
+  } else {
+    populateBuilderPieces(1);
+  }
+
+  clearSelectedRecommendationCounts();
+  const savedCounts = state.selectedRecommendationCounts && typeof state.selectedRecommendationCounts === "object"
+    ? Object.entries(state.selectedRecommendationCounts).filter(([, count]) => Number(count) > 0)
+    : [];
+  savedCounts.forEach(([comboId, count]) => {
+    selectedRecommendationCounts[String(comboId)] = Number(count);
+  });
+  if (recommendSelect) {
+    recommendSelect.value = String(state.recommendationValue || savedCounts[0]?.[0] || "");
+  }
+  if (materialSelect && state.materialValue != null) {
+    materialSelect.value = String(state.materialValue);
+  }
+
+  const slotSelections = Array.isArray(state.slotSelections) ? state.slotSelections.filter(Boolean) : [];
+  if (slotSelections.length) {
+    setBuilderSelections(slotSelections);
+  } else {
+    populateBuilderPieces(1);
+  }
+  syncBuilderControlsVisibility();
+  renderSetPreview();
 }
 
 function getItemGallery(item) {

@@ -111,6 +111,7 @@
     <script>
       const params = new URLSearchParams(location.search);
       const src = params.get("src") || "";
+      const returnUrl = params.get("return") || "";
       const stage = document.querySelector(".viewer-stage");
       const photo = document.querySelector("#photo");
       let photos = [];
@@ -202,6 +203,10 @@
       });
 
       document.querySelector("#backButton").addEventListener("click", () => {
+        if (returnUrl) {
+          location.replace(returnUrl);
+          return;
+        }
         if (history.length > 1) history.back();
         else location.href = "index.html";
       });

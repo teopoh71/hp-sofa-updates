@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  948,
-    "patchVersionName":  "v948-photo-viewer-fullscreen-zoom",
+    "patchVersionCode":  949,
+    "patchVersionName":  "v949-photo-return-state-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T11:49:30.5315688Z",
+    "createdAt":  "2026-06-21T13:04:02.8643679Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "CCEB16A551473ADA071FEB7EEE671DD1F07CB80FCA0C8508680E4081D21F062B",
-                      "size":  217654
+                      "sha256":  "2C502C06E82835CF95A9F89E66DC4FC573AE4F6BDE18EEE6320FDD3568C5CB5F",
+                      "size":  221343
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "9694F9A86A65414D623D9ECD550C4E3136F96868F45215D2AD9F39C3643CD8F2",
-                      "size":  414
+                      "sha256":  "44139F2E4BE0BE89BDEBB591EF68CF3E1FF1241671A4C6CD2C23B8389B919DD3",
+                      "size":  413
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -36,8 +36,8 @@
                       "contentType":  "text/html; charset=utf-8",
                       "path":  "photo-viewer.html",
                       "url":  "patches/v285-recommendations-restore-local/photo-viewer.html",
-                      "sha256":  "D24A5D1516390DE00A55A596FB95752A00F461455D8AEAC69204A6C8650DB0C7",
-                      "size":  8444
+                      "sha256":  "03BC37C83A19D86EEBA5F6819825E0AF4B695BCA4B2FCCC66FABC60F2FF95888",
+                      "size":  8588
                   }
               ]
 }
