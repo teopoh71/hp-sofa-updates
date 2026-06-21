@@ -1367,18 +1367,26 @@ function syncQuickJumpVisibility() {
 function syncLegacyBuilderFilterOverrides() {
   const widthGroup = document.querySelector(".width-filter-group");
   if (widthGroup) {
-    widthGroup.hidden = true;
-    widthGroup.setAttribute("aria-hidden", "true");
-    widthGroup.style.setProperty("display", "none", "important");
+    forceHideElement(widthGroup);
   }
+  widthFilterButtons.forEach((button) => {
+    const group = button.closest(".filter-group") || button.parentElement;
+    if (group) forceHideElement(group);
+    forceHideElement(button);
+  });
 
   typeFilterButtons.forEach((button) => {
     if ((button.dataset.typeFilter || "").toLowerCase() === "showroom") {
-      button.hidden = true;
-      button.setAttribute("aria-hidden", "true");
-      button.style.setProperty("display", "none", "important");
+      forceHideElement(button);
     }
   });
+}
+
+function forceHideElement(element) {
+  if (!element) return;
+  element.hidden = true;
+  element.setAttribute("aria-hidden", "true");
+  element.style.setProperty("display", "none", "important");
 }
 
 function syncBuilderFilterVisibility() {

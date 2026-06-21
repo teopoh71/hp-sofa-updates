@@ -1,15 +1,15 @@
 {
-    "patchVersionCode":  929,
-    "patchVersionName":  "v929-force-hide-width-group",
+    "patchVersionCode":  930,
+    "patchVersionName":  "v930-hide-width-by-buttons",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T00:47:24.1383973Z",
+    "createdAt":  "2026-06-21T00:52:29.8376612Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "A39618D56873123D9E811A463169761D5A557F77C535340237CFFB5A31788994",
-                      "size":  204788
+                      "sha256":  "45E6D5A6625A75C057510878C6E28B39B49426D798A3FED85A3CC467A49DEA05",
+                      "size":  204955
                   }
               ]
 }
