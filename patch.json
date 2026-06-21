@@ -1,15 +1,15 @@
 ﻿{
-    "patchVersionCode":  934,
-    "patchVersionName":  "v934-module-count-badge",
+    "patchVersionCode":  935,
+    "patchVersionName":  "v935-module-click-add-count",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T04:40:53.7346535Z",
+    "createdAt":  "2026-06-21T05:30:15.9226372Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "86DBF804A08DD2558FA3B1435C489EE1021642E3D3D5525E614845CE69F2718C",
-                      "size":  209989
+                      "sha256":  "1681AEC7C9115A1C0DAD0D6CBCF796BACF89CC7F85E4A02C5681EFB11DF5A7C8",
+                      "size":  209884
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -22,7 +22,7 @@
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "1631F53F5CCC44C3CFE790223F26578720991AC9C8A21667919B3F61967FE0C2",
+                      "sha256":  "ED25487D43A1D4C6F3244F5BA5D0249BEBD3DCA73AB4F57CAFDD54ED0318296B",
                       "size":  431
                   }
               ]

@@ -3145,7 +3145,7 @@ function syncZolanoModulePicker() {
   zolanoModulePicker.innerHTML = `
     <div class="module-picker-heading" style="margin-bottom:4px;font-size:0.88rem;line-height:1.1;">
       <strong>${activeSeries} \u6a21\u5757</strong>
-      <span>\u70b9\u51fb\u52a0\uff0c\u518d\u70b9\u53d6\u6d88</span>
+      <span>\u70b9\u51fb\u4e00\u6b21\u52a0 1 \u4ef6</span>
     </div>
     <div class="module-picker-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:5px;">
       ${modules.map((module) => {
@@ -3168,10 +3168,6 @@ function syncZolanoModulePicker() {
 }
 
 function toggleZolano2897Module(moduleId) {
-  if (getSelectedModuleCount(moduleId)) {
-    removeZolano2897Module(moduleId);
-    return;
-  }
   addZolano2897Module(moduleId);
 }
 
