@@ -1,8 +1,8 @@
 ﻿{
-    "patchVersionCode":  945,
-    "patchVersionName":  "v945-zl2707-single-combo-clean",
+    "patchVersionCode":  946,
+    "patchVersionName":  "v946-photo-viewer-pinch-close",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T10:30:37.2201098Z",
+    "createdAt":  "2026-06-21T11:33:31.3716310Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
@@ -15,8 +15,8 @@
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "4609FA76507ED6648439001FDCF0EC3EA27B4CFD416A431F8DFA81B10CFAB0F3",
-                      "size":  416
+                      "sha256":  "67BDEB441EC231B14B0E68F92C0F4C88D764A5C0EA961DD2013C889666577878",
+                      "size":  415
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -31,6 +31,13 @@
                       "url":  "patches/v285-recommendations-restore-local/zolano-excel-price-overrides.js",
                       "sha256":  "6B2FB956565C729F580B0DCEDDD15808A9ED586F54A486676748FE92EA32B192",
                       "size":  27124
+                  },
+                  {
+                      "contentType":  "text/html; charset=utf-8",
+                      "path":  "photo-viewer.html",
+                      "url":  "patches/v285-recommendations-restore-local/photo-viewer.html",
+                      "sha256":  "4376354ABAC745BDB3CF415B65C6D8C9F7ADFD339B1075DA1E78C29C77C8D252",
+                      "size":  7575
                   }
               ]
 }
