@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  938,
-    "patchVersionName":  "v938-full-apk-label-fix",
+    "patchVersionCode":  939,
+    "patchVersionName":  "v939-zolano-same-combo-price",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T07:11:53.7401412Z",
+    "createdAt":  "2026-06-21T07:40:02.4536374Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "D0E9864C85D01379620745688077B9E9BBF5C975CB10E6EBA0C1AA8AE2288932",
-                      "size":  210068
+                      "sha256":  "87E0CCA3E8A64FBEDBEECB0D180DB7969C4EFA24EA45E3E83F9E44B4E75A4D41",
+                      "size":  211110
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "8A10773310ED8368CB16651EF4B7910BEBA1D7C1DFD3620C5D5494529BE2D422",
-                      "size":  409
+                      "sha256":  "FA61D336A22023CF225A265AD193140153A7BA558D3273AB860EE0EF659F393C",
+                      "size":  414
                   }
               ]
 }

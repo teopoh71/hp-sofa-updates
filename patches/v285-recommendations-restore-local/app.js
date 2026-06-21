@@ -4376,10 +4376,28 @@ function bindBedSizeOptions(container) {
 
 function resolvePricedZolanoRecommendation(combo) {
   if (activeCatalogKey !== "zolano" || !combo) return combo;
-  if (combo.price || combo.priceOptions?.length) return combo;
-  return catalogSofas.find((item) => item.id === combo.id)
+  return findMatchingZolanoFinalPriceCombo(combo)
+    || (combo.price || combo.priceOptions?.length ? combo : null)
+    || catalogSofas.find((item) => item.id === combo.id)
     || findZolanoRecommendedItem(getSeriesItems(), combo)
     || combo;
+}
+
+function findMatchingZolanoFinalPriceCombo(combo) {
+  if (activeCatalogKey !== "zolano" || !combo) return null;
+  const comboCodeKey = getComboPartCodes(combo).map((part) => normalizeComboText(part)).filter(Boolean).join("+");
+  const comboConfigKey = normalizeComboText(combo.configuration);
+  const comboNameKey = normalizeComboText(combo.name);
+  return recommendedCombos.find((candidate) => {
+    if (candidate?.series !== combo.series) return false;
+    if (!candidate?.priceIsFinal) return false;
+    if (candidate?.showroomFullSet) return false;
+    const candidateCodeKey = getComboPartCodes(candidate).map((part) => normalizeComboText(part)).filter(Boolean).join("+");
+    if (comboCodeKey && candidateCodeKey && candidateCodeKey === comboCodeKey) return true;
+    if (comboConfigKey && normalizeComboText(candidate.configuration) === comboConfigKey) return true;
+    if (comboNameKey && normalizeComboText(candidate.name) === comboNameKey) return true;
+    return false;
+  }) || null;
 }
 
 function resolveIndividualItemPhoto(item) {
