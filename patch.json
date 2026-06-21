@@ -1,22 +1,29 @@
 ﻿{
-    "patchVersionCode":  933,
-    "patchVersionName":  "v933-toggle-module-new-apk",
+    "patchVersionCode":  934,
+    "patchVersionName":  "v934-module-count-badge",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T01:55:51.3606838Z",
+    "createdAt":  "2026-06-21T04:40:53.7346535Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "93B7166F6ADAE2920F763DD7AC4D283D73B27E49A08375E281E1F3CC84486BB1",
-                      "size":  209613
+                      "sha256":  "86DBF804A08DD2558FA3B1435C489EE1021642E3D3D5525E614845CE69F2718C",
+                      "size":  209989
+                  },
+                  {
+                      "contentType":  "text/css; charset=utf-8",
+                      "path":  "styles.css",
+                      "url":  "patches/v285-recommendations-restore-local/styles.css",
+                      "sha256":  "72BE4EA7F832AAC694C998C0724C2AD11C68BEC6410F645A782792C57E42D5B2",
+                      "size":  33983
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "4B770088F8C254E74974506F0C36498B05BB8755276C7AFB754F3E2124AFD5C1",
-                      "size":  434
+                      "sha256":  "1631F53F5CCC44C3CFE790223F26578720991AC9C8A21667919B3F61967FE0C2",
+                      "size":  431
                   }
               ]
 }

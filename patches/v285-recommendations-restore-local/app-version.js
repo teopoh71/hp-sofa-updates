@@ -3,7 +3,7 @@
   versionName: "v933-toggle-module-new-apk",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
   fullDownloadUrl: "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v933-mobile.apk",
-  patchVersionCode: 933,
-  patchVersionName: "v933-toggle-module-new-apk",
+  patchVersionCode: 934,
+  patchVersionName: "v934-module-count-badge",
   patchManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/patch.json"
 };

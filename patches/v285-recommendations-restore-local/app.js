@@ -1268,9 +1268,9 @@ function renderVersionBadge() {
     link.href = downloadUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    const downloadVersionNumber = installedPatchCode || versionCode;
+    const downloadVersionNumber = currentPatchCode || versionCode;
     const downloadVersionLabel = downloadVersionNumber ? ` v${downloadVersionNumber}` : "";
-    link.textContent = `\u4e0b\u8f7d\u5b89\u88c5\u5305${downloadVersionLabel}`;
+    link.textContent = `\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305${downloadVersionLabel}`;
     link.title = `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`;
     link.setAttribute("aria-label", `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`);
     badge.append(link);
@@ -2810,6 +2810,7 @@ function getComboDisplayName(combo) {
     const name = cleanComboDisplayText(combo?.name, "");
     const series = String(combo?.series || seriesSelect?.value || "").trim();
     if (/\u5c55\u5385\u6574\u5957|SHOWROOM\s+FULL\s+SET/i.test(name)) return name;
+    if (/^EXCEL\s+COMBO$/i.test(name)) return "";
     if (!name || name === series || /^ZL\s*\d+/i.test(name)) return "";
   }
   return cleanComboDisplayText(combo?.name, "\u7ec4\u5408").replace(/^\u5e38\u7528/, "");
@@ -3148,9 +3149,11 @@ function syncZolanoModulePicker() {
     </div>
     <div class="module-picker-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:5px;">
       ${modules.map((module) => {
-        const selected = getSelectedModuleCount(module.id) > 0;
+        const selectedCount = getSelectedModuleCount(module.id);
+        const selected = selectedCount > 0;
         return `
-        <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${module.id}" style="display:grid;grid-template-rows:52px auto auto;gap:1px;min-height:88px;padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
+        <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${module.id}" style="position:relative;display:grid;grid-template-rows:52px auto auto;gap:1px;min-height:88px;padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
+          ${selected ? `<span class="module-picker-count">${selectedCount}</span>` : ""}
           <img src="${module.photo}" alt="${module.label}" style="width:100%;height:52px;object-fit:contain;">
           <strong style="font-size:0.86rem;line-height:1.05;">${module.label}</strong>
           <span style="font-size:0.68rem;line-height:1.05;">${module.meta}</span>
@@ -3563,9 +3566,12 @@ function getKnownZolanoButtonWidth(combo) {
 
 function getZolanoConfigWidthCandidate(combo) {
   const config = String(combo?.configuration || "").trim();
+  const text = `${config} ${combo?.dimensions || ""}`;
+  const millimeterMatch = text.match(/\b(\d{3,5})\s*MM\b/i);
+  if (millimeterMatch) return Number(millimeterMatch[1]);
   const centimeterMatch = config.match(/\((\d+(?:\.\d+)?)\s*CM\)/i);
   if (centimeterMatch) return Math.round(Number(centimeterMatch[1]) * 10);
-  const meterMatch = config.match(/\((\d+(?:\.\d+)?)\s*M\)/i) || config.match(/^(\d+(?:\.\d+)?)$/);
+  const meterMatch = text.match(/\((\d+(?:\.\d+)?)\s*M\)/i) || config.match(/^(\d+(?:\.\d+)?)$/);
   if (meterMatch) return Math.round(Number(meterMatch[1]) * 1000);
   return 0;
 }

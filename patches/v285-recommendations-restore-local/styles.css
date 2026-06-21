@@ -882,6 +882,27 @@ select:focus {
   object-fit: contain;
 }
 
+.module-picker-count {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #14706b;
+  color: #fff;
+  border: 2px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 1px 4px rgba(20, 108, 104, 0.28);
+  pointer-events: none;
+}
+
 .module-picker-button strong,
 .module-picker-button span {
   max-width: 100%;
