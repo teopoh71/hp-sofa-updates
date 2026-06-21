@@ -60,18 +60,33 @@
       }
 
       .viewer-stage {
-        min-height: 100vh;
-        padding: max(64px, calc(env(safe-area-inset-top) + 52px)) 0 24px;
-        overflow: auto;
-        touch-action: pinch-zoom;
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0;
+        touch-action: none;
         -webkit-overflow-scrolling: touch;
+      }
+
+      .viewer-stage.is-gallery {
+        position: static;
+        min-height: 100vh;
+        display: block;
+        overflow: auto;
+        padding: max(64px, calc(env(safe-area-inset-top) + 52px)) 0 24px;
+        touch-action: pinch-zoom;
       }
 
       img {
         display: block;
-        width: 100%;
+        width: auto;
+        max-width: 100vw;
+        max-height: 100vh;
         height: auto;
-        min-height: 40vh;
+        min-height: 0;
         object-fit: contain;
         background: #111;
         -webkit-touch-callout: default;
@@ -117,6 +132,7 @@
 
       function renderImages(targets) {
         stage.innerHTML = "";
+        stage.classList.toggle("is-gallery", targets.length > 1);
         if (targets.length > 1) {
           targets.forEach((photoSrc) => {
             const image = document.createElement("img");
@@ -211,6 +227,16 @@
         });
       }
 
+      function resetZoom() {
+        zoomState.scale = 1;
+        zoomState.startScale = 1;
+        zoomState.startDistance = 0;
+        activePointers.clear();
+        getImageElements().forEach((image) => applyZoom(image));
+        stage.scrollTop = 0;
+        stage.scrollLeft = 0;
+      }
+
       function onPointerDown(event) {
         activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
       }
@@ -245,6 +271,11 @@
 
       function clamp(value, min, max) {
         return Math.min(max, Math.max(min, value));
+      }
+
+      window.addEventListener("resize", resetZoom);
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener("resize", resetZoom);
       }
     </script>
   </body>

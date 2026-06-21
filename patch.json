@@ -1,8 +1,8 @@
 ﻿{
-    "patchVersionCode":  947,
-    "patchVersionName":  "v947-check-button-patch-only",
+    "patchVersionCode":  948,
+    "patchVersionName":  "v948-photo-viewer-fullscreen-zoom",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T11:39:41.9001822Z",
+    "createdAt":  "2026-06-21T11:49:30.5315688Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
@@ -36,8 +36,8 @@
                       "contentType":  "text/html; charset=utf-8",
                       "path":  "photo-viewer.html",
                       "url":  "patches/v285-recommendations-restore-local/photo-viewer.html",
-                      "sha256":  "4376354ABAC745BDB3CF415B65C6D8C9F7ADFD339B1075DA1E78C29C77C8D252",
-                      "size":  7575
+                      "sha256":  "D24A5D1516390DE00A55A596FB95752A00F461455D8AEAC69204A6C8650DB0C7",
+                      "size":  8444
                   }
               ]
 }
