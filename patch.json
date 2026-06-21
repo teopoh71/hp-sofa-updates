@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  953,
-    "patchVersionName":  "v953-hide-legacy-width-filter",
+    "patchVersionCode":  955,
+    "patchVersionName":  "v955-zolano-combo-armchair-price",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T13:59:08.8049652Z",
+    "createdAt":  "2026-06-21T14:42:57.6010191Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "1C006C7E8F92821E181779E1A49BECED7E1AB5A5C059BEF47DDD10C3C4444922",
-                      "size":  218666
+                      "sha256":  "7FFB406BEE665ED48072DF9865AED4F296EBC3BAECAD9BA7E745FA837ECE304C",
+                      "size":  219011
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "77462E07E41420710B7247F86D0D54ADDC1BC773645F9C4DF53A8B5158DB923C",
-                      "size":  415
+                      "sha256":  "62B97C7FF618EBEA5F8D0DA19F6B54D19677107B108465E99FAD0F738F71ABE9",
+                      "size":  418
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",

@@ -374,11 +374,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 0,
-    priceOptions: [0],
-    materials: ["Zolano"],
+    price: 5922,
+    priceOptions: [5922, 8950, 9892],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL725.jpg",
-    source: "manual-armchair-list"
+    source: "EXPORT 2020 (ARC2).xls#Sheet1!151"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL751",
@@ -406,11 +407,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 0,
-    priceOptions: [0],
-    materials: ["Zolano"],
+    price: 5031,
+    priceOptions: [5031, 5749, 6533],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL771.jpg",
-    source: "manual-armchair-list"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC!249"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL781",
@@ -3283,7 +3285,16 @@ function getRecommendationItems(combo, seriesItems = getSeriesItems()) {
     if (directMatches.length) return directMatches;
 
     const fallbackMatch = findZolanoRecommendedItem(seriesItems, combo);
-    return fallbackMatch ? [fallbackMatch] : [];
+    if (fallbackMatch) return [fallbackMatch];
+
+    if (combo.priceOptions?.length || combo.price) {
+      return [{
+        ...combo,
+        model: combo.model || combo.name || combo.series,
+        brand: combo.brand || "Zolano"
+      }];
+    }
+    return [];
   }
 
   return getComboPartCodes(combo)
