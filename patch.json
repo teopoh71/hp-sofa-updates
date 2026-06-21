@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  937,
-    "patchVersionName":  "v937-clear-all-true-clear",
+    "patchVersionCode":  938,
+    "patchVersionName":  "v938-full-apk-label-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T06:44:32.4646180Z",
+    "createdAt":  "2026-06-21T07:11:53.7401412Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "3D8A6C428B4589C5A3F503CE1A80FDD1B114E972BC0688BB4E0F15EEA96FA0BA",
-                      "size":  210186
+                      "sha256":  "D0E9864C85D01379620745688077B9E9BBF5C975CB10E6EBA0C1AA8AE2288932",
+                      "size":  210068
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "8D1EA643865B7918DFA5AEDAEDFEED4498F1633CA2BD40D68F810914AA7225B6",
-                      "size":  411
+                      "sha256":  "8A10773310ED8368CB16651EF4B7910BEBA1D7C1DFD3620C5D5494529BE2D422",
+                      "size":  409
                   }
               ]
 }

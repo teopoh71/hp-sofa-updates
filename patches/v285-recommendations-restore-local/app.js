@@ -1270,11 +1270,9 @@ function renderVersionBadge() {
     link.href = downloadUrl;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    const downloadVersionNumber = currentPatchCode || versionCode;
-    const downloadVersionLabel = downloadVersionNumber ? ` v${downloadVersionNumber}` : "";
-    link.textContent = `\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305${downloadVersionLabel}`;
-    link.title = `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`;
-    link.setAttribute("aria-label", `\u4e0b\u8f7d\u5b89\u88c5\u5305 ${versionName}`);
+    link.textContent = "\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305";
+    link.title = "\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305";
+    link.setAttribute("aria-label", "\u4e0b\u8f7d\u5b8c\u6574\u5b89\u88c5\u5305");
     badge.append(link);
   }
 
@@ -1957,7 +1955,10 @@ function showUpdateBanner(update) {
   title.textContent = update.mandatory ? "ÃƒÂ¥Ã‚Â¿Ã¢â‚¬Â¦ÃƒÂ©Ã‚Â¡Ã‚Â»ÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°" : "ÃƒÂ¦Ã…â€œÃ¢â‚¬Â°ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã¢â‚¬Â°Ã‹â€ ÃƒÂ¦Ã…â€œÃ‚Â¬";
 
   const message = document.createElement("span");
-  message.textContent = `${update.versionName || "ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã¢â‚¬Â°Ã‹â€ ÃƒÂ¦Ã…â€œÃ‚Â¬"} ÃƒÂ¥Ã‚ÂÃ‚Â¯ÃƒÂ¤Ã‚Â»Ã‚Â¥ÃƒÂ¥Ã‚Â®Ã¢â‚¬Â°ÃƒÂ¨Ã‚Â£Ã¢â‚¬Â¦`;
+  const fullVersionLabel = Number(update.versionCode || 0) > 0
+    ? `v${Number(update.versionCode || 0)}`
+    : (update.versionName || "ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã¢â‚¬Â°Ã‹â€ ÃƒÂ¦Ã…â€œÃ‚Â¬");
+  message.textContent = `\u5b8c\u6574\u5b89\u88c5\u5305 ${fullVersionLabel} \u53ef\u4ee5\u5b89\u88c5`;
 
   const actions = document.createElement("div");
   actions.className = "update-banner-actions";
