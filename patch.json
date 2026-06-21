@@ -1,8 +1,8 @@
 ﻿{
-    "patchVersionCode":  952,
-    "patchVersionName":  "v952-hide-full-apk-notice",
+    "patchVersionCode":  953,
+    "patchVersionName":  "v953-hide-legacy-width-filter",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T13:42:10.9418902Z",
+    "createdAt":  "2026-06-21T13:59:08.8049652Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
@@ -15,15 +15,15 @@
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "BF49CF02549C3928483171F5A9090BE5A31B8A07A7B9C43D2AD0D27F037E2E93",
-                      "size":  412
+                      "sha256":  "77462E07E41420710B7247F86D0D54ADDC1BC773645F9C4DF53A8B5158DB923C",
+                      "size":  415
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css",
                       "url":  "patches/v285-recommendations-restore-local/styles.css",
-                      "sha256":  "BE685B8233774DFEC682E33527552D34A9DF8B868BC9270FF9E46BA604E7D76E",
-                      "size":  34594
+                      "sha256":  "27D08040B60665F4C45C472E4A3BC5F375E3A11DA0DD0685D2D06DFFF4881613",
+                      "size":  35287
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",

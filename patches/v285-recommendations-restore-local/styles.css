@@ -557,9 +557,37 @@ select:focus {
   font-weight: 800;
 }
 
+.builder-filter-buttons .filter-group:first-child,
+.builder-filter-buttons .filter-group span,
+.builder-filter-buttons [data-width-filter],
+.builder-filter-buttons [data-type-filter] {
+  display: none !important;
+}
+
+.builder-filter-buttons {
+  display: flex !important;
+  padding: 0 !important;
+  margin: 6px 0 8px !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.builder-filter-buttons .filter-group {
+  display: flex !important;
+  gap: 4px !important;
+}
+
 .clear-all-button {
   border-color: rgba(201, 65, 43, 0.45);
   color: #c9412b;
+}
+
+.builder-filter-buttons .clear-all-button {
+  display: inline-flex !important;
+  min-height: 30px !important;
+  padding: 0 10px !important;
+  font-size: 0.82rem !important;
 }
 
 .filter-button {
