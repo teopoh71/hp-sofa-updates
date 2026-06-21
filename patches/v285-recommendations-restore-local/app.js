@@ -408,11 +408,11 @@ const zolanoThreeDigitCatalog = [
     details: "Zolano arm chair",
     dimensions: "",
     price: 5031,
-    priceOptions: [5031, 5749, 6533],
+    priceOptions: [5031],
     priceIsFinal: true,
-    materials: ["M/F", "F/SA", "N.b/N.p"],
+    materials: ["M/F"],
     photo: "assets/generated/zolano-3digit/ZL771.jpg",
-    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC!249"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC!249 M/F only"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL781",
@@ -5481,6 +5481,7 @@ function inferSeriesFromImage(image) {
 
 function resolveItemPhoto(item) {
   if (!item) return placeholderImage();
+  if (zolanoModulePhotoMap[item.id]) return zolanoModulePhotoMap[item.id];
   const overrides = window.BAIDU_PHOTO_OVERRIDES || {};
   if (isPhotoBlockedSeries(item.series)) return placeholderImage();
   const lockedPhoto = getLockedSeriesPhoto(item.series, "");
