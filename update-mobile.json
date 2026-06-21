@@ -1,11 +1,11 @@
-{
-  "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
-  "notes": [
-    "Mobile APK v292 ships the refreshed full APK package with the latest Zolano and Nikator data.",
-    "Use this package when the phone does not pick up smaller patch updates reliably."
-  ],
-  "versionName": "v292-full-apk-cache",
-  "versionCode": 292,
-  "mandatory": false,
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v292-mobile.apk"
+﻿{
+    "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
+    "notes":  [
+                  "v933 adds click-again-to-cancel module buttons, compact catalog layout, and clean HP version display.",
+                  "Install this full APK if the phone patch does not refresh correctly."
+              ],
+    "versionName":  "v933-toggle-module-new-apk",
+    "versionCode":  933,
+    "mandatory":  false,
+    "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v933-mobile.apk"
 }

@@ -1,15 +1,22 @@
-{
-    "patchVersionCode":  932,
-    "patchVersionName":  "v932-catalog-3col-clear-after-combo",
+﻿{
+    "patchVersionCode":  933,
+    "patchVersionName":  "v933-toggle-module-new-apk",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T01:33:08.9622415Z",
+    "createdAt":  "2026-06-21T01:55:51.3606838Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "BB0B9FCAD6F6115D95FA12A36122C4ACAC648B34E0DE4DD40211493B7B997EA8",
-                      "size":  208483
+                      "sha256":  "93B7166F6ADAE2920F763DD7AC4D283D73B27E49A08375E281E1F3CC84486BB1",
+                      "size":  209613
+                  },
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "app-version.js",
+                      "url":  "patches/v285-recommendations-restore-local/app-version.js",
+                      "sha256":  "4B770088F8C254E74974506F0C36498B05BB8755276C7AFB754F3E2124AFD5C1",
+                      "size":  434
                   }
               ]
 }

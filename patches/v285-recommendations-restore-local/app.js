@@ -1257,7 +1257,8 @@ function renderVersionBadge() {
   const badge = document.createElement("div");
   badge.className = "app-version-badge";
   const text = document.createElement("span");
-  text.textContent = `\u7248\u672c ${versionCode} ${versionName} | \u672c\u5730 nikator-front-thumbs | ${patchText}`;
+  const displayPatchCode = installedPatchCode || currentPatchCode || savedPatchCode || 0;
+  text.textContent = `HP\u7248\u672c ${displayPatchCode || versionCode}`;
   badge.append(text);
 
   const downloadUrl = currentAppVersion.fullDownloadUrl || "";
@@ -3143,22 +3144,50 @@ function syncZolanoModulePicker() {
   zolanoModulePicker.innerHTML = `
     <div class="module-picker-heading" style="margin-bottom:4px;font-size:0.88rem;line-height:1.1;">
       <strong>${activeSeries} \u6a21\u5757</strong>
-      <span>\u70b9\u51fb\u4e00\u6b21\u52a0 1 \u4ef6</span>
+      <span>\u70b9\u51fb\u52a0\uff0c\u518d\u70b9\u53d6\u6d88</span>
     </div>
     <div class="module-picker-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:5px;">
-      ${modules.map((module) => `
-        <button class="module-picker-button" type="button" data-zolano-module-id="${module.id}" style="display:grid;grid-template-rows:52px auto auto;gap:1px;min-height:88px;padding:4px 3px;border-radius:6px;">
+      ${modules.map((module) => {
+        const selected = getSelectedModuleCount(module.id) > 0;
+        return `
+        <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${module.id}" style="display:grid;grid-template-rows:52px auto auto;gap:1px;min-height:88px;padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
           <img src="${module.photo}" alt="${module.label}" style="width:100%;height:52px;object-fit:contain;">
           <strong style="font-size:0.86rem;line-height:1.05;">${module.label}</strong>
           <span style="font-size:0.68rem;line-height:1.05;">${module.meta}</span>
         </button>
-      `).join("")}
+      `;}).join("")}
     </div>
   `;
 
   zolanoModulePicker.querySelectorAll("[data-zolano-module-id]").forEach((button) => {
-    button.addEventListener("click", () => addZolano2897Module(button.dataset.zolanoModuleId || ""));
+    button.addEventListener("click", () => toggleZolano2897Module(button.dataset.zolanoModuleId || ""));
   });
+}
+
+function toggleZolano2897Module(moduleId) {
+  if (getSelectedModuleCount(moduleId)) {
+    removeZolano2897Module(moduleId);
+    return;
+  }
+  addZolano2897Module(moduleId);
+}
+
+function getSelectedModuleCount(moduleId) {
+  if (!moduleId || !slotGrid) return 0;
+  return [...slotGrid.querySelectorAll(".slot-select")].filter((select) => select.value === moduleId).length;
+}
+
+function removeZolano2897Module(moduleId) {
+  if (!moduleId || !slotGrid) return;
+  if (recommendSelect) recommendSelect.value = "";
+  const slotSelects = [...slotGrid.querySelectorAll(".slot-select")];
+  const selectedIds = slotSelects.map((select) => select.value).filter(Boolean);
+  const removeIndex = selectedIds.indexOf(moduleId);
+  if (removeIndex < 0) return;
+  selectedIds.splice(removeIndex, 1);
+  pieceMaterialSelections = {};
+  setBuilderSelections(selectedIds);
+  syncZolanoModulePicker();
 }
 
 function addZolano2897Module(moduleId) {
@@ -3175,6 +3204,7 @@ function addZolano2897Module(moduleId) {
     emptySlot.parentElement?.querySelector(".slot-clear-button")?.removeAttribute("hidden");
     pieceMaterialSelections = {};
     renderSetPreview();
+    syncZolanoModulePicker();
     return;
   }
 
@@ -3188,6 +3218,7 @@ function addZolano2897Module(moduleId) {
   targetSlot.parentElement?.querySelector(".slot-clear-button")?.removeAttribute("hidden");
   pieceMaterialSelections = {};
   renderSetPreview();
+  syncZolanoModulePicker();
 }
 
 function setBuilderSelections(itemIds) {
