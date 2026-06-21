@@ -1,29 +1,15 @@
 ﻿{
-    "patchVersionCode":  935,
-    "patchVersionName":  "v935-module-click-add-count",
+    "patchVersionCode":  936,
+    "patchVersionName":  "v936-lan-apk-download",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T05:30:15.9226372Z",
+    "createdAt":  "2026-06-21T05:54:25.9464883Z",
     "files":  [
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js",
-                      "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "1681AEC7C9115A1C0DAD0D6CBCF796BACF89CC7F85E4A02C5681EFB11DF5A7C8",
-                      "size":  209884
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css",
-                      "url":  "patches/v285-recommendations-restore-local/styles.css",
-                      "sha256":  "72BE4EA7F832AAC694C998C0724C2AD11C68BEC6410F645A782792C57E42D5B2",
-                      "size":  33983
-                  },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "ED25487D43A1D4C6F3244F5BA5D0249BEBD3DCA73AB4F57CAFDD54ED0318296B",
-                      "size":  431
+                      "sha256":  "FEF82D8B5A2E20060AA3FCE148A1868F2F70BAD54B6C9F7C3D947B52DAC96247",
+                      "size":  407
                   }
               ]
 }
