@@ -1317,7 +1317,6 @@ function renderVersionBadge() {
     try {
       document.querySelector(".update-banner")?.remove();
       document.querySelector(".patch-banner")?.remove();
-      await checkForOnlineUpdate();
       await checkForOnlinePatch();
       if (!document.querySelector(".update-banner") && !document.querySelector(".patch-banner")) {
         alert("\u5df2\u68c0\u67e5\uff0c\u6682\u65f6\u6ca1\u6709\u65b0\u66f4\u65b0");
