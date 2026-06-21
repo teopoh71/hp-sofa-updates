@@ -259,12 +259,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 7630,
-    priceOptions: [7630, 10962, 12457],
+    price: 7644,
+    priceOptions: [7644, 10976, 12473],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL523.jpg",
-    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC / rounded ARC table"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL556",
@@ -407,12 +407,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 5031,
-    priceOptions: [5031],
+    price: 11662,
+    priceOptions: [11662, 15680, 17818],
     priceIsFinal: true,
-    materials: ["M/F"],
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL771.jpg",
-    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC!249 M/F only"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC ARC TV"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL781",
@@ -1020,6 +1020,7 @@ let selectedWidthFilter = 0;
 const selectedTypeFilters = new Set();
 let pieceMaterialSelections = {};
 let selectedDiningTurntableId = "";
+let zolano725PowerAddSelected = false;
 let quickJumpSearchQuery = "";
 let suppressAutoSelectOnNextPopulate = false;
 let suppressRetainedSelectionsOnNextPopulate = false;
@@ -4367,9 +4368,11 @@ function renderSetPreview() {
     `;
     return;
   }
-  const total = comboPurchases.length
+  let total = comboPurchases.length
     ? comboPurchases.reduce((sum, purchase) => sum + getSetMaterialPrice(purchase.items, purchase.combo, materialIndex, { useMixed: true }), 0)
     : getSetMaterialPrice(selected, effectiveRecommendation, materialIndex, { useMixed: true });
+  const powerAddTotal = getZolano725PowerAddTotal(selected);
+  total += powerAddTotal;
   const hasCombination = Boolean(effectiveRecommendation) || selected.length > 0;
   const displayedPieceCount = comboPurchases.length
     ? comboPurchases.reduce((sum, purchase) => sum + getDisplayedPieceCount(purchase.combo, purchase.items), 0)
@@ -4388,7 +4391,7 @@ function renderSetPreview() {
       const isSelectedMaterial = index === materialIndex;
       const displayLabel = formatMaterialDisplayLabel(label);
       row.className = `material-row${isSelectedMaterial ? " is-selected" : ""}`;
-      const value = getSetMaterialRowPrice(selected, effectiveRecommendation, index);
+      const value = getSetMaterialRowPrice(selected, effectiveRecommendation, index) + powerAddTotal;
       row.innerHTML = `<span>${displayLabel}${isSelectedMaterial ? "(\u5df2\u9009)" : ""}</span><strong>\u6574\u5957 ${money.format(value)}</strong>`;
       materialList.append(row);
     });
@@ -4410,6 +4413,7 @@ function renderSetPreview() {
     || selectedSizeText);
   const showroomNote = effectiveRecommendation?.showroomNote || "";
   const bedSizeOptions = activeCatalogKey === "bed" ? renderBedSizeOptions(selected[0]) : "";
+  const powerAddOption = renderZolano725PowerAddOption(selected);
   setPhoto.innerHTML = `
     <div class="set-photo-heading">
       <h3>${effectiveRecommendation?.name || seriesSelect.value || "\u6c99\u53d1\u7ec4\u5408"}</h3>
@@ -4424,6 +4428,7 @@ function renderSetPreview() {
     </div>
     <div class="set-photo-copy">
       ${bedSizeOptions}
+      ${powerAddOption}
       ${dimensionText ? `<p class="combo-dimension"><span>\u6574\u5957\u5c3a\u5bf8</span><strong>${dimensionText}</strong></p>` : ""}
       ${hasCombination ? `<p class="combo-pieces"><span>\u7ec4\u5408\u4ef6\u6570</span><strong>${displayedPieceCount} \u4ef6</strong></p>` : ""}
       ${hasCombination ? `<p class="combo-total"><span>\u6574\u5957\u552e\u4ef7</span><strong>${money.format(total)}</strong></p>` : ""}
@@ -4435,6 +4440,7 @@ function renderSetPreview() {
   bindPhotoOpen(setPhoto);
   bindPhotoFullscreen(setPhoto);
   bindBedSizeOptions(setPhoto);
+  bindZolano725PowerAddOption(setPhoto);
 
   const pieceList = document.createElement("div");
   pieceList.className = "piece-list";
@@ -4523,6 +4529,32 @@ function resolvePricedZolanoRecommendation(combo) {
     || catalogSofas.find((item) => item.id === combo.id)
     || findZolanoRecommendedItem(getSeriesItems(), combo)
     || combo;
+}
+
+function hasZolano725(selected) {
+  return activeCatalogKey === "chair" && selected.some((item) => String(item?.series || "").toUpperCase() === "ZL-725");
+}
+
+function getZolano725PowerAddTotal(selected) {
+  return hasZolano725(selected) && zolano725PowerAddSelected ? 8428 : 0;
+}
+
+function renderZolano725PowerAddOption(selected) {
+  if (!hasZolano725(selected)) return "";
+  return `
+    <button class="bed-size-option${zolano725PowerAddSelected ? " is-active" : ""}" type="button" data-zl725-power-add>
+      POWER ADD +${money.format(8428)}
+    </button>
+  `;
+}
+
+function bindZolano725PowerAddOption(container) {
+  const button = container.querySelector("[data-zl725-power-add]");
+  if (!button) return;
+  button.addEventListener("click", () => {
+    zolano725PowerAddSelected = !zolano725PowerAddSelected;
+    renderSetPreview();
+  });
 }
 
 function findMatchingZolanoFinalPriceCombo(combo) {

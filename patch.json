@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  959,
-    "patchVersionName":  "v959-zl3778-line-and-zl771-price",
+    "patchVersionCode":  962,
+    "patchVersionName":  "v962-zl725-power-zl771-arctv",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T17:24:11.1440286Z",
+    "createdAt":  "2026-06-21T17:31:03.6124073Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "0255BC961D88E4ED70DFC416AE129C05D89B68B2292A4021F571518F8A6D261C",
-                      "size":  220403
+                      "sha256":  "39EB9B9B54633D4F97EDBC0D69DD843F59214673C22082EA80A288CEFFF7524C",
+                      "size":  221556
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "F74B98A37B3953BF5B18442B1C3BB1C73527A8D8978690BD8AF078454B7CD911",
-                      "size":  427
+                      "sha256":  "0F0A844CC4980746B09D57A51DA9E6858DA475C2565BC1394B43282679E63587",
+                      "size":  423
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -56,15 +56,15 @@
                   {
                       "path":  "index.html",
                       "url":  "patches/v285-recommendations-restore-local/index.html",
-                      "sha256":  "A2E9FF02552C66749034E24F73A409CA4BA78E7BB081FAF770BA47A29CB206C1",
-                      "size":  26649,
+                      "sha256":  "1A834608312B3883125D87DFEE31AADDBF405D28DE1E7BDB1C4E497E4AD0FC13",
+                      "size":  26629,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
                       "url":  "patches/v285-recommendations-restore-local/sw.js",
-                      "sha256":  "97FE612AD48517EEDBF11A06FEB240BE65B8209B7887EDFD56D82AEBCC6ACCFA",
-                      "size":  6057,
+                      "sha256":  "FB4E689023E04D03846A439E6057FFAA9F462A1BF6627C17D0E076B7C3148A2F",
+                      "size":  6033,
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
