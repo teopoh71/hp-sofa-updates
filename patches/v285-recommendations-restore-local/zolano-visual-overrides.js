@@ -43,7 +43,7 @@
   itemPhotoMap["ZL3776-TABLE"] = "assets/generated/zolano/parts/ZL3776-line-TABLE.png";
   itemPhotoMap["ZL3776-ARM"] = "assets/generated/zolano/parts/ZL3776-line-ARM.png";
 
-  function replaceSeries({ series, model, photo, sourcePrefix, rows, comboRows }) {
+  function replaceSeries({ series, model, photo, sourcePrefix, rows, comboRows, materialsOverride, priceFactorOverride, priceIsFinal }) {
     for (let index = catalog.length - 1; index >= 0; index -= 1) {
       if (catalog[index]?.series === series) catalog.splice(index, 1);
     }
@@ -51,6 +51,8 @@
       if (combos[index]?.series === series) combos.splice(index, 1);
     }
 
+    const effectiveMaterials = Array.isArray(materialsOverride) && materialsOverride.length ? materialsOverride : materials;
+    const effectivePriceFactor = Number.isFinite(priceFactorOverride) ? priceFactorOverride : priceFactor;
     rows.forEach((row) => {
       const id = row.id;
       const dimensions = row.dimensions || `L: ${row.width}mm | H: ${row.height}mm | D: ${row.depth}mm`;
@@ -66,9 +68,10 @@
         depth: row.depth,
         height: row.height,
         price: row.priceOptions[0],
-        priceFactor,
+        priceFactor: row.priceIsFinal ?? priceIsFinal ? 1 : effectivePriceFactor,
         priceOptions: row.priceOptions,
-        materials,
+        materials: row.materials || effectiveMaterials,
+        priceIsFinal: Boolean(row.priceIsFinal ?? priceIsFinal),
         photo: row.photo || photo,
         source: `${sourcePrefix}${row.sourceRow}`
       });
@@ -91,9 +94,10 @@
         partCodes: row.partCodes,
         pieceCount: row.pieceCount,
         price: row.priceOptions[0],
-        priceFactor,
+        priceFactor: row.priceIsFinal ?? priceIsFinal ? 1 : effectivePriceFactor,
         priceOptions: row.priceOptions,
-        materials,
+        materials: row.materials || effectiveMaterials,
+        priceIsFinal: Boolean(row.priceIsFinal ?? priceIsFinal),
         photo: row.photo || photo,
         source: `${sourcePrefix}${row.sourceRow}`
       });
@@ -105,6 +109,9 @@
     model: "MONTIERI ZL 2628",
     photo: "assets/generated/zolano/MONTIERIZL2628.jpg",
     sourcePrefix: "EXPORT 2020 (ZL2600).xls#2661-!",
+    materialsOverride: ["M/F", "F/SA", "NuBuck"],
+    priceFactorOverride: 1,
+    priceIsFinal: true,
     rows: [
       {
         id: "MONTIERIZL26282ELEXPORT2020ZL26002661124",
@@ -113,7 +120,7 @@
         width: 1520,
         depth: 0,
         height: 0,
-        priceOptions: [290, 329, 377, 492, 538, 584],
+        priceOptions: [11800, 17300, 19659],
         piecePhoto: "assets/generated/zolano/parts/MONTIERIZL2628-1ELT-top.png"
       },
       {
@@ -123,17 +130,17 @@
         width: 1320,
         depth: 1320,
         height: 0,
-        priceOptions: [201, 232, 273, 378, 408, 446],
+        priceOptions: [8300, 13300, 15114],
         piecePhoto: "assets/generated/zolano/parts/MONTIERIZL2628-CORNER-top.png"
       },
       {
         id: "MONTIERIZL26282NAEXPORT2020ZL26002661126",
         key: "2NA",
         sourceRow: 126,
-        width: 1320,
+        width: 1220,
         depth: 0,
         height: 0,
-        priceOptions: [211, 240, 283, 389, 407, 443],
+        priceOptions: [8600, 13200, 15000],
         piecePhoto: "assets/generated/zolano/parts/MONTIERIZL2628-2NA-top.png"
       },
       {
@@ -143,17 +150,17 @@
         width: 910,
         depth: 0,
         height: 0,
-        priceOptions: [238, 267, 306, 410, 433, 468],
+        priceOptions: [9600, 14000, 15909],
         piecePhoto: "assets/generated/zolano/parts/MONTIERIZL2628-2ER-top.png"
       },
       {
         id: "MONTIERIZL26281NAEXPORT2020ZL26002661128",
         key: "1NA",
         sourceRow: 128,
-        width: 620,
+        width: 610,
         depth: 0,
         height: 0,
-        priceOptions: [116, 133, 155, 213, 224, 243],
+        priceOptions: [4800, 7300, 8295],
         piecePhoto: "assets/generated/zolano/parts/MONTIERIZL2628-1NA-top.png"
       },
       {
@@ -163,7 +170,7 @@
         width: 0,
         depth: 0,
         height: 0,
-        priceOptions: [189, 214, 245, 320, 350, 379]
+        priceOptions: [7700, 11300, 12841]
       },
       {
         id: "MONTIERIZL26281ELTD2400MMEXPORT2020ZL26002661130",
@@ -172,7 +179,7 @@
         width: 0,
         depth: 2400,
         height: 0,
-        priceOptions: [407, 446, 499, 639, 670, 736]
+        priceOptions: [16000, 22000, 25000]
       },
       {
         id: "MONTIERIZL2628STOOL25X43CMOEXPORT2020ZL26002661131",
@@ -181,7 +188,7 @@
         width: 250,
         depth: 430,
         height: 0,
-        priceOptions: [30, 40]
+        priceOptions: [1300, 1477]
       }
     ],
     comboRows: [
@@ -192,7 +199,7 @@
         width: 1520,
         depth: 0,
         height: 0,
-        priceOptions: [290, 329, 377, 492, 538, 584],
+        priceOptions: [11800, 17300, 19659],
         partCodes: ["MONTIERIZL26282ELEXPORT2020ZL26002661124"],
         pieceCount: 1
       },
@@ -203,7 +210,7 @@
         width: 1320,
         depth: 1320,
         height: 0,
-        priceOptions: [201, 232, 273, 378, 408, 446],
+        priceOptions: [8300, 13300, 15114],
         partCodes: ["MONTIERIZL2628CORNEREXPORT2020ZL26002661125"],
         pieceCount: 1
       },
@@ -211,10 +218,10 @@
         id: "MONTIERIZL26282NAEXPORT2020ZL26002661126",
         key: "2NA",
         sourceRow: 126,
-        width: 1320,
+        width: 1220,
         depth: 0,
         height: 0,
-        priceOptions: [211, 240, 283, 389, 407, 443],
+        priceOptions: [8600, 13200, 15000],
         partCodes: ["MONTIERIZL26282NAEXPORT2020ZL26002661126"],
         pieceCount: 1
       },
@@ -225,7 +232,7 @@
         width: 910,
         depth: 0,
         height: 0,
-        priceOptions: [238, 267, 306, 410, 433, 468],
+        priceOptions: [9600, 14000, 15909],
         partCodes: ["MONTIERIZL26281ERTEXPORT2020ZL26002661127"],
         pieceCount: 1
       },
@@ -233,10 +240,10 @@
         id: "MONTIERIZL26281NAEXPORT2020ZL26002661128",
         key: "1NA",
         sourceRow: 128,
-        width: 620,
+        width: 610,
         depth: 0,
         height: 0,
-        priceOptions: [116, 133, 155, 213, 224, 243],
+        priceOptions: [4800, 7300, 8295],
         partCodes: ["MONTIERIZL26281NAEXPORT2020ZL26002661128"],
         pieceCount: 1
       },
@@ -247,7 +254,7 @@
         width: 0,
         depth: 0,
         height: 0,
-        priceOptions: [189, 214, 245, 320, 350, 379],
+        priceOptions: [7700, 11300, 12841],
         partCodes: ["MONTIERIZL26281ELEXPORT2020ZL26002661129"],
         pieceCount: 1
       },
@@ -258,27 +265,28 @@
         width: 0,
         depth: 2400,
         height: 0,
-        priceOptions: [407, 446, 499, 639, 670, 736],
+        priceOptions: [16000, 22000, 25000],
         partCodes: ["MONTIERIZL26281ELTD2400MMEXPORT2020ZL26002661130"],
         pieceCount: 1
       },
       {
         id: "MONTIERIZL26282ELC2NA1ERTEXPORT2020ZL26002661123",
-        key: "2EL+C+2NA+1ER/T",
+        key: "2EL+C+2NA+1NA+1ER/T",
         sourceRow: 123,
-        width: 2840,
+        width: 3450,
         depth: 1320,
         height: 0,
-        dimensions: "L型: 左 2840mm / 右 2230mm | 深 1320mm",
+        dimensions: "L型: 左 3450mm / 右 2840mm | 深 1320mm",
         layoutType: "l-shape",
-        priceOptions: [940, 1068, 1239, 1669, 1788, 1941],
+        priceOptions: [43100, 65100, 73977],
         partCodes: [
           "MONTIERIZL26282ELEXPORT2020ZL26002661124",
           "MONTIERIZL2628CORNEREXPORT2020ZL26002661125",
           "MONTIERIZL26282NAEXPORT2020ZL26002661126",
+          "MONTIERIZL26281NAEXPORT2020ZL26002661128",
           "MONTIERIZL26281ERTEXPORT2020ZL26002661127"
         ],
-        pieceCount: 4
+        pieceCount: 5
       },
       {
         id: "MONTIERIZL2628STOOL25X43CMOEXPORT2020ZL26002661131",
@@ -287,7 +295,7 @@
         width: 250,
         depth: 430,
         height: 0,
-        priceOptions: [30, 40],
+        priceOptions: [1300, 1477],
         partCodes: ["MONTIERIZL2628STOOL25X43CMOEXPORT2020ZL26002661131"],
         pieceCount: 1
       }

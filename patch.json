@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  949,
-    "patchVersionName":  "v949-photo-return-state-fix",
+    "patchVersionCode":  950,
+    "patchVersionName":  "v950-zl2628-selling-price",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T13:04:02.8643679Z",
+    "createdAt":  "2026-06-21T13:14:21.7083409Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "2C502C06E82835CF95A9F89E66DC4FC573AE4F6BDE18EEE6320FDD3568C5CB5F",
-                      "size":  221343
+                      "sha256":  "82D9C84814594E99FCBB1ED41037FD8DAA0EA739FF4F4C2245D84F876B89E02B",
+                      "size":  221333
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "44139F2E4BE0BE89BDEBB591EF68CF3E1FF1241671A4C6CD2C23B8389B919DD3",
-                      "size":  413
+                      "sha256":  "786360796AB0C772FD0BB53A1F7C8E14B7DA2748555595D1F0EDFA6954218EAF",
+                      "size":  411
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -31,6 +31,13 @@
                       "url":  "patches/v285-recommendations-restore-local/zolano-excel-price-overrides.js",
                       "sha256":  "6B2FB956565C729F580B0DCEDDD15808A9ED586F54A486676748FE92EA32B192",
                       "size":  27124
+                  },
+                  {
+                      "contentType":  "text/javascript; charset=utf-8",
+                      "path":  "zolano-visual-overrides.js",
+                      "url":  "patches/v285-recommendations-restore-local/zolano-visual-overrides.js",
+                      "sha256":  "FCC143A672B3483BD25B85A0784E3BED24D9067D713479AF99641C17243783B9",
+                      "size":  21282
                   },
                   {
                       "contentType":  "text/html; charset=utf-8",

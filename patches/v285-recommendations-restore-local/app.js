@@ -5135,9 +5135,9 @@ function getZolano2628ModuleWidth(item) {
   const config = String(item?.configuration || "").toUpperCase();
   if (/2EL/.test(config)) return 1520;
   if (/CORNER|CNR/.test(config)) return 1320;
-  if (/2NA/.test(config)) return 1320;
+  if (/2NA/.test(config)) return 1220;
   if (/1ER\/?T/.test(config)) return 910;
-  if (/1NA/.test(config)) return 620;
+  if (/1NA/.test(config)) return 610;
   const match = String(item?.dimensions || "").match(/\bL\s*(\d{3,5})/i);
   return match ? Number(match[1]) : Number(item?.width || 0);
 }

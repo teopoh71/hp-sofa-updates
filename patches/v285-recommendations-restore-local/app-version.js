@@ -3,7 +3,7 @@ window.HP_SOFA_APP_VERSION = {
   versionName: "v933-toggle-module-new-apk",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
   fullDownloadUrl: "http://192.168.10.6:8786/apks/hp-sofa-v933-mobile.apk",
-  patchVersionCode: 949,
-  patchVersionName: "v949-photo-return-state-fix",
+  patchVersionCode: 950,
+  patchVersionName: "v950-zl2628-selling-price",
   patchManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/patch.json"
 };
