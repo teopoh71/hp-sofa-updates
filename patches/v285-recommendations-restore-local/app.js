@@ -1971,56 +1971,11 @@ async function maybeClearAppCache() {
 }
 
 async function checkForOnlineUpdate() {
-  const manifestUrl = currentAppVersion.updateManifestUrl || "update.json";
-  try {
-    const response = await fetch(`${manifestUrl}?t=${Date.now()}`, { cache: "no-store" });
-    if (!response.ok) return;
-    const update = await response.json();
-    if (Number(update.versionCode || 0) <= Number(currentAppVersion.versionCode || 0)) return;
-    showUpdateBanner(update);
-  } catch {
-    // Offline use is normal for the MatePad catalog, so update failures stay quiet.
-  }
+  return;
 }
 
 function showUpdateBanner(update) {
-  if (document.querySelector(".update-banner")) return;
-  const banner = document.createElement("aside");
-  banner.className = "update-banner";
-
-  const title = document.createElement("strong");
-  title.textContent = update.mandatory ? "ÃƒÂ¥Ã‚Â¿Ã¢â‚¬Â¦ÃƒÂ©Ã‚Â¡Ã‚Â»ÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°" : "ÃƒÂ¦Ã…â€œÃ¢â‚¬Â°ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã¢â‚¬Â°Ã‹â€ ÃƒÂ¦Ã…â€œÃ‚Â¬";
-
-  const message = document.createElement("span");
-  const fullVersionLabel = Number(update.versionCode || 0) > 0
-    ? `v${Number(update.versionCode || 0)}`
-    : (update.versionName || "ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ§Ã¢â‚¬Â°Ã‹â€ ÃƒÂ¦Ã…â€œÃ‚Â¬");
-  message.textContent = `\u5b8c\u6574\u5b89\u88c5\u5305 ${fullVersionLabel} \u53ef\u4ee5\u5b89\u88c5`;
-
-  const actions = document.createElement("div");
-  actions.className = "update-banner-actions";
-
-  const laterButton = document.createElement("button");
-  laterButton.type = "button";
-  laterButton.textContent = "ÃƒÂ§Ã‚Â¨Ã‚ÂÃƒÂ¥Ã‚ÂÃ…Â½";
-  laterButton.addEventListener("click", () => banner.remove());
-
-  const updateButton = document.createElement("button");
-  updateButton.type = "button";
-  updateButton.className = "primary-button";
-  updateButton.textContent = "\u66f4\u65b0";
-  updateButton.addEventListener("click", () => {
-    const targetUrl = update.apkUrl || update.webUrl || "";
-    if (targetUrl) {
-      window.location.href = targetUrl;
-      return;
-    }
-    alert("ÃƒÂ¦Ã¢â‚¬ÂºÃ‚Â´ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°ÃƒÂ©Ã¢â‚¬Å“Ã‚Â¾ÃƒÂ¦Ã…Â½Ã‚Â¥ÃƒÂ¨Ã‚Â¿Ã‹Å“ÃƒÂ¦Ã‚Â²Ã‚Â¡ÃƒÂ¨Ã‚Â®Ã‚Â¾ÃƒÂ§Ã‚Â½Ã‚Â®ÃƒÂ£Ã¢â€šÂ¬Ã¢â‚¬Å¡ÃƒÂ¨Ã‚Â¯Ã‚Â·ÃƒÂ¥Ã¢â‚¬Â¦Ã‹â€ ÃƒÂ¥Ã…â€œÃ‚Â¨ update.json ÃƒÂ¥Ã‚Â¡Ã‚Â«ÃƒÂ¥Ã¢â‚¬Â¦Ã‚Â¥ apkUrlÃƒÂ£Ã¢â€šÂ¬Ã¢â‚¬Å¡");
-  });
-
-  actions.append(laterButton, updateButton);
-  banner.append(title, message, actions);
-  document.body.append(banner);
+  return;
 }
 
 async function checkForOnlinePatch() {

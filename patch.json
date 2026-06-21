@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  951,
-    "patchVersionName":  "v951-photo-viewer-v2-cache-bust",
+    "patchVersionCode":  952,
+    "patchVersionName":  "v952-hide-full-apk-notice",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T13:25:53.0250965Z",
+    "createdAt":  "2026-06-21T13:42:10.9418902Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "145E210C33EE15D614B76ECCFF4C15B6BC8E3118D5FCC3E9BBE3E98F9B361458",
-                      "size":  221384
+                      "sha256":  "1C006C7E8F92821E181779E1A49BECED7E1AB5A5C059BEF47DDD10C3C4444922",
+                      "size":  218666
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "DC1A0CD252AE34CA3727416B66B829B30D1F6D387E2570E4140D429F334227F2",
-                      "size":  416
+                      "sha256":  "BF49CF02549C3928483171F5A9090BE5A31B8A07A7B9C43D2AD0D27F037E2E93",
+                      "size":  412
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
