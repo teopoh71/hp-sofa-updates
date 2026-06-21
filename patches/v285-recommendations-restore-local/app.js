@@ -679,7 +679,27 @@ const zolano3818Modules = [
     photo: "assets/generated/zolano/ZL3818BURANO.jpg"
   }
 ];
-const zolanoModulePhotoMap = Object.fromEntries([...zolano2897Modules, ...zolano3776Modules, ...zolano2628Modules, ...zolano3818Modules].map((module) => [module.id, module.photo]));
+const zolano3778Modules = [
+  {
+    id: "ZL37782ELEXPORT2020ZL33002SHEET1363",
+    label: "2EL",
+    meta: "ZL 3778",
+    photo: "assets/generated/zolano/parts/ZL3778-2EL-line.svg"
+  },
+  {
+    id: "ZL37781ERTEXPORT2020ZL33002SHEET1364",
+    label: "1ER/T",
+    meta: "ZL 3778",
+    photo: "assets/generated/zolano/parts/ZL3778-1ERT-line.svg"
+  },
+  {
+    id: "ZL37782EL1EREXPORT2020ZL33002SHEET1366",
+    label: "2EL+1ER",
+    meta: "3500mm",
+    photo: "assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg"
+  }
+];
+const zolanoModulePhotoMap = Object.fromEntries([...zolano2897Modules, ...zolano3776Modules, ...zolano2628Modules, ...zolano3818Modules, ...zolano3778Modules].map((module) => [module.id, module.photo]));
 const nikatorModuleSeriesSeedSet = new Set(["LE8801SF", "LE8810SF", "LE8806SF", "NK0051SF", "NK0054SF", "NK0001SF", "NK0003SF", "LE8803SF"]);
 
 const excludedCatalogIds = new Set([
@@ -3030,12 +3050,13 @@ function getActiveZolanoModuleSeries() {
   if (/(?:^|[^0-9])2897(?:[^0-9]|$)/.test(text)) return "2897";
   if (/(?:^|[^0-9])3776(?:[^0-9]|$)/.test(text)) return "3776";
   if (/(?:^|[^0-9])3818(?:[^0-9]|$)/.test(text)) return "3818";
+  if (/(?:^|[^0-9])3778(?:[^0-9]|$)/.test(text)) return "3778";
   return "";
 }
 
 function isZolanoModuleSeriesName(seriesValue) {
   const text = String(seriesValue || "").toUpperCase();
-  return /(?:^|[^0-9])(?:2628|2897|3776|3818)(?:[^0-9]|$)/.test(text);
+  return /(?:^|[^0-9])(?:2628|2897|3776|3778|3818)(?:[^0-9]|$)/.test(text);
 }
 
 function isManualModuleSeriesName(seriesValue) {
@@ -3050,6 +3071,7 @@ function getActiveManualModules() {
   if (series === "2897") return zolano2897Modules;
   if (series === "3776") return zolano3776Modules;
   if (series === "3818") return zolano3818Modules;
+  if (series === "3778") return zolano3778Modules;
   if (activeCatalogKey === "nikator") return getNikatorModuleItems();
   return [];
 }

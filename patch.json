@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  956,
-    "patchVersionName":  "v956-photo-return-cache-fix",
+    "patchVersionCode":  957,
+    "patchVersionName":  "v957-zl3778-module-lines",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T15:18:03.5292709Z",
+    "createdAt":  "2026-06-21T15:27:25.7635700Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "E4364DB77D6D64A8DE6CE176BF57CDC1D1B2C6DEDCD2032F6BB44CC248262545",
-                      "size":  219691
+                      "sha256":  "F82B90DD8A48BCDC141CA247011E7B06FAE991346C4ACCEBF007EBD95FB74ECA",
+                      "size":  220351
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "7B312583D61E916312949867224D9833AF421743FF2DC198BCFAD48A64C65B44",
-                      "size":  413
+                      "sha256":  "1A2FAAF88E0C01A7F7580DC7F9FDA1142FA80DE59BA2C6CABF3B8EBA4B28AFAF",
+                      "size":  410
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -56,16 +56,37 @@
                   {
                       "path":  "index.html",
                       "url":  "patches/v285-recommendations-restore-local/index.html",
-                      "sha256":  "BBB9E574BF5B3EBB439F04D3E4FB4C4601A819800DAAE7BDB8CE1B47DC0E14A3",
-                      "size":  26624,
+                      "sha256":  "556EC42749E8817DFDD7C183309053E79A314A01B9EC878A195759814F4217B6",
+                      "size":  26609,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
                       "url":  "patches/v285-recommendations-restore-local/sw.js",
-                      "sha256":  "0A0A173056D2A0AB78E3546662B0AAFBB329832708AC5DDFA0ADABD246B86BBC",
-                      "size":  5848,
+                      "sha256":  "F4329F5FB0F21D5BE2DBF7D2F126227F1AB991616E30DEA33457366F90158D4E",
+                      "size":  5999,
                       "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "contentType":  "image/svg+xml",
+                      "path":  "assets/generated/zolano/parts/ZL3778-2EL-line.svg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-2EL-line.svg",
+                      "sha256":  "8E125352B448114E00DD9EBCDC12352E8D587391775FD903611598395ACBEBE9",
+                      "size":  385
+                  },
+                  {
+                      "contentType":  "image/svg+xml",
+                      "path":  "assets/generated/zolano/parts/ZL3778-1ERT-line.svg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-1ERT-line.svg",
+                      "sha256":  "65C45AC4DC79AC3485B05A77A73EE33724A332E947035C4A4390E1754E844345",
+                      "size":  417
+                  },
+                  {
+                      "contentType":  "image/svg+xml",
+                      "path":  "assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg",
+                      "sha256":  "CA3654FEA95BB3C99F60E305FA4C47A27252BDF29B32D05E1C3FBE36CFC1F6F2",
+                      "size":  456
                   }
               ]
 }
