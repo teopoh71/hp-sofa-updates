@@ -1262,6 +1262,19 @@ function bindQuickJumpButtons(root) {
     jumpToSeries(brandKey, seriesValue);
     });
   });
+  syncQuickJumpActiveState(root);
+}
+
+function syncQuickJumpActiveState(root = document) {
+  const activeSeries = seriesSelect?.value || "";
+  root.querySelectorAll("[data-quick-jump]").forEach((button) => {
+    const value = button.dataset.quickJump || "";
+    const sep = value.indexOf("|");
+    const brandKey = sep >= 0 ? value.slice(0, sep) : "";
+    const seriesValue = sep >= 0 ? value.slice(sep + 1) : "";
+    const isActive = Boolean(activeSeries) && brandKey === activeCatalogKey && seriesValue === activeSeries;
+    button.classList.toggle("is-active", isActive);
+  });
 }
 
 function syncQuickJumpLabels(root) {
@@ -1373,14 +1386,10 @@ function jumpToSeries(brandKey, seriesValue) {
     renderSetPreview();
     return;
   }
-  const firstCombo = (typeof getSeriesRecommendations === "function"
-    ? getSeriesRecommendations()
-    : []
-  ).find((c) => c.series === seriesValue);
-  if (firstCombo) {
-    recommendSelect.value = firstCombo.id;
-    recommendSelect.dispatchEvent(new Event("change", { bubbles: true }));
-  }
+  recommendSelect.value = "";
+  clearSelectedRecommendationCounts();
+  populateBuilderPieces(1);
+  syncBuilderControlsVisibility();
   if (typeof renderSetPreview === "function") renderSetPreview();
 }
 
@@ -1390,6 +1399,7 @@ function syncQuickJumpVisibility() {
   ensureDynamicQuickJumpGroup(activeCatalogKey);
   ensurePagedQuickJumpLayout(activeCatalogKey);
   applyQuickJumpSearch();
+  syncQuickJumpActiveState(document);
   const groups = document.querySelectorAll("[data-quick-jump-group]");
   groups.forEach((group) => {
     const key = group.dataset.quickJumpGroup;
@@ -2423,6 +2433,7 @@ function syncModelJumpSelect() {
   syncModelJumpVisibility();
   const hasOption = Array.from(modelJumpSelect.options).some((option) => option.value === seriesSelect.value);
   modelJumpSelect.value = hasOption ? seriesSelect.value : "";
+  syncQuickJumpActiveState(document);
 }
 
 function populateBuilderPieces(forceSlotCount) {
@@ -2709,7 +2720,7 @@ function renderComboButtons(combos = getSeriesRecommendations()) {
     button.type = "button";
     button.className = "combo-choice-button";
     const count = getRecommendationCount(combo.id);
-    button.classList.toggle("is-active", count > 0 || combo.id === recommendSelect.value);
+    button.classList.toggle("is-active", count > 0);
     button.dataset.comboCount = String(count);
     button.innerHTML = `${formatComboButtonContent(combo)}${count > 0 ? `<span class="combo-choice-count">${count}</span>` : ""}`;
     button.addEventListener("click", () => {

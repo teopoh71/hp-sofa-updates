@@ -1,29 +1,29 @@
 ﻿{
-    "patchVersionCode":  941,
-    "patchVersionName":  "v941-zl2707-final-price-fix",
+    "patchVersionCode":  942,
+    "patchVersionName":  "v942-combo-model-highlight-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T09:15:55.9575414Z",
+    "createdAt":  "2026-06-21T09:52:33.4476808Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "6A297184F3700D6C1EFB594DECCE00A3D1B0FEF4D48420B40BC3FACE3DFE372E",
-                      "size":  216942
+                      "sha256":  "4D24FABB00F8A86C7DBC129C1F038508BB8D21FAC026FC6D72BF3E8D213AF57A",
+                      "size":  217366
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "2477A33DE9E2191D86967F7FFB6AEAF7E946B329C2C453AB2976A3168DDB8B69",
-                      "size":  413
+                      "sha256":  "395B6D53004442705BB75479ABB1A67765A982A259A438DAAB8849E0E48FDC03",
+                      "size":  416
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
                       "path":  "styles.css",
                       "url":  "patches/v285-recommendations-restore-local/styles.css",
-                      "sha256":  "539D204E9104C0F287A7BC923669CAE9F35838776CF24FA9FAB609C7FC75240B",
-                      "size":  34434
+                      "sha256":  "BE685B8233774DFEC682E33527552D34A9DF8B868BC9270FF9E46BA604E7D76E",
+                      "size":  34594
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",

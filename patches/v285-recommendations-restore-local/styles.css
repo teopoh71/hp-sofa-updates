@@ -708,6 +708,12 @@ select:focus {
   background: rgba(20, 108, 104, 0.1);
 }
 
+.quick-jump-button.is-active {
+  border-color: var(--brand);
+  background: rgba(20, 108, 104, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(20, 108, 104, 0.18);
+}
+
 .quick-jump-button:active {
   transform: scale(0.96);
 }
