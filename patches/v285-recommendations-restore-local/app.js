@@ -1364,9 +1364,21 @@ function syncQuickJumpVisibility() {
   });
 }
 
+function syncLegacyBuilderFilterOverrides() {
+  const widthGroup = document.querySelector(".width-filter-group");
+  if (widthGroup) widthGroup.hidden = true;
+
+  typeFilterButtons.forEach((button) => {
+    if ((button.dataset.typeFilter || "").toLowerCase() === "showroom") {
+      button.hidden = true;
+    }
+  });
+}
+
 function syncBuilderFilterVisibility() {
   const filterPanel = document.querySelector(".builder-filter-buttons");
   const isSofaCatalog = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
+  syncLegacyBuilderFilterOverrides();
   if (filterPanel) filterPanel.hidden = !isSofaCatalog;
   if (comboButtonPanel) comboButtonPanel.hidden = !isSofaCatalog;
 }

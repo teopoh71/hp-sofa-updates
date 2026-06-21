@@ -1,15 +1,15 @@
 {
-    "patchVersionCode":  927,
-    "patchVersionName":  "v927-le8808-31m-restore",
+    "patchVersionCode":  928,
+    "patchVersionName":  "v928-runtime-hide-old-filters",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-20T16:52:34.8248579Z",
+    "createdAt":  "2026-06-21T00:42:18.6140840Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "AE9CF56A9573CAC737DE45943A2CC4B6FE3861E2B4B525E9C039D80C06A5D980",
-                      "size":  204193
+                      "sha256":  "313F7CB566E7E752E46FB837996EAAC989AC8CF3A660A0BF3554C6BAB65C1479",
+                      "size":  204546
                   }
               ]
 }
