@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  944,
-    "patchVersionName":  "v944-stop-auto-apk-popup",
+    "patchVersionCode":  945,
+    "patchVersionName":  "v945-zl2707-single-combo-clean",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T10:02:40.9182097Z",
+    "createdAt":  "2026-06-21T10:30:37.2201098Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "3DCE8FCFF264D57A7B135AEB3EF21A63D28908DCEA3D39B0D48C4D4C1AF7594A",
-                      "size":  216823
+                      "sha256":  "CA52141DE0701623B9C5C688078FC430E229667B630CF55AC7591B807426F987",
+                      "size":  217690
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "BB435F3E9B2BE5C5097926BA97D87B43CE0720281D7CDB277AFF703422827201",
-                      "size":  410
+                      "sha256":  "4609FA76507ED6648439001FDCF0EC3EA27B4CFD416A431F8DFA81B10CFAB0F3",
+                      "size":  416
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",

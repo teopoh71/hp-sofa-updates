@@ -1,21 +1,21 @@
-const cacheName = "hp-sofa-catalog-v916-missing-price-label-fix";
+const cacheName = "hp-sofa-catalog-v944-stop-auto-apk-popup";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
   "./photo-viewer.html",
-  "./styles.css?v=v916-missing-price-label-fix",
-  "./app-version.js?v=v916-missing-price-label-fix",
+  "./styles.css?v=v944-stop-auto-apk-popup",
+  "./app-version.js?v=v944-stop-auto-apk-popup",
   "./mixed-material-pricing.js?v=1",
   "./zolano-3776-layout.js?v=1",
-  "./app.js?v=v916-missing-price-label-fix",
+  "./app.js?v=v944-stop-auto-apk-popup",
   "./assets/individual-item-photos.js?v=2628-3817-merge",
   "./sofa-data.js?v=125-chinese-materials",
   "./sofa-recommendations.js?v=125-chinese-materials",
   "./zolano-data.js?v=2868-close-arm-fix",
   "./zolano-selling-overrides.js?v=2868-selling-price",
-  "./zolano-excel-price-overrides.js?v=v916-missing-price-label-fix",
-  "./zolano-visual-overrides.js?v=v916-missing-price-label-fix",
+  "./zolano-excel-price-overrides.js?v=v944-stop-auto-apk-popup",
+  "./zolano-visual-overrides.js?v=v944-stop-auto-apk-popup",
   "./chair-data.js?v=2",
   "./bed-data.js?v=125-chinese-materials",
   "./matching-data.js?v=147-bed-size-options",

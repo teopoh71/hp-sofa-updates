@@ -1921,8 +1921,16 @@ if (localStorage.getItem("hp-sofa-theme") === "dark") {
   document.body.classList.add("dark");
 }
 
+const isLocalDevHost = ["127.0.0.1", "localhost"].includes(window.location.hostname);
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
+    if (isLocalDevHost) {
+      navigator.serviceWorker.getRegistrations()
+        .then((registrations) => Promise.all(registrations.map((registration) => registration.unregister())))
+        .catch(() => {});
+      return;
+    }
     navigator.serviceWorker.register("sw.js")
       .then((registration) => registration.update())
       .catch(() => {});
@@ -1935,7 +1943,7 @@ window.addEventListener("load", () => {
 
 async function maybeClearAppCache() {
   const params = new URLSearchParams(window.location.search);
-  const clearKey = "hp-sofa-cache-cleared-v273";
+  const clearKey = "hp-sofa-cache-cleared-v944";
   const shouldClear = params.get("clearAppCache") === "1" || localStorage.getItem(clearKey) !== "1";
   if (!shouldClear || sessionStorage.getItem(clearKey) === "1") return;
   sessionStorage.setItem(clearKey, "1");
@@ -2472,7 +2480,7 @@ function populateBuilderPieces(forceSlotCount) {
     visibleSlotCount = forceSlotCount;
   }
 
-  if (selectedRecommendation) {
+  if (selectedRecommendation && typeof forceSlotCount !== "number") {
     const zolanoDirectPartCount = activeCatalogKey === "zolano" && !isGeneratedZolanoCombo(selectedRecommendation)
       ? getComboPartCodes(selectedRecommendation).length
       : 0;
@@ -3295,6 +3303,14 @@ function getRecommendationItems(combo, seriesItems = getSeriesItems()) {
   if (!combo) return [];
 
   if (activeCatalogKey === "zolano" && !isGeneratedZolanoCombo(combo)) {
+    const comboConfigKey = normalizeComboText(combo.configuration || "");
+    const comboDimensionKey = normalizeComboText(combo.dimensions || combo.description || "");
+    const exactComboItem = seriesItems.find((item) => (
+      normalizeComboText(item.configuration || "") === comboConfigKey
+      && normalizeComboText(item.dimensions || item.description || "") === comboDimensionKey
+    )) || seriesItems.find((item) => String(item.id || "") === String(combo.id || ""));
+    if (exactComboItem) return [exactComboItem];
+
     const rawCodes = getComboPartCodes(combo);
     const normalizedCodes = rawCodes.filter((code) => {
       const value = String(code || "").trim();
@@ -3327,7 +3343,7 @@ function applyRecommendationPurchases() {
   if (!flattenedItems.length) return false;
 
   pieceMaterialSelections = {};
-  populateBuilderPieces(Math.min(10, Math.max(2, flattenedItems.length + 1)));
+  populateBuilderPieces(Math.min(10, Math.max(1, flattenedItems.length)));
   const slotSelects = [...slotGrid.querySelectorAll(".slot-select")];
   slotSelects.forEach((select) => {
     select.value = "";
