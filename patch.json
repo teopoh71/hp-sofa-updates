@@ -1,22 +1,22 @@
 ﻿{
-    "patchVersionCode":  950,
-    "patchVersionName":  "v950-zl2628-selling-price",
+    "patchVersionCode":  951,
+    "patchVersionName":  "v951-photo-viewer-v2-cache-bust",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T13:14:21.7083409Z",
+    "createdAt":  "2026-06-21T13:25:53.0250965Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "82D9C84814594E99FCBB1ED41037FD8DAA0EA739FF4F4C2245D84F876B89E02B",
-                      "size":  221333
+                      "sha256":  "145E210C33EE15D614B76ECCFF4C15B6BC8E3118D5FCC3E9BBE3E98F9B361458",
+                      "size":  221384
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "786360796AB0C772FD0BB53A1F7C8E14B7DA2748555595D1F0EDFA6954218EAF",
-                      "size":  411
+                      "sha256":  "DC1A0CD252AE34CA3727416B66B829B30D1F6D387E2570E4140D429F334227F2",
+                      "size":  416
                   },
                   {
                       "contentType":  "text/css; charset=utf-8",
@@ -45,6 +45,13 @@
                       "url":  "patches/v285-recommendations-restore-local/photo-viewer.html",
                       "sha256":  "03BC37C83A19D86EEBA5F6819825E0AF4B695BCA4B2FCCC66FABC60F2FF95888",
                       "size":  8588
+                  },
+                  {
+                      "contentType":  "text/html; charset=utf-8",
+                      "path":  "photo-viewer-v2.html",
+                      "url":  "patches/v285-recommendations-restore-local/photo-viewer-v2.html",
+                      "sha256":  "9AC2811027DDD7BBEA233C31997067143D8B476625BD10374398AD07CA9EDFA1",
+                      "size":  8290
                   }
               ]
 }

@@ -11,6 +11,7 @@ const patchVersionStorageKey = "hp-sofa-patch-version-code";
 const patchNameStorageKey = "hp-sofa-patch-version-name";
 const patchSeenVersionStorageKey = "hp-sofa-patch-seen-version-code";
 const viewerReturnStateStorageKey = "hp-sofa-viewer-return-state";
+const photoViewerPath = "photo-viewer-v2.html";
 const showroomNikatorQuickOrder = [
   "NK0003SF",
   "NK0042SF",
@@ -4827,7 +4828,7 @@ function openRawPhotoForLongPress(src) {
   if (!src) return;
   savePhotoViewerReturnState();
   const returnUrl = encodeURIComponent(window.location.href);
-  window.location.href = `photo-viewer.html?src=${encodeURIComponent(toAbsoluteUrl(src))}&return=${returnUrl}`;
+  window.location.href = `${photoViewerPath}?src=${encodeURIComponent(toAbsoluteUrl(src))}&return=${returnUrl}`;
 }
 
 function openPhotoSelectionForLongPress(urls) {
@@ -4836,8 +4837,8 @@ function openPhotoSelectionForLongPress(urls) {
   savePhotoViewerReturnState();
   const returnUrl = encodeURIComponent(window.location.href);
   const url = absoluteUrls.length === 1
-    ? `photo-viewer.html?src=${encodeURIComponent(absoluteUrls[0])}&return=${returnUrl}`
-    : `photo-viewer.html?srcs=${encodeURIComponent(JSON.stringify(absoluteUrls))}&return=${returnUrl}`;
+    ? `${photoViewerPath}?src=${encodeURIComponent(absoluteUrls[0])}&return=${returnUrl}`
+    : `${photoViewerPath}?srcs=${encodeURIComponent(JSON.stringify(absoluteUrls))}&return=${returnUrl}`;
   window.location.href = url;
 }
 
