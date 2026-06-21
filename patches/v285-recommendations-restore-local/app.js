@@ -999,6 +999,30 @@ let selectedDiningTurntableId = "";
 let quickJumpSearchQuery = "";
 let suppressAutoSelectOnNextPopulate = false;
 let suppressRetainedSelectionsOnNextPopulate = false;
+let selectedRecommendationCounts = {};
+let isSyncingRecommendationCounts = false;
+
+function clearSelectedRecommendationCounts() {
+  selectedRecommendationCounts = {};
+}
+
+function getRecommendationCount(comboId) {
+  return Number(selectedRecommendationCounts[String(comboId)] || 0);
+}
+
+function getSelectedRecommendationPurchases() {
+  return Object.entries(selectedRecommendationCounts)
+    .flatMap(([comboId, count]) => Array.from({ length: Number(count || 0) }, () => comboId))
+    .map((comboId) => getSeriesRecommendations().find((combo) => combo.id === comboId))
+    .filter(Boolean);
+}
+
+function getStructuredRecommendationPurchases() {
+  return getSelectedRecommendationPurchases().map((combo) => ({
+    combo: resolvePricedZolanoRecommendation(combo),
+    items: getRecommendationItems(combo)
+  }));
+}
 
 const money = new Intl.NumberFormat(undefined, {
   style: "currency",
@@ -1162,6 +1186,7 @@ panelToggle.addEventListener("click", () => {
     if (select === seriesSelect) {
       syncModelJumpSelect();
       recommendSelect.value = "";
+      clearSelectedRecommendationCounts();
       pieceMaterialSelections = {};
       selectedDiningTurntableId = "";
       populateBuilderPieces();
@@ -1175,6 +1200,10 @@ panelToggle.addEventListener("click", () => {
     if (select === recommendSelect) {
       const combo = getSelectedRecommendation();
       recommendSelect.value = combo ? combo.id : "";
+      if (!isSyncingRecommendationCounts) {
+        clearSelectedRecommendationCounts();
+        if (combo) selectedRecommendationCounts[combo.id] = 1;
+      }
       pieceMaterialSelections = {};
       const zolanoDirectPartCount = combo && activeCatalogKey === "zolano" && !isGeneratedZolanoCombo(combo)
         ? getComboPartCodes(combo).length
@@ -1182,8 +1211,10 @@ panelToggle.addEventListener("click", () => {
       const slotCount = combo
         ? Math.min(10, Math.max(zolanoDirectPartCount ? zolanoDirectPartCount + 1 : 0, combo.partCodes.length + 1))
         : undefined;
-      populateBuilderPieces(slotCount);
-      if (combo) applyRecommendedCombo();
+      if (!applyRecommendationPurchases()) {
+        populateBuilderPieces(slotCount);
+        if (combo) applyRecommendedCombo();
+      }
       renderSetPreview();
       return;
     }
@@ -2170,6 +2201,7 @@ function setActiveCatalog(key) {
   activeCatalogKey = key;
   syncActiveCatalog();
   recommendSelect.value = "";
+  clearSelectedRecommendationCounts();
   if (builderSearchInput) builderSearchInput.value = "";
   setQuickJumpSearch("");
   if (widthFilterInput) widthFilterInput.value = "";
@@ -2189,6 +2221,7 @@ function clearBuilderSelections() {
   selectedWidthFilter = 0;
   selectedDiningTurntableId = "";
   selectedTypeFilters.clear();
+  clearSelectedRecommendationCounts();
   pieceMaterialSelections = {};
   suppressAutoSelectOnNextPopulate = true;
   suppressRetainedSelectionsOnNextPopulate = true;
@@ -2484,6 +2517,7 @@ function populateBuilderPieces(forceSlotCount) {
       }
     }
     select.addEventListener("change", () => {
+      clearSelectedRecommendationCounts();
       recommendSelect.value = "";
       pieceMaterialSelections = {};
       populateBuilderPieces();
@@ -2496,6 +2530,7 @@ function populateBuilderPieces(forceSlotCount) {
     clearButton.textContent = "\u53d6\u6d88";
     clearButton.hidden = !select.value;
     clearButton.addEventListener("click", () => {
+      clearSelectedRecommendationCounts();
       recommendSelect.value = "";
       const remainingSelections = [...slotGrid.querySelectorAll(".slot-select")]
         .map((slotSelect, slotIndex) => slotIndex === index ? "" : slotSelect.value)
@@ -2619,6 +2654,10 @@ function formatDiningTurntableOption(turntable) {
 function populateRecommendationSelect() {
   const selectedValue = recommendSelect.value;
   const combos = getSeriesRecommendations();
+  const validComboIds = new Set(combos.map((combo) => combo.id));
+  selectedRecommendationCounts = Object.fromEntries(
+    Object.entries(selectedRecommendationCounts).filter(([comboId, count]) => validComboIds.has(comboId) && Number(count) > 0)
+  );
 
   recommendSelect.innerHTML = "";
   const emptyOption = document.createElement("option");
@@ -2629,7 +2668,11 @@ function populateRecommendationSelect() {
   combos.forEach((combo) => {
     const option = document.createElement("option");
     option.value = combo.id;
-    option.textContent = appendZolanoRecommendationPrice(formatComboOption(combo), combo);
+    const count = getRecommendationCount(combo.id);
+    option.textContent = appendZolanoRecommendationPrice(
+      `${formatComboOption(combo)}${count > 0 ? ` x${count}` : ""}`,
+      combo
+    );
     recommendSelect.append(option);
   });
 
@@ -2665,11 +2708,16 @@ function renderComboButtons(combos = getSeriesRecommendations()) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "combo-choice-button";
-    button.classList.toggle("is-active", combo.id === recommendSelect.value);
-    button.innerHTML = formatComboButtonContent(combo);
+    const count = getRecommendationCount(combo.id);
+    button.classList.toggle("is-active", count > 0 || combo.id === recommendSelect.value);
+    button.dataset.comboCount = String(count);
+    button.innerHTML = `${formatComboButtonContent(combo)}${count > 0 ? `<span class="combo-choice-count">${count}</span>` : ""}`;
     button.addEventListener("click", () => {
+      selectedRecommendationCounts[combo.id] = getRecommendationCount(combo.id) + 1;
+      isSyncingRecommendationCounts = true;
       recommendSelect.value = combo.id;
       recommendSelect.dispatchEvent(new Event("change", { bubbles: true }));
+      isSyncingRecommendationCounts = false;
     });
     list.append(button);
   });
@@ -3246,6 +3294,69 @@ function setBuilderSelections(itemIds) {
   renderSetPreview();
 }
 
+function getRecommendationItems(combo, seriesItems = getSeriesItems()) {
+  if (!combo) return [];
+
+  if (activeCatalogKey === "zolano" && !isGeneratedZolanoCombo(combo)) {
+    const rawCodes = getComboPartCodes(combo);
+    const normalizedCodes = rawCodes.filter((code) => {
+      const value = String(code || "").trim();
+      if (!value) return false;
+      if (value === String(combo?.series || "").trim()) return false;
+      if (value === String(combo?.name || "").trim()) return false;
+      return true;
+    });
+    const directMatches = normalizedCodes
+      .map((code) => findItemByPartCode(seriesItems, code))
+      .filter(Boolean);
+    if (directMatches.length) return directMatches;
+
+    const fallbackMatch = findZolanoRecommendedItem(seriesItems, combo);
+    return fallbackMatch ? [fallbackMatch] : [];
+  }
+
+  return getComboPartCodes(combo)
+    .slice(0, 10)
+    .map((code) => findItemByPartCode(seriesItems, code))
+    .filter(Boolean);
+}
+
+function applyRecommendationPurchases() {
+  const purchases = getSelectedRecommendationPurchases();
+  if (!purchases.length) return false;
+
+  const seriesItems = getSeriesItems();
+  const flattenedItems = purchases.flatMap((combo) => getRecommendationItems(combo, seriesItems));
+  if (!flattenedItems.length) return false;
+
+  pieceMaterialSelections = {};
+  populateBuilderPieces(Math.min(10, Math.max(2, flattenedItems.length + 1)));
+  const slotSelects = [...slotGrid.querySelectorAll(".slot-select")];
+  slotSelects.forEach((select) => {
+    select.value = "";
+    select.parentElement?.querySelector(".slot-clear-button")?.setAttribute("hidden", "");
+  });
+
+  flattenedItems.slice(0, 10).forEach((item, index) => {
+    const select = slotSelects[index];
+    if (!item || !select) return;
+    ensureOption(select, item);
+    select.value = item.id;
+    select.parentElement?.querySelector(".slot-clear-button")?.removeAttribute("hidden");
+  });
+
+  let offset = 0;
+  purchases.forEach((combo) => {
+    const comboItems = getRecommendationItems(combo, seriesItems);
+    if (!comboItems.length) return;
+    applyDefaultPieceMaterials(combo, comboItems, offset);
+    offset += comboItems.length;
+  });
+
+  refreshSlotMaterialControls();
+  return true;
+}
+
 function fillDefaultSingleCatalogSlot() {
   if (!isDefaultSingleItemCatalog()) return false;
   const item = getDefaultSingleCatalogItem();
@@ -3279,6 +3390,7 @@ function getDefaultSingleCatalogItem() {
 function applyRecommendedCombo() {
   const combo = getSelectedRecommendation();
   if (!combo) return;
+  if (getSelectedRecommendationPurchases().length > 1 && applyRecommendationPurchases()) return;
 
   const seriesItems = getSeriesItems();
   const slotSelects = [...slotGrid.querySelectorAll(".slot-select")];
@@ -3334,16 +3446,15 @@ function applyRecommendedCombo() {
   refreshSlotMaterialControls();
 }
 
-function applyDefaultPieceMaterials(combo, items) {
+function applyDefaultPieceMaterials(combo, items, startIndex = 0) {
   if (activeCatalogKey !== "zolano" || !combo?.showroomNote || !items?.length) return;
   const labels = getMaterialLabels(items[0] || combo);
   const mfIndex = labels.findIndex((label) => String(label).toUpperCase() === "M/F");
   const fsaIndex = labels.findIndex((label) => String(label).toUpperCase() === "F/SA");
   if (mfIndex < 0 || fsaIndex < 0) return;
-  pieceMaterialSelections = {};
   items.forEach((item, index) => {
     const config = String(item?.configuration || "").toUpperCase();
-    pieceMaterialSelections[index] = /^(1NA|1NA\/T|CORNER)$/.test(config) ? mfIndex : fsaIndex;
+    pieceMaterialSelections[startIndex + index] = /^(1NA|1NA\/T|CORNER)$/.test(config) ? mfIndex : fsaIndex;
   });
 }
 
@@ -3616,9 +3727,12 @@ function selectFirstShowroomCombination() {
   const combo = getSeriesRecommendations().find(isShowroomCombination);
   if (!combo) {
     recommendSelect.value = "";
+    clearSelectedRecommendationCounts();
     renderSetPreview();
     return;
   }
+  clearSelectedRecommendationCounts();
+  selectedRecommendationCounts[combo.id] = 1;
   recommendSelect.value = combo.id;
   const zolanoDirectPartCount = activeCatalogKey === "zolano" && !isGeneratedZolanoCombo(combo)
     ? getComboPartCodes(combo).length
@@ -4202,15 +4316,21 @@ function formatZolanoUnitConfig(config) {
 
 function renderSetPreview() {
   const selectedRecommendation = resolvePricedZolanoRecommendation(getSelectedRecommendation());
-  const selected = [...slotGrid.querySelectorAll(".slot-select")]
+  const comboPurchases = getStructuredRecommendationPurchases();
+  const selectedFromSlots = [...slotGrid.querySelectorAll(".slot-select")]
     .map((select) => select.value)
     .map((id) => catalogSofas.find((sofa) => sofa.id === id))
     .filter(Boolean);
+  const selected = comboPurchases.length
+    ? comboPurchases.flatMap((purchase) => purchase.items)
+    : selectedFromSlots;
   if (!selected.length) {
     const defaultItem = getDefaultSingleCatalogItem();
     if (defaultItem) selected.push(defaultItem);
   }
-  const effectiveRecommendation = selectedRecommendation || resolvePricedZolanoRecommendation(findMatchingRecommendedCombo(selected));
+  const effectiveRecommendation = comboPurchases.length > 1
+    ? null
+    : (comboPurchases[0]?.combo || selectedRecommendation || resolvePricedZolanoRecommendation(findMatchingRecommendedCombo(selected)));
   const materialIndex = Number(materialSelect.value || 0);
   const mixedMaterialLabels = getMaterialLabels(selected[0] || effectiveRecommendation);
   const usesSinglePriceMaterial = isSinglePriceMaterialLabels(mixedMaterialLabels);
@@ -4231,9 +4351,13 @@ function renderSetPreview() {
     `;
     return;
   }
-  const total = getSetMaterialPrice(selected, effectiveRecommendation, materialIndex, { useMixed: true });
+  const total = comboPurchases.length
+    ? comboPurchases.reduce((sum, purchase) => sum + getSetMaterialPrice(purchase.items, purchase.combo, materialIndex, { useMixed: true }), 0)
+    : getSetMaterialPrice(selected, effectiveRecommendation, materialIndex, { useMixed: true });
   const hasCombination = Boolean(effectiveRecommendation) || selected.length > 0;
-  const displayedPieceCount = getDisplayedPieceCount(effectiveRecommendation, selected);
+  const displayedPieceCount = comboPurchases.length
+    ? comboPurchases.reduce((sum, purchase) => sum + getDisplayedPieceCount(purchase.combo, purchase.items), 0)
+    : getDisplayedPieceCount(effectiveRecommendation, selected);
 
   if (setTotal) setTotal.textContent = money.format(total);
   setPreview.innerHTML = "";
@@ -4254,7 +4378,7 @@ function renderSetPreview() {
     });
   }
 
-  const photoItem = effectiveRecommendation || selected[0] || { series: seriesSelect.value, model: seriesSelect.value };
+  const photoItem = comboPurchases[0]?.combo || effectiveRecommendation || selected[0] || { series: seriesSelect.value, model: seriesSelect.value };
   const setPhoto = document.createElement("article");
   setPhoto.className = "set-photo-card";
   const recommendationDimensions = effectiveRecommendation?.dimensions || "";
@@ -4262,16 +4386,18 @@ function renderSetPreview() {
   const selectedSizeText = selected[0]?.width && selected[0]?.depth && selected[0]?.height
     ? `${selected[0].width} x ${selected[0].depth} x ${selected[0].height} mm`
     : "";
-  const dimensionText = getCombinedDimensionText(selected, effectiveRecommendation)
+  const dimensionText = comboPurchases.length > 1
+    ? ""
+    : (getCombinedDimensionText(selected, effectiveRecommendation)
     || recommendationDimensions
     || selectedDimensions
-    || selectedSizeText;
+    || selectedSizeText);
   const showroomNote = effectiveRecommendation?.showroomNote || "";
   const bedSizeOptions = activeCatalogKey === "bed" ? renderBedSizeOptions(selected[0]) : "";
   setPhoto.innerHTML = `
     <div class="set-photo-heading">
       <h3>${effectiveRecommendation?.name || seriesSelect.value || "\u6c99\u53d1\u7ec4\u5408"}</h3>
-      <p>${[formatComboSummary(effectiveRecommendation, selected), mixedMaterialSummary].filter(Boolean).join(" - ")}</p>
+      <p>${[formatComboSummary(effectiveRecommendation, selected, comboPurchases), mixedMaterialSummary].filter(Boolean).join(" - ")}</p>
     </div>
     <button class="photo-open-button" type="button" data-full-photo="${resolveItemPhoto(photoItem)}" aria-label="\u653e\u5927\u56fe\u7247">
       <img class="set-main-photo" src="${resolveItemPhoto(photoItem)}" alt="${photoItem?.series || "\u6c99\u53d1\u7ec4\u5408"}">
@@ -4723,7 +4849,12 @@ function getRecommendationDimensionText(combo) {
   return combo.dimensions;
 }
 
-function formatComboSummary(combo, selected) {
+function formatComboSummary(combo, selected, purchases = []) {
+  if (purchases.length > 1) return `已选 ${purchases.length} 组组合`;
+  if (purchases.length === 1 && purchases[0]?.combo) {
+    const purchaseCombo = purchases[0].combo;
+    return `${getComboPieceCount(purchaseCombo)}件:${formatZolanoUnitConfig(purchaseCombo.configuration)}`;
+  }
   if (combo) return `${getComboPieceCount(combo)}\u4ef6:${formatZolanoUnitConfig(combo.configuration)}`;
   if (activeCatalogKey === "diningTable") return `\u5df2\u9009 ${selected.length} \u5957`;
   return `\u5df2\u9009 ${selected.length} \u4ef6`;

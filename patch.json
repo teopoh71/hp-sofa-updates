@@ -1,22 +1,29 @@
 ﻿{
-    "patchVersionCode":  939,
-    "patchVersionName":  "v939-zolano-same-combo-price",
+    "patchVersionCode":  940,
+    "patchVersionName":  "v940-multi-combo-count",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T07:40:02.4536374Z",
+    "createdAt":  "2026-06-21T08:15:56.5521915Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "87E0CCA3E8A64FBEDBEECB0D180DB7969C4EFA24EA45E3E83F9E44B4E75A4D41",
-                      "size":  211110
+                      "sha256":  "49D5A8BF63438EE6F15CBFD4ADE7A3D4E72BEBF6661F24E9DD0C533E660D43BC",
+                      "size":  216376
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "FA61D336A22023CF225A265AD193140153A7BA558D3273AB860EE0EF659F393C",
-                      "size":  414
+                      "sha256":  "51F6CB7DACB3E3A233011D84462FEE1C9AC37F3FBB3C05DC42A53F08756737D6",
+                      "size":  408
+                  },
+                  {
+                      "contentType":  "text/css; charset=utf-8",
+                      "path":  "styles.css",
+                      "url":  "patches/v285-recommendations-restore-local/styles.css",
+                      "sha256":  "539D204E9104C0F287A7BC923669CAE9F35838776CF24FA9FAB609C7FC75240B",
+                      "size":  34434
                   }
               ]
 }
