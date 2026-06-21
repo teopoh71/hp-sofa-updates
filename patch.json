@@ -1,92 +1,92 @@
-﻿{
-    "patchVersionCode":  962,
-    "patchVersionName":  "v962-zl725-power-zl771-arctv",
-    "minVersionCode":  0,
-    "createdAt":  "2026-06-21T17:31:03.6124073Z",
-    "files":  [
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app.js",
-                      "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "39EB9B9B54633D4F97EDBC0D69DD843F59214673C22082EA80A288CEFFF7524C",
-                      "size":  221556
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "app-version.js",
-                      "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "0F0A844CC4980746B09D57A51DA9E6858DA475C2565BC1394B43282679E63587",
-                      "size":  423
-                  },
-                  {
-                      "contentType":  "text/css; charset=utf-8",
-                      "path":  "styles.css",
-                      "url":  "patches/v285-recommendations-restore-local/styles.css",
-                      "sha256":  "27D08040B60665F4C45C472E4A3BC5F375E3A11DA0DD0685D2D06DFFF4881613",
-                      "size":  35287
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "zolano-excel-price-overrides.js",
-                      "url":  "patches/v285-recommendations-restore-local/zolano-excel-price-overrides.js",
-                      "sha256":  "6B2FB956565C729F580B0DCEDDD15808A9ED586F54A486676748FE92EA32B192",
-                      "size":  27124
-                  },
-                  {
-                      "contentType":  "text/javascript; charset=utf-8",
-                      "path":  "zolano-visual-overrides.js",
-                      "url":  "patches/v285-recommendations-restore-local/zolano-visual-overrides.js",
-                      "sha256":  "FCC143A672B3483BD25B85A0784E3BED24D9067D713479AF99641C17243783B9",
-                      "size":  21282
-                  },
-                  {
-                      "contentType":  "text/html; charset=utf-8",
-                      "path":  "photo-viewer.html",
-                      "url":  "patches/v285-recommendations-restore-local/photo-viewer.html",
-                      "sha256":  "03BC37C83A19D86EEBA5F6819825E0AF4B695BCA4B2FCCC66FABC60F2FF95888",
-                      "size":  8588
-                  },
-                  {
-                      "contentType":  "text/html; charset=utf-8",
-                      "path":  "photo-viewer-v2.html",
-                      "url":  "patches/v285-recommendations-restore-local/photo-viewer-v2.html",
-                      "sha256":  "F5F0241EFB8AC52A0A05A4BD6B82E681EFB5F3B151513F49AD0C61E2C1336CAE",
-                      "size":  8590
-                  },
-                  {
-                      "path":  "index.html",
-                      "url":  "patches/v285-recommendations-restore-local/index.html",
-                      "sha256":  "1A834608312B3883125D87DFEE31AADDBF405D28DE1E7BDB1C4E497E4AD0FC13",
-                      "size":  26629,
-                      "contentType":  "text/html; charset=utf-8"
-                  },
-                  {
-                      "path":  "sw.js",
-                      "url":  "patches/v285-recommendations-restore-local/sw.js",
-                      "sha256":  "FB4E689023E04D03846A439E6057FFAA9F462A1BF6627C17D0E076B7C3148A2F",
-                      "size":  6033,
-                      "contentType":  "text/javascript; charset=utf-8"
-                  },
-                  {
-                      "contentType":  "image/svg+xml",
-                      "path":  "assets/generated/zolano/parts/ZL3778-2EL-line.svg",
-                      "url":  "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-2EL-line.svg",
-                      "sha256":  "8E125352B448114E00DD9EBCDC12352E8D587391775FD903611598395ACBEBE9",
-                      "size":  385
-                  },
-                  {
-                      "contentType":  "image/svg+xml",
-                      "path":  "assets/generated/zolano/parts/ZL3778-1ERT-line.svg",
-                      "url":  "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-1ERT-line.svg",
-                      "sha256":  "65C45AC4DC79AC3485B05A77A73EE33724A332E947035C4A4390E1754E844345",
-                      "size":  417
-                  },
-                  {
-                      "contentType":  "image/svg+xml",
-                      "path":  "assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg",
-                      "url":  "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg",
-                      "sha256":  "CA3654FEA95BB3C99F60E305FA4C47A27252BDF29B32D05E1C3FBE36CFC1F6F2",
-                      "size":  456
-                  }
-              ]
+{
+  "patchVersionCode": 963,
+  "patchVersionName": "v963-zolano-usd-factor-73-066",
+  "minVersionCode": 0,
+  "createdAt": "2026-06-21T17:47:35.980169Z",
+  "files": [
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "app.js",
+      "url": "patches/v285-recommendations-restore-local/app.js",
+      "sha256": "CED66CF874CE1D9404DC023E9DC63893A172910A484AFCAA4FC45C67E853ABDB",
+      "size": 223656
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "app-version.js",
+      "url": "patches/v285-recommendations-restore-local/app-version.js",
+      "sha256": "9DDF852A0B17EEE1A6D5437DB0FAB4344AE0093A630F323EA99AF687BF30D047",
+      "size": 424
+    },
+    {
+      "contentType": "text/css; charset=utf-8",
+      "path": "styles.css",
+      "url": "patches/v285-recommendations-restore-local/styles.css",
+      "sha256": "27D08040B60665F4C45C472E4A3BC5F375E3A11DA0DD0685D2D06DFFF4881613",
+      "size": 35287
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "zolano-excel-price-overrides.js",
+      "url": "patches/v285-recommendations-restore-local/zolano-excel-price-overrides.js",
+      "sha256": "6B2FB956565C729F580B0DCEDDD15808A9ED586F54A486676748FE92EA32B192",
+      "size": 27124
+    },
+    {
+      "contentType": "text/javascript; charset=utf-8",
+      "path": "zolano-visual-overrides.js",
+      "url": "patches/v285-recommendations-restore-local/zolano-visual-overrides.js",
+      "sha256": "FCC143A672B3483BD25B85A0784E3BED24D9067D713479AF99641C17243783B9",
+      "size": 21282
+    },
+    {
+      "contentType": "text/html; charset=utf-8",
+      "path": "photo-viewer.html",
+      "url": "patches/v285-recommendations-restore-local/photo-viewer.html",
+      "sha256": "03BC37C83A19D86EEBA5F6819825E0AF4B695BCA4B2FCCC66FABC60F2FF95888",
+      "size": 8588
+    },
+    {
+      "contentType": "text/html; charset=utf-8",
+      "path": "photo-viewer-v2.html",
+      "url": "patches/v285-recommendations-restore-local/photo-viewer-v2.html",
+      "sha256": "F5F0241EFB8AC52A0A05A4BD6B82E681EFB5F3B151513F49AD0C61E2C1336CAE",
+      "size": 8590
+    },
+    {
+      "path": "index.html",
+      "url": "patches/v285-recommendations-restore-local/index.html",
+      "sha256": "5E1C212BC4FC2F3323A6B3B373F8D88F73D144FF3F803550A083B5901C433381",
+      "size": 26634,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "sw.js",
+      "url": "patches/v285-recommendations-restore-local/sw.js",
+      "sha256": "B48F26B0808B3692D5FD405B4029FC07B94761282C15DCDBC2FA1BC83F7FE4B4",
+      "size": 6039,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "contentType": "image/svg+xml",
+      "path": "assets/generated/zolano/parts/ZL3778-2EL-line.svg",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-2EL-line.svg",
+      "sha256": "8E125352B448114E00DD9EBCDC12352E8D587391775FD903611598395ACBEBE9",
+      "size": 385
+    },
+    {
+      "contentType": "image/svg+xml",
+      "path": "assets/generated/zolano/parts/ZL3778-1ERT-line.svg",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-1ERT-line.svg",
+      "sha256": "65C45AC4DC79AC3485B05A77A73EE33724A332E947035C4A4390E1754E844345",
+      "size": 417
+    },
+    {
+      "contentType": "image/svg+xml",
+      "path": "assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg",
+      "sha256": "CA3654FEA95BB3C99F60E305FA4C47A27252BDF29B32D05E1C3FBE36CFC1F6F2",
+      "size": 456
+    }
+  ]
 }

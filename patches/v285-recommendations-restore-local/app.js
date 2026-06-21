@@ -259,8 +259,8 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 7644,
-    priceOptions: [7644, 10976, 12473],
+    price: 7234,
+    priceOptions: [7234, 10393, 11810],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL523.jpg",
@@ -276,12 +276,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 4779,
-    priceOptions: [4779, 7929, 9010],
+    price: 4531,
+    priceOptions: [4531, 7517, 8542],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL556.jpg",
-    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC"
+    source: "manual-armchair-list"
   },
   {
     id: "ZOLANO-CHAIR-ZL719",
@@ -293,11 +293,12 @@ const zolanoThreeDigitCatalog = [
     description: "Single Chairs",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 2390,
-    priceOptions: [2390],
-    materials: ["Zolano"],
+    price: 5646,
+    priceOptions: [5646, 10431, 11037],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL719.jpg",
-    source: "https://www.zolano.com/product/pedaso/"
+    source: "EXPORT 2020 (ARC2).xls#Sheet1!139"
   },
   {
     id: "ZOLANO-CHAIR-ZL632",
@@ -309,8 +310,8 @@ const zolanoThreeDigitCatalog = [
     description: "Single Chairs",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 4218,
-    priceOptions: [4218, 6661, 7569],
+    price: 3999,
+    priceOptions: [3999, 6315, 7176],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL632.jpg",
@@ -326,11 +327,12 @@ const zolanoThreeDigitCatalog = [
     description: "Motion Italia Recliner",
     details: "Zolano recliner arm chair",
     dimensions: "",
-    price: 8390,
-    priceOptions: [8390],
-    materials: ["Zolano"],
+    price: 14684,
+    priceOptions: [14684, 19333, 21969],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL571.jpg",
-    source: "https://www.zolano.com/product/nueva/"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL583",
@@ -342,11 +344,12 @@ const zolanoThreeDigitCatalog = [
     description: "Motion Italia Recliner",
     details: "Zolano recliner arm chair",
     dimensions: "",
-    price: 8390,
-    priceOptions: [8390],
-    materials: ["Zolano"],
+    price: 15372,
+    priceOptions: [15372, 20137, 22883],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL583.jpg",
-    source: "https://www.zolano.com/product/ortana/"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL606",
@@ -358,11 +361,12 @@ const zolanoThreeDigitCatalog = [
     description: "Motion Italia Recliner",
     details: "Zolano recliner arm chair",
     dimensions: "",
-    price: 8390,
-    priceOptions: [8390],
-    materials: ["Zolano"],
+    price: 15452,
+    priceOptions: [15452, 19310, 21943],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL606.jpg",
-    source: "https://www.zolano.com/product/karm/"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL725",
@@ -374,8 +378,8 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 5922,
-    priceOptions: [5922, 8950, 9892],
+    price: 5614,
+    priceOptions: [5614, 8485, 9378],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL725.jpg",
@@ -391,11 +395,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 0,
-    priceOptions: [0],
-    materials: ["Zolano"],
+    price: 5358,
+    priceOptions: [5358, 9353, 10628],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL751.jpg",
-    source: "manual-armchair-list"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL771",
@@ -407,8 +412,8 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 11662,
-    priceOptions: [11662, 15680, 17818],
+    price: 11056,
+    priceOptions: [11056, 14865, 16892],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL771.jpg",
@@ -440,8 +445,8 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 5847,
-    priceOptions: [5847, 8232, 9355],
+    price: 5528,
+    priceOptions: [5528, 7804, 8868],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL787.jpg",
@@ -457,8 +462,8 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 5847,
-    priceOptions: [5847, 8232, 9355],
+    price: 5528,
+    priceOptions: [5528, 7804, 8868],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL803.jpg",
@@ -490,11 +495,12 @@ const zolanoThreeDigitCatalog = [
     description: "Dining Chairs",
     details: "Zolano dining chair",
     dimensions: "",
-    price: 990,
-    priceOptions: [990],
-    materials: ["Zolano"],
+    price: 1796,
+    priceOptions: [1796, 2942, 3343],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL609.jpg",
-    source: "https://www.zolano.com/product/zl-609-leather-dining-chair/"
+    source: "EXPORT 2020 (ARC2).xls#Sheet2!30"
   },
   {
     id: "ZOLANO-DINING-CHAIR-ZL639",
@@ -506,11 +512,12 @@ const zolanoThreeDigitCatalog = [
     description: "Dining Chairs",
     details: "Zolano dining chair",
     dimensions: "",
-    price: 1090,
-    priceOptions: [1090],
-    materials: ["Zolano"],
+    price: 1889,
+    priceOptions: [1889, 3035, 3449],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL639.jpg",
-    source: "https://www.zolano.com/product/zl-639-leather-dining-chair/"
+    source: "EXPORT 2020 (ARC2).xls#Sheet2!12"
   }
 ];
 
@@ -4536,14 +4543,14 @@ function hasZolano725(selected) {
 }
 
 function getZolano725PowerAddTotal(selected) {
-  return hasZolano725(selected) && zolano725PowerAddSelected ? 8428 : 0;
+  return hasZolano725(selected) && zolano725PowerAddSelected ? 7990 : 0;
 }
 
 function renderZolano725PowerAddOption(selected) {
   if (!hasZolano725(selected)) return "";
   return `
     <button class="bed-size-option${zolano725PowerAddSelected ? " is-active" : ""}" type="button" data-zl725-power-add>
-      POWER ADD +${money.format(8428)}
+      POWER ADD +${money.format(7990)}
     </button>
   `;
 }

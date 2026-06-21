@@ -1,22 +1,22 @@
-const cacheName = "hp-sofa-catalog-v962-zl725-power-zl771-arctv";
+const cacheName = "hp-sofa-catalog-v963-zolano-usd-factor-73-066";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
   "./photo-viewer.html",
   "./photo-viewer-v2.html",
-  "./styles.css?v=v962-zl725-power-zl771-arctv",
-  "./app-version.js?v=v962-zl725-power-zl771-arctv",
+  "./styles.css?v=v963-zolano-usd-factor-73-066",
+  "./app-version.js?v=v963-zolano-usd-factor-73-066",
   "./mixed-material-pricing.js?v=1",
   "./zolano-3776-layout.js?v=1",
-  "./app.js?v=v962-zl725-power-zl771-arctv",
+  "./app.js?v=v963-zolano-usd-factor-73-066",
   "./assets/individual-item-photos.js?v=2628-3817-merge",
   "./sofa-data.js?v=125-chinese-materials",
   "./sofa-recommendations.js?v=125-chinese-materials",
   "./zolano-data.js?v=2868-close-arm-fix",
   "./zolano-selling-overrides.js?v=2868-selling-price",
-  "./zolano-excel-price-overrides.js?v=v962-zl725-power-zl771-arctv",
-  "./zolano-visual-overrides.js?v=v962-zl725-power-zl771-arctv",
+  "./zolano-excel-price-overrides.js?v=v963-zolano-usd-factor-73-066",
+  "./zolano-visual-overrides.js?v=v963-zolano-usd-factor-73-066",
   "./chair-data.js?v=2",
   "./bed-data.js?v=125-chinese-materials",
   "./matching-data.js?v=147-bed-size-options",
