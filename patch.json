@@ -1,15 +1,15 @@
 {
-    "patchVersionCode":  928,
-    "patchVersionName":  "v928-runtime-hide-old-filters",
+    "patchVersionCode":  929,
+    "patchVersionName":  "v929-force-hide-width-group",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-21T00:42:18.6140840Z",
+    "createdAt":  "2026-06-21T00:47:24.1383973Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "313F7CB566E7E752E46FB837996EAAC989AC8CF3A660A0BF3554C6BAB65C1479",
-                      "size":  204546
+                      "sha256":  "A39618D56873123D9E811A463169761D5A557F77C535340237CFFB5A31788994",
+                      "size":  204788
                   }
               ]
 }

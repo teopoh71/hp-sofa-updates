@@ -1366,11 +1366,17 @@ function syncQuickJumpVisibility() {
 
 function syncLegacyBuilderFilterOverrides() {
   const widthGroup = document.querySelector(".width-filter-group");
-  if (widthGroup) widthGroup.hidden = true;
+  if (widthGroup) {
+    widthGroup.hidden = true;
+    widthGroup.setAttribute("aria-hidden", "true");
+    widthGroup.style.setProperty("display", "none", "important");
+  }
 
   typeFilterButtons.forEach((button) => {
     if ((button.dataset.typeFilter || "").toLowerCase() === "showroom") {
       button.hidden = true;
+      button.setAttribute("aria-hidden", "true");
+      button.style.setProperty("display", "none", "important");
     }
   });
 }
