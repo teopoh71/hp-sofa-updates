@@ -259,12 +259,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 7234,
-    priceOptions: [7234, 10393, 11810],
+    price: 7247,
+    priceOptions: [7247, 10406, 11825],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL523.jpg",
-    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC / rounded ARC table"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC / USD x 7.3 / 0.66 x 2.8"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL556",

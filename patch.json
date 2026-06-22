@@ -1,22 +1,22 @@
 {
-  "patchVersionCode": 966,
-  "patchVersionName": "v966-gofile-apk-and-filter-guard",
+  "patchVersionCode": 967,
+  "patchVersionName": "v967-zl523-arc2-price",
   "minVersionCode": 0,
-  "createdAt": "2026-06-22T00:42:59.695074Z",
+  "createdAt": "2026-06-22T01:36:22.206137Z",
   "files": [
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js",
       "url": "patches/v285-recommendations-restore-local/app.js",
-      "sha256": "BE775AD389FD39DBADC659A3D40C7B44974CD927460402E24C66407261F794D2",
-      "size": 225736
+      "sha256": "ACE08FA5576FA907AD220E8AF981D5E16566FED8EAA043D44BE138B1F8D582D5",
+      "size": 225828
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js",
       "url": "patches/v285-recommendations-restore-local/app-version.js",
-      "sha256": "7273F2BCD9C09A5C48CC01A1E9156FD525993B5A36A694FEFB7291D5DA443544",
-      "size": 400
+      "sha256": "52BD5DEF15CE1F0DD956A2749FAC19FEA8E61C0A0AA30354DD26F5082ED115F3",
+      "size": 389
     },
     {
       "contentType": "text/css; charset=utf-8",
@@ -56,15 +56,15 @@
     {
       "path": "index.html",
       "url": "patches/v285-recommendations-restore-local/index.html",
-      "sha256": "C352A9A0F9AA92968CEFE240C20A7571F01CCD490075FC1F09C6DF201E10845E",
-      "size": 26649,
+      "sha256": "A9F46BE555E2C82934F0FAF45D99627E92EFA959282AEF44C9576AA2751CA867",
+      "size": 26594,
       "contentType": "text/html; charset=utf-8"
     },
     {
       "path": "sw.js",
       "url": "patches/v285-recommendations-restore-local/sw.js",
-      "sha256": "C728D8B2EEBEF4D58FDFFF80F7ED061E74CDA9F11D539D2A1922ACDDC1CA4A50",
-      "size": 6057,
+      "sha256": "CE3D20625B6ECCDA97CD027E8988BF40040250729C4D398C2D08D32B28739437",
+      "size": 5991,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
