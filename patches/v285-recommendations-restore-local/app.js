@@ -1074,6 +1074,8 @@ const cp1252ReverseMap = new Map([
 const mojibakePattern = /[\u00c0-\u00ff\u0192\u0152\u0153\u0160\u0161\u0178\u2018-\u201d\u2026\u2039\u203a]/;
 let mojibakeRepairScheduled = false;
 let mojibakeRepairObserver = null;
+let legacyBuilderFilterObserver = null;
+let legacyBuilderFilterGuardScheduled = false;
 
 function repairMojibakeText(value) {
   let text = String(value || "");
@@ -1161,6 +1163,7 @@ if (typeof syncQuickJumpVisibility === "function") syncQuickJumpVisibility();
 rebuildQuickJumpGroup("nikator");
 syncQuickJumpImages(document);
 setupMojibakeTextRepair();
+setupLegacyBuilderFilterGuard();
 requestRepairVisibleText();
 
 document.addEventListener("error", (event) => {
@@ -1447,12 +1450,13 @@ function syncCatalogSwitchLayout() {
 function syncLegacyBuilderFilterOverrides() {
   const filterPanel = document.querySelector(".builder-filter-buttons");
   const clearButton = document.querySelector("#builderClearAllButton");
-  const useStandaloneClear = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
+  const useStandaloneClear = isStandaloneBuilderCatalog();
 
   if (useStandaloneClear) {
+    syncActiveCatalogDataset();
     widthFilterButtons.forEach(forceHideElement);
     typeFilterButtons.forEach(forceHideElement);
-    document.querySelectorAll(".filter-group span").forEach(forceHideElement);
+    document.querySelectorAll(".builder-filter-buttons .filter-group, .builder-filter-buttons .filter-group span").forEach(forceHideElement);
     if (filterPanel) forceHideElement(filterPanel);
     if (clearButton) {
       clearButton.hidden = false;
@@ -1514,6 +1518,33 @@ function syncLegacyBuilderFilterOverrides() {
   }
 }
 
+function isStandaloneBuilderCatalog() {
+  return activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
+}
+
+function syncActiveCatalogDataset() {
+  document.documentElement.dataset.activeCatalog = activeCatalogKey;
+  document.body.dataset.activeCatalog = activeCatalogKey;
+}
+
+function setupLegacyBuilderFilterGuard() {
+  if (legacyBuilderFilterObserver || typeof MutationObserver === "undefined") return;
+  legacyBuilderFilterObserver = new MutationObserver(() => {
+    if (!isStandaloneBuilderCatalog() || legacyBuilderFilterGuardScheduled) return;
+    legacyBuilderFilterGuardScheduled = true;
+    (window.requestAnimationFrame || window.setTimeout)(() => {
+      legacyBuilderFilterGuardScheduled = false;
+      syncLegacyBuilderFilterOverrides();
+    }, 0);
+  });
+  legacyBuilderFilterObserver.observe(document.body, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["hidden", "style", "class"]
+  });
+}
+
 function forceHideElement(element) {
   if (!element) return;
   element.hidden = true;
@@ -1524,7 +1555,8 @@ function forceHideElement(element) {
 function syncBuilderFilterVisibility() {
   const filterPanel = document.querySelector(".builder-filter-buttons");
   const isSofaCatalog = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
-  const useStandaloneClear = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
+  const useStandaloneClear = isStandaloneBuilderCatalog();
+  syncActiveCatalogDataset();
   syncLegacyBuilderFilterOverrides();
   if (filterPanel) filterPanel.hidden = !isSofaCatalog || useStandaloneClear;
   if (comboButtonPanel) comboButtonPanel.hidden = !isSofaCatalog;
@@ -2207,6 +2239,7 @@ function guessPatchContentType(path) {
 function syncActiveCatalog() {
   const fallbackKey = catalogDefinitions[activeCatalogKey] ? activeCatalogKey : "nikator";
   activeCatalogKey = fallbackKey;
+  syncActiveCatalogDataset();
   catalogSofas = catalogDefinitions[activeCatalogKey].catalog;
   recommendedCombos = catalogDefinitions[activeCatalogKey].recommendations;
   localStorage.setItem("hp-sofa-active-catalog", activeCatalogKey);

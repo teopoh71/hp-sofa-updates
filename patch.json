@@ -1,29 +1,29 @@
 {
-  "patchVersionCode": 965,
-  "patchVersionName": "v965-hide-legacy-filter-panel",
+  "patchVersionCode": 966,
+  "patchVersionName": "v966-gofile-apk-and-filter-guard",
   "minVersionCode": 0,
-  "createdAt": "2026-06-22T00:22:50.107353Z",
+  "createdAt": "2026-06-22T00:42:59.695074Z",
   "files": [
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js",
       "url": "patches/v285-recommendations-restore-local/app.js",
-      "sha256": "7E6B5F5F7B4F0E5114D250D9E99D16C0382AADA1B89670CC64EDEEC0E28EBC1D",
-      "size": 224591
+      "sha256": "BE775AD389FD39DBADC659A3D40C7B44974CD927460402E24C66407261F794D2",
+      "size": 225736
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js",
       "url": "patches/v285-recommendations-restore-local/app-version.js",
-      "sha256": "1D9515844ABFECD8B53AC8FD4BE8F98AF0EF3E00FA0CB8FC12E65237DE8D74A3",
-      "size": 406
+      "sha256": "7273F2BCD9C09A5C48CC01A1E9156FD525993B5A36A694FEFB7291D5DA443544",
+      "size": 400
     },
     {
       "contentType": "text/css; charset=utf-8",
       "path": "styles.css",
       "url": "patches/v285-recommendations-restore-local/styles.css",
-      "sha256": "C49FE72B879948240B1E97BB219A5E83C929A941E956539123B9DF58FFC70BC5",
-      "size": 35556
+      "sha256": "FE84F1A44C00ED9222C6D806C9C62030A81211B4EEF59D8A029AEEC6A2209040",
+      "size": 35830
     },
     {
       "contentType": "text/javascript; charset=utf-8",
@@ -56,15 +56,15 @@
     {
       "path": "index.html",
       "url": "patches/v285-recommendations-restore-local/index.html",
-      "sha256": "F5F15539E2E63F4B262B5A17A7AAE3D7D2EDFEA4ADC97EEED6B866CE2F41A402",
-      "size": 26634,
+      "sha256": "C352A9A0F9AA92968CEFE240C20A7571F01CCD490075FC1F09C6DF201E10845E",
+      "size": 26649,
       "contentType": "text/html; charset=utf-8"
     },
     {
       "path": "sw.js",
       "url": "patches/v285-recommendations-restore-local/sw.js",
-      "sha256": "5245A090797F2978CCA415CE643E4B5836734C1740D0BEE9DD90E95BE865F840",
-      "size": 6039,
+      "sha256": "C728D8B2EEBEF4D58FDFFF80F7ED061E74CDA9F11D539D2A1922ACDDC1CA4A50",
+      "size": 6057,
       "contentType": "text/javascript; charset=utf-8"
     },
     {

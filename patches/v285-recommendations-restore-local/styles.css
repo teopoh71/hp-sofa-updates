@@ -544,6 +544,13 @@ select:focus {
   display: none !important;
 }
 
+html[data-active-catalog="nikator"] .builder-filter-buttons,
+html[data-active-catalog="zolano"] .builder-filter-buttons,
+body[data-active-catalog="nikator"] .builder-filter-buttons,
+body[data-active-catalog="zolano"] .builder-filter-buttons {
+  display: none !important;
+}
+
 .filter-group {
   display: flex;
   flex-wrap: wrap;
