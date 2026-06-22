@@ -712,7 +712,21 @@ const zolano3778Modules = [
     photo: "assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg"
   }
 ];
-const zolanoModulePhotoMap = Object.fromEntries([...zolano2897Modules, ...zolano3776Modules, ...zolano2628Modules, ...zolano3818Modules, ...zolano3778Modules].map((module) => [module.id, module.photo]));
+const zolano3817Modules = [
+  {
+    id: "ZL3817MELFE1ELEXPORT2020ZL33002SHEET1544",
+    label: "1EL/T",
+    meta: "1630mm",
+    photo: "assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png"
+  },
+  {
+    id: "ZL3817MELFE1NAEXPORT2020ZL33002SHEET1545",
+    label: "2ER",
+    meta: "1810mm",
+    photo: "assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png"
+  }
+];
+const zolanoModulePhotoMap = Object.fromEntries([...zolano2897Modules, ...zolano3776Modules, ...zolano2628Modules, ...zolano3818Modules, ...zolano3778Modules, ...zolano3817Modules].map((module) => [module.id, module.photo]));
 const nikatorModuleSeriesSeedSet = new Set(["LE8801SF", "LE8810SF", "LE8806SF", "NK0051SF", "NK0054SF", "NK0001SF", "NK0003SF", "LE8803SF"]);
 
 const excludedCatalogIds = new Set([
@@ -3132,12 +3146,13 @@ function getActiveZolanoModuleSeries() {
   if (/(?:^|[^0-9])3776(?:[^0-9]|$)/.test(text)) return "3776";
   if (/(?:^|[^0-9])3818(?:[^0-9]|$)/.test(text)) return "3818";
   if (/(?:^|[^0-9])3778(?:[^0-9]|$)/.test(text)) return "3778";
+  if (/(?:^|[^0-9])3817(?:[^0-9]|$)/.test(text)) return "3817";
   return "";
 }
 
 function isZolanoModuleSeriesName(seriesValue) {
   const text = String(seriesValue || "").toUpperCase();
-  return /(?:^|[^0-9])(?:2628|2897|3776|3778|3818)(?:[^0-9]|$)/.test(text);
+  return /(?:^|[^0-9])(?:2628|2897|3776|3778|3817|3818)(?:[^0-9]|$)/.test(text);
 }
 
 function isManualModuleSeriesName(seriesValue) {
@@ -3153,6 +3168,7 @@ function getActiveManualModules() {
   if (series === "3776") return zolano3776Modules;
   if (series === "3818") return zolano3818Modules;
   if (series === "3778") return zolano3778Modules;
+  if (series === "3817") return zolano3817Modules;
   if (activeCatalogKey === "nikator") return getNikatorModuleItems();
   return [];
 }
