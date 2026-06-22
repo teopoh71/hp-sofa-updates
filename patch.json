@@ -1,29 +1,29 @@
 {
-  "patchVersionCode": 967,
-  "patchVersionName": "v967-zl523-arc2-price",
+  "patchVersionCode": 981,
+  "patchVersionName": "v981-local-copywriting-poster-png",
   "minVersionCode": 0,
-  "createdAt": "2026-06-22T01:36:22.206137Z",
+  "createdAt": "2026-06-22T04:43:32.237Z",
   "files": [
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js",
       "url": "patches/v285-recommendations-restore-local/app.js",
-      "sha256": "ACE08FA5576FA907AD220E8AF981D5E16566FED8EAA043D44BE138B1F8D582D5",
-      "size": 225828
+      "sha256": "D1CA0DDE9AC807392B309F6A77A8BA5BA4D85347B74F8584F2344B9A7F792201",
+      "size": 227485
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js",
       "url": "patches/v285-recommendations-restore-local/app-version.js",
-      "sha256": "52BD5DEF15CE1F0DD956A2749FAC19FEA8E61C0A0AA30354DD26F5082ED115F3",
-      "size": 389
+      "sha256": "3B80E8F32EFE887E5D8B7D5A713E15BB4925C94E1FB0B109098955EA819E1D15",
+      "size": 399
     },
     {
       "contentType": "text/css; charset=utf-8",
       "path": "styles.css",
       "url": "patches/v285-recommendations-restore-local/styles.css",
-      "sha256": "FE84F1A44C00ED9222C6D806C9C62030A81211B4EEF59D8A029AEEC6A2209040",
-      "size": 35830
+      "sha256": "689A7E8AD9B14EA035FACB4566327E1248A4CF86279A649C5098CD4A298D54AF",
+      "size": 38551
     },
     {
       "contentType": "text/javascript; charset=utf-8",
@@ -56,15 +56,15 @@
     {
       "path": "index.html",
       "url": "patches/v285-recommendations-restore-local/index.html",
-      "sha256": "A9F46BE555E2C82934F0FAF45D99627E92EFA959282AEF44C9576AA2751CA867",
-      "size": 26594,
+      "sha256": "13A046F8C12F81DA806865ACE98E219DA3BFDE640DA481BAF9B838CBB65838BB",
+      "size": 26770,
       "contentType": "text/html; charset=utf-8"
     },
     {
       "path": "sw.js",
       "url": "patches/v285-recommendations-restore-local/sw.js",
-      "sha256": "CE3D20625B6ECCDA97CD027E8988BF40040250729C4D398C2D08D32B28739437",
-      "size": 5991,
+      "sha256": "BF64C55E99C97624D8938925C23A4EC7DA409C134871AC90EBAED2B2C8F9C0DD",
+      "size": 6057,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -87,6 +87,1000 @@
       "url": "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3778-2EL-1ER-line.svg",
       "sha256": "CA3654FEA95BB3C99F60E305FA4C47A27252BDF29B32D05E1C3FBE36CFC1F6F2",
       "size": 456
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8801SF.jpg",
+      "sha256": "74A75A668B45CCA2A9F7F35159E46B4A39D49246F9F5A3C681AEB237B0B7F27E",
+      "size": 20325
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8802SF.jpg",
+      "sha256": "80BDCD0FBDE6550BA7EB5FD2B75FFB59B42E1684C20310ACDB7893AD14D7E92E",
+      "size": 8223
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8803SF.jpg",
+      "sha256": "0BB5072FBAFC17B4DFCAC672493DAEAEC61F0289CA06E4FB86366720BC39D294",
+      "size": 10430
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8806SF.jpg",
+      "sha256": "2D5A440648E9D24DD1A6098C1DF7DB277F96C30D0F55A038BBABFE4110AEF3E7",
+      "size": 8701
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8807SF.jpg",
+      "sha256": "F20EADBD5E5A7B06BAE8296843F2A580D5A92CFCBCFE8BE8470C05D57EE969DA",
+      "size": 12901
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8808SF.jpg",
+      "sha256": "1416FEF43A17E662B360C951ECAE9FC53F2FE9CCE99C42FDA57AC91A47F59440",
+      "size": 9427
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8810SF.jpg",
+      "sha256": "40584C36B7D5148B4981C675BBFBA287622BD899690B51C39548A693EDFB6B83",
+      "size": 10918
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8811SF.jpg",
+      "sha256": "44746F714BE6C0ED1C9F87492EDB48702A310C9ED98303BBBE50035E2F79B46F",
+      "size": 8689
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8812SF.jpg",
+      "sha256": "D5F9FC72900E9627FBC303F7453E5B801551C1995EF26A97AD5578091761799E",
+      "size": 10483
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8813SF.jpg",
+      "sha256": "091BC4B88C976F87887FB3B32F26EAE9CA9B7F2C1166EC5AE824C608F744A723",
+      "size": 10541
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8815SF.jpg",
+      "sha256": "9419D53F3C79133F908385BBE3486286480B403815842D83130092823EE9657F",
+      "size": 8423
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8816SF.jpg",
+      "sha256": "48C4E0B445DB6651C10E9C13602FAC2A6ECFBFAAEFE451C128BDF02B0ABF79CC",
+      "size": 12962
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8817SF.jpg",
+      "sha256": "30CC06BCFBA17D2BF766288C6F04876F062B97E6E270A153C43D130AF2F1CCFF",
+      "size": 10067
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8818SF.jpg",
+      "sha256": "7D9DD8F7CB5D1E933956EDECF142320475DE476AA36FDB1769C95ECFA981AF52",
+      "size": 10283
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8819SF.jpg",
+      "sha256": "4A2F7C731DB89952D356DBFA39D10F978593DF5E2AC722B6CF988E778BFD2936",
+      "size": 9784
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/LE8821SF.jpg",
+      "sha256": "FB2BF689FEA5CA914932066E4F5640649C51399435EE908E9FD9C7212F9AA1C2",
+      "size": 12951
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0001SF.jpg",
+      "sha256": "2DF8A5D6E6CD4B1DF2AD70170E8FF751612F4AD0BA85F947196D463E4190E567",
+      "size": 8897
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0002SF.jpg",
+      "sha256": "8072A8F9B1E83F914334628EC7F9C846737BF6D778BD93BCDF0238A97AB8CD4B",
+      "size": 10124
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0003SF.jpg",
+      "sha256": "6C00B123F7C8BBC869AF4042D0FBF918B53051A69EB25F2A717A772DAD3AFE5E",
+      "size": 11617
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0004SF.jpg",
+      "sha256": "6BC950A351A27C74177CA0EA03F4BB8762BCBAFFE213936B2A9DE2007D4DCABF",
+      "size": 10315
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0005SF.jpg",
+      "sha256": "DE1BF0C6114ABFCC7EA4B78468F1969D925F510BAD119BDC1BE40D138AB4CFF9",
+      "size": 11571
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0008SF.jpg",
+      "sha256": "5F1CF5EC15BFC06C95AB08D4ED1262FE09F40D36F96EC16A06CE42DBC8108839",
+      "size": 8750
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0010SF.jpg",
+      "sha256": "A3C67E76DEEEB686348C70AF8B1DA9FB280C54D3E2BE142D79A2C6A4D8FE1347",
+      "size": 10396
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0011SF.jpg",
+      "sha256": "B3530E695D65601E4C1BE0C78567B631CF6A802DA7BABDAB016611FD75E0619F",
+      "size": 10268
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0013SF.jpg",
+      "sha256": "753C16A7984E39D8F47730C6A6329D30E2622C43AB8E3C895DB0BB47F70B3EBD",
+      "size": 10901
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0014SF.jpg",
+      "sha256": "8F493CAD2184132FF45F49466A178AE73FDA8C0FD4055B77B39EC172B8085517",
+      "size": 9223
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0015SF.jpg",
+      "sha256": "CD2063B349DDFC5D9A2D3CB76B1CD0C86F56EBD6944A44AEC960EAF8C184EEA3",
+      "size": 10173
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0016SF.jpg",
+      "sha256": "416CBF1FA8942117BBEE04AB74E1D1E538431245C66A8CD631A9767495A2E64E",
+      "size": 9793
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0017SF.jpg",
+      "sha256": "C4868AB63856CA18BDD6A0DB4C345CAC55636CA9608E4AEE049A3B4358970F94",
+      "size": 12489
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0019SF.jpg",
+      "sha256": "46D0ADD01B504C262F2F391BB8F6A628DF8025FA953CF0D5B1FDFE5070B9C270",
+      "size": 9838
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0020SF.jpg",
+      "sha256": "E768D900AB5B42C3CC46AFCF1492E893F74FF2FD0C9A9FAE7D9D1A53BD652D48",
+      "size": 9774
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0021SF.jpg",
+      "sha256": "7A4F468F3AEC9237E1F93177ADFB217896E5B2B69825114C1E2D38F2A5EC86D8",
+      "size": 10890
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0022SF.jpg",
+      "sha256": "B04B53617DFDADD250D098F7C019057237A188DE984EE54840DE63D23D74FFFD",
+      "size": 13023
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0023SF.jpg",
+      "sha256": "521C70FE44D1357456DC5C14EB0D90AE886CC55B7CA67A465ADE918C1E1E8DD5",
+      "size": 7276
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0024SF.jpg",
+      "sha256": "E5318599EA5A597380056B517029219DB779374B07682ABAD8CD70239E13FE4A",
+      "size": 5531
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0028SF.jpg",
+      "sha256": "48B600BC6263947759E87175B3FE09B96AB5175250281C5836D774D2240B8ABA",
+      "size": 9789
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0029SF.jpg",
+      "sha256": "2EFD1CA5355D1D3A7AF4F7BE50AFC6B75BD80FDA71A7775614111ABC48EE6BCB",
+      "size": 9712
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0032SF.jpg",
+      "sha256": "F267802FE764FB7332B1CB84E32D6FD39EAB7FA6739FF36B177FE9E61B155ACF",
+      "size": 10717
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0033SF.jpg",
+      "sha256": "7F640C05147E375E4D2B71651DE9BDCD563E7E57DE3DA188C264DADBAB965F9A",
+      "size": 8715
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0034SF.jpg",
+      "sha256": "0E9D5B41CE9E26B46975F167AA7B240047564E2EE58AE010CE6A7396A872A2D7",
+      "size": 10826
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0037SF.jpg",
+      "sha256": "3F3309C3A4499173E8DC27DAC783E787AFF584CF722379C485076126A9680100",
+      "size": 9890
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0038SF.jpg",
+      "sha256": "AFCC2AABF72D3A157ED84BF1610D790C122AFEF2A10C72805B3D08FA7A57D0C6",
+      "size": 10082
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0039SF.jpg",
+      "sha256": "2A49FF6564AEF69583EAB2518AEC8F3D81754A31B8C1ED5D50B8CF4CDDE73BBC",
+      "size": 11481
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0040SF.jpg",
+      "sha256": "F00274E1B4A94B60A47B2724F0A6EAB3E918815D8ECC4D6F7348AAB1CD4AA325",
+      "size": 10392
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0042SF.jpg",
+      "sha256": "0655CB7B559CA5D4A304D93C685EE454C6ADFD29E7635556400B7B275772BBBE",
+      "size": 11789
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0045SF.jpg",
+      "sha256": "07C1B136A824B32635F3B10EB03B2013F1CD82B01ABE2A7EECC367FF402ED789",
+      "size": 7141
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0047SF.jpg",
+      "sha256": "26DBF9CB06B8E617CCB9A76563EFE581BC8C83B664C5C5296F2C6B8BF9C3FD45",
+      "size": 8034
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0049SF.jpg",
+      "sha256": "51DDD15C04432BE570DA6B2A4FFC207896F9E354896572F32432C60DE2B4396C",
+      "size": 9906
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0050SF.jpg",
+      "sha256": "BA1302D13E60E8358D282134F98DBEA040C23F9DEB4288A36413A3B99172B042",
+      "size": 13102
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0051SF.jpg",
+      "sha256": "A4A86E2B260F15FBE15359829FB83513F3AF5C1B980A691C6C716BF797F4BE1A",
+      "size": 6576
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0053SF.jpg",
+      "sha256": "651887CC9CEC348C3543EC87D045DE4BD8472F0DA7229A0761202D433E9514C7",
+      "size": 12813
+    },
+    {
+      "path": "assets/quick-thumbs/nikator/NK0054SF.jpg",
+      "sha256": "3830A74EE842D404B809A345102A21C5BAC16CA59D0928B6054AB54AAB701AFE",
+      "size": 6873
+    },
+    {
+      "path": "assets/generated/matching/NK7014NT.jpg",
+      "sha256": "C7515734EB357BB1AAEC0AA2E0FD557ADE986E44EB48E00F1C86F58DC78F7BF0",
+      "size": 776244
+    },
+    {
+      "path": "assets/generated/matching/NK7015NT.jpg",
+      "sha256": "E1688BB80337C0ECAE83B7599F460DF16A8F9D589EFB8BE105F386F77EAFA651",
+      "size": 449298
+    },
+    {
+      "path": "assets/generated/matching/NK7016NT.jpg",
+      "sha256": "A9FD99098E3C7C2FAC89809B8053D7EA96593AEE2B0A9509B81DBF3A8312ADC2",
+      "size": 677336
+    },
+    {
+      "path": "assets/generated/matching/NK7017NT.jpg",
+      "sha256": "FE92583F4873B97D59DB2B101789063993378C3BB53BF4901EE6C20A3DFD1EDD",
+      "size": 727503
+    },
+    {
+      "path": "assets/generated/matching/NK7018NT.jpg",
+      "sha256": "6C8BB398021DADC998C5274260BA987E99D82E56BCD3EE3843435AD88A42BA5A",
+      "size": 665671
+    },
+    {
+      "path": "assets/generated/matching/NK7019NT.jpg",
+      "sha256": "A8FCBB3CBACD81C915A1F4945894DCD522A6ED1E8947F4A5D3EE4091F50FBD60",
+      "size": 456203
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5001DT.png",
+      "sha256": "CACC79745C3510B0B62559224DD96FBC687F3417F00579AFAF2FC0226612C7C3",
+      "size": 370321
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5002DT.png",
+      "sha256": "981C446D7A9658B87CEEBF37D495A875A20A4E9F69DA94B2A6887C88A4BEC319",
+      "size": 576914
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5008DT-SHT90063-135.jpg",
+      "sha256": "791739FD5F4D3288D4F08D8632FA6DBBA8993652C6E5DB22703F1F9CCB88389A",
+      "size": 2175044
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5008DTHT90063-150.jpg",
+      "sha256": "791739FD5F4D3288D4F08D8632FA6DBBA8993652C6E5DB22703F1F9CCB88389A",
+      "size": 2175044
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5016DT-1.png",
+      "sha256": "3860B79786966E6984E55DDBB43476D3DD3C80540077083B7A2E2C319BC26DD9",
+      "size": 64169
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5016DT-2.png",
+      "sha256": "3860B79786966E6984E55DDBB43476D3DD3C80540077083B7A2E2C319BC26DD9",
+      "size": 64169
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5016DT-3.png",
+      "sha256": "3860B79786966E6984E55DDBB43476D3DD3C80540077083B7A2E2C319BC26DD9",
+      "size": 64169
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5017DT-1.png",
+      "sha256": "413A4FD00791AE199BC376CEF888DE8A4ACD5D20B67DA71FE6020DFEC9685B75",
+      "size": 59745
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5017DT-2.png",
+      "sha256": "413A4FD00791AE199BC376CEF888DE8A4ACD5D20B67DA71FE6020DFEC9685B75",
+      "size": 59745
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5017DT-3.png",
+      "sha256": "413A4FD00791AE199BC376CEF888DE8A4ACD5D20B67DA71FE6020DFEC9685B75",
+      "size": 59745
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5022DT-1.png",
+      "sha256": "19D7957E3AC655167BEDBF8F9838DABEEAC675379E76F5A1CF79739916BA60E9",
+      "size": 149981
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5024DT-2.png",
+      "sha256": "985AA24552C9ACCFEF939872E76D161ABA51450AD4DB92D337A233FE4DD12986",
+      "size": 51264
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5025DT.png",
+      "sha256": "CFA87DBF0BB014A19C0BA175766C523870298445D565DA8E5240AD7B37122D37",
+      "size": 268279
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6000ET2.png",
+      "sha256": "5B2FB4EEA243B8BA4B69A68071D2711BD21FC39497D9FB8469EB5010C04BE9D0",
+      "size": 333306
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6001CT.png",
+      "sha256": "9EFCEB0A5988D8BF942EDB591D0D913538DA2A6F6D9C0305FD06FDC187D7C01A",
+      "size": 97113
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6001ET1.png",
+      "sha256": "E785A100113E777914DD6D2975B37183B007BF20EC6C424234C6D756EF0F40AE",
+      "size": 86446
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6001ET2.png",
+      "sha256": "DA1317E6759CB49CA9ADC8CD16AB52831FBD70C8C30659DF46207FB0E9284DC4",
+      "size": 511938
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6002ET.png",
+      "sha256": "939984EEAA3B7CC890348E19BCEE5A8DA046563A21933644646A2DB818F5D5D2",
+      "size": 424361
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6003CT.png",
+      "sha256": "422E1A9188F7E4F21D18133E4ACF3C127FE4407D89DA9E7C0C6E9F8AAFE31F45",
+      "size": 146789
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6003CT1.png",
+      "sha256": "09DED8C73FE079910CB50EE56B6135BD00FE8A99008A707A913565B5257FFD11",
+      "size": 98896
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6003ET1.png",
+      "sha256": "E35C7F492C54E13A04BD50515C518B6C638867015AFB63D294DAD60D340BA31E",
+      "size": 251042
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6004ET1.png",
+      "sha256": "02BC823FFD1A9491B287A707F48E35B74E64B0748EFC44766D3B71387414F939",
+      "size": 209833
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6004ET2.png",
+      "sha256": "BC4D980F39498615F6027D2E3155897A44E957DFDA4B93AE73ADC9F6C4CAD090",
+      "size": 48040
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6006ET.png",
+      "sha256": "568D740AD544B8C52A1C01D0033430ED6F9E9152DDE8C94B79D4EC07DEB43C11",
+      "size": 103794
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6007ET.png",
+      "sha256": "CD252AF2AAC7B2D3F415C36BD775DB552823D7ABF98C65A3796D3ACB189DA7B5",
+      "size": 600610
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6010CT.png",
+      "sha256": "B12D67C3ACC689A726771666003BA5FFED0A82645EC8957365C385484718364F",
+      "size": 44378
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6011CT.png",
+      "sha256": "A474998EC122F72CDAC9A5A5CC1740B657C2F906C789D7B7EB176505840952AA",
+      "size": 286921
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6011ET.png",
+      "sha256": "FA682D5B5C050C02CD17CC6114C1FE8240464BC7D02E27CE9C4B6A84BB4A8D88",
+      "size": 146501
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6013ET2.png",
+      "sha256": "78ED6B7BCF5AD7CF4B7C8AC4AB26D9D0BE14B5DC9BC82B6B0B16C442A0B201E1",
+      "size": 303027
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6014ET.png",
+      "sha256": "3F96B749A2E9857156788B27DFFEE4B4A313C2DBDB5F0B3CCA85FC9FBA39743E",
+      "size": 31625
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6016CT.png",
+      "sha256": "7854C2668E423625C033F75BE6F1D4D9231D2BBD65D45F82F5D84E191D240E34",
+      "size": 265885
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6020ET.png",
+      "sha256": "4C9AECA2B87B57530ABEE8DC8BFEE413C9B53C63D643BCF466A818C52B6E28F8",
+      "size": 51764
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6023ET.png",
+      "sha256": "EAED5B739E111BA9629C190CF963FA0189E02DA9D3C6B300D2752BDA9867D72C",
+      "size": 100165
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6028CT(A608-B).png",
+      "sha256": "87B40681E259793132A181B65F3E8F7F4788EF821381DC6472444689FFF973E7",
+      "size": 138940
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6029CT(A636).png",
+      "sha256": "7ED7579D295475A5C4715D845A207332868A62D060CF2F9DDC618E63B6FC5E3A",
+      "size": 3027144
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6029ET(C636).png",
+      "sha256": "5EEAE921F1E7B4E30FA65DC73DA85566032E22CC42D4C3A3D5CF789362B8CB59",
+      "size": 67935
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6031CT(B2109A).png",
+      "sha256": "C9FD16A61E79372A082ABDDDBAEDFADD4993AF29197FC9E439848B852C66F6BF",
+      "size": 196918
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6031ET(B2109B).png",
+      "sha256": "C9FD16A61E79372A082ABDDDBAEDFADD4993AF29197FC9E439848B852C66F6BF",
+      "size": 196918
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6035CT-1.png",
+      "sha256": "61E4D9587F478E80FF4A6880793A8BE4C61F042C69B4F1B99F48BC8738F26EDD",
+      "size": 191514
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6035CT.png",
+      "sha256": "854858D5044B5B7A1511058B8A427BB430C38516F764FB2306D92A64EF201334",
+      "size": 87075
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6035ET.png",
+      "sha256": "3984AD37E4AF175E4BA63377F51B23EF6D00AB9985F8F045C2C6BD2150C6CEF1",
+      "size": 64674
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6036CT.png",
+      "sha256": "52D34B5D177C9808E952524BD45DDF1C743D4E1B285B87A836E82411CF3C61E7",
+      "size": 152154
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6037CT.png",
+      "sha256": "ACB9C7E920C716C5582C33C9E4DD45A77AEC312FA32E14FB3A2A8986545609CE",
+      "size": 62131
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6038CT.png",
+      "sha256": "D7F2E20DA40117A993A3A8CF632D95CE4074CCEB2134DC7DC6A4E43613607CDC",
+      "size": 136035
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6039CT.png",
+      "sha256": "B87553663EFB899C8A5D75E71BA2B28A311B7E34819719289C71095C0BD04FC3",
+      "size": 60344
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6039ET.png",
+      "sha256": "35DC58557F5512C0CA39766BA0CC179A18159830EA6A451FEE4D9B96E33898D4",
+      "size": 36399
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6040CT.png",
+      "sha256": "244236FAC759045525EE807D40031669786438047C8128412598A8C1A0F04AFB",
+      "size": 127412
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6040ET.png",
+      "sha256": "F40490A88715FB2531541A6E43CA6340F3EEDC4A34670164AB5A2D48A4E096D2",
+      "size": 28941
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6041ET.png",
+      "sha256": "974543AF2AE0CDC6AA632A6F7AE08E61091548362A0C5133FB3FEBCB146527B8",
+      "size": 216621
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6042CT.png",
+      "sha256": "16603F5A7BDB9BB8E20535318C5B4E612807CF48EF2D80541CD284EA94D59180",
+      "size": 208920
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6042ET.png",
+      "sha256": "5D7E6D7DFDA3C5FA0F89B980D330ADD7B9EE941AA8968A5C1BDEB3C32E51B656",
+      "size": 67578
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6043CT.png",
+      "sha256": "B6D0952C22A0E3E1BC16380AA5958108ACDD93F13780A58481DACA6CBFD6654D",
+      "size": 87469
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6043ET.png",
+      "sha256": "3544E9346FFAC093EB507AC0C5B6AFE69C3F672FF441696F990AAE2812D4759D",
+      "size": 126307
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6044CT.png",
+      "sha256": "7B232CCCAB6DDFB7F17CE22C9D83F1ABFF3249C563EF0EF2AA92D90595EEA0CB",
+      "size": 216778
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6044CTNK6044ET.png",
+      "sha256": "7B232CCCAB6DDFB7F17CE22C9D83F1ABFF3249C563EF0EF2AA92D90595EEA0CB",
+      "size": 216778
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6044ET.png",
+      "sha256": "8BE9A952ECCBA390A1EE823118788F149612444E41B1D335AE89549306DE40EF",
+      "size": 175067
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6045CT.png",
+      "sha256": "F02B98B3791C5F470188799E70BD4FA0AEBB9A47DBEB5DBB1B9F89B62A88CE50",
+      "size": 160994
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6045ET.png",
+      "sha256": "434E16A0C04D9C9D1E42044BF036A7B47C193B612F3F7641ECF20A1669134743",
+      "size": 141366
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6045ET1.png",
+      "sha256": "E543CD650CDE332E57FF873F07B7585C95ABCD5890BDDF810BF6275618E0D5E5",
+      "size": 126209
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6046CT.png",
+      "sha256": "3ABB6DD34AB00261D28A001BF2833F0989D6C3B8B928BDAB65C864F1A6F8CC6E",
+      "size": 199754
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6046ET.png",
+      "sha256": "73E7D87468B2FD9A20F3DDB1FDCE93DACAB724EBB45173829102AED9B9023F28",
+      "size": 158186
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6047CT.png",
+      "sha256": "63032CBFD827CF9B950166205F670E3DF72828B42A76A795C2F0A7D6F9AB5136",
+      "size": 153068
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6047ET.png",
+      "sha256": "8BF3F6726263383457A7FE92E6DE0408714DEB6EA8C2E618E2B13A3902C30E41",
+      "size": 130062
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6047ET1.png",
+      "sha256": "B72FFED6EDC6AB0BC41F0E4147E05E30519A4C6B2266300135C18E3D79DAFDB3",
+      "size": 84911
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6047ET2.png",
+      "sha256": "9DE3330B65B66ADC2EE95C3A5BD2BF4264B063030AF6A982DBDEDE05F6243322",
+      "size": 60286
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6048CT.png",
+      "sha256": "CE67A261D1DD4B85F50E1E2E4934C82C1E963922DA298B1475185A98A4D3566C",
+      "size": 82520
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6048ET.png",
+      "sha256": "B4F69EC446A420D4A0AB23C0299CBB63BCBAACC130D4763FD24A44DC974063CD",
+      "size": 30270
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6048ET1.png",
+      "sha256": "77653F01D431CEEF6A8BA8EB0BA9526E31F783EA25F2F862C5367285C4C0A7E6",
+      "size": 21851
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6049CT.png",
+      "sha256": "733A6525DDAB0249373A32805DAD0A7C9AC5907AB60D179932F26A424E97495B",
+      "size": 248948
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6049ET.png",
+      "sha256": "7BFA852DFB67358EDF38AB5E4A2475BC45CE93AB66646B2D160AD298F2839520",
+      "size": 82890
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6050CT.png",
+      "sha256": "E169184022BC965DE2609BA0ADF3583F4A28B44CAA198996ADF35C0150AD4E24",
+      "size": 240478
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6050ET.png",
+      "sha256": "F49FA57B9C3A7200137FBD7AF854D53CCE180600D2A179EBD75473222D7FFFC6",
+      "size": 41676
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6051CT-1.png",
+      "sha256": "2C89595CC28161335755288C8BDE4AFE60EF6EE9C57E3BF24AC9A42FE042503F",
+      "size": 57570
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6051CT.png",
+      "sha256": "68D86571FD69512F6EA9053BC0140F6DD2D873957E675FAAF26830CD17FC7478",
+      "size": 83409
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6052CT.png",
+      "sha256": "ABC610AE104C6445D6D17F70341B04E55EFFC5A31DA0B722098DB581379E4DB5",
+      "size": 180736
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6053CT.png",
+      "sha256": "9CB93D7D519AAA1ED3BF35DEBC29AC452829BE9016D0735862674F16E23C5168",
+      "size": 20459
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6053ET.png",
+      "sha256": "B76521C6E9F40DC080C5763DC714B9CB00B94E3272C66E287CAA5CEB8A4414B3",
+      "size": 29683
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6054CT.png",
+      "sha256": "F37B9C7E26BCA354070A4C07BE015C5DCAD3B2CC301FC7F921F1B0EAEF9B226D",
+      "size": 93098
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK7001MC.png",
+      "sha256": "4F9D4D090AC9E64444AD2B21B8E74818E9602FABCD8603C2AD7B1931441C9FDB",
+      "size": 638682
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK7001TV.png",
+      "sha256": "B4B6144E0A27C5D1449CACC121619931A3F3776FB6FCA264A1403C2ACA994C2A",
+      "size": 599344
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK7008BU.png",
+      "sha256": "43D53DB33C254A69F671801C707355DE907658041238C833B7DA4067ABCD1453",
+      "size": 498962
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK7009BU.png",
+      "sha256": "13BF7646B1BCCB148836B694B398FB4C5FD20CA46BA5D11367161C5ADA278BE3",
+      "size": 336542
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8001CH-G.png",
+      "sha256": "3D2EB7743798261BFFFDBB9ACEEBEBABCBE28E53DD5A96366D08F0372370A6FB",
+      "size": 95136
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8005CH.png",
+      "sha256": "94AACE12FABC06DB157FFE83F831F16E120BC6D579147135A302DDC53D66FBBB",
+      "size": 111351
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8006CH.png",
+      "sha256": "7D459665644B14013E2FCF76B26C625769E02B5C47EA0A6D984A662ADA4A8A49",
+      "size": 104096
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8007CH-D.png",
+      "sha256": "4BDD755553489EDD5FBA897A6194AE03F4E6F7354E19A28F02E30462BE43B900",
+      "size": 87293
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8007CH-L.png",
+      "sha256": "8F95AC908F6241C65984EE1A6DDFB02C5154CA173E1C08D78F09E7ED9B93F20A",
+      "size": 77992
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8008CH.jpg",
+      "sha256": "0991F564802D29A80FFE8462006BCC4D4EA915AD355C33A38E1A15440792D11E",
+      "size": 3537262
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8009CH.png",
+      "sha256": "804BDD0FAFF48423FFD89C3E44367CD4625B2AB6889FA0C8D69CCE81CF22A6A8",
+      "size": 65074
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8011CH-D.png",
+      "sha256": "ECA28838528FE132E33074BC3415D7585B6D183AC7EF744ADABDB6524539023C",
+      "size": 78664
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8011CH.png",
+      "sha256": "7824DB8F238926A985242E4AA3E8F0C6F53D9B71CA75A004B594D3F58E9497D9",
+      "size": 58954
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8012CH.png",
+      "sha256": "FFBEB1B8340C38A692A1BC01438294036F8631528C970D37E4B582E9041B55E0",
+      "size": 113765
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8013CH.png",
+      "sha256": "A42A67C11D042F4189ABD816FCC3033CCBD698AA2D4A405A79F514936D9D49A2",
+      "size": 112982
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8014CH-G.png",
+      "sha256": "EF631DA949925894D90A1C01786626FDC10B46894839795E8B4CEEBCDFDCCF1F",
+      "size": 104790
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8014CH-O.png",
+      "sha256": "FEC7A9E1AF63EFA3DB2C218BC8AB39FD4EDE12D94A67E91221C3E368C5E7AF54",
+      "size": 110903
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8015CH-D.png",
+      "sha256": "7036D8183A59517887E6780D3E56663ACF7051C9ED5F10B2F201DAEC42D00DE3",
+      "size": 180315
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8015CH.png",
+      "sha256": "B181778A0AA3DAD75F05E0FD75D29FDF8CE271D17CFC0C520F245E0C13575209",
+      "size": 159992
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8016CH.png",
+      "sha256": "151691563872ADAA1B81F5E8B19A87C266E3807469ECA25BFF603469CBB8858A",
+      "size": 146096
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8017CH-D.png",
+      "sha256": "2240F76D996C2DB14A953EE8E8F6A448885DC4CC2B4BEADB0CF132AA4BF87C94",
+      "size": 130226
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8017CH.png",
+      "sha256": "3738535174DC4727148B97F1EA974A8B798B450E0E394F18E7BF1147F6D15C8D",
+      "size": 147630
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8018CH-D.png",
+      "sha256": "1AD08700A4230B62A5C7B0789868209F0C7E285F98DD370AF1D5075D696E51DC",
+      "size": 12708
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8018CH.png",
+      "sha256": "C25A808EE1B13A41BB4CC7A0BC67FC6D6BCDDB7DE2152146D34A30BC8BA9DA0A",
+      "size": 17468
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK8019CH.png",
+      "sha256": "11CD593898E6CED9A33E9F15B8EE341131FC8D9848F8004507309DD67B346A4C",
+      "size": 274928
+    },
+    {
+      "path": "assets/photo-overrides.js",
+      "sha256": "0C21B59CABC4F60C2670FC392B56FAE0BC3D5903C618483AD0C7967B29DA6547",
+      "size": 18684,
+      "url": "patches/v285-recommendations-restore-local/assets/photo-overrides.js",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5012DT（D644-C）.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5012DT（D644-C）.png",
+      "sha256": "63AEAD8EC3F4D33DABCF6B5C603D899F65549F5AF35CAE715EF3165BD93455DE",
+      "size": 76003,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5013DT（D636）.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5013DT（D636）.png",
+      "sha256": "BA2F15F2A7203C88CF8C6D2E86C02BA8EAAFFB505B338BB22F809AE19B361DC1",
+      "size": 49634,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5015DT-1.38米.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5015DT-1.38米.png",
+      "sha256": "BDA9108ACC0623046B596B5A31121DBEFB2FBF4163E6FAF62A9FA0C9D91D20E5",
+      "size": 72514,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5019DT-1.35米.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5019DT-1.35米.png",
+      "sha256": "03B11960CF0B1E1934D75FE9BB06702E33954FC6A7EBF5EABEE554BB9F60C321",
+      "size": 128293,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5019DT-1.5米.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5019DT-1.5米.png",
+      "sha256": "03B11960CF0B1E1934D75FE9BB06702E33954FC6A7EBF5EABEE554BB9F60C321",
+      "size": 128293,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5020DT-2.2米.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5020DT-2.2米.png",
+      "sha256": "EC0F09BD6273FF452932E56F556DDAAC33EB23E812D668DE26CD72E851E0FCF1",
+      "size": 97188,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5021DT-2米.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5021DT-2米.png",
+      "sha256": "3949D11F1D679B60C5881535E01BF94EAAF9434C538729630773BA10F6A57653",
+      "size": 153386,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK5023DT-1.8米.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK5023DT-1.8米.png",
+      "sha256": "BAACA55262229A430EFCFD4E71977F3AC05D7BDEFC07B26554EF289CCFC509AE",
+      "size": 147196,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/matching/sheet-NK6033CT（A692）.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/matching/sheet-NK6033CT（A692）.png",
+      "sha256": "07189D66989699DE0F960F0380F246210A72A9D33EFA5964B8EA8D7BAF8A15D8",
+      "size": 58469,
+      "contentType": "image/png"
+    },
+    {
+      "path": "bed-data.js",
+      "url": "patches/v285-recommendations-restore-local/bed-data.js",
+      "sha256": "3B813C998A1D0E437C276568A465ECD33935885BE4CA7EE634C4E41BC08EDB2A",
+      "size": 46029,
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/generated/bed/LE4401BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4401BE.png",
+      "sha256": "CCCBD2F740A7FBFEF0FAEAAAF5706242036F4C8E5F457522887B1A40947A98BB",
+      "size": 147949,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/LE4402BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4402BE.png",
+      "sha256": "5F5777F69EB7DC45A294396D5F5C2E13C46D7565BD5AB83BBBA893A3596062B8",
+      "size": 147990,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/LE4403BE-A.jpg",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4403BE-A.jpg",
+      "sha256": "40FE50336315483E6492A311F86E7206BF12722B885C9299F4A4648346FD1F3F",
+      "size": 66914,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/generated/bed/LE4403BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4403BE.png",
+      "sha256": "F73FEEFC10BE0481751A805906215721BEE18D855C708353D0244444784AB525",
+      "size": 322176,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/LE4404BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4404BE.png",
+      "sha256": "85DC0980403F1B2266C3696750CA570AFCD9BA426A80FCB0A0755DFFB61F155A",
+      "size": 299053,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/LE4405BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4405BE.png",
+      "sha256": "2D4D55CDB2696B01906D83DD87C8A959FE893B5BC8498ADF3E57EBD8A747013A",
+      "size": 217140,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/LE4406BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4406BE.png",
+      "sha256": "CA0B615D24E6578B28687A060E3B7E4ACB291A15906C946C39899856D913989B",
+      "size": 386175,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/LE4407BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/LE4407BE.png",
+      "sha256": "89FD8A14CA09943B13D4AC9A9164F472695F8BCAD7C011CD9BC309CBC5CD3747",
+      "size": 785063,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/NK4000BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/NK4000BE.png",
+      "sha256": "9F7180E14ACE836A19C625B6AE5FEE72DA3B1220DF68D0E3D5FC16B5049E3B4C",
+      "size": 450830,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/NK4001BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/NK4001BE.png",
+      "sha256": "FC12CE693647835163AD963070975CF52A456E631DF4F860F34E78B77578E997",
+      "size": 346617,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/NK4002BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/NK4002BE.png",
+      "sha256": "CA0B615D24E6578B28687A060E3B7E4ACB291A15906C946C39899856D913989B",
+      "size": 386175,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/NK4003BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/NK4003BE.png",
+      "sha256": "2ED7236DC1D207B8EC1389D764D7E49B95D5B82C15F8CFA4E070C189D650501E",
+      "size": 98987,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/NK4005BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/NK4005BE.png",
+      "sha256": "A7927F61BE9004A70615D8F7D42431BDA520D2A1D273066B5087986BFC88FF63",
+      "size": 186382,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/NK4006BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/NK4006BE.png",
+      "sha256": "A26942E527B7988C33A56160392FEA0C6AD39663C2FC4B15F1EB44BF15CEC4DA",
+      "size": 144258,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/generated/bed/NK4007BE.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/bed/NK4007BE.png",
+      "sha256": "21FBB41A43AB44840066E0915BFB5911E450DE5B3759C2CC8ABEE3CA372B3709",
+      "size": 102562,
+      "contentType": "image/png"
+    },
+    {
+      "path": "assets/copywriting/mastrotto-recommendation.png",
+      "url": "patches/v285-recommendations-restore-local/assets/copywriting/mastrotto-recommendation.png",
+      "sha256": "C281F0AADDFA15FA3A4F726A8087A17216980A1D46CAB9411F3F7D932C1D0BA3",
+      "size": 281837,
+      "contentType": "image/png"
     }
   ]
 }

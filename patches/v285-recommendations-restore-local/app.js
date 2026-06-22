@@ -27,6 +27,11 @@ const showroomNikatorQuickOrder = [
 const missingNikatorQuickPhotoSeries = new Set([
   "LE8820SF"
 ]);
+const missingNikatorGeneratedPhotoSeries = new Set([
+  "LE8820SF",
+  "NK0025SF",
+  "NK0035SF"
+]);
 const showroomZolanoQuickOrder = [
   "ZL 2868 LAOREST",
   "ZL 2707 KANDER",
@@ -462,12 +467,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 5528,
-    priceOptions: [5528, 7804, 8868],
+    price: 5544,
+    priceOptions: [5544, 7804, 9322],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL803.jpg",
-    source: "EXPORT 2020 (ARC2).xls / user-confirmed 803 row"
+    source: "EXPORT 2020 (ARC2).xls / user-confirmed 803 row / USD x 7.3 / 0.66 x 2.8"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL798",
@@ -479,11 +484,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 0,
-    priceOptions: [0],
-    materials: ["Zolano"],
+    price: 4274,
+    priceOptions: [4274, 6256, 7619],
+    priceIsFinal: true,
+    materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL798.jpg",
-    source: "manual-armchair-list"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC / USD x 7.3 / 0.66 x 2.8"
   },
   {
     id: "ZOLANO-DINING-CHAIR-ZL609",
@@ -726,12 +732,20 @@ function getCatalogText(item) {
 
 function isDiningTableItem(item) {
   const text = getCatalogText(item);
-  return /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¡Ã…â€™|ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â°/.test(text) || /\bDT\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
+  return isNikatorDiningTableItem(item) || /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¡Ã…â€™|ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â°/.test(text) || /\bDT\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
+}
+
+function isNikatorDiningTableItem(item) {
+  return /^DININGTABLE-/i.test(String(item?.id || "")) || /NK\d+DT/i.test(`${item?.series || ""} ${item?.model || ""}`);
 }
 
 function isDiningChairItem(item) {
   const text = getCatalogText(item);
-  return /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¤Ã¢â‚¬Â¦/.test(text) || /\bCH\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
+  return isNikatorDiningChairItem(item) || /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¤Ã¢â‚¬Â¦/.test(text) || /\bCH\b/i.test(`${item?.series || ""} ${item?.model || ""}`);
+}
+
+function isNikatorDiningChairItem(item) {
+  return /^DININGCHAIR-/i.test(String(item?.id || "")) || /NK\d+CH/i.test(`${item?.series || ""} ${item?.model || ""}`);
 }
 
 function isDiningItem(item) {
@@ -750,7 +764,7 @@ function isDiningTurntableItem(item) {
 
 function isBuyableDiningTableItem(item) {
   const text = getCatalogText(item);
-  return /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¡Ã…â€™|ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â°/.test(text) && !isDiningTurntableItem(item);
+  return (isNikatorDiningTableItem(item) || /ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¦Ã‚Â¡Ã…â€™|ÃƒÂ©Ã‚Â¤Ã‚ÂÃƒÂ¥Ã‚ÂÃ‚Â°/.test(text)) && !isDiningTurntableItem(item);
 }
 
 function getBuyableDiningTableKey(item) {
@@ -927,6 +941,11 @@ const catalogDefinitions = {
   matching: {
     label: "ÃƒÂ©Ã¢â‚¬Â¦Ã‚ÂÃƒÂ¥Ã‚Â¥Ã¢â‚¬â€ Matching",
     catalog: matchingCatalogData.filter((item) => !isDiningItem(item)),
+    recommendations: []
+  },
+  copywriting: {
+    label: "\u6587\u6848",
+    catalog: [],
     recommendations: []
   }
 };
@@ -1565,7 +1584,7 @@ function syncBuilderFilterVisibility() {
 function syncBuilderControlsVisibility() {
   const controls = document.querySelector(".builder-controls");
   const builderSearch = document.querySelector(".builder-search");
-  const isGridOnlyCatalog = activeCatalogKey === "bed";
+  const isGridOnlyCatalog = activeCatalogKey === "bed" || activeCatalogKey === "copywriting";
   const hideTopControls = activeCatalogKey === "nikator"
     || activeCatalogKey === "zolano"
     || activeCatalogKey === "diningTable"
@@ -1808,8 +1827,7 @@ function getQuickJumpPhoto(catalogKey, series, item) {
     if (override) return override;
   }
   if (catalogKey === "bed") {
-    const key = String(series || "").replace(/[^A-Za-z0-9-]/g, "");
-    if (key) return `assets/quick-thumbs/bed/${key}.jpg`;
+    return photoItem?.originalPhoto || photoItem?.photo || gallery[0] || overrides[series] || "";
   }
   return overrides[series] || gallery[0] || photoItem?.originalPhoto || photoItem?.photo || diningFamilyPhoto || "";
 }
@@ -1882,6 +1900,7 @@ function cropBedQuickJumpImage(image, originalSrc) {
 
 function getNikatorGeneratedPhoto(series) {
   const key = String(series || "").replace(/[^A-Za-z0-9-]/g, "");
+  if (missingNikatorGeneratedPhotoSeries.has(key)) return "";
   return key ? `assets/generated/nikator/${key}.jpg` : "";
 }
 
@@ -4392,7 +4411,28 @@ function formatZolanoUnitConfig(config) {
   return text.replace(/\b(1NA\/T|1NA|ARM|CORNER)\b/g, (match) => `${match}(${remarks[match]})`);
 }
 
+function renderCopywritingPreview() {
+  if (setTotal) setTotal.textContent = money.format(0);
+  const poster = "assets/copywriting/mastrotto-recommendation.png";
+  setPreview.innerHTML = `
+    <article class="copywriting-poster-card">
+      <button class="photo-open-button copywriting-poster-button" type="button" data-full-photo="${poster}" aria-label="\u6253\u5f00\u6587\u6848\u56fe">
+        <img class="copywriting-poster-image" src="${poster}" alt="Mastrotto \u76ae\u9769\u63a8\u8350\u6587\u6848\u56fe">
+      </button>
+      <div class="photo-actions">
+        <button class="photo-action-button" type="button" data-open-photo-viewer>\u6253\u5f00\u56fe\u7247</button>
+      </div>
+    </article>
+  `;
+  bindPhotoOpen(setPreview);
+  bindPhotoFullscreen(setPreview);
+}
+
 function renderSetPreview() {
+  if (activeCatalogKey === "copywriting") {
+    renderCopywritingPreview();
+    return;
+  }
   const selectedRecommendation = resolvePricedZolanoRecommendation(getSelectedRecommendation());
   const comboPurchases = getStructuredRecommendationPurchases();
   const selectedFromSlots = [...slotGrid.querySelectorAll(".slot-select")]
@@ -4480,6 +4520,7 @@ function renderSetPreview() {
       <h3>${effectiveRecommendation?.name || seriesSelect.value || "\u6c99\u53d1\u7ec4\u5408"}</h3>
       <p>${[formatComboSummary(effectiveRecommendation, selected, comboPurchases), mixedMaterialSummary].filter(Boolean).join(" - ")}</p>
     </div>
+    ${bedSizeOptions}
     <button class="photo-open-button" type="button" data-full-photo="${resolveItemPhoto(photoItem)}" aria-label="\u653e\u5927\u56fe\u7247">
       <img class="set-main-photo" src="${resolveItemPhoto(photoItem)}" alt="${photoItem?.series || "\u6c99\u53d1\u7ec4\u5408"}">
     </button>
@@ -4488,7 +4529,6 @@ function renderSetPreview() {
       <button class="photo-action-button" type="button" data-open-photo-viewer>\u6253\u5f00\u56fe\u7247</button>
     </div>
     <div class="set-photo-copy">
-      ${bedSizeOptions}
       ${powerAddOption}
       ${dimensionText ? `<p class="combo-dimension"><span>\u6574\u5957\u5c3a\u5bf8</span><strong>${dimensionText}</strong></p>` : ""}
       ${hasCombination ? `<p class="combo-pieces"><span>\u7ec4\u5408\u4ef6\u6570</span><strong>${displayedPieceCount} \u4ef6</strong></p>` : ""}
@@ -5593,7 +5633,7 @@ function getNikatorSeriesPrimaryPhoto(item) {
   const model = String(item.model || "");
   const isSeriesCard = !id.includes("-") || id === item.series || model === item.series;
   if (!isSeriesCard) return "";
-  return getSeriesGalleryPhotos(item.series)[0] || "";
+  return getNikatorGeneratedPhoto(item.series) || getSeriesGalleryPhotos(item.series)[0] || "";
 }
 
 function getDiningFamilyPhoto(item) {

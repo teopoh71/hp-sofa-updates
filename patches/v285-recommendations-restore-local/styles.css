@@ -531,6 +531,10 @@ select:focus {
   display: none !important;
 }
 
+.slot-grid[hidden] {
+  display: none !important;
+}
+
 .builder-filter-buttons {
   display: grid;
   gap: 10px;
@@ -1052,6 +1056,158 @@ body.dark .slot-grid label {
   min-width: 0;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.copywriting-card {
+  display: grid;
+  gap: 14px;
+  color: #34433a;
+}
+
+.copywriting-poster-card {
+  display: grid;
+  gap: 10px;
+}
+
+.copywriting-poster-button {
+  border: 1px solid var(--line);
+  background: #fff7eb;
+  overflow: hidden;
+}
+
+.copywriting-poster-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #fff7eb;
+}
+
+.copywriting-hero {
+  min-height: 190px;
+  display: flex;
+  align-items: end;
+  padding: 18px;
+  border-radius: 8px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(32, 24, 18, 0.88), rgba(32, 24, 18, 0.48)),
+    url("assets/generated/zolano-3digit/ZL725.jpg") center / cover no-repeat;
+  color: #fff;
+}
+
+.copywriting-hero p,
+.copywriting-hero h3,
+.copywriting-hero strong {
+  margin: 0;
+}
+
+.copywriting-hero p {
+  font-size: 0.9rem;
+  letter-spacing: 0;
+}
+
+.copywriting-hero h3 {
+  margin-top: 6px;
+  font-size: 1.7rem;
+}
+
+.copywriting-hero strong {
+  display: block;
+  margin-top: 6px;
+  color: #f4dfbc;
+}
+
+.copywriting-box {
+  border: 1px solid #f6c46f;
+  border-radius: 8px;
+  padding: 14px;
+  background: #fffdf7;
+}
+
+.copywriting-box-green {
+  border-color: #2f9a68;
+}
+
+.copywriting-box-blue {
+  border-color: #1e76ca;
+}
+
+.copywriting-box h3,
+.copywriting-proof-note h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+.copywriting-box p,
+.copywriting-box li,
+.copywriting-proof-note p,
+.copywriting-source {
+  margin: 0;
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.copywriting-box ol {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.copywriting-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.copywriting-proof-grid figure,
+.copywriting-proof-note {
+  margin: 0;
+  border: 1px solid #f6c46f;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fffdf7;
+}
+
+.copywriting-proof-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.copywriting-proof-grid figcaption {
+  margin-top: 6px;
+  font-weight: 800;
+  color: #7b6b54;
+}
+
+.copywriting-proof-note {
+  border-color: #2f9a68;
+}
+
+.copywriting-cert-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.copywriting-cert-grid span {
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 800;
+  text-align: center;
+}
+
+.copywriting-source {
+  color: #7b857a;
+  font-size: 0.82rem;
 }
 
 .set-photo-card,
@@ -1671,6 +1827,19 @@ body.dark .slot-grid label {
     width: 100%;
     white-space: normal;
     line-height: 1.15;
+  }
+
+  .copywriting-proof-grid,
+  .copywriting-cert-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .copywriting-hero {
+    min-height: 150px;
+  }
+
+  .copywriting-hero h3 {
+    font-size: 1.35rem;
   }
 
   label {
