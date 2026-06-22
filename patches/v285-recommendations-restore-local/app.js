@@ -2094,9 +2094,10 @@ window.addEventListener("load", () => {
 
 async function maybeClearAppCache() {
   const params = new URLSearchParams(window.location.search);
-  const clearKey = "hp-sofa-cache-cleared-v944";
-  const shouldClear = params.get("clearAppCache") === "1" || localStorage.getItem(clearKey) !== "1";
-  if (!shouldClear || sessionStorage.getItem(clearKey) === "1") return;
+  const clearKey = "hp-sofa-cache-cleared-v997";
+  const forceClear = params.get("clearAppCache") === "1";
+  const shouldClear = forceClear || localStorage.getItem(clearKey) !== "1";
+  if (!shouldClear || (!forceClear && sessionStorage.getItem(clearKey) === "1")) return;
   sessionStorage.setItem(clearKey, "1");
   localStorage.setItem(clearKey, "1");
   localStorage.removeItem(patchVersionStorageKey);

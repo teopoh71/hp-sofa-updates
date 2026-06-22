@@ -1,30 +1,30 @@
-const cacheName = "hp-sofa-catalog-v996-clearance-first-button";
+const cacheName = "hp-sofa-catalog-v997-clearance-hard-cache-fix";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
   "./photo-viewer.html",
   "./photo-viewer-v2.html",
-  "./styles.css?v=v996-clearance-first-button",
-  "./app-version.js?v=v996-clearance-first-button",
+  "./styles.css?v=v997-clearance-hard-cache-fix",
+  "./app-version.js?v=v997-clearance-hard-cache-fix",
   "./mixed-material-pricing.js?v=1",
   "./zolano-3776-layout.js?v=1",
-  "./clearance-data.js?v=v996-clearance-first-button",
-  "./app.js?v=v996-clearance-first-button",
-  "./assets/individual-item-photos.js?v=v996-clearance-first-button",
+  "./clearance-data.js?v=v997-clearance-hard-cache-fix",
+  "./app.js?v=v997-clearance-hard-cache-fix",
+  "./assets/individual-item-photos.js?v=v997-clearance-hard-cache-fix",
   "./sofa-data.js?v=125-chinese-materials",
   "./sofa-recommendations.js?v=125-chinese-materials",
   "./zolano-data.js?v=2868-close-arm-fix",
   "./zolano-selling-overrides.js?v=2868-selling-price",
-  "./zolano-excel-price-overrides.js?v=v996-clearance-first-button",
-  "./zolano-visual-overrides.js?v=v996-clearance-first-button",
+  "./zolano-excel-price-overrides.js?v=v997-clearance-hard-cache-fix",
+  "./zolano-visual-overrides.js?v=v997-clearance-hard-cache-fix",
   "./chair-data.js?v=2",
   "./bed-data.js?v=125-chinese-materials",
   "./matching-data.js?v=147-bed-size-options",
-  "./assets/photo-overrides.js?v=v996-clearance-first-button",
-  "./assets/photo-gallery.js?v=v996-clearance-first-button",
-  "./assets/entry-gallery.js?v=v996-clearance-first-button",
-  "./assets/sofa-asset-gallery.js?v=v996-clearance-first-button",
+  "./assets/photo-overrides.js?v=v997-clearance-hard-cache-fix",
+  "./assets/photo-gallery.js?v=v997-clearance-hard-cache-fix",
+  "./assets/entry-gallery.js?v=v997-clearance-hard-cache-fix",
+  "./assets/sofa-asset-gallery.js?v=v997-clearance-hard-cache-fix",
   "./assets/clearance/YA292.jpg",
   "./assets/clearance/YA243.jpg",
   "./assets/clearance/A2530.jpg",
@@ -140,15 +140,14 @@ async function matchPatchCache(request) {
   const exact = await cache.match(request);
   if (exact) return exact;
   const url = new URL(request.url);
-  if (
-    url.pathname.endsWith("/styles.css")
-    || url.pathname.endsWith("/app-version.js")
-    || url.pathname.endsWith("/zolano-visual-overrides.js")
-    || url.pathname.endsWith("/index.html")
-    || url.pathname.endsWith("/")
-  ) return null;
   if (!url.search) return null;
   url.search = "";
-  return cache.match(url.href);
+  const withoutSearch = await cache.match(url.href);
+  if (withoutSearch) return withoutSearch;
+  if (url.pathname.endsWith("/")) {
+    url.pathname = `${url.pathname}index.html`;
+    return cache.match(url.href);
+  }
+  return null;
 }
 
