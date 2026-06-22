@@ -1,30 +1,30 @@
-﻿const cacheName = "hp-sofa-catalog-v993-clearance-small-patch";
+﻿const cacheName = "hp-sofa-catalog-v994-clearance-cache-fix";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
   "./photo-viewer.html",
   "./photo-viewer-v2.html",
-  "./styles.css?v=v993-clearance-small-patch",
-  "./app-version.js?v=v993-clearance-small-patch",
+  "./styles.css?v=v994-clearance-cache-fix",
+  "./app-version.js?v=v994-clearance-cache-fix",
   "./mixed-material-pricing.js?v=1",
   "./zolano-3776-layout.js?v=1",
-  "./clearance-data.js?v=v993-clearance-small-patch",
-  "./app.js?v=v993-clearance-small-patch",
-  "./assets/individual-item-photos.js?v=v993-clearance-small-patch",
+  "./clearance-data.js?v=v994-clearance-cache-fix",
+  "./app.js?v=v994-clearance-cache-fix",
+  "./assets/individual-item-photos.js?v=v994-clearance-cache-fix",
   "./sofa-data.js?v=125-chinese-materials",
   "./sofa-recommendations.js?v=125-chinese-materials",
   "./zolano-data.js?v=2868-close-arm-fix",
   "./zolano-selling-overrides.js?v=2868-selling-price",
-  "./zolano-excel-price-overrides.js?v=v993-clearance-small-patch",
-  "./zolano-visual-overrides.js?v=v993-clearance-small-patch",
+  "./zolano-excel-price-overrides.js?v=v994-clearance-cache-fix",
+  "./zolano-visual-overrides.js?v=v994-clearance-cache-fix",
   "./chair-data.js?v=2",
   "./bed-data.js?v=125-chinese-materials",
   "./matching-data.js?v=147-bed-size-options",
-  "./assets/photo-overrides.js?v=v993-clearance-small-patch",
-  "./assets/photo-gallery.js?v=v993-clearance-small-patch",
-  "./assets/entry-gallery.js?v=v993-clearance-small-patch",
-  "./assets/sofa-asset-gallery.js?v=v993-clearance-small-patch",
+  "./assets/photo-overrides.js?v=v994-clearance-cache-fix",
+  "./assets/photo-gallery.js?v=v994-clearance-cache-fix",
+  "./assets/entry-gallery.js?v=v994-clearance-cache-fix",
+  "./assets/sofa-asset-gallery.js?v=v994-clearance-cache-fix",
   "./assets/clearance/YA292.jpg",
   "./assets/clearance/YA243.jpg",
   "./assets/clearance/A2530.jpg",
@@ -151,3 +151,4 @@ async function matchPatchCache(request) {
   url.search = "";
   return cache.match(url.href);
 }
+

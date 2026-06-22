@@ -1,134 +1,134 @@
 {
-  "patchVersionCode": 993,
-  "patchVersionName": "v993-clearance-small-patch",
-  "minVersionCode": 0,
-  "createdAt": "2026-06-22T11:18:46Z",
-  "files": [
-    {
-      "path": "app.js",
-      "url": "patches/v285-recommendations-restore-local/app.js",
-      "sha256": "7CCC7E2B926D80BA79382C5CF45633E481B27EB561FE3BB80DAD8756119D4CDF",
-      "size": 231993,
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "path": "app-version.js",
-      "url": "patches/v285-recommendations-restore-local/app-version.js",
-      "sha256": "35510F17FEDFE8CC6DFF72C2C81C15ED1D15F164CADCFF71E6ECD26E05AE50C4",
-      "size": 394,
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "path": "index.html",
-      "url": "patches/v285-recommendations-restore-local/index.html",
-      "sha256": "ED47839C8169C7DA4343C2D1304A204A289CEFE45DC29644703F561D443A6568",
-      "size": 28761,
-      "contentType": "text/html; charset=utf-8"
-    },
-    {
-      "path": "styles.css",
-      "url": "patches/v285-recommendations-restore-local/styles.css",
-      "sha256": "C225E94F399F87847DD536B7DC37E9C78CDC4F001D28A6C076E6B94BE23A5189",
-      "size": 39655,
-      "contentType": "text/css; charset=utf-8"
-    },
-    {
-      "path": "sw.js",
-      "url": "patches/v285-recommendations-restore-local/sw.js",
-      "sha256": "9A88EC5B1C85666EC1C8C977E9A0746D12C72546A1F5723EAC890DE12D90A848",
-      "size": 6567,
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "path": "clearance-data.js",
-      "url": "patches/v285-recommendations-restore-local/clearance-data.js",
-      "sha256": "8115BA5C93462D0543992580272B0ADD202DAD8AD4A755AD92FF33F7DDC7BD50",
-      "size": 4396,
-      "contentType": "text/javascript; charset=utf-8"
-    },
-    {
-      "path": "assets/clearance/A01.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/A01.jpg",
-      "sha256": "60FFB7679E8FBF9925B179DD9CDED009F1C087A1144E71AC1F311CD824687E58",
-      "size": 23265,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/A2433.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/A2433.jpg",
-      "sha256": "DA685C2A47158BAC4177D0C1506AD3F66B1C3AF54FF6767676EA3A98B55F05AB",
-      "size": 23047,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/A2437.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/A2437.jpg",
-      "sha256": "0831179D600085F0A2CCF3AD6F69488E10731E0327189FE04A90B42220090713",
-      "size": 25926,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/A2515B.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/A2515B.jpg",
-      "sha256": "F187DD36F34A5DB8562C2F6D6D6BC21824AE861CEA9D7D3F75056A5197BF5C28",
-      "size": 31329,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/A2530.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/A2530.jpg",
-      "sha256": "331194598A9A638E60DF66FE78EB062A757E859A582F4B94C5F26662620FDD43",
-      "size": 22747,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/T001-BLACK.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/T001-BLACK.jpg",
-      "sha256": "30E88F0356D7A5A4F26CA5C07D64103723757EB64F134B68B370467B2205C3DC",
-      "size": 27321,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/T001-REDBROWN.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/T001-REDBROWN.jpg",
-      "sha256": "2422AB060C35A1FF61112B9F6BB8B9DF233B5E54AB31F80AB570DE8BEB6C44BD",
-      "size": 30370,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/YA140.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/YA140.jpg",
-      "sha256": "D0DD5D28DDDEFEA8350CB74D26CB43FD0F9232C9562DDDB0579C79ACA4613C33",
-      "size": 22638,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/YA144.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/YA144.jpg",
-      "sha256": "E6CE44757F43450D7F049BB748B9B89C40878B08B14DDA719E9C9CDD1AD17CF7",
-      "size": 13609,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/YA193.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/YA193.jpg",
-      "sha256": "D167E978FD824E0E89F4D8ED5606893A61E0BEB2C0632B41C0CA6377CBE47040",
-      "size": 13382,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/YA243.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/YA243.jpg",
-      "sha256": "5E08F6C865851AD331EA61526FF5F90F1C04E6A4BB5C795131DB0BDC14A40883",
-      "size": 21499,
-      "contentType": "image/jpeg"
-    },
-    {
-      "path": "assets/clearance/YA292.jpg",
-      "url": "patches/v285-recommendations-restore-local/assets/clearance/YA292.jpg",
-      "sha256": "1E73C74E64E24EEE76EEADA1682CB82737B7AC42B84F9D342207E84452260BA4",
-      "size": 23177,
-      "contentType": "image/jpeg"
-    }
-  ]
+    "patchVersionCode":  994,
+    "patchVersionName":  "v994-clearance-cache-fix",
+    "minVersionCode":  0,
+    "createdAt":  "2026-06-22T11:48:05Z",
+    "files":  [
+                  {
+                      "path":  "app.js",
+                      "url":  "patches/v285-recommendations-restore-local/app.js",
+                      "sha256":  "7CCC7E2B926D80BA79382C5CF45633E481B27EB561FE3BB80DAD8756119D4CDF",
+                      "size":  231993,
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js",
+                      "url":  "patches/v285-recommendations-restore-local/app-version.js",
+                      "sha256":  "71DA62B08D220847942542D63F58BC690BDAE97986ABBABAF2EA2FBD9A668943",
+                      "size":  394,
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "index.html",
+                      "url":  "patches/v285-recommendations-restore-local/index.html",
+                      "sha256":  "919ECF8DD4707E2256E2D9FF03D6BF633766068130699A6F26E2B526B023B59F",
+                      "size":  28741,
+                      "contentType":  "text/html; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css",
+                      "url":  "patches/v285-recommendations-restore-local/styles.css",
+                      "sha256":  "C225E94F399F87847DD536B7DC37E9C78CDC4F001D28A6C076E6B94BE23A5189",
+                      "size":  39655,
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
+                      "path":  "sw.js",
+                      "url":  "patches/v285-recommendations-restore-local/sw.js",
+                      "sha256":  "40D1873B60BC29BFF236E260020EC6DB7D1E69A4FAD655F89EEBBC551EE6A5C6",
+                      "size":  6545,
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "clearance-data.js",
+                      "url":  "patches/v285-recommendations-restore-local/clearance-data.js",
+                      "sha256":  "8115BA5C93462D0543992580272B0ADD202DAD8AD4A755AD92FF33F7DDC7BD50",
+                      "size":  4396,
+                      "contentType":  "text/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "assets/clearance/A01.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/A01.jpg",
+                      "sha256":  "60FFB7679E8FBF9925B179DD9CDED009F1C087A1144E71AC1F311CD824687E58",
+                      "size":  23265,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/A2433.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/A2433.jpg",
+                      "sha256":  "DA685C2A47158BAC4177D0C1506AD3F66B1C3AF54FF6767676EA3A98B55F05AB",
+                      "size":  23047,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/A2437.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/A2437.jpg",
+                      "sha256":  "0831179D600085F0A2CCF3AD6F69488E10731E0327189FE04A90B42220090713",
+                      "size":  25926,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/A2515B.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/A2515B.jpg",
+                      "sha256":  "F187DD36F34A5DB8562C2F6D6D6BC21824AE861CEA9D7D3F75056A5197BF5C28",
+                      "size":  31329,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/A2530.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/A2530.jpg",
+                      "sha256":  "331194598A9A638E60DF66FE78EB062A757E859A582F4B94C5F26662620FDD43",
+                      "size":  22747,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/T001-BLACK.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/T001-BLACK.jpg",
+                      "sha256":  "30E88F0356D7A5A4F26CA5C07D64103723757EB64F134B68B370467B2205C3DC",
+                      "size":  27321,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/T001-REDBROWN.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/T001-REDBROWN.jpg",
+                      "sha256":  "2422AB060C35A1FF61112B9F6BB8B9DF233B5E54AB31F80AB570DE8BEB6C44BD",
+                      "size":  30370,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/YA140.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/YA140.jpg",
+                      "sha256":  "D0DD5D28DDDEFEA8350CB74D26CB43FD0F9232C9562DDDB0579C79ACA4613C33",
+                      "size":  22638,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/YA144.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/YA144.jpg",
+                      "sha256":  "E6CE44757F43450D7F049BB748B9B89C40878B08B14DDA719E9C9CDD1AD17CF7",
+                      "size":  13609,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/YA193.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/YA193.jpg",
+                      "sha256":  "D167E978FD824E0E89F4D8ED5606893A61E0BEB2C0632B41C0CA6377CBE47040",
+                      "size":  13382,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/YA243.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/YA243.jpg",
+                      "sha256":  "5E08F6C865851AD331EA61526FF5F90F1C04E6A4BB5C795131DB0BDC14A40883",
+                      "size":  21499,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/YA292.jpg",
+                      "url":  "patches/v285-recommendations-restore-local/assets/clearance/YA292.jpg",
+                      "sha256":  "1E73C74E64E24EEE76EEADA1682CB82737B7AC42B84F9D342207E84452260BA4",
+                      "size":  23177,
+                      "contentType":  "image/jpeg"
+                  }
+              ]
 }
