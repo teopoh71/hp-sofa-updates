@@ -573,6 +573,10 @@ select:focus {
   box-shadow: none !important;
 }
 
+.builder-filter-buttons[hidden] {
+  display: none !important;
+}
+
 .builder-filter-buttons .filter-group {
   display: flex !important;
   gap: 4px !important;
@@ -586,6 +590,15 @@ select:focus {
 .builder-filter-buttons .clear-all-button {
   display: inline-flex !important;
   min-height: 30px !important;
+  padding: 0 10px !important;
+  font-size: 0.82rem !important;
+}
+
+.builder-clear-standalone {
+  display: inline-flex !important;
+  width: fit-content;
+  min-height: 30px !important;
+  margin: 8px 0 10px;
   padding: 0 10px !important;
   font-size: 0.82rem !important;
 }

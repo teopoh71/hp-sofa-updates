@@ -1,22 +1,22 @@
-const cacheName = "hp-sofa-catalog-v964-full-apk-catbox-link";
+const cacheName = "hp-sofa-catalog-v965-hide-legacy-filter-panel";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
   "./photo-viewer.html",
   "./photo-viewer-v2.html",
-  "./styles.css?v=v964-full-apk-catbox-link",
-  "./app-version.js?v=v964-full-apk-catbox-link",
+  "./styles.css?v=v965-hide-legacy-filter-panel",
+  "./app-version.js?v=v965-hide-legacy-filter-panel",
   "./mixed-material-pricing.js?v=1",
   "./zolano-3776-layout.js?v=1",
-  "./app.js?v=v964-full-apk-catbox-link",
+  "./app.js?v=v965-hide-legacy-filter-panel",
   "./assets/individual-item-photos.js?v=2628-3817-merge",
   "./sofa-data.js?v=125-chinese-materials",
   "./sofa-recommendations.js?v=125-chinese-materials",
   "./zolano-data.js?v=2868-close-arm-fix",
   "./zolano-selling-overrides.js?v=2868-selling-price",
-  "./zolano-excel-price-overrides.js?v=v964-full-apk-catbox-link",
-  "./zolano-visual-overrides.js?v=v964-full-apk-catbox-link",
+  "./zolano-excel-price-overrides.js?v=v965-hide-legacy-filter-panel",
+  "./zolano-visual-overrides.js?v=v965-hide-legacy-filter-panel",
   "./chair-data.js?v=2",
   "./bed-data.js?v=125-chinese-materials",
   "./matching-data.js?v=147-bed-size-options",

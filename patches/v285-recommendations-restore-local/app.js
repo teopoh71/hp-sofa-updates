@@ -1445,6 +1445,28 @@ function syncCatalogSwitchLayout() {
 }
 
 function syncLegacyBuilderFilterOverrides() {
+  const filterPanel = document.querySelector(".builder-filter-buttons");
+  const clearButton = document.querySelector("#builderClearAllButton");
+  const useStandaloneClear = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
+
+  if (useStandaloneClear) {
+    widthFilterButtons.forEach(forceHideElement);
+    typeFilterButtons.forEach(forceHideElement);
+    document.querySelectorAll(".filter-group span").forEach(forceHideElement);
+    if (filterPanel) forceHideElement(filterPanel);
+    if (clearButton) {
+      clearButton.hidden = false;
+      clearButton.removeAttribute("aria-hidden");
+      clearButton.classList.add("builder-clear-standalone");
+      clearButton.style.setProperty("display", "inline-flex", "important");
+      if (comboButtonPanel && clearButton.previousElementSibling !== comboButtonPanel) {
+        comboButtonPanel.after(clearButton);
+      }
+    }
+    return;
+  }
+
+  if (clearButton) clearButton.classList.remove("builder-clear-standalone");
   const widthGroup = document.querySelector(".width-filter-group");
   if (widthGroup) {
     forceHideElement(widthGroup);
@@ -1462,7 +1484,6 @@ function syncLegacyBuilderFilterOverrides() {
     }
   });
 
-  const clearButton = document.querySelector("#builderClearAllButton");
   document.querySelectorAll(".filter-group span").forEach(forceHideElement);
   if (clearButton) {
     clearButton.hidden = false;
@@ -1480,7 +1501,6 @@ function syncLegacyBuilderFilterOverrides() {
     typeGroup.style.setProperty("align-items", "center", "important");
   }
 
-  const filterPanel = document.querySelector(".builder-filter-buttons");
   if (filterPanel) {
     if (comboButtonPanel && filterPanel.previousElementSibling !== comboButtonPanel) {
       comboButtonPanel.after(filterPanel);
@@ -1504,8 +1524,9 @@ function forceHideElement(element) {
 function syncBuilderFilterVisibility() {
   const filterPanel = document.querySelector(".builder-filter-buttons");
   const isSofaCatalog = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
+  const useStandaloneClear = activeCatalogKey === "nikator" || activeCatalogKey === "zolano";
   syncLegacyBuilderFilterOverrides();
-  if (filterPanel) filterPanel.hidden = !isSofaCatalog;
+  if (filterPanel) filterPanel.hidden = !isSofaCatalog || useStandaloneClear;
   if (comboButtonPanel) comboButtonPanel.hidden = !isSofaCatalog;
 }
 
