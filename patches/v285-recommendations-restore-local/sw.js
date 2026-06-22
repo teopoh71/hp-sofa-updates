@@ -1,22 +1,22 @@
-const cacheName = "hp-sofa-catalog-v981-local-copywriting-poster-png";
+const cacheName = "hp-sofa-catalog-v982-publish-missing-manifest-assets";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
   "./photo-viewer.html",
   "./photo-viewer-v2.html",
-  "./styles.css?v=v981-local-copywriting-poster-png",
-  "./app-version.js?v=v981-local-copywriting-poster-png",
+  "./styles.css?v=v982-publish-missing-manifest-assets",
+  "./app-version.js?v=v982-publish-missing-manifest-assets",
   "./mixed-material-pricing.js?v=1",
   "./zolano-3776-layout.js?v=1",
-  "./app.js?v=v981-local-copywriting-poster-png",
+  "./app.js?v=v982-publish-missing-manifest-assets",
   "./assets/individual-item-photos.js?v=2628-3817-merge",
   "./sofa-data.js?v=125-chinese-materials",
   "./sofa-recommendations.js?v=125-chinese-materials",
   "./zolano-data.js?v=2868-close-arm-fix",
   "./zolano-selling-overrides.js?v=2868-selling-price",
-  "./zolano-excel-price-overrides.js?v=v981-local-copywriting-poster-png",
-  "./zolano-visual-overrides.js?v=v981-local-copywriting-poster-png",
+  "./zolano-excel-price-overrides.js?v=v982-publish-missing-manifest-assets",
+  "./zolano-visual-overrides.js?v=v982-publish-missing-manifest-assets",
   "./chair-data.js?v=2",
   "./bed-data.js?v=125-chinese-materials",
   "./matching-data.js?v=147-bed-size-options",
