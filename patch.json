@@ -1,8 +1,8 @@
 {
-  "patchVersionCode": 963,
-  "patchVersionName": "v963-zolano-usd-factor-73-066",
+  "patchVersionCode": 964,
+  "patchVersionName": "v964-full-apk-catbox-link",
   "minVersionCode": 0,
-  "createdAt": "2026-06-21T17:47:35.980169Z",
+  "createdAt": "2026-06-22T00:17:07.497070Z",
   "files": [
     {
       "contentType": "text/javascript; charset=utf-8",
@@ -15,8 +15,8 @@
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js",
       "url": "patches/v285-recommendations-restore-local/app-version.js",
-      "sha256": "9DDF852A0B17EEE1A6D5437DB0FAB4344AE0093A630F323EA99AF687BF30D047",
-      "size": 424
+      "sha256": "46589AA737177BD098E21F434BB650B7BC864A3EDF7C80C6D621D64F0C006395",
+      "size": 402
     },
     {
       "contentType": "text/css; charset=utf-8",
@@ -56,15 +56,15 @@
     {
       "path": "index.html",
       "url": "patches/v285-recommendations-restore-local/index.html",
-      "sha256": "5E1C212BC4FC2F3323A6B3B373F8D88F73D144FF3F803550A083B5901C433381",
-      "size": 26634,
+      "sha256": "62FB2081F1D0A5C352ED4877A066EC1E67C199435A0C533B6393005D347915D0",
+      "size": 26614,
       "contentType": "text/html; charset=utf-8"
     },
     {
       "path": "sw.js",
       "url": "patches/v285-recommendations-restore-local/sw.js",
-      "sha256": "B48F26B0808B3692D5FD405B4029FC07B94761282C15DCDBC2FA1BC83F7FE4B4",
-      "size": 6039,
+      "sha256": "C595324E5F294CD4E8373107C2EA8F45D9DD6908612DD3D8D2DDCC76FAFB4E6A",
+      "size": 6015,
       "contentType": "text/javascript; charset=utf-8"
     },
     {

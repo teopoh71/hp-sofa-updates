@@ -1,22 +1,22 @@
-const cacheName = "hp-sofa-catalog-v963-zolano-usd-factor-73-066";
+const cacheName = "hp-sofa-catalog-v964-full-apk-catbox-link";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
   "./photo-viewer.html",
   "./photo-viewer-v2.html",
-  "./styles.css?v=v963-zolano-usd-factor-73-066",
-  "./app-version.js?v=v963-zolano-usd-factor-73-066",
+  "./styles.css?v=v964-full-apk-catbox-link",
+  "./app-version.js?v=v964-full-apk-catbox-link",
   "./mixed-material-pricing.js?v=1",
   "./zolano-3776-layout.js?v=1",
-  "./app.js?v=v963-zolano-usd-factor-73-066",
+  "./app.js?v=v964-full-apk-catbox-link",
   "./assets/individual-item-photos.js?v=2628-3817-merge",
   "./sofa-data.js?v=125-chinese-materials",
   "./sofa-recommendations.js?v=125-chinese-materials",
   "./zolano-data.js?v=2868-close-arm-fix",
   "./zolano-selling-overrides.js?v=2868-selling-price",
-  "./zolano-excel-price-overrides.js?v=v963-zolano-usd-factor-73-066",
-  "./zolano-visual-overrides.js?v=v963-zolano-usd-factor-73-066",
+  "./zolano-excel-price-overrides.js?v=v964-full-apk-catbox-link",
+  "./zolano-visual-overrides.js?v=v964-full-apk-catbox-link",
   "./chair-data.js?v=2",
   "./bed-data.js?v=125-chinese-materials",
   "./matching-data.js?v=147-bed-size-options",
