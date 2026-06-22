@@ -560,7 +560,7 @@ const importInput = document.querySelector("#importInput");
 const themeToggle = document.querySelector("#themeToggle");
 const entryPanel = document.querySelector("#entryPanel");
 const panelToggle = document.querySelector("#panelToggle");
-const brandSwitchButtons = [...document.querySelectorAll("[data-brand-switch]")];
+let brandSwitchButtons = [...document.querySelectorAll("[data-brand-switch]")];
 const seriesSelect = document.querySelector("#seriesSelect");
 const modelJumpSelect = document.querySelector("#modelJumpSelect");
 const recommendSelect = document.querySelector("#recommendSelect");
@@ -575,6 +575,36 @@ const zolanoModulePicker = document.querySelector("#zolanoModulePicker");
 const slotGrid = document.querySelector("#slotGrid");
 const setPreview = document.querySelector("#setPreview");
 const setTotal = document.querySelector("#setTotal");
+
+function refreshBrandSwitchButtons() {
+  brandSwitchButtons = [...document.querySelectorAll("[data-brand-switch]")];
+  return brandSwitchButtons;
+}
+
+function bindCatalogSwitchButton(button) {
+  if (!button || button.dataset.switchBound === "1") return;
+  button.dataset.switchBound = "1";
+  button.addEventListener("click", () => {
+    setActiveCatalog(button.dataset.brandSwitch);
+  });
+}
+
+function ensureCatalogSwitchButton(key, label) {
+  const switchPanel = document.querySelector(".catalog-switch");
+  if (!switchPanel || switchPanel.querySelector(`[data-brand-switch="${key}"]`)) return;
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "catalog-switch-button";
+  button.dataset.brandSwitch = key;
+  button.textContent = label;
+  switchPanel.appendChild(button);
+  bindCatalogSwitchButton(button);
+  refreshBrandSwitchButtons();
+}
+
+function ensureCatalogSwitchButtons() {
+  ensureCatalogSwitchButton("clearance", "\u6e05\u5e93\u5b58");
+}
 
 const zolano2897Modules = [
   {
@@ -1249,11 +1279,8 @@ panelToggle.addEventListener("click", () => {
   entryPanel.classList.toggle("is-collapsed");
 });
 
-[...brandSwitchButtons].forEach((button) => {
-  button.addEventListener("click", () => {
-    setActiveCatalog(button.dataset.brandSwitch);
-  });
-});
+ensureCatalogSwitchButtons();
+refreshBrandSwitchButtons().forEach(bindCatalogSwitchButton);
 
 [seriesSelect, recommendSelect, materialSelect].forEach((select) => {
   select.addEventListener("change", () => {
@@ -1468,6 +1495,7 @@ function syncQuickJumpVisibility() {
 }
 
 function syncCatalogSwitchLayout() {
+  ensureCatalogSwitchButtons();
   const switchPanel = document.querySelector(".catalog-switch");
   if (!switchPanel) return;
   switchPanel.style.setProperty("display", "grid", "important");
@@ -2275,6 +2303,8 @@ function guessPatchContentType(path) {
 }
 
 function syncActiveCatalog() {
+  ensureCatalogSwitchButtons();
+  refreshBrandSwitchButtons();
   const fallbackKey = catalogDefinitions[activeCatalogKey] ? activeCatalogKey : "nikator";
   activeCatalogKey = fallbackKey;
   syncActiveCatalogDataset();

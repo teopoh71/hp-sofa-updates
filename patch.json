@@ -1,28 +1,28 @@
 {
-    "patchVersionCode":  994,
-    "patchVersionName":  "v994-clearance-cache-fix",
+    "patchVersionCode":  995,
+    "patchVersionName":  "v995-clearance-button-guard",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-22T11:48:05Z",
+    "createdAt":  "2026-06-22T12:32:55Z",
     "files":  [
                   {
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "7CCC7E2B926D80BA79382C5CF45633E481B27EB561FE3BB80DAD8756119D4CDF",
-                      "size":  231993,
+                      "sha256":  "32C157F726C635364487CD3DB51667CD7C098DAFF64744A13772F8BD78CFCE89",
+                      "size":  233011,
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "71DA62B08D220847942542D63F58BC690BDAE97986ABBABAF2EA2FBD9A668943",
-                      "size":  394,
+                      "sha256":  "4F453F101DC44D186AD301843D2BAA2DB8171F97F65AAFC2010F2972B06B2F05",
+                      "size":  397,
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
                       "url":  "patches/v285-recommendations-restore-local/index.html",
-                      "sha256":  "919ECF8DD4707E2256E2D9FF03D6BF633766068130699A6F26E2B526B023B59F",
-                      "size":  28741,
+                      "sha256":  "EB27B77499238154F6AC8BD08DDE9360FDCB59452262080FDA862CDEAB7A6A51",
+                      "size":  28771,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
@@ -35,8 +35,8 @@
                   {
                       "path":  "sw.js",
                       "url":  "patches/v285-recommendations-restore-local/sw.js",
-                      "sha256":  "40D1873B60BC29BFF236E260020EC6DB7D1E69A4FAD655F89EEBBC551EE6A5C6",
-                      "size":  6545,
+                      "sha256":  "4EE689A17DE2A2AE86A86A912B1199C322AB4074C3BEA191106B73C2F9B3FFD0",
+                      "size":  6578,
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
