@@ -1,22 +1,22 @@
 {
-    "patchVersionCode":  985,
-    "patchVersionName":  "v985-restore-photo-gallery-assets",
+    "patchVersionCode":  986,
+    "patchVersionName":  "v986-module-gallery-photo-fix",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-22T06:39:44Z",
+    "createdAt":  "2026-06-22T07:58:25Z",
     "files":  [
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "0A3DAE8AF5074A514123F4AAF39E5C4D38164F85DE64676C0953F1F0291DD5CC",
-                      "size":  228575
+                      "sha256":  "2F47B437F3DCF0440066598520DDDC36A32F303395D58F54128C8D7894AAA126",
+                      "size":  229886
                   },
                   {
                       "contentType":  "text/javascript; charset=utf-8",
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "ADCFCFADCF1628A1CF57AB23F79435590E7DE286D687379E8310FFA09E806562",
-                      "size":  399
+                      "sha256":  "BD14EE746D012C4A86D3BCF1D21C270F1A0307CF3E3B04152682C96A7250E2D7",
+                      "size":  395
                   },
                   {
                       "path":  "assets/copywriting/mastrotto-recommendation.png",
@@ -7287,8 +7287,8 @@
                   {
                       "path":  "index.html",
                       "url":  "patches/v285-recommendations-restore-local/index.html",
-                      "sha256":  "23A5F98AD2B1CBC844307F5AA1538A2F9B54A51FC421C8A19FC84D5DA8E66509",
-                      "size":  27436,
+                      "sha256":  "1D686897786BC73C27E4273D050E87D157F413407A36FF93C9EC8CAFF75775FF",
+                      "size":  27401,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
@@ -7315,8 +7315,8 @@
                   {
                       "path":  "sw.js",
                       "url":  "patches/v285-recommendations-restore-local/sw.js",
-                      "sha256":  "02EB552527BA7CD8C9BB86E1E50D0258A843824B9336917665AA66B2348D534B",
-                      "size":  6147,
+                      "sha256":  "72EAE8630BA6AFBD980CD2DC945E9C4BFAFE44734F8F485A6CA67DD98067E784",
+                      "size":  6103,
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {

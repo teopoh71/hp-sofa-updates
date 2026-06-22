@@ -3259,6 +3259,11 @@ function getNikatorModulePhoto(item) {
     || placeholderImage();
 }
 
+function getDisplayAssetUrl(src) {
+  if (!src || String(src).startsWith("data:") || /^https?:\/\//i.test(src)) return src || "";
+  return new URL(src, window.location.href).href;
+}
+
 function getNikatorModuleLabel(item) {
   const model = getNikatorModuleCode(item);
   const config = String(item?.configuration || "").toUpperCase();
@@ -3299,10 +3304,13 @@ function syncZolanoModulePicker() {
       ${modules.map((module) => {
         const selectedCount = getSelectedModuleCount(module.id);
         const selected = selectedCount > 0;
+        const modulePhoto = getDisplayAssetUrl(module.photo);
         return `
         <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${module.id}" style="position:relative;display:grid;grid-template-rows:52px auto auto;gap:1px;min-height:88px;padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
           ${selected ? `<span class="module-picker-count">${selectedCount}</span>` : ""}
-          <img src="${module.photo}" alt="${module.label}" style="width:100%;height:52px;object-fit:contain;">
+          <span class="module-picker-image" style="display:block;width:100%;height:52px;background:url('${modulePhoto}') center / contain no-repeat;">
+            <img src="${modulePhoto}" alt="${module.label}" loading="eager" decoding="sync" style="width:100%;height:52px;object-fit:contain;" onerror="this.style.display='none';">
+          </span>
           <strong style="font-size:0.86rem;line-height:1.05;">${module.label}</strong>
           <span style="font-size:0.68rem;line-height:1.05;">${module.meta}</span>
         </button>
@@ -4540,7 +4548,7 @@ function renderSetPreview() {
     <button class="photo-open-button" type="button" data-full-photo="${resolveItemPhoto(photoItem)}" aria-label="\u653e\u5927\u56fe\u7247">
       <img class="set-main-photo" src="${resolveItemPhoto(photoItem)}" alt="${photoItem?.series || "\u6c99\u53d1\u7ec4\u5408"}">
     </button>
-    ${renderPhotoGallery(photoItem)}
+    ${renderPhotoGallery(photoItem, getSelectedPieceGalleryPhotos(selected))}
     <div class="photo-actions">
       <button class="photo-action-button" type="button" data-open-photo-viewer>\u6253\u5f00\u56fe\u7247</button>
     </div>
@@ -4731,8 +4739,8 @@ function resolveZolanoUnitFallbackPhoto(item) {
   return item.originalPhoto || item.photo || (window.BAIDU_PHOTO_OVERRIDES || {})[item.series] || "";
 }
 
-function renderPhotoGallery(item) {
-  const photos = getItemGallery(item);
+function renderPhotoGallery(item, extraPhotos = []) {
+  const photos = getItemGallery(item, extraPhotos);
   if (photos.length <= 1) return "";
   return `
     <div class="photo-gallery" aria-label="\u653e\u5927\u56fe\u7247">
@@ -5099,12 +5107,12 @@ function restorePhotoViewerReturnState() {
   renderSetPreview();
 }
 
-function getItemGallery(item) {
+function getItemGallery(item, extraPhotos = []) {
   if (!item) return [];
   if (isPhotoBlockedSeries(item.series)) return [placeholderImage()];
   const seriesPhotos = getSeriesGalleryPhotos(item.series);
   const primary = resolveItemPhoto(item);
-  return [primary, ...seriesPhotos].filter(Boolean).filter((src, index, list) => list.indexOf(src) === index);
+  return [primary, ...seriesPhotos, ...extraPhotos].filter(Boolean).filter((src, index, list) => list.indexOf(src) === index);
 }
 
 function getSeriesGalleryPhotos(series) {
@@ -5112,8 +5120,26 @@ function getSeriesGalleryPhotos(series) {
   const entryGallery = window.BAIDU_ENTRY_PHOTO_GALLERY || {};
   return [
     ...(entryGallery[series] || []),
-    ...(gallery[series] || [])
+    ...(gallery[series] || []),
+    ...getNikatorSeriesGalleryFallbacks(series)
   ].filter(Boolean).filter((src, index, list) => list.indexOf(src) === index);
+}
+
+function getNikatorSeriesGalleryFallbacks(series) {
+  if (activeCatalogKey !== "nikator" || !isNikatorModuleSeries(series)) return [];
+  const seriesItems = catalogSofas.filter((item) => item.series === series);
+  return [
+    getNikatorGeneratedPhoto(series),
+    `assets/quick-thumbs/nikator/${series}.jpg`,
+    ...seriesItems.map((item) => getNikatorModulePhoto(item))
+  ].filter((src) => src && src !== placeholderImage());
+}
+
+function getSelectedPieceGalleryPhotos(selected) {
+  return (selected || [])
+    .map((item) => resolveIndividualItemPhoto(item))
+    .filter((src) => src && src !== placeholderImage())
+    .filter((src, index, list) => list.indexOf(src) === index);
 }
 
 function formatComboOption(combo) {
