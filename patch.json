@@ -1,22 +1,22 @@
 {
-  "patchVersionCode": 982,
-  "patchVersionName": "v982-publish-missing-manifest-assets",
+  "patchVersionCode": 983,
+  "patchVersionName": "v983-zl3817-piece-thumb",
   "minVersionCode": 0,
-  "createdAt": "2026-06-22T05:03:44.092Z",
+  "createdAt": "2026-06-22T06:39:44Z",
   "files": [
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app.js",
       "url": "patches/v285-recommendations-restore-local/app.js",
-      "sha256": "D1CA0DDE9AC807392B309F6A77A8BA5BA4D85347B74F8584F2344B9A7F792201",
-      "size": 227485
+      "sha256": "4AA2350DBAAC50586426B8607C9BDE7A324AE17A611260CEE966658BF6B42179",
+      "size": 228092
     },
     {
       "contentType": "text/javascript; charset=utf-8",
       "path": "app-version.js",
       "url": "patches/v285-recommendations-restore-local/app-version.js",
-      "sha256": "850B3C7A5BF92E3DA5FBE7591730E2EA0DABA6755F35697C58917ED1DE6DC142",
-      "size": 402
+      "sha256": "A9E2E37FEBA535D8CB33170B67DA8AC5F6A0CB2B82B7FAA2829DB119CAA0765E",
+      "size": 389
     },
     {
       "contentType": "text/css; charset=utf-8",
@@ -63,8 +63,8 @@
     {
       "path": "sw.js",
       "url": "patches/v285-recommendations-restore-local/sw.js",
-      "sha256": "3C7EA7E0BE16EA9A45F503F82313A0F33BDDA6F539E92FC8B049EFCCD6796BE8",
-      "size": 6075,
+      "sha256": "4CCF0687F35ABD31F5E485394F342070722CAB8CF68BEA0E42B31FA2DAA114BF",
+      "size": 5997,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -1403,6 +1403,20 @@
       "sha256": "C281F0AADDFA15FA3A4F726A8087A17216980A1D46CAB9411F3F7D932C1D0BA3",
       "size": 281837,
       "contentType": "image/png"
+    },
+    {
+      "contentType": "image/png",
+      "path": "assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png",
+      "sha256": "827A0AAD568D1F85EDF0029F805A9DC82F7A916C3E4BAF5543E876B7C922AAE6",
+      "size": 28554
+    },
+    {
+      "contentType": "image/png",
+      "path": "assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png",
+      "url": "patches/v285-recommendations-restore-local/assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png",
+      "sha256": "E01A470E402A0DC006E9FF7866D7805CA328B2380ED4C29A192FB5641463F59C",
+      "size": 41346
     }
   ]
 }

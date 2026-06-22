@@ -4681,6 +4681,8 @@ function findMatchingZolanoFinalPriceCombo(combo) {
 function resolveIndividualItemPhoto(item) {
   if (!item) return "";
   if (zolanoModulePhotoMap[item.id]) return zolanoModulePhotoMap[item.id];
+  const zolano3817PiecePhoto = resolveZolano3817PiecePhoto(item);
+  if (zolano3817PiecePhoto) return zolano3817PiecePhoto;
   const overrides = window.BAIDU_PHOTO_OVERRIDES || {};
   const galleryPhoto = getSeriesGalleryPhotos(item.series)[0] || "";
   return individualItemPhotos[item.id]
@@ -4691,6 +4693,20 @@ function resolveIndividualItemPhoto(item) {
     || galleryPhoto
     || resolveZolanoUnitFallbackPhoto(item)
     || "";
+}
+
+function resolveZolano3817PiecePhoto(item) {
+  if (activeCatalogKey !== "zolano" || String(item?.series || "") !== "ZL 3817 MELFE") return "";
+  const text = [
+    item.id,
+    item.configuration,
+    item.description,
+    item.dimensions,
+    item.width
+  ].join(" ").toUpperCase();
+  if (/1EL|1EL\/T|1630/.test(text)) return "assets/generated/zolano/parts/ZL3817MELFE-1ELT-top.png";
+  if (/2EL|2ER|1810/.test(text)) return "assets/generated/zolano/parts/ZL3817MELFE-2ER-top.png";
+  return "";
 }
 
 function resolveZolanoUnitFallbackPhoto(item) {
