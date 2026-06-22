@@ -961,6 +961,11 @@ const catalogDefinitions = {
     label: "\u6587\u6848",
     catalog: [],
     recommendations: []
+  },
+  clearance: {
+    label: "\u6e05\u5e93\u5b58",
+    catalog: Array.isArray(window.HP_CLEARANCE_DATA) ? window.HP_CLEARANCE_DATA : [],
+    recommendations: []
   }
 };
 
@@ -1598,7 +1603,7 @@ function syncBuilderFilterVisibility() {
 function syncBuilderControlsVisibility() {
   const controls = document.querySelector(".builder-controls");
   const builderSearch = document.querySelector(".builder-search");
-  const isGridOnlyCatalog = activeCatalogKey === "bed" || activeCatalogKey === "copywriting";
+  const isGridOnlyCatalog = activeCatalogKey === "bed" || activeCatalogKey === "copywriting" || activeCatalogKey === "clearance";
   const hideTopControls = activeCatalogKey === "nikator"
     || activeCatalogKey === "zolano"
     || activeCatalogKey === "diningTable"
@@ -2640,7 +2645,7 @@ function populateBuilderPieces(forceSlotCount) {
 }
 
 function renderSlotMaterialControl(slotIndex, labels) {
-  if (activeCatalogKey !== "zolano" || isSinglePriceMaterialLabels(labels)) return null;
+  if (!isMixedMaterialSeriesActive() || isSinglePriceMaterialLabels(labels)) return null;
   const selectedIndex = getPieceMaterialIndex(
     pieceMaterialSelections,
     slotIndex,
@@ -4452,9 +4457,48 @@ function renderCopywritingPreview() {
   bindPhotoFullscreen(setPreview);
 }
 
+function renderClearancePreview() {
+  if (setTotal) setTotal.textContent = money.format(0);
+  const items = catalogDefinitions.clearance.catalog || [];
+  if (!items.length) {
+    setPreview.innerHTML = `
+      <div class="catalog-empty">
+        <strong>\u6e05\u5e93\u5b58</strong>
+        <p>\u8fd8\u6ca1\u6709\u5e93\u5b58\u5355\u54c1\u3002</p>
+      </div>
+    `;
+    return;
+  }
+  setPreview.innerHTML = `
+    <section class="clearance-grid" aria-label="\u6e05\u5e93\u5b58\u5355\u54c1">
+      ${items.map((item) => {
+        const photo = item.photo || "";
+        return `
+          <article class="clearance-card">
+            <button class="photo-open-button clearance-photo-button" type="button" data-full-photo="${escapeHtml(photo)}" aria-label="\u6253\u5f00 ${escapeHtml(item.name)}">
+              <img class="clearance-photo" src="${escapeHtml(photo)}" alt="${escapeHtml(item.name)}" loading="lazy">
+            </button>
+            <div class="clearance-card-body">
+              <h3>${escapeHtml(item.name)}</h3>
+              <p>${escapeHtml(item.color || item.description || "")}</p>
+              <div class="clearance-price"><strong>${money.format(Number(item.price || 0))}</strong></div>
+            </div>
+          </article>
+        `;
+      }).join("")}
+    </section>
+  `;
+  bindPhotoOpen(setPreview);
+  bindPhotoFullscreen(setPreview);
+}
+
 function renderSetPreview() {
   if (activeCatalogKey === "copywriting") {
     renderCopywritingPreview();
+    return;
+  }
+  if (activeCatalogKey === "clearance") {
+    renderClearancePreview();
     return;
   }
   const selectedRecommendation = resolvePricedZolanoRecommendation(getSelectedRecommendation());
@@ -4548,7 +4592,7 @@ function renderSetPreview() {
     <button class="photo-open-button" type="button" data-full-photo="${resolveItemPhoto(photoItem)}" aria-label="\u653e\u5927\u56fe\u7247">
       <img class="set-main-photo" src="${resolveItemPhoto(photoItem)}" alt="${photoItem?.series || "\u6c99\u53d1\u7ec4\u5408"}">
     </button>
-    ${renderPhotoGallery(photoItem, getSelectedPieceGalleryPhotos(selected))}
+    ${renderPhotoGallery(photoItem)}
     <div class="photo-actions">
       <button class="photo-action-button" type="button" data-open-photo-viewer>\u6253\u5f00\u56fe\u7247</button>
     </div>
@@ -5118,28 +5162,29 @@ function getItemGallery(item, extraPhotos = []) {
 function getSeriesGalleryPhotos(series) {
   const gallery = window.BAIDU_PHOTO_GALLERY || {};
   const entryGallery = window.BAIDU_ENTRY_PHOTO_GALLERY || {};
+  const aliasSeriesList = getSeriesGalleryAliases(series);
   return [
     ...(entryGallery[series] || []),
     ...(gallery[series] || []),
+    ...aliasSeriesList.flatMap((aliasSeries) => entryGallery[aliasSeries] || []),
+    ...aliasSeriesList.flatMap((aliasSeries) => gallery[aliasSeries] || []),
     ...getNikatorSeriesGalleryFallbacks(series)
   ].filter(Boolean).filter((src, index, list) => list.indexOf(src) === index);
 }
 
-function getNikatorSeriesGalleryFallbacks(series) {
-  if (activeCatalogKey !== "nikator" || !isNikatorModuleSeries(series)) return [];
-  const seriesItems = catalogSofas.filter((item) => item.series === series);
-  return [
-    getNikatorGeneratedPhoto(series),
-    `assets/quick-thumbs/nikator/${series}.jpg`,
-    ...seriesItems.map((item) => getNikatorModulePhoto(item))
-  ].filter((src) => src && src !== placeholderImage());
+function getSeriesGalleryAliases(series) {
+  return {
+    LE8808SF: ["NK0003SF"],
+    NK0003SF: ["LE8808SF"]
+  }[String(series || "").toUpperCase()] || [];
 }
 
-function getSelectedPieceGalleryPhotos(selected) {
-  return (selected || [])
-    .map((item) => resolveIndividualItemPhoto(item))
-    .filter((src) => src && src !== placeholderImage())
-    .filter((src, index, list) => list.indexOf(src) === index);
+function getNikatorSeriesGalleryFallbacks(series) {
+  if (activeCatalogKey !== "nikator" || !isNikatorModuleSeries(series)) return [];
+  return [
+    getNikatorGeneratedPhoto(series),
+    `assets/quick-thumbs/nikator/${series}.jpg`
+  ].filter((src) => src && src !== placeholderImage());
 }
 
 function formatComboOption(combo) {
@@ -5361,7 +5406,21 @@ function getZolano3776ModuleDepth(item) {
 }
 
 function isMixedMaterialSet(selected) {
-  return activeCatalogKey === "zolano" && selected.length > 1;
+  return selected.length > 1 && (activeCatalogKey === "zolano" || selected.some(isMixedMaterialSeriesItem));
+}
+
+function isMixedMaterialSeriesActive() {
+  if (activeCatalogKey === "zolano") return true;
+  return isMixedMaterialSeriesName(seriesSelect?.value || "");
+}
+
+function isMixedMaterialSeriesItem(item) {
+  return isMixedMaterialSeriesName(item?.series || item?.model || item?.name || "");
+}
+
+function isMixedMaterialSeriesName(value) {
+  const normalized = String(value || "").replace(/[\s-]/g, "").toUpperCase();
+  return normalized === "LE8821SF" || normalized === "8821";
 }
 
 function getMixedMaterialSummary(selected, defaultIndex, labels) {
