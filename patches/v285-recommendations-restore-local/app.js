@@ -597,7 +597,7 @@ function ensureCatalogSwitchButton(key, label) {
   button.className = "catalog-switch-button";
   button.dataset.brandSwitch = key;
   button.textContent = label;
-  switchPanel.appendChild(button);
+  switchPanel.insertBefore(button, switchPanel.firstElementChild);
   bindCatalogSwitchButton(button);
   refreshBrandSwitchButtons();
 }

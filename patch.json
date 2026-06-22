@@ -1,28 +1,28 @@
 {
-    "patchVersionCode":  995,
-    "patchVersionName":  "v995-clearance-button-guard",
+    "patchVersionCode":  996,
+    "patchVersionName":  "v996-clearance-first-button",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-22T12:32:55Z",
+    "createdAt":  "2026-06-22T12:55:44Z",
     "files":  [
                   {
                       "path":  "app.js",
                       "url":  "patches/v285-recommendations-restore-local/app.js",
-                      "sha256":  "32C157F726C635364487CD3DB51667CD7C098DAFF64744A13772F8BD78CFCE89",
-                      "size":  233011,
+                      "sha256":  "0F4E1365E22D26BD38AA58FC08F3E9DE5F658E0167BB9A2B0E332443164FFF12",
+                      "size":  233043,
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
                       "url":  "patches/v285-recommendations-restore-local/app-version.js",
-                      "sha256":  "4F453F101DC44D186AD301843D2BAA2DB8171F97F65AAFC2010F2972B06B2F05",
+                      "sha256":  "D527C984200A2A9A38519B0A8AE67628F5A98B14AB1625E3F768DD40F4683BB2",
                       "size":  397,
                       "contentType":  "text/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
                       "url":  "patches/v285-recommendations-restore-local/index.html",
-                      "sha256":  "EB27B77499238154F6AC8BD08DDE9360FDCB59452262080FDA862CDEAB7A6A51",
-                      "size":  28771,
+                      "sha256":  "8702E80C13ADC59DC9FC8B707A4A0C0A678CB16F3A7FB1098DC7704E2816B21E",
+                      "size":  31366,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
@@ -35,7 +35,7 @@
                   {
                       "path":  "sw.js",
                       "url":  "patches/v285-recommendations-restore-local/sw.js",
-                      "sha256":  "4EE689A17DE2A2AE86A86A912B1199C322AB4074C3BEA191106B73C2F9B3FFD0",
+                      "sha256":  "245FC6A372E90683A2A0D680609DA24D547F527B35AC42597B1A4FA26D0F1187",
                       "size":  6578,
                       "contentType":  "text/javascript; charset=utf-8"
                   },

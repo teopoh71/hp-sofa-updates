@@ -1,10 +1,10 @@
 window.HP_SOFA_APP_VERSION = {
-  versionCode: 995,
-  versionName: "v995-clearance-button-guard",
+  versionCode: 996,
+  versionName: "v996-clearance-first-button",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
   fullDownloadUrl: "https://gofile.io/d/Vh0MWe",
-  patchversionCode: 995,
-  patchVersionName: "v995-clearance-button-guard",
+  patchversionCode: 996,
+  patchVersionName: "v996-clearance-first-button",
   patchManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/patch.json"
 };
 
