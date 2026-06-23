@@ -1,22 +1,36 @@
 ﻿{
-    "patchVersionCode":  1015,
-    "patchVersionName":  "v1015-nk-material-text-fix",
+    "patchVersionCode":  1016,
+    "patchVersionName":  "v1016-zolano-coffee-table",
     "minVersionCode":  0,
-    "createdAt":  "2026-06-23T08:28:20Z",
+    "createdAt":  "2026-06-23T09:07:24Z",
     "files":  [
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v1015-nk-material-text-fix/app-version.js",
-                      "size":  413,
-                      "sha256":  "69249dad58b3af3c86e4fd9f91b5bea512646ae3aaa4a6b4b0a2d5d49f952dbd",
+                      "url":  "patches/v1016-zolano-coffee-table/app-version.js",
+                      "size":  418,
+                      "sha256":  "ba1c7c5a704eb5ca5b19fa504346970e4a95cf1b71465484aebebc14db781dba",
                       "contentType":  "text/javascript"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "patches/v1015-nk-material-text-fix/app.js",
-                      "size":  327878,
-                      "sha256":  "a605bcccadd44da039e36ac289e2a5afe99a9dd94043b2c38c6719609095d1c1",
+                      "url":  "patches/v1016-zolano-coffee-table/app.js",
+                      "size":  328843,
+                      "sha256":  "ebded8e467640945eee720c23ab44d22a6b12a01797e3f48d3657773e6382adb",
                       "contentType":  "text/javascript"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/CTM001.jpg",
+                      "url":  "patches/v1016-zolano-coffee-table/assets/generated/zolano/CTM001.jpg",
+                      "size":  65844,
+                      "sha256":  "3a1182f4e4d2721672fb3a3c30c00f0d76ec9f96309664a78218bb1450d6b32d",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/CTM002.jpg",
+                      "url":  "patches/v1016-zolano-coffee-table/assets/generated/zolano/CTM002.jpg",
+                      "size":  50043,
+                      "sha256":  "9bd8b6dcee899cb49fa64c191e1e100ff9d3dab58c79410253932e40fb44ecab",
+                      "contentType":  "image/jpeg"
                   }
               ]
 }
