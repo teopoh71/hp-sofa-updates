@@ -5,56 +5,67 @@
     "files":  [
                   {
                       "path":  "app.js",
+                      "url":  "patches/v1019-coffee-table-category/app.js",
                       "sha256":  "91238a4d98d85dd4b660cbc25172f502f14354b1fbc69b02bfbdb17f9a700b49",
                       "size":  331892
                   },
                   {
                       "path":  "app-version.js",
+                      "url":  "patches/v1019-coffee-table-category/app-version.js",
                       "sha256":  "03fc5f7ecd7d51f716c60d3d562174364b15735b97e62dc9585bcdfa010f08ad",
                       "size":  434
                   },
                   {
                       "path":  "index.html",
+                      "url":  "patches/v1019-coffee-table-category/index.html",
                       "sha256":  "baeda8be979e907fa3fabf1c0e877b1832df7b276718495fd2560e7ac7728a1f",
                       "size":  29076
                   },
                   {
                       "path":  "assets/generated/zolano/CTM001.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM001.jpg",
                       "sha256":  "3a1182f4e4d2721672fb3a3c30c00f0d76ec9f96309664a78218bb1450d6b32d",
                       "size":  65844
                   },
                   {
                       "path":  "assets/generated/zolano/CTM002.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM002.jpg",
                       "sha256":  "9bd8b6dcee899cb49fa64c191e1e100ff9d3dab58c79410253932e40fb44ecab",
                       "size":  50043
                   },
                   {
                       "path":  "assets/generated/zolano/CTM003.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM003.jpg",
                       "sha256":  "a0b2b27b9d1bb8bad50c1351d1059fd622fffa28dba4482779176cbb2873cf48",
                       "size":  53908
                   },
                   {
                       "path":  "assets/generated/zolano/CTM004.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM004.jpg",
                       "sha256":  "164c7d4a015d0a4ac9aad41b83a52e88a3f02d69c0707b885295414d2881d410",
                       "size":  8741
                   },
                   {
                       "path":  "assets/generated/zolano/CTM005.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM005.jpg",
                       "sha256":  "43f4c1793b94c2cf6faa353bdfd4c4a475246439c889b4294603cf349cb3e2eb",
                       "size":  43370
                   },
                   {
                       "path":  "assets/generated/zolano/CTM006.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM006.jpg",
                       "sha256":  "ff6bfc799a8c53a175d5b370d4f081df3f100ec1d1b0334ec7731a055569bf1b",
                       "size":  19207
                   },
                   {
                       "path":  "assets/generated/zolano/CTM007.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM007.jpg",
                       "sha256":  "f16c7516e5c6df744a5a4c68063cbb271cf997015a43c7d604d08fdffcbe2888",
                       "size":  51279
                   },
                   {
                       "path":  "assets/generated/zolano/CTM008.jpg",
+                      "url":  "patches/v1019-coffee-table-category/assets/generated/zolano/CTM008.jpg",
                       "sha256":  "b45ea219ee63f90a782ea68526817aea4655c61bd739c455f1618266246ba52c",
                       "size":  14148
                   }
