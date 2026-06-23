@@ -1,0 +1,289 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>图片</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0b0b0b;
+        color: #fff;
+      }
+
+      .viewer-close-bar {
+        position: fixed;
+        right: max(12px, env(safe-area-inset-right));
+        top: max(12px, env(safe-area-inset-top));
+        z-index: 3;
+      }
+
+      button {
+        min-height: 44px;
+        min-width: 88px;
+        border: 0;
+        border-radius: 8px;
+        background: rgba(24, 24, 27, 0.92);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 800;
+      }
+
+      .viewer-status {
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        top: max(12px, env(safe-area-inset-top));
+        z-index: 2;
+        display: none;
+        padding: 10px 12px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.78);
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .viewer-status.is-visible {
+        display: block;
+      }
+
+      .viewer-stage {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0;
+        touch-action: none;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .viewer-stage.is-gallery {
+        position: static;
+        min-height: 100vh;
+        display: block;
+        overflow: auto;
+        padding: max(64px, calc(env(safe-area-inset-top) + 52px)) 0 24px;
+        touch-action: pinch-zoom;
+      }
+
+      img {
+        display: block;
+        width: auto;
+        max-width: 100vw;
+        max-height: 100vh;
+        height: auto;
+        min-height: 0;
+        object-fit: contain;
+        background: #111;
+        -webkit-touch-callout: default;
+        user-select: auto;
+        touch-action: none;
+        transform-origin: center center;
+      }
+
+      img + img {
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="viewer-status" id="status"></div>
+    <div class="viewer-close-bar">
+      <button type="button" id="backButton">关闭</button>
+    </div>
+    <main class="viewer-stage">
+      <img id="photo" alt="图片">
+    </main>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const src = params.get("src") || "";
+      const returnUrl = params.get("return") || "";
+      const stage = document.querySelector(".viewer-stage");
+      const photo = document.querySelector("#photo");
+      let photos = [];
+      let preparedItems = [];
+      const zoomState = {
+        scale: 1,
+        startScale: 1,
+        startDistance: 0
+      };
+      const activePointers = new Map();
+      try {
+        photos = JSON.parse(params.get("srcs") || "[]");
+      } catch {
+        photos = [];
+      }
+      photos = Array.isArray(photos) ? photos.filter(Boolean) : [];
+      renderImages(getOriginalTargets());
+      prepareImagesForDisplay();
+
+      function renderImages(targets) {
+        stage.innerHTML = "";
+        stage.classList.toggle("is-gallery", targets.length > 1);
+        if (targets.length > 1) {
+          targets.forEach((photoSrc) => {
+            const image = document.createElement("img");
+            image.src = photoSrc;
+            image.alt = "图片";
+            attachZoomHandlers(image);
+            stage.append(image);
+          });
+          return;
+        }
+        attachZoomHandlers(photo);
+        stage.append(photo);
+        photo.src = targets[0] || src;
+      }
+
+      function getOriginalTargets() {
+        return photos.length ? photos : [src].filter(Boolean);
+      }
+
+      function getImageElements() {
+        return [...stage.querySelectorAll("img")];
+      }
+
+      async function prepareImagesForDisplay() {
+        const targets = getOriginalTargets();
+        preparedItems = await Promise.all(targets.map((target, index) => prepareImageItem(target, index)));
+        const images = getImageElements();
+        preparedItems.forEach((item, index) => {
+          if (images[index]) {
+            item.imageElement = images[index];
+            if (item.displayUrl) images[index].src = item.displayUrl;
+          }
+        });
+      }
+
+      async function prepareImageItem(target, index) {
+        const originalUrl = target;
+        try {
+          const response = await fetch(target, { cache: "no-store" });
+          if (!response.ok) throw new Error("fetch failed");
+          const sourceBlob = await response.blob();
+          const type = sourceBlob.type || guessContentType(target);
+          const blob = new Blob([sourceBlob], { type });
+          const objectUrl = URL.createObjectURL(blob);
+          return {
+            originalUrl,
+            displayUrl: objectUrl,
+            blob,
+            filename: filenameFromUrl(target, index),
+            type
+          };
+        } catch {
+          return {
+            originalUrl,
+            displayUrl: target,
+            blob: null,
+            filename: filenameFromUrl(target, index),
+            type: guessContentType(target)
+          };
+        }
+      }
+
+      window.addEventListener("pagehide", () => {
+        preparedItems.forEach((item) => {
+          if (item?.displayUrl && item.displayUrl.startsWith("blob:")) URL.revokeObjectURL(item.displayUrl);
+        });
+      });
+
+      document.querySelector("#backButton").addEventListener("click", () => {
+        if (returnUrl) {
+          location.replace(returnUrl);
+          return;
+        }
+        if (history.length > 1) history.back();
+        else location.href = "index.html";
+      });
+
+      function guessContentType(path) {
+        const clean = String(path || "").split("?")[0].toLowerCase();
+        if (clean.endsWith(".png")) return "image/png";
+        if (clean.endsWith(".webp")) return "image/webp";
+        return "image/jpeg";
+      }
+
+      function attachZoomHandlers(image) {
+        if (!image || image.dataset.zoomBound === "true") return;
+        image.dataset.zoomBound = "true";
+        image.addEventListener("pointerdown", onPointerDown);
+        image.addEventListener("pointermove", onPointerMove);
+        image.addEventListener("pointerup", onPointerEnd);
+        image.addEventListener("pointercancel", onPointerEnd);
+        image.addEventListener("pointerleave", onPointerEnd);
+        image.addEventListener("dblclick", () => {
+          zoomState.scale = zoomState.scale > 1 ? 1 : 2;
+          applyZoom(image);
+        });
+      }
+
+      function resetZoom() {
+        zoomState.scale = 1;
+        zoomState.startScale = 1;
+        zoomState.startDistance = 0;
+        activePointers.clear();
+        getImageElements().forEach((image) => applyZoom(image));
+        stage.scrollTop = 0;
+        stage.scrollLeft = 0;
+      }
+
+      function onPointerDown(event) {
+        activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+      }
+
+      function onPointerMove(event) {
+        if (!activePointers.has(event.pointerId)) return;
+        activePointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        if (activePointers.size < 2) return;
+        const [first, second] = [...activePointers.values()];
+        const distance = Math.hypot(second.x - first.x, second.y - first.y);
+        if (!zoomState.startDistance) {
+          zoomState.startDistance = distance;
+          zoomState.startScale = zoomState.scale;
+          return;
+        }
+        if (!distance) return;
+        zoomState.scale = clamp(zoomState.startScale * (distance / zoomState.startDistance), 1, 4);
+        applyZoom(event.currentTarget);
+      }
+
+      function onPointerEnd(event) {
+        activePointers.delete(event.pointerId);
+        if (activePointers.size < 2) {
+          zoomState.startDistance = 0;
+          zoomState.startScale = zoomState.scale;
+        }
+      }
+
+      function applyZoom(image) {
+        image.style.transform = `scale(${zoomState.scale})`;
+      }
+
+      function clamp(value, min, max) {
+        return Math.min(max, Math.max(min, value));
+      }
+
+      window.addEventListener("resize", resetZoom);
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener("resize", resetZoom);
+      }
+    </script>
+  </body>
+</html>
+
+
