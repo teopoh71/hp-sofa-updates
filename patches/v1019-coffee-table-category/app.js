@@ -880,7 +880,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [8800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM001.jpg",
+    photo: "assets/generated/zolano/CTM001.jpg?v=2",
     source: "user showroom photo / selling price"
   },
   {
@@ -897,7 +897,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [2200],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM002.jpg",
+    photo: "assets/generated/zolano/CTM002.jpg?v=2",
     source: "user showroom photo / selling price"
   },
   {
@@ -914,7 +914,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [8800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM003.jpg",
+    photo: "assets/generated/zolano/CTM003.jpg?v=2",
     source: "user showroom photo / selling price"
   },
   {
@@ -931,7 +931,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [3600],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM004.jpg",
+    photo: "assets/generated/zolano/CTM004.jpg?v=2",
     source: "user showroom photo / selling price"
   },
   {
@@ -948,7 +948,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [7800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM005.jpg",
+    photo: "assets/generated/zolano/CTM005.jpg?v=2",
     source: "user showroom photo / selling price"
   },
   {
@@ -965,7 +965,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [2380],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM006.jpg",
+    photo: "assets/generated/zolano/CTM006.jpg?v=2",
     source: "user showroom photo / selling price"
   },
   {
@@ -982,7 +982,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [8800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM007.jpg",
+    photo: "assets/generated/zolano/CTM007.jpg?v=2",
     source: "user showroom photo / selling price"
   },
   {
@@ -999,7 +999,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [4400],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM008.jpg",
+    photo: "assets/generated/zolano/CTM008.jpg?v=2",
     source: "user showroom photo / selling price"
   }
 ];
@@ -2678,17 +2678,17 @@ function showPatchBanner(patch, manifestUrl) {
   banner.className = "update-banner patch-banner";
 
   const title = document.createElement("strong");
-  title.textContent = "Ã¦Å“â€°Ã¥Â°ÂÃ¦â€ºÂ´Ã¦â€“Â°";
+  title.textContent = "\u6709\u5c0f\u66f4\u65b0";
 
   const message = document.createElement("span");
-  message.textContent = `${patch.patchVersionName || "Ã¨Â¡Â¥Ã¤Â¸Â"} Ã¥ÂÂ¯Ã¤Â»Â¥Ã¤Â¸â€¹Ã¨Â½Â½`;
+  message.textContent = `${patch.patchVersionName || "\u8865\u4e01"} \u53ef\u4ee5\u4e0b\u8f7d`;
 
   const actions = document.createElement("div");
   actions.className = "update-banner-actions";
 
   const laterButton = document.createElement("button");
   laterButton.type = "button";
-  laterButton.textContent = "Ã§Â¨ÂÃ¥ÂÅ½";
+  laterButton.textContent = "\u7a0d\u540e";
   laterButton.addEventListener("click", () => {
     localStorage.setItem(patchSeenVersionStorageKey, String(patch.patchVersionCode || 0));
     sessionStorage.setItem(patchSeenVersionStorageKey, String(patch.patchVersionCode || 0));
@@ -2698,15 +2698,15 @@ function showPatchBanner(patch, manifestUrl) {
   const updateButton = document.createElement("button");
   updateButton.type = "button";
   updateButton.className = "primary-button";
-  updateButton.textContent = "Ã¥Â°ÂÃ¦â€ºÂ´Ã¦â€“Â°";
+  updateButton.textContent = "\u4e0b\u8f7d";
   updateButton.addEventListener("click", async () => {
     updateButton.disabled = true;
-    updateButton.textContent = "Ã¤Â¸â€¹Ã¨Â½Â½ 0/0";
+    updateButton.textContent = "\u4e0b\u8f7d 0/0";
     try {
       await applyOnlinePatch(patch, manifestUrl, ({ done, total, phase }) => {
         updateButton.textContent = `${phase} ${done}/${total}`;
       });
-      updateButton.textContent = "Ã¥Â®Å’Ã¦Ë†ÂÃ¯Â¼Å’Ã¥Ë†Â·Ã¦â€“Â°Ã¤Â¸Â­";
+      updateButton.textContent = "\u5b8c\u6210\uff0c\u5237\u65b0\u4e2d";
       window.setTimeout(() => {
         const reloadUrl = new URL(window.location.href);
         reloadUrl.searchParams.set("fresh", String(Date.now()));
@@ -2714,8 +2714,8 @@ function showPatchBanner(patch, manifestUrl) {
       }, 250);
     } catch (error) {
       updateButton.disabled = false;
-      updateButton.textContent = "Ã©â€¡ÂÃ¨Â¯â€¢";
-      alert(`Ã¥Â°ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã¥Â¤Â±Ã¨Â´Â¥Ã¯Â¼Å¡${error.message || "Ã¨Â¯Â·Ã¦Â£â‚¬Ã¦Å¸Â¥Ã§Â½â€˜Ã§Â»Å“"}`);
+      updateButton.textContent = "\u91cd\u8bd5";
+      alert(`\u5c0f\u66f4\u65b0\u5931\u8d25\uff1a${error.message || "\u8bf7\u68c0\u67e5\u7f51\u7edc"}`);
     }
   });
 
@@ -2725,7 +2725,7 @@ function showPatchBanner(patch, manifestUrl) {
 }
 
 async function applyOnlinePatch(patch, manifestUrl, onProgress) {
-  if (!("caches" in window)) throw new Error("Ã¨Â¿â„¢Ã¤Â¸ÂªÃ¨Â®Â¾Ã¥Â¤â€¡Ã¤Â¸ÂÃ¦â€Â¯Ã¦Å’ÂÃ¥Â°ÂÃ¦â€ºÂ´Ã¦â€“Â°Ã§Â¼â€œÃ¥Â­Ëœ");
+  if (!("caches" in window)) throw new Error("\u8fd9\u4e2a\u8bbe\u5907\u4e0d\u652f\u6301\u5c0f\u66f4\u65b0\u7f13\u5b58");
   const cache = await caches.open(patchCacheName);
   const manifestBaseUrl = new URL(manifestUrl, window.location.href);
   const files = Array.isArray(patch.files) ? patch.files : [];
@@ -2734,17 +2734,17 @@ async function applyOnlinePatch(patch, manifestUrl, onProgress) {
     const file = files[index];
     const localPath = String(file.path || file.target || "").trim();
     const remotePath = String(file.url || file.source || file.path || "").trim();
-    if (!localPath || !remotePath) throw new Error("Ã¨Â¡Â¥Ã¤Â¸ÂÃ¦â€“â€¡Ã¤Â»Â¶Ã¨Âµâ€žÃ¦â€“â„¢Ã¤Â¸ÂÃ¥Â®Å’Ã¦â€¢Â´");
+    if (!localPath || !remotePath) throw new Error("\u8865\u4e01\u6587\u4ef6\u8d44\u6599\u4e0d\u5b8c\u6574");
 
     const remoteUrl = new URL(remotePath, manifestBaseUrl).href;
-    onProgress?.({ phase: "Ã¤Â¸â€¹Ã¨Â½Â½", done: index + 1, total: files.length });
+    onProgress?.({ phase: "\u4e0b\u8f7d", done: index + 1, total: files.length });
     const response = await fetchWithTimeout(`${remoteUrl}${remoteUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, { cache: "no-store" }, 30000);
-    if (!response.ok) throw new Error(`Ã¤Â¸â€¹Ã¨Â½Â½Ã¥Â¤Â±Ã¨Â´Â¥ ${localPath}`);
+    if (!response.ok) throw new Error(`\u4e0b\u8f7d\u5931\u8d25 ${localPath}`);
 
     const body = await response.blob();
     const contentType = file.contentType || response.headers.get("content-type") || guessPatchContentType(localPath);
     const headers = new Headers({ "content-type": contentType || "application/octet-stream" });
-    onProgress?.({ phase: "Ã¥Â®â€°Ã¨Â£â€¦", done: index + 1, total: files.length });
+    onProgress?.({ phase: "\u5b89\u88c5", done: index + 1, total: files.length });
     await cacheOnePatchFile(cache, localPath, body, headers);
   }
 
@@ -2777,7 +2777,7 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 20000) {
   try {
     return await fetch(url, { ...options, signal: controller.signal });
   } catch (error) {
-    if (error.name === "AbortError") throw new Error("Ã¤Â¸â€¹Ã¨Â½Â½Ã¨Â¶â€¦Ã¦â€”Â¶Ã¯Â¼Å’Ã¨Â¯Â·Ã¦Â£â‚¬Ã¦Å¸Â¥Ã§Â½â€˜Ã§Â»Å“");
+    if (error.name === "AbortError") throw new Error("\u4e0b\u8f7d\u8d85\u65f6\uff0c\u8bf7\u68c0\u67e5\u7f51\u7edc");
     throw error;
   } finally {
     window.clearTimeout(timer);
@@ -6296,7 +6296,7 @@ function editSofa(id) {
 }
 
 function deleteSofa(id) {
-  if (!confirm("ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂªÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â?")) return;
+  if (!confirm("\u786e\u5b9a\u8981\u5220\u9664\u8fd9\u5f20\u6c99\u53d1\u5417\uff1f")) return;
   sofas = sofas.filter((sofa) => sofa.id !== id);
   saveSofas();
   render();
