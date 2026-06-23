@@ -1,2392 +1,2392 @@
 {
-  "patchVersionCode": 1004,
-  "patchVersionName": "v1004-table-leg-local",
+  "patchVersionCode": 1005,
+  "patchVersionName": "v1005-table-leg-hard-patch",
   "minVersionCode": 0,
-  "createdAt": "2026-06-23T01:55:12Z",
+  "createdAt": "2026-06-23T02:21:29Z",
   "files": [
     {
       "path": "index.html",
-      "url": "patches/v1004-table-leg-local/index.html",
-      "sha256": "CD0B4AB650599DCC57F4ECD90CA4CA6DC0FAB3F9B2CE9144689B547BEE5DBFF9",
-      "size": 27744,
+      "url": "patches/v1005-table-leg-hard-patch/index.html",
+      "sha256": "41D4BB6F47195F0DC527C73EC2887815D46C51B157A5E42FE75A28DCD0DA4ED5",
+      "size": 27772,
       "contentType": "text/html; charset=utf-8"
     },
     {
       "path": "app.js",
-      "url": "patches/v1004-table-leg-local/app.js",
-      "sha256": "6F73554C5F1518AE4A1EB19856C33A188A8BD131762F51E7683357A75FD1F5F4",
-      "size": 247678,
+      "url": "patches/v1005-table-leg-hard-patch/app.js",
+      "sha256": "73E5C475F3F84BC975C99C953454994267DC8A93184C7E0745AAAE2579F86451",
+      "size": 295911,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "path": "app-version.js",
-      "url": "patches/v1004-table-leg-local/app-version.js",
-      "sha256": "CCE425AFF0DA287EBCD89F2992CA5AB50CC58ADC5144DE854C47CBF05861ED41",
-      "size": 410,
+      "url": "patches/v1005-table-leg-hard-patch/app-version.js",
+      "sha256": "E6CC76F9EE189DF31B97BDDAA7F19ED859103C400C51F1EBAC2218AA1ABBBF5C",
+      "size": 425,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "path": "sw.js",
-      "url": "patches/v1004-table-leg-local/sw.js",
-      "sha256": "26651105D6EF8877E5C2F33C804B042E8E60394F6C0D0C8B06C6A7556A6D6105",
-      "size": 6756,
+      "url": "patches/v1005-table-leg-hard-patch/sw.js",
+      "sha256": "F63F696923D8BFB45F6BBF85E611556DCDBE59015CAA119CA57385312CCB201F",
+      "size": 6811,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "path": "table-leg-data.js",
-      "url": "patches/v1004-table-leg-local/table-leg-data.js",
+      "url": "patches/v1005-table-leg-hard-patch/table-leg-data.js",
       "sha256": "8245621DBB1857E8E122C6B051BF79EA5C972EA5A256424DE52E3FD7DE0E0906",
       "size": 47751,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "path": "assets/table-legs/LEG-P02-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P02-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P02-01.jpg",
       "sha256": "72B58F9D88A0D573214A7759E1A36CE8F7980515D7567EF829444EEEA4FD6D39",
       "size": 22481,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P02-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P02-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P02-02.jpg",
       "sha256": "9BD7183FAB90E3B9EF3B9DE3371023244EF7CC6A16F34603AF7DE5C36ACE98F7",
       "size": 27409,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P02-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P02-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P02-03.jpg",
       "sha256": "10FDC0978B5FA33293A5922756CD7138E0F859B4E3907F4A52623E13A1AC51EB",
       "size": 26019,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P02-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P02-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P02-04.jpg",
       "sha256": "7EA279661C77CC1F8E0B278EC916F3B88CEC1AE05EE7707FC34E20660EE63B37",
       "size": 24243,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P02-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P02-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P02-05.jpg",
       "sha256": "F7A5B9FAE06BF4F2AA8CB41ACC8A16F31090E9582BC3086E1FED6A9C8760F916",
       "size": 30333,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P02-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P02-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P02-06.jpg",
       "sha256": "ED2C272D7D11EBF19E2F5800D4A0C97E0E4E992D382BBDA45BE972840903E5C7",
       "size": 24844,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P03-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P03-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P03-01.jpg",
       "sha256": "E1E4451D29EAF5C1B94645A48D0B50A47C01BD20BDC21F4987B3EAADC2DB57B7",
       "size": 24730,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P03-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P03-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P03-02.jpg",
       "sha256": "A32BDA8F002C5347A49966DD8B20B8263FBF7A862DBB29DCE3F7DDCDE2C6EA4B",
       "size": 25152,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P03-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P03-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P03-03.jpg",
       "sha256": "CEE656D88EAF77C74961B0D6F6268B32DACBA4C57EC6BF877D6A0FEC0137416C",
       "size": 28080,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P03-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P03-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P03-04.jpg",
       "sha256": "5AA3D35E1A67AAD9810407432747E08644B9C9A25C9C59DC6F11CEE497714483",
       "size": 27864,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P03-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P03-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P03-05.jpg",
       "sha256": "32766359D25360AA87334A27D78CC8B5C2E27FD09DAE80BA329B5465CC141396",
       "size": 25456,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P03-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P03-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P03-06.jpg",
       "sha256": "066273109208D00081B3AB679568A20A9140F65CA1D5C4019E8627DFD08BA4EA",
       "size": 25042,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P04-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P04-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P04-01.jpg",
       "sha256": "AF556037D81A43742FDE869887AF6DDA0C4074B949A19E81D35B4147184200F8",
       "size": 22097,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P04-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P04-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P04-02.jpg",
       "sha256": "2BF581CADD58BE3E5669295E79213196E61D9E46890C3FF4E4ECFE048A5D08AF",
       "size": 22938,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P04-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P04-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P04-03.jpg",
       "sha256": "79F0053BA2FEDB9640C7755865340C4859155F62172F231094BFF34AEDF73B75",
       "size": 24812,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P04-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P04-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P04-04.jpg",
       "sha256": "4C870885CE7998FE52977B04465C64CC0055B1E7A182D5DFA8C73F69A994EF96",
       "size": 28075,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P04-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P04-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P04-05.jpg",
       "sha256": "122A4F7B5A7AE1CF345F55CE26FDDD30703CFE8105D11A6F5BC0DE63C0F131A2",
       "size": 26239,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P04-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P04-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P04-06.jpg",
       "sha256": "7D6222AAF88105DC305883C59C8B7EDDC5E6DD6119A2549979BC9DB06E4460D6",
       "size": 27480,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P05-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P05-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P05-01.jpg",
       "sha256": "E6511AB4016070F774C7002ADC0424C3BE4214EE9E766E3C017EE1E1B2B964B7",
       "size": 27928,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P05-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P05-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P05-02.jpg",
       "sha256": "7F7D6183F86EA1474B28CAB62284D052E2F4C390247C73BF6F67FD025D9498F0",
       "size": 27129,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P05-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P05-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P05-03.jpg",
       "sha256": "A4FF0B4153A954F2EF2F17DFCC6C5689C42DDCB27AE2D5087713E5429B099EF2",
       "size": 22814,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P05-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P05-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P05-04.jpg",
       "sha256": "02FDEFB4357A473177B438773A2EEF98E0BA4AECF62D98983F3440B9EF676D28",
       "size": 24395,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P05-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P05-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P05-05.jpg",
       "sha256": "2B6F0F2FC92BD7EBD22D9F91C18974CBCE107A350334E596CF373FFDE4E7CC27",
       "size": 32488,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P05-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P05-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P05-06.jpg",
       "sha256": "0BD730AD3EC3CA5781ED8CF3FE4DB5728E2A3DAF52C2E1E84DB30FEF3AA8E9DA",
       "size": 24780,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P06-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P06-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P06-01.jpg",
       "sha256": "A50DDBDD7D1900AF22D1E7B2F3151C921016AD165A561B122555E93E73F423BC",
       "size": 24679,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P06-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P06-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P06-02.jpg",
       "sha256": "5BAC6AE9CC71B09E4942459B36080EE42EDCC2338974D47FC86647B685B536F2",
       "size": 24261,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P06-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P06-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P06-03.jpg",
       "sha256": "DA26088622E44A5E35FF7EF26F0C7D44E8F2360E650C2CBDC32BCE71C0CE2B0F",
       "size": 30052,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P06-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P06-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P06-04.jpg",
       "sha256": "08F1867FE829226ADC7CDF6372892E968E89CEBEAB12BBB0CB296073C24EA4D3",
       "size": 26371,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P06-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P06-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P06-05.jpg",
       "sha256": "A4576F8D363ED8FA7B12BAF131A155C89F6A99AB6391F4FF991CF798BF0AF6DE",
       "size": 27371,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P06-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P06-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P06-06.jpg",
       "sha256": "C7CD6519FE12CE7E8C5BE0EFC2F3E6673AC841A9D1CB18C22D0D3C6E0BD8B3C1",
       "size": 28037,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P07-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P07-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P07-01.jpg",
       "sha256": "B22B29A8A4439E8DCE5885E7A4C71E58812EAB8930DD39B886F2EB11A08C4365",
       "size": 34230,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P07-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P07-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P07-02.jpg",
       "sha256": "C7FAE3C504771879A0E2879720E9D25C7D23FA6EC83D32FF3D985A0F6B601867",
       "size": 33593,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P07-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P07-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P07-03.jpg",
       "sha256": "9848A7685BDC7B460C4E9B3CDBD4A9ECD8A2049AE736F083BDE968C5E652AD02",
       "size": 37511,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P07-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P07-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P07-04.jpg",
       "sha256": "C6CED4B1121B87C3DEDCC892FC116DF929CEAE286EED59AEE14C7A9C581D18A7",
       "size": 34397,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P07-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P07-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P07-05.jpg",
       "sha256": "B3E21DEEDF99FE44CB5F1507DD872B4B35FFC8AA8EFA9B54F1DC5AB60C7D621B",
       "size": 22760,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P07-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P07-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P07-06.jpg",
       "sha256": "7A177FC1367960C7C182E09FC86472BF97A4919B7291586FA127EA5F44F4100D",
       "size": 20695,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P08-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P08-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P08-01.jpg",
       "sha256": "12DC017BA5D557D6DB897BC3697AACAC1D7FEA370F4D00BE807AC295F90311D0",
       "size": 23667,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P08-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P08-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P08-02.jpg",
       "sha256": "413B998E29EA755F96EFB958757045B2DA648E0BF28BBE2FC75F1F56E523A91A",
       "size": 31036,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P08-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P08-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P08-03.jpg",
       "sha256": "B885C63762A127AB05DE84F21A047B32E90EC2FC26C380040068AAC0BC132390",
       "size": 24898,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P08-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P08-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P08-04.jpg",
       "sha256": "DD190C127A90EBD7EF4FDDE8D9E05AA3EFC72303FB1ACC08BD98581E41A4EDCF",
       "size": 28387,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P08-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P08-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P08-05.jpg",
       "sha256": "524ED5D069668B9092E9A742D35028DBE67076AD1C7F9D6198B9869333827BCF",
       "size": 32754,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P08-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P08-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P08-06.jpg",
       "sha256": "1F5A2E4C589682631DE7AEA53083A1AE0E5779C61739EC66F3E5BB066A6E7D3D",
       "size": 27775,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P09-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P09-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P09-01.jpg",
       "sha256": "6ECFEAC07EDDF89AA81D2976409E17B77DA31DA88FD8A122F52939855681D762",
       "size": 27021,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P09-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P09-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P09-02.jpg",
       "sha256": "D41EE69D592E639C6EE3422C47EF586967497AE70E3D172538FF9589F10C4E93",
       "size": 33687,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P09-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P09-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P09-03.jpg",
       "sha256": "A56DD64EC03163E8A857DF6D88D8CCE4BA1B462902ACAB0D131CA4B988CD99D1",
       "size": 30112,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P09-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P09-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P09-04.jpg",
       "sha256": "E75CDA1ACEAB6FBC9BCA1B28B70C9BE613803AF69F813E6BD3A35F981A76AB12",
       "size": 24939,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P09-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P09-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P09-05.jpg",
       "sha256": "16F7232FFFB425B77FAE4E6ECBC4797E4FE39EDF7F5F92D392DE5E944576ECD3",
       "size": 33310,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P09-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P09-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P09-06.jpg",
       "sha256": "0AECFAB013767467924AEEEAED73481AB2A3B80BD55EDCA9FD37FC1B0B67D240",
       "size": 24314,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P10-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P10-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P10-01.jpg",
       "sha256": "5C263E161C273834B94D22495E0B358AFCC2CAABB42889B5E45886E00AF248FA",
       "size": 28441,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P10-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P10-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P10-02.jpg",
       "sha256": "9F65F1F4F3AF5DED7C47C956BBCD082C5770DA14FAB765FB28FCC9EB1746EF4E",
       "size": 26921,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P10-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P10-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P10-03.jpg",
       "sha256": "58D207AD1B2ECE0B9CDFE2F3742F4868C1977B824A13C16573EBBEFD54E37DF5",
       "size": 30060,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P10-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P10-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P10-04.jpg",
       "sha256": "A3F1A287D9FBA7CCD81D56068BA33AF76686662675C59EA0603AAF925FD3E120",
       "size": 26171,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P10-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P10-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P10-05.jpg",
       "sha256": "49E7BB85A008BE66ECA9A9F33BE2308095C645707BEEDF9342AFCFFEBEF5B106",
       "size": 24372,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P10-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P10-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P10-06.jpg",
       "sha256": "5A853169DBA91C8FF477968B90F87103A72D1AD55BCC3F0AFA18F28711D09CAB",
       "size": 27794,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P11-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P11-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P11-01.jpg",
       "sha256": "D0AA32B5C0DC5D849342AB48F5F4D8E485920D170FE37C78365D225379C7523B",
       "size": 25018,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P11-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P11-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P11-02.jpg",
       "sha256": "5A511788D17BB4107C733E5D3DF3D36F4CC771D9994EFBC0F10BAE570006ABC2",
       "size": 32656,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P11-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P11-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P11-03.jpg",
       "sha256": "8CBE839963C5078FA17F39F89550A01DC846AECF95F35A3F1FB360ED55250465",
       "size": 22725,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P11-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P11-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P11-04.jpg",
       "sha256": "7030672C101FA705656B58D076256A2F1B7AE7FA48B2B16BB31B77C62513C41A",
       "size": 30486,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P11-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P11-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P11-05.jpg",
       "sha256": "240729138DD23D80BB6844CA063AD3D9337F014B6711585C1272A56367E9E7F2",
       "size": 22524,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P11-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P11-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P11-06.jpg",
       "sha256": "BE0399C69C7B79C42B566AC7281C4D21AAABC9990BDCDBAB5BDB4D3455910631",
       "size": 26828,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P12-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P12-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P12-01.jpg",
       "sha256": "AECCD5E042052FA636B4FE36ECB5331C9AB63B4991EB564EF219A154BF658C82",
       "size": 27010,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P12-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P12-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P12-02.jpg",
       "sha256": "9ED1CDB4857614519512F28932BE97EE908111655998F847D4E6961B878D253C",
       "size": 27652,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P12-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P12-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P12-03.jpg",
       "sha256": "BD1B99DBB2D8141ED4D79F3FA46C39BDD68545DF1EFE3548335783137862357C",
       "size": 28256,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P12-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P12-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P12-04.jpg",
       "sha256": "29EA8A60C5A9EB5989C5A6C227B30C389696A7863727E05B31456440F087AF90",
       "size": 26692,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P12-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P12-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P12-05.jpg",
       "sha256": "1C372B414E69A4B103A23E4AB9220B969ECC20B9D8F4AEF6BAC220F074986401",
       "size": 30257,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P12-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P12-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P12-06.jpg",
       "sha256": "A761A8D9D7B2072ADCD6DEBCE3E50CC3D8D4C2CE49DF4B9D209C153CD5DD1E36",
       "size": 24129,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P13-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P13-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P13-01.jpg",
       "sha256": "DC762A5CD0B5B87ABA8D9F571261548164AC819FDB9481B89177C7DBCF72AD1B",
       "size": 28547,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P13-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P13-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P13-02.jpg",
       "sha256": "5A166066588E1C2063F686D60B32B96FB4E9819DDC4A32E462C7246B7475F656",
       "size": 29274,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P13-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P13-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P13-03.jpg",
       "sha256": "08DD6AC107DF36125C629BA29568590945B3CD554510C7EC001463A1899B08B2",
       "size": 38029,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P13-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P13-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P13-04.jpg",
       "sha256": "057216C42FFFCCDA5D6F3C990EFB6436D1383913F5CDC5F2B1AD7C5C5D956B38",
       "size": 25524,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P13-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P13-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P13-05.jpg",
       "sha256": "F1BABCB4EE95735687451A4DB6957AAE40FE771028D00A3869056FFA0F87CD03",
       "size": 37845,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P13-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P13-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P13-06.jpg",
       "sha256": "585CE1C31E9DBB28F35E4D576511CEB0AC9C600D95A6DE30C2C16937005CB7E7",
       "size": 39100,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P14-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P14-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P14-01.jpg",
       "sha256": "E34A1D887368BB56B1343D15D3D690CA0C94E076582A106C704B2ED7ECAED3AD",
       "size": 23439,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P14-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P14-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P14-02.jpg",
       "sha256": "2411A585CB007C05E1B9D5610FBA931796C722720940EB03981FE2569D59D48E",
       "size": 33195,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P14-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P14-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P14-03.jpg",
       "sha256": "C90BDFCA73825748C48073D2FC3841A6094AF69554CA19102371BEB45D1C6DDC",
       "size": 25925,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P14-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P14-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P14-04.jpg",
       "sha256": "BB1CABE1BF1D2EB8CA67782D16E2E5E8CCF7334A22631FC16BDEEF1CB3799CA9",
       "size": 26506,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P14-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P14-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P14-05.jpg",
       "sha256": "854E8CC8FA5040E405DC792A68C4A9893CE717534F3EA83CE10BD257D3D97EEC",
       "size": 32037,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P14-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P14-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P14-06.jpg",
       "sha256": "EFFE44547374FC2FEE0ECAEE194D86E18B88220BC479176F7E4C782154693221",
       "size": 28313,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P15-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P15-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P15-01.jpg",
       "sha256": "1CE38229BA9F645E6FA02E2D6C02111593E69843E3D3610702A4A4A84AAEAB74",
       "size": 25687,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P15-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P15-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P15-02.jpg",
       "sha256": "A13112E32C748AEE4C5DE5A6287ACA5E3411452E8BD3477CBEAC5AB4664D845D",
       "size": 38109,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P15-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P15-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P15-03.jpg",
       "sha256": "32C25E9874E0441F89DE0CA4EA43A392CEF11C2E761C471EFCE297D5D0B8E1F4",
       "size": 30474,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P15-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P15-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P15-04.jpg",
       "sha256": "93AA95C6460C19404646D87A6C611D5591DC169DC141559216B80201E34000F1",
       "size": 29622,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P15-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P15-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P15-05.jpg",
       "sha256": "88455EE57DB170827BCD8619A2868CAC8291BF28130744FD41DCD6CE1780DF72",
       "size": 31858,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P15-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P15-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P15-06.jpg",
       "sha256": "FA198D0C8B12FD6876DBFF428D4F1DA0B52D319E01AA8310EB72E079CC33F57D",
       "size": 36402,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P16-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P16-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P16-01.jpg",
       "sha256": "A6B4F91DBDFA0D818BE786E5A38588F71830DA4A2069F18C8032218D18660DC1",
       "size": 53209,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P16-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P16-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P16-02.jpg",
       "sha256": "8AC7FCB08F30FC6E68900C1A45104D2BC28493113CFC4EE0101DF1D6A95CBD01",
       "size": 35769,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P16-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P16-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P16-03.jpg",
       "sha256": "722D58C7B66E193BFEA30C1C2AB9909A3BD0055441771A64469B0D2F7F181E85",
       "size": 22506,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P16-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P16-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P16-04.jpg",
       "sha256": "4AE001ACF8CEF62C8DB231A8E8E96BB55B7549CB8F2C314EE903383BD2425119",
       "size": 26939,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P16-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P16-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P16-05.jpg",
       "sha256": "05003B133003D5082361106EA8FBD44FA467D990832F91DFBBA0B5E138CAEAF4",
       "size": 31842,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P16-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P16-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P16-06.jpg",
       "sha256": "964742A58C1399177B6698AA728BD50D7D1C22C92CDB3EA888E47650B7CB3939",
       "size": 34729,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P17-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P17-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P17-01.jpg",
       "sha256": "73FA46619FC3D223F5259162171D9C427ABECA9C9E492EE54F14E50BECCB1797",
       "size": 26814,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P17-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P17-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P17-02.jpg",
       "sha256": "1B0449651B8265DA635C0BEE3AAC9F98A8583F5BDA64F0C0E397E992ED36AA47",
       "size": 24862,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P17-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P17-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P17-03.jpg",
       "sha256": "8D2BA86F70F8C83459AEDA569C351A8693F823D466F8784AC4473A8C7953EE5F",
       "size": 20537,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P17-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P17-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P17-04.jpg",
       "sha256": "307D536A6ACA9A47867CA0A28BFEEB5896E35EBA17A01CCE28E85F11B056B4D8",
       "size": 21949,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P17-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P17-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P17-05.jpg",
       "sha256": "DE3624E0D6F12A1F56C8ED96285B255476B0E5E71A48BCA1CFD05B0674201875",
       "size": 21535,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P17-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P17-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P17-06.jpg",
       "sha256": "B275A307576EF741533D248BC530F71DF382C7D13098F16AE3737F45B0C26569",
       "size": 22144,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P18-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P18-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P18-01.jpg",
       "sha256": "2C446A3B8712B5485FBF3E5FEE6CE58310BFC8B6529BCDF26385501B9FC263AB",
       "size": 17048,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P18-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P18-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P18-02.jpg",
       "sha256": "49DF5EC83A7E2785DCD1C12D50E9FA8EED5D7C8A1E611D8ABE9D7E74A3DA4B9B",
       "size": 19250,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P18-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P18-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P18-03.jpg",
       "sha256": "56CC51606B2C25AF182DB8D8177D3663D45E1CF472DC0325EADF28A7CD78B765",
       "size": 18720,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P18-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P18-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P18-04.jpg",
       "sha256": "CC768EA3A2ED568E5B4103ECBD9A3ED88E20A2310FED05217119D66D67275D1E",
       "size": 19167,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P18-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P18-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P18-05.jpg",
       "sha256": "536403B3D12FACEFE530F05A5537EA4FAE3622A3E03D06A4B7A75AE0B470733A",
       "size": 26459,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P18-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P18-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P18-06.jpg",
       "sha256": "C2131C96DBC48DF64AFA9D5CB0ADDB5369B479593E6190F75FAA13E9A34A197B",
       "size": 19828,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P19-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P19-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P19-01.jpg",
       "sha256": "8E41AB20F5BD304DCCD5860D099F70F518F95C75ECF240DF62F05E1F087C3A9F",
       "size": 25070,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P19-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P19-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P19-02.jpg",
       "sha256": "4FFEBB6B837703ACB0591AABBDE7A39208FA3012CFAFAD3E79F642253F00E3A9",
       "size": 34935,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P19-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P19-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P19-03.jpg",
       "sha256": "0F8BD399859232DA424B42ADC14B64FB39116179F295B1A0CC061B6110B2A2F7",
       "size": 35939,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P19-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P19-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P19-04.jpg",
       "sha256": "6FA04F8C2FC51E6213F36CA4EDF196E15FB759BA429F66751D4E71387F5FF951",
       "size": 24354,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P19-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P19-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P19-05.jpg",
       "sha256": "1A2782E9CC26DF4B09BC28B1471BFD54AE96DA5C5843F16B028308E899F8E83B",
       "size": 20525,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P19-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P19-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P19-06.jpg",
       "sha256": "AD71331DA023FF20E8FE29FE717979BA495A51AF32BF56DA0C690ACAEE437635",
       "size": 31033,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P20-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P20-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P20-01.jpg",
       "sha256": "642DA563A7AF7C7EF5CDE5E111B42A11F0DD7FC44AB3A0441C64C8CF6B658A5E",
       "size": 26433,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P20-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P20-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P20-02.jpg",
       "sha256": "93EFAF9ECB492C8BF9F2CF8BB3D2038509A898CB4BF25ACD63F20BC2AEEF8483",
       "size": 31386,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P20-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P20-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P20-03.jpg",
       "sha256": "63CEBCA95E45B5CA2E29BC0D0FE3F71205721A393B377460BF4B84CB2A89F757",
       "size": 28069,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P20-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P20-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P20-04.jpg",
       "sha256": "2973F9250A6621991568639AD338459A4011873DABC41737BF22DB4C665E13EA",
       "size": 32123,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P20-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P20-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P20-05.jpg",
       "sha256": "32456142AE65E98C0C41771C0F88DCDD4F7AD9738D770B0BC21D12DDC3E1E389",
       "size": 22275,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P20-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P20-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P20-06.jpg",
       "sha256": "A2908A08BA770F4DCA096CA1B3933639D056A1A7B90D5B86564AF22E04F838B8",
       "size": 25652,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P21-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P21-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P21-01.jpg",
       "sha256": "2421CA942C42D0044B1F5225621CE0C410A9AFDD451070896E981B7693AE61DA",
       "size": 28555,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P21-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P21-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P21-02.jpg",
       "sha256": "2DF2F68390894BA5AE08BC93BB017745BA0C408CFA7F469297B1213068DAC6E8",
       "size": 27312,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P21-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P21-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P21-03.jpg",
       "sha256": "EE8A94AF341104374C487DA1C6F4FA7D224EE6933810AF6F6BF31F8CB1DE2E4E",
       "size": 29525,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P21-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P21-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P21-04.jpg",
       "sha256": "7CA876328C607941315F00BC5D2E83F9665845BC510B6BC49CA32DF06AD9C7FF",
       "size": 38609,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P21-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P21-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P21-05.jpg",
       "sha256": "B735704330CCFC809BBA2E3A4948BF3DCB57B3EB12CCA3EC1C7BD22266211BA6",
       "size": 25645,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P21-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P21-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P21-06.jpg",
       "sha256": "D19A4A05732E0AE830C2B6816808FCE5380767AAB8932E7E3384FED6548D238D",
       "size": 27261,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P22-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P22-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P22-01.jpg",
       "sha256": "653F6B449DD009B25FCD812D4DACF3E2BFDC425C1E20B092EE001DBABA66F60A",
       "size": 26814,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P22-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P22-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P22-02.jpg",
       "sha256": "6FFE7528CC93B7F18963ED7EE6161F3B6189ABF7BBC06D15A8BD574233C51295",
       "size": 24843,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P22-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P22-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P22-03.jpg",
       "sha256": "3BC3007FA0A48D01650693D4C7193B616C7A537A8FA8EBF5904F8EC2BFEAED8D",
       "size": 34813,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P22-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P22-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P22-04.jpg",
       "sha256": "13E8371086FCC7755FA992784210857882FD60C6406E01E0F5565F42E9DDC914",
       "size": 23830,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P22-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P22-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P22-05.jpg",
       "sha256": "6F2F68DB2D1C1148BB99D77EABF40F2D40148EF0EBA8B720F263EA7EE08FAB9D",
       "size": 30008,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P22-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P22-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P22-06.jpg",
       "sha256": "9CFF509C0D5B4A06AFA719ABA36F9BA77820930973A890AEBC12E470C3B4FAF1",
       "size": 23524,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P23-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P23-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P23-01.jpg",
       "sha256": "5865656008A5277FD0C7CE82EDF02AE999272CF4DB256E3C6934A2948B115742",
       "size": 26009,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P23-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P23-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P23-02.jpg",
       "sha256": "34596427A5A2829CF6D2FB4E2191A14B747B51B956EDD17CA9DB97390FAA954F",
       "size": 28508,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P23-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P23-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P23-03.jpg",
       "sha256": "E23DF4C1667B4E609A0864E3919ECC79C4F7DCBAD439A9A3211E4823D78EB60F",
       "size": 24790,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P23-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P23-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P23-04.jpg",
       "sha256": "F0C8198E339E7D245FDE961485B0305EAC09C5ADD322DD89869D3F284C00BECF",
       "size": 21326,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P23-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P23-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P23-05.jpg",
       "sha256": "842B18F79D815808B035DFCF2910A608CE8E74571F9CE4D38A386181D2A84E18",
       "size": 38266,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P23-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P23-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P23-06.jpg",
       "sha256": "DCD96D4B3B5CC4A38703446E43CBCFF7C843507B72D6D1475BE46982EDF41798",
       "size": 33151,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P24-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P24-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P24-01.jpg",
       "sha256": "7C13EB35F8EC00CFDDF4255D2E826B7F0566DDEF2A6210CE95C1473AF7156622",
       "size": 21575,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P24-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P24-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P24-02.jpg",
       "sha256": "3F6EB9DACF8BFA77E0A7B39372E36251C859DAE83598BA3240D182137B97008A",
       "size": 25487,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P24-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P24-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P24-03.jpg",
       "sha256": "7774B516479CA5FA3822D59535FA631E003C6606240A7E84F6FE15AE3E485377",
       "size": 25349,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P24-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P24-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P24-04.jpg",
       "sha256": "924B2DB89F3EF0F87C164D54E82E77040C7D4E58FD50DD0BA30EA3FBF1F92C99",
       "size": 23092,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P24-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P24-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P24-05.jpg",
       "sha256": "60F4A7C621AF29D2493766D42EF7698085A3E2DA6F6E7805AF64EF770E514A83",
       "size": 22233,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P24-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P24-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P24-06.jpg",
       "sha256": "DD4080668ADAFEBFDE450310D4952FF1E6B68CC931B4A49730D0266DD8902DE0",
       "size": 23354,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P25-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P25-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P25-01.jpg",
       "sha256": "B6C423B9FB95B2C54F1E6B22EFE05B337C0A7EEB5EB3DDE573E062DBC9ADE6CE",
       "size": 24007,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P25-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P25-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P25-02.jpg",
       "sha256": "2BF43BCA106735B0E7D2B353212DF7EB58D8148025116128198BCA57E2DE9637",
       "size": 24809,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P25-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P25-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P25-03.jpg",
       "sha256": "C979E4A2B45C3D2B6AFD0C5872BB76A0A6F690C265FF76148799810FD34C4E08",
       "size": 23397,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P25-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P25-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P25-04.jpg",
       "sha256": "AA5770B1F1AC0FC2F6BB0CC5CEE5926234BB227B54E7DAA2B590B05391D87051",
       "size": 27936,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P25-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P25-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P25-05.jpg",
       "sha256": "5388444EFCF6EED00CAC2F2C9B1BC2BD6C82A07138B1232EFA91214A788C665B",
       "size": 23831,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P25-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P25-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P25-06.jpg",
       "sha256": "D74BF8C8E2A5AE265575D6C754BF14D585AD7A589A30FF1886817C2633DE30BC",
       "size": 28372,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P26-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P26-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P26-01.jpg",
       "sha256": "BEE650A00D9254013C0FB098C813BBB8332E84CB0112F5C64B9845819B07DF16",
       "size": 23907,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P26-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P26-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P26-02.jpg",
       "sha256": "FA9746643FDAD5B25532986ABB34147F13F4E2AF97DBED43BC9008E6B83A3BAC",
       "size": 29893,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P26-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P26-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P26-03.jpg",
       "sha256": "27EFB24E3F994F89BA48AA7C7BCC821DE264D4EEC050054125A9EE88D4C5748B",
       "size": 18579,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P26-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P26-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P26-04.jpg",
       "sha256": "E2C4FEF398F904897AACDC6D7A7477349C98F7DC06E1F4798988F4023D3E24E4",
       "size": 29352,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P26-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P26-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P26-05.jpg",
       "sha256": "FF41AAA5199A793C3D86EE0FE4F5E4D0113158A9C04B189BD0E17BF168954AE6",
       "size": 26210,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P26-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P26-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P26-06.jpg",
       "sha256": "51C9080AE83CCA05EB2230247CB66BA2B47B80F42B47B7DBD00D9034B5EA1610",
       "size": 21644,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P27-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P27-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P27-01.jpg",
       "sha256": "4138EDF6687217B2EB11272330DEF3E5BC6C798542AC61727F6066FADFAF2211",
       "size": 29811,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P27-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P27-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P27-02.jpg",
       "sha256": "69C107179CF33577AFDED0016733103A1B2D2AF52052505E0213097EBBD6B4A5",
       "size": 27646,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P27-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P27-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P27-03.jpg",
       "sha256": "5CD87BF0E64B3DDE1D96A07592E6CBFF38A023D75D168D7F5273257D0C451138",
       "size": 22678,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P27-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P27-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P27-04.jpg",
       "sha256": "02FDFC9F347574109682F8597DA0FB8CA172C6D34B033BE841E566CC3805FF80",
       "size": 24403,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P27-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P27-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P27-05.jpg",
       "sha256": "01478BC96CB1643B16893571A7B19C239474B02616A4E150F475A631F0B76156",
       "size": 26697,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P27-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P27-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P27-06.jpg",
       "sha256": "FAADD6CFDC2A6CF719834F36C8B7023B3582A038AD480D6A5085F37E9DA147D0",
       "size": 26205,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P28-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P28-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P28-01.jpg",
       "sha256": "38BA9555666AC1B609DC89A89FD410C3457E9DFF09C8348DAE9F2C804B6B3707",
       "size": 29358,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P28-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P28-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P28-02.jpg",
       "sha256": "F570282157104BB8EF3BE025FC7D13000A074C3689991FB01592D05ED19A3DD8",
       "size": 33546,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P28-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P28-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P28-03.jpg",
       "sha256": "60180F8D5621DE5628D33D02EDB2341F6F2BC7B8302000B134F3B48752BC6273",
       "size": 33465,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P28-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P28-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P28-04.jpg",
       "sha256": "761504F0B5E33735BAAC08CAE77625B7393AC283546FA8DE5F2FE9EDC6AFDA8D",
       "size": 25882,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P28-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P28-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P28-05.jpg",
       "sha256": "482C00BB6A13CFE15AF52B4C3E7BFDB0D7997FFA6EEC2B08AA853ED2728AF2F2",
       "size": 28250,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P28-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P28-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P28-06.jpg",
       "sha256": "E75990C4FB95DF619082EA477A49F4A84D5E4729CB684896AAFA3902A28E6B3E",
       "size": 31352,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P29-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P29-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P29-01.jpg",
       "sha256": "7457890CBC293A765755716BB9FC6B056DB0759EAA0C5EBD4CE8AABB206B9BF6",
       "size": 25296,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P29-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P29-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P29-02.jpg",
       "sha256": "D68E123739CFBE64A0487F3275AD3DB256BE450E9665640B375FFE8C7BEC49C2",
       "size": 40760,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P29-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P29-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P29-03.jpg",
       "sha256": "AEC1732162BF4AAA6C6FD5C530140D55A3E32AC7480D98C7FD2572E6F74F8C71",
       "size": 27550,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P29-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P29-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P29-04.jpg",
       "sha256": "B494BD1E67A8D6C779E0E60CD588AC49308BEE44EA871701029305C2507AB447",
       "size": 24354,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P29-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P29-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P29-05.jpg",
       "sha256": "C0C6933ED667FC5DE45473BA2A132A4631DF5C8921E48401CF7FA709D31F8E20",
       "size": 32854,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P29-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P29-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P29-06.jpg",
       "sha256": "4870FC8089A5C0E270FEFAE308B9F763AA5A0C97065454124BCB37634034E48F",
       "size": 44348,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P30-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P30-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P30-01.jpg",
       "sha256": "354AFEC1D5E75E057046493E426A665036EC1ADE1C2DCFBD96D23925CCEB9947",
       "size": 30059,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P30-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P30-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P30-02.jpg",
       "sha256": "65B87FB5BEAB337EADDDCC38155E09308C9058AC67956F564DB1A9693F8EE767",
       "size": 25860,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P30-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P30-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P30-03.jpg",
       "sha256": "1674243A712FBFC306F3FAA45AF097E9E5138542D0261AB5CA02046C50D6449C",
       "size": 37168,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P30-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P30-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P30-04.jpg",
       "sha256": "3BB5C27F8FC131C2E4C27D7741F3CD88ADBA3B51BAB7BA79FBFEEB8D45197808",
       "size": 47504,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P30-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P30-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P30-05.jpg",
       "sha256": "591D0A1E1E64043C68512F641607FD051401352B0054C4E26DFA144734F5B5FE",
       "size": 27701,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P30-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P30-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P30-06.jpg",
       "sha256": "68DEB968AB288CEEDC652601B806F3330F80E49D689ED65108914E5FE48E2143",
       "size": 43513,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P31-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P31-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P31-01.jpg",
       "sha256": "8E86821DC9D72C82C851CBDC7EF451655EBFFC0B92881A07ED02A625EBF66A54",
       "size": 29562,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P31-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P31-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P31-02.jpg",
       "sha256": "36015991B4714BFB5913836EA90D8389E1F5B0A7C1EE27B1AF7767CBEBABEDB1",
       "size": 35269,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P31-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P31-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P31-03.jpg",
       "sha256": "E4E956FB20F4E0D3812A0BB2DA7D356BFE812C0AC96BE42BCA8F056E1C1E7F15",
       "size": 35056,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P31-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P31-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P31-04.jpg",
       "sha256": "7D9F493619F106139010CA615AE97BE52849ECF811F9B7F14A0515BF5775DC1C",
       "size": 33939,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P31-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P31-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P31-05.jpg",
       "sha256": "E45141955C8483A382A4A119A0D656C944CABFE002CE7BB1B5C17316DE0BF681",
       "size": 26892,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P31-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P31-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P31-06.jpg",
       "sha256": "286069A675BCB81C28A1666756FD5C01736569E77698FE37C4D416FFB33A3775",
       "size": 25001,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P32-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P32-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P32-01.jpg",
       "sha256": "A9337F3669F2A1C2C3912CDBE3C36CF59FE872404BB77E2F1BA07A67C5B28507",
       "size": 23487,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P32-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P32-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P32-02.jpg",
       "sha256": "5ED7222343F221306C04D2147E42F58715C5B44675FED47C07BFD4FF3D1232F0",
       "size": 22531,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P32-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P32-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P32-03.jpg",
       "sha256": "AFE3E141E62FE63F51972EF3FC38B07A9C94A3F55BA68F1D7E8EDF65CAD70FFF",
       "size": 34959,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P32-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P32-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P32-04.jpg",
       "sha256": "D4FAB224567BC7AC0A8010E8A1466FD8F76F06688453B902823783653E066CD6",
       "size": 30171,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P32-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P32-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P32-05.jpg",
       "sha256": "169E124CD4798E3D59F90BDCC8E4579F2683F954DB86B255F1AA01261783BED4",
       "size": 31632,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P32-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P32-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P32-06.jpg",
       "sha256": "75D73BABDD9C06C1920BB9B0F3DB82F833834D3D57E8856C110ADFB6A3B4C9ED",
       "size": 26088,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P33-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P33-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P33-01.jpg",
       "sha256": "8D9514C4C3C5228E5E55818912EA42CC9E3A880BC7A3AAE7FBE63B29DACC1F6B",
       "size": 29020,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P33-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P33-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P33-02.jpg",
       "sha256": "DEE79FA5199716A82C148B6750F05397052605F4F972F3B852A3496EF52D6C46",
       "size": 30067,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P33-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P33-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P33-03.jpg",
       "sha256": "DE6A90C5EB9FD55F49C1AB46B0A21A8DDEB02D82B659D24D2319112EFB2C3FCE",
       "size": 32569,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P33-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P33-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P33-04.jpg",
       "sha256": "64941E2A108AA512F252B48DA4F8FFC3802E17D0DB2B9AB88C1F1485CB79D2A3",
       "size": 25074,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P33-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P33-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P33-05.jpg",
       "sha256": "45C766CAA73B9DA5D0545CCEE87F3F7CFCF4B1AAD970D2A064B2CD999E0A38EE",
       "size": 26216,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P33-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P33-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P33-06.jpg",
       "sha256": "D65AC545EC67D2E02837BA3F978AB5B51B7E32B8C5FCE0AA8664948B51E56E76",
       "size": 22574,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P34-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P34-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P34-01.jpg",
       "sha256": "68FBDC5D17877ECBF7E55EA9AA5DBDA4751401CC4099CC120181B10E9E0594D5",
       "size": 19331,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P34-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P34-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P34-02.jpg",
       "sha256": "45933B2F9E25ACD709B3842E7FEBAAE5E8F1F44173B567F14D2ABD46767F7813",
       "size": 37084,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P34-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P34-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P34-03.jpg",
       "sha256": "E4CD46B61788852B96CF047F6510D0BF1E66557299F0ACF7E518908110581B60",
       "size": 25481,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P34-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P34-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P34-04.jpg",
       "sha256": "54749ADDC3F91F6BF758ABED9358903FA133B944F2E773E538B150913BF88B07",
       "size": 27173,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P34-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P34-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P34-05.jpg",
       "sha256": "DBE79AAC2CA6737ABE9A2ADF72E632D7DD8CC57F85078304C9175E9D035BB8CA",
       "size": 28602,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P34-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P34-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P34-06.jpg",
       "sha256": "0ECC6ADFB4170F91B51490886EC03F67CF3C8F72D4103ED62463392E920CA663",
       "size": 35921,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P35-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P35-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P35-01.jpg",
       "sha256": "33DB5449D862B5235153AC9C635383E0FEF264FCC84CABD97207F8212CB47159",
       "size": 28481,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P35-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P35-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P35-02.jpg",
       "sha256": "275BF4059DE36CEA94133D565DB1CCA00CA62723208F78D7E2C5A588B298325C",
       "size": 30417,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P35-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P35-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P35-03.jpg",
       "sha256": "E6F0E3C366D20DBC59A602E4E21B31A63ED5259E308327344017ECE37105C91A",
       "size": 23076,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P35-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P35-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P35-04.jpg",
       "sha256": "EB771A1B9A001207666A76C5536A04FC6A8B8A7893972A0A7F4FF769CEC79801",
       "size": 23686,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P35-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P35-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P35-05.jpg",
       "sha256": "A111C01F62B914BFC9893DFEBDC3F91EFE982D0F2D1098AA34BC40116CFC7636",
       "size": 21093,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P35-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P35-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P35-06.jpg",
       "sha256": "C602DB3762E14D079927CCD4A7F731AB3767429F734773C26DC99BE459CA143A",
       "size": 22068,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P36-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P36-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P36-01.jpg",
       "sha256": "07546B3839F0C5698397C8D8A146F34411BBA379C411D11C2D1AD35DEDE78D0C",
       "size": 32687,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P36-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P36-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P36-02.jpg",
       "sha256": "08EA7A77D49C1A109378386AC87157C11A973B8E7D9A41C12FF0A3BFB6EBDC93",
       "size": 21186,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P36-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P36-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P36-03.jpg",
       "sha256": "8FE74C812FCE4B6A4D1F4B8AED701C1309B36CBD730C40FAA149B9271C58E538",
       "size": 22637,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P36-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P36-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P36-04.jpg",
       "sha256": "0E885EDC5F57A12EC7D4BA9D8A6277A859915AB9DE2ACBD747C0534729BBA058",
       "size": 42490,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P36-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P36-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P36-05.jpg",
       "sha256": "7A3FF2ECF7666FBF8C2E5120282C9DCCBD699C44932BB3BBB5FCC6AD9BB3100C",
       "size": 18469,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P36-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P36-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P36-06.jpg",
       "sha256": "006BAFE346DFE4F7808526EDB71066E375AE224E3EEFBE9F4F7B2237BD825260",
       "size": 21941,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P37-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P37-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P37-01.jpg",
       "sha256": "D164687D533C12925CB1788A19846BFEE2B2D523629B2640AFF2C80079DE1228",
       "size": 18627,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P37-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P37-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P37-02.jpg",
       "sha256": "ECE9F0C1F382118DB8986F7A789E9FD25145BE32E72E5B02C6BE039DAED074C8",
       "size": 20594,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P37-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P37-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P37-03.jpg",
       "sha256": "F507EB766E3C95B396AFA9B998F11D3BDFE0D056F778B291F67CD5FD6094EC91",
       "size": 21955,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P37-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P37-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P37-04.jpg",
       "sha256": "91B56D03C2D64B438F16F1461673D959943EDD289504D602138E4170092C69B7",
       "size": 28766,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P37-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P37-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P37-05.jpg",
       "sha256": "F84DB175CCA01651F575D278D41C060088095085455C9D859F60F873B52F40D0",
       "size": 30373,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P37-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P37-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P37-06.jpg",
       "sha256": "C8A0739A6E11A7FA0D4B6AB4277EFE2F1EF7C99DE6CF42E8CC2EE24D0F023F0F",
       "size": 43635,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P38-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P38-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P38-01.jpg",
       "sha256": "63BAC8D974C3D3C5C09303770A9F1CBE20CFC710BAE256FE443BF27769D9C495",
       "size": 26424,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P38-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P38-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P38-02.jpg",
       "sha256": "D5802F9ECE13A7E41EAE831D18CF18909C7DD015BE9338D09A3CB6F8AD43DB7B",
       "size": 24155,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P38-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P38-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P38-03.jpg",
       "sha256": "B6F93FFCE90189DB5DEE8CE9F47EA8609E5B7D1C68C3A4C09883BBE23AE62B3F",
       "size": 30504,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P38-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P38-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P38-04.jpg",
       "sha256": "4BBAB356CA00A7E7656A512979149E60058EB56EFC013910927B161DB729D676",
       "size": 26003,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P38-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P38-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P38-05.jpg",
       "sha256": "AE165677761057771E657852830CADE8A80386593D37190ED62331BE0454CCBA",
       "size": 35571,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P38-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P38-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P38-06.jpg",
       "sha256": "29A9C3DE134BEB6901314F67E2273CAE2EE3805B7CA07035227009F13A29AA2D",
       "size": 25172,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P39-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P39-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P39-01.jpg",
       "sha256": "251A21B5CE08CC0ECD80E9A58CB8E19C14C786167E444732644D74E6CC1C392D",
       "size": 36765,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P39-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P39-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P39-02.jpg",
       "sha256": "1B41DCB98285DC4B07E2F99094915D708E40F3DB7D10E88593866FC7893F8575",
       "size": 25804,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P39-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P39-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P39-03.jpg",
       "sha256": "B657C0160B5906AFF98044651CA86425F3556DF88593DA5A0FBD33204EE93226",
       "size": 30767,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P39-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P39-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P39-04.jpg",
       "sha256": "D7C535134AB61A0A6D8AC2883764216AA44672A388A941EE881F2CEB871EE9E5",
       "size": 35102,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P39-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P39-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P39-05.jpg",
       "sha256": "964574CBCA8F2CF3F306639C7CE730113904C9ABDCC2DF70FC0432740521E51C",
       "size": 32049,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P39-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P39-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P39-06.jpg",
       "sha256": "8AD3D190319510B3B5B0759D9A064CBDD843E8BA209214F50C9C1CE4619A47A8",
       "size": 33865,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P40-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P40-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P40-01.jpg",
       "sha256": "98A850CB2B174E2C401D01903C846D3535286CFFB6E2AAE2DDF269654A65B6E0",
       "size": 21758,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P40-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P40-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P40-02.jpg",
       "sha256": "90D6D0B14401F2890978C957CEFA25061638DC2563B32A600E0ACB5A4458B8C3",
       "size": 18460,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P40-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P40-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P40-03.jpg",
       "sha256": "8BCC36C0F9F5D7C97365AE53DEA690ABA55E772819669792FF997990F318A930",
       "size": 19246,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P40-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P40-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P40-04.jpg",
       "sha256": "DA52D9626DCF01F0ED40B6E91BF0B9651AA43F5D85871A98CD6B497FAA8E7850",
       "size": 18443,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P40-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P40-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P40-05.jpg",
       "sha256": "25AE9069A964C3A949BE6733EF2206A5E71B52AED41667EE379920FA69E364F5",
       "size": 21280,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P40-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P40-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P40-06.jpg",
       "sha256": "B07B2F1265EC87BCDD51DA247C54DBE30C1B366E6D0211CFB25B5C8777BE3DA1",
       "size": 20489,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P41-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P41-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P41-01.jpg",
       "sha256": "3887F422DC661C30E01F9019A2DCAECA8B6199A0A8DA51876967920731F30672",
       "size": 26090,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P41-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P41-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P41-02.jpg",
       "sha256": "6369B73D202C89670FB952D3558676CD681DB9CF927AC7456312BE8639C5F9A9",
       "size": 28438,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P41-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P41-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P41-03.jpg",
       "sha256": "2DCC6EE0AE2E847E67674EFE537E60065FC6805393D24EA14E0C50A3177E5D3B",
       "size": 24235,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P41-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P41-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P41-04.jpg",
       "sha256": "3CCE1A87402C1EAE81AC3F3B608A96B77C4358657EEA98CDB2FC99262FAE176E",
       "size": 25990,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P41-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P41-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P41-05.jpg",
       "sha256": "5B6963149CF62FD24A2E4CA44C5327E3F9621025A8D3787C8CFA277AF67FAF44",
       "size": 27492,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P41-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P41-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P41-06.jpg",
       "sha256": "BA11D267672540A8A50610F803D9FFF7385EC304742FC2E88546A731A022ED0F",
       "size": 23206,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P42-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P42-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P42-01.jpg",
       "sha256": "01AE9674C794716D81FDF5CDFB47C11568659146D8147215DBA9913E1865D12A",
       "size": 27701,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P42-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P42-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P42-02.jpg",
       "sha256": "D6FCB1B1F005944917AB66F29B98294D0B149A7E9AF84E527C68074BD2E76156",
       "size": 26537,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P42-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P42-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P42-03.jpg",
       "sha256": "FC03059EBED12A659113F8A530504C71F0AD75A9F8CE6556E544AE3C82B61E3C",
       "size": 26908,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P42-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P42-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P42-04.jpg",
       "sha256": "9B9D6542951FDDED87AFE190CA1E840D960A7C81891C3E45026936BB81BC1974",
       "size": 20930,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P42-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P42-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P42-05.jpg",
       "sha256": "F4ED911E62841C0F1E40821921AE191580F2DFC442CB269A7E2616C92D20930A",
       "size": 22658,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P42-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P42-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P42-06.jpg",
       "sha256": "6C818FDFA3B01226432CD52F5403ABCE0B0C3BBB5D1E4BD288F0A3DE06D47513",
       "size": 26567,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P43-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P43-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P43-01.jpg",
       "sha256": "9FFBF0C7691B9E4DB0B056A8660DA4F5C8EF037486283B24D364278FEA41504B",
       "size": 20777,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P43-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P43-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P43-02.jpg",
       "sha256": "374A1BA34DE6405A350E0A3BE588910347D16A692069B98386EE7E2D912171EB",
       "size": 21965,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P43-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P43-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P43-03.jpg",
       "sha256": "F8892B4F0F3E74AC7A8B9E63372FFA9858004F793BAF71625265C8F0E8E64D68",
       "size": 24347,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P43-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P43-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P43-04.jpg",
       "sha256": "9D2D16BDD15C1D103E7676DBC280937543A2D3589EA0FC7949C672D2A1704E4F",
       "size": 19155,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P43-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P43-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P43-05.jpg",
       "sha256": "2DE5EDEC87341F2824D2AE1087BFB92F86CD0743A5441BE98E948B01EFB5A24E",
       "size": 20035,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P43-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P43-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P43-06.jpg",
       "sha256": "9DF30B0BECBC60800882D2AF2BC0E6ED83F92FFD6911358F4E4BE856389EF4BB",
       "size": 24519,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P44-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P44-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P44-01.jpg",
       "sha256": "C400741DAF990E3B5A1F6CF611439AF306CAC17DB6C8D1B21445A8AA7CCB7A4D",
       "size": 32360,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P44-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P44-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P44-02.jpg",
       "sha256": "DAB5D3BE989C8876F535F4760956310CEB7540C95EBD89E456FB4A57D7F9A607",
       "size": 24876,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P44-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P44-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P44-03.jpg",
       "sha256": "8134251CD40E10063E874C08A7E8F03CF7A2359AB322060E9F6CA34E803ED640",
       "size": 29043,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P44-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P44-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P44-04.jpg",
       "sha256": "AA4312D196E764FC11E79340815C1E77244D9563B24EAB7748CBF4F29F90FC48",
       "size": 25311,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P44-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P44-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P44-05.jpg",
       "sha256": "B5C9AC1FA32F3634A5EBAD9796E2A2F71557869136D91F19926D4E89B64B27DF",
       "size": 27994,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P44-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P44-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P44-06.jpg",
       "sha256": "06C7309C01DAF534CEADF355B18141449EDEE126DE2393E0FA1D1EF76CE7D876",
       "size": 28737,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P45-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P45-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P45-01.jpg",
       "sha256": "1D13AD089B7709B45C05BE1FBB0DD9873BAF16CDB1961CA4DBD5DC6D10A29BA7",
       "size": 26406,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P45-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P45-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P45-02.jpg",
       "sha256": "AA57610D076FC11ACA72F1D0DF2D1835351FB10FEE24F1B67C332C92B66F2E5B",
       "size": 28672,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P45-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P45-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P45-03.jpg",
       "sha256": "EF74832CBAECC5E75207884FE4D39D455D560017C3AF54F83CB5921151306C96",
       "size": 28822,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P45-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P45-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P45-04.jpg",
       "sha256": "398E8A4E34362F01666D2D3FA454A38906DAF44BB594441E5E1782AB8335A7C3",
       "size": 26689,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P45-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P45-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P45-05.jpg",
       "sha256": "61B2B8517942FB3802BFE8261432653A3EAB640B767E769043837F36BB1A035A",
       "size": 28558,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P45-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P45-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P45-06.jpg",
       "sha256": "2907FEE228C444B6ED9214D4D8AC77F16C99E7083B399616F2E0992E56BAC7C4",
       "size": 49126,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P46-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P46-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P46-01.jpg",
       "sha256": "0C93616A6D0914F39E1747D6D5E5F94F738E87946E4BDEE9E5786B25440B89F3",
       "size": 23262,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P46-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P46-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P46-02.jpg",
       "sha256": "578CFCEC801B0AE8827C93F7457334946D8B8C65DE3D355F78B687E440E18D6B",
       "size": 26194,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P46-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P46-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P46-03.jpg",
       "sha256": "5CB8AECFC7AD6D11B4E652D8C10C798A2BC42C933CBCDF93D48230A2B8504BEC",
       "size": 19920,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P46-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P46-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P46-04.jpg",
       "sha256": "5BFB9505ABDED948875E0EA13F38CCDFC41588059F4EBC3FBE5894FD2807F96F",
       "size": 22830,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P46-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P46-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P46-05.jpg",
       "sha256": "4D366A5D05DED02363AF96CE46B87EEE99C59F36E52A280CC3AD4583B612C274",
       "size": 18499,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P46-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P46-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P46-06.jpg",
       "sha256": "548215DDF9321190E6AC0F475C26F7AF2A415048A5A4E9ACE585B04925579739",
       "size": 20831,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P47-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P47-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P47-01.jpg",
       "sha256": "68EA01A58BDB6FA83F13B723A35726E53932F5AC532E0EDD5B7DABAF346DE0ED",
       "size": 32257,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P47-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P47-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P47-02.jpg",
       "sha256": "627410778DF4879FC0EDD20A8CF21F48A0AB81E91ACF8F5ABFCB4D2AA89D0E68",
       "size": 29443,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P47-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P47-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P47-03.jpg",
       "sha256": "7283DEBC92F3AC9DD8E20E96BC1DB1CDBCE8AF0E35EBB46679DA30E8BC6F4FB5",
       "size": 21091,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P47-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P47-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P47-04.jpg",
       "sha256": "736B08470C81EFB52B689BC63ADD51D209CFC53CB511F60A5BF491B5FE800C34",
       "size": 22654,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P47-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P47-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P47-05.jpg",
       "sha256": "8898713BB84B1E6636E4BAABAE594E07B3133A19ADD68FB8ADC3C84ADD0FC357",
       "size": 32694,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P47-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P47-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P47-06.jpg",
       "sha256": "30B9AA2EF756A55074A9DFE90583D934B1335D7FEE1996FB6E5B7C6C4949016A",
       "size": 23777,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P48-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P48-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P48-01.jpg",
       "sha256": "92AAA8B6FC292F2D669A0FDF62DB71C98F28658A8FE853380ECED061D09D5674",
       "size": 28296,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P48-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P48-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P48-02.jpg",
       "sha256": "98CA89F8222D633E7D82257D43F91C857319AA91742895CB42E61895B628C9F8",
       "size": 23054,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P48-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P48-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P48-03.jpg",
       "sha256": "0240FBBC5C10DF6BB506CE4FC5B10E2717FF35BC319CB25346C710AD4675EDF6",
       "size": 26262,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P48-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P48-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P48-04.jpg",
       "sha256": "33DF6166B1896C5870188E93E46E348568B71B6F7A595100E73C4D127AF6F60F",
       "size": 22847,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P48-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P48-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P48-05.jpg",
       "sha256": "9846AB844E6248DE32B814DFA8C7C88A346A41E23764BA9802AD002700329D46",
       "size": 22986,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P48-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P48-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P48-06.jpg",
       "sha256": "BCD76D1086CAD62675CAB439506E238AA3C57C300BDDD93DFA9EB27D27D0D36D",
       "size": 25031,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P49-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P49-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P49-01.jpg",
       "sha256": "F7CF22587FA72F6E6962F5E595DF38FB0C7AB636FDCDE9F0CD66E244A4B125AD",
       "size": 26993,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P49-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P49-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P49-02.jpg",
       "sha256": "A413C8D90207C3090F0572BBA008F0A0EC657C38AC0C4CB38CD273B906C7FDE8",
       "size": 24642,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P49-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P49-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P49-03.jpg",
       "sha256": "ED3A0C9826873938A8BCE42866FD995F561323E59C05275DAF56706A5D245620",
       "size": 21111,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P49-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P49-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P49-04.jpg",
       "sha256": "BD063FC017B39C6AD6C2F9FE900D450939C8EE578CCC8B2528F8B1E76C3E5FA7",
       "size": 28767,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P49-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P49-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P49-05.jpg",
       "sha256": "4B7E51CDC857607BBF8840BF272334019420BAA4D1965471517BEDC1636BDEBF",
       "size": 20519,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P49-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P49-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P49-06.jpg",
       "sha256": "53D9BE41684B367DB1DE6CB140D4056D09DE5E257F35C47F770B0AE22A47FDA0",
       "size": 25478,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P50-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P50-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P50-01.jpg",
       "sha256": "86AFE8E40CCCC025188F1A2C1FC7367354D6901451CEB80E4E78D405429EA434",
       "size": 27232,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P50-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P50-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P50-02.jpg",
       "sha256": "03B1D30A7EF0972BADED6375EBECC16C4FB2C99667AB7B4B4D7E5783FFE1D92F",
       "size": 33884,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P50-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P50-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P50-03.jpg",
       "sha256": "D8238D14F5DDF8F12B39CD8ECB291C39E42DFDF87CD6F6E88D136095F5518F4B",
       "size": 45191,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P50-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P50-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P50-04.jpg",
       "sha256": "18073C15771AD0FE2A5A2D491504CF134281C0FD252C6F3703A912F58A9FCA9B",
       "size": 27097,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P50-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P50-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P50-05.jpg",
       "sha256": "204D78EB61A64DE7097F2939A3A6BFA7E88E7C41B137932261DC14080312A18A",
       "size": 35416,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P50-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P50-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P50-06.jpg",
       "sha256": "C5B6528C503CA0CD8C3D5CBAEF985F4467BBB0637315C2CF524E4FA4A3A690DE",
       "size": 32324,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P51-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P51-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P51-01.jpg",
       "sha256": "FD8CA57FB6B072DCF21681F7C49137ED2790733098601D98C79D9E6851A79E91",
       "size": 32688,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P51-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P51-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P51-02.jpg",
       "sha256": "00F3D7B33B8C580F0FFF286025A7949EB5959206C50429D885CC705F3018F45B",
       "size": 39756,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P51-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P51-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P51-03.jpg",
       "sha256": "D59DDFE6FBC6215BF163C7B97500380FE67897B38B11A4898FD7C46CC5973FAA",
       "size": 39183,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P51-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P51-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P51-04.jpg",
       "sha256": "A5345C2234EB0998308285D79D55BB673DBCFA4703366BF63AFB40A77342300F",
       "size": 39603,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P51-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P51-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P51-05.jpg",
       "sha256": "A7D27EB980D17FAAF0B58D9E1D398AF86283B1328C5F7B3F1F9BD80DC8A22216",
       "size": 41241,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P51-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P51-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P51-06.jpg",
       "sha256": "EBFC2F143DB0A16E592252AC2849854C6528E348A2B577A4705350AC0177ACAA",
       "size": 36599,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P52-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P52-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P52-01.jpg",
       "sha256": "E47EB2080B9B70E13DD3CB598E5163F1B9386FD96DB5E6DB136C68499546971D",
       "size": 43903,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P52-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P52-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P52-02.jpg",
       "sha256": "D760E79A1CD1A6C4BF682A378DA088C3B95BEE5A396C07A4ADC030D6EA4818E2",
       "size": 39897,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P52-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P52-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P52-03.jpg",
       "sha256": "EC5B9D9E351674F4399CA9E2261783BD0CA4153083A75C3C748FC0FC541E2EFD",
       "size": 37442,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P52-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P52-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P52-04.jpg",
       "sha256": "E51908D234ABE6A9BF922CD454C4A2AF722272C540ABB97313C6C903AD563E4F",
       "size": 44519,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P52-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P52-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P52-05.jpg",
       "sha256": "2BC00D2C842F939206B6213A78E0C346214F8BFC529CF98257B2B5A76627578F",
       "size": 42172,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P52-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P52-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P52-06.jpg",
       "sha256": "090D6C8178AF61B199886275C7F7CC9E88541D907A87C92BA2D63EB8130DBCAB",
       "size": 32917,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P53-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P53-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P53-01.jpg",
       "sha256": "0C2E1568F5F468FC6EA5828CFD6016C13C2FC193061FB38C0CCD32D45F9B609D",
       "size": 42096,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P53-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P53-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P53-02.jpg",
       "sha256": "E2FA501F09DBD2175C971227B88F4149B28A7EA4F91C8282472FBA0AEFFCB615",
       "size": 40565,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P53-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P53-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P53-03.jpg",
       "sha256": "704F9A9DC8C73C512A1D8BCCE3CE2D14FD836068808B031909072CD4C777E774",
       "size": 35831,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P53-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P53-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P53-04.jpg",
       "sha256": "F381DF48C3A6E396ACAC590D6633A758FAEF8130A7A5E9A6604C208E3F6B254F",
       "size": 38324,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P53-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P53-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P53-05.jpg",
       "sha256": "AF53E0DD6C291A295783D3B56E3E2BD7F0B8CBE88C000707E045A19B74CCF9AC",
       "size": 40425,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P53-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P53-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P53-06.jpg",
       "sha256": "36A504FFFAD6AB031FE66DD45171241F6485EDEFC62F1A5883B5A6E341904E14",
       "size": 39415,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P54-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P54-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P54-01.jpg",
       "sha256": "D287B3AF43C38CF55E8D36DB5F1AB7A4D987DD7D40E14BF8D75152B02FFAED8F",
       "size": 37995,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P54-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P54-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P54-02.jpg",
       "sha256": "70189DA1B380550B92162063CEB5115E7EDA99CC80582EE756732389AB1377F0",
       "size": 39729,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P54-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P54-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P54-03.jpg",
       "sha256": "EDA7AA760EC046BAFC98E48A5F2889518298919A4127E7766C14840BDD9313D8",
       "size": 40944,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P54-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P54-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P54-04.jpg",
       "sha256": "8544A77E939F1EDE8A27DEADF6EE630220947ACCB595A0FD51192B6218EF2201",
       "size": 41189,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P54-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P54-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P54-05.jpg",
       "sha256": "1E90093E95C564D07EC4BE6D8F1BD6897BDDCF6468A8F052EFBB72FCFF9C9EBF",
       "size": 17210,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P54-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P54-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P54-06.jpg",
       "sha256": "D5C73579C4DB4EDD7574AB452DBA4A0910B6F822AE89A587CEC8D44B4C5F09CA",
       "size": 38735,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P55-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P55-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P55-01.jpg",
       "sha256": "EF0FF88CE94BE08BAF163D699361EFFEB2E714495684B9D3D725450F9EBED4EB",
       "size": 27557,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P55-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P55-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P55-02.jpg",
       "sha256": "B49BC4D739CA6B5FF0F59F17E6A43030ECDACE3C6BF23FEF875EF1F26EBC80D6",
       "size": 36146,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P55-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P55-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P55-03.jpg",
       "sha256": "AFF85CB8CE58DD9E4D53D22EDA04D0374A0308307F755FF4C5F629FAF06B6033",
       "size": 30928,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P55-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P55-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P55-04.jpg",
       "sha256": "FEFDE013C1F2AA2B0264211696797D5D117746F69BEC427B01535DA17CDB2055",
       "size": 36653,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P55-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P55-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P55-05.jpg",
       "sha256": "4815059A87DD8F52A1E27525AB6BB3A54B2CD55CB1395999F399229944332FD3",
       "size": 33904,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P55-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P55-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P55-06.jpg",
       "sha256": "9ED5398874D561C49B8AC653FA65A832B717D030DF3EDA8DBA642871DD58B6DC",
       "size": 38798,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P56-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P56-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P56-01.jpg",
       "sha256": "0F0D47E40B28EF6F9101CFBF73DB5823DBFBFDC734674A6C6430F91E63049FCB",
       "size": 39273,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P56-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P56-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P56-02.jpg",
       "sha256": "876CFD4CFEE7A8809D08243512900C0EEB51DE59CEEACBC082C131141DD685E4",
       "size": 42457,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P56-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P56-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P56-03.jpg",
       "sha256": "02E1C8095DF0D2CAC909F368BC8BB65F605807EB92C12509426801D9CF10A5E3",
       "size": 38130,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P56-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P56-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P56-04.jpg",
       "sha256": "8976EB4FFEE34656C1321F75666813743096EBBC14BB5833CBBB693D57CA91D4",
       "size": 36257,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P56-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P56-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P56-05.jpg",
       "sha256": "FDF50983785CC60AFB402CC4EDD47B4B952E8B06B822B89D2385E3C0DF653C6C",
       "size": 36007,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P56-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P56-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P56-06.jpg",
       "sha256": "7D7CBF1775C3437A4AC936943B46548EB0F45E539548AB21252FF8CBDC44072F",
       "size": 35368,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P57-01.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P57-01.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P57-01.jpg",
       "sha256": "9790A71BD1478EBE4C8310E97810F1C828DB3AC0095C0917A532A9C38F99E2EC",
       "size": 37338,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P57-02.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P57-02.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P57-02.jpg",
       "sha256": "F266BB25DA03ABA50AFA50D96B7EC71310334386CDA67C3384EE7B97C29DEA65",
       "size": 36363,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P57-03.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P57-03.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P57-03.jpg",
       "sha256": "83710A8B6182BA1885BCDB5DA143A3DC2DBABE88FB83EA5CC1E9E72725528E79",
       "size": 37981,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P57-04.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P57-04.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P57-04.jpg",
       "sha256": "95F8D8A2197FCB8C35DDDD7601AFB1ABF873BFAAE04A0641A6875F20775CAB58",
       "size": 35262,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P57-05.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P57-05.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P57-05.jpg",
       "sha256": "A600A033291153258CD4E2F5BDA339A042430C3676F73B546437F27C78C2F263",
       "size": 28542,
       "contentType": "image/jpeg"
     },
     {
       "path": "assets/table-legs/LEG-P57-06.jpg",
-      "url": "patches/v1004-table-leg-local/assets/table-legs/LEG-P57-06.jpg",
+      "url": "patches/v1005-table-leg-hard-patch/assets/table-legs/LEG-P57-06.jpg",
       "sha256": "343E78BC8D2EF808C812A5BB20617B4A1A1549E9F9FB9F53B5EDE781601C7F88",
       "size": 30331,
       "contentType": "image/jpeg"
