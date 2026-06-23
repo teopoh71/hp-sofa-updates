@@ -880,7 +880,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [8800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM001.jpg?v=2",
+    photo: "assets/generated/zolano/CTM001.jpg?v=3",
     source: "user showroom photo / selling price"
   },
   {
@@ -897,7 +897,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [2200],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM002.jpg?v=2",
+    photo: "assets/generated/zolano/CTM002.jpg?v=3",
     source: "user showroom photo / selling price"
   },
   {
@@ -914,7 +914,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [8800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM003.jpg?v=2",
+    photo: "assets/generated/zolano/CTM003.jpg?v=3",
     source: "user showroom photo / selling price"
   },
   {
@@ -931,7 +931,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [3600],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM004.jpg?v=2",
+    photo: "assets/generated/zolano/CTM004.jpg?v=3",
     source: "user showroom photo / selling price"
   },
   {
@@ -948,7 +948,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [7800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM005.jpg?v=2",
+    photo: "assets/generated/zolano/CTM005.jpg?v=3",
     source: "user showroom photo / selling price"
   },
   {
@@ -965,7 +965,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [2380],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM006.jpg?v=2",
+    photo: "assets/generated/zolano/CTM006.jpg?v=3",
     source: "user showroom photo / selling price"
   },
   {
@@ -982,7 +982,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [8800],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM007.jpg?v=2",
+    photo: "assets/generated/zolano/CTM007.jpg?v=3",
     source: "user showroom photo / selling price"
   },
   {
@@ -999,7 +999,7 @@ const zolanoThreeDigitCatalog = [
     priceOptions: [4400],
     priceIsFinal: true,
     materials: ["Zolano"],
-    photo: "assets/generated/zolano/CTM008.jpg?v=2",
+    photo: "assets/generated/zolano/CTM008.jpg?v=3",
     source: "user showroom photo / selling price"
   }
 ];
