@@ -1,85 +1,62 @@
-﻿{
-    "patchVersionCode":  1018,
-    "patchVersionName":  "v1018-backup-entry-direct",
-    "minVersionCode":  0,
-    "createdAt":  "2026-06-23T09:39:24Z",
+{
+    "patchVersionCode":  1019,
+    "patchVersionName":  "v1019-coffee-table-category",
+    "generatedAt":  "2026-06-23T10:24:36.5485323Z",
     "files":  [
                   {
-                      "path":  "app-version.js",
-                      "url":  "patches/v1018-backup-entry-direct/app-version.js",
-                      "size":  428,
-                      "sha256":  "1371992cce0c554e69c6ba23d2c936c48e79912430a1393f7426404c80a11319",
-                      "contentType":  "text/javascript"
+                      "path":  "app.js",
+                      "sha256":  "91238a4d98d85dd4b660cbc25172f502f14354b1fbc69b02bfbdb17f9a700b49",
+                      "size":  331892
                   },
                   {
-                      "path":  "app.js",
-                      "url":  "patches/v1018-backup-entry-direct/app.js",
-                      "size":  331838,
-                      "sha256":  "fd80ffa311129c25f356bed6e865735fec5d3611c76fc56a76c957fc2c7dd3ee",
-                      "contentType":  "text/javascript"
+                      "path":  "app-version.js",
+                      "sha256":  "03fc5f7ecd7d51f716c60d3d562174364b15735b97e62dc9585bcdfa010f08ad",
+                      "size":  434
                   },
                   {
                       "path":  "index.html",
-                      "url":  "patches/v1018-backup-entry-direct/index.html",
-                      "size":  29074,
-                      "sha256":  "3266c6957b09a9ea5fc83b34c5bc397e477e34fa82a306e59a2a387f765a12d1",
-                      "contentType":  "text/html"
+                      "sha256":  "baeda8be979e907fa3fabf1c0e877b1832df7b276718495fd2560e7ac7728a1f",
+                      "size":  29076
                   },
                   {
                       "path":  "assets/generated/zolano/CTM001.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM001.jpg",
-                      "size":  65844,
                       "sha256":  "3a1182f4e4d2721672fb3a3c30c00f0d76ec9f96309664a78218bb1450d6b32d",
-                      "contentType":  "image/jpeg"
+                      "size":  65844
                   },
                   {
                       "path":  "assets/generated/zolano/CTM002.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM002.jpg",
-                      "size":  50043,
                       "sha256":  "9bd8b6dcee899cb49fa64c191e1e100ff9d3dab58c79410253932e40fb44ecab",
-                      "contentType":  "image/jpeg"
+                      "size":  50043
                   },
                   {
                       "path":  "assets/generated/zolano/CTM003.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM003.jpg",
-                      "size":  53908,
                       "sha256":  "a0b2b27b9d1bb8bad50c1351d1059fd622fffa28dba4482779176cbb2873cf48",
-                      "contentType":  "image/jpeg"
+                      "size":  53908
                   },
                   {
                       "path":  "assets/generated/zolano/CTM004.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM004.jpg",
-                      "size":  8741,
                       "sha256":  "164c7d4a015d0a4ac9aad41b83a52e88a3f02d69c0707b885295414d2881d410",
-                      "contentType":  "image/jpeg"
+                      "size":  8741
                   },
                   {
                       "path":  "assets/generated/zolano/CTM005.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM005.jpg",
-                      "size":  43370,
                       "sha256":  "43f4c1793b94c2cf6faa353bdfd4c4a475246439c889b4294603cf349cb3e2eb",
-                      "contentType":  "image/jpeg"
+                      "size":  43370
                   },
                   {
                       "path":  "assets/generated/zolano/CTM006.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM006.jpg",
-                      "size":  19207,
                       "sha256":  "ff6bfc799a8c53a175d5b370d4f081df3f100ec1d1b0334ec7731a055569bf1b",
-                      "contentType":  "image/jpeg"
+                      "size":  19207
                   },
                   {
                       "path":  "assets/generated/zolano/CTM007.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM007.jpg",
-                      "size":  51279,
                       "sha256":  "f16c7516e5c6df744a5a4c68063cbb271cf997015a43c7d604d08fdffcbe2888",
-                      "contentType":  "image/jpeg"
+                      "size":  51279
                   },
                   {
                       "path":  "assets/generated/zolano/CTM008.jpg",
-                      "url":  "patches/v1018-backup-entry-direct/assets/generated/zolano/CTM008.jpg",
-                      "size":  14148,
                       "sha256":  "b45ea219ee63f90a782ea68526817aea4655c61bd739c455f1618266246ba52c",
-                      "contentType":  "image/jpeg"
+                      "size":  14148
                   }
               ]
 }
