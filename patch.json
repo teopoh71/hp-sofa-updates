@@ -1,88 +1,88 @@
 {
-  "patchVersionCode": 1024,
-  "patchVersionName": "v1024-coffee-table-hard-fix",
-  "generatedAt": "2026-06-23T17:00:11Z",
+  "patchVersionCode": 1025,
+  "patchVersionName": "v1025-patch-cache-ui-fix",
+  "generatedAt": "2026-06-24T01:08:54Z",
   "files": [
     {
       "path": "app.js",
-      "url": "patches/v1024-coffee-table-hard-fix/app.js",
+      "url": "patches/v1025-patch-cache-ui-fix/app.js",
       "contentType": "text/javascript; charset=utf-8",
-      "size": 324688,
-      "sha256": "a5a234887caaac645dba29faf62f14bc06ef23d0af966c1600f892eec635c0c4"
+      "size": 324812,
+      "sha256": "8bb050a45f5d58925ce7173734c229cabb3349e80fbcbe0371be08295b01a27c"
     },
     {
       "path": "app-version.js",
-      "url": "patches/v1024-coffee-table-hard-fix/app-version.js",
+      "url": "patches/v1025-patch-cache-ui-fix/app-version.js",
       "contentType": "text/javascript; charset=utf-8",
-      "size": 423,
-      "sha256": "e179ae00544f565fc4ee238b2c4cd91f9e045e0d8570f90c7552e0f1e4c978f4"
+      "size": 417,
+      "sha256": "523bdd8703690b46a2b38cfccc8d91daba7998ba967b8e4733cc7d35f655e466"
     },
     {
       "path": "index.html",
-      "url": "patches/v1024-coffee-table-hard-fix/index.html",
+      "url": "patches/v1025-patch-cache-ui-fix/index.html",
       "contentType": "text/html; charset=utf-8",
-      "size": 28542,
-      "sha256": "c6b6e9c82c5cc54312b8cd594eba4dcab291ae91f087ac2717c92a9021dc4ce2"
+      "size": 28548,
+      "sha256": "86dd3d468d9e88c0c4b07dfea0c5b5416e91eb09faee3df21c5fe7d70a543372"
     },
     {
       "path": "styles.css",
-      "url": "patches/v1024-coffee-table-hard-fix/styles.css",
+      "url": "patches/v1025-patch-cache-ui-fix/styles.css",
       "contentType": "text/css; charset=utf-8",
       "size": 40407,
       "sha256": "2b22180cdb6fdd20bcdc0231a0540b8809cbb912617b1a9f4c812e1263cb602d"
     },
     {
       "path": "assets/generated/zolano/CTM001.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM001.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM001.jpg",
       "contentType": "image/jpeg",
       "size": 63155,
       "sha256": "13b116bc2a0f23b1cf9cca6667f09af64e27a9dcd5b1a5eb5dbde2df1f8b2287"
     },
     {
       "path": "assets/generated/zolano/CTM002.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM002.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM002.jpg",
       "contentType": "image/jpeg",
       "size": 36321,
       "sha256": "1c6c5cd3ea491bb7859655aad66fcf4c7958de766b854ac88cd20b2305a0bcc7"
     },
     {
       "path": "assets/generated/zolano/CTM003.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM003.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM003.jpg",
       "contentType": "image/jpeg",
       "size": 73566,
       "sha256": "be899a641d174c42a371f1cd69963eeaf9b5911bc1e1ac5d3d220c7cafd698a8"
     },
     {
       "path": "assets/generated/zolano/CTM004.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM004.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM004.jpg",
       "contentType": "image/jpeg",
       "size": 50226,
       "sha256": "87114cc0ec2cd5035af4e08cbe3e81127d2c2853124c487963593a1c261d2270"
     },
     {
       "path": "assets/generated/zolano/CTM005.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM005.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM005.jpg",
       "contentType": "image/jpeg",
       "size": 64062,
       "sha256": "a3809a473591956994f7ea468efb19f2129c3fe5d3f9175ff11aed8bd809cec6"
     },
     {
       "path": "assets/generated/zolano/CTM006.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM006.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM006.jpg",
       "contentType": "image/jpeg",
       "size": 23820,
       "sha256": "4649a55e188f6816dd5b0b3c49a4373e377b6b923b4975c11274ac7d408b03d3"
     },
     {
       "path": "assets/generated/zolano/CTM007.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM007.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM007.jpg",
       "contentType": "image/jpeg",
       "size": 32415,
       "sha256": "e403e1aba85407b759ed196a78bb5dc67191bc8345c00dc7747c96cd184416ba"
     },
     {
       "path": "assets/generated/zolano/CTM008.jpg",
-      "url": "patches/v1024-coffee-table-hard-fix/assets/generated/zolano/CTM008.jpg",
+      "url": "patches/v1025-patch-cache-ui-fix/assets/generated/zolano/CTM008.jpg",
       "contentType": "image/jpeg",
       "size": 44940,
       "sha256": "dcd783ee292203d125d8aab22be3661a3593480796fc5fd73d5d68edb8dcfc96"
