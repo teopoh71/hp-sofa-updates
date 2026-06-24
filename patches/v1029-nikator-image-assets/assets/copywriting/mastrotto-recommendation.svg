@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1780" viewBox="0 0 900 1780">
+  <defs>
+    <style>
+      .bg{fill:#fff7eb}
+      .dark{fill:#34423a}
+      .muted{fill:#67736b}
+      .white{fill:#fff}
+      .gold{stroke:#f0b74b}
+      .green{stroke:#2fa06a}
+      .blue{stroke:#1e76ca}
+      .box{fill:#fffef9;stroke-width:2}
+      .title{font:700 48px Arial,"Microsoft YaHei",sans-serif}
+      .h2{font:700 28px Arial,"Microsoft YaHei",sans-serif}
+      .body{font:500 22px Arial,"Microsoft YaHei",sans-serif}
+      .small{font:500 17px Arial,"Microsoft YaHei",sans-serif}
+      .label{font:700 18px Arial,"Microsoft YaHei",sans-serif}
+    </style>
+    <clipPath id="heroClip"><rect x="0" y="0" width="900" height="330"/></clipPath>
+    <clipPath id="photoClip"><rect x="60" y="600" width="360" height="230" rx="8"/></clipPath>
+  </defs>
+
+  <rect class="bg" width="900" height="1780"/>
+
+  <g clip-path="url(#heroClip)">
+    <image href="../generated/zolano-3digit/ZL725.jpg" x="250" y="-70" width="720" height="430" preserveAspectRatio="xMidYMid slice" opacity="0.82"/>
+    <rect width="900" height="330" fill="#251c16" opacity="0.72"/>
+  </g>
+  <text x="48" y="58" class="body white">GRUPPO MASTROTTO</text>
+  <text x="48" y="92" class="body white">x ZOLANO</text>
+  <text x="48" y="155" class="title white">Mastrotto 皮革推荐</text>
+  <text x="48" y="205" class="h2" fill="#f4dfbc">意大利皮革体系 / Zolano 明亮家居应用</text>
+  <text x="48" y="285" class="body white">Zolano 官方公开提到采用 Gruppo Mastrotto 意大利皮革。</text>
+
+  <rect x="35" y="300" width="830" height="315" rx="22" class="box gold"/>
+  <text x="65" y="350" class="h2 dark">为什么推荐 Mastrotto</text>
+  <circle cx="73" cy="395" r="6" fill="#3aa571"/><text x="95" y="404" class="body dark">1. Zolano 官方公开提到采用 Gruppo Mastrotto 意大利皮革。</text>
+  <circle cx="73" cy="438" r="6" fill="#3aa571"/><text x="95" y="447" class="body dark">2. Mastrotto 成立于 1958 年，属于意大利大型皮革集团。</text>
+  <circle cx="73" cy="481" r="6" fill="#f3a22b"/><text x="95" y="490" class="body dark">3. 官网公开信息：4,000+ 员工、16 个生产基地、110+ 国家销售。</text>
+  <circle cx="73" cy="524" r="6" fill="#3aa571"/><text x="95" y="533" class="body dark">4. 官方认证覆盖质量、环保、供应链安全、皮革安全。</text>
+  <circle cx="73" cy="567" r="6" fill="#3aa571"/><text x="95" y="576" class="body dark">5. 官方奖项包括可持续发展、家族企业与企业福利类奖项。</text>
+
+  <rect x="60" y="600" width="360" height="230" rx="8" class="box gold"/>
+  <image href="../generated/zolano-3digit/ZL725.jpg" x="60" y="600" width="360" height="230" preserveAspectRatio="xMidYMid meet" clip-path="url(#photoClip)"/>
+  <rect x="75" y="790" width="210" height="32" rx="10" fill="#fff7eb"/>
+  <text x="92" y="813" class="label" fill="#7b6b54">Zolano ZL 725 LAMOLE</text>
+
+  <rect x="480" y="600" width="360" height="230" rx="8" class="box green"/>
+  <text x="510" y="650" class="h2 dark">Mastrotto 官方背书点</text>
+  <text x="510" y="698" class="body dark">这张皮不只是好看，</text>
+  <text x="510" y="735" class="body dark">也有皮革来源、环保</text>
+  <text x="510" y="772" class="body dark">与安全认证背书。</text>
+
+  <rect x="35" y="865" width="830" height="160" rx="18" class="box green"/>
+  <text x="65" y="910" class="h2 dark">官方认证代表什么</text>
+  <g>
+    <rect x="65" y="940" width="140" height="55" rx="8" fill="#fff" stroke="#d8ded9"/><text x="88" y="975" class="label dark">金级 LWG</text>
+    <rect x="220" y="940" width="140" height="55" rx="8" fill="#fff" stroke="#d8ded9"/><text x="250" y="975" class="label dark">ISO 9001</text>
+    <rect x="375" y="940" width="140" height="55" rx="8" fill="#fff" stroke="#d8ded9"/><text x="420" y="975" class="label dark">TISAX</text>
+    <rect x="530" y="940" width="140" height="55" rx="8" fill="#fff" stroke="#1e76ca" stroke-width="3"/><text x="572" y="975" class="label dark">蓝天使</text>
+    <rect x="685" y="940" width="140" height="55" rx="8" fill="#fff" stroke="#8aa321" stroke-width="3"/><text x="730" y="975" class="label dark">USDA</text>
+  </g>
+
+  <rect x="35" y="1060" width="830" height="185" rx="18" class="box gold"/>
+  <text x="65" y="1105" class="h2 dark">奖项 / 认证重点</text>
+  <text x="65" y="1150" class="body dark">• 2025/2024 可持续发展领导者：ESG 环保、社会责任与公司治理获得认可。</text>
+  <text x="65" y="1190" class="body dark">• 2024 女性与时尚观察奖：女性关怀、家庭平衡与企业福利获得认可。</text>
+  <text x="65" y="1230" class="body dark">• Coach 曾授予 Mastrotto “最佳皮革供应商” 奖。</text>
+
+  <rect x="35" y="1280" width="830" height="180" rx="18" class="box blue"/>
+  <text x="65" y="1325" class="h2" fill="#164f94">蓝天使认证为什么重要</text>
+  <text x="65" y="1370" class="body dark">• 蓝天使是德国政府生态标签，重点看产品对环境影响是否更低。</text>
+  <text x="65" y="1410" class="body dark">• 它关注资源节约、生产过程环保，以及对人体健康的保护。</text>
+  <text x="65" y="1450" class="body dark">• 对客户来说，代表这张皮也有环保与安全背书。</text>
+
+  <rect x="35" y="1495" width="830" height="190" rx="18" class="box green"/>
+  <text x="65" y="1540" class="h2 dark">高端应用场景</text>
+  <text x="65" y="1585" class="body dark">• 官方应用覆盖：奢侈皮具/包装、家具沙发、汽车、航空与游艇内饰。</text>
+  <text x="65" y="1625" class="body dark">• 推荐表达：世界级意大利皮革集团，不只做沙发，</text>
+  <text x="65" y="1665" class="body dark">  也服务高端皮具、汽车与飞机内饰领域。</text>
+
+  <text x="50" y="1740" class="small muted">来源：Gruppo Mastrotto 官网 Awards / Certifications / Applications，Zolano Our Process，Zolano 产品图</text>
+</svg>
