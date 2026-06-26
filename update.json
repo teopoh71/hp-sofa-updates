@@ -1,11 +1,10 @@
-{
-  "versionCode": 1043,
-  "versionName": "v1043-gallery-in-apk",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1043-mobile.apk",
-  "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
-  "mandatory": false,
-  "notes": [
-    "v1043 includes sofa thumbnail/effect galleries in the APK and online patch.",
-    "Added 501 compressed effect photos plus existing entry/gallery photos without removing features."
-  ]
+﻿{
+    "versionCode":  1084,
+    "versionName":  "v1084-le8801-inline-lines",
+    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1084-mobile.apk",
+    "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
+    "mandatory":  false,
+    "notes":  [
+                  "v1084 fixes LE8801SF module line drawings and includes compressed photos in APK."
+              ]
 }
