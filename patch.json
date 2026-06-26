@@ -1,300 +1,44 @@
 ﻿{
-    "version":  "v1084-le8801-inline-lines",
-    "versionName":  "v1084-le8801-inline-lines",
-    "patchVersionCode":  1084,
-    "patchVersionName":  "v1084-le8801-inline-lines",
-    "generatedAt":  "2026-06-26T15:42:54.1778853Z",
+    "version":  "v1085-cancel-data-updater",
+    "versionName":  "v1085-cancel-data-updater",
+    "patchVersionCode":  1085,
+    "patchVersionName":  "v1085-cancel-data-updater",
+    "generatedAt":  "2026-06-26T23:25:59.6523401Z",
     "files":  [
                   {
+                      "path":  "index.html",
+                      "url":  "patches/v1085-cancel-data-updater/index.html",
+                      "size":  307583,
+                      "sha256":  "0cca1a3ccc525ca5008d944414f3c25ca9f3fdc4416418a33bd5e7208fbf7ba7",
+                      "contentType":  "text/html; charset=utf-8"
+                  },
+                  {
+                      "path":  "styles.css",
+                      "url":  "patches/v1085-cancel-data-updater/styles.css",
+                      "size":  45292,
+                      "sha256":  "82cba42b3e9059f4f05aa214aaa99d16d8020be2eb62b6653b0ba444242b3465",
+                      "contentType":  "text/css; charset=utf-8"
+                  },
+                  {
                       "path":  "app-version.js",
-                      "url":  "patches/v1084-le8801-inline-lines/app-version.js",
+                      "url":  "patches/v1085-cancel-data-updater/app-version.js",
                       "size":  478,
-                      "sha256":  "f47f31f71da9684ecd09837f35cfeb1e6c14c1be7984ba9883db1050d0ddad42",
+                      "sha256":  "b0899f43ddca60268c3b22dcb723f77e35a17b8a3f55783a27f43eaaaaa2eff0",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "patches/v1084-le8801-inline-lines/app.js",
-                      "size":  878560,
-                      "sha256":  "6df92ff12465bf83ed2a203582ee460dcc74c7678764360b44f547b2d11de404",
+                      "url":  "patches/v1085-cancel-data-updater/app.js",
+                      "size":  878938,
+                      "sha256":  "35a075f2accaa643f75dae930e318d2051853a58c0696894d63b0594bef46466",
                       "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "bed-data.js",
-                      "url":  "patches/v1084-le8801-inline-lines/bed-data.js",
-                      "size":  55258,
-                      "sha256":  "ccf82295733ac5b9832de26a080835547beb716fc910d90392c0c6016a0d9e80",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "chair-data.js",
-                      "url":  "patches/v1084-le8801-inline-lines/chair-data.js",
-                      "size":  24911,
-                      "sha256":  "9262385ede24113dca08470e3f14f83242eeb1f0e70388e0b3a7502ebd34da66",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "clearance-data.js",
-                      "url":  "patches/v1084-le8801-inline-lines/clearance-data.js",
-                      "size":  5212,
-                      "sha256":  "6fb3039ad266464187ec6555190c42238764937d778ab9788f974507a0d157ef",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "index.html",
-                      "url":  "patches/v1084-le8801-inline-lines/index.html",
-                      "size":  307580,
-                      "sha256":  "f6d4b68c3f9d63e1fa0ad8e3243b10d23b755ff2fd6d4691bc3760ead7cc6600",
-                      "contentType":  "text/html; charset=utf-8"
-                  },
-                  {
-                      "path":  "matching-data.js",
-                      "url":  "patches/v1084-le8801-inline-lines/matching-data.js",
-                      "size":  162437,
-                      "sha256":  "f0ef1dd0695a63baf1adfe07d913ddcf3d9bdaecdbbc7f354e1531414c7da124",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "mixed-material-pricing.js",
-                      "url":  "patches/v1084-le8801-inline-lines/mixed-material-pricing.js",
-                      "size":  1177,
-                      "sha256":  "48228249bac8aae66ede71ad78a9ee042849b970dd81619eadc47d4fbe17c217",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "sofa-data.js",
-                      "url":  "patches/v1084-le8801-inline-lines/sofa-data.js",
-                      "size":  499744,
-                      "sha256":  "2d9b5d038524f1071505ab5732d48c9bf8067d6656eb80d37e542aab207eb5b8",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "sofa-recommendations.js",
-                      "url":  "patches/v1084-le8801-inline-lines/sofa-recommendations.js",
-                      "size":  110197,
-                      "sha256":  "9cf3b6f25c12dd7f7d7a6ff53d0045084394ff065c0c7ff7a8b7d182b92bbfbd",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "styles.css",
-                      "url":  "patches/v1084-le8801-inline-lines/styles.css",
-                      "size":  45106,
-                      "sha256":  "0ea73598e6c173f7dd6b625c230bbb50b0a9c73909e000e0fa9af4719e0d9f5c",
-                      "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v1084-le8801-inline-lines/sw.js",
+                      "url":  "patches/v1085-cancel-data-updater/sw.js",
                       "size":  2388,
-                      "sha256":  "a8f018519cd1b86378e0857a2a6251bc47113c6efc94ff961d0fe839684b03ba",
+                      "sha256":  "c6608b14d9f1c0b6d9f15e95efec6b8f653ad7542257c04607375a5c8533cc34",
                       "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "table-leg-data.js",
-                      "url":  "patches/v1084-le8801-inline-lines/table-leg-data.js",
-                      "size":  47750,
-                      "sha256":  "28321cc64432d9cf2b6041422fd289b8fe82f655e9dbe547cd0b53fbdd512af3",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "zolano-3776-layout.js",
-                      "url":  "patches/v1084-le8801-inline-lines/zolano-3776-layout.js",
-                      "size":  850,
-                      "sha256":  "6f94dcfe62ab8a9cf7d8acf87e852374a2c4bd76a607714225dff9a0f84da3af",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "zolano-data.js",
-                      "url":  "patches/v1084-le8801-inline-lines/zolano-data.js",
-                      "size":  1367016,
-                      "sha256":  "42111e924b1663e47f06210398220d27944983b47f8c0310dc416a33831bc693",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "zolano-excel-price-overrides.js",
-                      "url":  "patches/v1084-le8801-inline-lines/zolano-excel-price-overrides.js",
-                      "size":  27181,
-                      "sha256":  "a63befdbd212ad2e796cb4ee524c5f6a372f07ee70b7aeea87a86f8c1bdd96ed",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "zolano-selling-overrides.js",
-                      "url":  "patches/v1084-le8801-inline-lines/zolano-selling-overrides.js",
-                      "size":  3252,
-                      "sha256":  "7c1c0c0baa6371db303cc51742f8f265480238866dcf1a7723e9c64a5565e4b4",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "zolano-visual-overrides.js",
-                      "url":  "patches/v1084-le8801-inline-lines/zolano-visual-overrides.js",
-                      "size":  22033,
-                      "sha256":  "bd34826c43eece8d415d3dc82f085c5c57d8e9e5ac33f29114c347b970d30cb4",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets\\ba34-effect-gallery.js",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\ba34-effect-gallery.js",
-                      "size":  27696,
-                      "sha256":  "dcb6ac38cc03e4dc042ed9f14a236365a4b010a38a180efb3a1a355e9ac8965c",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets\\entry-gallery.js",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\entry-gallery.js",
-                      "size":  32680,
-                      "sha256":  "cd20f41087ff73c2a1ea3c43086a29135f1ade8278d198b1cd8be0d8ac461066",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets\\individual-item-photos.js",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\individual-item-photos.js",
-                      "size":  47295,
-                      "sha256":  "ee5e80d47152d677830a3e6d84ef64f1366c6c75814d7590896f2b930ecd71f6",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets\\photo-gallery.js",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\photo-gallery.js",
-                      "size":  10471,
-                      "sha256":  "8d81cb3d111968ec1e7a51f89009e9c89d536bdd8578ee54216d180a8782f2b3",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets\\photo-overrides.js",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\photo-overrides.js",
-                      "size":  18753,
-                      "sha256":  "2b7c17b0d53edc77c1b0f5d0271ce840d96c77bfaa34c3940ee66e6fa07d40c0",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets\\sofa-asset-gallery.js",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofa-asset-gallery.js",
-                      "size":  74,
-                      "sha256":  "c3e43d6f7478614a63b87f49f05a6f9b59cd96877085a67fdf3f64db881f15ca",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row10_rId3.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row10_rId3.png",
-                      "size":  451,
-                      "sha256":  "c33d9493b50f43abc3fc05350b8c3a73bdba733a7b0ce52c9dbb6a85d957a7e4",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row11_rId4.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row11_rId4.png",
-                      "size":  385,
-                      "sha256":  "d1d436d2204c168ba150e9744d30cbac5e836789d3b1e644d3443d4628f7ae65",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row12_rId4.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row12_rId4.png",
-                      "size":  385,
-                      "sha256":  "d1d436d2204c168ba150e9744d30cbac5e836789d3b1e644d3443d4628f7ae65",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row13_rId5.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row13_rId5.png",
-                      "size":  388,
-                      "sha256":  "4d26b5e76b8def91d30d1db49ff37a4ea3ff9b0186ea3849c3e64d022c4ba1a1",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row14_rId6.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row14_rId6.png",
-                      "size":  391,
-                      "sha256":  "3d4ca2246720c32d6bb328f33e6b8b07a6053d793b7ab3de4cd534b64c59752f",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row15_rId7.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row15_rId7.png",
-                      "size":  366,
-                      "sha256":  "b12220491f8880751e645cf50aed34618a276671f708ff6b8c7b46eaf0cf6fae",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row16_rId14.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row16_rId14.png",
-                      "size":  2298,
-                      "sha256":  "b727b617be8991ab12d4b8b7164ffbc81423db50574cb20135b1e1f302da09a8",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row17_rId14.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row17_rId14.png",
-                      "size":  2298,
-                      "sha256":  "b727b617be8991ab12d4b8b7164ffbc81423db50574cb20135b1e1f302da09a8",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row18_rId8.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row18_rId8.png",
-                      "size":  233,
-                      "sha256":  "0a58624fa6061bd690fc2f3bf06a50a80c77574d7e293e05a161cc98f5dc24b2",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row19_rId8.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row19_rId8.png",
-                      "size":  233,
-                      "sha256":  "0a58624fa6061bd690fc2f3bf06a50a80c77574d7e293e05a161cc98f5dc24b2",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row20_rId8.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row20_rId8.png",
-                      "size":  233,
-                      "sha256":  "0a58624fa6061bd690fc2f3bf06a50a80c77574d7e293e05a161cc98f5dc24b2",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row21_rId5.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row21_rId5.png",
-                      "size":  388,
-                      "sha256":  "4d26b5e76b8def91d30d1db49ff37a4ea3ff9b0186ea3849c3e64d022c4ba1a1",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row22_rId5.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row22_rId5.png",
-                      "size":  388,
-                      "sha256":  "4d26b5e76b8def91d30d1db49ff37a4ea3ff9b0186ea3849c3e64d022c4ba1a1",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row6_rId1.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row6_rId1.png",
-                      "size":  454,
-                      "sha256":  "470a8cda7f0e1a2f0912ab4bfc7afba547c39397ef4575188d89e8abff51adc9",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row7_rId2.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row7_rId2.png",
-                      "size":  453,
-                      "sha256":  "b90b7f0d62a1db3fc8432a7b41102365728110f151e08907678e0ee18b7f269a",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row8_rId2.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row8_rId2.png",
-                      "size":  453,
-                      "sha256":  "b90b7f0d62a1db3fc8432a7b41102365728110f151e08907678e0ee18b7f269a",
-                      "contentType":  "image/png"
-                  },
-                  {
-                      "path":  "assets\\sofas\\LE_LE8801SF_row9_rId3.png",
-                      "url":  "patches/v1084-le8801-inline-lines/assets\\sofas\\LE_LE8801SF_row9_rId3.png",
-                      "size":  451,
-                      "sha256":  "c33d9493b50f43abc3fc05350b8c3a73bdba733a7b0ce52c9dbb6a85d957a7e4",
-                      "contentType":  "image/png"
                   }
-              ],
-    "totalSize":  3708347,
-    "notes":  [
-                  "v1084 fixes LE8801SF module line drawing picker and keeps normal Nikator/Zolano mode. APK includes compressed photo assets."
               ]
 }

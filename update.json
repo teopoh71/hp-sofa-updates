@@ -1,10 +1,10 @@
 ﻿{
-    "versionCode":  1084,
-    "versionName":  "v1084-le8801-inline-lines",
-    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1084-mobile.apk",
+    "versionCode":  1085,
+    "versionName":  "v1085-cancel-data-updater",
+    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1085-mobile.apk",
     "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
     "mandatory":  false,
     "notes":  [
-                  "v1084 fixes LE8801SF module line drawings and includes compressed photos in APK."
+                  "v1085 cancels the HP Data Updater page/button and fixes phone text zoom."
               ]
 }
