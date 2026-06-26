@@ -1,10 +1,10 @@
 ﻿{
-    "versionCode":  1085,
-    "versionName":  "v1085-cancel-data-updater",
-    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1085-mobile.apk",
+    "versionCode":  1086,
+    "versionName":  "v1086-update-fallback",
+    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1086-mobile.apk",
     "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
     "mandatory":  false,
     "notes":  [
-                  "v1085 cancels the HP Data Updater page/button and fixes phone text zoom."
+                  "v1086 removes the HP Data Updater UI and adds a safer APK download fallback for future updates."
               ]
 }

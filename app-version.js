@@ -1,10 +1,10 @@
 window.HP_SOFA_APP_VERSION = {
-  versionCode: 1085,
-  versionName: "v1085-cancel-data-updater",
+  versionCode: 1086,
+  versionName: "v1086-update-fallback",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
-  fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1085-mobile.apk",
-  patchVersionCode: 1085,
-  patchversionCode: 1085,
-  patchVersionName: "v1085-cancel-data-updater",
+  fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1086-mobile.apk",
+  patchVersionCode: 1086,
+  patchversionCode: 1086,
+  patchVersionName: "v1086-update-fallback",
   patchManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/patch.json"
 };

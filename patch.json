@@ -1,43 +1,22 @@
 ﻿{
-    "version":  "v1085-cancel-data-updater",
-    "versionName":  "v1085-cancel-data-updater",
-    "patchVersionCode":  1085,
-    "patchVersionName":  "v1085-cancel-data-updater",
-    "generatedAt":  "2026-06-26T23:25:59.6523401Z",
+    "version":  "v1086-update-fallback",
+    "versionName":  "v1086-update-fallback",
+    "patchVersionCode":  1086,
+    "patchVersionName":  "v1086-update-fallback",
+    "generatedAt":  "2026-06-26T23:51:21.8783845Z",
     "files":  [
                   {
-                      "path":  "index.html",
-                      "url":  "patches/v1085-cancel-data-updater/index.html",
-                      "size":  307583,
-                      "sha256":  "0cca1a3ccc525ca5008d944414f3c25ca9f3fdc4416418a33bd5e7208fbf7ba7",
-                      "contentType":  "text/html; charset=utf-8"
-                  },
-                  {
                       "path":  "styles.css",
-                      "url":  "patches/v1085-cancel-data-updater/styles.css",
+                      "url":  "patches/v1086-update-fallback/styles.css",
                       "size":  45292,
                       "sha256":  "82cba42b3e9059f4f05aa214aaa99d16d8020be2eb62b6653b0ba444242b3465",
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v1085-cancel-data-updater/app-version.js",
-                      "size":  478,
-                      "sha256":  "b0899f43ddca60268c3b22dcb723f77e35a17b8a3f55783a27f43eaaaaa2eff0",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "app.js",
-                      "url":  "patches/v1085-cancel-data-updater/app.js",
-                      "size":  878938,
-                      "sha256":  "35a075f2accaa643f75dae930e318d2051853a58c0696894d63b0594bef46466",
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "sw.js",
-                      "url":  "patches/v1085-cancel-data-updater/sw.js",
-                      "size":  2388,
-                      "sha256":  "c6608b14d9f1c0b6d9f15e95efec6b8f653ad7542257c04607375a5c8533cc34",
+                      "url":  "patches/v1086-update-fallback/app-version.js",
+                      "size":  470,
+                      "sha256":  "c293d447f3e0dfd0ee8169e0dbfc024054dac4a6a3af8b403c2cb9df977d23a0",
                       "contentType":  "application/javascript; charset=utf-8"
                   }
               ]
