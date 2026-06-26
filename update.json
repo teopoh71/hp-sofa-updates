@@ -1,11 +1,11 @@
 {
-  "versionCode": 1041,
-  "versionName": "v1041-nk0053-small-photo-local",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1041-nk0053-small-photo-local/hp-sofa-v1041-mobile.apk",
+  "versionCode": 1043,
+  "versionName": "v1043-gallery-in-apk",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1043-mobile.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "v1041 publishes the latest handphone app fixes, including the small NK0053SF button photo.",
-    "Patch updates are hosted on GitHub Pages; the full-photo APK is hosted on GitHub Releases."
+    "v1043 includes sofa thumbnail/effect galleries in the APK and online patch.",
+    "Added 501 compressed effect photos plus existing entry/gallery photos without removing features."
   ]
 }
