@@ -1,153 +1,153 @@
 {
-    "version":  "v1104-zolano3792-hard-pin",
-    "versionName":  "v1104-zolano3792-hard-pin",
-    "patchVersionCode":  1104,
-    "patchVersionName":  "v1104-zolano3792-hard-pin",
-    "generatedAt":  "2026-06-27T15:01:46.1905934Z",
+    "version":  "v1105-zolano3792-persistent-pin",
+    "versionName":  "v1105-zolano3792-persistent-pin",
+    "patchVersionCode":  1105,
+    "patchVersionName":  "v1105-zolano3792-persistent-pin",
+    "generatedAt":  "2026-06-27T15:21:32.1458317Z",
     "files":  [
                   {
                       "path":  "index.html",
-                      "url":  "patches/v1104-zolano3792-hard-pin/index.html",
-                      "size":  307996,
-                      "sha256":  "b6c401f8039ee1d0b0ea4912c1c4a7192607b5182627c491bd6032994318ebd5",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/index.html",
+                      "size":  308020,
+                      "sha256":  "43eb81f771b6da8a27961992d559ee6090ab498d2d9ebcb2ff9a525a813bd404",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v1104-zolano3792-hard-pin/app-version.js",
-                      "size":  470,
-                      "sha256":  "0f720af48aff48af1911eb316829255d03f01f7c6ccd93606b0b1e07266a848c",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/app-version.js",
+                      "size":  476,
+                      "sha256":  "794321c7aef8343d63df4eb92a30c6ac5756bdffb84c3b4fe4a3f1a8ea3d37c8",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "patches/v1104-zolano3792-hard-pin/app.js",
-                      "size":  889882,
-                      "sha256":  "bf752f8725be9f3cc726b90c01d26ae4a21d11743b9e3d81e66dbcd972b82013",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/app.js",
+                      "size":  889894,
+                      "sha256":  "98655b2a0dc0983cee1bc3a27135d97af53254ec73ac5ad959bcd1e147937282",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v1104-zolano3792-hard-pin/sw.js",
-                      "size":  2492,
-                      "sha256":  "5b73b931fbc0d869aced87bb1fd4e18cf614aec4ad90ecd2fc76f8cf586fbb9c",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/sw.js",
+                      "size":  2528,
+                      "sha256":  "b3e6d5ba924fbf4dbe178554dc5dcb9a030dc9dd7b4e179ef287c38418c22fcd",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano-excel-price-overrides.js",
-                      "url":  "patches/v1104-zolano3792-hard-pin/zolano-excel-price-overrides.js",
-                      "size":  32361,
-                      "sha256":  "523e4df45ae2802356c7e72f70a91560a2d5159598493dcb54651810cfd38bb0",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/zolano-excel-price-overrides.js",
+                      "size":  32541,
+                      "sha256":  "6b0b6465fc810426409e2df6fe5369e121e5a6c043e69b5068f062cee1991ada",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "zolano3792-phone-pin.js",
-                      "url":  "patches/v1104-zolano3792-hard-pin/zolano3792-phone-pin.js",
-                      "size":  4939,
-                      "sha256":  "9627b295a607dca0b934c5ef1a70b2d6209fd510049ac4c0d404a7a8109e9a3d",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/zolano3792-phone-pin.js",
+                      "size":  5098,
+                      "sha256":  "34124f1367fce8701aba28f4714c351794f6b8ad1a81fcdb1bab09410d40500e",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "assets/generated/zolano/ZL3792.jpg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets/generated/zolano/ZL3792.jpg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets/generated/zolano/ZL3792.jpg",
                       "size":  56372,
                       "sha256":  "b051b96813a1e4700113916ad3dc5c925567c8dc695164f010bfdf0d25df74b9",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/quick-thumbs/zolano/ZL3792.jpg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets/quick-thumbs/zolano/ZL3792.jpg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets/quick-thumbs/zolano/ZL3792.jpg",
                       "size":  56372,
                       "sha256":  "b051b96813a1e4700113916ad3dc5c925567c8dc695164f010bfdf0d25df74b9",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1ER-crop.jpg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1ER-crop.jpg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1ER-crop.jpg",
                       "size":  2275,
                       "sha256":  "698b179e756d17e9b5b7aa197ac7b567d362861d0b9bdb428581a6c00e3974b2",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1ER-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1ER-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1ER-line.svg",
                       "size":  684,
                       "sha256":  "bac95bbd1da29897cab32cafbd1d7d43801a4cfa3a7153f3a971b75e6f4b7c58",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1ERT-crop.jpg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1ERT-crop.jpg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1ERT-crop.jpg",
                       "size":  2255,
                       "sha256":  "c5802ea847e5c84cff8317b4bbd2d2774ef4ed467e5396d5e9230a70f499ddd4",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1ERT-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1ERT-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1ERT-line.svg",
                       "size":  766,
                       "sha256":  "d5cfff04b59da10e2ec96315993c2d06ea83040b3fcc69fd67e69111f015ddf4",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1ERT-v2-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1ERT-v2-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1ERT-v2-line.svg",
                       "size":  766,
                       "sha256":  "d5cfff04b59da10e2ec96315993c2d06ea83040b3fcc69fd67e69111f015ddf4",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1NA-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1NA-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1NA-line.svg",
                       "size":  683,
                       "sha256":  "11ed2a2f7d4dfae91a4541b1cbc8bfc14c5071f1e456013fc9157beef8b9919c",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1NAB-crop.jpg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAB-crop.jpg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAB-crop.jpg",
                       "size":  2620,
                       "sha256":  "fa597f6afe141ec7a1b6698d16460a88f9dffbd9cf02a3ebcfb4daf5588be012",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1NAB-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAB-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAB-line.svg",
                       "size":  699,
                       "sha256":  "ce78ea1d27d65ded4401bec8190d95862e98ae6fc829749aae45ab84e36cc5ed",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1NAB-v2-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAB-v2-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAB-v2-line.svg",
                       "size":  699,
                       "sha256":  "ce78ea1d27d65ded4401bec8190d95862e98ae6fc829749aae45ab84e36cc5ed",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1NAT-crop.jpg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAT-crop.jpg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAT-crop.jpg",
                       "size":  2563,
                       "sha256":  "8d87ecc48662312fc14b415cd83bf90a75d2177ecec99282ecb94bfa49a8c12d",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1NAT-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAT-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAT-line.svg",
                       "size":  699,
                       "sha256":  "eb27bc863e9fde0601246bb4f9921741a15c3ee6fc28f47189be49fa95a61e6d",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-1NAT-v2-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAT-v2-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-1NAT-v2-line.svg",
                       "size":  699,
                       "sha256":  "eb27bc863e9fde0601246bb4f9921741a15c3ee6fc28f47189be49fa95a61e6d",
                       "contentType":  "image/svg+xml"
                   },
                   {
                       "path":  "assets\\generated\\zolano\\parts\\ZL3792-TABLE-line.svg",
-                      "url":  "patches/v1104-zolano3792-hard-pin/assets\\generated\\zolano\\parts\\ZL3792-TABLE-line.svg",
+                      "url":  "patches/v1105-zolano3792-persistent-pin/assets\\generated\\zolano\\parts\\ZL3792-TABLE-line.svg",
                       "size":  594,
                       "sha256":  "811adae1d67b8ae212901269e7d52e8b08aa57cfef7e5d52044707a524c96abd",
                       "contentType":  "image/svg+xml"
