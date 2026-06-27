@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96">
+  <rect width="160" height="96" fill="#fff"/>
+  <path d="M28 25h92l12 15v28H28z" fill="none" stroke="#111" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M120 25v43M28 40h104M40 68v10M122 68v10" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+  <text x="80" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#111">1ER</text>
+</svg>

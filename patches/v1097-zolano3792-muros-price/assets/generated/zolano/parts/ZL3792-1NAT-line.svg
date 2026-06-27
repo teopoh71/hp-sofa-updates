@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96">
+  <rect width="160" height="96" fill="#fff"/>
+  <path d="M26 25h98l10 14v29H26z" fill="none" stroke="#111" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M124 25v43M26 40h108M59 25v43M92 25v43M36 68v10M124 68v10" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round"/>
+  <text x="80" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#111">1NAT</text>
+</svg>

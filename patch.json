@@ -1,44 +1,100 @@
 ﻿{
-    "version":  "v1096-zolano3792-photo-patch",
-    "versionName":  "v1096-zolano3792-photo-patch",
-    "patchVersionCode":  1096,
-    "patchVersionName":  "v1096-zolano3792-photo-patch",
-    "generatedAt":  "2026-06-27T07:48:32.4870201Z",
+    "version":  "v1097-zolano3792-muros-price",
+    "versionName":  "v1097-zolano3792-muros-price",
+    "patchVersionCode":  1097,
+    "patchVersionName":  "v1097-zolano3792-muros-price",
+    "generatedAt":  "2026-06-27T08:55:25.9366475Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v1096-zolano3792-photo-patch/app.js",
-                      "size":  884508,
-                      "sha256":  "eade8ad9273f9103324f7f10ad9e4b357455e78d163d6ba36487b390e08736e1",
+                      "url":  "patches/v1097-zolano3792-muros-price/app.js",
+                      "size":  884897,
+                      "sha256":  "7139d84dec9e7d53fcbd3c6ce6e879909d7362aed0cbc909754a81d780846971",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v1096-zolano3792-photo-patch/app-version.js",
+                      "url":  "patches/v1097-zolano3792-muros-price/app-version.js",
                       "size":  473,
-                      "sha256":  "3b695384039f02b07887c6140d155d677da54ff048a7403029d5553fe03aaa13",
+                      "sha256":  "d89ffb1a0e09c3495332ad4e51c13a6c5b76f533ae4ee1fd412f41a7213b8f0f",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "patches/v1096-zolano3792-photo-patch/index.html",
+                      "url":  "patches/v1097-zolano3792-muros-price/index.html",
                       "size":  307699,
                       "sha256":  "b7d3572e5daeb142b60252a66d7a0ff5959970d265825c9f3e826b8b8c192dea",
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "patches/v1096-zolano3792-photo-patch/sw.js",
+                      "url":  "patches/v1097-zolano3792-muros-price/sw.js",
                       "size":  2492,
                       "sha256":  "b871fa81f215d587f660d5555828b79ee70924d5d502690a308ca7c28877979e",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
+                      "path":  "zolano-excel-price-overrides.js",
+                      "url":  "patches/v1097-zolano3792-muros-price/zolano-excel-price-overrides.js",
+                      "size":  27181,
+                      "sha256":  "a63befdbd212ad2e796cb4ee524c5f6a372f07ee70b7aeea87a86f8c1bdd96ed",
+                      "contentType":  "application/javascript; charset=utf-8"
+                  },
+                  {
                       "path":  "assets/generated/zolano/ZL3792.jpg",
-                      "url":  "patches/v1096-zolano3792-photo-patch/assets/generated/zolano/ZL3792.jpg",
-                      "size":  295983,
-                      "sha256":  "f64ad8200e31d089f2c0da87340183e2a56ca211d73f798d2cbe8af8cc2786c7",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/generated/zolano/ZL3792.jpg",
+                      "size":  56372,
+                      "sha256":  "b051b96813a1e4700113916ad3dc5c925567c8dc695164f010bfdf0d25df74b9",
                       "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/quick-thumbs/zolano/ZL3792.jpg",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/quick-thumbs/zolano/ZL3792.jpg",
+                      "size":  56372,
+                      "sha256":  "b051b96813a1e4700113916ad3dc5c925567c8dc695164f010bfdf0d25df74b9",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1ER-line.svg",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/generated/zolano/parts/ZL3792-1ER-line.svg",
+                      "size":  469,
+                      "sha256":  "48c4175c4639bfd17ef40945d6fb75eae1e1d046275d9a6e0367cbf49d8c250a",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1ERT-line.svg",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/generated/zolano/parts/ZL3792-1ERT-line.svg",
+                      "size":  592,
+                      "sha256":  "22ab5633a896049301d1f1e05b9522010713a92540bed3f5cbc3286fcd2687d9",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NA-line.svg",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/generated/zolano/parts/ZL3792-1NA-line.svg",
+                      "size":  461,
+                      "sha256":  "1ceb8d1ea8ecc7294648ed0c7b2a9ec9a70ff4bcf2c0855ec58cf620a96eb484",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAB-line.svg",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/generated/zolano/parts/ZL3792-1NAB-line.svg",
+                      "size":  473,
+                      "sha256":  "7908f391422f4243d5b19a5ee95d37b1488735df0705cf5f742aa5493f9c460c",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAT-line.svg",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/generated/zolano/parts/ZL3792-1NAT-line.svg",
+                      "size":  488,
+                      "sha256":  "c2ba6bd0bcbd8047f33a0f3e0fab3f75e18b069179a730f212e6b1706f173dd0",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-TABLE-line.svg",
+                      "url":  "patches/v1097-zolano3792-muros-price/assets/generated/zolano/parts/ZL3792-TABLE-line.svg",
+                      "size":  468,
+                      "sha256":  "3b0143c6fe2e96a8c0dc7bfc06da1bca24056afe38a5d4e4f79e5f42737e9920",
+                      "contentType":  "image/svg+xml"
                   }
               ]
 }
