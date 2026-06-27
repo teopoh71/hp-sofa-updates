@@ -1,10 +1,10 @@
 window.HP_SOFA_APP_VERSION = {
-  versionCode: 1094,
-  versionName: "v1094-zolano3817-selection-fix",
+  versionCode: 1095,
+  versionName: "v1095-native-patch-bridge",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
-  fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1092-mobile.apk",
-  patchVersionCode: 1094,
-  patchversionCode: 1094,
-  patchVersionName: "v1094-zolano3817-selection-fix",
+  fullDownloadUrl: "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
+  patchVersionCode: 1095,
+  patchversionCode: 1095,
+  patchVersionName: "v1095-native-patch-bridge",
   patchManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/patch.json"
 };

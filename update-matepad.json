@@ -1,9 +1,9 @@
 {
-  "versionCode": 1094,
-  "versionName": "v1094-zolano3817-selection-fix",
-  "patchVersionCode": 1094,
-  "patchVersionName": "v1094-zolano3817-selection-fix",
+  "versionCode": 1095,
+  "versionName": "v1095-native-patch-bridge",
+  "patchVersionCode": 1095,
+  "patchVersionName": "v1095-native-patch-bridge",
   "patchManifestUrl": "https://teopoh71.github.io/hp-sofa-updates/patch.json",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1094-mobile.apk",
-  "generatedAt": "2026-06-27T05:10:54.435Z"
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
+  "generatedAt": "2026-06-27T05:37:40.871Z"
 }

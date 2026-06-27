@@ -1,36 +1,36 @@
 {
-  "version": "v1094-zolano3817-selection-fix",
-  "versionName": "v1094-zolano3817-selection-fix",
-  "patchVersionCode": 1094,
-  "patchVersionName": "v1094-zolano3817-selection-fix",
-  "generatedAt": "2026-06-27T05:10:54.435Z",
+  "version": "v1095-native-patch-bridge",
+  "versionName": "v1095-native-patch-bridge",
+  "patchVersionCode": 1095,
+  "patchVersionName": "v1095-native-patch-bridge",
+  "generatedAt": "2026-06-27T05:37:40.871Z",
   "files": [
     {
       "path": "app.js",
-      "url": "patches/v1094-zolano3817-selection-fix/app.js",
-      "size": 882952,
-      "sha256": "e1eb7773e1da211aaad8367c80c801b4a4bdf91101d01b055b50b682a58d0ff1",
+      "url": "patches/v1095-native-patch-bridge/app.js",
+      "size": 883598,
+      "sha256": "8b811662e6ef14ba02665685ac333bf27f106af94098eb1321fe64c7558293af",
       "contentType": "application/javascript; charset=utf-8"
     },
     {
       "path": "app-version.js",
-      "url": "patches/v1094-zolano3817-selection-fix/app-version.js",
-      "size": 488,
-      "sha256": "2e0ce7ef3514fcd9472eb7f53d881f4838e8cd9d50d0fa5a112db0ccf1ae7d75",
+      "url": "patches/v1095-native-patch-bridge/app-version.js",
+      "size": 470,
+      "sha256": "c6887b12965e5cd40adfcba45ee54e28b24eeb6d0c29f24970bda4cb8ff97a04",
       "contentType": "application/javascript; charset=utf-8"
     },
     {
       "path": "index.html",
-      "url": "patches/v1094-zolano3817-selection-fix/index.html",
-      "size": 307714,
-      "sha256": "161e0aa3066b41e1bd85752b8c8a532d42076f05e33a1925d43102a5c4031822",
+      "url": "patches/v1095-native-patch-bridge/index.html",
+      "size": 307699,
+      "sha256": "b7d3572e5daeb142b60252a66d7a0ff5959970d265825c9f3e826b8b8c192dea",
       "contentType": "text/html; charset=utf-8"
     },
     {
       "path": "sw.js",
-      "url": "patches/v1094-zolano3817-selection-fix/sw.js",
-      "size": 2522,
-      "sha256": "60aaeaa7efb636c9a4ccf232a73e5ba7591c92c0ce75eebebcf0836e9b4bb817",
+      "url": "patches/v1095-native-patch-bridge/sw.js",
+      "size": 2492,
+      "sha256": "b871fa81f215d587f660d5555828b79ee70924d5d502690a308ca7c28877979e",
       "contentType": "application/javascript; charset=utf-8"
     }
   ]
