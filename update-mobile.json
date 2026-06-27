@@ -1,9 +1,9 @@
 ﻿{
     "versionCode":  1095,
     "versionName":  "v1095-native-patch-bridge",
-    "patchVersionCode":  1101,
-    "patchVersionName":  "v1101-zolano3792-visible-seed",
+    "patchVersionCode":  1102,
+    "patchVersionName":  "v1102-zolano3792-phone-visible",
     "patchManifestUrl":  "https://teopoh71.github.io/hp-sofa-updates/patch.json",
     "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-    "generatedAt":  "2026-06-27T13:02:43.9125515Z"
+    "generatedAt":  "2026-06-27T13:49:22.5498341Z"
 }

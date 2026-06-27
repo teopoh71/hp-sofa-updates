@@ -1,149 +1,142 @@
 ﻿{
-    "version":  "v1101-zolano3792-visible-seed",
-    "versionName":  "v1101-zolano3792-visible-seed",
-    "patchVersionCode":  1101,
-    "patchVersionName":  "v1101-zolano3792-visible-seed",
-    "generatedAt":  "2026-06-27T13:02:43.8088206Z",
+    "version":  "v1102-zolano3792-phone-visible",
+    "versionName":  "v1102-zolano3792-phone-visible",
+    "patchVersionCode":  1102,
+    "patchVersionName":  "v1102-zolano3792-phone-visible",
+    "generatedAt":  "2026-06-27T13:49:22.4118376Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v1101-zolano3792-visible-seed/app.js",
-                      "size":  885297,
-                      "sha256":  "75c09c643f55ac9f6a6c1c3db24394761ed406ad14e6d347ef7eac7267c9adc2",
+                      "url":  "patches/v1102-zolano3792-phone-visible/app.js",
+                      "size":  885723,
+                      "sha256":  "e060ee0584706668eaad3af20cb9506b423f354a6dac47b85485ed5257f30374",
                       "contentType":  "application/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "index.html",
+                      "url":  "patches/v1102-zolano3792-phone-visible/index.html",
+                      "size":  307930,
+                      "sha256":  "56064e6ac9a221ed7f860e352da7ec258790c776b3849c76b29d5cab7b5b06d9",
+                      "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v1101-zolano3792-visible-seed/app-version.js",
-                      "size":  474,
-                      "sha256":  "b3e191d1392b6705c7c866f7ca5b04e8bbd7cb3fb84a837913b2798bed24437e",
+                      "url":  "patches/v1102-zolano3792-phone-visible/app-version.js",
+                      "size":  475,
+                      "sha256":  "bcd4da0c025796cbd474345da32287754fb38c85e50defb1dfe0c7c3059402b0",
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1ER-crop.jpg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1ER-crop.jpg",
-                      "size":  2275,
-                      "sha256":  "698b179e756d17e9b5b7aa197ac7b567d362861d0b9bdb428581a6c00e3974b2",
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1ER-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1ER-line.svg",
-                      "size":  684,
-                      "sha256":  "bac95bbd1da29897cab32cafbd1d7d43801a4cfa3a7153f3a971b75e6f4b7c58",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1ERT-crop.jpg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1ERT-crop.jpg",
-                      "size":  2255,
-                      "sha256":  "c5802ea847e5c84cff8317b4bbd2d2774ef4ed467e5396d5e9230a70f499ddd4",
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1ERT-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1ERT-line.svg",
-                      "size":  766,
-                      "sha256":  "d5cfff04b59da10e2ec96315993c2d06ea83040b3fcc69fd67e69111f015ddf4",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1ERT-v2-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1ERT-v2-line.svg",
-                      "size":  766,
-                      "sha256":  "d5cfff04b59da10e2ec96315993c2d06ea83040b3fcc69fd67e69111f015ddf4",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1NAB-crop.jpg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1NAB-crop.jpg",
-                      "size":  2620,
-                      "sha256":  "fa597f6afe141ec7a1b6698d16460a88f9dffbd9cf02a3ebcfb4daf5588be012",
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1NAB-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1NAB-line.svg",
-                      "size":  699,
-                      "sha256":  "ce78ea1d27d65ded4401bec8190d95862e98ae6fc829749aae45ab84e36cc5ed",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1NAB-v2-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1NAB-v2-line.svg",
-                      "size":  699,
-                      "sha256":  "ce78ea1d27d65ded4401bec8190d95862e98ae6fc829749aae45ab84e36cc5ed",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1NA-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1NA-line.svg",
-                      "size":  683,
-                      "sha256":  "11ed2a2f7d4dfae91a4541b1cbc8bfc14c5071f1e456013fc9157beef8b9919c",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1NAT-crop.jpg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1NAT-crop.jpg",
-                      "size":  2563,
-                      "sha256":  "8d87ecc48662312fc14b415cd83bf90a75d2177ecec99282ecb94bfa49a8c12d",
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1NAT-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1NAT-line.svg",
-                      "size":  699,
-                      "sha256":  "eb27bc863e9fde0601246bb4f9921741a15c3ee6fc28f47189be49fa95a61e6d",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-1NAT-v2-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-1NAT-v2-line.svg",
-                      "size":  699,
-                      "sha256":  "eb27bc863e9fde0601246bb4f9921741a15c3ee6fc28f47189be49fa95a61e6d",
-                      "contentType":  "image/svg+xml"
-                  },
-                  {
-                      "path":  "assets/generated/zolano/parts/ZL3792-TABLE-line.svg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/parts/ZL3792-TABLE-line.svg",
-                      "size":  594,
-                      "sha256":  "811adae1d67b8ae212901269e7d52e8b08aa57cfef7e5d52044707a524c96abd",
-                      "contentType":  "image/svg+xml"
+                      "path":  "zolano-excel-price-overrides.js",
+                      "url":  "patches/v1102-zolano3792-phone-visible/zolano-excel-price-overrides.js",
+                      "size":  27181,
+                      "sha256":  "a63befdbd212ad2e796cb4ee524c5f6a372f07ee70b7aeea87a86f8c1bdd96ed",
+                      "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "assets/generated/zolano/ZL3792.jpg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/generated/zolano/ZL3792.jpg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/ZL3792.jpg",
                       "size":  56372,
                       "sha256":  "b051b96813a1e4700113916ad3dc5c925567c8dc695164f010bfdf0d25df74b9",
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/quick-thumbs/zolano/ZL3792.jpg",
-                      "url":  "patches/v1101-zolano3792-visible-seed/assets/quick-thumbs/zolano/ZL3792.jpg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/quick-thumbs/zolano/ZL3792.jpg",
                       "size":  56372,
                       "sha256":  "b051b96813a1e4700113916ad3dc5c925567c8dc695164f010bfdf0d25df74b9",
                       "contentType":  "image/jpeg"
                   },
                   {
-                      "path":  "index.html",
-                      "url":  "patches/v1101-zolano3792-visible-seed/index.html",
-                      "size":  307699,
-                      "sha256":  "b7d3572e5daeb142b60252a66d7a0ff5959970d265825c9f3e826b8b8c192dea",
-                      "contentType":  "text/html; charset=utf-8"
+                      "path":  "assets/generated/zolano/parts/ZL3792-1ER-crop.jpg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1ER-crop.jpg",
+                      "size":  2275,
+                      "sha256":  "698b179e756d17e9b5b7aa197ac7b567d362861d0b9bdb428581a6c00e3974b2",
+                      "contentType":  "image/jpeg"
                   },
                   {
-                      "path":  "sw.js",
-                      "url":  "patches/v1101-zolano3792-visible-seed/sw.js",
-                      "size":  2492,
-                      "sha256":  "b871fa81f215d587f660d5555828b79ee70924d5d502690a308ca7c28877979e",
-                      "contentType":  "application/javascript; charset=utf-8"
+                      "path":  "assets/generated/zolano/parts/ZL3792-1ER-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1ER-line.svg",
+                      "size":  684,
+                      "sha256":  "bac95bbd1da29897cab32cafbd1d7d43801a4cfa3a7153f3a971b75e6f4b7c58",
+                      "contentType":  "image/svg+xml"
                   },
                   {
-                      "path":  "zolano-excel-price-overrides.js",
-                      "url":  "patches/v1101-zolano3792-visible-seed/zolano-excel-price-overrides.js",
-                      "size":  27181,
-                      "sha256":  "a63befdbd212ad2e796cb4ee524c5f6a372f07ee70b7aeea87a86f8c1bdd96ed",
-                      "contentType":  "application/javascript; charset=utf-8"
+                      "path":  "assets/generated/zolano/parts/ZL3792-1ERT-crop.jpg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1ERT-crop.jpg",
+                      "size":  2255,
+                      "sha256":  "c5802ea847e5c84cff8317b4bbd2d2774ef4ed467e5396d5e9230a70f499ddd4",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1ERT-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1ERT-line.svg",
+                      "size":  766,
+                      "sha256":  "d5cfff04b59da10e2ec96315993c2d06ea83040b3fcc69fd67e69111f015ddf4",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1ERT-v2-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1ERT-v2-line.svg",
+                      "size":  766,
+                      "sha256":  "d5cfff04b59da10e2ec96315993c2d06ea83040b3fcc69fd67e69111f015ddf4",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAB-crop.jpg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1NAB-crop.jpg",
+                      "size":  2620,
+                      "sha256":  "fa597f6afe141ec7a1b6698d16460a88f9dffbd9cf02a3ebcfb4daf5588be012",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAB-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1NAB-line.svg",
+                      "size":  699,
+                      "sha256":  "ce78ea1d27d65ded4401bec8190d95862e98ae6fc829749aae45ab84e36cc5ed",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAB-v2-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1NAB-v2-line.svg",
+                      "size":  699,
+                      "sha256":  "ce78ea1d27d65ded4401bec8190d95862e98ae6fc829749aae45ab84e36cc5ed",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NA-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1NA-line.svg",
+                      "size":  683,
+                      "sha256":  "11ed2a2f7d4dfae91a4541b1cbc8bfc14c5071f1e456013fc9157beef8b9919c",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAT-crop.jpg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1NAT-crop.jpg",
+                      "size":  2563,
+                      "sha256":  "8d87ecc48662312fc14b415cd83bf90a75d2177ecec99282ecb94bfa49a8c12d",
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAT-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1NAT-line.svg",
+                      "size":  699,
+                      "sha256":  "eb27bc863e9fde0601246bb4f9921741a15c3ee6fc28f47189be49fa95a61e6d",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-1NAT-v2-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-1NAT-v2-line.svg",
+                      "size":  699,
+                      "sha256":  "eb27bc863e9fde0601246bb4f9921741a15c3ee6fc28f47189be49fa95a61e6d",
+                      "contentType":  "image/svg+xml"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/parts/ZL3792-TABLE-line.svg",
+                      "url":  "patches/v1102-zolano3792-phone-visible/assets/generated/zolano/parts/ZL3792-TABLE-line.svg",
+                      "size":  594,
+                      "sha256":  "811adae1d67b8ae212901269e7d52e8b08aa57cfef7e5d52044707a524c96abd",
+                      "contentType":  "image/svg+xml"
                   }
               ]
 }
