@@ -1,37 +1,44 @@
-{
-  "version": "v1095-native-patch-bridge",
-  "versionName": "v1095-native-patch-bridge",
-  "patchVersionCode": 1095,
-  "patchVersionName": "v1095-native-patch-bridge",
-  "generatedAt": "2026-06-27T05:37:40.871Z",
-  "files": [
-    {
-      "path": "app.js",
-      "url": "patches/v1095-native-patch-bridge/app.js",
-      "size": 883598,
-      "sha256": "8b811662e6ef14ba02665685ac333bf27f106af94098eb1321fe64c7558293af",
-      "contentType": "application/javascript; charset=utf-8"
-    },
-    {
-      "path": "app-version.js",
-      "url": "patches/v1095-native-patch-bridge/app-version.js",
-      "size": 470,
-      "sha256": "c6887b12965e5cd40adfcba45ee54e28b24eeb6d0c29f24970bda4cb8ff97a04",
-      "contentType": "application/javascript; charset=utf-8"
-    },
-    {
-      "path": "index.html",
-      "url": "patches/v1095-native-patch-bridge/index.html",
-      "size": 307699,
-      "sha256": "b7d3572e5daeb142b60252a66d7a0ff5959970d265825c9f3e826b8b8c192dea",
-      "contentType": "text/html; charset=utf-8"
-    },
-    {
-      "path": "sw.js",
-      "url": "patches/v1095-native-patch-bridge/sw.js",
-      "size": 2492,
-      "sha256": "b871fa81f215d587f660d5555828b79ee70924d5d502690a308ca7c28877979e",
-      "contentType": "application/javascript; charset=utf-8"
-    }
-  ]
+﻿{
+    "version":  "v1096-zolano3792-photo-patch",
+    "versionName":  "v1096-zolano3792-photo-patch",
+    "patchVersionCode":  1096,
+    "patchVersionName":  "v1096-zolano3792-photo-patch",
+    "generatedAt":  "2026-06-27T07:48:32.4870201Z",
+    "files":  [
+                  {
+                      "path":  "app.js",
+                      "url":  "patches/v1096-zolano3792-photo-patch/app.js",
+                      "size":  884508,
+                      "sha256":  "eade8ad9273f9103324f7f10ad9e4b357455e78d163d6ba36487b390e08736e1",
+                      "contentType":  "application/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "app-version.js",
+                      "url":  "patches/v1096-zolano3792-photo-patch/app-version.js",
+                      "size":  473,
+                      "sha256":  "3b695384039f02b07887c6140d155d677da54ff048a7403029d5553fe03aaa13",
+                      "contentType":  "application/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "index.html",
+                      "url":  "patches/v1096-zolano3792-photo-patch/index.html",
+                      "size":  307699,
+                      "sha256":  "b7d3572e5daeb142b60252a66d7a0ff5959970d265825c9f3e826b8b8c192dea",
+                      "contentType":  "text/html; charset=utf-8"
+                  },
+                  {
+                      "path":  "sw.js",
+                      "url":  "patches/v1096-zolano3792-photo-patch/sw.js",
+                      "size":  2492,
+                      "sha256":  "b871fa81f215d587f660d5555828b79ee70924d5d502690a308ca7c28877979e",
+                      "contentType":  "application/javascript; charset=utf-8"
+                  },
+                  {
+                      "path":  "assets/generated/zolano/ZL3792.jpg",
+                      "url":  "patches/v1096-zolano3792-photo-patch/assets/generated/zolano/ZL3792.jpg",
+                      "size":  295983,
+                      "sha256":  "f64ad8200e31d089f2c0da87340183e2a56ca211d73f798d2cbe8af8cc2786c7",
+                      "contentType":  "image/jpeg"
+                  }
+              ]
 }
