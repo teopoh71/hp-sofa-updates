@@ -1,10 +1,10 @@
 ﻿{
-    "versionCode":  1087,
-    "versionName":  "v1087-stareep-complete",
-    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1087-mobile.apk",
+    "versionCode":  1092,
+    "versionName":  "v1092-chair-photo-stable",
+    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1092-mobile.apk",
     "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
     "mandatory":  false,
     "notes":  [
-                  "v1087 opens the isolated Stareep app, includes complete bed, mattress, nightstand data, and keeps online APK update checking."
+                  "HP Sofa v1092 fixes Nikator/chair generated photo blinking and keeps the main catalog app, not Stareep."
               ]
 }
