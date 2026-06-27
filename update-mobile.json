@@ -5,6 +5,6 @@
     "webUrl":  "https://teopoh71.github.io/hp-sofa-updates/",
     "mandatory":  false,
     "notes":  [
-                  "HP Sofa v1092 fixes Nikator/chair generated photo blinking and keeps the main catalog app, not Stareep."
+                  "Use the online patch for v1093 chair photo/icon fixes. Full APK remains v1092 if reinstall is needed later."
               ]
 }

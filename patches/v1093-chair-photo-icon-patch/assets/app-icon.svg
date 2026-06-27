@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="HP Sofa">
+  <rect width="512" height="512" rx="96" fill="#f4eee7"/>
+  <path d="M98 268c0-40 32-72 72-72h172c40 0 72 32 72 72v82H98v-82z" fill="#14766f"/>
+  <path d="M154 190c0-28 22-50 50-50h104c28 0 50 22 50 50v58H154v-58z" fill="#d64a32"/>
+  <path d="M82 344h348v44H82z" fill="#0f5f5a"/>
+  <circle cx="162" cy="406" r="22" fill="#202124"/>
+  <circle cx="350" cy="406" r="22" fill="#202124"/>
+  <text x="256" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="62" font-weight="800" fill="#202124">HP</text>
+</svg>
