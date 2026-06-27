@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 108">
+  <rect width="180" height="108" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="30" y="28" width="120" height="58" rx="1" stroke-width="5"/>
+    <path stroke-width="3.5" d="M30 45h120M70 28v58M110 28v58M43 86v10M137 86v10"/>
+    <path stroke-width="2.5" d="M38 24h104"/>
+  </g>
+  <text x="90" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#111">1NAB</text>
+</svg>

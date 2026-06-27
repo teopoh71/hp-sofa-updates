@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 108">
+  <rect width="180" height="108" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="5" d="M48 38h84l-13 32H61z"/>
+    <path stroke-width="3.5" d="M67 70v18M113 70v18M60 88h16M104 88h18"/>
+    <path stroke-width="2.5" d="M57 34h66"/>
+  </g>
+  <text x="90" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#111">TABLE</text>
+</svg>

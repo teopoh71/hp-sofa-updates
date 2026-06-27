@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 108">
+  <rect width="180" height="108" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="5" d="M32 28h88l20 18v40H32z"/>
+    <path stroke-width="3.5" d="M32 45h108M120 28v58M50 86v10M138 86v10"/>
+    <path stroke-width="3" d="M120 28l20 18"/>
+    <path stroke-width="2.5" d="M40 24h76"/>
+  </g>
+  <text x="90" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#111">1ER/T</text>
+</svg>
