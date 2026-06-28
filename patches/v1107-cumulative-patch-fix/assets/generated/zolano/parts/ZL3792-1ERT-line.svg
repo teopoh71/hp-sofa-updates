@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 108">
+  <rect width="180" height="108" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111" text-anchor="middle">
+    <text x="90" y="14" font-size="12">L 1260mm</text>
+  </g>
+  <g fill="none" stroke="#111" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M62 22h44v43H62z"/>
+    <path d="M62 37h44"/>
+    <path d="M106 22l16 14v43l-16-14"/>
+    <path d="M122 36v43"/>
+    <path d="M106 37l16-1"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#111" text-anchor="middle">
+    <text x="84" y="53" font-size="10">980mm</text>
+    <text x="90" y="82" font-size="12">1ER/T</text>
+    <text x="90" y="96" font-size="10">[61KG]</text>
+  </g>
+</svg>
