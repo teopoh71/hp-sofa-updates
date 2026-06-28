@@ -1,9 +1,9 @@
 {
-    "versionCode":  1095,
-    "versionName":  "v1095-native-patch-bridge",
-    "patchVersionCode":  1105,
-    "patchVersionName":  "v1105-zolano3792-persistent-pin",
-    "patchManifestUrl":  "https://teopoh71.github.io/hp-sofa-updates/patch.json",
-    "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-    "generatedAt":  "2026-06-27T15:21:32.1538037Z"
+  "versionCode": 1095,
+  "versionName": "v1095-native-patch-bridge",
+  "patchVersionCode": 1108,
+  "patchVersionName": "v1108-runtime-bootstrap-fix",
+  "patchManifestUrl": "https://teopoh71.github.io/hp-sofa-updates/patch.json",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
+  "generatedAt": "2026-06-28T07:42:55.944Z"
 }
