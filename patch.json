@@ -7,63 +7,63 @@
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "patches/v1135-zolano3867-3727-fix/app.js",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/app.js",
                       "sha256":  "746c90d69d2f66ce905d098a1744002f530469b8e8086e19a6142310f7c27b6a",
                       "size":  911489,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "patches/v1135-zolano3867-3727-fix/index.html",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/index.html",
                       "sha256":  "e4c2d6d9223c6c8ff87fcea967254e54c8d2e54d8e392e88c30fc06743820b07",
                       "size":  308556,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "patches/v1135-zolano3867-3727-fix/app-version.js",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/app-version.js",
                       "sha256":  "725541f94d2e09c0eef85e5a3315081f72d2022de45e247a3069c4621fea6060",
                       "size":  116,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "assets/generated/zolano/ZL3867TOMMASO.jpg",
-                      "url":  "patches/v1135-zolano3867-3727-fix/assets/generated/zolano/ZL3867TOMMASO.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/assets/generated/zolano/ZL3867TOMMASO.jpg",
                       "sha256":  "565367e4379683deac5864037916b43a448f22ab3a6d599847a8dff79d79ed12",
                       "size":  191288,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano/ZL3867TOMMASO-thumb.jpg",
-                      "url":  "patches/v1135-zolano3867-3727-fix/assets/generated/zolano/ZL3867TOMMASO-thumb.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/assets/generated/zolano/ZL3867TOMMASO-thumb.jpg",
                       "sha256":  "7c3cbe8d66a82af6b7de11caee8f8d3ed01da2041e5210e215ccc6f1440a6760",
                       "size":  25437,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3867-1EL-button.jpg",
-                      "url":  "patches/v1135-zolano3867-3727-fix/assets/generated/zolano/parts/ZL3867-1EL-button.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/assets/generated/zolano/parts/ZL3867-1EL-button.jpg",
                       "sha256":  "bcb78c3a81eefd6dd09a7a03a87cee2410df2a65e6cc0a1fbb5ddb4cbd1d91e8",
                       "size":  9360,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3867-1ELT-button.jpg",
-                      "url":  "patches/v1135-zolano3867-3727-fix/assets/generated/zolano/parts/ZL3867-1ELT-button.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/assets/generated/zolano/parts/ZL3867-1ELT-button.jpg",
                       "sha256":  "1d0debd506f7248a5adff90243465ab1a02fb59bf1e54cfc52720df52697d7ee",
                       "size":  8120,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/generated/zolano/parts/ZL3867-2ER-button.jpg",
-                      "url":  "patches/v1135-zolano3867-3727-fix/assets/generated/zolano/parts/ZL3867-2ER-button.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/assets/generated/zolano/parts/ZL3867-2ER-button.jpg",
                       "sha256":  "ce349a4f9cc5c1032f73647f10a3de6d8521aa8ffe8803a9b948444aebbb7f88",
                       "size":  11844,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/quick-thumbs/zolano/3867-cutout.jpg",
-                      "url":  "patches/v1135-zolano3867-3727-fix/assets/quick-thumbs/zolano/3867-cutout.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1135-zolano3867-3727-fix/assets/quick-thumbs/zolano/3867-cutout.jpg",
                       "sha256":  "7c3cbe8d66a82af6b7de11caee8f8d3ed01da2041e5210e215ccc6f1440a6760",
                       "size":  25437,
                       "contentType":  "image/jpeg"
