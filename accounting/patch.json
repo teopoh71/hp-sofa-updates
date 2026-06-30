@@ -1,0 +1,22 @@
+{
+  "appId": "edwin-accounting-scan",
+  "versionCode": 2,
+  "versionName": "v2-accounting-data-2026-06-30",
+  "releasedAt": "2026-06-30",
+  "appUrl": "./index.html",
+  "apkUrl": "./index.html",
+  "dataUrl": "./data/company-data.json",
+  "uploadUrl": "",
+  "files": [
+    "index.html",
+    "src/app.js",
+    "src/accounting-core.mjs",
+    "src/styles.css",
+    "data/company-data.json"
+  ],
+  "notes": [
+    "Combines Nikator, ZOLANO, and Xirui seeded accounting data.",
+    "Supports invoice image/text/workbook upload, OCR when online, exports CSV/JSON/XLSX.",
+    "Includes patch.json so the app can check an online update feed."
+  ]
+}

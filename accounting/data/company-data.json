@@ -1,0 +1,609 @@
+{
+  "generatedAt": "2026-06-28",
+  "sourceMode": "clean-restart",
+  "companies": [
+    {
+      "id": "nikator-2026",
+      "year": "2026",
+      "name": "尼卡托",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-06\\c0253602b023ff78bc4bf13780a811ab\\2026业绩表.et",
+      "monthly": [
+        {
+          "month": "1月",
+          "revenue": 151995.0,
+          "cost": 94568.5,
+          "grossProfit": 57426.5,
+          "expense": 40279.32,
+          "netProfit": 17147.18,
+          "electricity": 1650.82,
+          "delivery": 3000.0,
+          "rent": 25360.0,
+          "salary": 10268.5
+        },
+        {
+          "month": "2月",
+          "revenue": 0.0,
+          "cost": 0,
+          "grossProfit": 0.0,
+          "expense": 31090.46,
+          "netProfit": -31090.46,
+          "electricity": 730.46,
+          "delivery": 0.0,
+          "rent": 25360.0,
+          "salary": 5000.0
+        },
+        {
+          "month": "3月",
+          "revenue": 50000.0,
+          "cost": 27059.0,
+          "grossProfit": 23834.9,
+          "expense": 33846.95,
+          "netProfit": -10012.05,
+          "electricity": 1698.55,
+          "delivery": 1186.4,
+          "rent": 25360.0,
+          "salary": 5602.0
+        },
+        {
+          "month": "4月",
+          "revenue": 93258.0,
+          "cost": 37542.0,
+          "grossProfit": 55716.5,
+          "expense": 32960.02,
+          "netProfit": 22756.48,
+          "electricity": 1783.02,
+          "delivery": 1500.0,
+          "rent": 25360.0,
+          "salary": 4317.0
+        },
+        {
+          "month": "5月",
+          "revenue": 8635.0,
+          "cost": 4444.0,
+          "grossProfit": 4191.0,
+          "expense": 34752.02,
+          "netProfit": -30561.02,
+          "electricity": 1783.02,
+          "delivery": 400.0,
+          "rent": 25360.0,
+          "salary": 7209.0
+        }
+      ],
+      "invoices": []
+    },
+    {
+      "id": "zolano-2026",
+      "year": "2026",
+      "name": "ZOLANO",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-06\\c0253602b023ff78bc4bf13780a811ab\\2026业绩表.et",
+      "monthly": [
+        {
+          "month": "1月",
+          "revenue": 228892.0,
+          "cost": 70000.0,
+          "grossProfit": 96390.0,
+          "expense": 45514.58,
+          "netProfit": 50875.42,
+          "electricity": 1146.08,
+          "delivery": 3000.0,
+          "rent": 30000.0,
+          "socialSecurity": 1100.0,
+          "salary": 10268.5
+        },
+        {
+          "month": "2月",
+          "revenue": 43000.0,
+          "cost": 28357.0,
+          "grossProfit": 14643.0,
+          "expense": 36842.56,
+          "netProfit": -22199.56,
+          "electricity": 511.56,
+          "delivery": 231.0,
+          "rent": 30000.0,
+          "socialSecurity": 1100.0,
+          "salary": 5000.0
+        },
+        {
+          "month": "3月",
+          "revenue": 76620.0,
+          "cost": 76620.0,
+          "grossProfit": 30626.0,
+          "expense": 38914.79,
+          "netProfit": -8288.79,
+          "electricity": 1191.79,
+          "delivery": 1021.0,
+          "rent": 30000.0,
+          "socialSecurity": 1100.0,
+          "salary": 5602.0
+        },
+        {
+          "month": "4月",
+          "revenue": 33699.0,
+          "cost": 14245.88,
+          "grossProfit": 20353.12,
+          "expense": 38875.85,
+          "netProfit": -18522.73,
+          "electricity": 1158.85,
+          "delivery": 2300.0,
+          "rent": 30000.0,
+          "socialSecurity": 1100.0,
+          "salary": 4317.0
+        },
+        {
+          "month": "5月",
+          "revenue": 100841.0,
+          "cost": 42908.68,
+          "grossProfit": 46421.68,
+          "expense": 41318.9,
+          "netProfit": 5102.79,
+          "electricity": 1009.9,
+          "delivery": 2000.0,
+          "rent": 30000.0,
+          "socialSecurity": 1100.0,
+          "salary": 7209.0
+        }
+      ],
+      "invoices": []
+    },
+    {
+      "id": "xirui-2026",
+      "year": "2026",
+      "name": "STAREEP / 希瑞",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\希瑞销售业绩表（带每款产品详细）(4).xlsx",
+      "monthly": [
+        {
+          "month": "3月",
+          "revenue": 157268.0,
+          "cost": 96213.0,
+          "grossProfit": 64756.3,
+          "expense": 7103.73,
+          "netProfit": 57652.57,
+          "delivery": 2000.0,
+          "electricity": 2088.73,
+          "salary": 800.0,
+          "rent": 2215.0
+        },
+        {
+          "month": "4月",
+          "revenue": 33983.0,
+          "cost": 18015.0,
+          "grossProfit": 15295.6,
+          "expense": 7238.69,
+          "netProfit": 8056.91,
+          "delivery": 2500.0,
+          "electricity": 1723.69,
+          "salary": 800.0,
+          "rent": 2215.0
+        },
+        {
+          "month": "5月",
+          "revenue": 108397.0,
+          "cost": 68817.0,
+          "grossProfit": 39580.0,
+          "expense": 5815.0,
+          "netProfit": 33765.0,
+          "delivery": 1000.0,
+          "electricity": 1800.0,
+          "salary": 800.0,
+          "rent": 2215.0
+        }
+      ],
+      "invoices": []
+    },
+    {
+      "id": "nikator-2025",
+      "year": "2025",
+      "name": "尼卡托",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\2025世博园业绩表(7).et",
+      "monthly": [
+        {
+          "month": "1月",
+          "revenue": 15800.0,
+          "cost": 13800.0,
+          "grossProfit": 2000.0,
+          "expense": 49161.02,
+          "netProfit": -47161.02,
+          "electricity": 1783.02,
+          "delivery": 500.0,
+          "rent": 35878.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "2月",
+          "revenue": 19300.0,
+          "cost": 10021.0,
+          "grossProfit": 9279.0,
+          "expense": 49461.02,
+          "netProfit": -40182.02,
+          "electricity": 1783.02,
+          "delivery": 800.0,
+          "rent": 35878.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "3月",
+          "revenue": 142280.26,
+          "cost": 86793.0,
+          "grossProfit": 55487.26,
+          "expense": 50661.02,
+          "netProfit": 4826.24,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 35878.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "4月",
+          "revenue": 8366.0,
+          "cost": 5648.0,
+          "grossProfit": 2718.0,
+          "expense": 13283.02,
+          "netProfit": -10565.02,
+          "electricity": 1783.02,
+          "delivery": 500.0,
+          "rent": 0.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "5月",
+          "revenue": 35000.0,
+          "cost": 33372.0,
+          "grossProfit": 1628.0,
+          "expense": 13583.02,
+          "netProfit": -11955.02,
+          "electricity": 1783.02,
+          "delivery": 800.0,
+          "rent": 0.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "6月",
+          "revenue": 64400.0,
+          "cost": 38563.0,
+          "grossProfit": 25837.0,
+          "expense": 39143.02,
+          "netProfit": -13306.02,
+          "electricity": 1783.02,
+          "delivery": 1000.0,
+          "rent": 25360.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "7月",
+          "revenue": 27100.0,
+          "cost": 15178.0,
+          "grossProfit": 11922.0,
+          "expense": 39143.02,
+          "netProfit": -27221.02,
+          "electricity": 1783.02,
+          "delivery": 1000.0,
+          "rent": 25360.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "8月",
+          "revenue": 151700.0,
+          "cost": 94016.2,
+          "grossProfit": 57683.8,
+          "expense": 40143.02,
+          "netProfit": 17540.78,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 25360.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "9月",
+          "revenue": 0,
+          "cost": 0,
+          "grossProfit": 35336.95,
+          "expense": 40143.02,
+          "netProfit": -4806.07,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 25360.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "10月",
+          "revenue": 103788.0,
+          "cost": 61494.0,
+          "grossProfit": 42294.0,
+          "expense": 40143.02,
+          "netProfit": 2150.98,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 25360.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "11月",
+          "revenue": 48034.0,
+          "cost": 21442.71,
+          "grossProfit": 26591.29,
+          "expense": 39143.02,
+          "netProfit": -12551.73,
+          "electricity": 1783.02,
+          "delivery": 1000.0,
+          "rent": 25360.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "12月",
+          "revenue": 86987.0,
+          "cost": 48034.0,
+          "grossProfit": 38953.0,
+          "expense": 39343.02,
+          "netProfit": -390.02,
+          "electricity": 1783.02,
+          "delivery": 1200.0,
+          "rent": 25360.0,
+          "salary": 11000.0
+        }
+      ],
+      "invoices": []
+    },
+    {
+      "id": "zolano-2025",
+      "year": "2025",
+      "name": "ZOLANO",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\2025世博园业绩表(7).et",
+      "monthly": [
+        {
+          "month": "1月",
+          "revenue": 69918.0,
+          "cost": 41240.0,
+          "grossProfit": 28678.0,
+          "expense": 48783.02,
+          "netProfit": -20105.02,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 30000.0,
+          "salary": 15000.0
+        },
+        {
+          "month": "2月",
+          "revenue": 65054.0,
+          "cost": 36527.0,
+          "grossProfit": 28527.0,
+          "expense": 48283.02,
+          "netProfit": -19756.02,
+          "electricity": 1783.02,
+          "delivery": 1500.0,
+          "rent": 30000.0,
+          "salary": 15000.0
+        },
+        {
+          "month": "3月",
+          "revenue": 121307.74,
+          "cost": 72355.0,
+          "grossProfit": 48952.74,
+          "expense": 48783.02,
+          "netProfit": 169.72,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 30000.0,
+          "salary": 15000.0
+        },
+        {
+          "month": "4月",
+          "revenue": 81922.77,
+          "cost": 33913.05,
+          "grossProfit": 48009.72,
+          "expense": 48783.02,
+          "netProfit": -773.3,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 30000.0,
+          "salary": 15000.0
+        },
+        {
+          "month": "5月",
+          "revenue": 167706.52,
+          "cost": 139335.78,
+          "grossProfit": 28370.74,
+          "expense": 44783.02,
+          "netProfit": -16412.28,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "6月",
+          "revenue": 86980.0,
+          "cost": 54009.65,
+          "grossProfit": 32970.35,
+          "expense": 44583.02,
+          "netProfit": -11612.67,
+          "electricity": 1783.02,
+          "delivery": 1800.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "7月",
+          "revenue": 151500.0,
+          "cost": 100389.46,
+          "grossProfit": 51110.54,
+          "expense": 44783.02,
+          "netProfit": 6327.52,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "8月",
+          "revenue": 184240.0,
+          "cost": 126556.2,
+          "grossProfit": 57683.8,
+          "expense": 44783.02,
+          "netProfit": 12900.78,
+          "electricity": 1783.02,
+          "delivery": 2000.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "9月",
+          "revenue": 154719.0,
+          "cost": 91034.1,
+          "grossProfit": 63684.9,
+          "expense": 45783.02,
+          "netProfit": 17901.88,
+          "electricity": 1783.02,
+          "delivery": 3000.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "10月",
+          "revenue": 269224.0,
+          "cost": 166695.3,
+          "grossProfit": 102528.7,
+          "expense": 45783.02,
+          "netProfit": 56745.68,
+          "electricity": 1783.02,
+          "delivery": 3000.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "11月",
+          "revenue": 303480.0,
+          "cost": 174150.03,
+          "grossProfit": 129329.97,
+          "expense": 45783.02,
+          "netProfit": 83546.95,
+          "electricity": 1783.02,
+          "delivery": 3000.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        },
+        {
+          "month": "12月",
+          "revenue": 218076.0,
+          "cost": 154088.9,
+          "grossProfit": 63987.1,
+          "expense": 45783.02,
+          "netProfit": 18204.08,
+          "electricity": 1783.02,
+          "delivery": 3000.0,
+          "rent": 30000.0,
+          "salary": 11000.0
+        }
+      ],
+      "invoices": []
+    }
+  ],
+  "notes": [
+    "Clean restart from the three user-supplied files only.",
+    "STAREEP is not shown in 2025 because it had not started yet.",
+    "Rent correction rule: 2026 Nikator June rent is 0; 2026 ZOLANO rent from June onward is 22500.",
+    "WeChat local archive scan found no new extractable files; exact June chat payments need WeChat UI/export for matching.",
+    "Net profit uses workbook-provided profit columns where available."
+  ],
+  "invoiceCostReviews": {
+    "generatedAt": "2026-06-30",
+    "rule": "ZOLANO USD cost converted with USD * 7.3 / 0.66 only for USD export list items. DT757/德源居 costs are already RMB and are not converted. These records are audit/cost review only; monthly profit is not changed until pending items are confirmed.",
+    "records": [
+      {
+        "contract": "0000169",
+        "date": "2026-06-02",
+        "company": "ZOLANO",
+        "item": "ZL632 ARC F/SA",
+        "qty": 1,
+        "unitCostRmb": 2255.2,
+        "totalCostRmb": 2255.2,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\msg\\file\\2026-05\\EXPORT 2020 (ARC2)(1).xls | EFE 2019 AC row 172",
+        "note": "ZL632 found in WeChat ARC2 export list; RMB=USD*7.3/0.66"
+      },
+      {
+        "contract": "0000172",
+        "date": "2026-06-04",
+        "company": "ZOLANO",
+        "item": "ZL2831 3S F/SA",
+        "qty": 1,
+        "unitCostRmb": 9389.88,
+        "totalCostRmb": 9389.88,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\msg\\file\\2026-05\\EXPORT 2020 (ZL2800)(1).xls | 2700 row 216",
+        "note": "RMB=USD*7.3/0.66"
+      },
+      {
+        "contract": "0000172",
+        "date": "2026-06-04",
+        "company": "ZOLANO",
+        "item": "ZL2831 1S F/SA",
+        "qty": 1,
+        "unitCostRmb": 4970.2,
+        "totalCostRmb": 4970.2,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\msg\\file\\2026-05\\EXPORT 2020 (ZL2800)(1).xls | 2700 row 218",
+        "note": "RMB=USD*7.3/0.66"
+      },
+      {
+        "contract": "0000172",
+        "date": "2026-06-04",
+        "company": "ZOLANO",
+        "item": "ZL2831 small pillow F/SA",
+        "qty": 1,
+        "unitCostRmb": 342.08,
+        "totalCostRmb": 342.08,
+        "status": "confirmed_optional",
+        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\msg\\file\\2026-05\\EXPORT 2020 (ZL2800)(1).xls | 2700 row 222",
+        "note": "Only use if invoice includes the pillow separately"
+      },
+      {
+        "contract": "0000172",
+        "date": "2026-06-04",
+        "company": "ZOLANO",
+        "item": "DT757/TL54 dining table",
+        "qty": 1,
+        "unitCostRmb": 2578.0,
+        "totalCostRmb": 2578.0,
+        "status": "confirmed",
+        "source": "WeChat found DT757 selling/order price 2578 in C:\\Users\\edwin\\Documents\\xwechat_files\\a26080304_eee5\\msg\\file\\2022-10\\1009-西安订货单详情-姚进.xlsx row 7; cost estimate from prior 德源居 source 1600-size row",
+        "note": "Corrected by Edwin: DT757 price 2578 is our cost. Already RMB, no USD conversion."
+      },
+      {
+        "contract": "0000172",
+        "date": "2026-06-04",
+        "company": "ZOLANO",
+        "item": "DC753 dining chair green",
+        "qty": 6,
+        "unitCostRmb": 680.0,
+        "totalCostRmb": 4080.0,
+        "status": "confirmed",
+        "source": "WeChat order row: C:\\Users\\edwin\\Documents\\xwechat_files\\a26080304_eee5\\msg\\file\\2022-10\\1009-西安订货单详情-姚进.xlsx, ZOLANO 订货单 row 7, DC-753-PU餐椅, qty 4, unit 680.00. Edwin confirmed this document selling/order price is our cost.",
+        "note": "Confirmed by Edwin: same DT757/德源居 document selling/order price is our cost. Use 680 RMB each x 6 pcs = 4080 RMB."
+      },
+      {
+        "contract": "0000169",
+        "date": "2026-06-02",
+        "company": "ZOLANO",
+        "item": "ZL2868 LAOREST 1EL+1ER 2.9m F/SA sofa",
+        "qty": 1,
+        "unitCostRmb": 10183.28,
+        "totalCostRmb": 10183.28,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\business\\migrate\\local\\p\\价格表.xlsm | Sheet1 (2) row 6",
+        "note": "Model corrected by Edwin: 2868 sofa. Using RMB cost-style table F/SA 1EL+1ER = 10183.276; no USD conversion. Older with-cost USD support: 931.333 F/SA cost."
+      },
+      {
+        "contract": "0000169",
+        "date": "2026-06-02",
+        "company": "ZOLANO",
+        "item": "coffee table / side tables / stools / corner table",
+        "qty": null,
+        "unitCostRmb": null,
+        "totalCostRmb": null,
+        "status": "pending",
+        "source": "photo reading uncertain",
+        "note": "Need exact model names or clearer photo"
+      }
+    ]
+  }
+}
