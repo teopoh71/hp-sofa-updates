@@ -1,9 +1,9 @@
-{
-  "versionCode": 1095,
-  "versionName": "v1095-native-patch-bridge",
-  "patchVersionCode": 1108,
-  "patchVersionName": "v1108-runtime-bootstrap-fix",
-  "patchManifestUrl": "https://teopoh71.github.io/hp-sofa-updates/patch.json",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-  "generatedAt": "2026-06-28T07:42:55.944Z"
+﻿{
+    "versionCode":  1095,
+    "versionName":  "v1095-native-patch-bridge",
+    "patchVersionCode":  1135,
+    "patchVersionName":  "v1135-zolano3867-3727-fix",
+    "patchManifestUrl":  "https://teopoh71.github.io/hp-sofa-updates/patch.json",
+    "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
+    "generatedAt":  "2026-06-30T04:22:07.7997062Z"
 }
