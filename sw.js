@@ -1,13 +1,13 @@
-const cacheName = "hp-sofa-catalog-v1105-zolano3792-persistent-pin";
+const cacheName = "hp-sofa-catalog-v1140-manual-model-empty-start";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
-  "./styles.css?v=v1105-zolano3792-persistent-pin",
-  "./app-version.js?v=v1105-zolano3792-persistent-pin",
-  "./app.js?v=v1105-zolano3792-persistent-pin",
-  "./manifest.json?v=v1105-zolano3792-persistent-pin",
-  "./assets/app-icon.svg?v=v1105-zolano3792-persistent-pin"
+  "./styles.css?v=v1140-manual-model-empty-start",
+  "./app-version.js?v=v1140-manual-model-empty-start",
+  "./app.js?v=v1140-manual-model-empty-start",
+  "./manifest.json?v=v1140-manual-model-empty-start",
+  "./assets/app-icon.svg?v=v1140-manual-model-empty-start"
 ];
 
 self.addEventListener("install", (event) => {

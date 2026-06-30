@@ -1,9 +1,9 @@
 {
-    "versionCode":  1095,
-    "versionName":  "v1095-native-patch-bridge",
-    "patchVersionCode":  1138,
-    "patchVersionName":  "v1138-zolano-combo-add-more",
+    "versionCode":  1140,
+    "versionName":  "v1140-manual-model-empty-start",
+    "patchVersionCode":  1140,
+    "patchVersionName":  "v1140-manual-model-empty-start",
     "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
-    "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-    "generatedAt":  "2026-06-30T09:12:15.7934911Z"
+    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1140-manual-model-empty-start.apk",
+    "generatedAt":  "2026-06-30T09:44:37.3570211Z"
 }

@@ -1,12 +1,12 @@
 const storageKey = "hp-sofa-price-list";
 const currentAppVersion = window.HP_SOFA_APP_VERSION || {
-  versionCode: 1095,
-  versionName: "v1095-native-patch-bridge",
+  versionCode: 1139,
+  versionName: "v1139-patch-bootstrap-apk",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
-  fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1092-mobile.apk",
-  patchVersionCode: 1107,
-  patchVersionName: "v1107-cumulative-patch-fix",
-  patchManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/patch.json"
+  fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1139-patch-bootstrap-apk.apk",
+  patchVersionCode: 1139,
+  patchVersionName: "v1139-patch-bootstrap-apk",
+  patchManifestUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json"
 };
 const patchCacheName = "hp-sofa-patch-cache";
 const patchVersionStorageKey = "hp-sofa-patch-version-code";
@@ -2902,7 +2902,13 @@ refreshBrandSwitchButtons().forEach(bindCatalogSwitchButton);
       clearSelectedRecommendationCounts();
       pieceMaterialSelections = {};
       selectedDiningTurntableId = "";
-      populateBuilderPieces();
+      if (isManualModuleSeriesName(seriesSelect.value)) {
+        suppressAutoSelectOnNextPopulate = true;
+        suppressRetainedSelectionsOnNextPopulate = true;
+        populateBuilderPieces(1);
+      } else {
+        populateBuilderPieces();
+      }
       syncBuilderControlsVisibility();
       if (!fillDefaultSingleCatalogSlot()) {
         renderSetPreview();
@@ -4014,7 +4020,7 @@ if ("serviceWorker" in navigator) {
         .catch(() => {});
       return;
     }
-    navigator.serviceWorker.register("sw.js?v=v1107-cumulative-patch-fix")
+    navigator.serviceWorker.register("sw.js?v=v1140-manual-model-empty-start")
       .then((registration) => registration.update())
       .catch(() => {});
   });
