@@ -1,41 +1,41 @@
 {
-    "version":  "v1140-manual-model-empty-start",
-    "versionName":  "v1140-manual-model-empty-start",
-    "patchVersionCode":  1140,
-    "patchVersionName":  "v1140-manual-model-empty-start",
-    "generatedAt":  "2026-06-30T09:44:36.9666369Z",
+    "version":  "v1141-zolano3136-corner-module",
+    "versionName":  "v1141-zolano3136-corner-module",
+    "patchVersionCode":  1141,
+    "patchVersionName":  "v1141-zolano3136-corner-module",
+    "generatedAt":  "2026-06-30T10:29:27.8652880Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1140-manual-model-empty-start/app.js",
-                      "sha256":  "e769a5cde2c65538e3a71f6da941d69c0e051654571eae7718182caaf0af35e4",
-                      "size":  911932,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1141-zolano3136-corner-module/app.js",
+                      "sha256":  "ed9a4985923349a826353bd65a10af7057895bfecc1fe260172dfcac302aa0de",
+                      "size":  912547,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1140-manual-model-empty-start/styles.css",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1141-zolano3136-corner-module/styles.css",
                       "sha256":  "9bdb9c6b76159e655a10f0fe2cda01fa7012840ef3e8a0ea9d260a76c60d59d6",
                       "size":  48119,
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1140-manual-model-empty-start/index.html",
-                      "sha256":  "fd8409b2fb96d13d8a524d2021af61fe032ed9941a6a1c8a8c063294db13ec62",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1141-zolano3136-corner-module/index.html",
+                      "sha256":  "5db1e126c177357f6c756724644eaae6232311f6b1055755a558e52354bb4efe",
                       "size":  632293,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1140-manual-model-empty-start/app-version.js",
-                      "sha256":  "1a354b8f8c07b1688b768b6fac4bc1553d596c1981db9546ce6f85b5e7c1bb0f",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1141-zolano3136-corner-module/app-version.js",
+                      "sha256":  "62515b0e474d475f4c98fe6f915310feb3a6eaddcd5ff73dbc2dcf321f4abbf4",
                       "size":  648,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1140-manual-model-empty-start/sw.js",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1141-zolano3136-corner-module/sw.js",
                       "sha256":  "afd7e288cfa44849a9120efa8e1777fd6d353783d46e71311efada8a90fd66d9",
                       "size":  2522,
                       "contentType":  "application/javascript; charset=utf-8"

@@ -1,9 +1,9 @@
 {
     "versionCode":  1140,
     "versionName":  "v1140-manual-model-empty-start",
-    "patchVersionCode":  1140,
-    "patchVersionName":  "v1140-manual-model-empty-start",
+    "patchVersionCode":  1141,
+    "patchVersionName":  "v1141-zolano3136-corner-module",
     "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
     "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1140-manual-model-empty-start.apk",
-    "generatedAt":  "2026-06-30T09:44:37.3570211Z"
+    "generatedAt":  "2026-06-30T10:29:28.1958894Z"
 }
