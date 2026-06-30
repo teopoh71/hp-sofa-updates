@@ -1,36 +1,36 @@
 {
-    "version":  "v1137-zl751-phone-power-price",
-    "versionName":  "v1137-zl751-phone-power-price",
-    "patchVersionCode":  1137,
-    "patchVersionName":  "v1137-zl751-phone-power-price",
-    "generatedAt":  "2026-06-30T08:10:41.3951471Z",
+    "version":  "v1138-zolano-combo-add-more",
+    "versionName":  "v1138-zolano-combo-add-more",
+    "patchVersionCode":  1138,
+    "patchVersionName":  "v1138-zolano-combo-add-more",
+    "generatedAt":  "2026-06-30T09:12:15.3001871Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/app.js",
-                      "sha256":  "57173e6cb1411fd6f4aa766035b227d8c94bec98a8494d60157212ba52dfc8b2",
-                      "size":  911425,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1138-zolano-combo-add-more/app.js",
+                      "sha256":  "274f59458559263c0e14b9b81f45a09f780281cae46c73f8b5199cb82bb5bd7f",
+                      "size":  911685,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/styles.css",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1138-zolano-combo-add-more/styles.css",
                       "sha256":  "9bdb9c6b76159e655a10f0fe2cda01fa7012840ef3e8a0ea9d260a76c60d59d6",
                       "size":  48119,
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/index.html",
-                      "sha256":  "73a95fda079da86b92b0baf81713bc4e1bb7e5a0e4f950e238e1f391b91fef0b",
-                      "size":  632290,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1138-zolano-combo-add-more/index.html",
+                      "sha256":  "9c968047cf7d426e6272977c6916b58269403a07c5f1bcaffa3f3860c496811a",
+                      "size":  632284,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/app-version.js",
-                      "sha256":  "707d8c57aad416a4c231088609dea513407dcd0e805fdc20495965e74fd35090",
-                      "size":  120,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1138-zolano-combo-add-more/app-version.js",
+                      "sha256":  "41cd551f776a4f80690d851d4eccced1f1f004c212d5533d4e3611194ef9ea8d",
+                      "size":  118,
                       "contentType":  "application/javascript; charset=utf-8"
                   }
               ]

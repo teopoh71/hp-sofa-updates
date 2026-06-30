@@ -1,9 +1,9 @@
 {
     "versionCode":  1095,
     "versionName":  "v1095-native-patch-bridge",
-    "patchVersionCode":  1137,
-    "patchVersionName":  "v1137-zl751-phone-power-price",
+    "patchVersionCode":  1138,
+    "patchVersionName":  "v1138-zolano-combo-add-more",
     "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
     "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-    "generatedAt":  "2026-06-30T08:12:19.2608867Z"
+    "generatedAt":  "2026-06-30T09:12:15.7934911Z"
 }
