@@ -1,9 +1,9 @@
 {
     "versionCode":  1095,
     "versionName":  "v1095-native-patch-bridge",
-    "patchVersionCode":  1136,
-    "patchVersionName":  "v1136-smooth-quick-slider",
+    "patchVersionCode":  1137,
+    "patchVersionName":  "v1137-zl751-phone-power-price",
     "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
     "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-    "generatedAt":  "2026-06-30T05:06:41.4387941Z"
+    "generatedAt":  "2026-06-30T08:12:19.2608867Z"
 }

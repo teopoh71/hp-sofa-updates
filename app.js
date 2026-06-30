@@ -4,8 +4,8 @@ const currentAppVersion = window.HP_SOFA_APP_VERSION || {
   versionName: "v1095-native-patch-bridge",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
   fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1092-mobile.apk",
-  patchVersionCode: 1105,
-  patchVersionName: "v1105-zolano3792-persistent-pin",
+  patchVersionCode: 1107,
+  patchVersionName: "v1107-cumulative-patch-fix",
   patchManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/patch.json"
 };
 const patchCacheName = "hp-sofa-patch-cache";
@@ -475,6 +475,7 @@ const nikatorQuickPhotoOverrides = {
 };
 const showroomZolanoQuickOrder = [
   "ZL 3792",
+  "FG 3136 PERUNI",
   "ZL 2868 LAOREST",
   "ZL 2707 KANDER",
   "ZL 2807",
@@ -487,7 +488,9 @@ const showroomZolanoQuickOrder = [
   "ZL 3778",
   "ZL 3817 MELFE",
   "ZL 3776",
+  "ZL 3711",
   "ZL 3727 FERRANTI",
+  "ZL 3867 TOMMASO",
   "ZL 2911",
   "ZL 3803 SASSA",
   "ZL 3751",
@@ -519,7 +522,10 @@ const showroomZolanoQuickOrder = [
 ];
 const zolanoQuickLabelOverrides = new Map([
   ["MONTIERI ZL 2628", "26282"],
+  ["FG 3136 PERUNI", "3136"],
   ["ZL 3792", "3792"],
+  ["ZL 3711", "3711"],
+  ["ZL 3867 TOMMASO", "3867"],
   ["ZL 3819 ANCONA", "3819"],
   ["ZL 3818 BURANO", "3818"],
   ["ZL 3821 ROVIGO", "3821"],
@@ -549,7 +555,8 @@ const zolanoQuickPhotoOverrides = new Map([
   ["2707", "assets/generated/zolano/ZL2707.jpg"],
   ["2807", "assets/generated/zolano/ZL2807.jpg"],
   ["2802", "assets/generated/zolano/ZL2802TARZ.jpg"],
-  ["26282", "assets/generated/zolano/MONTIERIZL2628.jpg"],
+  ["26282", "assets/quick-thumbs/zolano/26282.jpg"],
+  ["3136", "assets/generated/zolano/FG3136PERUNI-thumb.jpg"],
   ["2672", "assets/generated/zolano/ZL2672VICE.jpg"],
   ["2897", "assets/generated/zolano/ZL2897.jpg"],
   ["2831", "assets/generated/zolano/ZL2831.jpg"],
@@ -559,7 +566,8 @@ const zolanoQuickPhotoOverrides = new Map([
   ["ZL 2802 TARZ", "assets/generated/zolano/ZL2802TARZ.jpg"],
   ["3753", "assets/generated/zolano/ZL3753-4-2.jpg"],
   ["ZL 3753 (4.2)", "assets/generated/zolano/ZL3753-4-2.jpg"],
-  ["MONTIERI ZL 2628", "assets/generated/zolano/MONTIERIZL2628.jpg"],
+  ["MONTIERI ZL 2628", "assets/quick-thumbs/zolano/26282.jpg"],
+  ["FG 3136 PERUNI", "assets/generated/zolano/FG3136PERUNI-thumb.jpg"],
   ["ZL 2672 VICE", "assets/generated/zolano/ZL2672VICE.jpg"],
   ["ZL 2897", "assets/generated/zolano/ZL2897.jpg"],
   ["ZL 2831", "assets/generated/zolano/ZL2831.jpg"],
@@ -571,7 +579,11 @@ const zolanoQuickPhotoOverrides = new Map([
   ["3792", "assets/generated/zolano/ZL3792.jpg"],
   ["ZL3792", "assets/generated/zolano/ZL3792.jpg"],
   ["ZL 3792", "assets/generated/zolano/ZL3792.jpg"],
+  ["3711", "assets/generated/zolano/parts/ZL3711-2EL-1630-button.png"],
+  ["ZL 3711", "assets/generated/zolano/parts/ZL3711-2EL-1630-button.png"],
   ["ZL 3727 FERRANTI", "assets/quick-thumbs/zolano/3727-cutout.jpg"],
+  ["3867", "assets/generated/zolano/ZL3867TOMMASO-thumb.jpg"],
+  ["ZL 3867 TOMMASO", "assets/generated/zolano/ZL3867TOMMASO-thumb.jpg"],
   ["ZL 3751", "assets/quick-thumbs/zolano/3751-cutout.jpg"],
   ["3819", "assets/generated/zolano/ZL3819ANCONA.jpg"],
   ["ZL 3819 ANCONA", "assets/generated/zolano/ZL3819ANCONA.jpg"],
@@ -645,7 +657,9 @@ const zolanoVisibleSeriesLimit = new Set([
   "ZL 3778",
   "ZL 3817 MELFE",
   "ZL 3776",
+  "ZL 3711",
   "ZL 3727 FERRANTI",
+  "ZL 3867 TOMMASO",
   "ZL 2911",
   "ZL 3803 SASSA",
   "ZL 3751",
@@ -703,6 +717,194 @@ const zolanoThreeDigitCatalog = [
     materials: ["M/F", "F/SA", "NuBuck"],
     photo: "assets/generated/zolano/ZL3792.jpg",
     source: "zolano-price-list"
+  },
+  {
+    id: "ZL37112EL1630EXPORT2020ZL33002SHEET162",
+    brand: "Zolano",
+    series: "ZL 3711",
+    model: "ZL 3711",
+    name: "ZL 3711",
+    configuration: "2EL 1630mm",
+    description: "2EL 1630 x 690 mm",
+    details: "ZL 3711 2EL",
+    dimensions: "1630 x 690 mm",
+    width: 1630,
+    depth: 690,
+    height: 850,
+    price: 328.44,
+    priceOptions: [328.44, 564.06, 633.42],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3711-2EL-1630-button.png",
+    source: "EXPORT 2020 (ZL 3300 )(2).xls#Sheet1!62"
+  },
+  {
+    id: "ZL37111ERT940EXPORT2020ZL33002SHEET163",
+    brand: "Zolano",
+    series: "ZL 3711",
+    model: "ZL 3711",
+    name: "ZL 3711",
+    configuration: "1ER/T 940mm",
+    description: "1ER/T 940 x 690 mm",
+    details: "ZL 3711 1ER/T",
+    dimensions: "940 x 690 mm",
+    width: 940,
+    depth: 690,
+    height: 850,
+    price: 264.18,
+    priceOptions: [264.18, 455.94, 494.7],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3711-1ERT-940-button.png",
+    source: "EXPORT 2020 (ZL 3300 )(2).xls#Sheet1!63"
+  },
+  {
+    id: "ZL37112EL1470EXPORT2020ZL33002SHEET162",
+    brand: "Zolano",
+    series: "ZL 3711",
+    model: "ZL 3711",
+    name: "ZL 3711",
+    configuration: "2EL 1470mm",
+    description: "2EL 1470 x 610 mm",
+    details: "ZL 3711 2EL",
+    dimensions: "1470 x 610 mm",
+    width: 1470,
+    depth: 610,
+    height: 850,
+    price: 328.44,
+    priceOptions: [328.44, 564.06, 633.42],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3711-2EL-1470-button.png",
+    source: "EXPORT 2020 (ZL 3300 )(2).xls#Sheet1!62 / alternate drawing width"
+  },
+  {
+    id: "ZL3867TOMMASO1ELPHOTO",
+    brand: "Zolano",
+    series: "ZL 3867 TOMMASO",
+    model: "ZL 3867 TOMMASO",
+    name: "ZL 3867 TOMMASO",
+    configuration: "1EL",
+    description: "1530 x 990 mm",
+    details: "ZL 3867 TOMMASO 1EL",
+    dimensions: "1530 x 990 mm",
+    width: 1530,
+    depth: 990,
+    height: 840,
+    price: 0,
+    priceOptions: [0],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/ZL3867TOMMASO.jpg",
+    source: "user photo ZL3867 TOMMASO"
+  },
+  {
+    id: "ZL3867TOMMASO2ERPHOTO",
+    brand: "Zolano",
+    series: "ZL 3867 TOMMASO",
+    model: "ZL 3867 TOMMASO",
+    name: "ZL 3867 TOMMASO",
+    configuration: "2ER",
+    description: "2360 x 1880 mm",
+    details: "ZL 3867 TOMMASO 2ER",
+    dimensions: "2360 x 1880 mm",
+    width: 2360,
+    depth: 1880,
+    height: 840,
+    price: 0,
+    priceOptions: [0],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/ZL3867TOMMASO.jpg",
+    source: "user photo ZL3867 TOMMASO"
+  },
+  {
+    id: "ZL3867TOMMASO1ELTPHOTO",
+    brand: "Zolano",
+    series: "ZL 3867 TOMMASO",
+    model: "ZL 3867 TOMMASO",
+    name: "ZL 3867 TOMMASO",
+    configuration: "1EL/T",
+    description: "2210 x 1910 mm",
+    details: "ZL 3867 TOMMASO 1EL/T",
+    dimensions: "2210 x 1910 mm",
+    width: 2210,
+    depth: 1910,
+    height: 840,
+    price: 0,
+    priceOptions: [0],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/ZL3867TOMMASO.jpg",
+    source: "user photo ZL3867 TOMMASO"
+  },
+  {
+    id: "MONTIERIZL26281EREXPORT2020ZL26002661129R",
+    brand: "Zolano",
+    series: "MONTIERI ZL 2628",
+    model: "MONTIERI ZL 2628",
+    name: "MONTIERI ZL 2628",
+    configuration: "1ER",
+    description: "1ER 910mm",
+    details: "Mirrors 1EL price; 1ER row not printed in source",
+    dimensions: "1ER 910mm",
+    price: 189,
+    priceOptions: [189, 214, 245, 320, 350, 379],
+    priceFactor: 11.06060606060606,
+    materials: ["PVC", "M/F", "A/C", "C/S", "F/L", "F/SA"],
+    photo: "assets/generated/zolano/MONTIERIZL2628.jpg",
+    source: "EXPORT 2020 (ZL2600).xls#2661-!129 mirrored for 1ER"
+  },
+  {
+    id: "FG3136PERUNI1ELEXPORT2020FGSHEET1317",
+    brand: "Zolano",
+    series: "FG 3136 PERUNI",
+    model: "FG 3136 PERUNI",
+    name: "FG 3136 PERUNI",
+    configuration: "1EL",
+    description: "1160 x 920mm",
+    details: "FG 3136 PERUNI",
+    dimensions: "1160 x 920mm",
+    price: 317,
+    priceOptions: [317, 269, 380],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "PVC", "A/C"],
+    photo: "assets/generated/zolano/FG3136PERUNI.jpg",
+    source: "EXPORT 2020 (FG ).xls#Sheet1!317"
+  },
+  {
+    id: "FG3136PERUNI1NAEXPORT2020FGSHEET1318",
+    brand: "Zolano",
+    series: "FG 3136 PERUNI",
+    model: "FG 3136 PERUNI",
+    name: "FG 3136 PERUNI",
+    configuration: "1NA",
+    description: "920 x 920mm",
+    details: "FG 3136 PERUNI",
+    dimensions: "920 x 920mm",
+    price: 247,
+    priceOptions: [247, 208, 298],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "PVC", "A/C"],
+    photo: "assets/generated/zolano/FG3136PERUNI.jpg",
+    source: "EXPORT 2020 (FG ).xls#Sheet1!318"
+  },
+  {
+    id: "FG3136PERUNISTOOLEXPORT2020FGSHEET1319",
+    brand: "Zolano",
+    series: "FG 3136 PERUNI",
+    model: "FG 3136 PERUNI",
+    name: "FG 3136 PERUNI",
+    configuration: "STOOL",
+    description: "1160 x 740mm",
+    details: "FG 3136 PERUNI",
+    dimensions: "1160 x 740mm",
+    price: 171,
+    priceOptions: [171, 144, 205],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "PVC", "A/C"],
+    photo: "assets/generated/zolano/FG3136PERUNI.jpg",
+    source: "EXPORT 2020 (FG ).xls#Sheet1!319"
   },
   {
     id: "ZOLANO-DETECTED-FG3129",
@@ -930,12 +1132,12 @@ const zolanoThreeDigitCatalog = [
     description: "Arm Chair",
     details: "Zolano arm chair",
     dimensions: "",
-    price: 5358,
-    priceOptions: [5358, 9353, 10628],
+    price: 8486,
+    priceOptions: [8486, 12481, 13756],
     priceIsFinal: true,
     materials: ["M/F", "F/SA", "N.b/N.p"],
     photo: "assets/generated/zolano-3digit/ZL751.jpg",
-    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC"
+    source: "EXPORT 2020 (ARC2).xls#EFE 2019 AC / includes PHONE HOLDER +13 and POWER +88"
   },
   {
     id: "ZOLANO-ARMCHAIR-ZL771",
@@ -1437,6 +1639,8 @@ const panelToggle = document.querySelector("#panelToggle");
 let brandSwitchButtons = [...document.querySelectorAll("[data-brand-switch]")];
 const seriesSelect = document.querySelector("#seriesSelect");
 const modelJumpSelect = document.querySelector("#modelJumpSelect");
+const zolanoModelInput = document.querySelector("#zolanoModelInput");
+const zolanoModelInputLabel = document.querySelector("#zolanoModelInputLabel");
 const recommendSelect = document.querySelector("#recommendSelect");
 const materialSelect = document.querySelector("#materialSelect");
 const widthFilterInput = document.querySelector("#widthFilterInput");
@@ -1595,10 +1799,187 @@ const zolano2628Modules = [
     photo: "assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top-button.png"
   },
   {
+    id: "MONTIERIZL26281EREXPORT2020ZL26002661129R",
+    label: "1ER",
+    meta: "910mm",
+    photo: "assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top-button.png"
+  },
+  {
     id: "MONTIERIZL26281NAEXPORT2020ZL26002661128",
     label: "1NA",
     meta: "620mm",
     photo: "assets/generated/zolano/parts/MONTIERIZL2628-1NA-top-button.png"
+  }
+];
+const zolano3136Modules = [
+  {
+    id: "FG3136PERUNI1ELEXPORT2020FGSHEET1317",
+    label: "1EL",
+    meta: "1160 x 920mm",
+    photo: "assets/generated/zolano/parts/FG3136PERUNI-1EL-button.jpg"
+  },
+  {
+    id: "FG3136PERUNI1NAEXPORT2020FGSHEET1318",
+    label: "1NA",
+    meta: "920 x 920mm",
+    photo: "assets/generated/zolano/parts/FG3136PERUNI-1NA-button.jpg"
+  },
+  {
+    id: "FG3136PERUNISTOOLEXPORT2020FGSHEET1319",
+    label: "STOOL",
+    meta: "1160 x 740mm",
+    photo: "assets/generated/zolano/parts/FG3136PERUNI-STOOL-button.jpg"
+  }
+];
+const zolano3711Modules = [
+  {
+    id: "ZL37112EL1630EXPORT2020ZL33002SHEET162",
+    label: "2EL",
+    configuration: "2EL 1630mm",
+    meta: "1630 x 690mm",
+    width: 1630,
+    depth: 690,
+    height: 850,
+    price: 328.44,
+    priceOptions: [328.44, 564.06, 633.42],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3711-2EL-1630-button.png"
+  },
+  {
+    id: "ZL37111ERT940EXPORT2020ZL33002SHEET163",
+    label: "1ER/T",
+    configuration: "1ER/T 940mm",
+    meta: "940 x 690mm",
+    width: 940,
+    depth: 690,
+    height: 850,
+    price: 264.18,
+    priceOptions: [264.18, 455.94, 494.7],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3711-1ERT-940-button.png"
+  },
+  {
+    id: "ZL37112EL1470EXPORT2020ZL33002SHEET162",
+    label: "2EL",
+    configuration: "2EL 1470mm",
+    meta: "1470 x 610mm",
+    width: 1470,
+    depth: 610,
+    height: 850,
+    price: 328.44,
+    priceOptions: [328.44, 564.06, 633.42],
+    priceFactor: 11.06060606060606,
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3711-2EL-1470-button.png"
+  }
+];
+const zolano3727Modules = [
+  {
+    id: "ZL3727FERRANTI1SMODULE",
+    sourceId: "ZL3727FERRANTI1SEXPORT2020ZL33002SHEET1155",
+    series: "ZL 3727 FERRANTI",
+    label: "1S",
+    configuration: "1S",
+    meta: "1160mm",
+    width: 1160,
+    depth: 1000,
+    height: 850,
+    price: 11040,
+    priceOptions: [11040, 11381.44, 12000],
+    materials: ["M/F", "F/SA", "NuBuck"],
+    priceIsFinal: true,
+    photo: "assets/generated/zolano/parts/ZL2831-1S.png"
+  },
+  {
+    id: "ZL3727FERRANTI2SMODULE",
+    sourceId: "ZL3727FERRANTI2SEXPORT2020ZL33002SHEET1154",
+    series: "ZL 3727 FERRANTI",
+    label: "2S",
+    configuration: "2S",
+    meta: "1870mm",
+    width: 1870,
+    depth: 1000,
+    height: 850,
+    price: 17848,
+    priceOptions: [17848, 18400, 19400],
+    materials: ["M/F", "F/SA", "NuBuck"],
+    priceIsFinal: true,
+    photo: "assets/generated/zolano/parts/ZL2831-2S.png"
+  },
+  {
+    id: "ZL3727FERRANTI1ERMODULE",
+    sourceId: "ZL3727FERRANTI10EXPORT2020ZL33002SHEET1146",
+    series: "ZL 3727 FERRANTI",
+    label: "1ER",
+    configuration: "1ER",
+    meta: "935mm",
+    width: 935,
+    depth: 1000,
+    height: 850,
+    price: 9384,
+    priceOptions: [9384, 9674.22, 10200],
+    materials: ["M/F", "F/SA", "NuBuck"],
+    priceIsFinal: true,
+    photo: "assets/generated/zolano/parts/MONTIERIZL2628-1ERT-top-button.png"
+  },
+  {
+    id: "ZL3727FERRANTI2ERMODULE",
+    sourceId: "ZL3727FERRANTI20EXPORT2020ZL33002SHEET1145",
+    series: "ZL 3727 FERRANTI",
+    label: "2ER",
+    configuration: "2ER",
+    meta: "1645mm",
+    width: 1645,
+    depth: 1000,
+    height: 850,
+    price: 16928,
+    priceOptions: [16928, 17451.55, 18400],
+    materials: ["M/F", "F/SA", "NuBuck"],
+    priceIsFinal: true,
+    photo: "assets/generated/zolano/parts/MONTIERIZL2628-2ER-top-button.png"
+  }
+];
+const zolano3867Modules = [
+  {
+    id: "ZL3867TOMMASO1ELPHOTO",
+    label: "1EL",
+    configuration: "1EL",
+    meta: "1530mm",
+    width: 1530,
+    depth: 990,
+    height: 840,
+    price: 0,
+    priceOptions: [0],
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3867-1EL-button.jpg"
+  },
+  {
+    id: "ZL3867TOMMASO2ERPHOTO",
+    label: "2ER",
+    configuration: "2ER",
+    meta: "2360mm",
+    width: 2360,
+    depth: 1880,
+    height: 840,
+    price: 0,
+    priceOptions: [0],
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3867-2ER-button.jpg"
+  },
+  {
+    id: "ZL3867TOMMASO1ELTPHOTO",
+    label: "1EL/T",
+    configuration: "1EL/T",
+    meta: "2210mm",
+    width: 2210,
+    depth: 1910,
+    height: 840,
+    price: 0,
+    priceOptions: [0],
+    materials: ["M/F", "F/SA", "NuBuck"],
+    photo: "assets/generated/zolano/parts/ZL3867-1ELT-button.jpg"
   }
 ];
 const zolano3818Modules = [
@@ -1693,7 +2074,7 @@ const zolano3792Modules = [
     photo: "assets/generated/zolano/parts/ZL3792-1ERT-crop.jpg"
   }
 ];
-const zolanoModulePhotoMap = Object.fromEntries([...zolano2897Modules, ...zolano3776Modules, ...zolano2628Modules, ...zolano3818Modules, ...zolano3778Modules, ...zolano3817Modules, ...zolano3792Modules].map((module) => [module.id, module.photo]));
+const zolanoModulePhotoMap = Object.fromEntries([...zolano2897Modules, ...zolano3776Modules, ...zolano2628Modules, ...zolano3136Modules, ...zolano3711Modules, ...zolano3727Modules, ...zolano3867Modules, ...zolano3818Modules, ...zolano3778Modules, ...zolano3817Modules, ...zolano3792Modules].map((module) => [module.id, module.photo]));
 const nikatorModuleSeriesSeedSet = new Set(["LE8801SF", "LE8810SF", "LE8806SF", "NK0051SF", "NK0054SF", "NK0001SF", "NK0003SF", "LE8803SF"]);
 
 const excludedCatalogIds = new Set([
@@ -2569,6 +2950,15 @@ if (modelJumpSelect) {
     if (!modelJumpSelect.value) return;
     jumpToSeries(activeCatalogKey, modelJumpSelect.value);
   });
+}
+
+if (zolanoModelInput) {
+  zolanoModelInput.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") return;
+    event.preventDefault();
+    jumpToTypedZolanoModel();
+  });
+  zolanoModelInput.addEventListener("change", jumpToTypedZolanoModel);
 }
 
 if (builderSearchInput) {
@@ -3624,7 +4014,7 @@ if ("serviceWorker" in navigator) {
         .catch(() => {});
       return;
     }
-    navigator.serviceWorker.register("sw.js?v=v1105-zolano3792-persistent-pin")
+    navigator.serviceWorker.register("sw.js?v=v1107-cumulative-patch-fix")
       .then((registration) => registration.update())
       .catch(() => {});
   });
@@ -4164,8 +4554,8 @@ function shouldShowModelJumpSelect() {
 
 function syncModelJumpVisibility() {
   const label = modelJumpSelect?.closest("label");
-  if (!label) return;
-  label.hidden = !shouldShowModelJumpSelect();
+  if (label) label.hidden = !shouldShowModelJumpSelect();
+  if (zolanoModelInputLabel) zolanoModelInputLabel.hidden = activeCatalogKey !== "zolano";
 }
 
 function syncMaterialSelectVisibility(labels = []) {
@@ -4202,6 +4592,30 @@ function syncModelJumpSelect() {
   const hasOption = Array.from(modelJumpSelect.options).some((option) => option.value === seriesSelect.value);
   modelJumpSelect.value = hasOption ? seriesSelect.value : "";
   syncQuickJumpActiveState(document);
+}
+
+function normalizeZolanoModelQuery(value) {
+  return String(value || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
+
+function findZolanoSeriesByQuery(query) {
+  const compactQuery = normalizeZolanoModelQuery(query);
+  if (!compactQuery || !modelJumpSelect) return "";
+  return Array.from(modelJumpSelect.options)
+    .map((option) => option.value)
+    .find((value) => {
+      const compactValue = normalizeZolanoModelQuery(value);
+      return compactValue === compactQuery
+        || compactValue.includes(compactQuery)
+        || compactValue.replace(/^ZL/, "") === compactQuery.replace(/^ZL/, "");
+    }) || "";
+}
+
+function jumpToTypedZolanoModel() {
+  if (!zolanoModelInput || activeCatalogKey !== "zolano") return;
+  const target = findZolanoSeriesByQuery(zolanoModelInput.value);
+  if (!target) return;
+  jumpToSeries("zolano", target);
 }
 
 function populateBuilderPieces(forceSlotCount) {
@@ -4495,6 +4909,7 @@ function renderComboButtons(combos = getSeriesRecommendations()) {
     button.dataset.comboCount = String(count);
     button.innerHTML = `${formatComboButtonContent(combo)}${count > 0 ? `<span class="combo-choice-count">${count}</span>` : ""}`;
     button.addEventListener("click", () => {
+      if (applyManualModuleComboButton(combo)) return;
       selectedRecommendationCounts[combo.id] = getRecommendationCount(combo.id) + 1;
       isSyncingRecommendationCounts = true;
       recommendSelect.value = combo.id;
@@ -4504,6 +4919,30 @@ function renderComboButtons(combos = getSeriesRecommendations()) {
     list.append(button);
   });
   applyCompactComboButtonLayout();
+}
+
+function applyManualModuleComboButton(combo) {
+  if (activeCatalogKey !== "zolano" || !isManualModulePickerActive()) return false;
+  const ids = getManualModuleIdsForCombo(combo);
+  if (!ids.length) return false;
+  clearSelectedRecommendationCounts();
+  if (recommendSelect) recommendSelect.value = "";
+  setBuilderSelections(ids);
+  refreshSlotMaterialControls();
+  syncZolanoModulePicker();
+  return true;
+}
+
+function getManualModuleIdsForCombo(combo) {
+  const series = getActiveZolanoModuleSeries();
+  const config = String(combo?.configuration || combo?.name || "").toUpperCase().replace(/\s+/g, "");
+  if (series === "3727") {
+    if (config === "1S") return ["ZL3727FERRANTI1SMODULE"];
+    if (config === "2S") return ["ZL3727FERRANTI2SMODULE"];
+    if (config.includes("2EL+1ER")) return ["ZL3727FERRANTI2ERMODULE", "ZL3727FERRANTI1ERMODULE"];
+    if (config.includes("2EL+2ER")) return ["ZL3727FERRANTI2ERMODULE", "ZL3727FERRANTI2ERMODULE"];
+  }
+  return [];
 }
 
 function applyCompactComboButtonLayout() {
@@ -4872,6 +5311,10 @@ function getActiveZolanoModuleSeries() {
   if (activeCatalogKey !== "zolano") return "";
   const text = `${currentSeries} ${currentCombo}`;
   if (/(?:^|[^0-9])2628(?:[^0-9]|$)/.test(text)) return "2628";
+  if (/(?:^|[^0-9])3136(?:[^0-9]|$)/.test(text)) return "3136";
+  if (/(?:^|[^0-9])3711(?:[^0-9]|$)/.test(text)) return "3711";
+  if (/(?:^|[^0-9])3727(?:[^0-9]|$)/.test(text)) return "3727";
+  if (/(?:^|[^0-9])3867(?:[^0-9]|$)/.test(text)) return "3867";
   if (/(?:^|[^0-9])2897(?:[^0-9]|$)/.test(text)) return "2897";
   if (/(?:^|[^0-9])3776(?:[^0-9]|$)/.test(text)) return "3776";
   if (/(?:^|[^0-9])3818(?:[^0-9]|$)/.test(text)) return "3818";
@@ -4883,7 +5326,7 @@ function getActiveZolanoModuleSeries() {
 
 function isZolanoModuleSeriesName(seriesValue) {
   const text = String(seriesValue || "").toUpperCase();
-  return /(?:^|[^0-9])(?:2628|2897|3776|3778|3792|3817|3818)(?:[^0-9]|$)/.test(text);
+  return /(?:^|[^0-9])(?:2628|3136|3711|3727|3867|2897|3776|3778|3792|3817|3818)(?:[^0-9]|$)/.test(text);
 }
 
 function isManualModuleSeriesName(seriesValue) {
@@ -4895,6 +5338,10 @@ function isManualModuleSeriesName(seriesValue) {
 function getActiveManualModules() {
   const series = getActiveZolanoModuleSeries();
   if (series === "2628") return zolano2628Modules;
+  if (series === "3136") return zolano3136Modules;
+  if (series === "3711") return zolano3711Modules;
+  if (series === "3727") return zolano3727Modules;
+  if (series === "3867") return zolano3867Modules;
   if (series === "2897") return zolano2897Modules;
   if (series === "3776") return zolano3776Modules;
   if (series === "3818") return zolano3818Modules;
@@ -5118,7 +5565,7 @@ function syncZolanoModulePicker() {
         const moduleMeta = cleanModulePickerText(module.meta);
         const moduleLabel = cleanModulePickerText(module.label) || module.label;
         return `
-        <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${module.id}" style="position:relative;display:grid;grid-template-rows:${selected ? "28px " : ""}52px auto auto;gap:1px;min-height:${selected ? "116px" : "88px"};padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
+        <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${module.id}" style="position:relative;display:grid;grid-template-rows:52px auto auto;gap:1px;min-height:88px;padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
           ${selected ? `<span class="module-picker-count">${selectedCount}</span>` : ""}
           <span class="module-picker-image" style="display:block;width:100%;height:52px;background:url('${modulePhoto}') center / contain no-repeat;">
             <img src="${modulePhoto}" alt="${escapeHtml(moduleLabel)}" loading="eager" decoding="sync" style="width:100%;height:52px;object-fit:contain;" onerror="this.style.display='none';">
@@ -5158,7 +5605,7 @@ function repairNikatorModulePickerIfEmpty() {
         const selected = selectedCount > 0;
         const modulePhoto = getDisplayAssetUrl(module.photo);
         return `
-          <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${escapeHtml(module.id)}" style="position:relative;display:grid;grid-template-rows:${selected ? "28px " : ""}52px auto auto;gap:1px;min-height:${selected ? "116px" : "88px"};padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
+          <button class="module-picker-button${selected ? " is-active" : ""}" type="button" data-zolano-module-id="${escapeHtml(module.id)}" style="position:relative;display:grid;grid-template-rows:52px auto auto;gap:1px;min-height:88px;padding:4px 3px;border-radius:6px;${selected ? "border-color:#14706b;background:#e5f3f1;" : ""}">
             ${selected ? `<span class="module-picker-count">${selectedCount}</span>` : ""}
             <span class="module-picker-image" style="display:block;width:100%;height:52px;background:url('${escapeHtml(modulePhoto)}') center / contain no-repeat;">
               <img src="${escapeHtml(modulePhoto)}" alt="${escapeHtml(module.label)}" loading="eager" decoding="sync" style="width:100%;height:52px;object-fit:contain;">
@@ -5186,9 +5633,34 @@ function getSelectedModuleCount(moduleId) {
 
 function getActiveManualModuleItem(moduleId) {
   if (!moduleId) return null;
-  const existing = catalogSofas.find((sofa) => sofa.id === moduleId);
-  if (existing && hasPositiveCatalogPrice(existing)) return existing;
   const module = getActiveManualModules().find((candidate) => candidate.id === moduleId);
+  const existing = catalogSofas.find((sofa) => sofa.id === moduleId);
+  const sourceExisting = module?.sourceId ? catalogSofas.find((sofa) => sofa.id === module.sourceId) : null;
+  const applyModuleOverrides = (target, source) => {
+    const item = target || { ...source, id: module.id };
+    item.id = module.id;
+    item.configuration = module.configuration || module.label || item.configuration;
+    item.description = module.meta || item.description;
+    item.dimensions = module.meta || item.dimensions;
+    item.photo = module.photo || item.photo;
+    if (module.width) item.width = module.width;
+    if (module.depth) item.depth = module.depth;
+    if (module.height) item.height = module.height;
+    if (module.priceOptions) item.priceOptions = module.priceOptions;
+    if (module.price !== undefined) item.price = module.price;
+    if (module.materials) item.materials = module.materials;
+    if (module.priceFactor !== undefined) item.priceFactor = module.priceFactor;
+    if (module.priceIsFinal !== undefined) item.priceIsFinal = module.priceIsFinal;
+    return item;
+  };
+  if (existing && hasPositiveCatalogPrice(existing)) {
+    return module ? applyModuleOverrides(existing, existing) : existing;
+  }
+  if (module && sourceExisting && hasPositiveCatalogPrice(sourceExisting)) {
+    const item = applyModuleOverrides(existing, sourceExisting);
+    if (!existing) catalogSofas.push(item);
+    return item;
+  }
   if (!module) return null;
   const series = getActiveManualModuleSeries();
   const configKey = normalizeComboText(module.label);
@@ -5203,11 +5675,14 @@ function getActiveManualModuleItem(moduleId) {
     ? [
       ...(Array.isArray(window.BAIDU_ZOLANO_SOFA_DATA) ? window.BAIDU_ZOLANO_SOFA_DATA : []),
       ...zolanoThreeDigitCatalog
-    ].find((item) => String(item.id || "") === moduleId)
+    ].find((item) => String(item.id || "") === moduleId || String(item.id || "") === String(module.sourceId || ""))
     : null;
   const pricedItem = matchingPricedItem || rawZolanoItem;
   if (pricedItem) {
-    const item = { ...pricedItem, id: module.id, photo: module.photo || pricedItem.photo };
+    const item = applyModuleOverrides({
+      ...pricedItem,
+      id: module.id
+    }, pricedItem);
     if (existing) {
       Object.assign(existing, item);
       return existing;
@@ -5219,14 +5694,19 @@ function getActiveManualModuleItem(moduleId) {
   const item = {
     id: module.id,
     brand: activeCatalogKey === "zolano" ? "Zolano" : "Nikator",
-    series: activeCatalogKey === "zolano" ? `ZL ${series}` : series,
-    model: activeCatalogKey === "zolano" ? `ZL ${series}` : series,
-    configuration: module.label,
+    series: module.series || (activeCatalogKey === "zolano" ? `ZL ${series}` : series),
+    model: module.series || (activeCatalogKey === "zolano" ? `ZL ${series}` : series),
+    configuration: module.configuration || module.label,
     description: module.meta,
     dimensions: module.meta,
-    price: 0,
-    priceOptions: [0],
-    materials: activeCatalogKey === "zolano" ? ["M/F", "F/SA", "NuBuck"] : [],
+    width: module.width || "",
+    depth: module.depth || "",
+    height: module.height || "",
+    price: module.price || 0,
+    priceOptions: module.priceOptions || [module.price || 0],
+    materials: module.materials || (activeCatalogKey === "zolano" ? ["M/F", "F/SA", "NuBuck"] : []),
+    priceFactor: module.priceFactor || 1,
+    priceIsFinal: Boolean(module.priceIsFinal),
     photo: module.photo
   };
   catalogSofas.push(item);
@@ -5252,6 +5732,7 @@ function addZolano2897Module(moduleId) {
   if (!item) return;
 
   if (recommendSelect) recommendSelect.value = "";
+  clearSelectedRecommendationCounts();
   const slotSelects = [...slotGrid.querySelectorAll(".slot-select")];
   const emptySlot = slotSelects.find((select) => !select.value);
   if (emptySlot) {
@@ -5259,7 +5740,7 @@ function addZolano2897Module(moduleId) {
     emptySlot.value = item.id;
     emptySlot.parentElement?.querySelector(".slot-clear-button")?.removeAttribute("hidden");
     pieceMaterialSelections = {};
-    emptySlot.dispatchEvent(new Event("change", { bubbles: true }));
+    refreshSlotMaterialControls();
     renderSetPreview();
     syncZolanoModulePicker();
     return;
@@ -5274,7 +5755,7 @@ function addZolano2897Module(moduleId) {
   targetSlot.value = item.id;
   targetSlot.parentElement?.querySelector(".slot-clear-button")?.removeAttribute("hidden");
   pieceMaterialSelections = {};
-  targetSlot.dispatchEvent(new Event("change", { bubbles: true }));
+  refreshSlotMaterialControls();
   renderSetPreview();
   syncZolanoModulePicker();
 }
@@ -5288,7 +5769,7 @@ function setBuilderSelections(itemIds) {
     select.parentElement?.querySelector(".slot-clear-button")?.setAttribute("hidden", "");
   });
   ids.forEach((id, index) => {
-    const item = catalogSofas.find((sofa) => sofa.id === id);
+    const item = findCatalogOrManualItemById(id);
     const select = slotSelects[index];
     if (!item || !select) return;
     ensureOption(select, item);
@@ -5296,6 +5777,13 @@ function setBuilderSelections(itemIds) {
     select.parentElement?.querySelector(".slot-clear-button")?.removeAttribute("hidden");
   });
   renderSetPreview();
+}
+
+function findCatalogOrManualItemById(id) {
+  const value = String(id || "");
+  return catalogSofas.find((sofa) => String(sofa.id || "") === value)
+    || getActiveManualModuleItem(value)
+    || null;
 }
 
 function getRecommendationItems(combo, seriesItems = getSeriesItems()) {
@@ -5555,10 +6043,13 @@ function matchesBuilderQuery(item, query) {
 function getSeriesRecommendations() {
   const query = builderSearchInput?.value.trim().toLowerCase() || "";
   const widthFilter = getWidthFilter();
+  const generatedRecommendations = activeCatalogKey === "zolano" && isManualModuleSeriesName(seriesSelect?.value)
+    ? []
+    : getGeneratedSeriesRecommendations();
   const combos = [
     ...recommendedCombos.filter((combo) => combo.series === seriesSelect.value),
     ...getZolanoOriginalSaleRowRecommendations(),
-    ...getGeneratedSeriesRecommendations()
+    ...generatedRecommendations
   ];
   const displayCombos = activeCatalogKey === "zolano" ? removeDuplicateZolanoGeneratedCombos(combos) : combos;
   const hasZolanoOriginalSaleRows = activeCatalogKey === "zolano"
@@ -6630,7 +7121,7 @@ function renderSetPreview() {
   const comboPurchases = getStructuredRecommendationPurchases();
   const selectedFromSlots = [...slotGrid.querySelectorAll(".slot-select")]
     .map((select) => select.value)
-    .map((id) => catalogSofas.find((sofa) => sofa.id === id))
+    .map((id) => findCatalogOrManualItemById(id))
     .filter(Boolean);
   const selected = comboPurchases.length
     ? comboPurchases.flatMap((purchase) => purchase.items)
@@ -7687,6 +8178,8 @@ function getCombinedDimensionText(selected, selectedRecommendation) {
   if (zolano2897Dimension) return zolano2897Dimension;
   const zolano2628Dimension = getZolano2628LShapeDimension(selected);
   if (zolano2628Dimension) return zolano2628Dimension;
+  const zolano3136Dimension = getZolano3136CombinedDimension(selected);
+  if (zolano3136Dimension) return zolano3136Dimension;
   const zolano3776Dimension = getZolano3776LShapeDimension(selected);
   if (zolano3776Dimension) return zolano3776Dimension;
 
@@ -7709,6 +8202,36 @@ function getCombinedDimensionText(selected, selectedRecommendation) {
   const depth = Math.max(...numericItems.map((item) => item.depth));
   const height = Math.max(...numericItems.map((item) => item.height));
   return `${width} x ${depth} x ${height} mm`;
+}
+
+function getZolano3136CombinedDimension(selected) {
+  const items = selected.filter((item) =>
+    String(item?.series || "").toUpperCase() === "FG 3136 PERUNI"
+  );
+  if (items.length < 2) return "";
+
+  const sofaItems = items.filter((item) => !/STOOL/i.test(String(item?.configuration || "")));
+  const stoolItems = items.filter((item) => /STOOL/i.test(String(item?.configuration || "")));
+  const sofaWidth = sofaItems.reduce((sum, item) => sum + getZolano3136ModuleWidth(item), 0);
+  const sofaDepth = sofaItems.length ? Math.max(...sofaItems.map(getZolano3136ModuleDepth)) : 0;
+  const sofaText = sofaWidth && sofaDepth ? `${sofaWidth} x ${sofaDepth} mm` : "";
+  const stoolText = stoolItems.length ? `STOOL ${stoolItems.length > 1 ? stoolItems.length + " x " : ""}1160 x 740 mm` : "";
+  return [sofaText, stoolText].filter(Boolean).join(" + ");
+}
+
+function getZolano3136ModuleWidth(item) {
+  const config = String(item?.configuration || "").toUpperCase();
+  if (/1EL/.test(config)) return 1160;
+  if (/1NA/.test(config)) return 920;
+  if (/STOOL/.test(config)) return 1160;
+  return Number(item?.width || 0);
+}
+
+function getZolano3136ModuleDepth(item) {
+  const config = String(item?.configuration || "").toUpperCase();
+  if (/STOOL/.test(config)) return 740;
+  if (/1EL|1NA/.test(config)) return 920;
+  return Number(item?.depth || 0);
 }
 
 function getZolano2897LShapeDimension(selected) {
@@ -7797,6 +8320,7 @@ function getZolano2628ModuleWidth(item) {
   if (/CORNER|CNR/.test(config)) return 1320;
   if (/2NA/.test(config)) return 1220;
   if (/1ER\/?T/.test(config)) return 910;
+  if (/\b1ER\b/.test(config)) return 910;
   if (/1NA/.test(config)) return 610;
   const match = String(item?.dimensions || "").match(/\bL\s*(\d{3,5})/i);
   return match ? Number(match[1]) : Number(item?.width || 0);
@@ -7924,6 +8448,7 @@ function findDiningEquivalentMaterialItem(item, materialLabel) {
 function getMaterialLabels(item) {
   const labels = Array.isArray(item?.materials) ? item.materials.map((label) => repairMojibakeText(label)) : [];
   if (activeCatalogKey === "zolano") {
+    if (labels.length && String(item?.series || "").toUpperCase() === "FG 3136 PERUNI") return labels;
     return ["M/F", "F/SA", "NuBuck"];
   }
   if (activeCatalogKey === "diningTable") {
@@ -8505,7 +9030,9 @@ quickJumpVisibilityObserver.observe(document.body, {
 
     const group = document.querySelector('[data-quick-jump-group="zolano"]');
     if (!group) return;
-    let button = group.querySelector(`[data-quick-jump="${jump}"]`);
+    const matches = [...group.querySelectorAll(`[data-quick-jump="${jump}"]`)];
+    let button = matches[0];
+    matches.slice(1).forEach((duplicate) => duplicate.remove());
     if (!button) {
       button = document.createElement("button");
       button.type = "button";
@@ -8534,6 +9061,104 @@ quickJumpVisibilityObserver.observe(document.body, {
     }
   });
   [0, 200, 800, 1600, 3200, 6000].forEach((delay) => setTimeout(repairZolano3792, delay));
+}());
+
+(function pinZolano3136AfterAppDraw() {
+  const series = "FG 3136 PERUNI";
+  const jump = "zolano|FG 3136 PERUNI";
+  const photo = "assets/generated/zolano/FG3136PERUNI.jpg";
+  const thumb = "assets/generated/zolano/FG3136PERUNI-thumb.jpg";
+  const modules = [
+    ["FG3136PERUNI1ELEXPORT2020FGSHEET1317", "1EL", "1160 x 920mm", [317, 269, 380]],
+    ["FG3136PERUNI1NAEXPORT2020FGSHEET1318", "1NA", "920 x 920mm", [247, 208, 298]],
+    ["FG3136PERUNISTOOLEXPORT2020FGSHEET1319", "STOOL", "1160 x 740mm", [171, 144, 205]]
+  ];
+
+  function ensureOption(select, value, text) {
+    if (!select || [...select.options].some((option) => option.value === value)) return;
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = text;
+    const insertBefore = select.options[0]?.value === "" ? select.options[1] : select.options[0];
+    select.insertBefore(option, insertBefore || null);
+  }
+
+  function repairZolano3136() {
+    try {
+      if (typeof zolanoVisibleSeriesLimit !== "undefined") zolanoVisibleSeriesLimit.add(series);
+      if (typeof showroomZolanoQuickOrder !== "undefined" && Array.isArray(showroomZolanoQuickOrder)) {
+        const index = showroomZolanoQuickOrder.indexOf(series);
+        if (index > 1) showroomZolanoQuickOrder.splice(index, 1);
+        if (!showroomZolanoQuickOrder.includes(series)) showroomZolanoQuickOrder.splice(1, 0, series);
+      }
+      if (typeof catalogDefinitions !== "undefined" && catalogDefinitions.zolano?.catalog) {
+        modules.slice().reverse().forEach((module) => {
+          const existing = catalogDefinitions.zolano.catalog.find((item) => item.id === module[0]);
+          if (!existing) {
+            catalogDefinitions.zolano.catalog.unshift({
+              id: module[0],
+              brand: "Zolano",
+              series,
+              model: series,
+              name: series,
+              configuration: module[1],
+              description: module[2],
+              dimensions: module[2],
+              materials: ["M/F", "PVC", "A/C"],
+              priceOptions: module[3],
+              price: module[3][0],
+              priceFactor: 11.06060606060606,
+              source: "EXPORT 2020 (FG ).xls#Sheet1",
+              photo
+            });
+          }
+        });
+      }
+    } catch {}
+
+    ensureOption(seriesSelect, series, series);
+    ensureOption(modelJumpSelect, series, series);
+    slotGrid?.querySelectorAll(".slot-select").forEach((select) => {
+      modules.forEach((module) => ensureOption(select, module[0], `${module[1]} - ${module[2]}`));
+    });
+
+    const group = document.querySelector('[data-quick-jump-group="zolano"]');
+    if (!group) return;
+    const matches = [...group.querySelectorAll(`[data-quick-jump="${jump}"]`)];
+    let button = matches[0];
+    matches.slice(1).forEach((duplicate) => duplicate.remove());
+    if (!button) {
+      button = document.createElement("button");
+      button.type = "button";
+      button.className = "quick-jump-button";
+      button.dataset.quickJump = jump;
+      button.innerHTML = `<img src="${thumb}" alt="" loading="eager"><span>3136</span>`;
+    }
+    button.hidden = false;
+    button.style.display = "";
+    button.querySelector("img")?.setAttribute("src", thumb);
+    const page = group.querySelector(".quick-jump-page") || group;
+    const after3792 = page.querySelector('[data-quick-jump="zolano|ZL 3792"]');
+    if (after3792?.nextSibling !== button) after3792 ? after3792.after(button) : page.prepend(button);
+    const pages = button.closest(".quick-jump-pages");
+    if (pages) pages.scrollLeft = 0;
+    if (!button.dataset.zl3136AppPin) {
+      button.dataset.zl3136AppPin = "1";
+      button.addEventListener("click", () => jumpToSeries("zolano", series));
+    }
+  }
+
+  window.HP_FORCE_ZOLANO_3136_APP = repairZolano3136;
+  document.addEventListener("click", (event) => {
+    if (event.target?.closest?.('[data-brand-switch="zolano"]')) {
+      setTimeout(repairZolano3136, 60);
+      setTimeout(repairZolano3136, 320);
+      setTimeout(repairZolano3136, 900);
+      setTimeout(repairZolano3136, 1800);
+      setTimeout(repairZolano3136, 3200);
+    }
+  });
+  [0, 220, 900, 1800, 3600, 6200].forEach((delay) => setTimeout(repairZolano3136, delay));
 }());
 
 

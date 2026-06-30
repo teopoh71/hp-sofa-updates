@@ -1,36 +1,36 @@
 {
-    "version":  "v1136-smooth-quick-slider",
-    "versionName":  "v1136-smooth-quick-slider",
-    "patchVersionCode":  1136,
-    "patchVersionName":  "v1136-smooth-quick-slider",
-    "generatedAt":  "2026-06-30T05:06:41.4357938Z",
+    "version":  "v1137-zl751-phone-power-price",
+    "versionName":  "v1137-zl751-phone-power-price",
+    "patchVersionCode":  1137,
+    "patchVersionName":  "v1137-zl751-phone-power-price",
+    "generatedAt":  "2026-06-30T08:10:41.3951471Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1136-smooth-quick-slider/app.js",
-                      "sha256":  "c1174c29daba0693faec7dcd1014f01e2ae2f816b35122657fb5757657e4db92",
-                      "size":  911385,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/app.js",
+                      "sha256":  "57173e6cb1411fd6f4aa766035b227d8c94bec98a8494d60157212ba52dfc8b2",
+                      "size":  911425,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1136-smooth-quick-slider/styles.css",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/styles.css",
                       "sha256":  "9bdb9c6b76159e655a10f0fe2cda01fa7012840ef3e8a0ea9d260a76c60d59d6",
                       "size":  48119,
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1136-smooth-quick-slider/index.html",
-                      "sha256":  "60da56d9aa2e707259e9e4a38ae67ecac2cc6d24def51d618679c734e1a4dde1",
-                      "size":  632278,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/index.html",
+                      "sha256":  "73a95fda079da86b92b0baf81713bc4e1bb7e5a0e4f950e238e1f391b91fef0b",
+                      "size":  632290,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1136-smooth-quick-slider/app-version.js",
-                      "sha256":  "a22b04adaf1e8114b1886ed9457b1f245f3c193dc445c636cd960886f095f884",
-                      "size":  116,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1137-zl751-phone-power-price/app-version.js",
+                      "sha256":  "707d8c57aad416a4c231088609dea513407dcd0e805fdc20495965e74fd35090",
+                      "size":  120,
                       "contentType":  "application/javascript; charset=utf-8"
                   }
               ]
