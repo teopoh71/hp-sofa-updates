@@ -1,9 +1,9 @@
 {
     "versionCode":  1095,
     "versionName":  "v1095-native-patch-bridge",
-    "patchVersionCode":  1135,
-    "patchVersionName":  "v1135-zolano3867-3727-fix",
-    "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/a6afdbb3b885bee5dc7ee9638402b9ae3dfce3e2/patch.json",
+    "patchVersionCode":  1136,
+    "patchVersionName":  "v1136-smooth-quick-slider",
+    "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
     "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-    "generatedAt":  "2026-06-30T04:22:07.7997062Z"
+    "generatedAt":  "2026-06-30T05:06:41.4387941Z"
 }
