@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-01",
+  "generatedAt": "2026-07-01T00:00:00+08:00",
   "sourceMode": "clean-restart",
   "companies": [
     {
       "id": "nikator-2026",
       "year": "2026",
-      "name": "???",
-      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-06\\c0253602b023ff78bc4bf13780a811ab\\2026???.et",
+      "name": "尼卡托",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-06\\c0253602b023ff78bc4bf13780a811ab\\2026业绩表.et",
       "monthly": [
         {
-          "month": "1?",
+          "month": "1月",
           "revenue": 151995,
           "cost": 94568.5,
           "grossProfit": 57426.5,
@@ -21,7 +21,7 @@
           "salary": 10268.5
         },
         {
-          "month": "2?",
+          "month": "2月",
           "revenue": 0,
           "cost": 0,
           "grossProfit": 0,
@@ -33,7 +33,7 @@
           "salary": 5000
         },
         {
-          "month": "3?",
+          "month": "3月",
           "revenue": 50000,
           "cost": 27059,
           "grossProfit": 23834.9,
@@ -45,7 +45,7 @@
           "salary": 5602
         },
         {
-          "month": "4?",
+          "month": "4月",
           "revenue": 93258,
           "cost": 37542,
           "grossProfit": 55716.5,
@@ -57,7 +57,7 @@
           "salary": 4317
         },
         {
-          "month": "5?",
+          "month": "5月",
           "revenue": 8635,
           "cost": 4444,
           "grossProfit": 4191,
@@ -67,6 +67,19 @@
           "delivery": 400,
           "rent": 25360,
           "salary": 7209
+        },
+        {
+          "month": "6月",
+          "revenue": 0,
+          "cost": 0,
+          "grossProfit": 0,
+          "expense": 0,
+          "netProfit": 0,
+          "rent": 0,
+          "salary": 0,
+          "electricity": 0,
+          "delivery": 0,
+          "pendingCostNote": "No Nikator June invoice found or entered yet."
         }
       ],
       "invoices": []
@@ -75,10 +88,10 @@
       "id": "zolano-2026",
       "year": "2026",
       "name": "ZOLANO",
-      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-06\\c0253602b023ff78bc4bf13780a811ab\\2026???.et",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-06\\c0253602b023ff78bc4bf13780a811ab\\2026业绩表.et",
       "monthly": [
         {
-          "month": "1?",
+          "month": "1月",
           "revenue": 228892,
           "cost": 70000,
           "grossProfit": 96390,
@@ -91,7 +104,7 @@
           "salary": 10268.5
         },
         {
-          "month": "2?",
+          "month": "2月",
           "revenue": 43000,
           "cost": 28357,
           "grossProfit": 14643,
@@ -104,7 +117,7 @@
           "salary": 5000
         },
         {
-          "month": "3?",
+          "month": "3月",
           "revenue": 76620,
           "cost": 76620,
           "grossProfit": 30626,
@@ -117,7 +130,7 @@
           "salary": 5602
         },
         {
-          "month": "4?",
+          "month": "4月",
           "revenue": 33699,
           "cost": 14245.88,
           "grossProfit": 20353.12,
@@ -130,7 +143,7 @@
           "salary": 4317
         },
         {
-          "month": "5?",
+          "month": "5月",
           "revenue": 100841,
           "cost": 42908.68,
           "grossProfit": 46421.68,
@@ -143,17 +156,17 @@
           "salary": 7209
         },
         {
-          "month": "6?",
+          "month": "6月",
           "revenue": 83800,
-          "cost": 40058.64,
-          "grossProfit": 43741.36,
+          "cost": 50654.7,
+          "grossProfit": 33145.3,
           "expense": 22500,
-          "netProfit": 21241.36,
+          "netProfit": 10645.3,
           "rent": 22500,
           "salary": 0,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "June includes invoices 0000169, 0000172, 0000149. ZL2897 cost for 0000149 is still pending; MDT2832L 1.6m exact cost uses closest price-list row until confirmed."
+          "pendingCostNote": "June includes invoices 0000169, 0000172, 0000149. 0000149 cost confirmed. MDT2832L 1.6m uses the 2m Deyuanju price-list row as confirmed by Edwin; that price list is cost."
         }
       ],
       "invoices": [
@@ -176,18 +189,20 @@
           "date": "2026-06-30",
           "vendor": "Contract 0000149",
           "amount": 24000,
-          "note": "ZOLANO June invoice 0000149: ZL2897 sofa, deposit 12000, balance 12000. Cost pending."
+          "note": "ZOLANO June invoice 0000149: ZL2897 sofa, 1ER + 1NA + 1EL, 3120mm. Deposit 12000, balance 12000. Cost confirmed from ZL2800 export list: F/SA 1EL 341 + 1NA 276 + 1ER 341 USD, RMB=USD*7.3/0.66.",
+          "cost": 10596.06,
+          "grossProfit": 13403.94
         }
       ]
     },
     {
       "id": "xirui-2026",
       "year": "2026",
-      "name": "STAREEP / ??",
-      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\???????(???????)(4).xlsx",
+      "name": "STAREEP / 希瑞",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\希瑞销售业绩表（带每款产品详细）(4).xlsx",
       "monthly": [
         {
-          "month": "3?",
+          "month": "3月",
           "revenue": 157268,
           "cost": 96213,
           "grossProfit": 64756.3,
@@ -199,7 +214,7 @@
           "rent": 2215
         },
         {
-          "month": "4?",
+          "month": "4月",
           "revenue": 33983,
           "cost": 18015,
           "grossProfit": 15295.6,
@@ -211,7 +226,7 @@
           "rent": 2215
         },
         {
-          "month": "5?",
+          "month": "5月",
           "revenue": 108397,
           "cost": 68817,
           "grossProfit": 39580,
@@ -223,17 +238,17 @@
           "rent": 2215
         },
         {
-          "month": "6?",
+          "month": "6月",
           "revenue": 11839,
-          "cost": 0,
-          "grossProfit": 11839,
+          "cost": 4423.9,
+          "grossProfit": 7415.1,
           "expense": 2500,
-          "netProfit": 9339,
+          "netProfit": 4915.1,
           "rent": 2500,
           "salary": 0,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "June includes STAREEP invoices 1005381 and 1005413. Item costs pending."
+          "pendingCostNote": "June includes STAREEP invoices 1005381 and 1005413. Both costs confirmed; 1005381 uses factory price x0.6 supplier discount with CN-ZZ20 x1."
         }
       ],
       "invoices": [
@@ -242,25 +257,29 @@
           "date": "2026-06-24",
           "vendor": "Order 1005381",
           "amount": 1039,
-          "note": "STAREEP June invoice 1005381: CN-Z20 x1 = 399, CN-PC50 x1 = 640. Payment screenshots 399 + 640."
+          "note": "STAREEP June invoice 1005381: CN-ZZ20 x1 and CN-PC50 x1. Cost corrected from factory price list then supplier discount x0.6: ZZ20 273 x1 x0.6, PC50 400 x1 x0.6.",
+          "cost": 403.8,
+          "grossProfit": 635.2
         },
         {
           "id": "STAREEP-2026-06-30-1005413",
           "date": "2026-06-30",
           "vendor": "Order 1005413",
           "amount": 10800,
-          "note": "STAREEP June invoice 1005413: MF10 mattress x1, TJ102 mattress x1. Deposit 5400, total 10800. Cost pending."
+          "note": "STAREEP June invoice 1005413: CN-MF10 mattress x1 cost 1395.10, CN-FI10Z base x1 cost 2625.00. Deposit 5400, total 10800. Cost confirmed from final supplier order.",
+          "cost": 4020.1,
+          "grossProfit": 6779.9
         }
       ]
     },
     {
       "id": "nikator-2025",
       "year": "2025",
-      "name": "???",
-      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\2025??????(7).et",
+      "name": "尼卡托",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\2025世博园业绩表(7).et",
       "monthly": [
         {
-          "month": "1?",
+          "month": "1月",
           "revenue": 15800,
           "cost": 13800,
           "grossProfit": 2000,
@@ -272,7 +291,7 @@
           "salary": 11000
         },
         {
-          "month": "2?",
+          "month": "2月",
           "revenue": 19300,
           "cost": 10021,
           "grossProfit": 9279,
@@ -284,7 +303,7 @@
           "salary": 11000
         },
         {
-          "month": "3?",
+          "month": "3月",
           "revenue": 142280.26,
           "cost": 86793,
           "grossProfit": 55487.26,
@@ -296,7 +315,7 @@
           "salary": 11000
         },
         {
-          "month": "4?",
+          "month": "4月",
           "revenue": 8366,
           "cost": 5648,
           "grossProfit": 2718,
@@ -308,7 +327,7 @@
           "salary": 11000
         },
         {
-          "month": "5?",
+          "month": "5月",
           "revenue": 35000,
           "cost": 33372,
           "grossProfit": 1628,
@@ -320,7 +339,7 @@
           "salary": 11000
         },
         {
-          "month": "6?",
+          "month": "6月",
           "revenue": 64400,
           "cost": 38563,
           "grossProfit": 25837,
@@ -332,7 +351,7 @@
           "salary": 11000
         },
         {
-          "month": "7?",
+          "month": "7月",
           "revenue": 27100,
           "cost": 15178,
           "grossProfit": 11922,
@@ -344,7 +363,7 @@
           "salary": 11000
         },
         {
-          "month": "8?",
+          "month": "8月",
           "revenue": 151700,
           "cost": 94016.2,
           "grossProfit": 57683.8,
@@ -356,7 +375,7 @@
           "salary": 11000
         },
         {
-          "month": "9?",
+          "month": "9月",
           "revenue": 0,
           "cost": 0,
           "grossProfit": 35336.95,
@@ -368,7 +387,7 @@
           "salary": 11000
         },
         {
-          "month": "10?",
+          "month": "10月",
           "revenue": 103788,
           "cost": 61494,
           "grossProfit": 42294,
@@ -380,7 +399,7 @@
           "salary": 11000
         },
         {
-          "month": "11?",
+          "month": "11月",
           "revenue": 48034,
           "cost": 21442.71,
           "grossProfit": 26591.29,
@@ -392,7 +411,7 @@
           "salary": 11000
         },
         {
-          "month": "12?",
+          "month": "12月",
           "revenue": 86987,
           "cost": 48034,
           "grossProfit": 38953,
@@ -410,10 +429,10 @@
       "id": "zolano-2025",
       "year": "2025",
       "name": "ZOLANO",
-      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\2025??????(7).et",
+      "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-05\\c0253602b023ff78bc4bf13780a811ab\\2025世博园业绩表(7).et",
       "monthly": [
         {
-          "month": "1?",
+          "month": "1月",
           "revenue": 69918,
           "cost": 41240,
           "grossProfit": 28678,
@@ -425,7 +444,7 @@
           "salary": 15000
         },
         {
-          "month": "2?",
+          "month": "2月",
           "revenue": 65054,
           "cost": 36527,
           "grossProfit": 28527,
@@ -437,7 +456,7 @@
           "salary": 15000
         },
         {
-          "month": "3?",
+          "month": "3月",
           "revenue": 121307.74,
           "cost": 72355,
           "grossProfit": 48952.74,
@@ -449,7 +468,7 @@
           "salary": 15000
         },
         {
-          "month": "4?",
+          "month": "4月",
           "revenue": 81922.77,
           "cost": 33913.05,
           "grossProfit": 48009.72,
@@ -461,7 +480,7 @@
           "salary": 15000
         },
         {
-          "month": "5?",
+          "month": "5月",
           "revenue": 167706.52,
           "cost": 139335.78,
           "grossProfit": 28370.74,
@@ -473,7 +492,7 @@
           "salary": 11000
         },
         {
-          "month": "6?",
+          "month": "6月",
           "revenue": 86980,
           "cost": 54009.65,
           "grossProfit": 32970.35,
@@ -485,7 +504,7 @@
           "salary": 11000
         },
         {
-          "month": "7?",
+          "month": "7月",
           "revenue": 151500,
           "cost": 100389.46,
           "grossProfit": 51110.54,
@@ -497,7 +516,7 @@
           "salary": 11000
         },
         {
-          "month": "8?",
+          "month": "8月",
           "revenue": 184240,
           "cost": 126556.2,
           "grossProfit": 57683.8,
@@ -509,7 +528,7 @@
           "salary": 11000
         },
         {
-          "month": "9?",
+          "month": "9月",
           "revenue": 154719,
           "cost": 91034.1,
           "grossProfit": 63684.9,
@@ -521,7 +540,7 @@
           "salary": 11000
         },
         {
-          "month": "10?",
+          "month": "10月",
           "revenue": 269224,
           "cost": 166695.3,
           "grossProfit": 102528.7,
@@ -533,7 +552,7 @@
           "salary": 11000
         },
         {
-          "month": "11?",
+          "month": "11月",
           "revenue": 303480,
           "cost": 174150.03,
           "grossProfit": 129329.97,
@@ -545,7 +564,7 @@
           "salary": 11000
         },
         {
-          "month": "12?",
+          "month": "12月",
           "revenue": 218076,
           "cost": 154088.9,
           "grossProfit": 63987.1,
@@ -570,7 +589,7 @@
   ],
   "invoiceCostReviews": {
     "generatedAt": "2026-06-30",
-    "rule": "ZOLANO USD cost converted with USD * 7.3 / 0.66 only for USD export list items. DT757/??? costs are already RMB and are not converted. These records are audit/cost review only; monthly profit is not changed until pending items are confirmed.",
+    "rule": "ZOLANO USD cost converted with USD * 7.3 / 0.66 only for USD export list items. DT757/德源居 costs are already RMB and are not converted. These records are audit/cost review only; monthly profit is not changed until pending items are confirmed.",
     "records": [
       {
         "contract": "0000169",
@@ -629,7 +648,7 @@
         "unitCostRmb": 2578,
         "totalCostRmb": 2578,
         "status": "confirmed",
-        "source": "WeChat found DT757 selling/order price 2578 in C:\\Users\\edwin\\Documents\\xwechat_files\\a26080304_eee5\\msg\\file\\2022-10\\1009-???????-??.xlsx row 7; cost estimate from prior ??? source 1600-size row",
+        "source": "WeChat found DT757 selling/order price 2578 in C:\\Users\\edwin\\Documents\\xwechat_files\\a26080304_eee5\\msg\\file\\2022-10\\1009-西安订货单详情-姚进.xlsx row 7; cost estimate from prior 德源居 source 1600-size row",
         "note": "Corrected by Edwin: DT757 price 2578 is our cost. Already RMB, no USD conversion."
       },
       {
@@ -641,8 +660,8 @@
         "unitCostRmb": 680,
         "totalCostRmb": 4080,
         "status": "confirmed",
-        "source": "WeChat order row: C:\\Users\\edwin\\Documents\\xwechat_files\\a26080304_eee5\\msg\\file\\2022-10\\1009-???????-??.xlsx, ZOLANO ??? row 7, DC-753-PU??, qty 4, unit 680.00. Edwin confirmed this document selling/order price is our cost.",
-        "note": "Confirmed by Edwin: same DT757/??? document selling/order price is our cost. Use 680 RMB each x 6 pcs = 4080 RMB."
+        "source": "WeChat order row: C:\\Users\\edwin\\Documents\\xwechat_files\\a26080304_eee5\\msg\\file\\2022-10\\1009-西安订货单详情-姚进.xlsx, ZOLANO 订货单 row 7, DC-753-PU餐椅, qty 4, unit 680.00. Edwin confirmed this document selling/order price is our cost.",
+        "note": "Confirmed by Edwin: same DT757/德源居 document selling/order price is our cost. Use 680 RMB each x 6 pcs = 4080 RMB."
       },
       {
         "contract": "0000169",
@@ -653,7 +672,7 @@
         "unitCostRmb": 10183.28,
         "totalCostRmb": 10183.28,
         "status": "confirmed",
-        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\business\\migrate\\local\\p\\???.xlsm | Sheet1 (2) row 6",
+        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\business\\migrate\\local\\p\\价格表.xlsm | Sheet1 (2) row 6",
         "note": "Model corrected by Edwin: 2868 sofa. Using RMB cost-style table F/SA 1EL+1ER = 10183.276; no USD conversion. Older with-cost USD support: 931.333 F/SA cost."
       },
       {
@@ -664,9 +683,9 @@
         "qty": 1,
         "unitCostRmb": 3380,
         "totalCostRmb": 3380,
-        "status": "confirmed_estimate",
-        "source": "ZOLANO?????????? ??.xlsx | ??? row 48, MDT2832L 2000mm row used because exact 1600mm row not found",
-        "note": "??? belongs to ZOLANO. Edwin said invoice table top is 1.6m; exact 1.6m price not found in opened price list."
+        "status": "confirmed",
+        "source": "ZOLANO东莞德源居产品价格表 原始.xlsx | 库存表 row 48, MDT2832L 2000mm row used because exact 1600mm row not found",
+        "note": "Confirmed by Edwin: use the 2 meter Deyuanju price-list row for the 1.6m table top; this price list is our cost."
       },
       {
         "contract": "0000169",
@@ -677,8 +696,8 @@
         "unitCostRmb": 230,
         "totalCostRmb": 1380,
         "status": "confirmed",
-        "source": "ZOLANO?????????? ??.xlsx | ??? row 102, ?? RMB 230",
-        "note": "??? belongs to ZOLANO. DC1005 x6."
+        "source": "ZOLANO东莞德源居产品价格表 原始.xlsx | 库存表 row 102, 单价 RMB 230",
+        "note": "德源居 belongs to ZOLANO. DC1005 x6."
       },
       {
         "contract": "0000169",
@@ -689,8 +708,8 @@
         "unitCostRmb": 365,
         "totalCostRmb": 365,
         "status": "confirmed",
-        "source": "ZOLANO?????????? ??.xlsx | ??? row 170, ?? RMB 365",
-        "note": "??? belongs to ZOLANO."
+        "source": "ZOLANO东莞德源居产品价格表 原始.xlsx | 库存表 row 170, 单价 RMB 365",
+        "note": "德源居 belongs to ZOLANO."
       },
       {
         "contract": "0000169",
@@ -701,8 +720,99 @@
         "unitCostRmb": 1135,
         "totalCostRmb": 1135,
         "status": "confirmed",
-        "source": "ZOLANO?????????? ??.xlsx | ??? row 174, ?? RMB 1135",
-        "note": "??? belongs to ZOLANO."
+        "source": "ZOLANO东莞德源居产品价格表 原始.xlsx | 库存表 row 174, 单价 RMB 1135",
+        "note": "德源居 belongs to ZOLANO."
+      },
+      {
+        "contract": "1005413",
+        "date": "2026-06-30",
+        "company": "STAREEP",
+        "item": "CN-MF10 mattress 180*200*23",
+        "qty": 1,
+        "unitCostRmb": 1395.1,
+        "totalCostRmb": 1395.1,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\Accounting Workspace\\wechat_sales_accounting\\outputs\\new_wechat_order_pdf_review.json",
+        "note": "Invoice photo model MF10. Supplier final order shows CN-MF10 discounted/final cost 1395.10."
+      },
+      {
+        "contract": "1005413",
+        "date": "2026-06-30",
+        "company": "STAREEP",
+        "item": "CN-FI10Z smart base 182*202*27cm",
+        "qty": 1,
+        "unitCostRmb": 2625,
+        "totalCostRmb": 2625,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\Accounting Workspace\\wechat_sales_accounting\\outputs\\new_wechat_order_pdf_review.json",
+        "note": "Corrected by Edwin: second item is FI10Z. Supplier final order shows CN-FI10Z discounted/final cost 2625.00."
+      },
+      {
+        "contract": "0000149",
+        "date": "2026-06-30",
+        "company": "ZOLANO",
+        "item": "ZL2897 1EL F/SA",
+        "qty": 1,
+        "unitCostUsd": 341,
+        "unitCostRmb": 3771.67,
+        "totalCostRmb": 3771.67,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-11\\bdpan-download-workspace-office-ai-handoff\\work\\HP-SOFA\\work\\price-src\\EXPORT-2020-ZL2800-2025.xls | sheet 2700 rows 496-498",
+        "note": "Invoice has 1EL. RMB=USD*7.3/0.66."
+      },
+      {
+        "contract": "0000149",
+        "date": "2026-06-30",
+        "company": "ZOLANO",
+        "item": "ZL2897 1NA F/SA",
+        "qty": 1,
+        "unitCostUsd": 276,
+        "unitCostRmb": 3052.73,
+        "totalCostRmb": 3052.73,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-11\\bdpan-download-workspace-office-ai-handoff\\work\\HP-SOFA\\work\\price-src\\EXPORT-2020-ZL2800-2025.xls | sheet 2700 rows 496-498",
+        "note": "Invoice has 1NA. RMB=USD*7.3/0.66."
+      },
+      {
+        "contract": "0000149",
+        "date": "2026-06-30",
+        "company": "ZOLANO",
+        "item": "ZL2897 1ER F/SA",
+        "qty": 1,
+        "unitCostUsd": 341,
+        "unitCostRmb": 3771.67,
+        "totalCostRmb": 3771.67,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-11\\bdpan-download-workspace-office-ai-handoff\\work\\HP-SOFA\\work\\price-src\\EXPORT-2020-ZL2800-2025.xls | sheet 2700 rows 496-498",
+        "note": "1ER is not listed separately; using same cost as 1EL."
+      },
+      {
+        "contract": "1005381",
+        "date": "2026-06-24",
+        "company": "STAREEP",
+        "item": "CN-ZZ20 neck massager",
+        "qty": 1,
+        "factoryPriceRmb": 273,
+        "discountRate": 0.6,
+        "unitCostRmb": 163.8,
+        "totalCostRmb": 163.8,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-24\\files-mentioned-by-the-user-2026\\outputs\\stareep_factory_price_2026_extract.txt",
+        "note": "Corrected by Edwin: CN-ZZ20 is 1 pc. Factory price 273; cost = factory price x0.6."
+      },
+      {
+        "contract": "1005381",
+        "date": "2026-06-24",
+        "company": "STAREEP",
+        "item": "CN-PC50 pillow",
+        "qty": 1,
+        "factoryPriceRmb": 400,
+        "discountRate": 0.6,
+        "unitCostRmb": 240,
+        "totalCostRmb": 240,
+        "status": "confirmed",
+        "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-24\\files-mentioned-by-the-user-2026\\outputs\\stareep_factory_price_2026_extract.txt",
+        "note": "Factory price list line around CN-PC50 shows factory price 400; cost = factory price x0.6."
       }
     ]
   }

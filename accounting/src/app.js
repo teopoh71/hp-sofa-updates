@@ -1,4 +1,4 @@
-import {
+﻿import {
   applyInvoice,
   availableYears,
   buildCompanySummary,
@@ -10,7 +10,7 @@ import {
   toCsv,
 } from "./accounting-core.mjs?v=clean-account-2";
 
-const patch = { versionCode: 5, versionName: "v5-june-invoices-2026-07-01" };
+const patch = { versionCode: 6, versionName: "v6-june-sales-local-2026-07-01" };
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026" };
 
 const $ = (id) => document.getElementById(id);
@@ -18,7 +18,7 @@ const money = formatMoney;
 
 async function init() {
   $("invoiceDate").value = new Date().toISOString().slice(0, 10);
-  const res = await fetch("./data/company-data.json?v=june-invoices-1", { cache: "no-store" });
+  const res = await fetch("./data/company-data.json?v=june-sales-local-1", { cache: "no-store" });
   state = { ...(await res.json()), activeId: "nikator-2026", activeYear: "2026" };
   setPhoneFolds();
   bindEvents();
@@ -138,7 +138,7 @@ function visibleMonthlyRows(company) {
   const visible = [];
   for (let month = startMonth; month <= endMonth; month += 1) {
     visible.push(byMonth.get(month) || {
-      month: `${month}?`,
+      month: `${month}月`,
       revenue: 0,
       cost: 0,
       grossProfit: 0,

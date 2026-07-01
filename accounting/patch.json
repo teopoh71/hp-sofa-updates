@@ -1,7 +1,7 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 5,
-  "versionName": "v5-june-invoices-2026-07-01",
+  "versionCode": 6,
+  "versionName": "v6-june-sales-local-2026-07-01",
   "releasedAt": "2026-07-01",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
@@ -19,6 +19,7 @@
     "Supports invoice image/text/workbook upload, OCR when online, exports CSV/JSON/XLSX.",
     "Includes patch.json so the app can check an online update feed.",
     "Adds a top Patch button and keeps June visible even when monthly values are still pending.",
-    "Adds June ZOLANO and STAREEP invoices into the app data with pending cost notes where needed."
+    "Adds June ZOLANO and STAREEP invoices into the app data with pending cost notes where needed.",
+    "Updates local June sales: ZOLANO, STAREEP, and Nikator June rows are visible; confirmed STAREEP and ZOLANO costs are recalculated."
   ]
 }
