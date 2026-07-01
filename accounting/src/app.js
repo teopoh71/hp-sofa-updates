@@ -10,7 +10,7 @@ import {
   toCsv,
 } from "./accounting-core.mjs?v=clean-account-2";
 
-const patch = { versionCode: 4, versionName: "v4-top-patch-june-2026-07-01" };
+const patch = { versionCode: 5, versionName: "v5-june-invoices-2026-07-01" };
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026" };
 
 const $ = (id) => document.getElementById(id);
@@ -18,7 +18,7 @@ const money = formatMoney;
 
 async function init() {
   $("invoiceDate").value = new Date().toISOString().slice(0, 10);
-  const res = await fetch("./data/company-data.json?v=stareep-rent-1", { cache: "no-store" });
+  const res = await fetch("./data/company-data.json?v=june-invoices-1", { cache: "no-store" });
   state = { ...(await res.json()), activeId: "nikator-2026", activeYear: "2026" };
   setPhoneFolds();
   bindEvents();
