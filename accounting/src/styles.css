@@ -42,6 +42,22 @@ h2 { font-size: 16px; margin: 18px 0 10px; }
   font-weight: 700;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-patch-button {
+  min-height: 36px;
+  border-color: var(--teal);
+  background: var(--teal);
+  color: #fff;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-size: 13px;
+}
+
 .layout { padding: 22px clamp(14px, 3vw, 34px); }
 .summary-band {
   display: grid;
@@ -249,6 +265,15 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .topbar-actions {
+    gap: 5px;
+    align-items: flex-start;
+  }
+  .top-patch-button {
+    min-height: 28px;
+    padding: 5px 9px;
+    font-size: 11px;
   }
   .layout { padding: 8px; }
   .summary-band {

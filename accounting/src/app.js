@@ -10,7 +10,7 @@ import {
   toCsv,
 } from "./accounting-core.mjs?v=clean-account-2";
 
-const patch = { versionCode: 3, versionName: "v3-online-patch-url-2026-07-01" };
+const patch = { versionCode: 4, versionName: "v4-top-patch-june-2026-07-01" };
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026" };
 
 const $ = (id) => document.getElementById(id);
@@ -85,7 +85,7 @@ function render() {
   const activeStatus = profitStatus(activeSummary.netProfit);
   $("activeTitle").textContent = company.name;
   $("activeSource").innerHTML = `<strong class="${activeStatus.className}">${activeStatus.label}: ${money(activeSummary.netProfit)}</strong>`;
-  $("monthRows").innerHTML = (company.monthly || []).map((row) => `<tr>
+  $("monthRows").innerHTML = visibleMonthlyRows(company).map((row) => `<tr>
     <td>${row.month}</td><td>${money(row.revenue)}</td><td>${money(row.cost)}</td>
     <td>${money(row.grossProfit)}</td><td>${money(row.expense)}</td><td>${money(row.netProfit)}</td>
   </tr>`).join("");
@@ -122,8 +122,35 @@ function bindEvents() {
   $("importWorkbook").addEventListener("click", () => $("workbookFile").click());
   $("workbookFile").addEventListener("change", importWorkbook);
   $("checkPatch").addEventListener("click", checkPatch);
+  $("topPatchButton")?.addEventListener("click", checkPatch);
   $("downloadData").addEventListener("click", downloadOnlineData);
   $("uploadData").addEventListener("click", uploadOnlineData);
+}
+
+function visibleMonthlyRows(company) {
+  const rows = company.monthly || [];
+  const byMonth = new Map(rows.map((row) => [monthNumber(row.month), row]));
+  const existingMonths = rows.map((row) => monthNumber(row.month)).filter(Boolean);
+  const startMonth = Math.min(...existingMonths, 1);
+  const now = new Date();
+  const targetMonth = Number(company.year) === now.getFullYear() ? Math.max(1, now.getMonth()) : Math.max(...existingMonths, 12);
+  const endMonth = Math.max(...existingMonths, Math.min(targetMonth, 12));
+  const visible = [];
+  for (let month = startMonth; month <= endMonth; month += 1) {
+    visible.push(byMonth.get(month) || {
+      month: `${month}?`,
+      revenue: 0,
+      cost: 0,
+      grossProfit: 0,
+      expense: 0,
+      netProfit: 0,
+    });
+  }
+  return visible;
+}
+
+function monthNumber(value) {
+  return Number(String(value || "").match(/\d{1,2}/)?.[0] || 0);
 }
 
 async function scanInvoice() {
