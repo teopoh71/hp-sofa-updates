@@ -1,11 +1,11 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 2,
-  "versionName": "v2-accounting-data-2026-06-30",
-  "releasedAt": "2026-06-30",
+  "versionCode": 3,
+  "versionName": "v3-online-patch-url-2026-07-01",
+  "releasedAt": "2026-07-01",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
-  "dataUrl": "./data/company-data.json",
+  "dataUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
   "uploadUrl": "",
   "files": [
     "index.html",

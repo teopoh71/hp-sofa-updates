@@ -1,4 +1,4 @@
-﻿import {
+import {
   applyInvoice,
   availableYears,
   buildCompanySummary,
@@ -10,7 +10,7 @@
   toCsv,
 } from "./accounting-core.mjs?v=clean-account-2";
 
-const patch = { versionCode: 2, versionName: "v2-accounting-data-2026-06-30" };
+const patch = { versionCode: 3, versionName: "v3-online-patch-url-2026-07-01" };
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026" };
 
 const $ = (id) => document.getElementById(id);
@@ -200,12 +200,18 @@ function exportXlsx() {
 
 async function checkPatch() {
   try {
-    const remote = await fetch($("patchUrl").value, { cache: "no-store" }).then((res) => res.json());
+    const patchUrl = $("patchUrl").value.trim();
+    const remote = await fetch(patchUrl, { cache: "no-store" }).then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    });
     if (shouldUpdate(patch, remote)) {
-      const url = remote.apkUrl || remote.appUrl || "./";
+      const url = new URL(remote.apkUrl || remote.appUrl || "./", patchUrl).href;
       $("patchStatus").innerHTML = `New patch ${remote.versionName} available. <a href="${url}">Download APK / Update</a>`;
     } else {
-      $("patchStatus").textContent = `Already latest: ${patch.versionName}. You can still use Download to refresh online data.`;
+      const dataUrl = remote.dataUrl ? new URL(remote.dataUrl, patchUrl).href : $("dataUrl").value;
+      $("dataUrl").value = dataUrl;
+      $("patchStatus").textContent = `Online patch OK: ${remote.versionName}. Use Download to refresh online data.`;
     }
   } catch (error) {
     $("patchStatus").textContent = `Patch check failed: ${error.message}`;
@@ -214,7 +220,10 @@ async function checkPatch() {
 
 async function downloadOnlineData() {
   try {
-    const remote = await fetch($("dataUrl").value, { cache: "no-store" }).then((res) => res.json());
+    const remote = await fetch($("dataUrl").value.trim(), { cache: "no-store" }).then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    });
     if (!Array.isArray(remote.companies)) throw new Error("data file missing companies");
     const years = availableYears(remote.companies);
     state = { ...remote, activeYear: years[0] || "", activeId: "" };
