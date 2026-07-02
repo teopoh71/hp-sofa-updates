@@ -1,136 +1,94 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Accounting Patch App</title>
-  <link rel="stylesheet" href="./src/styles.css?v=v6-june-sales-2">
+  <title>三家公司账目</title>
+  <link rel="stylesheet" href="./src/styles.css?v=v7-ui-patch-20260702">
 </head>
 <body>
   <header class="topbar">
     <div>
-      <p class="eyebrow">Three Company Accounting</p>
-      <h1>Invoice Scan + Profit Update</h1>
+      <p class="eyebrow">三家公司账目</p>
+      <h1>销售成本盈亏表</h1>
     </div>
     <div class="topbar-actions">
       <div class="patch-pill" id="versionLabel">v1</div>
-      <button id="topPatchButton" class="top-patch-button" type="button">Patch</button>
+      <button id="topPatchButton" class="top-patch-button" type="button">更新</button>
     </div>
   </header>
 
   <main class="layout">
+    <section class="top-filter">
+      <div class="filter-block">
+        <h2>年份</h2>
+        <div class="year-list" id="yearList"></div>
+      </div>
+      <div class="filter-block wide">
+        <h2>月份</h2>
+        <div class="month-list" id="monthList"></div>
+      </div>
+    </section>
+
     <section class="summary-band">
-      <div class="metric"><span>Total Sales</span><strong id="totalRevenue">0</strong></div>
-      <div class="metric"><span>Supplier Cost</span><strong id="totalCost">0</strong></div>
-      <div class="metric"><span>Gross Profit</span><strong id="totalGross">0</strong></div>
-      <div class="metric"><span>Net After Invoices</span><strong id="totalNet">0</strong></div>
+      <div class="metric"><span>总销售额</span><strong id="totalRevenue">0</strong></div>
+      <div class="metric"><span>总成本</span><strong id="totalCost">0</strong></div>
+      <div class="metric"><span>总毛利</span><strong id="totalGross">0</strong></div>
+      <div class="metric total-profit"><span id="totalNetLabel">扣开销后盈亏</span><strong id="totalNet">0</strong></div>
     </section>
 
     <section class="report-panel">
       <div class="report-head">
-        <h2>3 Company Report</h2>
-        <span id="reportYear">2026</span>
+        <h2>三家公司报表</h2>
+        <span id="reportYear">2026 / 6月</span>
       </div>
-      <p class="report-note">Workbook net profit, clean restart data only.</p>
+      <p class="report-note">按销售、成本、租金、工资扣掉开销后计算。</p>
       <div class="report-grid" id="reportGrid"></div>
     </section>
 
     <section class="workspace">
       <aside class="panel">
-        <h2>Year</h2>
-        <div class="year-list" id="yearList"></div>
-        <h2>Company</h2>
+        <h2>公司</h2>
         <div class="company-list" id="companyList"></div>
-
-        <details class="mobile-fold" open>
-          <summary>Invoice Upload</summary>
-          <label>Invoice file
-            <input id="invoiceFile" type="file" accept="image/*,.txt,.csv,.xlsx,.xls">
-          </label>
-          <label>OCR / invoice text
-            <textarea id="invoiceText" rows="7" placeholder="Paste invoice text or scan an image"></textarea>
-          </label>
-          <div class="grid-2">
-            <label>Date <input id="invoiceDate" type="date"></label>
-            <label>Amount <input id="invoiceAmount" inputmode="decimal" placeholder="0.00"></label>
-          </div>
-          <label>Vendor <input id="invoiceVendor" placeholder="Supplier / customer"></label>
-          <label>Note <input id="invoiceNote" placeholder="Optional"></label>
-          <div class="actions">
-            <button id="scanInvoice">Scan</button>
-            <button id="applyInvoice" class="primary">Update</button>
-          </div>
-        </details>
+        <div class="profit-loss-card" id="profitLossCard"></div>
       </aside>
 
       <section class="main-panel">
         <div class="toolbar">
           <div>
-            <h2 id="activeTitle">Company</h2>
+            <h2 id="activeTitle">公司</h2>
             <p id="activeSource"></p>
-          </div>
-          <div class="actions">
-            <button id="importWorkbook">Import workbook</button>
-            <input id="workbookFile" type="file" hidden accept=".xlsx,.xls,.et,.csv">
-            <button id="exportCsv">CSV</button>
-            <button id="exportJson">JSON</button>
-            <button id="exportXlsx">XLSX</button>
           </div>
         </div>
         <div class="table-wrap">
           <table>
             <thead>
               <tr>
-                <th>Month</th>
-                <th>Sales</th>
-                <th>Supplier Cost</th>
-                <th>Gross Profit</th>
-                <th>Expense</th>
-                <th>Net Profit</th>
+                <th>月份</th>
+                <th>销售</th>
+                <th>成本</th>
+                <th>毛利</th>
+                <th>费用</th>
+                <th>扣开销后</th>
               </tr>
             </thead>
             <tbody id="monthRows"></tbody>
           </table>
         </div>
-        <h2>Invoices</h2>
+        <div class="invoice-tabs" id="invoiceCompanyTabs"></div>
+        <h2 id="invoiceTitle">订单</h2>
         <div class="table-wrap small">
           <table>
-            <thead><tr><th>Date</th><th>Vendor</th><th>Amount</th><th>Note</th></tr></thead>
+            <thead><tr><th>日期</th><th>单号</th><th>数量</th><th>销售</th><th>成本</th></tr></thead>
             <tbody id="invoiceRows"></tbody>
           </table>
         </div>
       </section>
-
-      <aside class="panel">
-        <details class="mobile-fold" open>
-          <summary>Patch Online</summary>
-          <label>Patch URL
-            <input id="patchUrl" value="https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json">
-          </label>
-          <button id="checkPatch" class="primary">Patch & Update</button>
-          <div id="patchStatus" class="status">Ready for online patch feed.</div>
-        </details>
-        <details class="mobile-fold" open>
-          <summary>Online Data</summary>
-          <label>Data URL
-            <input id="dataUrl" value="https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json">
-          </label>
-          <label>Upload API
-            <input id="uploadUrl" placeholder="https://your-server.com/api/accounting">
-          </label>
-          <div class="actions">
-            <button id="downloadData">Download</button>
-            <button id="uploadData" class="primary">Upload</button>
-          </div>
-          <h2>Output</h2>
-          <div id="log" class="log"></div>
-        </details>
-      </aside>
     </section>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
-  <script type="module" src="./src/app.js?v=v6-june-sales-2"></script>
+  <script type="module" src="./src/app.js?v=v7-ui-patch-20260702"></script>
 </body>
 </html>
