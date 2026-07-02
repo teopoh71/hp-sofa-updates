@@ -16,15 +16,14 @@ export function formatMoney(value) {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });
-  if (Math.abs(amount) >= 100000) return `¥${formatter.format(amount / 10000)}万`;
-  return `¥${formatter.format(amount)}`;
+  return `¥${formatter.format(amount / 10000)}万`;
 }
 
 export function profitStatus(value) {
   const amount = Number(value) || 0;
-  if (amount > 0) return { label: "EARN", className: "earn" };
-  if (amount < 0) return { label: "LOSE", className: "lose" };
-  return { label: "EVEN", className: "even" };
+  if (amount > 0) return { label: "净赚", className: "earn" };
+  if (amount < 0) return { label: "净亏", className: "lose" };
+  return { label: "持平", className: "even" };
 }
 
 export function calculateOverhead({ netProfit, monthCount, rent, rentByCompany, salary }) {
@@ -64,7 +63,7 @@ export function applyInvoice(company, invoice) {
       {
         id: `inv-${Date.now()}-${Math.random().toString(16).slice(2)}`,
         date: invoice.date || new Date().toISOString().slice(0, 10),
-        vendor: invoice.vendor || "Unknown",
+        vendor: invoice.vendor || "未知",
         amount: parseMoney(invoice.amount),
         note: invoice.note || "",
         source: "invoice-upload",
