@@ -76,6 +76,25 @@ h2 { font-size: 16px; margin: 18px 0 10px; }
 .metric span { display: block; color: var(--muted); font-size: 13px; }
 .metric strong { display: block; margin-top: 8px; font-size: 22px; }
 
+.top-filter {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 10px;
+  align-items: end;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+.filter-block h2 {
+  margin: 0 0 6px;
+  font-size: 13px;
+}
+.filter-block.wide {
+  min-width: 0;
+}
+
 .report-panel {
   background: var(--panel);
   border: 1px solid var(--line);
@@ -94,6 +113,22 @@ h2 { font-size: 16px; margin: 18px 0 10px; }
 .report-head span {
   color: var(--teal);
   font-weight: 800;
+}
+.top-month-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0 0 10px;
+}
+.top-month-list button {
+  min-height: 32px;
+  padding: 5px 6px;
+  font-size: 12px;
+}
+.top-month-list button.selected {
+  border-color: var(--teal);
+  background: #eef6f3;
+  color: var(--teal);
 }
 .report-note {
   margin: -3px 0 10px;
@@ -134,7 +169,7 @@ h2 { font-size: 16px; margin: 18px 0 10px; }
 .report-row {
   width: 100%;
   display: grid;
-  grid-template-columns: 120px repeat(4, minmax(92px, 1fr));
+  grid-template-columns: 120px repeat(6, minmax(70px, 1fr));
   align-items: center;
   gap: 8px;
   text-align: right;
@@ -158,7 +193,7 @@ h2 { font-size: 16px; margin: 18px 0 10px; }
 
 .workspace {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr) 280px;
+  grid-template-columns: 300px minmax(0, 1fr);
   gap: 16px;
 }
 
@@ -205,12 +240,27 @@ summary {
   color: var(--ink);
 }
 
-.year-list {
+.year-list,
+.month-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 }
-.year-list button.selected { border-color: var(--teal); background: #eef6f3; color: var(--teal); }
+.month-list { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.year-list button.selected,
+.month-list button.selected { border-color: var(--teal); background: #eef6f3; color: var(--teal); }
+.month-list button { min-height: 34px; padding: 6px 8px; font-size: 13px; }
+
+.top-filter .month-list {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+.top-filter .month-list button {
+  flex: 0 0 auto;
+  min-width: 52px;
+}
 
 .company-list { display: grid; gap: 8px; }
 .company-list button {
@@ -221,6 +271,75 @@ summary {
 }
 .company-list button.selected { border-color: var(--teal); background: #eef6f3; }
 .company-list span { color: var(--muted); }
+
+.invoice-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 2px 0 8px;
+  margin-top: 12px;
+}
+.invoice-tabs button {
+  flex: 0 0 auto;
+  display: grid;
+  gap: 2px;
+  min-width: 112px;
+  min-height: 44px;
+  padding: 7px 10px;
+  text-align: left;
+}
+.invoice-tabs button.selected {
+  border-color: var(--teal);
+  background: #eef6f3;
+}
+.invoice-tabs span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.invoice-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 5px;
+  border: 1px solid var(--teal);
+  border-radius: 999px;
+  color: var(--teal);
+  background: #eef6f3;
+  font-size: 10px;
+  font-weight: 800;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.profit-loss-card {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfa;
+}
+.profit-loss-card h2 { margin-top: 0; }
+.pl-subtitle {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+.pl-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 6px 0;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+.pl-row span { color: var(--muted); }
+.pl-row strong { text-align: right; }
+.pl-net {
+  margin-top: 3px;
+  padding-top: 9px;
+  font-size: 15px;
+}
+.pl-net span { font-weight: 800; color: inherit; }
 
 .table-wrap { overflow: auto; border: 1px solid var(--line); border-radius: 8px; }
 .table-wrap.small { max-height: 210px; }
@@ -276,6 +395,22 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
     font-size: 11px;
   }
   .layout { padding: 8px; }
+  .top-filter {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  .top-filter .year-list,
+  .top-filter .month-list {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .top-filter .year-list button {
+    flex: 0 0 84px;
+  }
   .summary-band {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 6px;
@@ -288,6 +423,17 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
   }
   .report-head { margin-bottom: 7px; }
   .report-head h2 { font-size: 14px; }
+  .top-month-list {
+    grid-template-columns: repeat(6, minmax(42px, 1fr));
+    gap: 5px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .top-month-list button {
+    min-width: 42px;
+    min-height: 30px;
+    padding: 4px 5px;
+  }
   .overhead-grid {
     gap: 6px;
     margin-bottom: 6px;
@@ -304,17 +450,14 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
   .overhead-result b { font-size: 16px; }
   .report-grid { gap: 6px; }
   .report-row {
-    grid-template-columns: 74px repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 5px;
-    min-height: 56px;
+    min-height: 92px;
     padding: 7px;
     font-size: 12px;
   }
-  .report-row span:nth-of-type(2),
-  .report-row span:nth-of-type(3) {
-    display: none;
-  }
   .report-row strong {
+    grid-column: 1 / -1;
     font-size: 13px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -337,7 +480,6 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
   }
   .workspace > .panel:first-child { order: 1; }
   .main-panel { order: 2; }
-  .workspace > .panel:last-child { order: 3; }
   .mobile-fold {
     margin-top: 8px;
     border-top: 1px solid var(--line);
@@ -351,16 +493,19 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
     font-size: 13px;
   }
   .mobile-fold[open] summary { margin-bottom: 6px; }
-  .year-list {
+  .year-list,
+  .month-list {
     display: flex;
     gap: 6px;
     overflow-x: auto;
     padding-bottom: 2px;
   }
-  .year-list button {
+  .year-list button,
+  .month-list button {
     min-width: 84px;
     min-height: 34px;
   }
+  .month-list button { min-width: 56px; }
   .company-list {
     display: flex;
     gap: 6px;
@@ -374,12 +519,31 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
     gap: 2px;
     padding: 7px 9px;
   }
+  .invoice-tabs {
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .invoice-tabs button {
+    min-width: 128px;
+    min-height: 42px;
+    padding: 6px 9px;
+  }
   .company-list strong,
   .company-list span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .profit-loss-card {
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .pl-row {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+  .pl-net { font-size: 14px; }
   label { margin: 6px 0; font-size: 11px; }
   input, textarea {
     margin-top: 3px;
@@ -415,7 +579,7 @@ th { color: var(--muted); font-size: 12px; text-transform: uppercase; background
     padding-inline: 4px;
   }
   .table-wrap { border-radius: 6px; }
-  table { min-width: 520px; font-size: 12px; }
+  table { min-width: 480px; font-size: 12px; }
   th, td { padding: 8px 9px; }
   th { font-size: 10px; }
   .status { min-height: 44px; font-size: 11px; }
