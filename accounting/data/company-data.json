@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T00:00:00+08:00",
+  "generatedAt": "2026-07-01Tlocal-june-confirmed-invoices",
   "sourceMode": "clean-restart",
   "companies": [
     {
@@ -70,19 +70,42 @@
         },
         {
           "month": "6月",
-          "revenue": 0,
-          "cost": 0,
-          "grossProfit": 0,
-          "expense": 0,
-          "netProfit": 0,
+          "revenue": 23300,
+          "cost": 10359.57,
+          "grossProfit": 12940.43,
+          "expense": 3333.33,
+          "netProfit": 9607.1,
           "rent": 0,
-          "salary": 0,
+          "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "No Nikator June invoice found or entered yet."
+          "pendingCostNote": "June includes confirmed invoice 0000170 LE8811 half leather. Cost confirmed. Rent 0.00, salary share 3333.33 included."
         }
       ],
-      "invoices": []
+      "invoices": [
+        {
+          "id": "NIKATOR-2026-06-15-0000170",
+          "date": "2026-06-15",
+          "vendor": "Contract 0000170",
+          "amount": 16800,
+          "quantity": 1,
+          "note": "NIKATOR invoice 0000170: LE8811 sofa, 2860mm, MS-0021 half leather, composition LE8811SF-217 + LE8811SF-218. Selling 16800, paid 16800, balance 0. Cost 7128.80.",
+          "cost": 7128.8,
+          "grossProfit": 9671.2
+        },
+        {
+          "id": "NIKATOR-2026-06-30-0000150-LE4404",
+          "date": "2026-06-30",
+          "vendor": "Contract 0000150",
+          "amount": 6500,
+          "quantity": 1,
+          "combinedInvoice": true,
+          "combinedGroup": "0000150",
+          "note": "NIKATOR invoice 0000150: LE4404BE bed 1800x2000 MS/WL half leather. Selling 6500. Cost 3230.77.",
+          "cost": 3230.77,
+          "grossProfit": 3269.23
+        }
+      ]
     },
     {
       "id": "zolano-2026",
@@ -157,16 +180,16 @@
         },
         {
           "month": "6月",
-          "revenue": 83800,
-          "cost": 50654.7,
-          "grossProfit": 33145.3,
-          "expense": 22500,
-          "netProfit": 10645.3,
+          "revenue": 127135,
+          "cost": 83706.12,
+          "grossProfit": 43428.88,
+          "expense": 25833.33,
+          "netProfit": 17595.55,
           "rent": 22500,
-          "salary": 0,
+          "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "June includes invoices 0000169, 0000172, 0000149. 0000149 cost confirmed. MDT2832L 1.6m uses the 2m Deyuanju price-list row as confirmed by Edwin; that price list is cost."
+          "pendingCostNote": "June includes confirmed invoices 0000169, 0000172, 0000149, 0000174, 0000150, 0000067. Costs confirmed. Rent 22500.00, salary share 3333.33 included."
         }
       ],
       "invoices": [
@@ -175,23 +198,63 @@
           "date": "2026-06-02",
           "vendor": "Contract 0000169",
           "amount": 30000,
-          "note": "ZOLANO June invoice 0000169: ZL2868 sofa, ZL632, MDT2832L dining table top 1.6m, DC1005 dining chair x6, MF-215E side table, CT1802 coffee table. Known/estimated cost 18698.48."
+          "quantity": 11,
+          "note": "ZOLANO June invoice 0000169: ZL2868 sofa, ZL632, MDT2832L dining table top 1.6m, DC1005 dining chair x6, MF-215E side table, CT1802 coffee table. Known/estimated cost 18698.48.",
+          "cost": 18698.48,
+          "grossProfit": 11301.52
         },
         {
           "id": "ZOLANO-2026-06-04-0000172",
           "date": "2026-06-04",
           "vendor": "Contract 0000172",
           "amount": 29800,
-          "note": "ZOLANO June invoice 0000172: ZL2831 3S, ZL2831 1S, ZL2831 pillow, DT757, DC753 x6. Cost 21360.16; pillow counted individually."
+          "quantity": 10,
+          "note": "ZOLANO June invoice 0000172: ZL2831 3S, ZL2831 1S, ZL2831 pillow, DT757, DC753 x6. Cost 21360.16; pillow counted individually.",
+          "cost": 21360.16,
+          "grossProfit": 8439.84
         },
         {
           "id": "ZOLANO-2026-06-30-0000149",
           "date": "2026-06-30",
           "vendor": "Contract 0000149",
           "amount": 24000,
+          "quantity": 1,
           "note": "ZOLANO June invoice 0000149: ZL2897 sofa, 1ER + 1NA + 1EL, 3120mm. Deposit 12000, balance 12000. Cost confirmed from ZL2800 export list: F/SA 1EL 341 + 1NA 276 + 1ER 341 USD, RMB=USD*7.3/0.66.",
           "cost": 10596.06,
           "grossProfit": 13403.94
+        },
+        {
+          "id": "ZOLANO-2026-06-22-0000174",
+          "date": "2026-06-22",
+          "vendor": "Contract 0000174",
+          "amount": 16000,
+          "quantity": 1,
+          "displayClearance": true,
+          "note": "ZOLANO invoice 0000174: ZL2672 sofa 清样, 3580mm, F/SA, config 3EL+1ER/T. Selling 16000, paid 16000, balance 0. Cost USD 1369.5175 x 7.3 / 0.66 = 15147.69.",
+          "cost": 15147.69,
+          "grossProfit": 852.31
+        },
+        {
+          "id": "ZOLANO-2026-06-30-0000150",
+          "date": "2026-06-30",
+          "vendor": "Contract 0000150",
+          "amount": 3000,
+          "quantity": 1,
+          "combinedInvoice": true,
+          "combinedGroup": "0000150",
+          "note": "ZOLANO invoice 0000150: ZL565 selling 3000 only. LE4404BE is moved to Nikator. Deposit 4200, balance 4400 on original mixed contract.",
+          "cost": 1200,
+          "grossProfit": 1800
+        },
+        {
+          "id": "ZOLANO-2026-06-30-0000067",
+          "date": "2026-06-30",
+          "vendor": "Contract 0000067",
+          "amount": 24335,
+          "quantity": 5,
+          "note": "ZOLANO invoice 0000067: ZL3776 sofa display set clearance / 展厅样品清仓, ARM + 1NA x3 + 1NA/T, F/SA, 4620mm, 207 color. Deposit 1000, balance 20335. Cost 16703.73.",
+          "cost": 16703.73,
+          "grossProfit": 7631.27
         }
       ]
     },
@@ -242,13 +305,13 @@
           "revenue": 11839,
           "cost": 4423.9,
           "grossProfit": 7415.1,
-          "expense": 2500,
-          "netProfit": 4915.1,
-          "rent": 2500,
-          "salary": 0,
+          "expense": 6333.34,
+          "netProfit": 1081.76,
+          "rent": 3000,
+          "salary": 3333.34,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "June includes STAREEP invoices 1005381 and 1005413. Both costs confirmed; 1005381 uses factory price x0.6 supplier discount with CN-ZZ20 x1."
+          "pendingCostNote": "June includes STAREEP invoices 1005381 and 1005413. Both costs confirmed; 1005381 uses factory price x0.6 supplier discount with CN-ZZ20 x1. Rent 3000.00, salary share 3333.34 included."
         }
       ],
       "invoices": [
@@ -257,6 +320,7 @@
           "date": "2026-06-24",
           "vendor": "Order 1005381",
           "amount": 1039,
+          "quantity": 2,
           "note": "STAREEP June invoice 1005381: CN-ZZ20 x1 and CN-PC50 x1. Cost corrected from factory price list then supplier discount x0.6: ZZ20 273 x1 x0.6, PC50 400 x1 x0.6.",
           "cost": 403.8,
           "grossProfit": 635.2
@@ -266,6 +330,7 @@
           "date": "2026-06-30",
           "vendor": "Order 1005413",
           "amount": 10800,
+          "quantity": 2,
           "note": "STAREEP June invoice 1005413: CN-MF10 mattress x1 cost 1395.10, CN-FI10Z base x1 cost 2625.00. Deposit 5400, total 10800. Cost confirmed from final supplier order.",
           "cost": 4020.1,
           "grossProfit": 6779.9
