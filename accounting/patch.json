@@ -1,8 +1,8 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 7,
-  "versionName": "v7-ui-patch-2026-07-02",
-  "releasedAt": "2026-07-02",
+  "versionCode": 8,
+  "versionName": "v8-cost-data-2026-07-03",
+  "releasedAt": "2026-07-03",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
   "dataUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
@@ -16,11 +16,9 @@
     "data/company-data.json"
   ],
   "notes": [
-    "Combines Nikator, ZOLANO, and Xirui seeded accounting data.",
-    "Supports invoice image/text/workbook upload, OCR when online, exports CSV/JSON/XLSX.",
-    "Includes patch.json so the app can check an online update feed.",
-    "Adds a top Patch button and keeps June visible even when monthly values are still pending.",
-    "Adds June ZOLANO and STAREEP invoices into the app data with pending cost notes where needed.",
-    "Updates local June sales: ZOLANO, STAREEP, and Nikator June rows are visible; confirmed STAREEP and ZOLANO costs are recalculated."
+    "Updates June accounting data with confirmed DC809H and CN-BC90 costs.",
+    "Moves DC809H 809 barstool clearance to ZOLANO/德源居 and confirms cost at 357 each.",
+    "Confirms STAREEP CN-BC90 180x200 cost at 4200.",
+    "Keeps UI patch files listed so phone patch can update layout and data together."
   ]
 }
