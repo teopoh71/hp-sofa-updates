@@ -1,11 +1,11 @@
 ﻿const storageKey = "hp-sofa-price-list";
 const currentAppVersion = window.HP_SOFA_APP_VERSION || {
-  versionCode: 1180,
-  versionName: "v1180-ya140-cache-fix",
+  versionCode: 1181,
+  versionName: "v1181-update-download-safe",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
-  fullDownloadUrl: "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1180-ya140-cache-fix/hp-sofa-v1180-ya140-cache-fix.apk",
-  patchVersionCode: 1180,
-  patchVersionName: "v1180-ya140-cache-fix",
+  fullDownloadUrl: "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1181-update-download-safe/hp-sofa-v1181-update-download-safe.apk",
+  patchVersionCode: 1181,
+  patchVersionName: "v1181-update-download-safe",
   patchManifestUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json"
 };
 const patchCacheName = "hp-sofa-patch-cache";
@@ -3212,7 +3212,27 @@ function openFullUpdateDownload() {
     return;
   }
   if (confirm("\u5c0f\u66f4\u65b0\u65e0\u6cd5\u5b89\u88c5\uff0c\u662f\u5426\u6253\u5f00\u5b8c\u6574 APK \u4e0b\u8f7d\uff1f")) {
-    window.location.href = url;
+    openExternalUrl(url);
+  }
+}
+
+function openExternalUrl(url) {
+  try {
+    if (window.HPAndroidPatch && typeof window.HPAndroidPatch.openExternal === "function") {
+      const opened = window.HPAndroidPatch.openExternal(url);
+      if (opened) return;
+    }
+  } catch {}
+  try {
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.append(link);
+    link.click();
+    link.remove();
+  } catch {
+    window.open(url, "_blank", "noopener,noreferrer");
   }
 }
 

@@ -1,9 +1,9 @@
-{
-  "versionCode": 1180,
-  "versionName": "v1180-ya140-cache-fix",
-  "patchVersionCode": 1180,
-  "patchVersionName": "v1180-ya140-cache-fix",
-  "patchManifestUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
-  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1180-ya140-cache-fix/hp-sofa-v1180-ya140-cache-fix.apk",
-  "generatedAt": "2026-07-06T10:39:06.319Z"
+﻿{
+    "versionCode":  1181,
+    "versionName":  "v1181-update-download-safe",
+    "patchVersionCode":  1181,
+    "patchVersionName":  "v1181-update-download-safe",
+    "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
+    "apkUrl":  "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1181-update-download-safe/hp-sofa-v1181-update-download-safe.apk",
+    "generatedAt":  "2026-07-06T13:20:11.2691821Z"
 }

@@ -1,13 +1,13 @@
-﻿const cacheName = "hp-sofa-catalog-v1180-ya140-cache-fix";
+﻿const cacheName = "hp-sofa-catalog-v1181-update-download-safe";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
-  "./styles.css?v=v1180-ya140-cache-fix",
-  "./app-version.js?v=v1180-ya140-cache-fix",
-  "./app.js?v=v1180-ya140-cache-fix",
-  "./manifest.json?v=v1180-ya140-cache-fix",
-  "./assets/app-icon.svg?v=v1180-ya140-cache-fix"
+  "./styles.css?v=v1181-update-download-safe",
+  "./app-version.js?v=v1181-update-download-safe",
+  "./app.js?v=v1181-update-download-safe",
+  "./manifest.json?v=v1181-update-download-safe",
+  "./assets/app-icon.svg?v=v1181-update-download-safe"
 ];
 
 self.addEventListener("install", (event) => {
