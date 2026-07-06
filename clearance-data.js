@@ -88,7 +88,7 @@ window.HP_CLEARANCE_DATA = [
     dimensions: "",
     supplierCost: 650,
     price: 1430,
-    photo: "assets/clearance/YA144-recrop.jpg"
+    photo: "assets/clearance/YA144-orange-20260706.jpg"
   },
   {
     id: "CLEARANCE-A2515B-DARK",
@@ -166,7 +166,7 @@ window.HP_CLEARANCE_DATA = [
     dimensions: "",
     supplierCost: 680,
     price: 1496,
-    photo: "assets/clearance/YA140-recrop.jpg"
+    photo: "assets/clearance/YA140-correct-20260706.jpg"
   },
   {
     id: "CLEARANCE-T001-BLACK",

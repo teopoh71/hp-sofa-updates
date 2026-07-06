@@ -1,11 +1,11 @@
 ﻿const storageKey = "hp-sofa-price-list";
 const currentAppVersion = window.HP_SOFA_APP_VERSION || {
-  versionCode: 1176,
-  versionName: "v1176-ya157-placeholder-restore",
+  versionCode: 1180,
+  versionName: "v1180-ya140-cache-fix",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
   fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1166-nk0053-le8820-fix.apk",
-  patchVersionCode: 1176,
-  patchVersionName: "v1176-ya157-placeholder-restore",
+  patchVersionCode: 1180,
+  patchVersionName: "v1180-ya140-cache-fix",
   patchManifestUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json"
 };
 const patchCacheName = "hp-sofa-patch-cache";
@@ -8802,8 +8802,8 @@ function getNikatorNk0042RecommendationPriceItem(selectedRecommendation, selecte
   if (!isRecommendationA) return null;
   return {
     series: "NK0042SF",
-    model: "NK0042SF 推荐组合A",
-    materials: ["半皮系列", "A皮系列", "E皮系列", "S皮系列", "G皮系列"],
+    model: "NK0042SF ????A",
+    materials: ["????", "A???", "E???", "S???", "G???"],
     priceOptions: [9835, 11899, 12649, 13845, 15620],
     priceFactor: 1,
   };
