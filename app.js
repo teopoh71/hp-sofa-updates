@@ -1,11 +1,11 @@
 ﻿const storageKey = "hp-sofa-price-list";
 const currentAppVersion = window.HP_SOFA_APP_VERSION || {
-  versionCode: 1164,
-  versionName: "v1164-patch-ui-cache-reset",
+  versionCode: 1174,
+  versionName: "v1174-clearance-canonical-filter",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
-  fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1164-patch-ui-cache-reset.apk",
-  patchVersionCode: 1164,
-  patchVersionName: "v1164-patch-ui-cache-reset",
+  fullDownloadUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1166-nk0053-le8820-fix.apk",
+  patchVersionCode: 1174,
+  patchVersionName: "v1174-clearance-canonical-filter",
   patchManifestUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json"
 };
 const patchCacheName = "hp-sofa-patch-cache";
@@ -7075,9 +7075,18 @@ function renderCopywritingPreview() {
   bindPhotoFullscreen(setPreview);
 }
 
+function isCanonicalClearanceItem(item) {
+  const id = String(item && item.id ? item.id : "");
+  const brand = String(item && item.brand ? item.brand : "").toUpperCase();
+  return brand === "CLEARANCE" || id.startsWith("CLEARANCE-");
+}
+
 function renderClearancePreview() {
   if (setTotal) setTotal.textContent = money.format(0);
-  const items = catalogDefinitions.clearance.catalog || [];
+  const sourceItems = Array.isArray(window.HP_CLEARANCE_DATA) && window.HP_CLEARANCE_DATA.length
+    ? window.HP_CLEARANCE_DATA
+    : (catalogDefinitions.clearance.catalog || []);
+  const items = sourceItems.filter(isCanonicalClearanceItem);
   if (!items.length) {
     setPreview.innerHTML = `
       <div class="catalog-empty">

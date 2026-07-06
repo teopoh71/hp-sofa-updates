@@ -1,13 +1,13 @@
-﻿const cacheName = "hp-sofa-catalog-v1166-nk0053-le8820-fix";
+﻿const cacheName = "hp-sofa-catalog-v1174-clearance-canonical-filter";
 const patchCacheName = "hp-sofa-patch-cache";
 const appFiles = [
   "./",
   "./index.html",
-  "./styles.css?v=v1166-nk0053-le8820-fix",
-  "./app-version.js?v=v1166-nk0053-le8820-fix",
-  "./app.js?v=v1166-nk0053-le8820-fix",
-  "./manifest.json?v=v1166-nk0053-le8820-fix",
-  "./assets/app-icon.svg?v=v1166-nk0053-le8820-fix"
+  "./styles.css?v=v1174-clearance-canonical-filter",
+  "./app-version.js?v=v1174-clearance-canonical-filter",
+  "./app.js?v=v1174-clearance-canonical-filter",
+  "./manifest.json?v=v1174-clearance-canonical-filter",
+  "./assets/app-icon.svg?v=v1174-clearance-canonical-filter"
 ];
 
 self.addEventListener("install", (event) => {

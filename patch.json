@@ -1,286 +1,286 @@
 {
-    "version":  "v1173-clearance-no-top-grid",
-    "versionName":  "v1173-clearance-no-top-grid",
-    "patchVersionCode":  1173,
-    "patchVersionName":  "v1173-clearance-no-top-grid",
-    "generatedAt":  "2026-07-05T16:13:55.8816886Z",
+    "version":  "v1174-clearance-canonical-filter",
+    "versionName":  "v1174-clearance-canonical-filter",
+    "patchVersionCode":  1174,
+    "patchVersionName":  "v1174-clearance-canonical-filter",
+    "generatedAt":  "2026-07-06T01:21:59.8012209Z",
     "files":  [
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/app.js",
-                      "sha256":  "04f37a686048bb5d14e240be1f52fd8517f54be90eb961110aae01918f3d2851",
-                      "size":  2992961,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/app.js",
+                      "sha256":  "ff7c033161bc5be36b8c7980feb3e2450f9a1df8d7bdb9819358ef0327252863",
+                      "size":  2993386,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/styles.css",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/styles.css",
                       "sha256":  "5f34a388c1a24469ee5f15fa4d01934943a6744d48e4d23e4e778c20fc5ffedd",
                       "size":  49399,
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/index.html",
-                      "sha256":  "98b083469f58839c84fe2305a7cfe509680e919debc45f409eab678c81ea11ba",
-                      "size":  2882161,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/index.html",
+                      "sha256":  "b5d5e0a02b52fa3bf2caa7d8f64ed2c555f67560171006988c8af81f2053cbb1",
+                      "size":  2882181,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/app-version.js",
-                      "sha256":  "8a13580cfe71cd3b59110ef9d019e9457efc561ef3bd6f047e798430f18064d8",
-                      "size":  639,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/app-version.js",
+                      "sha256":  "156ec523133eceaa284f8395f9cf670bba95f8684bdd00c66409a2894cd6303b",
+                      "size":  654,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "sw.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/sw.js",
-                      "sha256":  "092911414dd06dcaf43f6acf81c89cb5374cb44f9bbb5a21f9f0a99d2ade6edd",
-                      "size":  2495,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/sw.js",
+                      "sha256":  "8cb98ca1966ce6fb6a60d1299d51aced3ac32b9ae251b6e08e67f7088dc7995b",
+                      "size":  2549,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "clearance-data.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/clearance-data.js",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/clearance-data.js",
                       "sha256":  "28eb71d75e48c5a91aa7131c66d73983aefa9c524f179493addc430b96cd9c23",
                       "size":  6965,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "assets/clearance/A01.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A01.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A01.jpg",
                       "sha256":  "059a86f30f4775747c33538c167303f69172bf495786d436e7a6204040603130",
                       "size":  25590,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A01-GRAY.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A01-GRAY.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A01-GRAY.jpg",
                       "sha256":  "006f62c05cb0f9e9ad56507c667760e6459846d5527f9f5c2529938d4d858be3",
                       "size":  4083,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A01-ORANGE.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A01-ORANGE.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A01-ORANGE.jpg",
                       "sha256":  "34209df1e54e9f3a4cdc905d43fd24fffe11723ffa0069f3429c0a2155eeb873",
                       "size":  3604,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A01-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A01-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A01-recrop.jpg",
                       "sha256":  "059a86f30f4775747c33538c167303f69172bf495786d436e7a6204040603130",
                       "size":  25590,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2433.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2433.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2433.jpg",
                       "sha256":  "da1b558e6b0fbfc5e382db90771a00499512f4a4bf784aba0ee33cfd7ac923ae",
                       "size":  44943,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2433-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2433-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2433-recrop.jpg",
                       "sha256":  "da1b558e6b0fbfc5e382db90771a00499512f4a4bf784aba0ee33cfd7ac923ae",
                       "size":  44943,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2437.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2437.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2437.jpg",
                       "sha256":  "b00625280728753cd94af319e7f468cc19e74915bf8aca4a38e15c9af1ae3485",
                       "size":  43492,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2437-LIGHT.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2437-LIGHT.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2437-LIGHT.jpg",
                       "sha256":  "00636f2a146d325193c1b44d88127b172db513694c4a794a122b2095ae4da06c",
                       "size":  4917,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2437-ORANGE.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2437-ORANGE.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2437-ORANGE.jpg",
                       "sha256":  "3f4e47ce2d7e379c5abb0dad6aa07b00abb944046e36074a2370ff45eaa27117",
                       "size":  6865,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2437-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2437-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2437-recrop.jpg",
                       "sha256":  "b00625280728753cd94af319e7f468cc19e74915bf8aca4a38e15c9af1ae3485",
                       "size":  43492,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2515B.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2515B.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2515B.jpg",
                       "sha256":  "91897d5db99999123f0f12d1cc4fd5364908139999cf934c732629eed074b831",
                       "size":  16576,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2515B-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2515B-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2515B-recrop.jpg",
                       "sha256":  "91897d5db99999123f0f12d1cc4fd5364908139999cf934c732629eed074b831",
                       "size":  16576,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2530.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2530.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2530.jpg",
                       "sha256":  "114bca1c5391eb9a7c10a69e5a94433b8c872311eea31396f39dc0c54130cbaa",
                       "size":  28406,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A2530-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A2530-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A2530-recrop.jpg",
                       "sha256":  "114bca1c5391eb9a7c10a69e5a94433b8c872311eea31396f39dc0c54130cbaa",
                       "size":  28406,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A3412C-BLACK.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A3412C-BLACK.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A3412C-BLACK.jpg",
                       "sha256":  "dc779f3c8f5702e8cccecc0eab4bb548b92eef8598bc9be4f60e48ace20b9529",
                       "size":  4625,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A3412C-WINERED.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A3412C-WINERED.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A3412C-WINERED.jpg",
                       "sha256":  "dc779f3c8f5702e8cccecc0eab4bb548b92eef8598bc9be4f60e48ace20b9529",
                       "size":  4625,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A5253-GREEN.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A5253-GREEN.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A5253-GREEN.jpg",
                       "sha256":  "17de69ee86e305718423015dd6741313f046e725731a123c3d6e352a5e6848bc",
                       "size":  5199,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A5401-BLACK.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A5401-BLACK.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A5401-BLACK.jpg",
                       "sha256":  "b8f5abb83d13e7798552b8ed10b69c8523d99219c64ae221a92779f7e0096b74",
                       "size":  4651,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/A5401-RICE.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/A5401-RICE.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/A5401-RICE.jpg",
                       "sha256":  "b8f5abb83d13e7798552b8ed10b69c8523d99219c64ae221a92779f7e0096b74",
                       "size":  4651,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/T001-BLACK.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/T001-BLACK.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/T001-BLACK.jpg",
                       "sha256":  "a0bbc4ee164b6356f049c549fdc03ca64f5dd216233e51370950de7695b62fc8",
                       "size":  19885,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/T001-BLACK-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/T001-BLACK-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/T001-BLACK-recrop.jpg",
                       "sha256":  "a0bbc4ee164b6356f049c549fdc03ca64f5dd216233e51370950de7695b62fc8",
                       "size":  19885,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/T001-REDBROWN.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/T001-REDBROWN.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/T001-REDBROWN.jpg",
                       "sha256":  "4499c9ac8d31e31347f08b715fab4f8ff6a3f0000a540a5f8afb172f297c6679",
                       "size":  21587,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/T001-REDBROWN-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/T001-REDBROWN-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/T001-REDBROWN-recrop.jpg",
                       "sha256":  "4499c9ac8d31e31347f08b715fab4f8ff6a3f0000a540a5f8afb172f297c6679",
                       "size":  21587,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA140.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA140.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA140.jpg",
                       "sha256":  "e7d44f4d62f857a6326991f172bc49039fc1e0fa99037956a6798f561c0c74bd",
                       "size":  20210,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA140-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA140-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA140-recrop.jpg",
                       "sha256":  "e7d44f4d62f857a6326991f172bc49039fc1e0fa99037956a6798f561c0c74bd",
                       "size":  20210,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA144.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA144.jpg",
-                      "sha256":  "0fbf604a84ba2011fc55d98e07f0d0870861f45b180cef25948315d26f197cc9",
-                      "size":  22713,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA144.jpg",
+                      "sha256":  "82250ca65ed6081aa3ed734938ac0ac6af71da721256df863f8c3d7dca4878d1",
+                      "size":  6590,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA144-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA144-recrop.jpg",
-                      "sha256":  "0fbf604a84ba2011fc55d98e07f0d0870861f45b180cef25948315d26f197cc9",
-                      "size":  22713,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA144-recrop.jpg",
+                      "sha256":  "82250ca65ed6081aa3ed734938ac0ac6af71da721256df863f8c3d7dca4878d1",
+                      "size":  6590,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA157.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA157.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA157.jpg",
                       "sha256":  "89a5667ceec924e28bd46e00eff70261fabbb52deff0920bc5138e45685d0218",
                       "size":  5108,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA193.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA193.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA193.jpg",
                       "sha256":  "6b3179e1b01c9cc2a2a215b6e83c8f8f27738ca5a9fd5fcb9edd3c2732b4405d",
                       "size":  15516,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA193-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA193-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA193-recrop.jpg",
                       "sha256":  "6b3179e1b01c9cc2a2a215b6e83c8f8f27738ca5a9fd5fcb9edd3c2732b4405d",
                       "size":  15516,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA243.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA243.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA243.jpg",
                       "sha256":  "4daa015436294edca2cda52bc46187fff1ebd6aea9a6c8c2339f747d79c2069e",
                       "size":  28106,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA243-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA243-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA243-recrop.jpg",
                       "sha256":  "4daa015436294edca2cda52bc46187fff1ebd6aea9a6c8c2339f747d79c2069e",
                       "size":  28106,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA292.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA292.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA292.jpg",
                       "sha256":  "e793f287609612e17959b271d1d9ee1fc64d2079bdbf19094ee8133470255eb3",
                       "size":  34498,
                       "contentType":  "image/jpeg"
                   },
                   {
                       "path":  "assets/clearance/YA292-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1173-clearance-no-top-grid/assets/clearance/YA292-recrop.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1174-clearance-canonical-filter/assets/clearance/YA292-recrop.jpg",
                       "sha256":  "e793f287609612e17959b271d1d9ee1fc64d2079bdbf19094ee8133470255eb3",
                       "size":  34498,
                       "contentType":  "image/jpeg"
