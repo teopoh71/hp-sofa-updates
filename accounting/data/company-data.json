@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T00:00:00+08:00",
+  "generatedAt": "2026-07-06T00:00:00+08:00",
   "sourceMode": "clean-restart",
   "companies": [
     {
@@ -190,6 +190,19 @@
           "electricity": 0,
           "delivery": 0,
           "pendingCostNote": "June includes confirmed invoices 0000169, 0000172, 0000149, 0000174, 0000150, 0000067. Costs confirmed. Rent 22500.00, salary share 3333.33 included."
+        },
+        {
+          "month": "7月",
+          "revenue": 20300,
+          "cost": 14322.73,
+          "grossProfit": 5977.27,
+          "expense": 25833.33,
+          "netProfit": -19856.06,
+          "rent": 22500,
+          "salary": 3333.33,
+          "electricity": 0,
+          "delivery": 0,
+          "pendingCostNote": "July includes confirmed invoice 0000176 ZL26282 F/SA sofa. Cost confirmed as 2EL + 1NA + 1ER/T, USD 1295 x 7.3 / 0.66 = 14322.73. Rent 22500.00 and salary share 3333.33 included."
         }
       ],
       "invoices": [
@@ -266,6 +279,19 @@
           "grossProfit": 129,
           "displayClearance": true,
           "note": "ZOLANO/德源居清样：DC809H 吧椅 3张，总售价1200元（含送货）。成本来自 德源居清仓.xlsx / 库存表 第21行：DC809H 吧椅 亮棕 成本357元/张；357 x 3 = 1071元。",
+          "status": "confirmed"
+        },
+        {
+          "id": "ZOLANO-2026-07-03-0000176",
+          "date": "2026-07-03",
+          "vendor": "Contract 0000176",
+          "amount": 20300,
+          "quantity": 1,
+          "note": "ZOLANO July invoice 0000176: ZL26282 / MONTIERI ZL2628 sofa, F/SA leather, customer sketch approx total length 3040mm with right return approx 1780mm. Confirmed combination 2EL + 1NA + 1ER/T. Deposit paid 10300 by bank/POS on 2026-07-05; balance noted 10000. Cost uses export list F/SA: 2EL 584 + 1NA 243 + 1ER/T 468 = 1295; RMB cost = 1295 * 7.3 / 0.66 = 14322.73.",
+          "cost": 14322.73,
+          "grossProfit": 5977.27,
+          "deposit": 10300,
+          "balance": 10000,
           "status": "confirmed"
         }
       ]

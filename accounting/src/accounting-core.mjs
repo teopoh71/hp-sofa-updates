@@ -51,8 +51,13 @@ export function buildCompanySummary(company) {
     grossProfit: sum("grossProfit"),
     expense: sum("expense"),
     invoiceAmount,
+    outstandingBalance: sumInvoiceBalances(invoices),
     netProfit: roundMoney(sum("netProfit") + invoiceAmount),
   };
+}
+
+export function sumInvoiceBalances(invoices) {
+  return roundMoney((invoices || []).reduce((total, row) => total + parseMoney(row.balance), 0));
 }
 
 export function applyInvoice(company, invoice) {

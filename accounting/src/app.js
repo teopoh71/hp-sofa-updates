@@ -6,13 +6,14 @@
   formatMoney,
   profitStatus,
   parseMoney,
+  sumInvoiceBalances,
   shouldUpdate,
   toCsv,
 } from "./accounting-core.mjs?v=v8-cost-data-20260703";
 
 const defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
 const defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-const patch = { versionCode: 7, versionName: "v7-ui-patch-2026-07-02" };
+const patch = { versionCode: 9, versionName: "v9-尾款统计-2026-07-06" };
 const patchCacheName = "accounting-ui-patch-v1";
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
 
@@ -76,6 +77,7 @@ function render() {
   $("totalRevenue").textContent = money(totals.revenue);
   $("totalCost").textContent = money(totals.cost);
   $("totalGross").textContent = money(totals.grossProfit);
+  $("totalBalance").textContent = money(totals.outstandingBalance);
   const totalStatus = profitStatus(totals.netProfit || 0);
   $("totalNetLabel").textContent = `扣开销后${totalStatus.label}`;
   $("totalNet").textContent = money(totals.netProfit);
@@ -91,6 +93,7 @@ function render() {
       <span><b>成本</b>${money(summary.cost)}</span>
       <span><b>租金</b>${money(summary.rent)}</span>
       <span><b>工资</b>${money(summary.salary)}</span>
+      <span><b>尾款</b>${money(summary.outstandingBalance)}</span>
       <span class="${status.className}"><b>扣开销后</b>${money(summary.netProfit)}</span>
     </button>`;
   }).join("");
@@ -109,8 +112,8 @@ function render() {
   const invoiceRows = visibleInvoiceRows(company);
   $("invoiceTitle").textContent = state.activeMonth ? `${company.name} / ${state.activeMonth}月订单 (${invoiceRows.length}单)` : `${company.name}订单 (${invoiceRows.length}单)`;
   $("invoiceRows").innerHTML = invoiceRows.map((row) => `<tr>
-    <td>${row.date}</td><td>${invoiceLabel(row)}</td><td>1单</td><td>${money(row.amount)}</td><td>${money(row.cost || 0)}</td>
-  </tr>`).join("") || `<tr><td colspan="5">暂无订单。</td></tr>`;
+    <td>${row.date}</td><td>${invoiceLabel(row)}</td><td>1单</td><td>${money(row.amount)}</td><td>${money(row.cost || 0)}</td><td>${money(row.balance || 0)}</td>
+  </tr>`).join("") || `<tr><td colspan="6">暂无订单。</td></tr>`;
 }
 
 function bindEvents() {
@@ -202,6 +205,7 @@ function selectedCompanySummary(company) {
 
 function selectedProfitLoss(company) {
   const quantity = selectedInvoiceRows(company).length;
+  const outstandingBalance = sumInvoiceBalances(selectedInvoiceRows(company));
   const summary = visibleMonthlyRows(company).reduce((acc, row) => {
     acc.revenue += Number(row?.revenue || 0);
     acc.cost += Number(row?.cost || 0);
@@ -211,8 +215,9 @@ function selectedProfitLoss(company) {
     acc.expense += Number(row?.expense || 0);
     acc.netProfit += Number(row?.netProfit || 0);
     return acc;
-  }, { revenue: 0, cost: 0, grossProfit: 0, rent: 0, salary: 0, expense: 0, netProfit: 0, quantity: 0 });
+  }, { revenue: 0, cost: 0, grossProfit: 0, rent: 0, salary: 0, expense: 0, netProfit: 0, quantity: 0, outstandingBalance: 0 });
   summary.quantity = quantity;
+  summary.outstandingBalance = outstandingBalance;
   return summary;
 }
 

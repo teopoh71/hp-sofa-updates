@@ -1,8 +1,8 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 8,
-  "versionName": "v8-cost-data-2026-07-03",
-  "releasedAt": "2026-07-03",
+  "versionCode": 9,
+  "versionName": "v9-balance-due-2026-07-06",
+  "releasedAt": "2026-07-06",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
   "dataUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
@@ -16,9 +16,8 @@
     "data/company-data.json"
   ],
   "notes": [
-    "Updates June accounting data with confirmed DC809H and CN-BC90 costs.",
-    "Moves DC809H 809 barstool clearance to ZOLANO/德源居 and confirms cost at 357 each.",
-    "Confirms STAREEP CN-BC90 180x200 cost at 4200.",
+    "Adds unpaid balance / 尾款 totals to the header, company cards, and invoice table.",
+    "Adds ZOLANO July contract 0000176: ZL26282 F/SA, 2EL + 1NA + 1ER/T, sales 20300, cost 14322.73, balance 10000.",
     "Keeps UI patch files listed so phone patch can update layout and data together."
   ]
 }
