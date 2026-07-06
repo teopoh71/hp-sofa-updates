@@ -1,11 +1,12 @@
 {
-  "versionCode": 2002,
-  "versionName": "STAREEP-2026.07.04-price",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260704-price-update.apk",
+  "versionCode": 2003,
+  "versionName": "STAREEP-2026.07.06-sofa-recliner",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260706-sofa-recliner-v2003.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "STAREEP 2026-07-04 July price update.",
+    "STAREEP sofa recliner explanation update.",
+    "Shows 2 recliners for Ultra/Pro/SE and 0 recliner for fixed versions.",
     "Independent STAREEP app package. Not linked to HP Sofa updates."
   ]
 }
