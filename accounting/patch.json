@@ -1,7 +1,7 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 9,
-  "versionName": "v9-balance-due-2026-07-06",
+  "versionCode": 10,
+  "versionName": "v10-force-ui-patch-2026-07-06",
   "releasedAt": "2026-07-06",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
@@ -18,6 +18,7 @@
   "notes": [
     "Adds unpaid balance / 尾款 totals to the header, company cards, and invoice table.",
     "Adds ZOLANO July contract 0000176: ZL26282 F/SA, 2EL + 1NA + 1ER/T, sales 20300, cost 14322.73, balance 10000.",
+    "Makes the update button reinstall UI and data files even when the phone already saved the same version number.",
     "Keeps UI patch files listed so phone patch can update layout and data together."
   ]
 }

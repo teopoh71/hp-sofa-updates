@@ -13,7 +13,7 @@
 
 const defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
 const defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-const patch = { versionCode: 9, versionName: "v9-尾款统计-2026-07-06" };
+const patch = { versionCode: 10, versionName: "v10-强制补丁更新-2026-07-06" };
 const patchCacheName = "accounting-ui-patch-v1";
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
 
@@ -333,20 +333,18 @@ function exportXlsx() {
 async function checkPatch() {
   try {
     const patchUrl = $("patchUrl")?.value.trim() || defaultPatchUrl;
+    setPatchStatus("正在下载线上补丁...");
     const remote = await fetch(patchUrl, { cache: "no-store" }).then((res) => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return res.json();
     });
     const currentVersion = Number(localStorage.getItem("accountingPatchVersionCode") || patch.versionCode);
-    if (Number(remote.versionCode || 0) > currentVersion) {
-      await applyUiPatch(remote, patchUrl);
-      setPatchStatus(`已安装补丁 ${remote.versionName}，正在刷新...`);
-      setTimeout(() => location.reload(), 500);
-    } else {
-      const dataUrl = remote.dataUrl ? new URL(remote.dataUrl, patchUrl).href : ($("dataUrl")?.value || defaultDataUrl);
-      if ($("dataUrl")) $("dataUrl").value = dataUrl;
-      setPatchStatus(`已经是最新补丁: ${remote.versionName}。`);
-    }
+    await applyUiPatch(remote, patchUrl);
+    const dataUrl = remote.dataUrl ? new URL(remote.dataUrl, patchUrl).href : ($("dataUrl")?.value || defaultDataUrl);
+    if ($("dataUrl")) $("dataUrl").value = dataUrl;
+    const action = Number(remote.versionCode || 0) > currentVersion ? "已安装新补丁" : "已重新安装补丁";
+    setPatchStatus(`${action} ${remote.versionName}，正在刷新...`);
+    setTimeout(() => location.reload(), 500);
   } catch (error) {
     setPatchStatus(`检查更新失败: ${error.message}`);
   }
@@ -367,6 +365,7 @@ async function applyUiPatch(remote, patchUrl) {
   await registerPatchWorker();
   const files = Array.isArray(remote.files) ? remote.files : [];
   if (!files.length) throw new Error("补丁没有列出 UI 文件");
+  await caches.delete(patchCacheName);
   const cache = await caches.open(patchCacheName);
   for (const file of files) {
     const remoteFileUrl = new URL(file, patchUrl).href;
