@@ -1,24 +1,23 @@
 {
-  "appId": "edwin-accounting-scan",
-  "versionCode": 10,
-  "versionName": "v10-force-ui-patch-2026-07-06",
-  "releasedAt": "2026-07-06",
-  "appUrl": "./index.html",
-  "apkUrl": "./index.html",
-  "dataUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
-  "uploadUrl": "",
-  "files": [
-    "index.html",
-    "sw.js",
-    "src/app.js",
-    "src/accounting-core.mjs",
-    "src/styles.css",
-    "data/company-data.json"
-  ],
-  "notes": [
-    "Adds unpaid balance / 尾款 totals to the header, company cards, and invoice table.",
-    "Adds ZOLANO July contract 0000176: ZL26282 F/SA, 2EL + 1NA + 1ER/T, sales 20300, cost 14322.73, balance 10000.",
-    "Makes the update button reinstall UI and data files even when the phone already saved the same version number.",
-    "Keeps UI patch files listed so phone patch can update layout and data together."
-  ]
+    "appId":  "edwin-accounting-scan",
+    "versionCode":  11,
+    "versionName":  "v11-apk-ui-data-sync-2026-07-06",
+    "releasedAt":  "2026-07-06",
+    "appUrl":  "./index.html",
+    "apkUrl":  "./index.html",
+    "dataUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
+    "uploadUrl":  "",
+    "files":  [
+                  "index.html",
+                  "sw.js",
+                  "src/app.js",
+                  "src/accounting-core.mjs",
+                  "src/styles.css",
+                  "data/company-data.json"
+              ],
+    "notes":  [
+                  "Fixes APK built-in assets so phone reinstall opens current accounting UI, not old v1 screen.",
+                  "Includes June CN-BC90 and DC809H records, July ZOLANO 0000176, unpaid balance, and UI patch reinstall logic.",
+                  "Phone update button can reinstall UI/data files even when local storage already has the same version."
+              ]
 }

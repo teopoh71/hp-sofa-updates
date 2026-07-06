@@ -1,4 +1,4 @@
-﻿import {
+import {
   applyInvoice,
   availableYears,
   buildCompanySummary,
@@ -13,7 +13,7 @@
 
 const defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
 const defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-const patch = { versionCode: 10, versionName: "v10-强制补丁更新-2026-07-06" };
+const patch = { versionCode: 11, versionName: "v11-APK补丁同步-2026-07-06" };
 const patchCacheName = "accounting-ui-patch-v1";
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
 
@@ -436,3 +436,4 @@ function setPatchStatus(message) {
 init().catch((error) => {
   document.body.innerHTML = `<pre>App failed to load: ${error.message}</pre>`;
 });
+
