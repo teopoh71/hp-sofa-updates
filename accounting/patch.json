@@ -1,7 +1,7 @@
 {
     "appId":  "edwin-accounting-scan",
-    "versionCode":  11,
-    "versionName":  "v11-apk-ui-data-sync-2026-07-06",
+    "versionCode":  12,
+    "versionName":  "v12-webview-compatible-apk-2026-07-06",
     "releasedAt":  "2026-07-06",
     "appUrl":  "./index.html",
     "apkUrl":  "./index.html",
@@ -13,11 +13,12 @@
                   "src/app.js",
                   "src/accounting-core.mjs",
                   "src/styles.css",
-                  "data/company-data.json"
+                  "data/company-data.json",
+                  "src/accounting-bundle.js"
               ],
     "notes":  [
-                  "Fixes APK built-in assets so phone reinstall opens current accounting UI, not old v1 screen.",
-                  "Includes June CN-BC90 and DC809H records, July ZOLANO 0000176, unpaid balance, and UI patch reinstall logic.",
-                  "Phone update button can reinstall UI/data files even when local storage already has the same version."
+                  "Fixes phone WebView startup by using a bundled non-module script instead of type=module.",
+                  "Includes current accounting data: CN-BC90, DC809H/809, 0000176, unpaid balance, and UI patch reinstall logic.",
+                  "Future online patches can update UI and data together through index.html plus accounting-bundle.js."
               ]
 }

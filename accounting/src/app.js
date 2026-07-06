@@ -13,7 +13,7 @@ import {
 
 const defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
 const defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-const patch = { versionCode: 11, versionName: "v11-APK补丁同步-2026-07-06" };
+const patch = { versionCode: 12, versionName: "v12-手机兼容补丁-2026-07-06" };
 const patchCacheName = "accounting-ui-patch-v1";
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
 
