@@ -1,9 +1,9 @@
-﻿{
-    "versionCode":  1141,
-    "versionName":  "v1141-zolano3136-corner-module",
-    "patchVersionCode":  1141,
-    "patchVersionName":  "v1141-zolano3136-corner-module",
-    "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
-    "apkUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/apks/hp-sofa-v1141-zolano3136-corner-module.apk",
-    "generatedAt":  "2026-06-30T10:29:28.1958894Z"
+{
+  "versionCode": 1180,
+  "versionName": "v1180-ya140-cache-fix",
+  "patchVersionCode": 1180,
+  "patchVersionName": "v1180-ya140-cache-fix",
+  "patchManifestUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1180-ya140-cache-fix/hp-sofa-v1180-ya140-cache-fix.apk",
+  "generatedAt": "2026-07-06T10:39:06.319Z"
 }
