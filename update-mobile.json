@@ -1,9 +1,9 @@
 ﻿{
-    "versionCode":  1181,
-    "versionName":  "v1181-update-download-safe",
-    "patchVersionCode":  1181,
-    "patchVersionName":  "v1181-update-download-safe",
+    "versionCode":  1182,
+    "versionName":  "v1182-clearance-photo-fix",
+    "patchVersionCode":  1182,
+    "patchVersionName":  "v1182-clearance-photo-fix",
     "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
     "apkUrl":  "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1181-update-download-safe/hp-sofa-v1181-update-download-safe.apk",
-    "generatedAt":  "2026-07-06T13:20:11.2691821Z"
+    "generatedAt":  "2026-07-07T13:08:48.1756525Z"
 }

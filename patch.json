@@ -1,338 +1,58 @@
 ﻿{
-    "version":  "v1181-update-download-safe",
-    "versionName":  "v1181-update-download-safe",
-    "patchVersionCode":  1181,
-    "patchVersionName":  "v1181-update-download-safe",
-    "generatedAt":  "2026-07-06T13:20:11.1774945Z",
+    "version":  "v1182-clearance-photo-fix",
+    "versionName":  "v1182-clearance-photo-fix",
+    "patchVersionCode":  1182,
+    "patchVersionName":  "v1182-clearance-photo-fix",
+    "generatedAt":  "2026-07-07T13:08:48.0896463Z",
     "files":  [
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/app-version.js",
-                      "sha256":  "9724e25ebd3823431a747bbcf53d249855130384cf4108e4487b6c54f2da3f93",
-                      "size":  660,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/app-version.js",
+                      "sha256":  "26b5def8b4eab91e463b294ea2e080fa755dbfc97a96ce22ec283870f183335f",
+                      "size":  657,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/app.js",
-                      "sha256":  "7dbf9693587678ead238549dc3c6010c728af42fae427b03101c9d3919f051d1",
-                      "size":  2997841,
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets/clearance/A01-GRAY.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A01-GRAY.jpg",
-                      "sha256":  "006f62c05cb0f9e9ad56507c667760e6459846d5527f9f5c2529938d4d858be3",
-                      "size":  4083,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A01-ORANGE.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A01-ORANGE.jpg",
-                      "sha256":  "34209df1e54e9f3a4cdc905d43fd24fffe11723ffa0069f3429c0a2155eeb873",
-                      "size":  3604,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A01-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A01-recrop.jpg",
-                      "sha256":  "059a86f30f4775747c33538c167303f69172bf495786d436e7a6204040603130",
-                      "size":  25590,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A01.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A01.jpg",
-                      "sha256":  "059a86f30f4775747c33538c167303f69172bf495786d436e7a6204040603130",
-                      "size":  25590,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2433-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2433-recrop.jpg",
-                      "sha256":  "da1b558e6b0fbfc5e382db90771a00499512f4a4bf784aba0ee33cfd7ac923ae",
-                      "size":  44943,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2433.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2433.jpg",
-                      "sha256":  "da1b558e6b0fbfc5e382db90771a00499512f4a4bf784aba0ee33cfd7ac923ae",
-                      "size":  44943,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2437-LIGHT.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2437-LIGHT.jpg",
-                      "sha256":  "00636f2a146d325193c1b44d88127b172db513694c4a794a122b2095ae4da06c",
-                      "size":  4917,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2437-ORANGE.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2437-ORANGE.jpg",
-                      "sha256":  "3f4e47ce2d7e379c5abb0dad6aa07b00abb944046e36074a2370ff45eaa27117",
-                      "size":  6865,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2437-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2437-recrop.jpg",
-                      "sha256":  "b00625280728753cd94af319e7f468cc19e74915bf8aca4a38e15c9af1ae3485",
-                      "size":  43492,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2437.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2437.jpg",
-                      "sha256":  "b00625280728753cd94af319e7f468cc19e74915bf8aca4a38e15c9af1ae3485",
-                      "size":  43492,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2515B-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2515B-recrop.jpg",
-                      "sha256":  "91897d5db99999123f0f12d1cc4fd5364908139999cf934c732629eed074b831",
-                      "size":  16576,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2515B.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2515B.jpg",
-                      "sha256":  "91897d5db99999123f0f12d1cc4fd5364908139999cf934c732629eed074b831",
-                      "size":  16576,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2530-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2530-recrop.jpg",
-                      "sha256":  "114bca1c5391eb9a7c10a69e5a94433b8c872311eea31396f39dc0c54130cbaa",
-                      "size":  28406,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2530.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A2530.jpg",
-                      "sha256":  "114bca1c5391eb9a7c10a69e5a94433b8c872311eea31396f39dc0c54130cbaa",
-                      "size":  28406,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A3412C-BLACK.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A3412C-BLACK.jpg",
-                      "sha256":  "dc779f3c8f5702e8cccecc0eab4bb548b92eef8598bc9be4f60e48ace20b9529",
-                      "size":  4625,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A3412C-WINERED.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A3412C-WINERED.jpg",
-                      "sha256":  "dc779f3c8f5702e8cccecc0eab4bb548b92eef8598bc9be4f60e48ace20b9529",
-                      "size":  4625,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A5253-GREEN.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A5253-GREEN.jpg",
-                      "sha256":  "17de69ee86e305718423015dd6741313f046e725731a123c3d6e352a5e6848bc",
-                      "size":  5199,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A5401-BLACK.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A5401-BLACK.jpg",
-                      "sha256":  "b8f5abb83d13e7798552b8ed10b69c8523d99219c64ae221a92779f7e0096b74",
-                      "size":  4651,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A5401-RICE.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/A5401-RICE.jpg",
-                      "sha256":  "b8f5abb83d13e7798552b8ed10b69c8523d99219c64ae221a92779f7e0096b74",
-                      "size":  4651,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/T001-BLACK-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/T001-BLACK-recrop.jpg",
-                      "sha256":  "a0bbc4ee164b6356f049c549fdc03ca64f5dd216233e51370950de7695b62fc8",
-                      "size":  19885,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/T001-BLACK.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/T001-BLACK.jpg",
-                      "sha256":  "a0bbc4ee164b6356f049c549fdc03ca64f5dd216233e51370950de7695b62fc8",
-                      "size":  19885,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/T001-REDBROWN-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/T001-REDBROWN-recrop.jpg",
-                      "sha256":  "4499c9ac8d31e31347f08b715fab4f8ff6a3f0000a540a5f8afb172f297c6679",
-                      "size":  21587,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/T001-REDBROWN.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/T001-REDBROWN.jpg",
-                      "sha256":  "4499c9ac8d31e31347f08b715fab4f8ff6a3f0000a540a5f8afb172f297c6679",
-                      "size":  21587,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA140-correct-20260706.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA140-correct-20260706.jpg",
-                      "sha256":  "fa597b2affde895865014e6c6417b705d0f908b98e4e55456d56751145f7e283",
-                      "size":  14608,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA140-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA140-recrop.jpg",
-                      "sha256":  "fa597b2affde895865014e6c6417b705d0f908b98e4e55456d56751145f7e283",
-                      "size":  14608,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA140.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA140.jpg",
-                      "sha256":  "fa597b2affde895865014e6c6417b705d0f908b98e4e55456d56751145f7e283",
-                      "size":  14608,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA144-orange-20260706.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA144-orange-20260706.jpg",
-                      "sha256":  "82250ca65ed6081aa3ed734938ac0ac6af71da721256df863f8c3d7dca4878d1",
-                      "size":  6590,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA144-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA144-recrop.jpg",
-                      "sha256":  "82250ca65ed6081aa3ed734938ac0ac6af71da721256df863f8c3d7dca4878d1",
-                      "size":  6590,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA144.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA144.jpg",
-                      "sha256":  "82250ca65ed6081aa3ed734938ac0ac6af71da721256df863f8c3d7dca4878d1",
-                      "size":  6590,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA157.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA157.jpg",
-                      "sha256":  "d127c47d77b0ef5ceb8d59e748740e8a0ca143962190b06a139c8f5e9d711acc",
-                      "size":  26060,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA193-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA193-recrop.jpg",
-                      "sha256":  "6b3179e1b01c9cc2a2a215b6e83c8f8f27738ca5a9fd5fcb9edd3c2732b4405d",
-                      "size":  15516,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA193.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA193.jpg",
-                      "sha256":  "6b3179e1b01c9cc2a2a215b6e83c8f8f27738ca5a9fd5fcb9edd3c2732b4405d",
-                      "size":  15516,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA243-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA243-recrop.jpg",
-                      "sha256":  "4daa015436294edca2cda52bc46187fff1ebd6aea9a6c8c2339f747d79c2069e",
-                      "size":  28106,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA243.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA243.jpg",
-                      "sha256":  "4daa015436294edca2cda52bc46187fff1ebd6aea9a6c8c2339f747d79c2069e",
-                      "size":  28106,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA292-recrop.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA292-recrop.jpg",
-                      "sha256":  "e793f287609612e17959b271d1d9ee1fc64d2079bdbf19094ee8133470255eb3",
-                      "size":  34498,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/YA292.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/clearance/YA292.jpg",
-                      "sha256":  "e793f287609612e17959b271d1d9ee1fc64d2079bdbf19094ee8133470255eb3",
-                      "size":  34498,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/gallery/NK5013DT/effect-20260706-01.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/gallery/NK5013DT/effect-20260706-01.jpg",
-                      "sha256":  "f6d24b0df09319fef3299373e0b816a518da0f75f8dd940d632ac343ac0aafdf",
-                      "size":  233265,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/gallery/NK5013DT/effect-20260706-02.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/gallery/NK5013DT/effect-20260706-02.jpg",
-                      "sha256":  "2ceec14c902b9c77772e729e4c69e5810a1687f6122e10444ca867c63c26bf8b",
-                      "size":  219114,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/gallery/NK5013DT/effect-20260706-03.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/gallery/NK5013DT/effect-20260706-03.jpg",
-                      "sha256":  "4924fb92bb413746a9c7247cc087d7e394e9edf8e43746575e7d71a401a20338",
-                      "size":  139791,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/gallery/NK5013DT/effect-20260706-04.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/gallery/NK5013DT/effect-20260706-04.jpg",
-                      "sha256":  "e508a6083c2e9f334d2eff1d4b563fca0e70e7143067e87ff86e11cf86b1e888",
-                      "size":  227163,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/photo-gallery.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/assets/photo-gallery.js",
-                      "sha256":  "256bbe0c245076dfae788719b43ac4c9d3105b5c6a69fcdbf7d0124a401cb9e6",
-                      "size":  13106,
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "clearance-data.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/clearance-data.js",
-                      "sha256":  "16a6214cc052acd40e7592c8cedec48850e9ffab5680671b96996ca3abcf273d",
-                      "size":  6982,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/app.js",
+                      "sha256":  "2c5cac131ebcf3a68877cccc28a327470ad5cc0140093b5690c8b3c59763c14a",
+                      "size":  2997843,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/index.html",
-                      "sha256":  "753dee3efc36a85bfe9371e0e7a5ef1193741a163b5d43808e168317145c5ed5",
-                      "size":  2882182,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/index.html",
+                      "sha256":  "208f620bdb517525b4b84d09ba15a5fe745b68f0d54910e6b99a10cacf93fa26",
+                      "size":  2882176,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
-                      "path":  "styles.css",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/styles.css",
-                      "sha256":  "5f34a388c1a24469ee5f15fa4d01934943a6744d48e4d23e4e778c20fc5ffedd",
-                      "size":  49399,
-                      "contentType":  "text/css; charset=utf-8"
+                      "path":  "clearance-data.js",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/clearance-data.js",
+                      "sha256":  "52c85473c733ce5e9c1e3b93bcca9318d7161e3d632e55d37a8f1ece1ed44df7",
+                      "size":  6975,
+                      "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
-                      "path":  "sw.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1181-update-download-safe/sw.js",
-                      "sha256":  "e6c3f42e624649bf937ed7903264f28b4314b956f30e3cc6b152d6a1dfe1f059",
-                      "size":  2524,
-                      "contentType":  "application/javascript; charset=utf-8"
+                      "path":  "assets/clearance/A2515B-DARK.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/assets/clearance/A2515B-DARK.jpg",
+                      "sha256":  "487a7653c0286a4439f0020a5ffc806cf36d451a91229c4d7666900b86a5ecb7",
+                      "size":  23743,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/A2515B-LIGHT.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/assets/clearance/A2515B-LIGHT.jpg",
+                      "sha256":  "9fbd5d342f83e6cacb35a972f29c30852d1599db02dc7a5000c9574999cdbf3c",
+                      "size":  23378,
+                      "contentType":  "image/jpeg"
+                  },
+                  {
+                      "path":  "assets/clearance/A2433-BROWN.jpg",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/assets/clearance/A2433-BROWN.jpg",
+                      "sha256":  "c7b4ab43cbf1bbbc9b051f42404c44c1167e6d637dbb849b4e96bb1da0d75f69",
+                      "size":  14872,
+                      "contentType":  "image/jpeg"
                   }
               ]
 }
