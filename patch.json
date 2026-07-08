@@ -8,22 +8,22 @@
                   {
                       "path":  "app-version.js",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/app-version.js",
-                      "sha256":  "65971b90dd04fff137987950ee229b70c00af885a28ca9a18011bf12a496469f",
-                      "size":  675,
+                      "sha256":  "2ab501c479877139dc6ef4360af993c43672df1fd5f983ad32fcf7aab8b0b5c4",
+                      "size":  672,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/app.js",
-                      "sha256":  "754640ac7fc9bf9878b144c01e7743f57235f583275eee22da8d34928fbc4332",
-                      "size":  2999933,
+                      "sha256":  "56d881f206fb75932c9ea68a2363bc8071e8abf1cb85a157b30a8ea6f38dc65d",
+                      "size":  2990367,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/index.html",
-                      "sha256":  "12f6ec52730e16267de45ecfa041fea1a0c88bde8e328bec90fa218b0c04c7a3",
-                      "size":  2882176,
+                      "sha256":  "53075e9ee7ab96a7479a224a23782d5ad72fdb31856e5b0b580f97a036f2749b",
+                      "size":  2881341,
                       "contentType":  "text/html; charset=utf-8"
                   }
               ]
