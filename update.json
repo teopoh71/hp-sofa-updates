@@ -1,9 +1,9 @@
-{
-    "versionCode":  1095,
-    "versionName":  "v1095-native-patch-bridge",
-    "patchVersionCode":  1136,
-    "patchVersionName":  "v1136-smooth-quick-slider",
+﻿{
+    "versionCode":  1185,
+    "versionName":  "v1185-gallery-broken-thumb-hide",
+    "patchVersionCode":  1185,
+    "patchVersionName":  "v1185-gallery-broken-thumb-hide",
     "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
-    "apkUrl":  "https://teopoh71.github.io/hp-sofa-updates/apks/hp-sofa-v1095-native-patch-bridge.apk",
-    "generatedAt":  "2026-06-30T05:06:41.4377944Z"
+    "apkUrl":  "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1181-update-download-safe/hp-sofa-v1181-update-download-safe.apk",
+    "generatedAt":  "2026-07-08T04:27:26.1114579Z"
 }

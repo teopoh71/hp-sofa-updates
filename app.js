@@ -1,11 +1,11 @@
 ﻿const storageKey = "hp-sofa-price-list";
 const currentAppVersion = window.HP_SOFA_APP_VERSION || {
-  versionCode: 1183,
-  versionName: "v1183-le8806-combo-pieces",
+  versionCode: 1185,
+  versionName: "v1185-gallery-broken-thumb-hide",
   updateManifestUrl: "https://teopoh71.github.io/hp-sofa-updates/update-mobile.json",
   fullDownloadUrl: "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1181-update-download-safe/hp-sofa-v1181-update-download-safe.apk",
-  patchVersionCode: 1183,
-  patchVersionName: "v1183-le8806-combo-pieces",
+  patchVersionCode: 1185,
+  patchVersionName: "v1185-gallery-broken-thumb-hide",
   patchManifestUrl: "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json"
 };
 const patchCacheName = "hp-sofa-patch-cache";
@@ -7390,9 +7390,18 @@ function renderSetPreview() {
     .map((select) => select.value)
     .map((id) => findCatalogOrManualItemById(id))
     .filter(Boolean);
+  const hasExplicitSelection = selectedFromSlots.length > 0
+    || comboPurchases.length > 0
+    || Boolean(selectedRecommendation);
   const selected = comboPurchases.length
     ? comboPurchases.flatMap((purchase) => purchase.items)
     : selectedFromSlots;
+  if (!hasExplicitSelection && !isDefaultSingleItemCatalog()) {
+    updateSelectionSizeSummary("");
+    if (setTotal) setTotal.textContent = money.format(0);
+    setPreview.innerHTML = "";
+    return;
+  }
   if (!selected.length) {
     const defaultItem = getDefaultSingleCatalogItem();
     if (defaultItem) selected.push(defaultItem);
@@ -7940,7 +7949,7 @@ function renderPhotoGallery(item, extraPhotos = []) {
     <div class="photo-gallery" aria-label="\u653e\u5927\u56fe\u7247">
       ${photos.map((src, index) => `
         <button class="photo-thumb${index === 0 ? " is-active" : ""}" type="button" data-photo-src="${src}" aria-label="\u653e\u5927\u56fe\u7247">
-          <img src="${src}" alt="">
+          <img src="${src}" alt="" data-gallery-thumb="1">
           <span class="photo-select-mark" aria-hidden="true"></span>
         </button>
       `).join("")}
@@ -7954,6 +7963,12 @@ function bindPhotoGallery(container) {
   const thumbs = [...container.querySelectorAll(".photo-thumb")];
   if (!mainPhoto || !thumbs.length) return;
   thumbs.forEach((button) => {
+    const image = button.querySelector("img");
+    if (image) {
+      image.addEventListener("error", () => {
+        removeBrokenGalleryThumb(button, container);
+      }, { once: true });
+    }
     button.addEventListener("click", (event) => {
       if (event.target.closest(".photo-select-mark")) {
         event.preventDefault();
@@ -7976,6 +7991,23 @@ function bindPhotoGallery(container) {
       button.classList.toggle("is-selected");
     });
   });
+}
+
+function removeBrokenGalleryThumb(button, container) {
+  const brokenSrc = button?.dataset?.photoSrc || "";
+  const mainPhoto = container.querySelector(".set-main-photo");
+  const openButton = container.querySelector(".photo-open-button");
+  const wasActive = button?.classList?.contains("is-active");
+  button?.remove();
+  if (!wasActive) return;
+  const nextButton = container.querySelector(".photo-thumb");
+  if (!nextButton) return;
+  nextButton.classList.add("is-active");
+  const nextSrc = nextButton.dataset.photoSrc || "";
+  if (mainPhoto && (mainPhoto.getAttribute("src") === brokenSrc || !mainPhoto.complete || mainPhoto.naturalWidth === 0)) {
+    mainPhoto.src = nextSrc;
+  }
+  if (openButton) openButton.dataset.fullPhoto = nextSrc;
 }
 
 function formatPieceTitle(item) {
@@ -8347,7 +8379,15 @@ function getItemGallery(item, extraPhotos = []) {
   if (isPhotoBlockedSeries(item.series)) return [placeholderImage()];
   const seriesPhotos = getSeriesGalleryPhotos(item.series);
   const primary = resolveItemPhoto(item);
-  return [primary, ...seriesPhotos, ...extraPhotos].filter(Boolean).filter((src, index, list) => list.indexOf(src) === index);
+  return [primary, ...seriesPhotos, ...extraPhotos]
+    .map(normalizeLocalPhotoUrl)
+    .filter(isUsableGalleryPhoto)
+    .filter((src, index, list) => list.indexOf(src) === index);
+}
+
+function isUsableGalleryPhoto(src) {
+  const text = String(src || "");
+  return Boolean(text) && !/product-placeholder\.svg|\/placeholder(?:[./-]|$)/i.test(text);
 }
 
 function getSeriesGalleryPhotos(series) {

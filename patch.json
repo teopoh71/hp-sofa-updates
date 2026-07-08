@@ -1,29 +1,29 @@
-{
-    "version":  "v1183-le8806-combo-pieces",
-    "versionName":  "v1183-le8806-combo-pieces",
-    "patchVersionCode":  1183,
-    "patchVersionName":  "v1183-le8806-combo-pieces",
-    "generatedAt":  "2026-07-08T02:57:30.0946772Z",
+﻿{
+    "version":  "v1185-gallery-broken-thumb-hide",
+    "versionName":  "v1185-gallery-broken-thumb-hide",
+    "patchVersionCode":  1185,
+    "patchVersionName":  "v1185-gallery-broken-thumb-hide",
+    "generatedAt":  "2026-07-08T04:27:26.1034628Z",
     "files":  [
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1183-le8806-combo-pieces/app-version.js",
-                      "sha256":  "ea7f4c3e958ae048fe20afe444b2617e98851a2b17eefbfe321294a9267856c1",
-                      "size":  657,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/app-version.js",
+                      "sha256":  "65971b90dd04fff137987950ee229b70c00af885a28ca9a18011bf12a496469f",
+                      "size":  675,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1183-le8806-combo-pieces/app.js",
-                      "sha256":  "5448a8dce2bd4d33d4d276aeeacddbefc0616e2e986366dcb8ff8a2f55026970",
-                      "size":  2998425,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/app.js",
+                      "sha256":  "754640ac7fc9bf9878b144c01e7743f57235f583275eee22da8d34928fbc4332",
+                      "size":  2999933,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1183-le8806-combo-pieces/index.html",
-                      "sha256":  "3931fa39bd405bcd96e023e5351fb56eec5b2854a5b78177df82d72758f70343",
-                      "size":  2882164,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/index.html",
+                      "sha256":  "12f6ec52730e16267de45ecfa041fea1a0c88bde8e328bec90fa218b0c04c7a3",
+                      "size":  2882176,
                       "contentType":  "text/html; charset=utf-8"
                   }
               ]
