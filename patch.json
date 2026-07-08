@@ -1,58 +1,30 @@
-﻿{
-    "version":  "v1182-clearance-photo-fix",
-    "versionName":  "v1182-clearance-photo-fix",
-    "patchVersionCode":  1182,
-    "patchVersionName":  "v1182-clearance-photo-fix",
-    "generatedAt":  "2026-07-07T13:08:48.0896463Z",
+{
+    "version":  "v1183-le8806-combo-pieces",
+    "versionName":  "v1183-le8806-combo-pieces",
+    "patchVersionCode":  1183,
+    "patchVersionName":  "v1183-le8806-combo-pieces",
+    "generatedAt":  "2026-07-08T02:57:30.0946772Z",
     "files":  [
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/app-version.js",
-                      "sha256":  "26b5def8b4eab91e463b294ea2e080fa755dbfc97a96ce22ec283870f183335f",
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1183-le8806-combo-pieces/app-version.js",
+                      "sha256":  "ea7f4c3e958ae048fe20afe444b2617e98851a2b17eefbfe321294a9267856c1",
                       "size":  657,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/app.js",
-                      "sha256":  "2c5cac131ebcf3a68877cccc28a327470ad5cc0140093b5690c8b3c59763c14a",
-                      "size":  2997843,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1183-le8806-combo-pieces/app.js",
+                      "sha256":  "5448a8dce2bd4d33d4d276aeeacddbefc0616e2e986366dcb8ff8a2f55026970",
+                      "size":  2998425,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/index.html",
-                      "sha256":  "208f620bdb517525b4b84d09ba15a5fe745b68f0d54910e6b99a10cacf93fa26",
-                      "size":  2882176,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1183-le8806-combo-pieces/index.html",
+                      "sha256":  "3931fa39bd405bcd96e023e5351fb56eec5b2854a5b78177df82d72758f70343",
+                      "size":  2882164,
                       "contentType":  "text/html; charset=utf-8"
-                  },
-                  {
-                      "path":  "clearance-data.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/clearance-data.js",
-                      "sha256":  "52c85473c733ce5e9c1e3b93bcca9318d7161e3d632e55d37a8f1ece1ed44df7",
-                      "size":  6975,
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "assets/clearance/A2515B-DARK.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/assets/clearance/A2515B-DARK.jpg",
-                      "sha256":  "487a7653c0286a4439f0020a5ffc806cf36d451a91229c4d7666900b86a5ecb7",
-                      "size":  23743,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2515B-LIGHT.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/assets/clearance/A2515B-LIGHT.jpg",
-                      "sha256":  "9fbd5d342f83e6cacb35a972f29c30852d1599db02dc7a5000c9574999cdbf3c",
-                      "size":  23378,
-                      "contentType":  "image/jpeg"
-                  },
-                  {
-                      "path":  "assets/clearance/A2433-BROWN.jpg",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1182-clearance-photo-fix/assets/clearance/A2433-BROWN.jpg",
-                      "sha256":  "c7b4ab43cbf1bbbc9b051f42404c44c1167e6d637dbb849b4e96bb1da0d75f69",
-                      "size":  14872,
-                      "contentType":  "image/jpeg"
                   }
               ]
 }
