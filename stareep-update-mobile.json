@@ -1,13 +1,13 @@
 {
-  "versionCode": 2006,
-  "versionName": "STAREEP-2026.07.09-compare-sheet",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-compare-sheet-v2006.apk",
+  "versionCode": 2007,
+  "versionName": "STAREEP-2026.07.09-update-fix",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-update-fix-v2007.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "STAREEP compare page update.",
-    "Adds one showroom activity image card with enlarged preview.",
-    "Adds the smart mattress one-page selling points split into four readable sections.",
+    "STAREEP update button fix.",
+    "Adds native Android APK download handling for future updates.",
+    "Keeps the showroom activity image card and smart mattress selling points.",
     "Independent STAREEP app package. Not linked to HP Sofa updates."
   ]
 }
