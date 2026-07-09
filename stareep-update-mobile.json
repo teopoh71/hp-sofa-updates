@@ -1,13 +1,13 @@
 {
-  "versionCode": 2009,
-  "versionName": "STAREEP-2026.07.09-install-fix",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-install-fix-v2009.apk",
+  "versionCode": 2010,
+  "versionName": "STAREEP-2026.07.09-compare-zoom",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-compare-zoom-v2010.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "STAREEP installer fix.",
-    "After APK download completes, Android opens the installer automatically.",
-    "If unknown app install permission is missing, STAREEP opens the permission page first.",
+    "STAREEP compare image restore and zoom update.",
+    "Restores the three brand comparison images in the compare tab.",
+    "Adds zoom controls and pinch zoom for enlarged comparison images.",
     "Independent STAREEP app package. Not linked to HP Sofa updates."
   ]
 }
