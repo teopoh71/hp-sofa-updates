@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T00:00:00+08:00",
+  "generatedAt": "2026-07-09T11:10:00+08:00",
   "sourceMode": "clean-restart",
   "companies": [
     {
@@ -381,13 +381,13 @@
           "revenue": 10800.0,
           "cost": 3269.0,
           "grossProfit": 7531.0,
-          "expense": 6333.34,
-          "netProfit": 1197.66,
+          "expense": 6933.34,
+          "netProfit": 597.66,
           "rent": 3000.0,
           "salary": 3333.34,
           "electricity": 0,
-          "delivery": 0,
-          "pendingCostNote": "July includes STAREEP order 1005414. Cost from factory price list, buyer/name unclear from photo. Rent 3000.00, salary share 3333.34 included."
+          "delivery": 600,
+          "pendingCostNote": "July includes STAREEP order 1005414. Product cost 3269 plus Shenzhen delivery estimate 600 recorded as expense. Rent 3000.00, salary share 3333.34 included."
         }
       ],
       "invoices": [
@@ -428,10 +428,11 @@
           "vendor": "Order 1005414",
           "amount": 10800,
           "quantity": 2,
-          "note": "STAREEP July order 1005414: CN-MF10 mattress 150x200 x1 and CN-FI10Z base 150x200 x1, expected delivery 2026-08-08. Total 10800. Cost from STAREEP factory price list: CN-MF10 150x200 factory 1694 + CN-FI10Z 150x200 factory 1575 = 3269. Buyer/name unclear from photo.",
+          "note": "STAREEP July order 1005414: CN-MF10 mattress 150x200 x1 cost 1694 and CN-FI10Z base 150x200 x1 cost 1575. Sales 10800. Estimated Shenzhen delivery cost 600 is recorded as delivery expense, not product cost. Buyer/name unclear from photo.",
           "cost": 3269,
           "grossProfit": 7531.0,
-          "status": "pending_review"
+          "status": "pending_review",
+          "deliveryEstimate": 600
         }
       ]
     },
@@ -1021,7 +1022,9 @@
         "sale": 10800,
         "cost": 3269,
         "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-24\\files-mentioned-by-the-user-2026\\outputs\\stareep_factory_price_2026_extract.txt",
-        "status": "pending_review"
+        "status": "pending_review",
+        "deliveryEstimate": 600,
+        "profitAfterDelivery": 6931
       }
     ]
   },

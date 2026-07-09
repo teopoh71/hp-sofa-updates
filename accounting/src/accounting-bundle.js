@@ -49,7 +49,7 @@
   // work/hp-sofa-updates-accounting-sparse/accounting/src/app.js
   var defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
   var defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-  var patch = { versionCode: 13, versionName: "v13-7\u6708\u8BA2\u5355\u8865\u4E01-2026-07-09" };
+  var patch = { versionCode: 14, versionName: "v14-STAREEP\u9001\u8D27\u8D39-2026-07-09" };
   var patchCacheName = "accounting-ui-patch-v1";
   var state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
   var $ = (id) => document.getElementById(id);
