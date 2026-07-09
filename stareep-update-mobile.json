@@ -1,12 +1,13 @@
 {
-  "versionCode": 2003,
-  "versionName": "STAREEP-2026.07.06-sofa-recliner",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260706-sofa-recliner-v2003.apk",
+  "versionCode": 2006,
+  "versionName": "STAREEP-2026.07.09-compare-sheet",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-compare-sheet-v2006.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "STAREEP sofa recliner explanation update.",
-    "Shows 2 recliners for Ultra/Pro/SE and 0 recliner for fixed versions.",
+    "STAREEP compare page update.",
+    "Adds one showroom activity image card with enlarged preview.",
+    "Adds the smart mattress one-page selling points split into four readable sections.",
     "Independent STAREEP app package. Not linked to HP Sofa updates."
   ]
 }
