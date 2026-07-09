@@ -1,13 +1,13 @@
 {
-  "versionCode": 2007,
-  "versionName": "STAREEP-2026.07.09-update-fix",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-update-fix-v2007.apk",
+  "versionCode": 2008,
+  "versionName": "STAREEP-2026.07.09-photo-fix",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-photo-fix-v2008.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "STAREEP update button fix.",
-    "Adds native Android APK download handling for future updates.",
-    "Keeps the showroom activity image card and smart mattress selling points.",
+    "STAREEP photo loading fix.",
+    "Removes local asset query strings so Android APK images load reliably.",
+    "Keeps native Android APK download handling for future updates.",
     "Independent STAREEP app package. Not linked to HP Sofa updates."
   ]
 }
