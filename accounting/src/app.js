@@ -13,7 +13,7 @@ import {
 
 const defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
 const defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-const patch = { versionCode: 14, versionName: "v14-STAREEP送货费-2026-07-09" };
+const patch = { versionCode: 15, versionName: "v15-修正1005414成本-2026-07-09" };
 const patchCacheName = "accounting-ui-patch-v1";
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
 

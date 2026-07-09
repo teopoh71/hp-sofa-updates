@@ -1,7 +1,7 @@
 {
     "appId":  "edwin-accounting-scan",
-    "versionCode":  14,
-    "versionName":  "v14-stareep-delivery-2026-07-09",
+    "versionCode":  15,
+    "versionName":  "v15-correct-1005414-cost-2026-07-09",
     "releasedAt":  "2026-07-09",
     "appUrl":  "./index.html",
     "apkUrl":  "./index.html",
@@ -17,8 +17,8 @@
                   "src/accounting-bundle.js"
               ],
     "notes":  [
-                  "Adds 600 estimated Shenzhen delivery expense for STAREEP order 1005414.",
-                  "Keeps 1005414 product cost separated: CN-MF10 1694 and CN-FI10Z 1575.",
-                  "Updates STAREEP July profit after rent, salary, and delivery expense."
+                  "Corrects STAREEP order 1005414 FI10Z cost from conflicting 1575 source to 2600 from 2026A price extract.",
+                  "Keeps 1005414 cost separated: CN-MF10 1694 and CN-FI10Z 2600.",
+                  "Updates STAREEP July profit after product cost, Shenzhen delivery, rent, and salary."
               ]
 }

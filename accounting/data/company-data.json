@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T11:10:00+08:00",
+  "generatedAt": "2026-07-09T11:25:00+08:00",
   "sourceMode": "clean-restart",
   "companies": [
     {
@@ -379,15 +379,15 @@
         {
           "month": "7月",
           "revenue": 10800.0,
-          "cost": 3269.0,
-          "grossProfit": 7531.0,
+          "cost": 4294,
+          "grossProfit": 6506.0,
           "expense": 6933.34,
-          "netProfit": 597.66,
+          "netProfit": -427.34,
           "rent": 3000.0,
           "salary": 3333.34,
           "electricity": 0,
           "delivery": 600,
-          "pendingCostNote": "July includes STAREEP order 1005414. Product cost 3269 plus Shenzhen delivery estimate 600 recorded as expense. Rent 3000.00, salary share 3333.34 included."
+          "pendingCostNote": "July includes STAREEP order 1005414. Corrected product cost: CN-MF10 1694 + CN-FI10Z 2600 = 4294; Shenzhen delivery estimate 600 as expense. FI10Z 1575 source was conflicting/older and not used."
         }
       ],
       "invoices": [
@@ -428,11 +428,25 @@
           "vendor": "Order 1005414",
           "amount": 10800,
           "quantity": 2,
-          "note": "STAREEP July order 1005414: CN-MF10 mattress 150x200 x1 cost 1694 and CN-FI10Z base 150x200 x1 cost 1575. Sales 10800. Estimated Shenzhen delivery cost 600 is recorded as delivery expense, not product cost. Buyer/name unclear from photo.",
-          "cost": 3269,
-          "grossProfit": 7531.0,
+          "note": "STAREEP July order 1005414: CN-MF10 mattress 150x200 x1 cost 1694; CN-FI10Z base 150x200 x1 corrected cost 2600 from 2026A price extract. Sales 10800. Estimated Shenzhen delivery 600 recorded as delivery expense. Previous FI10Z 1575 came from conflicting/older extract and is not used.",
+          "cost": 4294,
+          "grossProfit": 6506,
           "status": "pending_review",
-          "deliveryEstimate": 600
+          "deliveryEstimate": 600,
+          "costBreakdown": [
+            {
+              "model": "CN-MF10",
+              "size": "150x200",
+              "cost": 1694,
+              "source": "xirui_factory_price_2026A_extract.txt lines 1011-1020"
+            },
+            {
+              "model": "CN-FI10Z",
+              "size": "150x200",
+              "cost": 2600,
+              "source": "xirui_factory_price_2026A_extract.txt lines 2375-2381"
+            }
+          ]
         }
       ]
     },
@@ -1020,11 +1034,11 @@
         "model": "CN-MF10 + CN-FI10Z",
         "material": "150x200",
         "sale": 10800,
-        "cost": 3269,
-        "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-24\\files-mentioned-by-the-user-2026\\outputs\\stareep_factory_price_2026_extract.txt",
+        "cost": 4294,
+        "source": "xirui_factory_price_2026A_extract.txt: CN-MF10 1694, CN-FI10Z corrected to 2600; previous 1575 source conflict noted",
         "status": "pending_review",
         "deliveryEstimate": 600,
-        "profitAfterDelivery": 6931
+        "profitAfterDelivery": 5906
       }
     ]
   },
@@ -1070,9 +1084,10 @@
     {
       "model": "CN-FI10Z 150x200",
       "company": "STAREEP / 希瑞",
-      "cost": 1575,
-      "source": "STAREEP factory price list extract",
-      "updatedAt": "2026-07-09"
+      "cost": 2600,
+      "source": "xirui_factory_price_2026A_extract.txt lines 2375-2381; replaces conflicting 1575 extract",
+      "updatedAt": "2026-07-09",
+      "status": "pending_review"
     }
   ]
 }
