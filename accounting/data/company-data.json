@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T00:00:00+08:00",
+  "generatedAt": "2026-07-09T00:00:00+08:00",
   "sourceMode": "clean-restart",
   "companies": [
     {
@@ -80,6 +80,19 @@
           "electricity": 0,
           "delivery": 0,
           "pendingCostNote": "June includes confirmed invoice 0000170 LE8811 half leather. Cost confirmed. Rent 0.00, salary share 3333.33 included."
+        },
+        {
+          "month": "7月",
+          "revenue": 8800.0,
+          "cost": 6055.56,
+          "grossProfit": 2744.44,
+          "expense": 3333.33,
+          "netProfit": -588.89,
+          "rent": 0.0,
+          "salary": 3333.33,
+          "electricity": 0,
+          "delivery": 0,
+          "pendingCostNote": "July includes confirmed invoice 0000377 LE8807SF-304 half leather. Customer paid 8800. Rent 0.00, salary share 3333.33 included."
         }
       ],
       "invoices": [
@@ -104,6 +117,19 @@
           "note": "NIKATOR invoice 0000150: LE4404BE bed 1800x2000 MS/WL half leather. Selling 6500. Cost 3230.77.",
           "cost": 3230.77,
           "grossProfit": 3269.23
+        },
+        {
+          "id": "NIKATOR-2026-07-08-0000377",
+          "date": "2026-07-08",
+          "vendor": "Contract 0000377",
+          "amount": 8800,
+          "quantity": 1,
+          "note": "NIKATOR July invoice 0000377: LE8807SF-304 sofa, 2300mm, MS/WL half leather WL-02. Customer paid 8800 only; delivery/install 800 on photo is not counted as sales. Cost from LE series factory price list sheet LE8807SF row LE8807SF-304, MS/WL half leather price 6055.56.",
+          "cost": 6055.56,
+          "grossProfit": 2744.44,
+          "deposit": 8800,
+          "balance": 0,
+          "status": "confirmed"
         }
       ]
     },
@@ -349,6 +375,19 @@
           "salary": 3333.34,
           "electricity": 0,
           "delivery": 0
+        },
+        {
+          "month": "7月",
+          "revenue": 10800.0,
+          "cost": 3269.0,
+          "grossProfit": 7531.0,
+          "expense": 6333.34,
+          "netProfit": 1197.66,
+          "rent": 3000.0,
+          "salary": 3333.34,
+          "electricity": 0,
+          "delivery": 0,
+          "pendingCostNote": "July includes STAREEP order 1005414. Cost from factory price list, buyer/name unclear from photo. Rent 3000.00, salary share 3333.34 included."
         }
       ],
       "invoices": [
@@ -382,6 +421,17 @@
           "note": "STAREEP June invoice 1005413: CN-MF10 mattress x1 cost 1395.10, CN-FI10Z base x1 cost 2625.00. Deposit 5400, total 10800. Cost confirmed from final supplier order.",
           "cost": 4020.1,
           "grossProfit": 6779.9
+        },
+        {
+          "id": "STAREEP-2026-07-08-1005414",
+          "date": "2026-07-08",
+          "vendor": "Order 1005414",
+          "amount": 10800,
+          "quantity": 2,
+          "note": "STAREEP July order 1005414: CN-MF10 mattress 150x200 x1 and CN-FI10Z base 150x200 x1, expected delivery 2026-08-08. Total 10800. Cost from STAREEP factory price list: CN-MF10 150x200 factory 1694 + CN-FI10Z 150x200 factory 1575 = 3269. Buyer/name unclear from photo.",
+          "cost": 3269,
+          "grossProfit": 7531.0,
+          "status": "pending_review"
         }
       ]
     },
@@ -950,6 +1000,28 @@
         "totalCostRmb": 4200,
         "status": "confirmed",
         "source": "outputs/pdf_contact/xirui_factory_price_2026A_page_11.jpg：CN-BC90 180x200 出厂价4200；用户确认是1米8。"
+      },
+      {
+        "invoiceId": "NIKATOR-2026-07-08-0000377",
+        "company": "NIKATOR",
+        "date": "2026-07-08",
+        "model": "LE8807SF-304",
+        "material": "MS/WL半皮 WL-02",
+        "sale": 8800,
+        "cost": 6055.56,
+        "source": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\msg\\file\\2026-05\\LE系列出厂价【沙发20260417】(2)(1).xlsx / sheet LE8807SF row LE8807SF-304",
+        "status": "confirmed"
+      },
+      {
+        "invoiceId": "STAREEP-2026-07-08-1005414",
+        "company": "STAREEP / 希瑞",
+        "date": "2026-07-08",
+        "model": "CN-MF10 + CN-FI10Z",
+        "material": "150x200",
+        "sale": 10800,
+        "cost": 3269,
+        "source": "C:\\Users\\edwin\\Documents\\Codex\\2026-06-24\\files-mentioned-by-the-user-2026\\outputs\\stareep_factory_price_2026_extract.txt",
+        "status": "pending_review"
       }
     ]
   },
@@ -977,6 +1049,27 @@
       "totalCostRmb": 4200,
       "status": "confirmed",
       "source": "outputs/pdf_contact/xirui_factory_price_2026A_page_11.jpg：CN-BC90 180x200 出厂价4200；用户确认是1米8。"
+    },
+    {
+      "model": "LE8807SF-304",
+      "company": "NIKATOR",
+      "cost": 6055.56,
+      "source": "LE系列出厂价【沙发20260417】 sheet LE8807SF / MS-WL半皮系列",
+      "updatedAt": "2026-07-09"
+    },
+    {
+      "model": "CN-MF10 150x200",
+      "company": "STAREEP / 希瑞",
+      "cost": 1694,
+      "source": "STAREEP factory price list extract",
+      "updatedAt": "2026-07-09"
+    },
+    {
+      "model": "CN-FI10Z 150x200",
+      "company": "STAREEP / 希瑞",
+      "cost": 1575,
+      "source": "STAREEP factory price list extract",
+      "updatedAt": "2026-07-09"
     }
   ]
 }

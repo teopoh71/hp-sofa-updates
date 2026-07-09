@@ -1,8 +1,8 @@
 {
     "appId":  "edwin-accounting-scan",
-    "versionCode":  12,
-    "versionName":  "v12-webview-compatible-apk-2026-07-06",
-    "releasedAt":  "2026-07-06",
+    "versionCode":  13,
+    "versionName":  "v13-july-orders-2026-07-09",
+    "releasedAt":  "2026-07-09",
     "appUrl":  "./index.html",
     "apkUrl":  "./index.html",
     "dataUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
@@ -17,8 +17,8 @@
                   "src/accounting-bundle.js"
               ],
     "notes":  [
-                  "Fixes phone WebView startup by using a bundled non-module script instead of type=module.",
-                  "Includes current accounting data: CN-BC90, DC809H/809, 0000176, unpaid balance, and UI patch reinstall logic.",
-                  "Future online patches can update UI and data together through index.html plus accounting-bundle.js."
+                  "Adds July 8 STAREEP order 1005414 and NIKATOR contract 0000377.",
+                  "Corrects NIKATOR 0000377 sales to customer payment 8800, excluding the 800 delivery/install note.",
+                  "Includes updated July company profit and loss data for online patch update."
               ]
 }
