@@ -1,29 +1,29 @@
 {
-    "version":  "v1185-gallery-broken-thumb-hide",
-    "versionName":  "v1185-gallery-broken-thumb-hide",
-    "patchVersionCode":  1185,
-    "patchVersionName":  "v1185-gallery-broken-thumb-hide",
-    "generatedAt":  "2026-07-08T04:27:26.1034628Z",
+    "version":  "v1186-nk0042-material-labels",
+    "versionName":  "v1186-nk0042-material-labels",
+    "patchVersionCode":  1186,
+    "patchVersionName":  "v1186-nk0042-material-labels",
+    "generatedAt":  "2026-07-10T05:06:13.4900353Z",
     "files":  [
                   {
                       "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/app-version.js",
-                      "sha256":  "2ab501c479877139dc6ef4360af993c43672df1fd5f983ad32fcf7aab8b0b5c4",
-                      "size":  672,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/app-version.js",
+                      "sha256":  "fbc3efc19cc900b579573f5c39ba7d45eda4dcb0cb5a023aa77943c1399c020d",
+                      "size":  666,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/app.js",
-                      "sha256":  "56d881f206fb75932c9ea68a2363bc8071e8abf1cb85a157b30a8ea6f38dc65d",
-                      "size":  2990367,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/app.js",
+                      "sha256":  "89520c44d264e03b9747949b2dc7716ddc8650f84befe5e6a24417d0ee90fec9",
+                      "size":  2999971,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1185-gallery-broken-thumb-hide/index.html",
-                      "sha256":  "53075e9ee7ab96a7479a224a23782d5ad72fdb31856e5b0b580f97a036f2749b",
-                      "size":  2881341,
+                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/index.html",
+                      "sha256":  "ee1cee073790339f2b8cc9fc423d9fd02ae9e2bcff8c02ce4af6184e879ee808",
+                      "size":  2882170,
                       "contentType":  "text/html; charset=utf-8"
                   }
               ]
