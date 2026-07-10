@@ -3,27 +3,27 @@
     "versionName":  "v1186-nk0042-material-labels",
     "patchVersionCode":  1186,
     "patchVersionName":  "v1186-nk0042-material-labels",
-    "generatedAt":  "2026-07-10T05:06:13.4900353Z",
+    "generatedAt":  "2026-07-10T05:12:15.4230765Z",
     "files":  [
                   {
                       "path":  "app-version.js",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/app-version.js",
-                      "sha256":  "fbc3efc19cc900b579573f5c39ba7d45eda4dcb0cb5a023aa77943c1399c020d",
-                      "size":  666,
+                      "sha256":  "8a4e907b95419ccd78d32a03d124a5026d0eac0d6f005b131582c62ea25e2b48",
+                      "size":  663,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/app.js",
-                      "sha256":  "89520c44d264e03b9747949b2dc7716ddc8650f84befe5e6a24417d0ee90fec9",
-                      "size":  2999971,
+                      "sha256":  "1b6e2fe003fdac04d471d2e7c9e169f15ef5dbfd4a9f3f0ebeea492c9119c8d8",
+                      "size":  2990407,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/index.html",
-                      "sha256":  "ee1cee073790339f2b8cc9fc423d9fd02ae9e2bcff8c02ce4af6184e879ee808",
-                      "size":  2882170,
+                      "sha256":  "06817b82e1658a42187b67bc2c92cfb97b85da5586563d5781201f1f34acc5ad",
+                      "size":  2881335,
                       "contentType":  "text/html; charset=utf-8"
                   }
               ]
