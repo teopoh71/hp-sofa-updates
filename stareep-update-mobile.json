@@ -1,13 +1,13 @@
 {
-  "versionCode": 2010,
-  "versionName": "STAREEP-2026.07.09-compare-zoom",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260709-compare-zoom-v2010.apk",
+  "versionCode": 2015,
+  "versionName": "STAREEP-2026.07.11-r3-xt",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260711-r3-xt-v2015.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "STAREEP compare image restore and zoom update.",
-    "Restores the three brand comparison images in the compare tab.",
-    "Adds zoom controls and pinch zoom for enlarged comparison images.",
+    "Adds the missing R3 XT (CN-FI22) base model.",
+    "Adds 90x200 and 120x200 size options with retail prices from the July Stareep price PDF.",
+    "Keeps R3 XT separate from R3, R3 Pro, R3 Ultra, and R3 S.",
     "Independent STAREEP app package. Not linked to HP Sofa updates."
   ]
 }
