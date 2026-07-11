@@ -1,7 +1,7 @@
 {
-  "versionCode": 3,
-  "versionName": "1.2-reliable-connect",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v3.apk",
-  "sha256": "24F063584A2ABF7F696DC495581B7E3C9995E28B8323006176EFBA56F9DFCFE6",
-  "notes": "修复公网预检和任务列表高 CPU，并增加动态服务器地址与检查更新按钮。"
+  "versionCode": 4,
+  "versionName": "1.3-mobile-sync",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v4.apk",
+  "sha256": "BEBFBEA8CBD6BB23DE110FC016C7E4896A23DA3366E0C29BEFBDCA044FB868C1",
+  "notes": "修复手机消息卡住；聊天记录按最新时间排序，打开任务列表自动同步，并在手机续聊中显示电脑端已完成的历史记录。"
 }
