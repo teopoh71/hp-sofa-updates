@@ -1,7 +1,7 @@
 {
-  "versionCode": 6,
-  "versionName": "1.5-attachment-sync",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v6.apk",
-  "sha256": "F26096F5AE332FD5585036B2D2C95857C26F02EF08B7A48FEBB6B49D9B9FF713",
-  "notes": "修复大聊天记录在 4G 下误报连接失败；隐藏 Files mentioned 附件说明，并直接显示附件图片和真正的问题。"
+  "versionCode": 7,
+  "versionName": "1.6-video-player",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v7.apk",
+  "sha256": "1054605226DE00DF1D006306BD797E969C423A21DB5454B125CDA44D26DD19B2",
+  "notes": "隐藏 codex_delegation 内部指令；识别 MP4 文件，并在手机聊天中直接显示视频播放器与保存视频按钮。"
 }
