@@ -1,0 +1,7 @@
+{
+  "versionCode": 2,
+  "versionName": "1.1-connect-update",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v2.apk",
+  "sha256": "025697124FE21D3FC7B0F2845B24E32DB966AD5671308702E5C7BFDA4B584DDA",
+  "notes": "修复公网连接，并增加检查 App 更新按钮。"
+}
