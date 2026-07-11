@@ -1,7 +1,7 @@
 {
-  "versionCode": 5,
-  "versionName": "1.4-media-sync",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v5.apk",
-  "sha256": "67A9AAFE69A6629D9A856DBD8B2112F4F444D4CB81535AB1DBD47A984FB88428",
-  "notes": "修复电脑生成的图片在手机聊天中不显示；手机聊天记录继续按任务分开，并保留公网连接与在线更新。"
+  "versionCode": 6,
+  "versionName": "1.5-attachment-sync",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v6.apk",
+  "sha256": "F26096F5AE332FD5585036B2D2C95857C26F02EF08B7A48FEBB6B49D9B9FF713",
+  "notes": "修复大聊天记录在 4G 下误报连接失败；隐藏 Files mentioned 附件说明，并直接显示附件图片和真正的问题。"
 }
