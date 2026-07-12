@@ -1,24 +1,24 @@
 {
-    "appId":  "edwin-accounting-scan",
-    "versionCode":  16,
-    "versionName":  "v16-zolano-july-display-sale-2026-07-12",
-    "releasedAt":  "2026-07-12",
-    "appUrl":  "./index.html",
-    "apkUrl":  "./index.html",
-    "dataUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
-    "uploadUrl":  "",
-    "files":  [
-                  "index.html",
-                  "sw.js",
-                  "src/app.js",
-                  "src/accounting-core.mjs",
-                  "src/styles.css",
-                  "data/company-data.json",
-                  "src/accounting-bundle.js"
-              ],
-    "notes":  [
-                  "Adds ZOLANO 2026-07-12 display set sale: LS leather sofa 23000 and 6001CT coffee table 3000.",
-                  "Marks the new display set cost as pending until the exact model/cost source is confirmed.",
-                  "Updates ZOLANO July totals and keeps rent/salary as monthly expenses."
-              ]
+  "appId": "edwin-accounting-scan",
+  "versionCode": 17,
+  "versionName": "v17-zolano-contract-0000379-2026-07-12",
+  "releasedAt": "2026-07-12",
+  "appUrl": "./index.html",
+  "apkUrl": "./index.html",
+  "dataUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
+  "uploadUrl": "",
+  "files": [
+    "index.html",
+    "sw.js",
+    "src/app.js",
+    "src/accounting-core.mjs",
+    "src/styles.css",
+    "data/company-data.json",
+    "src/accounting-bundle.js"
+  ],
+  "notes": [
+    "新增 ZOLANO 合同 0000379，销售额 108000，照片已存档。",
+    "0000379 成本、材质和部分型号仍待确认，暂时先入销售不扣成本。",
+    "7月 ZOLANO 汇总已更新，租金和工资仍按每月一次计算。"
+  ]
 }

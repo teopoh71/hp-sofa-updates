@@ -1,5 +1,5 @@
 (() => {
-  // work/hp-sofa-updates-accounting-sparse/accounting/src/accounting-core.mjs?v=v16-display-sale-20260712
+  // work/hp-sofa-updates-accounting-sparse/accounting/src/accounting-core.mjs?v=v17-contract-0000379-20260712
   function parseMoney(value) {
     if (typeof value === "number" && Number.isFinite(value)) return value;
     const cleaned = String(value ?? "").replace(/[¥￥,\s]/g, "").match(/-?\d+(\.\d+)?/);
@@ -49,7 +49,7 @@
   // work/hp-sofa-updates-accounting-sparse/accounting/src/app.js
   var defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
   var defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-  var patch = { versionCode: 16, versionName: "v16-ZOLANO\u6E05\u6837\u5355-2026-07-12" };
+  var patch = { versionCode: 17, versionName: "v17-ZOLANO\u5408\u540C0000379-2026-07-12" };
   var patchCacheName = "accounting-ui-patch-v1";
   var state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
   var $ = (id) => document.getElementById(id);
@@ -57,7 +57,7 @@
   async function init() {
     await registerPatchWorker();
     if ($("invoiceDate")) $("invoiceDate").value = (/* @__PURE__ */ new Date()).toISOString().slice(0, 10);
-    const res = await fetch("./data/company-data.json?v=v16-display-sale-20260712", { cache: "no-store" });
+    const res = await fetch("./data/company-data.json?v=v17-contract-0000379-20260712", { cache: "no-store" });
     state = { ...await res.json(), activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
     setPhoneFolds();
     bindEvents();

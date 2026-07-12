@@ -83,12 +83,12 @@
         },
         {
           "month": "7月",
-          "revenue": 8800.0,
+          "revenue": 8800,
           "cost": 6055.56,
           "grossProfit": 2744.44,
           "expense": 3333.33,
           "netProfit": -588.89,
-          "rent": 0.0,
+          "rent": 0,
           "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
@@ -219,16 +219,16 @@
         },
         {
           "month": "7月",
-          "revenue": 46300,
+          "revenue": 154300,
           "cost": 14322.73,
-          "grossProfit": 31977.27,
+          "grossProfit": 139977.27,
           "expense": 25833.33,
-          "netProfit": 6143.94,
+          "netProfit": 114143.94,
           "rent": 22500,
           "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "7月包含已确认单 0000176：ZL26282 F/SA 沙发，成本 14322.73。另加入 2026-07-12 清样单：LS 皮沙发 23000 + 6001CT 茶几 3000，合计 26000；该清样单成本待确认。租金 22500.00、工资分摊 3333.33 已包含。"
+          "pendingCostNote": "7月包含 ZOLANO 0000176、清样沙发+6001CT、以及合同 0000379。0000379 销售 108000 已入账，但成本/材质/部分型号仍待确认；当前利润未扣 0000379 成本。租金 22500、工资分摊 3333.33 已包含。"
         }
       ],
       "invoices": [
@@ -334,6 +334,20 @@
           "balance": 0,
           "status": "pending-cost",
           "photo": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-07\\805a845ac82245c16222455622a78571\\95410a01bab2dbcb71c56691a458fe7e.jpg"
+        },
+        {
+          "id": "ZOLANO-2026-07-12-0000379",
+          "date": "2026-07-12",
+          "vendor": "Contract 0000379",
+          "amount": 108000,
+          "quantity": 11,
+          "note": "ZOLANO 合同 0000379，2026-07-12，合计 108000。照片已存档。明细从照片读取：LE8821 转角沙发 4400mm、NK380? 单椅、LE8815 沙发床 2400mm、茶几/角几/餐几、ZL2628 书房沙发 2400mm、ZL2897 志豪沙发 3260mm 等。成本和部分型号/材质未完全确认，先入销售，成本待确认。",
+          "cost": 0,
+          "grossProfit": 108000,
+          "deposit": 0,
+          "balance": 108000,
+          "status": "pending-cost",
+          "photo": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000379\\0000379_contract_2026-07-12.jpg"
         }
       ]
     },
@@ -393,12 +407,12 @@
         },
         {
           "month": "7月",
-          "revenue": 10800.0,
+          "revenue": 10800,
           "cost": 4294,
-          "grossProfit": 6506.0,
+          "grossProfit": 6506,
           "expense": 6933.34,
           "netProfit": -427.34,
-          "rent": 3000.0,
+          "rent": 3000,
           "salary": 3333.34,
           "electricity": 0,
           "delivery": 600,
