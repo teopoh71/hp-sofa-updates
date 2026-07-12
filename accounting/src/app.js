@@ -9,11 +9,11 @@ import {
   sumInvoiceBalances,
   shouldUpdate,
   toCsv,
-} from "./accounting-core.mjs?v=v8-cost-data-20260703";
+} from "./accounting-core.mjs?v=v16-display-sale-20260712";
 
 const defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
 const defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-const patch = { versionCode: 15, versionName: "v15-修正1005414成本-2026-07-09" };
+const patch = { versionCode: 16, versionName: "v16-ZOLANO清样单-2026-07-12" };
 const patchCacheName = "accounting-ui-patch-v1";
 let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
 
@@ -23,7 +23,7 @@ const money = (value) => `¥${(Number(value || 0) / 10000).toFixed(2)}万`;
 async function init() {
   await registerPatchWorker();
   if ($("invoiceDate")) $("invoiceDate").value = new Date().toISOString().slice(0, 10);
-  const res = await fetch("./data/company-data.json?v=v8-cost-data-20260703", { cache: "no-store" });
+  const res = await fetch("./data/company-data.json?v=v16-display-sale-20260712", { cache: "no-store" });
   state = { ...(await res.json()), activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
   setPhoneFolds();
   bindEvents();

@@ -219,16 +219,16 @@
         },
         {
           "month": "7月",
-          "revenue": 20300,
+          "revenue": 46300,
           "cost": 14322.73,
-          "grossProfit": 5977.27,
+          "grossProfit": 31977.27,
           "expense": 25833.33,
-          "netProfit": -19856.06,
+          "netProfit": 6143.94,
           "rent": 22500,
           "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "July includes confirmed invoice 0000176 ZL26282 F/SA sofa. Cost confirmed as 2EL + 1NA + 1ER/T, USD 1295 x 7.3 / 0.66 = 14322.73. Rent 22500.00 and salary share 3333.33 included."
+          "pendingCostNote": "7月包含已确认单 0000176：ZL26282 F/SA 沙发，成本 14322.73。另加入 2026-07-12 清样单：LS 皮沙发 23000 + 6001CT 茶几 3000，合计 26000；该清样单成本待确认。租金 22500.00、工资分摊 3333.33 已包含。"
         }
       ],
       "invoices": [
@@ -319,6 +319,21 @@
           "deposit": 10300,
           "balance": 10000,
           "status": "confirmed"
+        },
+        {
+          "id": "ZOLANO-2026-07-12-DISPLAY-SOFA-6001CT",
+          "date": "2026-07-12",
+          "vendor": "清样沙发 + 6001CT 茶几",
+          "amount": 26000,
+          "quantity": 2,
+          "displayClearance": true,
+          "note": "ZOLANO 2026-07-12 清样/展示品：LS 皮沙发一套，有点损伤，售价 23000；6001CT 茶几，售价 3000。合计 26000。成本暂未在本地价格表确认，先标待确认。",
+          "cost": 0,
+          "grossProfit": 26000,
+          "deposit": 26000,
+          "balance": 0,
+          "status": "pending-cost",
+          "photo": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-07\\805a845ac82245c16222455622a78571\\95410a01bab2dbcb71c56691a458fe7e.jpg"
         }
       ]
     },
