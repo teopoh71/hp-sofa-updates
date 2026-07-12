@@ -1,7 +1,7 @@
 {
-  "versionCode": 8,
-  "versionName": "1.7-steady-refresh",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v8.apk",
-  "sha256": "0837C0F27BDDDEF58B5DD97142DBE7221BF28D77209BDF4075E74A1F8DF121FD",
-  "notes": "修复发送消息后聊天画面持续闪烁；只有内容变化时才重画，并阻止同一任务的刷新请求重叠。"
+  "versionCode": 9,
+  "versionName": "1.8-resilient-connect",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/Edwin-Codex-Mobile-v9.apk",
+  "sha256": "DAEEBA318AA0C8D858F29F650606811CBD247EAEAB09285D4179C07AA9193196",
+  "notes": "修复 Failed to fetch：连接失败时自动重试，并通过 GitHub Pages 与 Raw 双线路取得最新电脑地址。"
 }
