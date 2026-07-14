@@ -1,30 +1,44 @@
 {
-    "version":  "v1186-nk0042-material-labels",
-    "versionName":  "v1186-nk0042-material-labels",
-    "patchVersionCode":  1186,
-    "patchVersionName":  "v1186-nk0042-material-labels",
-    "generatedAt":  "2026-07-10T05:12:15.4230765Z",
-    "files":  [
-                  {
-                      "path":  "app-version.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/app-version.js",
-                      "sha256":  "8a4e907b95419ccd78d32a03d124a5026d0eac0d6f005b131582c62ea25e2b48",
-                      "size":  663,
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "app.js",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/app.js",
-                      "sha256":  "1b6e2fe003fdac04d471d2e7c9e169f15ef5dbfd4a9f3f0ebeea492c9119c8d8",
-                      "size":  2990407,
-                      "contentType":  "application/javascript; charset=utf-8"
-                  },
-                  {
-                      "path":  "index.html",
-                      "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1186-nk0042-material-labels/index.html",
-                      "sha256":  "06817b82e1658a42187b67bc2c92cfb97b85da5586563d5781201f1f34acc5ad",
-                      "size":  2881335,
-                      "contentType":  "text/html; charset=utf-8"
-                  }
-              ]
+  "version": "v1195-zolano2897-display-photo",
+  "versionName": "v1195-zolano2897-display-photo",
+  "patchVersionCode": 1195,
+  "patchVersionName": "v1195-zolano2897-display-photo",
+  "generatedAt": "2026-07-14T16:40:37.9651968Z",
+  "files": [
+    {
+      "path": "app-version.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1195-zolano2897-display-photo/app-version.js",
+      "sha256": "eb256724edf1ab9d38579fabb4b2bd94ce6549c16ea282a77265d006e9b27c80",
+      "size": 672,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "app.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1195-zolano2897-display-photo/app.js",
+      "sha256": "0e66de67c4aa3fcf65ae3c39413bd1e7b3cd61bed06f455ce927d0de01fce6d4",
+      "size": 2999993,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "index.html",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1195-zolano2897-display-photo/index.html",
+      "sha256": "e6cc0374c4abf4c4cadcd012147ca0335b190dfb7f8677d4623e4c95cbcca0d6",
+      "size": 2882179,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "assets/effect-packs/ZL2897/display-20260715.jpg",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1195-zolano2897-display-photo/assets/effect-packs/ZL2897/display-20260715.jpg",
+      "sha256": "160e528146c77ea6f8d1f3bdc4bbbbadedb936ce145f7757079e71f616123a35",
+      "size": 200747,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/effect-packs/ZL2897/manifest.json",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1195-zolano2897-display-photo/assets/effect-packs/ZL2897/manifest.json",
+      "sha256": "52aa99ddace94f9f441ad61512db5ba45c14a398791a98dae7d582c37078f090",
+      "size": 225,
+      "contentType": "application/json; charset=utf-8"
+    }
+  ]
 }
