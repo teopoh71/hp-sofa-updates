@@ -1,7 +1,7 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 19,
-  "versionName": "v19-contract-0000179-20260717",
+  "versionCode": 21,
+  "versionName": "v21-july-nikator-cost-fix-20260717",
   "releasedAt": "2026-07-17",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
@@ -17,8 +17,7 @@
     "src/accounting-bundle.js"
   ],
   "notes": [
-    "补入 ZOLANO 合同 0000179：2026-07-15，销售 10100，同日收款 10100。",
-    "0000179 产品型号和成本暂时看不清，已标记待确认成本，先避免漏销售。",
-    "保留每月租金、工资、电费、送货费只扣一次的规则。"
+    "???? 2026 ? 7 ??",
+    "0000379 ??????? ZOLANO / ?????????? 8821?8815?911???NK6029 ??????"
   ]
 }
