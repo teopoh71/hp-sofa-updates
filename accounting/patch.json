@@ -1,8 +1,8 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 17,
-  "versionName": "v17-zolano-contract-0000379-2026-07-12",
-  "releasedAt": "2026-07-12",
+  "versionCode": 18,
+  "versionName": "v18-contract-0000379-complete-20260717",
+  "releasedAt": "2026-07-17",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
   "dataUrl": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json",
@@ -17,8 +17,8 @@
     "src/accounting-bundle.js"
   ],
   "notes": [
-    "新增 ZOLANO 合同 0000379，销售额 108000，照片已存档。",
-    "0000379 成本、材质和部分型号仍待确认，暂时先入销售不扣成本。",
-    "7月 ZOLANO 汇总已更新，租金和工资仍按每月一次计算。"
+    "ZOLANO 合同 0000379 销售额 108000，完整照片已存档。",
+    "第4项确认911边几，第5项确认6029微晶石茶几，第8项确认CTM005加CTM006。",
+    "第8项销售合计10180，成本仍待查；租金和工资继续按每月一次计算。"
   ]
 }
