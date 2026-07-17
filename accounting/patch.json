@@ -1,7 +1,7 @@
 {
   "appId": "edwin-accounting-scan",
-  "versionCode": 18,
-  "versionName": "v18-contract-0000379-complete-20260717",
+  "versionCode": 19,
+  "versionName": "v19-contract-0000179-20260717",
   "releasedAt": "2026-07-17",
   "appUrl": "./index.html",
   "apkUrl": "./index.html",
@@ -17,8 +17,8 @@
     "src/accounting-bundle.js"
   ],
   "notes": [
-    "ZOLANO 合同 0000379 销售额 108000，完整照片已存档。",
-    "第4项确认911边几，第5项确认6029微晶石茶几，第8项确认CTM005加CTM006。",
-    "第8项销售合计10180，成本仍待查；租金和工资继续按每月一次计算。"
+    "补入 ZOLANO 合同 0000179：2026-07-15，销售 10100，同日收款 10100。",
+    "0000179 产品型号和成本暂时看不清，已标记待确认成本，先避免漏销售。",
+    "保留每月租金、工资、电费、送货费只扣一次的规则。"
   ]
 }

@@ -219,16 +219,16 @@
         },
         {
           "month": "7月",
-          "revenue": 154300,
+          "revenue": 164400.0,
           "cost": 14322.73,
-          "grossProfit": 139977.27,
+          "grossProfit": 150077.27,
           "expense": 25833.33,
-          "netProfit": 114143.94,
+          "netProfit": 124243.94,
           "rent": 22500,
           "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "7月包含 ZOLANO 0000176、清样沙发+6001CT、以及合同 0000379。0000379 销售 108000 已入账，但成本/材质/部分型号仍待确认；当前利润未扣 0000379 成本。租金 22500、工资分摊 3333.33 已包含。"
+          "pendingCostNote": "7月包含 ZOLANO 0000176、清样沙发+6001CT、合同 0000379、以及新补合同 0000179。0000179 销售 10100 且已收款，产品型号/成本待确认。0000379 第8项 CTM005+CTM006 成本仍待查。租金 22500、工资分摊 3333.33 已包含。"
         }
       ],
       "invoices": [
@@ -253,14 +253,16 @@
           "grossProfit": 8439.84
         },
         {
-          "id": "ZOLANO-2026-06-30-0000149",
-          "date": "2026-06-30",
-          "vendor": "Contract 0000149",
-          "amount": 24000,
-          "quantity": 1,
-          "note": "ZOLANO June invoice 0000149: ZL2897 sofa, 1ER + 1NA + 1EL, 3120mm. Deposit 12000, balance 12000. Cost confirmed from ZL2800 export list: F/SA 1EL 341 + 1NA 276 + 1ER 341 USD, RMB=USD*7.3/0.66.",
-          "cost": 10596.06,
-          "grossProfit": 13403.94
+          "id": "ZOLANO-2026-06-15-DC809H-BARSTOOL-CLEARANCE",
+          "date": "2026-06-15",
+          "vendor": "清样 DC809H 吧椅",
+          "amount": 1200,
+          "quantity": 3,
+          "cost": 1071,
+          "grossProfit": 129,
+          "displayClearance": true,
+          "note": "ZOLANO/德源居清样：DC809H 吧椅 3张，总售价1200元（含送货）。成本来自 德源居清仓.xlsx / 库存表 第21行：DC809H 吧椅 亮棕 成本357元/张；357 x 3 = 1071元。",
+          "status": "confirmed"
         },
         {
           "id": "ZOLANO-2026-06-22-0000174",
@@ -272,6 +274,26 @@
           "note": "ZOLANO invoice 0000174: ZL2672 sofa 清样, 3580mm, F/SA, config 3EL+1ER/T. Selling 16000, paid 16000, balance 0. Cost USD 1369.5175 x 7.3 / 0.66 = 15147.69.",
           "cost": 15147.69,
           "grossProfit": 852.31
+        },
+        {
+          "id": "ZOLANO-2026-06-30-0000067",
+          "date": "2026-06-30",
+          "vendor": "Contract 0000067",
+          "amount": 24335,
+          "quantity": 5,
+          "note": "ZOLANO invoice 0000067: ZL3776 sofa display set clearance / 展厅样品清仓, ARM + 1NA x3 + 1NA/T, F/SA, 4620mm, 207 color. Deposit 1000, balance 20335. Cost 16703.73.",
+          "cost": 16703.73,
+          "grossProfit": 7631.27
+        },
+        {
+          "id": "ZOLANO-2026-06-30-0000149",
+          "date": "2026-06-30",
+          "vendor": "Contract 0000149",
+          "amount": 24000,
+          "quantity": 1,
+          "note": "ZOLANO June invoice 0000149: ZL2897 sofa, 1ER + 1NA + 1EL, 3120mm. Deposit 12000, balance 12000. Cost confirmed from ZL2800 export list: F/SA 1EL 341 + 1NA 276 + 1ER 341 USD, RMB=USD*7.3/0.66.",
+          "cost": 10596.06,
+          "grossProfit": 13403.94
         },
         {
           "id": "ZOLANO-2026-06-30-0000150",
@@ -286,28 +308,6 @@
           "grossProfit": 1800
         },
         {
-          "id": "ZOLANO-2026-06-30-0000067",
-          "date": "2026-06-30",
-          "vendor": "Contract 0000067",
-          "amount": 24335,
-          "quantity": 5,
-          "note": "ZOLANO invoice 0000067: ZL3776 sofa display set clearance / 展厅样品清仓, ARM + 1NA x3 + 1NA/T, F/SA, 4620mm, 207 color. Deposit 1000, balance 20335. Cost 16703.73.",
-          "cost": 16703.73,
-          "grossProfit": 7631.27
-        },
-        {
-          "id": "ZOLANO-2026-06-15-DC809H-BARSTOOL-CLEARANCE",
-          "date": "2026-06-15",
-          "vendor": "清样 DC809H 吧椅",
-          "amount": 1200,
-          "quantity": 3,
-          "cost": 1071,
-          "grossProfit": 129,
-          "displayClearance": true,
-          "note": "ZOLANO/德源居清样：DC809H 吧椅 3张，总售价1200元（含送货）。成本来自 德源居清仓.xlsx / 库存表 第21行：DC809H 吧椅 亮棕 成本357元/张；357 x 3 = 1071元。",
-          "status": "confirmed"
-        },
-        {
           "id": "ZOLANO-2026-07-03-0000176",
           "date": "2026-07-03",
           "vendor": "Contract 0000176",
@@ -319,6 +319,20 @@
           "deposit": 10300,
           "balance": 10000,
           "status": "confirmed"
+        },
+        {
+          "id": "ZOLANO-2026-07-12-0000379",
+          "date": "2026-07-12",
+          "vendor": "Contract 0000379",
+          "amount": 108000,
+          "quantity": 11,
+          "note": "ZOLANO 合同 0000379，2026-07-12，合同总额 108000。已确认沙发：第1项 8821，LS皮，4400mm，组合 CSAL 401 + 1.5CB 502 + CC-002 + AFR-406；第2项 3807 单椅，规格待确认；第3项 8815，LS皮，2460mm，组合 1.75PL 117 + 1.75PR 118；第6项 26282，F/SA，2400mm，组合 2EL + 1ER/T（标准约2430mm）；第7项 2897 两人位，Nubuck，2260mm，组合 1EL + 1ER。Nikator 茶几价格资料：第4项为911边几，850×560×500mm，数量2件，单件成本1750、成本合计3500，单件建议售价4900、建议售价合计9800；售价按成本×2.8。C911茶几 1450×900×370mm，单件成本2850、建议售价7980，保存在价格库。第5项为Nikator微晶石茶几（大+小），确认型号NK6029CT（A636）+ NK6029ET（C636），合计成本3503，按成本×2.8建议售价9808.40。第8项确认是一组两件：CTM005茶几售价7800 + CTM006茶几售价2380，销售合计10180，成本待查。照片及茶几规格图已存档；当前先入销售，其他成本待确认。",
+          "cost": 0,
+          "grossProfit": 108000,
+          "deposit": 0,
+          "balance": 108000,
+          "status": "pending-cost",
+          "photo": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000379\\0000379_contract_2026-07-12.jpg"
         },
         {
           "id": "ZOLANO-2026-07-12-DISPLAY-SOFA-6001CT",
@@ -336,18 +350,19 @@
           "photo": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-07\\805a845ac82245c16222455622a78571\\95410a01bab2dbcb71c56691a458fe7e.jpg"
         },
         {
-          "id": "ZOLANO-2026-07-12-0000379",
-          "date": "2026-07-12",
-          "vendor": "Contract 0000379",
-          "amount": 108000,
-          "quantity": 11,
-          "note": "ZOLANO 合同 0000379，2026-07-12，合同总额 108000。已确认沙发：第1项 8821，LS皮，4400mm，组合 CSAL 401 + 1.5CB 502 + CC-002 + AFR-406；第2项 3807 单椅，规格待确认；第3项 8815，LS皮，2460mm，组合 1.75PL 117 + 1.75PR 118；第6项 26282，F/SA，2400mm，组合 2EL + 1ER/T（标准约2430mm）；第7项 2897 两人位，Nubuck，2260mm，组合 1EL + 1ER。Nikator 茶几价格资料：第4项为911边几，850×560×500mm，数量2件，单件成本1750、成本合计3500，单件建议售价4900、建议售价合计9800；售价按成本×2.8。C911茶几 1450×900×370mm，单件成本2850、建议售价7980，保存在价格库。第5项为Nikator微晶石茶几（大+小），确认型号NK6029CT（A636）+ NK6029ET（C636），合计成本3503，按成本×2.8建议售价9808.40。第8项确认是一组两件：CTM005茶几售价7800 + CTM006茶几售价2380，销售合计10180，成本待查。照片及茶几规格图已存档；当前先入销售，其他成本待确认。",
+          "id": "ZOLANO-2026-07-15-0000179",
+          "date": "2026-07-15",
+          "vendor": "Contract 0000179",
+          "amount": 10100,
+          "quantity": 1,
+          "note": "ZOLANO 合同 0000179，2026-07-15，合同总额 10100；同日收款记录显示已收 10100。产品型号/成本从照片暂时看不清，先记录销售与收款，成本和明细待确认。",
           "cost": 0,
-          "grossProfit": 108000,
-          "deposit": 0,
-          "balance": 108000,
+          "grossProfit": 10100,
+          "deposit": 10100,
+          "balance": 0,
           "status": "pending-cost",
-          "photo": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000379\\0000379_contract_2026-07-12.jpg"
+          "photo": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000179\\0000179_contract_2026-07-15.jpg",
+          "paymentPhoto": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000179\\0000179_payment_10100_2026-07-15.png"
         }
       ]
     },
