@@ -1420,6 +1420,40 @@ const zolanoThreeDigitCatalog = [
 ];
 const coffeeTableCatalog = [
   {
+    id: "NIKATOR-COFFEE-TABLE-C911",
+    brand: "Nikator",
+    series: "C911",
+    model: "C911",
+    name: "C911\u8336\u51e0",
+    configuration: "C911\u8336\u51e0",
+    description: "\u9ed1\u949b\u62c9\u4e1d + \u70df\u718f\u8272 + \u9999\u96ea\u6885\u5929\u7136\u77f3",
+    details: "Nikator coffee table",
+    dimensions: "1450 x 900 x 370 mm",
+    supplierCost: 2850,
+    price: 7980,
+    priceOptions: [7980],
+    priceIsFinal: true,
+    materials: ["Nikator"],
+    source: "\u94f6\u661f\u5bb6\u5177\u5e38\u89c4\u4ea7\u54c1\u62a5\u4ef7\u8868-2606; \u552e\u4ef7=\u6210\u672cx2.8"
+  },
+  {
+    id: "NIKATOR-SIDE-TABLE-911",
+    brand: "Nikator",
+    series: "911",
+    model: "911",
+    name: "911\u8fb9\u51e0",
+    configuration: "911\u8fb9\u51e0",
+    description: "\u9ed1\u949b\u62c9\u4e1d + \u70df\u718f\u8272 + \u9999\u96ea\u6885\u5929\u7136\u77f3",
+    details: "Nikator side table",
+    dimensions: "850 x 560 x 500 mm",
+    supplierCost: 1750,
+    price: 4900,
+    priceOptions: [4900],
+    priceIsFinal: true,
+    materials: ["Nikator"],
+    source: "\u94f6\u661f\u5bb6\u5177\u5e38\u89c4\u4ea7\u54c1\u62a5\u4ef7\u8868-2606; \u552e\u4ef7=\u6210\u672cx2.8"
+  },
+  {
     id: "ZOLANO-COFFEE-TABLE-CTM003-VISIBLE",
     brand: "Zolano",
     series: "CTM003",
