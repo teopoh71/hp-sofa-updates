@@ -1,13 +1,13 @@
 {
-  "versionCode": 2015,
-  "versionName": "STAREEP-2026.07.11-r3-xt",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260711-r3-xt-v2015.apk",
+  "versionCode": 2016,
+  "versionName": "STAREEP-2026.07.19-pf10v2",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260719-pf10v2-v2016.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Adds the missing R3 XT (CN-FI22) base model.",
-    "Adds 90x200 and 120x200 size options with retail prices from the July Stareep price PDF.",
-    "Keeps R3 XT separate from R3, R3 Pro, R3 Ultra, and R3 S.",
+    "Updates the July A-catalog retail prices and sizes.",
+    "Corrects CN-PF10(V2) to 60x35x8/10cm at ¥298 and removes the obsolete CN-PF20 entry.",
+    "Keeps the independent STAREEP app package separate from HP Sofa.",
     "Independent STAREEP app package. Not linked to HP Sofa updates."
   ]
 }
