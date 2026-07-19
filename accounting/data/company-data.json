@@ -83,16 +83,16 @@
         },
         {
           "month": "7月",
-          "revenue": 8800,
-          "cost": 6055.56,
-          "grossProfit": 2744.44,
+          "revenue": 83086.82,
+          "cost": 39703.39,
+          "grossProfit": 43383.43,
           "expense": 3333.33,
-          "netProfit": -588.89,
+          "netProfit": 40050.1,
           "rent": 0,
           "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "July includes confirmed invoice 0000377 LE8807SF-304 half leather. Customer paid 8800. Rent 0.00, salary share 3333.33 included."
+          "pendingCostNote": "7月包含尼卡托0000377，以及0000379中属于尼卡托的LE/NK/茶几项目，按原价比例分摊74286.82。已补8821、8815、911边几、NK6029成本；3807和CTM005+CTM006成本待确认。7月尼卡托租金0，工资3333.33只扣一次。"
         }
       ],
       "invoices": [
@@ -130,6 +130,24 @@
           "deposit": 8800,
           "balance": 0,
           "status": "confirmed"
+        },
+        {
+          "id": "NIKATOR-2026-07-12-0000379",
+          "date": "2026-07-12",
+          "vendor": "Contract 0000379 (Nikator part)",
+          "amount": 74286.82,
+          "quantity": 9,
+          "cost": 33647.83,
+          "grossProfit": 40638.99,
+          "balance": 74286.82,
+          "status": "pending-cost",
+          "combinedInvoice": true,
+          "note": "合同0000379中属于尼卡托的项目，按原价比例从总成交108000分摊。第1项 LE8821/8211 LS皮沙发4400mm 原价49832 分摊33821.77，成本17832.90；第2项 3807 单椅 原价1500 分摊1018.07，成本待确认；第3项 LE8815 LS皮2460mm 原价24600 分摊16696.41，成本8811.93；第4项 911边几 原价14462 分摊9815.59，成本3500；第5项 NK6029微晶石茶几 原价8878 分摊6025.64，成本3503；第8项 CTM005+CTM006 原价10180 分摊6909.34，成本待确认。尼卡托合计74286.82。",
+          "splitContract": true,
+          "originalContractTotal": 108000,
+          "originalListTotal": 159124,
+          "discountRate": 0.6787159699353963,
+          "pendingCostNote": "已补 LE8821 LS/OS全皮 17832.90、LE8815 2.46m LS/OS全皮 8811.93、911边几 3500、NK6029茶几 3503；3807、CTM005+CTM006及其他茶几成本仍待确认。"
         }
       ]
     },
@@ -219,16 +237,16 @@
         },
         {
           "month": "7月",
-          "revenue": 154300,
+          "revenue": 90113.18,
           "cost": 14322.73,
-          "grossProfit": 139977.27,
+          "grossProfit": 75790.45,
           "expense": 25833.33,
-          "netProfit": 114143.94,
+          "netProfit": 49957.12,
           "rent": 22500,
           "salary": 3333.33,
           "electricity": 0,
           "delivery": 0,
-          "pendingCostNote": "7月包含 ZOLANO 0000176、清样沙发+6001CT、以及合同 0000379。0000379 销售 108000 已入账，但成本/材质/部分型号仍待确认；当前利润未扣 0000379 成本。租金 22500、工资分摊 3333.33 已包含。"
+          "pendingCostNote": "7月包含 ZOLANO 0000176、0000379中ZOLANO两项按比例分摊33713.18、清样沙发+6001CT、0000179。0000379已按原价比例拆分，LE/NK/茶几部分转入尼卡托。0000179和部分成本待确认。租金22500、工资3333.33只扣一次。"
         }
       ],
       "invoices": [
@@ -253,14 +271,16 @@
           "grossProfit": 8439.84
         },
         {
-          "id": "ZOLANO-2026-06-30-0000149",
-          "date": "2026-06-30",
-          "vendor": "Contract 0000149",
-          "amount": 24000,
-          "quantity": 1,
-          "note": "ZOLANO June invoice 0000149: ZL2897 sofa, 1ER + 1NA + 1EL, 3120mm. Deposit 12000, balance 12000. Cost confirmed from ZL2800 export list: F/SA 1EL 341 + 1NA 276 + 1ER 341 USD, RMB=USD*7.3/0.66.",
-          "cost": 10596.06,
-          "grossProfit": 13403.94
+          "id": "ZOLANO-2026-06-15-DC809H-BARSTOOL-CLEARANCE",
+          "date": "2026-06-15",
+          "vendor": "清样 DC809H 吧椅",
+          "amount": 1200,
+          "quantity": 3,
+          "cost": 1071,
+          "grossProfit": 129,
+          "displayClearance": true,
+          "note": "ZOLANO/德源居清样：DC809H 吧椅 3张，总售价1200元（含送货）。成本来自 德源居清仓.xlsx / 库存表 第21行：DC809H 吧椅 亮棕 成本357元/张；357 x 3 = 1071元。",
+          "status": "confirmed"
         },
         {
           "id": "ZOLANO-2026-06-22-0000174",
@@ -272,6 +292,26 @@
           "note": "ZOLANO invoice 0000174: ZL2672 sofa 清样, 3580mm, F/SA, config 3EL+1ER/T. Selling 16000, paid 16000, balance 0. Cost USD 1369.5175 x 7.3 / 0.66 = 15147.69.",
           "cost": 15147.69,
           "grossProfit": 852.31
+        },
+        {
+          "id": "ZOLANO-2026-06-30-0000067",
+          "date": "2026-06-30",
+          "vendor": "Contract 0000067",
+          "amount": 24335,
+          "quantity": 5,
+          "note": "ZOLANO invoice 0000067: ZL3776 sofa display set clearance / 展厅样品清仓, ARM + 1NA x3 + 1NA/T, F/SA, 4620mm, 207 color. Deposit 1000, balance 20335. Cost 16703.73.",
+          "cost": 16703.73,
+          "grossProfit": 7631.27
+        },
+        {
+          "id": "ZOLANO-2026-06-30-0000149",
+          "date": "2026-06-30",
+          "vendor": "Contract 0000149",
+          "amount": 24000,
+          "quantity": 1,
+          "note": "ZOLANO June invoice 0000149: ZL2897 sofa, 1ER + 1NA + 1EL, 3120mm. Deposit 12000, balance 12000. Cost confirmed from ZL2800 export list: F/SA 1EL 341 + 1NA 276 + 1ER 341 USD, RMB=USD*7.3/0.66.",
+          "cost": 10596.06,
+          "grossProfit": 13403.94
         },
         {
           "id": "ZOLANO-2026-06-30-0000150",
@@ -286,28 +326,6 @@
           "grossProfit": 1800
         },
         {
-          "id": "ZOLANO-2026-06-30-0000067",
-          "date": "2026-06-30",
-          "vendor": "Contract 0000067",
-          "amount": 24335,
-          "quantity": 5,
-          "note": "ZOLANO invoice 0000067: ZL3776 sofa display set clearance / 展厅样品清仓, ARM + 1NA x3 + 1NA/T, F/SA, 4620mm, 207 color. Deposit 1000, balance 20335. Cost 16703.73.",
-          "cost": 16703.73,
-          "grossProfit": 7631.27
-        },
-        {
-          "id": "ZOLANO-2026-06-15-DC809H-BARSTOOL-CLEARANCE",
-          "date": "2026-06-15",
-          "vendor": "清样 DC809H 吧椅",
-          "amount": 1200,
-          "quantity": 3,
-          "cost": 1071,
-          "grossProfit": 129,
-          "displayClearance": true,
-          "note": "ZOLANO/德源居清样：DC809H 吧椅 3张，总售价1200元（含送货）。成本来自 德源居清仓.xlsx / 库存表 第21行：DC809H 吧椅 亮棕 成本357元/张；357 x 3 = 1071元。",
-          "status": "confirmed"
-        },
-        {
           "id": "ZOLANO-2026-07-03-0000176",
           "date": "2026-07-03",
           "vendor": "Contract 0000176",
@@ -319,6 +337,25 @@
           "deposit": 10300,
           "balance": 10000,
           "status": "confirmed"
+        },
+        {
+          "id": "ZOLANO-2026-07-12-0000379",
+          "date": "2026-07-12",
+          "vendor": "Contract 0000379",
+          "amount": 33713.18,
+          "quantity": 2,
+          "note": "合同0000379总额108000，按原价总额159124比例折扣分摊，折扣率0.678716。ZOLANO只保留第6项 ZL26282 F/SA 2400mm 原价25600 分摊17375.13；第7项 ZL2897 Nubuck 2260mm 两人位 原价24072 分摊16338.05，ZOLANO合计33713.18。其余项目转入尼卡托。ZOLANO两项成本待确认。",
+          "cost": 0,
+          "grossProfit": 33713.18,
+          "deposit": 0,
+          "balance": 33713.18,
+          "status": "pending-cost",
+          "photo": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000379\\0000379_contract_2026-07-12.jpg",
+          "splitContract": true,
+          "originalContractTotal": 108000,
+          "splitNote": "0000379 按每项原价比例分摊成交价108000；部分项目属于尼卡托。",
+          "originalListTotal": 159124,
+          "discountRate": 0.6787159699353963
         },
         {
           "id": "ZOLANO-2026-07-12-DISPLAY-SOFA-6001CT",
@@ -336,18 +373,19 @@
           "photo": "C:\\Users\\edwin\\Documents\\xwechat_files\\wxid_w3yrh4l4ky2y22_aba1\\temp\\RWTemp\\2026-07\\805a845ac82245c16222455622a78571\\95410a01bab2dbcb71c56691a458fe7e.jpg"
         },
         {
-          "id": "ZOLANO-2026-07-12-0000379",
-          "date": "2026-07-12",
-          "vendor": "Contract 0000379",
-          "amount": 108000,
-          "quantity": 11,
-          "note": "ZOLANO 合同 0000379，2026-07-12，合计 108000。照片已存档。明细从照片读取：LE8821 转角沙发 4400mm、NK380? 单椅、LE8815 沙发床 2400mm、茶几/角几/餐几、ZL2628 书房沙发 2400mm、ZL2897 志豪沙发 3260mm 等。成本和部分型号/材质未完全确认，先入销售，成本待确认。",
+          "id": "ZOLANO-2026-07-15-0000179",
+          "date": "2026-07-15",
+          "vendor": "Contract 0000179",
+          "amount": 10100,
+          "quantity": 1,
+          "note": "ZOLANO 合同 0000179，2026-07-15，合同总额 10100；同日收款记录显示已收 10100。产品型号/成本从照片暂时看不清，先记录销售与收款，成本和明细待确认。",
           "cost": 0,
-          "grossProfit": 108000,
-          "deposit": 0,
-          "balance": 108000,
+          "grossProfit": 10100,
+          "deposit": 10100,
+          "balance": 0,
           "status": "pending-cost",
-          "photo": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000379\\0000379_contract_2026-07-12.jpg"
+          "photo": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000179\\0000179_contract_2026-07-15.jpg",
+          "paymentPhoto": "C:\\Users\\edwin\\Documents\\Accounting Records\\ZOLANO\\2026-07\\0000179\\0000179_payment_10100_2026-07-15.png"
         }
       ]
     },

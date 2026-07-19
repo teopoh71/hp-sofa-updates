@@ -9,13 +9,13 @@ import {
   sumInvoiceBalances,
   shouldUpdate,
   toCsv,
-} from "./accounting-core.mjs?v=v17-contract-0000379-20260712";
+} from "./accounting-core.mjs?v=v21-july-nikator-cost-fix-20260717";
 
 const defaultPatchUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/patch.json";
 const defaultDataUrl = "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/accounting/data/company-data.json";
-const patch = { versionCode: 17, versionName: "v17-ZOLANO合同0000379-2026-07-12" };
+const patch = { versionCode: 21, versionName: "v21-july-nikator-cost-fix-20260717" };
 const patchCacheName = "accounting-ui-patch-v1";
-let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
+let state = { companies: [], activeId: "nikator-2026", activeYear: "2026", activeMonth: 7 };
 
 const $ = (id) => document.getElementById(id);
 const money = (value) => `¥${(Number(value || 0) / 10000).toFixed(2)}万`;
@@ -23,8 +23,8 @@ const money = (value) => `¥${(Number(value || 0) / 10000).toFixed(2)}万`;
 async function init() {
   await registerPatchWorker();
   if ($("invoiceDate")) $("invoiceDate").value = new Date().toISOString().slice(0, 10);
-  const res = await fetch("./data/company-data.json?v=v17-contract-0000379-20260712", { cache: "no-store" });
-  state = { ...(await res.json()), activeId: "nikator-2026", activeYear: "2026", activeMonth: 6 };
+  const res = await fetch("./data/company-data.json?v=v21-july-nikator-cost-fix-20260717", { cache: "no-store" });
+  state = { ...(await res.json()), activeId: "nikator-2026", activeYear: "2026", activeMonth: 7 };
   setPhoneFolds();
   bindEvents();
   render();
