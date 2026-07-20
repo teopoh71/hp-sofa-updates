@@ -3,41 +3,41 @@
     "versionName":  "v1199-le8806-showroom-cn",
     "patchVersionCode":  1199,
     "patchVersionName":  "v1199-le8806-showroom-cn",
-    "generatedAt":  "2026-07-20T08:23:12.9136386Z",
+    "generatedAt":  "2026-07-20T08:31:55.7781724Z",
     "files":  [
                   {
                       "path":  "app-version.js",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1199-le8806-showroom-cn/app-version.js",
-                      "sha256":  "bec3102e0068b5065e40a8559b6734fc3b83f07ad56be74a9622cbcde044e05e",
-                      "size":  654,
+                      "sha256":  "4d7937cac98a5f1a35eade73a62b19ef329c0a2537e04d401b942e652934d6fd",
+                      "size":  651,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "app.js",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1199-le8806-showroom-cn/app.js",
-                      "sha256":  "a819f7f12c32140bd2b7671ee61ae441ff44a1dfbb4a118f22d06f6b4719275c",
-                      "size":  3007700,
+                      "sha256":  "3662e32a677de3433b7144a52ebc94b1ba48d37f3c44934c923eb44ce52dccf0",
+                      "size":  2998349,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
                       "path":  "index.html",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1199-le8806-showroom-cn/index.html",
-                      "sha256":  "4bf87ddfc3baa2468c4fcc9322a9a6c5ef4f9a3e45ecce5556aecb72ad2961d6",
-                      "size":  2882580,
+                      "sha256":  "20e4395217608f3373750f94b57e2640de8567cf888c01a214825ac783fda491",
+                      "size":  2881755,
                       "contentType":  "text/html; charset=utf-8"
                   },
                   {
                       "path":  "styles.css",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1199-le8806-showroom-cn/styles.css",
-                      "sha256":  "1a19a2ebeab48a8d6f8de8465f4010c98e3ec4c2a50a8d2b640be2ef840b55ce",
-                      "size":  51162,
+                      "sha256":  "745babd3f317c55e6676b1a478816919af66274524d41bc7385d105f6973ecf0",
+                      "size":  49192,
                       "contentType":  "text/css; charset=utf-8"
                   },
                   {
                       "path":  "sofa-recommendations.js",
                       "url":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1199-le8806-showroom-cn/sofa-recommendations.js",
-                      "sha256":  "95db7be66e644760a0a1ba95ffea6508f4d2d8fdee14ada880f3259345b0f1d5",
-                      "size":  110394,
+                      "sha256":  "ed11cadb88a2af9e14bb385a8d573dd05221e443079d174c5f789c3b705d9416",
+                      "size":  106332,
                       "contentType":  "application/javascript; charset=utf-8"
                   },
                   {
