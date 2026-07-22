@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>&#22270;&#29255;</title>
+    <style>
+      * { box-sizing: border-box; }
+      html,
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0b0b0b;
+        color: #fff;
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+      }
+      .topbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: flex-start;
+        padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) 8px max(8px, env(safe-area-inset-left));
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0));
+      }
+      button {
+        min-height: 46px;
+        min-width: 76px;
+        border: 1px solid rgba(255,255,255,.28);
+        border-radius: 8px;
+        background: #19786f;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 800;
+      }
+      .stage {
+        min-height: 100vh;
+        padding: 62px 0 16px;
+        overflow: auto;
+        touch-action: pinch-zoom;
+        -webkit-overflow-scrolling: touch;
+      }
+      .photo-frame {
+        width: 100vw;
+        min-height: calc(100vh - 78px);
+        display: grid;
+        place-items: center;
+        overflow: auto;
+        padding: 8px;
+      }
+      .stage img {
+        display: block;
+        width: min(160vw, 1600px);
+        max-width: none;
+        height: auto;
+        min-height: 35vh;
+        object-fit: contain;
+        background: #111;
+        transform-origin: center center;
+        transition: transform .18s ease, width .18s ease;
+        cursor: pointer;
+      }
+      .photo-frame.is-rotated {
+        min-height: calc(100vh - 62px);
+      }
+      .photo-frame.is-rotated img {
+        width: min(90vh, 1500px);
+        transform: rotate(90deg) scale(1.15);
+      }
+      .photo-frame.is-zoomed img {
+        width: min(210vw, 2200px);
+      }
+      .photo-frame.is-rotated.is-zoomed img {
+        width: min(108vh, 2200px);
+        transform: rotate(90deg) scale(1.35);
+      }
+      .photo-frame + .photo-frame { margin-top: 12px; }
+      .empty {
+        padding: 110px 20px;
+        text-align: center;
+        color: rgba(255,255,255,.72);
+        font-size: 1.1rem;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="topbar">
+      <button type="button" id="closeButton">&#20851;&#38381;</button>
+    </nav>
+    <main class="stage" id="stage"></main>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const returnUrl = params.get("return") || "index.html";
+      const stage = document.querySelector("#stage");
+      let photos = [];
+
+      try {
+        photos = JSON.parse(params.get("srcs") || "[]");
+      } catch {
+        photos = [];
+      }
+      if (!Array.isArray(photos)) photos = [];
+      if (params.get("src")) photos.unshift(params.get("src"));
+      photos = [...new Set(photos.filter(Boolean))];
+
+      function goBack() {
+        location.href = returnUrl;
+      }
+
+      function togglePhoto(frame) {
+        if (frame.classList.contains("is-rotated")) {
+          frame.classList.toggle("is-zoomed");
+          return;
+        }
+        frame.classList.add("is-rotated", "is-zoomed");
+      }
+
+      function render() {
+        stage.innerHTML = "";
+        if (!photos.length) {
+          stage.innerHTML = '<div class="empty">&#27809;&#26377;&#22270;&#29255;</div>';
+          return;
+        }
+        photos.forEach((src) => {
+          const frame = document.createElement("div");
+          frame.className = "photo-frame";
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = "\u56fe\u7247";
+          img.addEventListener("load", () => {
+            if (img.naturalWidth > img.naturalHeight) frame.classList.add("is-rotated", "is-zoomed");
+          });
+          img.addEventListener("click", () => togglePhoto(frame));
+          frame.append(img);
+          stage.append(frame);
+        });
+      }
+
+      document.querySelector("#closeButton").addEventListener("click", goBack);
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") goBack();
+      });
+
+      render();
+    </script>
+  </body>
+</html>
