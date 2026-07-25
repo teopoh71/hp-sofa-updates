@@ -1,13 +1,13 @@
-{
-  "versionCode": 2016,
-  "versionName": "STAREEP-2026.07.19-pf10v2",
-  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260719-pf10v2-v2016.apk",
+﻿{
+  "versionCode": 2017,
+  "versionName": "STAREEP-2026.07.25-cert-promo",
+  "apkUrl": "https://teopoh71.github.io/hp-sofa-updates/apks/STAREEP-CATALOG-20260725-cert-promo-v2017.apk",
   "webUrl": "https://teopoh71.github.io/hp-sofa-updates/",
   "mandatory": false,
   "notes": [
-    "Updates the July A-catalog retail prices and sizes.",
-    "Corrects CN-PF10(V2) to 60x35x8/10cm at ¥298 and removes the obsolete CN-PF20 entry.",
+    "Adds the STAREEP certification and honor materials category with image zoom.",
+    "Adds the 818 S3 Air and U800 activity price cards with showroom/effect images.",
     "Keeps the independent STAREEP app package separate from HP Sofa.",
-    "Independent STAREEP app package. Not linked to HP Sofa updates."
+    "Full APK download update button uses this package for reinstall/update."
   ]
 }
