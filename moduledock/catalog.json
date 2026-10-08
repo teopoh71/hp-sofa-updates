@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "publishedAt": "2026-10-08",
+  "modules": [
+    {
+      "id": "sofa-combination",
+      "name": "沙发组合",
+      "version": "online",
+      "kind": "WEB",
+      "entry": "https://edwin-sofa-v1346-test.teopoh72.chatgpt.site",
+      "description": "网页版；在浏览器中使用原登录。"
+    },
+    {
+      "id": "wood-furniture",
+      "name": "康佳泰木家具",
+      "version": "online",
+      "kind": "WEB",
+      "entry": "https://zolano-wood-preview.teopoh72.chatgpt.site",
+      "description": "网页版；在浏览器中使用原登录。"
+    }
+  ]
+}
