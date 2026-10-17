@@ -1,0 +1,158 @@
+/* ZOLANO v1400 · 经销商同款界面（深蓝）
+   只改外观（颜色、字体、圆角、阴影、间距），不改任何数据、价格、拼装逻辑。
+   全部规则挂在 html.hp-premium 下；去掉这个 class 即恢复 v1398 经典界面。 */
+html.hp-premium{
+  --pm-bg:#f4f7fa;
+  --pm-surface:#ffffff;
+  --pm-ink:#17384f;
+  --pm-ink-2:#345165;
+  --pm-ink-3:#637787;
+  --pm-line:#dce4eb;
+  --pm-line-2:#c9d5df;
+  --pm-accent:#41677d;
+  --pm-accent-soft:#e8eef7;
+  --pm-shadow:0 3px 12px rgba(23,56,79,.06);
+  --pm-font:-apple-system,"PingFang SC","HarmonyOS Sans SC","Noto Sans SC","Noto Sans CJK SC","Source Han Sans SC",Roboto,"Microsoft YaHei",system-ui,sans-serif;
+}
+html.hp-premium body{background:var(--pm-bg)!important;color:var(--pm-ink)!important;font-family:var(--pm-font)!important;-webkit-font-smoothing:antialiased}
+
+/* ---------- 首页：型号选择 ---------- */
+html.hp-premium .hp-model-landing{background:var(--pm-bg)!important;color:var(--pm-ink)!important;font-family:var(--pm-font)!important;padding-top:calc(22px + env(safe-area-inset-top))!important}
+html.hp-premium .hp-picker-head{align-items:center!important;margin:2px 0 22px!important;padding-bottom:16px;border-bottom:1px solid var(--pm-line)}
+html.hp-premium .hp-picker-head strong{font-size:26px!important;font-weight:700!important;letter-spacing:2px!important;color:#15364d!important}
+html.hp-premium .hp-picker-head small{font-size:12px!important;font-weight:400!important;letter-spacing:.12em;color:var(--pm-ink-3)!important;margin-left:auto}
+html.hp-premium .hp-picker-tabs{gap:6px!important;padding-bottom:16px!important;scrollbar-width:none}
+html.hp-premium .hp-picker-tabs::-webkit-scrollbar{display:none}
+html.hp-premium .hp-picker-tab{font:400 14px var(--pm-font)!important;letter-spacing:.04em;border:1px solid var(--pm-line-2)!important;border-radius:999px!important;background:transparent!important;color:var(--pm-ink-2)!important;padding:9px 16px!important}
+html.hp-premium .hp-picker-tab[aria-selected="true"]{background:var(--pm-ink)!important;border-color:var(--pm-ink)!important;color:#fff!important}
+html.hp-premium .hp-picker-search{font-size:0!important;margin-top:4px!important}
+html.hp-premium .hp-picker-search input{font:400 16px var(--pm-font)!important;border:1px solid var(--pm-line)!important;border-radius:12px!important;background:var(--pm-surface)!important;color:var(--pm-ink)!important;padding:13px 16px 13px 42px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23637787' stroke-width='1.8' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:14px center!important}
+html.hp-premium .hp-picker-search input:focus{outline:none;border-color:var(--pm-accent)!important;box-shadow:0 0 0 3px var(--pm-accent-soft)}
+html.hp-premium .hp-picker-title{margin:26px 0 14px!important;align-items:baseline!important}
+html.hp-premium .hp-picker-title h1{font-size:19px!important;font-weight:500!important;letter-spacing:.06em;color:var(--pm-ink)!important}
+html.hp-premium .hp-picker-title span{font-size:12px!important;color:var(--pm-ink-3)!important;letter-spacing:.08em}
+
+/* 型号卡：两列网格，白卡、轻阴影、无边框 */
+html.hp-premium .hp-model-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+html.hp-premium .hp-model-card{border:0!important;border-radius:14px!important;background:var(--pm-surface)!important;color:var(--pm-ink)!important;padding:0 0 14px!important;box-shadow:var(--pm-shadow)!important;transition:transform .15s ease}
+html.hp-premium .hp-model-card:active{transform:scale(.98)}
+html.hp-premium .hp-model-image-frame{height:148px!important;border-radius:14px 14px 0 0!important;margin:0 0 12px!important;padding:10px;background:#fbfaf8!important}
+html.hp-premium .hp-model-card strong{font-size:18px!important;font-weight:700!important;letter-spacing:.02em;min-height:0!important;padding:0 8px}
+html.hp-premium .hp-model-card .hp-enter{font-size:13px!important;margin-top:4px!important;color:var(--pm-accent)!important}
+@media(min-width:900px){html.hp-premium .hp-model-cards{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:18px!important}html.hp-premium .hp-model-image-frame{height:210px!important}}
+@media(min-width:600px) and (max-width:899px){html.hp-premium .hp-model-cards{grid-template-columns:repeat(3,minmax(0,1fr))!important}html.hp-premium .hp-model-image-frame{height:190px!important}}
+
+/* 界面切换开关 */
+.hp-theme-toggle{flex:none;font:400 12px var(--pm-font,system-ui);letter-spacing:.06em;border:1px solid #d9c6b6;border-radius:999px;background:transparent;color:#786258;padding:6px 12px;cursor:pointer}
+html.hp-premium .hp-theme-toggle{border-color:var(--pm-line-2);color:var(--pm-ink-2)}
+
+/* ---------- 详情页 ---------- */
+html.hp-premium #hpBackToModels{background:rgba(255,255,255,.88)!important;color:var(--pm-ink)!important;border:1px solid var(--pm-line)!important;border-radius:999px!important;padding:9px 16px!important;font:500 14px var(--pm-font)!important;letter-spacing:.04em;box-shadow:0 4px 14px rgba(28,27,25,.10)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+html.hp-premium body.hp-page-detail main.app-shell{padding-top:calc(58px + env(safe-area-inset-top))!important}
+html.hp-premium .builder-panel{background:var(--pm-surface)!important;border:0!important;border-radius:16px!important;box-shadow:var(--pm-shadow)!important;color:var(--pm-ink)!important}
+
+/* 顶部工具按钮：统一成细边框小按钮 */
+html.hp-premium .app-version-badge{color:var(--pm-ink-3)!important;gap:8px!important}
+html.hp-premium .app-version-badge>span{font-size:11px!important;letter-spacing:.1em;color:var(--pm-ink-3)!important}
+html.hp-premium .app-check-update-button,html.hp-premium .app-check-update-button.app-story-button{background:var(--pm-surface)!important;color:var(--pm-ink-2)!important;border:1px solid var(--pm-line-2)!important;border-radius:999px!important;font:400 13px var(--pm-font)!important;letter-spacing:.03em;padding:8px 14px!important;box-shadow:none!important;min-height:0!important}
+html.hp-premium .buyer-show-link{color:var(--pm-accent)!important;border:1px solid var(--pm-line-2)!important;border-radius:999px!important;background:var(--pm-surface)!important;font-weight:400!important;font-size:13px!important}
+
+/* 主要操作：炭黑实心 */
+html.hp-premium .hp-customer-model-share-trigger,html.hp-premium #hq-add{background:var(--pm-ink)!important;color:#fff!important;border:1px solid var(--pm-ink)!important;border-radius:12px!important;font:500 15px var(--pm-font)!important;letter-spacing:.08em;box-shadow:none!important}
+html.hp-premium #hq-open{background:var(--pm-surface)!important;color:var(--pm-ink)!important;border:1px solid var(--pm-line-2)!important;border-radius:12px!important;font:500 15px var(--pm-font)!important;letter-spacing:.04em}
+html.hp-premium #hq-bar{background:rgba(255,255,255,.92)!important;border-top:1px solid var(--pm-line)!important;box-shadow:0 -6px 20px rgba(28,27,25,.06)!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+html.hp-premium .clear-all-button{background:transparent!important;color:var(--pm-ink-3)!important;border:1px solid var(--pm-line)!important;border-radius:999px!important;font:400 13px var(--pm-font)!important;box-shadow:none!important}
+
+/* 模块选择 */
+html.hp-premium .module-picker-heading strong,html.hp-premium .combo-live-heading strong{color:var(--pm-ink)!important;font-family:var(--pm-font)!important;font-weight:500!important;letter-spacing:.06em}
+html.hp-premium .module-picker-heading,html.hp-premium .zl3776-remove-hint{color:var(--pm-ink-3)!important}
+html.hp-premium .module-picker-button{background:#fbfaf8!important;border:1px solid var(--pm-line)!important;border-radius:12px!important;box-shadow:none!important}
+html.hp-premium .module-picker-button strong{color:var(--pm-ink-2)!important;font-weight:500!important;letter-spacing:.04em}
+html.hp-premium .module-picker-button:active{border-color:var(--pm-accent)!important;background:var(--pm-accent-soft)!important}
+
+/* 组合预览与材质 */
+html.hp-premium .set-preview,html.hp-premium .set-photo-card{background:transparent!important;border-color:var(--pm-line)!important}
+html.hp-premium .combo-live-stage{background:#fbfaf8!important;border:1px solid var(--pm-line)!important;border-radius:14px!important;box-shadow:none!important}
+html.hp-premium .zl3776-material-controls button{background:var(--pm-surface)!important;color:var(--pm-ink-2)!important;border:1px solid var(--pm-line-2)!important;border-radius:999px!important;font:400 14px var(--pm-font)!important;box-shadow:none!important}
+html.hp-premium .zl3776-material-controls button.is-active{background:var(--pm-ink)!important;border-color:var(--pm-ink)!important;color:#fff!important}
+
+/* 效果图 */
+html.hp-premium .series-effect-gallery{background:var(--pm-surface)!important;border:1px solid var(--pm-line)!important;border-radius:14px!important;box-shadow:none!important}
+html.hp-premium .series-effect-gallery h3{font-family:var(--pm-font)!important;font-weight:500!important;font-size:15px!important;letter-spacing:.12em;color:var(--pm-ink)!important}
+html.hp-premium .photo-thumb{border:1px solid var(--pm-line)!important;border-radius:8px!important}
+html.hp-premium .photo-thumb.is-active{border-color:var(--pm-ink)!important;box-shadow:0 0 0 1px var(--pm-ink)!important}
+html.hp-premium .zl10-original-hint{color:var(--pm-ink-3)!important}
+html.hp-premium .zl10-original-action{background:var(--pm-surface)!important;color:var(--pm-ink-2)!important;border:1px solid var(--pm-line-2)!important;border-radius:999px!important;font:400 13px var(--pm-font)!important;box-shadow:none!important}
+html.hp-premium .zl10-original-action.zl10-original-action-primary{background:var(--pm-ink)!important;border-color:var(--pm-ink)!important;color:#fff!important}
+
+/* 补充：背景、搜索框、模块外框、底部分享按钮 */
+html.hp-premium,html.hp-premium body{background:var(--pm-bg)!important;background-image:none!important}
+html.hp-premium #hpPickerSearch{background-color:var(--pm-surface)!important;border:1px solid var(--pm-line)!important;border-radius:12px!important;color:var(--pm-ink)!important;padding-left:42px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23637787' stroke-width='1.8' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:14px center!important;box-shadow:none!important}
+html.hp-premium #hpPickerSearch::placeholder{color:var(--pm-ink-3)!important;font-weight:400!important}
+html.hp-premium body .module-picker{background:transparent!important;border:0!important;box-shadow:none!important;padding:4px 0!important}
+html.hp-premium .builder-panel>button:not([class]):not([id]){background:var(--pm-surface)!important;color:var(--pm-ink)!important;border:1px solid var(--pm-line-2)!important;border-radius:12px!important;font:500 15px var(--pm-font)!important;letter-spacing:.06em;padding:12px!important}
+
+/* 报价购物车：同一套炭黑 + 暖白 */
+html.hp-premium .hq-dialog{background:var(--pm-bg)!important;color:var(--pm-ink)!important;font-family:var(--pm-font)!important}
+html.hp-premium .hq-dialog::backdrop{background:rgba(28,27,25,.42)!important}
+html.hp-premium .hq-head,html.hp-premium .hq-footer{background:rgba(255,255,255,.96)!important;border-color:var(--pm-line)!important}
+html.hp-premium .hq-dialog button,html.hp-premium .hq-dialog a.hq-button,html.hp-premium .hq-choose-product{color:var(--pm-ink-2)!important;border-color:var(--pm-line-2)!important;background:var(--pm-surface)!important;font-weight:500!important}
+html.hp-premium .hq-dialog .hq-primary,html.hp-premium .hq-discount-buttons button[aria-pressed="true"],html.hp-premium .hq-choose-product[aria-pressed="true"]{background:var(--pm-ink)!important;border-color:var(--pm-ink)!important;color:#fff!important}
+html.hp-premium :is(.hq-card,.hq-output-options,.hq-discounts,.hq-page){background:var(--pm-surface)!important;border-color:var(--pm-line)!important}
+html.hp-premium .hq-card .hq-photo{background:#fbfaf8!important}
+html.hp-premium :is(.hq-output-options>strong,.hq-discounts>strong,.hq-price,.hq-summary strong){color:var(--pm-ink)!important}
+html.hp-premium .hq-output-options input{accent-color:var(--pm-ink)!important}
+html.hp-premium :is(.hq-quantity input,.hq-unit-price input,.hq-variant-label select,.hq-manual){border-color:var(--pm-line-2)!important;color:var(--pm-ink)!important}
+html.hp-premium .hq-toast{background:var(--pm-ink)!important}
+html.hp-premium .hq-dialog :is(h1,h2,h3){color:var(--pm-ink)!important;font-weight:500!important;letter-spacing:.04em}
+
+/* v1400：详情页各组合器统一成经销商深蓝（材质色块本身保留真实颜色） */
+html.hp-premium body :is(.zl10-title,.module-picker-heading strong){font-family:var(--pm-font)!important;color:var(--pm-ink)!important;font-weight:700!important}
+html.hp-premium body :is(#comboButtonPanel,.zl10-preview-card,.zl10-materials,.zl10-price-summary,.combo-total,.combo-dimension,.combo-choice-button,.discount-chip){border-color:var(--pm-line)!important}
+html.hp-premium body :is(#comboButtonPanel,.zl10-preview-card,.zl10-materials,.zl10-price-summary,.combo-total,.combo-dimension){background:var(--pm-surface)!important;border-radius:14px!important;box-shadow:none!important}
+html.hp-premium body :is(.combo-button-label,.combo-choice-main,.combo-choice-size,.zl10-price-summary span,.zl10-price-summary strong,.zl10-price-summary small,.zl10-price-summary summary,.combo-total span,.combo-total strong,.combo-dimension span,.combo-dimension strong,.zl10-preview-card strong,.zl10-size,.module-picker-quantity-value){color:var(--pm-ink)!important}
+html.hp-premium body .combo-choice-button{background:var(--pm-surface)!important;color:var(--pm-ink)!important;border-radius:999px!important}
+html.hp-premium body .combo-choice-button.is-active,html.hp-premium body .combo-choice-button[aria-pressed="true"]{background:var(--pm-ink)!important;color:#fff!important}
+html.hp-premium body .combo-choice-button.is-active *,html.hp-premium body .combo-choice-button[aria-pressed="true"] *{color:#fff!important}
+html.hp-premium body .zl10-material-all{background:var(--pm-surface)!important;color:var(--pm-ink-2)!important;border:1px solid var(--pm-line-2)!important;border-radius:999px!important}
+html.hp-premium body .zl10-material-all.is-active{background:var(--pm-ink)!important;color:#fff!important;border-color:var(--pm-ink)!important}
+html.hp-premium body .discount-chip{background:var(--pm-surface)!important;color:var(--pm-ink-2)!important;border-radius:999px!important}
+html.hp-premium body .discount-chip.is-active{background:var(--pm-ink)!important;color:#fff!important;border-color:var(--pm-ink)!important}
+html.hp-premium body .module-picker-step{color:var(--pm-ink)!important;border-color:var(--pm-line-2)!important}
+html.hp-premium body :is(.module-picker-image,.zl10-plan,.zl10-stage){background:#fff!important}
+html.hp-premium body .zl10-preview-card *:not(img):not(svg *){border-color:var(--pm-line)}
+/* 模块两列，与经销商版一致 */
+@media(max-width:600px){
+ html.hp-premium body.hp-page-detail :is(#zolanoModulePicker,#zolanoFirst10Composer) .module-picker-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+}
+html.hp-premium body .module-picker-button{background:#fff!important;border:1px solid var(--pm-line)!important;border-radius:14px!important}
+html.hp-premium body .module-picker-button strong{color:var(--pm-ink)!important;font-weight:700!important}
+
+/* v1400：3792 模块落地阴影，拼起来更有立体感（经典/简洁都生效） */
+.zl10-piece:has(> [data-model="3792"]),.zl10-piece:has([data-model="3792"]){filter:drop-shadow(0 6px 6px rgba(23,40,55,.16)) drop-shadow(0 1px 1px rgba(23,40,55,.12))}
+
+/* v1400：底部浮动合计（经典/简洁都显示） */
+.hp-live-total{position:fixed;left:12px;right:12px;z-index:950;display:flex;align-items:baseline;gap:10px;justify-content:flex-start;padding:11px 16px;border:0;border-radius:14px;background:#17384f;color:#fff;font:500 14px -apple-system,"PingFang SC","Noto Sans SC",Roboto,system-ui,sans-serif;box-shadow:0 8px 22px rgba(16,40,63,.28);cursor:pointer;text-align:left}
+.hp-live-total[hidden]{display:none}
+.hp-live-total-label{opacity:.78;letter-spacing:.04em;flex:none}
+.hp-live-total-amount{font-size:19px;font-weight:700;letter-spacing:.02em;flex:none}
+.hp-live-total-size{margin-left:auto;font-size:12px;opacity:.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+body.hp-page-detail.hp-has-live-total{padding-bottom:calc(150px + env(safe-area-inset-bottom))!important}
+body.hp-page-catalog .hp-live-total{display:none!important}
+
+/* v1400：压过详情页旧米色渐变背景 */
+html.hp-premium body:not(#hp-no-id){background:var(--pm-bg)!important;background-image:none!important}
+
+/* v1406: keep the live total above the cart on every composer, including Figaro. */
+.hp-live-total{flex-wrap:wrap;row-gap:4px}
+.hp-live-total-size{white-space:normal;overflow-wrap:anywhere;text-align:right;flex:1 1 140px}
+@media(max-width:360px){.hp-live-total{padding:10px 12px;gap:6px}.hp-live-total-amount{font-size:18px}.hp-live-total-size{font-size:11px}}
+
+#hpHomeCheckUpdate{border:1px solid #ccd9e1;border-radius:999px;padding:8px 12px;color:#17384f;background:#fff;font:inherit;font-size:13px;white-space:nowrap;cursor:pointer}
+#hpHomeCheckUpdate:disabled{opacity:.65;cursor:wait}
+body .update-banner{z-index:2147483646!important}
+
+/* v1407: the updater remains above the cart and within small viewports. */
+body .update-banner{position:fixed!important;left:16px!important;right:16px!important;bottom:calc(84px + env(safe-area-inset-bottom))!important;width:auto!important;max-height:calc(100dvh - 130px);overflow:auto;box-sizing:border-box;z-index:2147483646!important}
+body .update-banner-actions{display:flex;gap:12px}
+body .update-banner-actions button{flex:1;min-height:46px;font-size:16px}

@@ -1,21 +1,21 @@
 {
-  "patchVersionCode": 1406,
-  "patchVersionName": "v1406 悬浮合计与在线界面更新",
+  "patchVersionCode": 1407,
+  "patchVersionName": "v1407 在线更新修复（无需安装APK）",
   "minAppVersionCode": 1400,
-  "releaseNotes": "FG3120及Figaro选配页统一底部悬浮合计；首页增加检查更新；更新提示显示在购物车上方。旧版首次下载完成后如未刷新，请关闭并重新打开APP。",
+  "releaseNotes": "1406可直接在线更新，无需安装或覆盖APK。修复更新遮挡、下载校验和自动生效。保留购物车与本地资料。",
   "files": [
     {
       "path": "hp-live-total-v1400.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1406-floating-ui/hp-live-total-v1400.js",
-      "sha256": "849ab57b9ad99162075291829117f0d6c3df7174e088bfc2947ed8e229ccad9b",
-      "size": 6861,
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1407-legacy-online/hp-live-total-v1400.js",
+      "sha256": "f99dae3a44fc545c0b1a3c0f3991a79a115c6677e8d7dc49b3efc30fc83b5b33",
+      "size": 13364,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "path": "hp-premium-v1400.css",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1406-floating-ui/hp-premium-v1400.css",
-      "sha256": "a987ed8000529f91cb22f2c6efb93ea35dc852fa2d73b72caf960dce33480d22",
-      "size": 17983,
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1407-legacy-online/hp-premium-v1400.css",
+      "sha256": "53265554b0b7f8af757f04c7eadeea5c518d10851f69426027b588265a0b1ddd",
+      "size": 18448,
       "contentType": "text/css; charset=utf-8"
     }
   ]

@@ -1,0 +1,116 @@
+{
+  "mode": "fixed",
+  "checks": [
+    {
+      "name": "Authentic 1406 patch on unchanged 1405 native assets and original worker",
+      "pass": true
+    },
+    {
+      "name": "Saved cart exists before update",
+      "pass": true
+    },
+    {
+      "name": "Existing1406 update button can start repair",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "x": 295,
+        "y": 771,
+        "w": 62,
+        "h": 40
+      }
+    },
+    {
+      "name": "1406 to1407 completes automatically through online patch only",
+      "pass": true
+    },
+    {
+      "name": "Native version and worker unchanged, no APK requested",
+      "pass": true
+    },
+    {
+      "name": "Cart and settings preserved by first update",
+      "pass": true
+    },
+    {
+      "name": "Repair survives reopening",
+      "pass": true
+    },
+    {
+      "name": "Update reachable at 390x844",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "x": 201,
+        "y": 699,
+        "w": 158,
+        "h": 46
+      }
+    },
+    {
+      "name": "Update reachable at 320x640",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "x": 166,
+        "y": 495,
+        "w": 123,
+        "h": 46
+      }
+    },
+    {
+      "name": "Update reachable at 844x390",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "x": 428,
+        "y": 245,
+        "w": 385,
+        "h": 46
+      }
+    },
+    {
+      "name": "Subsequent online update also automatically activates",
+      "pass": true
+    },
+    {
+      "name": "Cart and settings preserved again",
+      "pass": true
+    },
+    {
+      "name": "Updated interface survives offline reopen",
+      "pass": true
+    },
+    {
+      "name": "Corrupt file rejected without advancing version",
+      "pass": true
+    },
+    {
+      "name": "Failed update retains last working UI",
+      "pass": true
+    },
+    {
+      "name": "Original native web assets remain byte-identical",
+      "pass": true
+    },
+    {
+      "name": "No APK installation/download and no application errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "apkInstalled": false,
+  "nativeAndroidTested": false,
+  "sourceFiles": {
+    "hp-live-total-v1400.js": {
+      "sha256": "f99dae3a44fc545c0b1a3c0f3991a79a115c6677e8d7dc49b3efc30fc83b5b33",
+      "bytes": 13364
+    },
+    "hp-premium-v1400.css": {
+      "sha256": "53265554b0b7f8af757f04c7eadeea5c518d10851f69426027b588265a0b1ddd",
+      "bytes": 18448
+    }
+  },
+  "pass": true
+}
