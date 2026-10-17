@@ -1,0 +1,163 @@
+{
+  "version": "v1215-online-ui-item-patch",
+  "versionName": "v1215-online-ui-item-patch",
+  "patchVersionCode": 1215,
+  "patchVersionName": "v1215-online-ui-item-patch",
+  "generatedAt": "2026-07-22T10:20:08.633Z",
+  "files": [
+    {
+      "path": "app-version.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/app-version.js",
+      "sha256": "8080adacdebd5d38c6779e6b2ce4ee3b34a209edd54ebaf6e14dbf76f1cf6820",
+      "size": 652,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "app.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/app.js",
+      "sha256": "87b6fa03e34630b137b0e47e1e0cc307ea250ef0a232fb2093c6cb710ff92432",
+      "size": 3120829,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "index.html",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/index.html",
+      "sha256": "17660e5330baf0cbfeb82cbdb7c22ad137b74f00885d2f5a41b4bd0ab807c458",
+      "size": 1319592,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "styles.css",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/styles.css",
+      "sha256": "76daa784b3116545171db28f3d6d88506c6b97c25fd09fc26ed1c871c0d2e445",
+      "size": 56159,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "sw.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/sw.js",
+      "sha256": "f919fd5489b837dbab1e3f98a300f0823760a478deaaf0a81df98f47c3ae7d34",
+      "size": 3129,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "sofa-recommendations.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/sofa-recommendations.js",
+      "sha256": "ed11cadb88a2af9e14bb385a8d573dd05221e443079d174c5f789c3b705d9416",
+      "size": 106332,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "stone-tabletop.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/stone-tabletop.js",
+      "sha256": "c44a054c745403f3b2a2fd32958b85347fd370788cf7f70648fce2f7921ebc80",
+      "size": 8802,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "stone-tabletop-data.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/stone-tabletop-data.js",
+      "sha256": "1604077eb9905807af503ea3f98b4d55d5fdcb2ad3895a68bda64bd3eb446f67",
+      "size": 6490,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "table-leg-data.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/table-leg-data.js",
+      "sha256": "1aaaf3dfc0044cd51a01ea54ac3aca35c5d37cd4ef8de34e87a95c9fe7713cad",
+      "size": 160537,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "silver-star.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/silver-star.js",
+      "sha256": "7cbafd214533096a9e9c2dbbf6dd63d8fff26bc67923c1223e58503b1f50646b",
+      "size": 3575,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "silver-star-data.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/silver-star-data.js",
+      "sha256": "6d4428de7536e862bf20489918575dd8dd94b1680c3afc02a03795f333af9dd2",
+      "size": 234163,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "silver-star.css",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/silver-star.css",
+      "sha256": "8f7c29529ac9433269e272a6a914b7fe1f2dd5e418d5fd336e72d03c5ab6e1d3",
+      "size": 3829,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "silver-star.html",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/silver-star.html",
+      "sha256": "8b31f59c7251ca57cd37db82a34a632844b3128795ea28b93838d9f79922b114",
+      "size": 1475,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "gainbed-data.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/gainbed-data.js",
+      "sha256": "f66478486b2a4c0b4239c9034486b080c20a0e4acb15aafdb2043cb330f3a9a1",
+      "size": 2632,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "clearance-data.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/clearance-data.js",
+      "sha256": "5da7be4dc489d8e9b68470b0ae596e2220afb62a2bd8f3f19145a8f9a52f90aa",
+      "size": 6701,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "matching-data.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/matching-data.js",
+      "sha256": "60287a3a94ba16734014f3b8223d073f630008ac39e0ce7e17197a44d69a9f51",
+      "size": 159579,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "zolano-data.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/zolano-data.js",
+      "sha256": "899ef15337dc3773bbb66dbc3d74046b1dd2fbb011dddbcfadc01d86825fa761",
+      "size": 1305953,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "zolano3792-phone-pin.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/zolano3792-phone-pin.js",
+      "sha256": "fb4d32554f028629e1c5994fdd4cb617a70717b85f5f783dc9c27f0824c56979",
+      "size": 5403,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/photo-gallery.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/assets/photo-gallery.js",
+      "sha256": "73910bf30bb97da1ec23bf14e819b1b0766995701caf33ffaac3959460605f63",
+      "size": 12962,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "photo-gallery-viewer.js",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/photo-gallery-viewer.js",
+      "sha256": "e5920364e0d9c0db8c63da71c053b98e7cf6a37a4b4db2ac387b5d734d61632c",
+      "size": 8805,
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "photo-gallery-viewer.css",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/photo-gallery-viewer.css",
+      "sha256": "45d1bf1dd3c0d89cc5ac27f2bd0fb53d83113a4929715652b4aecc752ec7cf54",
+      "size": 1926,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "photo-viewer-v2.html",
+      "url": "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patches/v1215-online-ui-item-patch/photo-viewer-v2.html",
+      "sha256": "c914bd3b7b014e24f878d48ea177c7f3cbbb921d0232bcae8c1299b6fcbba194",
+      "size": 4411,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ]
+}
