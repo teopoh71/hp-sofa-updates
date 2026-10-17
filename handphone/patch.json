@@ -1,0 +1,23 @@
+{
+  "patchVersionCode": 1407,
+  "patchVersionName": "v1407 在线更新修复",
+  "minAppVersionCode": 1407,
+  "generatedAt": "2026-10-17T04:00:24Z",
+  "fullDownloadUrl": "https://teopoh71.github.io/hp-sofa-updates/handphone/",
+  "files": [
+    {
+      "path": "hp-live-total-v1407.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/handphone/releases/v1407/hp-live-total-v1407.js",
+      "size": 5667,
+      "sha256": "20735101594a0a4fe6c6c049ed36f4c51d1f0ab0ba42a26027e1f31c2b76cf30",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "hp-premium-v1407.css",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/handphone/releases/v1407/hp-premium-v1407.css",
+      "size": 18448,
+      "sha256": "53265554b0b7f8af757f04c7eadeea5c518d10851f69426027b588265a0b1ddd",
+      "contentType": "text/css; charset=utf-8"
+    }
+  ]
+}

@@ -1,9 +1,14 @@
 {
-    "versionCode":  1199,
-    "versionName":  "v1199-le8806-showroom-cn",
-    "patchVersionCode":  1199,
-    "patchVersionName":  "v1199-le8806-showroom-cn",
-    "patchManifestUrl":  "https://raw.githubusercontent.com/teopoh71/hp-sofa-updates/main/patch.json",
-    "apkUrl":  "https://github.com/teopoh71/hp-sofa-updates/releases/download/v1181-update-download-safe/hp-sofa-v1181-update-download-safe.apk",
-    "generatedAt":  "2026-07-20T08:23:12.9136386Z"
+  "versionCode": 1407,
+  "versionName": "Handphone v1407",
+  "patchVersionCode": 1407,
+  "patchVersionName": "v1407 在线更新修复",
+  "patchManifestUrl": "https://teopoh71.github.io/hp-sofa-updates/handphone/patch.json",
+  "apkUrl": "https://github.com/teopoh71/hp-sofa-updates/releases/download/handphone-v1407/ZOLANO-Handphone-v1407-Online-Update.apk",
+  "size": 157221665,
+  "sha256": "b10fa96156db50cd9047404089067e90d8a7368ff4b005483278793a27de42d5",
+  "packageName": "com.hp.sofabuilder",
+  "generatedAt": "2026-10-17T04:00:24Z",
+  "downloadPage": "https://teopoh71.github.io/hp-sofa-updates/handphone/",
+  "releaseNotes": "修复更新弹窗遮挡与安装后不刷新。请覆盖安装，勿卸载。"
 }
