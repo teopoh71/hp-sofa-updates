@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "name": "Legacy worker and stored cart reproduced",
+      "pass": true
+    },
+    {
+      "name": "Full package upgrade replaces legacy UI and worker",
+      "pass": true
+    },
+    {
+      "name": "1405 cart survives package upgrade",
+      "pass": true
+    },
+    {
+      "name": "Existing saved marker retained",
+      "pass": true
+    },
+    {
+      "name": "No migration application errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "nativeAndroidTested": false,
+  "pass": true
+}

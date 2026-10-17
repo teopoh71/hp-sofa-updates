@@ -1,0 +1,1 @@
+window.HP_SOFA_APP_VERSION={"versionCode":1407,"versionName":"Handphone v1407","updateManifestUrl":"https://teopoh71.github.io/hp-sofa-updates/update-mobile.json","fullDownloadUrl":"https://teopoh71.github.io/hp-sofa-updates/handphone/","patchVersionCode":1407,"patchVersionName":"v1407 在线更新修复","patchManifestUrl":"https://teopoh71.github.io/hp-sofa-updates/handphone/patch.json"};

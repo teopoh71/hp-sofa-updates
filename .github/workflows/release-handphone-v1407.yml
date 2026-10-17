@@ -1,0 +1,32 @@
+name: Publish Handphone v1407
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/release-handphone-v1407.yml']
+permissions:
+  contents: write
+concurrency:
+  group: release-handphone-v1407
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      RELEASE_SOURCE_URL: 'https://agentdock.teopoh72.workers.dev/artifacts/public/ccd3fc3354c9e5ce287be74cc038438e/ZOLANO-Handphone-v1407-Online-Update.apk?expires=1792814440&sig=ba6a45d018af57dc6e2c75f97ffecdb7cc5ad9c0f634d398de4427a39fd06fd0'
+      APK_NAME: 'ZOLANO-Handphone-v1407-Online-Update.apk'
+    steps:
+      - name: Download and verify the signed package
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 3 --max-time 600 "$RELEASE_SOURCE_URL" --output "$APK_NAME"
+          echo 'b10fa96156db50cd9047404089067e90d8a7368ff4b005483278793a27de42d5  ZOLANO-Handphone-v1407-Online-Update.apk' | sha256sum --check -
+      - name: Publish verified Handphone package
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create handphone-v1407 "$APK_NAME" --draft --target "${{ github.sha }}" --title "Handphone v1407 — Online update fix" --notes "Fix update buttons hidden behind the cart, make UI patches activate automatically, and preserve existing app data. Install over Handphone v1405; do not uninstall. Package: com.hp.sofabuilder; versionCode: 1407; same signing certificate. SHA-256: b10fa96156db50cd9047404089067e90d8a7368ff4b005483278793a27de42d5. Browser UI and migration checks passed; physical Android device installation has not been tested." --latest=false
+          gh release edit handphone-v1407 --draft=false --latest=false

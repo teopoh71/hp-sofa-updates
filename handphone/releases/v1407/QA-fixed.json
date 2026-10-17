@@ -1,0 +1,135 @@
+{
+  "checks": [
+    {
+      "name": "Native v1407 UI loaded",
+      "pass": true
+    },
+    {
+      "name": "Cart data created",
+      "pass": true,
+      "details": [
+        {
+          "key": "[\"current\",\"zolano\",\"ZL 3776\",[\"ZL3776-ARM\"],null,1,{},1,false,\"\"]",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "name": "Update button center is visible and tappable",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "rect": {
+          "x": 201,
+          "y": 699,
+          "width": 158,
+          "height": 46
+        },
+        "hit": "primary-button",
+        "view": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    },
+    {
+      "name": "Download reachable 320x640",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "rect": {
+          "x": 166,
+          "y": 495,
+          "width": 123,
+          "height": 46
+        },
+        "hit": "primary-button",
+        "view": {
+          "width": 320,
+          "height": 640
+        }
+      }
+    },
+    {
+      "name": "Download reachable 393x852",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "rect": {
+          "x": 202.5,
+          "y": 707,
+          "width": 159.5,
+          "height": 46
+        },
+        "hit": "primary-button",
+        "view": {
+          "width": 393,
+          "height": 852
+        }
+      }
+    },
+    {
+      "name": "Download reachable 844x390",
+      "pass": true,
+      "details": {
+        "pass": true,
+        "rect": {
+          "x": 428,
+          "y": 245,
+          "width": 385,
+          "height": 46
+        },
+        "hit": "primary-button",
+        "view": {
+          "width": 844,
+          "height": 390
+        }
+      }
+    },
+    {
+      "name": "UI patch automatically loads without reinstall or manual reopen",
+      "pass": true
+    },
+    {
+      "name": "Version marker commits after update",
+      "pass": true
+    },
+    {
+      "name": "Cart and saved data preserved",
+      "pass": true
+    },
+    {
+      "name": "FG3120 floating total remains correct",
+      "pass": true
+    },
+    {
+      "name": "Price bar remains above cart",
+      "pass": true,
+      "details": {
+        "bottom": 769,
+        "cartTop": 777
+      }
+    },
+    {
+      "name": "Update survives restart",
+      "pass": true
+    },
+    {
+      "name": "Updated UI available offline",
+      "pass": true
+    },
+    {
+      "name": "Corrupted download rejected without advancing version",
+      "pass": true
+    },
+    {
+      "name": "No application errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "errors": [],
+  "nativeAndroidTested": false,
+  "dialog": "小更新失败：文件校验失败，请重试",
+  "pass": true
+}

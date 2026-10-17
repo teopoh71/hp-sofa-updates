@@ -1,0 +1,52 @@
+{
+  "pass_": true,
+  "result": "verified-local-handphone-release",
+  "completedAt": "2026-10-17T04:00:24.165398+00:00",
+  "apk": "ZOLANO-Handphone-v1407-Online-Update.apk",
+  "sha256": "b10fa96156db50cd9047404089067e90d8a7368ff4b005483278793a27de42d5",
+  "bytes": 157221665,
+  "package": {
+    "package": "com.hp.sofabuilder",
+    "versionCode": 1407,
+    "versionName": "1.4.07"
+  },
+  "certificateSha256": "48cd7834cdc16c38ca46943a9f1c408fe9b860243c111c2590f908d29622d4c8",
+  "baseSha256": "0fb7798c232f96d1c62a521aa9d069b0588781c47db78fe0d641dcd9c817caab",
+  "sourceFiles": {
+    "app-version.js": {
+      "sha256": "e6dbad3df77c2d1ec0a1beae262ea6c5a7cffe6c24df4deb0cdaaf2db34272c2",
+      "bytes": 394
+    },
+    "app.js": {
+      "sha256": "867d040435c3855477a851fd0155b88e70c71571975c24e17b4990f96597377e",
+      "bytes": 939354
+    },
+    "hp-live-total-v1407.js": {
+      "sha256": "20735101594a0a4fe6c6c049ed36f4c51d1f0ab0ba42a26027e1f31c2b76cf30",
+      "bytes": 5667
+    },
+    "hp-premium-v1407.css": {
+      "sha256": "53265554b0b7f8af757f04c7eadeea5c518d10851f69426027b588265a0b1ddd",
+      "bytes": 18448
+    },
+    "index.html": {
+      "sha256": "7a566bc72554eade28747acee4fb98563fb52cd370f93d80400d7832c7fa0310",
+      "bytes": 72860
+    },
+    "sw.js": {
+      "sha256": "a64e8a4e0cd46d94ef4ed7bee1a41e57bb8aeee400b191992cdacb77731b856f",
+      "bytes": 1927
+    }
+  },
+  "unchangedEntries": 5628,
+  "totalEntries": 5638,
+  "zipCrcPassed": true,
+  "signatureVerified": true,
+  "alignmentVerified": true,
+  "nativeLibraries": [],
+  "nativeAndroidTested": false,
+  "browserTests": {
+    "fixed": 15,
+    "migration": 5
+  }
+}
