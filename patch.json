@@ -6,14 +6,14 @@
   "files": [
     {
       "path": "hp-live-total-v1400.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1408-2628-gallery/hp-live-total-v1400.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1408-2628-gallery-r2/hp-live-total-v1400.js",
       "sha256": "c0003c8d6b01eba87cb4ce2317724281e879014db31b0075fa2f699058cc4487",
       "size": 21958,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
       "path": "hp-premium-v1400.css",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1408-2628-gallery/hp-premium-v1400.css",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1408-2628-gallery-r2/hp-premium-v1400.css",
       "sha256": "53265554b0b7f8af757f04c7eadeea5c518d10851f69426027b588265a0b1ddd",
       "size": 18448,
       "contentType": "text/css; charset=utf-8"
