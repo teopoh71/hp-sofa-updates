@@ -1,8 +1,11 @@
 {
-  "patchVersionCode": 1415,
-  "patchVersionName": "Company v1415 · 沙发拼接与报价修复",
+  "patchVersionCode": 1416,
+  "patchVersionName": "v1416 C335 木家具搭配图",
   "minAppVersionCode": 1400,
-  "releaseNotes": "修复3752高度、3705贵妃待核保护、3861电动数量及3135配置展示；保留木家具售价和搭配图。",
+  "releaseNotes": [
+    "新增 KJT-6748 目录规格150/90 + C335 4/6/8椅 AI搭配展示图；保留 v1415 沙发修复及现有价格。",
+    "修复3752高度、3705贵妃待核保护、3861电动数量及3135配置展示；保留木家具售价和搭配图。"
+  ],
   "files": [
     {
       "path": "hp-live-total-v1400.js",
@@ -131,10 +134,31 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1416/kjt-6748-150-90-c335-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1416-c335-scenes3/images/kjt-6748-150-90-c335-4.png",
+      "size": 2185194,
+      "sha256": "088e1554fc90911cbe04e9210f333ed7891f9e181113991276fa2e87cd71fe86",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1416/kjt-6748-150-90-c335-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1416-c335-scenes3/images/kjt-6748-150-90-c335-6.png",
+      "size": 2213390,
+      "sha256": "2e1c2e18ccd7e5b1aa279a2b2e62993d9d70554b750dce3c3560cdb74cb7b720",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1416/kjt-6748-150-90-c335-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1416-c335-scenes3/images/kjt-6748-150-90-c335-8.png",
+      "size": 2161025,
+      "sha256": "929bc64c88b2f922824394bb8995dda89385b166eb22b1a0f548175896c3bbb0",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/hp-wood.js",
-      "size": 11190,
-      "sha256": "4bbedbc52712c6c2e8d56bef35f19a7a2f5dc8a646deb477906e56b8a3502aec",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1416-c335-scenes3/hp-wood.js",
+      "size": 13447,
+      "sha256": "da14d5f503d7cb28d83b7d1ea9a146c671e7dd6b0a7d102e7cf5bd85e78edf70",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -166,5 +190,5 @@
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "generatedAt": "2026-10-18T17:36:15.137Z"
+  "generatedAt": "2026-10-18T18:20:03.525Z"
 }
