@@ -1,8 +1,9 @@
 {
-  "patchVersionCode": 1424,
-  "patchVersionName": "v1424 135/80 八椅木家具搭配图",
+  "patchVersionCode": 1425,
+  "patchVersionName": "v1425 135/80 木家具搭配图",
   "minAppVersionCode": 1400,
   "releaseNotes": [
+    "新增 KJT-6748 135/80 AI搭配展示图：C6901配8椅、C6898配6椅与8椅；保留 v1424 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C2602、C67/C72、C2331各8椅；保留 v1423 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 + C6901 AI搭配展示图：150/90配4椅与8椅、135/80配6椅；保留 v1422 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C67-C72 4/6/8椅 AI搭配展示图；保留 v1421 场景和 v1415 沙发修复及现有价格。",
@@ -331,10 +332,31 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1425/kjt-6748-135-80-c6901-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1425-135-next3/images/kjt-6748-135-80-c6901-8.png",
+      "size": 2251265,
+      "sha256": "b3bf606e02588d0995eda39b073d2f005e60e1eeaf6999f754310334f8b94188",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1425/kjt-6748-135-80-c6898-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1425-135-next3/images/kjt-6748-135-80-c6898-6.png",
+      "size": 2308108,
+      "sha256": "e031ab7b3aa6867cc703679a68d02ca866890c8089795c74af9de12ade476a92",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1425/kjt-6748-135-80-c6898-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1425-135-next3/images/kjt-6748-135-80-c6898-8.png",
+      "size": 2360177,
+      "sha256": "72b13857e92d2244118b47e6672ac58fffe9ced6fe3d68593d19529d8fbb2a98",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1424-135-eight3/hp-wood.js",
-      "size": 31614,
-      "sha256": "33280119e8b4e2946c17a223dc7fe89ceba08c67742dc6518ea9862b3ff2e74f",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1425-135-next3/hp-wood.js",
+      "size": 33900,
+      "sha256": "b9f25bff6fe7e5587152ae20febbf6e6bf827feed224ecd0440940307db3928f",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -366,5 +388,5 @@
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "generatedAt": "2026-10-18T22:47:19.372Z"
+  "generatedAt": "2026-10-18T23:19:37.618Z"
 }
