@@ -1,8 +1,8 @@
 {
-  "patchVersionCode": 1418,
-  "patchVersionName": "v1418 C6898 木家具搭配图",
+  "patchVersionCode": 1419,
+  "patchVersionName": "v1419 C46 木家具搭配图",
   "minAppVersionCode": 1407,
-  "generatedAt": "2026-10-18T19:24:05.133Z",
+  "generatedAt": "2026-10-18T20:21:02.919Z",
   "fullDownloadUrl": "https://teopoh71.github.io/hp-sofa-updates/handphone/",
   "files": [
     {
@@ -195,10 +195,31 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1419/kjt-6748-150-90-c46-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1419-c46-scenes3/images/kjt-6748-150-90-c46-4.png",
+      "size": 2179488,
+      "sha256": "eae05c2c93c73c2cf6897b05ba1bbe1b2468574f6949debe5aaccc6f814e7cda",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1419/kjt-6748-150-90-c46-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1419-c46-scenes3/images/kjt-6748-150-90-c46-6.png",
+      "size": 2244563,
+      "sha256": "626fb054150969312f5370b0214cbfea7ee559184fcf0b350466c177407da2d0",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1419/kjt-6748-150-90-c46-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1419-c46-scenes3/images/kjt-6748-150-90-c46-8.png",
+      "size": 2188851,
+      "sha256": "1597e0544248525ed20114185c9b928350d632d536310ae4d25e88b410351c15",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1418-c6898-scenes3/hp-wood.js",
-      "size": 17991,
-      "sha256": "fdd98c3b961bcf9bfa3bacc1c2c6853b39114bbe163ec11b4f7c3bed8a09f860",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1419-c46-scenes3/hp-wood.js",
+      "size": 20233,
+      "sha256": "a0fc96b60a7972cf12d1e8702defd17d062fad7159e39e2be8df0aa29faf810b",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -245,6 +266,7 @@
     }
   ],
   "releaseNotes": [
+    "新增 KJT-6748 目录规格150/90 + C46 4/6/8椅 AI搭配展示图；保留 v1418 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C6898 4/6/8椅 AI搭配展示图；保留 v1417 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C2602 4/6/8椅 AI搭配展示图；保留 v1416 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C335 4/6/8椅 AI搭配展示图；保留 v1415 沙发修复及现有价格。",
