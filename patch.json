@@ -1,8 +1,9 @@
 {
-  "patchVersionCode": 1422,
-  "patchVersionName": "v1422 C67-C72 木家具搭配图",
+  "patchVersionCode": 1423,
+  "patchVersionName": "v1423 C6901 木家具搭配图",
   "minAppVersionCode": 1400,
   "releaseNotes": [
+    "新增 KJT-6748 + C6901 AI搭配展示图：150/90配4椅与8椅、135/80配6椅；保留 v1422 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C67-C72 4/6/8椅 AI搭配展示图；保留 v1421 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C33 4/6/8椅 AI搭配展示图；保留 v1420 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C2331 4/6/8椅 AI搭配展示图；保留 v1419 场景和 v1415 沙发修复及现有价格。",
@@ -287,10 +288,31 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1423/kjt-6748-150-90-c6901-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1423-c6901-scenes3/images/kjt-6748-150-90-c6901-4.png",
+      "size": 2225963,
+      "sha256": "7a5a424ab80c37ac614e906e57cfdd6eaa9abe6dd3541246a61baef8980f1e49",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1423/kjt-6748-135-80-c6901-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1423-c6901-scenes3/images/kjt-6748-135-80-c6901-6.png",
+      "size": 2277512,
+      "sha256": "d5c0e38173f78bcd97548a9a2986bed9dfb71794d3cd1aeb054cb8e8ce7b7c15",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1423/kjt-6748-150-90-c6901-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1423-c6901-scenes3/images/kjt-6748-150-90-c6901-8.png",
+      "size": 2384491,
+      "sha256": "7f7f1107935e7d0d99ea845929e47d15310dfd63174f83b78dd22a1b93b28f2c",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1422-c67-c72-scenes3/hp-wood.js",
-      "size": 27047,
-      "sha256": "875c777d2ff77dbb598ebbe0031b03df00a3f319f79d8d6b180438985b1a1208",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1423-c6901-scenes3/hp-wood.js",
+      "size": 29319,
+      "sha256": "7598bc5957d92f5cc1fd78be958e5f18beb5945eeed1932be05f6bd7f7ce7f82",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -322,5 +344,5 @@
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "generatedAt": "2026-10-18T21:46:36.897Z"
+  "generatedAt": "2026-10-18T22:16:25.989Z"
 }
