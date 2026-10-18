@@ -1,8 +1,8 @@
 {
-  "patchVersionCode": 1413,
-  "patchVersionName": "v1413 木家具售价更新",
+  "patchVersionCode": 1414,
+  "patchVersionName": "v1414 木家具15组搭配图",
   "minAppVersionCode": 1407,
-  "generatedAt": "2026-10-18T09:41:23.397Z",
+  "generatedAt": "2026-10-18T15:36:58.692Z",
   "fullDownloadUrl": "https://teopoh71.github.io/hp-sofa-updates/handphone/",
   "files": [
     {
@@ -27,12 +27,117 @@
       "contentType": "text/javascript; charset=utf-8"
     },
     {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c60-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c60-4.png",
+      "size": 2299428,
+      "sha256": "0aeb89046ac3b20b118da96ed835cb618b19f019c790115cb1ae38a6222d1c4b",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c60-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c60-6.png",
+      "size": 2185632,
+      "sha256": "339d607cbfb227f5b48704ed8177789f0cef103f3990926428bb16e18dcf18ca",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c60-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c60-8.png",
+      "size": 2186686,
+      "sha256": "5f6c0f7015d20390443a0b0e3182aef5333e2740b7f54547a3703dcc7e198cff",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-135-80-c60-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-135-80-c60-6.png",
+      "size": 2225228,
+      "sha256": "077c77fc79a9409272c0c818c105c29d2836a0919d80b6ceedb2c321f4f62a39",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-135-80-c60-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-135-80-c60-8.png",
+      "size": 2208988,
+      "sha256": "6e9d64cba25ddb81eb1bf8c055d074804d1c7e11837db00b19ef7e4e898aa720",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c52-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c52-4.png",
+      "size": 2150933,
+      "sha256": "640767666be75a61cfc7e0c6cb96cde4ab993311cafbe8ba78f0bcfcab92560f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c52-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c52-6.png",
+      "size": 2197069,
+      "sha256": "69f42ebb142a1c4c2365321d3cb24c264fb16d5a8eb958f8aab22bf91c14a52d",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c52-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c52-8.png",
+      "size": 2208072,
+      "sha256": "521672a6d611de654c96a67580468c56fe1911934819dcf37be40f03f59e473b",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-135-80-c52-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-135-80-c52-6.png",
+      "size": 2207372,
+      "sha256": "2b8c067456a45417e748ea8d79a2ee33d862473f7601f6dc27223d711def2997",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-135-80-c52-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-135-80-c52-8.png",
+      "size": 2522237,
+      "sha256": "50908ccaa8f800fa1a635b364eed75ec9fd9bebed11445435b2a8f1acd316057",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c70-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c70-4.png",
+      "size": 2183073,
+      "sha256": "7819435d03f474eab01b634c34ee19bf3bffe5e6b86959ed5932e684e7f1647d",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c70-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c70-6.png",
+      "size": 2301467,
+      "sha256": "488fe3a6c898ae10a40076501af440bd03dfadcbe688ce56ca983eda612b76ae",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-150-90-c70-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-150-90-c70-8.png",
+      "size": 2354636,
+      "sha256": "94c4af5e1ea8a26930e751179f52677dec6b4fd5109e95ca11ec9212fe361b75",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-135-80-c70-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-135-80-c70-6.png",
+      "size": 2235024,
+      "sha256": "b9d5f55dc01435864b3c388ceb566de59446d9b0a37e4839618906f8dec2203f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1414/kjt-6748-135-80-c70-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/images/kjt-6748-135-80-c70-8.png",
+      "size": 2285511,
+      "sha256": "bf16efc8efd150af7b9d3ec0acfb352630edfe703ccd58db653f65b6c0767072",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1411-kjt688/hp-wood.js",
-      "size": 6146,
-      "sha256": "1e17d40743aa160abb891e989a419a25bf763b73808b8255abfb57ca088c96b2",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1414-wood-scenes15/hp-wood.js",
+      "size": 11190,
+      "sha256": "4bbedbc52712c6c2e8d56bef35f19a7a2f5dc8a646deb477906e56b8a3502aec",
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "releaseNotes": "更新木家具售价，保留现有购物车数量、折扣及手动价格；无需安装APK。"
+  "releaseNotes": "增加15组已验收木家具搭配示意图；保留现有售价、购物车和折扣，无需安装APK。"
 }
