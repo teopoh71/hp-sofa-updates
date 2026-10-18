@@ -1,15 +1,15 @@
 {
-  "patchVersionCode": 1414,
-  "patchVersionName": "v1414 木家具15组搭配图",
+  "patchVersionCode": 1415,
+  "patchVersionName": "v1415 沙发配置与报价修复",
   "minAppVersionCode": 1407,
-  "generatedAt": "2026-10-18T15:36:58.692Z",
+  "generatedAt": "2026-10-18T17:09:39.505Z",
   "fullDownloadUrl": "https://teopoh71.github.io/hp-sofa-updates/handphone/",
   "files": [
     {
       "path": "hp-live-total-v1407.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1413-wood-price-23/hp-live-total-v1407.js",
-      "size": 23198,
-      "sha256": "d1c9c62fa4e809b53c440c1c769d41b2deb3cbdd98f16e63bbdad88d0e826acf",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-sofa14/handphone/hp-live-total-v1407.js",
+      "size": 26324,
+      "sha256": "9f48c659056f3b89954dfd3373a3275dc829a30c59a6a55d674543681aee8564",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -137,7 +137,49 @@
       "size": 11190,
       "sha256": "4bbedbc52712c6c2e8d56bef35f19a7a2f5dc8a646deb477906e56b8a3502aec",
       "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "quotation-cart-v1374.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-sofa14/handphone/quotation-cart-v1374.js",
+      "size": 36390,
+      "sha256": "359782bb4c1029da4f61890b5b2710dba54db86a98f0bb3b1b9118ec541b258a",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "quotation-core-v1374.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-sofa14/handphone/quotation-core-v1374.js",
+      "size": 10415,
+      "sha256": "8050c37486ba873eea59c3e66a3d924769eeee575a7b8de151042b79d2ed1cb8",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "zolano-3861-composer.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-sofa14/handphone/zolano-3861-composer.js",
+      "size": 31330,
+      "sha256": "7fa9beb62eba960329156e68689fe3f65c46fe0097b5d168e457f50776dcf526",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "zolano-3861-pricing.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-sofa14/handphone/zolano-3861-pricing.js",
+      "size": 3496,
+      "sha256": "15479315ff9d7cf7c29189a2b1d37b94532c70a77d64325cdf96be89c86c6adf",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "zolano-first10-composer.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-sofa14/handphone/zolano-first10-composer.js",
+      "size": 59544,
+      "sha256": "b3b62e83b635455e0146f9b30ec65eebd3206dcd74d9119122d66ef9298dfa4e",
+      "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "figaro-modular-v1267.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-sofa14/handphone/figaro-modular-v1267.js",
+      "size": 29668,
+      "sha256": "8127861698cc29cfb452afe46523057b0a6039f160da4a293fa9938acbe68b59",
+      "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "releaseNotes": "增加15组已验收木家具搭配示意图；保留现有售价、购物车和折扣，无需安装APK。"
+  "releaseNotes": "修复3752高度、3705贵妃待核保护、3861电动数量及3135配置展示；保留木家具售价和搭配图。"
 }
