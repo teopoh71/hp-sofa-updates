@@ -1,8 +1,9 @@
 {
-  "patchVersionCode": 1423,
-  "patchVersionName": "v1423 C6901 木家具搭配图",
+  "patchVersionCode": 1424,
+  "patchVersionName": "v1424 135/80 八椅木家具搭配图",
   "minAppVersionCode": 1400,
   "releaseNotes": [
+    "新增 KJT-6748 135/80 AI搭配展示图：C2602、C67/C72、C2331各8椅；保留 v1423 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 + C6901 AI搭配展示图：150/90配4椅与8椅、135/80配6椅；保留 v1422 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C67-C72 4/6/8椅 AI搭配展示图；保留 v1421 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C33 4/6/8椅 AI搭配展示图；保留 v1420 场景和 v1415 沙发修复及现有价格。",
@@ -309,10 +310,31 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1424/kjt-6748-135-80-c2602-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1424-135-eight3/images/kjt-6748-135-80-c2602-8.png",
+      "size": 2332070,
+      "sha256": "7cb6ace31672de838b45afbf09fde170dc8e6961bffa0448ccdbe2edbd69dcd9",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1424/kjt-6748-135-80-c67-c72-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1424-135-eight3/images/kjt-6748-135-80-c67-c72-8.png",
+      "size": 2209407,
+      "sha256": "a187320cd8e1e6e744ae1b99d315baeb1d8b330b3ccd824ec5e05d5d3edda93c",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1424/kjt-6748-135-80-c2331-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1424-135-eight3/images/kjt-6748-135-80-c2331-8.png",
+      "size": 2243878,
+      "sha256": "0b8fdd04554450e7587672e6feb1e47e92178d03ee7c2cf805c456875f955662",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1423-c6901-scenes3/hp-wood.js",
-      "size": 29319,
-      "sha256": "7598bc5957d92f5cc1fd78be958e5f18beb5945eeed1932be05f6bd7f7ce7f82",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1424-135-eight3/hp-wood.js",
+      "size": 31614,
+      "sha256": "33280119e8b4e2946c17a223dc7fe89ceba08c67742dc6518ea9862b3ff2e74f",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -344,5 +366,5 @@
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "generatedAt": "2026-10-18T22:16:25.989Z"
+  "generatedAt": "2026-10-18T22:47:19.372Z"
 }
