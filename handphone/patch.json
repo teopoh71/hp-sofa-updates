@@ -1,15 +1,15 @@
 {
-  "patchVersionCode": 1408,
-  "patchVersionName": "v1408 2628图库补齐",
+  "patchVersionCode": 1410,
+  "patchVersionName": "v1410 门店木家具价格更新",
   "minAppVersionCode": 1407,
-  "generatedAt": "2026-10-17T09:56:41.371091+00:00",
+  "generatedAt": "2026-10-18T04:42:15.988Z",
   "fullDownloadUrl": "https://teopoh71.github.io/hp-sofa-updates/handphone/",
   "files": [
     {
       "path": "hp-live-total-v1407.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/handphone/releases/v1408-2628-gallery-r2/hp-live-total-v1407.js",
-      "size": 14261,
-      "sha256": "a7c41b7fe473eecb587d231c6a972e2baf98ca948eebc2848567cca9e9d6b30d",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1410-wood-price-28/hp-live-total-v1407.js",
+      "size": 18347,
+      "sha256": "fb514e55da62a14933114d6f369702b744c8ff19024e9c407ec2560b461421de",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -18,7 +18,14 @@
       "size": 18448,
       "sha256": "53265554b0b7f8af757f04c7eadeea5c518d10851f69426027b588265a0b1ddd",
       "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "wood-furniture/wood-data.js",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1410-wood-price-28/wood-data.js",
+      "sha256": "f06be739adc49f0bf1cc575a8614f51ee16e36386832a69a8d2942ae5e3103fa",
+      "size": 7991,
+      "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "releaseNotes": "恢复2628／26282的24张原有买家秀。保留现有价格、组合、购物车和更新方式。"
+  "releaseNotes": "更新门店木家具售价。保留现有折扣、人工改价、沙发价格、图库和线上更新方式。"
 }
