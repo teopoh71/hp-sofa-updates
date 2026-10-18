@@ -1,14 +1,14 @@
 {
-  "patchVersionCode": 1411,
-  "patchVersionName": "v1411 KJT-688天然冰花",
+  "patchVersionCode": 1413,
+  "patchVersionName": "v1413 木家具售价更新",
   "minAppVersionCode": 1400,
-  "releaseNotes": "补充KJT-688天然冰花180×90厘米与200×100厘米规格售价；保留现有折扣和报价规则。",
+  "releaseNotes": "更新木家具售价，保留现有购物车数量、折扣及手动价格；无需安装APK。",
   "files": [
     {
       "path": "hp-live-total-v1400.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1410-wood-price-28/hp-live-total-v1400.js",
-      "sha256": "8842cf0d588fbef1626539d84488fbcf6d57279bd76570ebc7685ea4782e7250",
-      "size": 26044,
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1413-wood-price-23/hp-live-total-v1400.js",
+      "sha256": "c8e9b1e74816db18dc5322349a32fe894ffaec76529da946807fc3c1f3830b16",
+      "size": 30895,
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -20,9 +20,9 @@
     },
     {
       "path": "wood-furniture/wood-data.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1411-kjt688/wood-data.js",
-      "size": 8060,
-      "sha256": "68aeed95bc1652d35ca7969bb4b3357716f2ff241e777964965c401c23d09c05",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1413-wood-price-23/wood-data.js",
+      "size": 8120,
+      "sha256": "b74c581280f480126575246a6d3e86b7a83dea2c05fe78e1bf789d44bce9b132",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -33,5 +33,5 @@
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "generatedAt": "2026-10-18T05:43:07.065Z"
+  "generatedAt": "2026-10-18T09:41:23.397Z"
 }
