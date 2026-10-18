@@ -1,8 +1,9 @@
 {
-  "patchVersionCode": 1420,
-  "patchVersionName": "v1420 C2331 木家具搭配图",
+  "patchVersionCode": 1421,
+  "patchVersionName": "v1421 C33 木家具搭配图",
   "minAppVersionCode": 1400,
   "releaseNotes": [
+    "新增 KJT-6748 目录规格150/90 + C33 4/6/8椅 AI搭配展示图；保留 v1420 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C2331 4/6/8椅 AI搭配展示图；保留 v1419 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C46 4/6/8椅 AI搭配展示图；保留 v1418 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 目录规格150/90 + C6898 4/6/8椅 AI搭配展示图；保留 v1417 场景和 v1415 沙发修复及现有价格。",
@@ -243,10 +244,31 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1421/kjt-6748-150-90-c33-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1421-c33-scenes3/images/kjt-6748-150-90-c33-4.png",
+      "size": 2372998,
+      "sha256": "e8de730bb6167239ccebcb0722368951b4a4d61f76762ae1281190bc2f9ccc4e",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1421/kjt-6748-150-90-c33-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1421-c33-scenes3/images/kjt-6748-150-90-c33-6.png",
+      "size": 2440051,
+      "sha256": "a5e65a24f065036b66ec0d1fcda0777ffa605e038aa39a7ac40ee316545043b8",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1421/kjt-6748-150-90-c33-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1421-c33-scenes3/images/kjt-6748-150-90-c33-8.png",
+      "size": 2359582,
+      "sha256": "a04fbc78aeabdb2d3e674016ebca9ef1b37077107ff20b45cdc52e12b0d8f577",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1420-c2331-scenes3/hp-wood.js",
-      "size": 22505,
-      "sha256": "f091d40b35bdbcbf3a3271ebb5176161c3fd02665b020a9cdf3644f372029dd9",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1421-c33-scenes3/hp-wood.js",
+      "size": 24747,
+      "sha256": "3cc1a6aac0fc581a14c7dd0dc75d4a44e1d1149c9b2aabb07c18361a07e1b383",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -278,5 +300,5 @@
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "generatedAt": "2026-10-18T20:49:57.195Z"
+  "generatedAt": "2026-10-18T21:18:59.866Z"
 }
