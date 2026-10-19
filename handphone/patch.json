@@ -1,8 +1,8 @@
 {
-  "patchVersionCode": 1426,
-  "patchVersionName": "v1426 135/80 木家具搭配图",
+  "patchVersionCode": 1427,
+  "patchVersionName": "v1427 C29 150/90 四椅搭配图",
   "minAppVersionCode": 1407,
-  "generatedAt": "2026-10-18T23:57:22.549Z",
+  "generatedAt": "2026-10-19T00:29:40.834Z",
   "fullDownloadUrl": "https://teopoh71.github.io/hp-sofa-updates/handphone/",
   "files": [
     {
@@ -356,10 +356,17 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1427/kjt-6748-150-90-c29-4.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1427-c29-150-four/images/kjt-6748-150-90-c29-4.png",
+      "size": 2577794,
+      "sha256": "0bb4762982886d4e74cdfaebac75b30e3445d7376b7f93c5e5aa5bc0f5238adc",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1426-135-c33-final2/hp-wood.js",
-      "size": 35959,
-      "sha256": "ddc286ddc5774fb0bcfd1fe65ec3a6533fb3f1897a9add96b0454f9568196ef7",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1427-c29-150-four/hp-wood.js",
+      "size": 37784,
+      "sha256": "f51bdac608164e01dda46d125d16101cfdc995c23bda62c53c2cb16f795737ab",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -406,6 +413,7 @@
     }
   ],
   "releaseNotes": [
+    "新增 KJT-6748 150/90 配4张C29椅 AI搭配展示图，椅型依据原厂中央背撑结构；保留 v1426 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C33配6椅与8椅；保留 v1425 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C6901配8椅、C6898配6椅与8椅；保留 v1424 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C2602、C67/C72、C2331各8椅；保留 v1423 场景和 v1415 沙发修复及现有价格。",
