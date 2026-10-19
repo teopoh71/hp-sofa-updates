@@ -1,8 +1,9 @@
 {
-  "patchVersionCode": 1425,
-  "patchVersionName": "v1425 135/80 木家具搭配图",
+  "patchVersionCode": 1426,
+  "patchVersionName": "v1426 135/80 木家具搭配图",
   "minAppVersionCode": 1400,
   "releaseNotes": [
+    "新增 KJT-6748 135/80 AI搭配展示图：C33配6椅与8椅；保留 v1425 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C6901配8椅、C6898配6椅与8椅；保留 v1424 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C2602、C67/C72、C2331各8椅；保留 v1423 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 + C6901 AI搭配展示图：150/90配4椅与8椅、135/80配6椅；保留 v1422 场景和 v1415 沙发修复及现有价格。",
@@ -353,10 +354,24 @@
       "contentType": "image/png"
     },
     {
+      "path": "wood-furniture/scene-images/v1426/kjt-6748-135-80-c33-6.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1426-135-c33-final2/images/kjt-6748-135-80-c33-6.png",
+      "size": 2281491,
+      "sha256": "684858a0bf3ae9e30c47ac5ce1a14be82b66934a7d06badef1a9d021f044430a",
+      "contentType": "image/png"
+    },
+    {
+      "path": "wood-furniture/scene-images/v1426/kjt-6748-135-80-c33-8.png",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1426-135-c33-final2/images/kjt-6748-135-80-c33-8.png",
+      "size": 2278151,
+      "sha256": "5dd0d2f4d1a6fb46f579bfff3f7947fc3e2d35dd7b90bf7a898c1978586f61b9",
+      "contentType": "image/png"
+    },
+    {
       "path": "wood-furniture/hp-wood.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1425-135-next3/hp-wood.js",
-      "size": 33900,
-      "sha256": "b9f25bff6fe7e5587152ae20febbf6e6bf827feed224ecd0440940307db3928f",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1426-135-c33-final2/hp-wood.js",
+      "size": 35959,
+      "sha256": "ddc286ddc5774fb0bcfd1fe65ec3a6533fb3f1897a9add96b0454f9568196ef7",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -388,5 +403,5 @@
       "contentType": "text/javascript; charset=utf-8"
     }
   ],
-  "generatedAt": "2026-10-18T23:19:37.618Z"
+  "generatedAt": "2026-10-18T23:57:22.547Z"
 }
