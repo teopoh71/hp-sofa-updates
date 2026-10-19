@@ -1,8 +1,9 @@
 {
-  "patchVersionCode": 1427,
-  "patchVersionName": "v1427 C29 150/90 四椅搭配图",
+  "patchVersionCode": 1429,
+  "patchVersionName": "v1429 木家具SHOP售价×2.8",
   "minAppVersionCode": 1400,
   "releaseNotes": [
+    "木家具SHOP的52项已核实规格改为成本×2.8，单件四舍五入到整元；组合、购物车及报价同步，折扣沿用原取整规则；待核价保持待核。",
     "新增 KJT-6748 150/90 配4张C29椅 AI搭配展示图，椅型依据原厂中央背撑结构；保留 v1426 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C33配6椅与8椅；保留 v1425 场景和 v1415 沙发修复及现有价格。",
     "新增 KJT-6748 135/80 AI搭配展示图：C6901配8椅、C6898配6椅与8椅；保留 v1424 场景和 v1415 沙发修复及现有价格。",
@@ -20,9 +21,9 @@
   "files": [
     {
       "path": "hp-live-total-v1400.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1415-company-compat/hp-live-total-v1400.js",
-      "size": 36834,
-      "sha256": "857506155fbf597ce06e40da5c9848e3095a6d3bf4066153f73fff6f42c5f02a",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1429-wood-price28/company/hp-live-total-v1400.js",
+      "size": 42467,
+      "sha256": "8cdfe2ccef21cc4d475e933c8f6f942a95f9a7c16c466b1deba5cafc5350cbb3",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -34,9 +35,9 @@
     },
     {
       "path": "wood-furniture/wood-data.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1413-wood-price-23/wood-data.js",
-      "size": 8120,
-      "sha256": "b74c581280f480126575246a6d3e86b7a83dea2c05fe78e1bf789d44bce9b132",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1429-wood-price28/wood-data.js",
+      "size": 8132,
+      "sha256": "ea9a53ee029462e782ed4bbc3d698c6872caee9b0a44d3902dd709905aa5457f",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
