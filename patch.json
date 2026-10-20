@@ -1,14 +1,16 @@
 {
-  "patchVersionCode": 1429,
-  "patchVersionName": "更新",
+  "patchVersionCode": 1430,
+  "patchVersionName": "顾客反馈文案",
   "minAppVersionCode": 1400,
-  "releaseNotes": [],
+  "releaseNotes": [
+    "文案栏目新增五张顾客反馈原图，点图可放大查看。"
+  ],
   "files": [
     {
       "path": "hp-live-total-v1400.js",
-      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1429-wood-price28/company/hp-live-total-v1400.js",
-      "size": 42467,
-      "sha256": "8cdfe2ccef21cc4d475e933c8f6f942a95f9a7c16c466b1deba5cafc5350cbb3",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1430-customer-feedback/company/hp-live-total-v1400.js",
+      "size": 47986,
+      "sha256": "15db02343966e559bad5d3e1d2251ea02440fa0d201d73d2470e9b4ce1751748",
       "contentType": "text/javascript; charset=utf-8"
     },
     {
@@ -395,6 +397,41 @@
       "size": 29668,
       "sha256": "8127861698cc29cfb452afe46523057b0a6039f160da4a293fa9938acbe68b59",
       "contentType": "text/javascript; charset=utf-8"
+    },
+    {
+      "path": "assets/copywriting/customer-feedback-20261020/1342067.jpg",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1430-customer-feedback/images/1342067.jpg",
+      "size": 179847,
+      "sha256": "bc2c6bc5370ed24743797bf2df649a4cf18eba92a0e4a269294fc2b794bc40fa",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/copywriting/customer-feedback-20261020/1342068.jpg",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1430-customer-feedback/images/1342068.jpg",
+      "size": 175867,
+      "sha256": "4ced3d5bf50a144bd7a8efcedbba009096ecd0895cc546e91f422b9e15efbf12",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/copywriting/customer-feedback-20261020/1342065.jpg",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1430-customer-feedback/images/1342065.jpg",
+      "size": 64869,
+      "sha256": "9c7f4e2bd9a0a1181b46238545b3e131a0a039674aaf7713208af41d45d7b47b",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/copywriting/customer-feedback-20261020/1342063.jpg",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1430-customer-feedback/images/1342063.jpg",
+      "size": 147060,
+      "sha256": "399dbf449ce48b707dea9212cf0c7e334f9fe053d3797c40b132b493c144c8ad",
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/copywriting/customer-feedback-20261020/1342066.jpg",
+      "url": "https://teopoh71.github.io/hp-sofa-updates/patches/v1430-customer-feedback/images/1342066.jpg",
+      "size": 57925,
+      "sha256": "dd979a6f339e1e9c9b59c3afa06346f23617e548a65b962eab5888dc547f7962",
+      "contentType": "image/jpeg"
     }
   ],
   "generatedAt": "2026-10-19T00:29:40.832Z"
