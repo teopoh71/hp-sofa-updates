@@ -1,5 +1,5 @@
 {
-  "patchVersionCode": 1430,
+  "patchVersionCode": 1431,
   "patchVersionName": "顾客反馈文案",
   "minAppVersionCode": 1407,
   "generatedAt": "2026-10-19T00:29:40.834Z",
@@ -445,6 +445,13 @@
       "size": 57925,
       "sha256": "dd979a6f339e1e9c9b59c3afa06346f23617e548a65b962eab5888dc547f7962",
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "hp-wood-entry-20261016.js?v=1405",
+      "url": "https://design.myzolano.vip/store-updates/handphone/objects/93ca394aea3e1693c1350e10b6637859e88e4f4f43a6bd093ab124973dd00441",
+      "sha256": "93ca394aea3e1693c1350e10b6637859e88e4f4f43a6bd093ab124973dd00441",
+      "size": 14992,
+      "contentType": "text/javascript;charset=utf-8"
     }
   ],
   "releaseNotes": [
