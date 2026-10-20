@@ -1,10 +1,8 @@
 {
-  "patchVersionCode": 1430,
-  "patchVersionName": "顾客反馈文案",
-  "minAppVersionCode": 1400,
-  "releaseNotes": [
-    "文案栏目新增五张顾客反馈原图，点图可放大查看。"
-  ],
+  "patchVersionCode": 1431,
+  "patchVersionName": "更新",
+  "minAppVersionCode": 1405,
+  "releaseNotes": [],
   "files": [
     {
       "path": "hp-live-total-v1400.js",
@@ -432,6 +430,13 @@
       "size": 57925,
       "sha256": "dd979a6f339e1e9c9b59c3afa06346f23617e548a65b962eab5888dc547f7962",
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "hp-wood-entry-20261016.js?v=1405",
+      "url": "https://design.myzolano.vip/store-updates/handphone/objects/8312ff4f32823fdb48e3e4a799106be240cafbb6114ffc0609b9e25e45f755c4",
+      "sha256": "8312ff4f32823fdb48e3e4a799106be240cafbb6114ffc0609b9e25e45f755c4",
+      "size": 15216,
+      "contentType": "text/javascript;charset=utf-8"
     }
   ],
   "generatedAt": "2026-10-19T00:29:40.832Z"
