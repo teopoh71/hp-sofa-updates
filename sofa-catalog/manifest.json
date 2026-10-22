@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
   "appId": "com.edwin.sofacatalog",
-  "contentVersionCode": 10017,
-  "contentVersionName": "1.0.17",
+  "contentVersionCode": 10018,
+  "contentVersionName": "1.0.18",
   "minAppVersionCode": 10015,
   "bundle": {
-    "url": "https://teopoh71.github.io/hp-sofa-updates/sofa-catalog/releases/1.0.17/content.zip",
-    "sha256": "5d5e3706d516680ee892889d4b4d2b86921255eb90a9105b88c906854b42e45f",
-    "size": 71750217,
-    "uncompressedSize": 78671112
+    "url": "https://teopoh71.github.io/hp-sofa-updates/sofa-catalog/releases/1.0.18/content.zip",
+    "sha256": "51c754f66bc3ff5d3de997aacbe31d04f6de86f6354b95fb64c9f5f76620cc46",
+    "size": 73384975,
+    "uncompressedSize": 80327011
   },
   "files": [
     {
       "path": "data.js",
-      "size": 617160,
-      "sha256": "acf978d32b760dd98c72b2c8c58f489c829a7ce6e2fa6c87f933a98ab0e45b2a"
+      "size": 627291,
+      "sha256": "e578915266528d1c92109bfaf9dbbee818345b2d1a9ac75c788905aec0f11bc4"
     },
     {
       "path": "images/0043e2b67a7498d3.jpg",
@@ -490,6 +490,11 @@
       "path": "images/4254ee63a188f5c6.jpg",
       "size": 202914,
       "sha256": "5f765eac1edf031fbd5bd5d3773b96347ea1221694a251d0e9058510f6b6dc18"
+    },
+    {
+      "path": "images/436195c11b86ffc7.jpg",
+      "size": 617982,
+      "sha256": "436195c11b86ffc7cb74606154ef679667d2cbba9efe2f324cb4d70749c9f337"
     },
     {
       "path": "images/43b0b6c1c4da97cf.jpg",
@@ -1252,6 +1257,11 @@
       "sha256": "6132d200b704750924345d33239a55e69c10a54088977e24a8f599377a84788b"
     },
     {
+      "path": "images/aefb633167cde53b.jpg",
+      "size": 569847,
+      "sha256": "aefb633167cde53bca8d521f6b19b013564d9aa0cd0918f302de494cd599b3bc"
+    },
+    {
       "path": "images/afa57afe46784a4e.png",
       "size": 644770,
       "sha256": "607a09b30f04611dc25c1fc8fdfe1e9720c0007f3ede95af28f71a2c56042ed4"
@@ -1485,6 +1495,11 @@
       "path": "images/d866e23b8abcd374.jpg",
       "size": 13869,
       "sha256": "58d4a29705e970331e7d2ea896b28d6d6304dde3c91f275908a54566c8489179"
+    },
+    {
+      "path": "images/d8e3e0e018d91536.jpg",
+      "size": 457816,
+      "sha256": "d8e3e0e018d91536f69b1c9e1ada6a1660334b332aea109fe3974ac5a3ed7232"
     },
     {
       "path": "images/d942613d60fc669e.jpg",
@@ -1793,8 +1808,8 @@
     },
     {
       "path": "index.html",
-      "size": 33637,
-      "sha256": "c267a1650affeed07a00da19dfed3762ef77bdc1c18e144fc5ca9f9e5287bb9c"
+      "size": 33760,
+      "sha256": "a16b42ef4ac045d179902082546707ac0a9be35e67a0a6a73a534f7bf3072759"
     },
     {
       "path": "thumbnails.js",
