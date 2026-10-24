@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
   "appId": "com.edwin.sofacatalog",
-  "contentVersionCode": 10018,
-  "contentVersionName": "1.0.18",
+  "contentVersionCode": 10019,
+  "contentVersionName": "1.0.19",
   "minAppVersionCode": 10015,
   "bundle": {
-    "url": "https://teopoh71.github.io/hp-sofa-updates/sofa-catalog/releases/1.0.18/content.zip",
-    "sha256": "51c754f66bc3ff5d3de997aacbe31d04f6de86f6354b95fb64c9f5f76620cc46",
-    "size": 73384975,
-    "uncompressedSize": 80327011
+    "url": "https://teopoh71.github.io/hp-sofa-updates/sofa-catalog/releases/1.0.19/content.zip",
+    "sha256": "dabada128088f77ff40bb457a9c72718cae0bdcba034d39a0d5b9d9a2ad26a10",
+    "size": 85656643,
+    "uncompressedSize": 96618018
   },
   "files": [
     {
       "path": "data.js",
-      "size": 627291,
-      "sha256": "e578915266528d1c92109bfaf9dbbee818345b2d1a9ac75c788905aec0f11bc4"
+      "size": 637692,
+      "sha256": "afb9f573048d1da8c3ac90571e88fec1dfe3009890ec543e6232435ec58bd46a"
     },
     {
       "path": "images/0043e2b67a7498d3.jpg",
@@ -972,6 +972,11 @@
       "sha256": "ccbb0dc40cae2dc0267fced649075d5675b411068c6c138737c2a9e1c4cd4bcf"
     },
     {
+      "path": "images/81c536857b43c3ef.jpeg",
+      "size": 54307,
+      "sha256": "81c536857b43c3ef39cd888dee56d961172e97f4194f234f007d3bf582b69574"
+    },
+    {
       "path": "images/822458ea2c6c6e4c.jpg",
       "size": 183837,
       "sha256": "822458ea2c6c6e4cf0f8136272b6c42b0dc0e743f79a1ed7e15863c8fa3e1f00"
@@ -1275,6 +1280,11 @@
       "path": "images/afe63b6abad57804.jpg",
       "size": 15204,
       "sha256": "7a7f243277c9ca4e372f97f1b59e16cf29dc44a37e1005b7eac68bbc37c35be4"
+    },
+    {
+      "path": "images/b02423cc0f967eab.jpeg",
+      "size": 32184,
+      "sha256": "b02423cc0f967eabac7e4d90a6471c890df2bffe45dbe24ca96bfe0989b8be1e"
     },
     {
       "path": "images/b0286c42b34e1167.jpg",
@@ -1808,13 +1818,13 @@
     },
     {
       "path": "index.html",
-      "size": 33760,
-      "sha256": "a16b42ef4ac045d179902082546707ac0a9be35e67a0a6a73a534f7bf3072759"
+      "size": 35119,
+      "sha256": "28447b4e32a29f3d6174a18b8590dc4140701cffd8b73f47ff8e80bd0ccb907f"
     },
     {
       "path": "thumbnails.js",
-      "size": 3073,
-      "sha256": "42e3d56402250c0bb93987e54f211039fdf8c2eb45bd1e15f8cd37c9073eba5e"
+      "size": 9621,
+      "sha256": "31c56c29da4c9860879a71d0f77dc823ca548bdfe0d1864fe4c4331f33bd559a"
     },
     {
       "path": "thumbs/natuzzi-2954.png",
@@ -1890,6 +1900,131 @@
       "path": "thumbs/natuzzi-3354.png",
       "size": 1440255,
       "sha256": "fa681638ee67513867c67b49b514d560f5a2dcc8f2858073334e0ac4b399f545"
+    },
+    {
+      "path": "thumbs/nikator-nk0001sf-official.jpg",
+      "size": 258202,
+      "sha256": "c7e5f57f317e25712e26bfc007dab5998b54edce2abb9bf1deed55ba938c2bdf"
+    },
+    {
+      "path": "thumbs/nikator-nk0002sf-official.jpg",
+      "size": 197468,
+      "sha256": "502c7e9bcaa30c44c56628cac9433203711d9824651f395c86dfda7b3d103222"
+    },
+    {
+      "path": "thumbs/nikator-nk0004sf-official.jpg",
+      "size": 403398,
+      "sha256": "042e596d0aacb38e2265cf87c7930cda4a3fe57722797a81f36ffd9367a58fb7"
+    },
+    {
+      "path": "thumbs/nikator-nk0005sf-official.jpg",
+      "size": 242957,
+      "sha256": "bac273a57b94de60bca05c6b451ce1536cb003890c9d3b2ac35d60bc3868fd0b"
+    },
+    {
+      "path": "thumbs/nikator-nk0008sf-official.jpg",
+      "size": 425953,
+      "sha256": "25ff2da48bcbce9a925f04853e105fa67ae020aa87dc0819bce5de933e865e4c"
+    },
+    {
+      "path": "thumbs/nikator-nk0011sf-official.jpg",
+      "size": 245884,
+      "sha256": "1aed121922d098ddb80633f991b974c2e7a26f5872d5fbfe7eb8b4f8ec9c4d62"
+    },
+    {
+      "path": "thumbs/nikator-nk0013sf-official.jpg",
+      "size": 239478,
+      "sha256": "ce01482f2f7d6c667fbde3fd6f456a722c01884b1c4fffdb846ba657ec327358"
+    },
+    {
+      "path": "thumbs/nikator-nk0015sf-official.jpg",
+      "size": 204162,
+      "sha256": "171fc737efccac5ea27c0aaace9cd905879ffaecab861dba2faaf7585fc99893"
+    },
+    {
+      "path": "thumbs/nikator-nk0016sf-official.jpg",
+      "size": 205508,
+      "sha256": "5773c8771225251db46e1d053ebc26cda78e0a059dc2dd885764a56aa5dc250f"
+    },
+    {
+      "path": "thumbs/nikator-nk0017sf-official.jpg",
+      "size": 332594,
+      "sha256": "2fab7994d6785f8fea08184792085e5efcef78470b6f20e20c001b846718c3a0"
+    },
+    {
+      "path": "thumbs/nikator-nk0019sf-official.jpg",
+      "size": 61199,
+      "sha256": "fb4757c8fbc6dd44d50bef77d8da62c0223b02215a5d6f9e54acbd2b067ca4b2"
+    },
+    {
+      "path": "thumbs/nikator-nk0022sf-official.jpg",
+      "size": 309234,
+      "sha256": "a92aa240d431ea84ba5bff7052d0fbd7a0a1287e90ba8515b01af658b480866e"
+    },
+    {
+      "path": "thumbs/nikator-nk0023sf-official.jpg",
+      "size": 184779,
+      "sha256": "51a04454022cb3659fc42c964cef460270377f1f645e3cc571ff2faad6a94f69"
+    },
+    {
+      "path": "thumbs/nikator-nk0024sf-official.jpg",
+      "size": 736156,
+      "sha256": "4c0e072fcb082462dfc60e28d9c76917ed27aeba68571a6a12f7e629f62cf6f2"
+    },
+    {
+      "path": "thumbs/nikator-nk0025sf-official.jpg",
+      "size": 528648,
+      "sha256": "89a6e5e26bea5695f0f14b339a7256e4b379b68f32cd48e6db54e6b77a11ce3c"
+    },
+    {
+      "path": "thumbs/nikator-nk0028sf-official.jpg",
+      "size": 606642,
+      "sha256": "8d6c8202a0dbef31699dad47ffa4d9eec6bedc616a17fcd509457ef205f6e6e0"
+    },
+    {
+      "path": "thumbs/nikator-nk0029sf-official.jpg",
+      "size": 653318,
+      "sha256": "e4adabeaaa40dac829df18175ed4165f713cbb4430e3acca7768d6c40bf458ed"
+    },
+    {
+      "path": "thumbs/nikator-nk0030sf-official.jpg",
+      "size": 596330,
+      "sha256": "093cdece8991b00ae4068033c0ee032a16a408e33f49eb9a0cf89833bcf4160b"
+    },
+    {
+      "path": "thumbs/nikator-nk0033sf-official.jpg",
+      "size": 531616,
+      "sha256": "85e966e33e574444f9f6afb3f7da64feef7e61bf854c45f632574a26f8911c70"
+    },
+    {
+      "path": "thumbs/nikator-nk0034sf-official.jpg",
+      "size": 599602,
+      "sha256": "c6aa8a507d09632bf32c995887a389b5f7fa451f415a8db48ecd942ed3507f4d"
+    },
+    {
+      "path": "thumbs/nikator-nk0035sf-official.jpg",
+      "size": 3345316,
+      "sha256": "1c9088547123ca8b969b684fbae7de4b49f35af0a910259bd245bb44d1a3e391"
+    },
+    {
+      "path": "thumbs/nikator-nk0039sf-official.jpg",
+      "size": 808082,
+      "sha256": "2ad4cb38e148cbb8b9457a007f36276e0c503170037de0ae44a1bbd9ea14be99"
+    },
+    {
+      "path": "thumbs/nikator-nk0040sf-official.png",
+      "size": 1300529,
+      "sha256": "6099a51595f25208e2acf99d27d3f0a008352529a36831cdab143d1d2117fbe2"
+    },
+    {
+      "path": "thumbs/nikator-nk0042sf-official.png",
+      "size": 1467298,
+      "sha256": "3a1e27330b7cb269e65d2a39f40261a04a64f8daa16b96475d9e770dade3a0da"
+    },
+    {
+      "path": "thumbs/nikator-nk0049sf-official.png",
+      "size": 1701855,
+      "sha256": "f8547c54cf84b52a15e510ab63a7dfec87d4ebf18a33ffc23084bbff0fa1ebf9"
     }
   ]
 }
