@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
   "appId": "com.edwin.sofacatalog",
-  "contentVersionCode": 10019,
-  "contentVersionName": "1.0.19",
+  "contentVersionCode": 10020,
+  "contentVersionName": "1.0.20",
   "minAppVersionCode": 10015,
   "bundle": {
-    "url": "https://teopoh71.github.io/hp-sofa-updates/sofa-catalog/releases/1.0.19/content.zip",
-    "sha256": "dabada128088f77ff40bb457a9c72718cae0bdcba034d39a0d5b9d9a2ad26a10",
-    "size": 85656643,
-    "uncompressedSize": 96618018
+    "url": "https://teopoh71.github.io/hp-sofa-updates/sofa-catalog/releases/1.0.20/content.zip",
+    "sha256": "aee73c0830e290ef7644758df19ee9374b78500a79bb54cb6de1c8d9592ee4f8",
+    "size": 85713199,
+    "uncompressedSize": 96682783
   },
   "files": [
     {
       "path": "data.js",
-      "size": 637692,
-      "sha256": "afb9f573048d1da8c3ac90571e88fec1dfe3009890ec543e6232435ec58bd46a"
+      "size": 641538,
+      "sha256": "2991c62cddc26320dfad524bd743b2d9bc18a7cf5876f936c48326a433b55dc1"
     },
     {
       "path": "images/0043e2b67a7498d3.jpg",
@@ -1462,6 +1462,11 @@
       "sha256": "e171262e41935f9409a3779786a7d6723be357492c9a92c025186dc58e6e49f9"
     },
     {
+      "path": "images/cd3aedc8b1871d6a.jpeg",
+      "size": 60877,
+      "sha256": "cd3aedc8b1871d6afeedf8aee5a9975f0496710e57b8d255d5711f72d04f9cdc"
+    },
+    {
       "path": "images/cd502c8f48db3fae.jpg",
       "size": 13823,
       "sha256": "80d4a60b8238f955763d4e2055857a0eea8c317ef209b69fd71d415016256b27"
@@ -1818,8 +1823,8 @@
     },
     {
       "path": "index.html",
-      "size": 35119,
-      "sha256": "28447b4e32a29f3d6174a18b8590dc4140701cffd8b73f47ff8e80bd0ccb907f"
+      "size": 35161,
+      "sha256": "1c491988ceb1a139f54dbb679d5ab17ba9c886eb8465265acbf88c193a202776"
     },
     {
       "path": "thumbnails.js",
